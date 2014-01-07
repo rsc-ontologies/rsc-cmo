@@ -5,7 +5,6 @@ saved-by: batchelorc
 synonymtypedef: non-mining_synonym "Non-mining synonym" EXACT
 ontology: cmo-xp
 property_value: has_format-version "1.2"
-owl-axioms: Prefix(owl:=<http://www.w3.org/2002/07/owl#>)\nPrefix(rdf:=<http://www.w3.org/1999/02/22-rdf-syntax-ns#>)\nPrefix(xml:=<http://www.w3.org/XML/1998/namespace>)\nPrefix(xsd:=<http://www.w3.org/2001/XMLSchema#>)\nPrefix(rdfs:=<http://www.w3.org/2000/01/rdf-schema#>)\n\n\nOntology(\nAnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasExactSynonym> <http://purl.obolibrary.org/obo/CMO_0000479> \"\"^^xsd:string)\n)
 
 [Term]
 id: BFO:0000015
@@ -2857,8 +2856,8 @@ is_a: CHMO:0000232 ! electronic spectroscopy
 
 [Term]
 id: CHMO:0000292
-name: ultraviolet--visible spectrophotometry
-def: "Spectroscopy where the sample absorbs radiation in the range ultraviolet to visible (190--800 nm) resulting in electronic transitions within the sample." [FIX:0000016, rsc:hjb]
+name: ultraviolet-visible spectrophotometry
+def: "Spectroscopy where the sample absorbs radiation in the range ultraviolet to visible (190-800 nm) resulting in electronic transitions within the sample." [FIX:0000016, rsc:hjb]
 synonym: "absorption spectrophotometry" EXACT []
 synonym: "electronic absorption spectroscopy" EXACT []
 synonym: "molecular electronic absorption spectroscopy" EXACT []
@@ -2908,7 +2907,7 @@ synonym: "differential optical absorbance spectroscopy" EXACT []
 synonym: "differential optical absorption spectrometry" EXACT []
 synonym: "differential optical absorption spectroscopy" EXACT []
 synonym: "DOAS" EXACT []
-is_a: CHMO:0000292 ! ultraviolet--visible spectrophotometry
+is_a: CHMO:0000292 ! ultraviolet-visible spectrophotometry
 
 [Term]
 id: CHMO:0000294
@@ -2930,18 +2929,18 @@ synonym: "reflection UV-VIS spectrometry" EXACT []
 synonym: "reflection UV-VIS spectroscopy" EXACT []
 synonym: "reflection UV/VIS spectrometry" EXACT []
 synonym: "reflection UV/VIS spectroscopy" EXACT []
-is_a: CHMO:0000292 ! ultraviolet--visible spectrophotometry
+is_a: CHMO:0000292 ! ultraviolet-visible spectrophotometry
 
 [Term]
 id: CHMO:0000295
 name: equimolar spectrophotometry
-def: "A method where the absorption of radiation in the ultraviolet to near-infrared (0.1--2.5 &#x3bc;m) is used to calculate stability constants by equimolar dilution." [DOI:10.1021/ac60353a044]
+def: "A method where the absorption of radiation in the ultraviolet to near-infrared (0.1-2.5 &#x3bc;m) is used to calculate stability constants by equimolar dilution." [DOI:10.1021/ac60353a044]
 is_a: CHMO:0000291 ! spectrophotometry
 
 [Term]
 id: CHMO:0000296
 name: vacuum ultraviolet spectrophotometry
-def: "Spectroscopy where the sample absorbs radiation in the vacuum ultraviolet region (0.1--200 nm) resulting in electronic transitions within the sample." [rsc:hjb]
+def: "Spectroscopy where the sample absorbs radiation in the vacuum ultraviolet region (0.1-200 nm) resulting in electronic transitions within the sample." [rsc:hjb]
 synonym: "vacuum ultra-violet absorption spectrometry" EXACT []
 synonym: "vacuum ultra-violet absorption spectroscopy" EXACT []
 synonym: "vacuum ultra-violet spectrophotometry" EXACT []
@@ -6447,7 +6446,7 @@ is_a: CHMO:0000598 ! two-dimensional nuclear magnetic resonance spectroscopy
 [Term]
 id: CHMO:0000600
 name: heteronuclear correlation spectroscopy
-def: "A type of NMR spectroscopy where a second frequency dimension is employed to disperse the signals and reveal correlations between protons and heteronuclei." [FIX:0001025, rsc:pr]
+def: "A type of NMR spectroscopy where a second frequency dimension is employed to disperse the signals and reveal correlations between protons and heteronuclei." [rsc:pr]
 synonym: "2D heteronuclear correlation spectroscopy" EXACT []
 synonym: "HETCOR" EXACT []
 synonym: "HETCORR" EXACT []
@@ -6456,14 +6455,16 @@ synonym: "hetCOSY" EXACT []
 synonym: "HETEROCOR" EXACT []
 synonym: "heteronuclear COSY" EXACT []
 synonym: "two-dimensional heteronuclear correlation spectroscopy" EXACT []
-is_a: CHMO:0000598 ! two-dimensional nuclear magnetic resonance spectroscopy
+xref: FIX:0001025
+is_a: CHMO:0000931 ! heteronuclear two-dimensional nuclear magnetic resonance spectroscopy
 
 [Term]
 id: CHMO:0000601
 name: heteronuclear multiple bond coherence
-def: "A type of heteronuclear NMR spectroscopy where a second frequency dimension is employed to disperse the signals and reveal correlations between protons and nuclei which are 2--3 bonds removed." [FIX:0000180, rsc:pr]
+def: "A type of heteronuclear NMR spectroscopy where a second frequency dimension is employed to disperse the signals and reveal correlations between protons and nuclei which are 2--3 bonds removed." [rsc:pr]
 synonym: "HMBC" EXACT []
 synonym: "HMBC NMR" EXACT []
+xref: FIX:0000180
 is_a: CHMO:0000931 ! heteronuclear two-dimensional nuclear magnetic resonance spectroscopy
 
 [Term]
@@ -9607,7 +9608,7 @@ synonym: "UV--vis--DRS" EXACT []
 synonym: "UV--vis-diffuse reflectance spectroscopy" EXACT []
 synonym: "UV-vis-diffuse reflectance spectroscopy" EXACT []
 synonym: "UV-vis-DRS" EXACT []
-is_a: CHMO:0000292 ! ultraviolet--visible spectrophotometry
+is_a: CHMO:0000292 ! ultraviolet-visible spectrophotometry
 
 [Term]
 id: CHMO:0000900
@@ -12887,7 +12888,7 @@ synonym: "ultraviolet spectroscopy" EXACT []
 synonym: "UV spectrophotometry" EXACT []
 synonym: "UV spectroscopic measurements" EXACT []
 synonym: "UV spectroscopy" EXACT []
-is_a: CHMO:0000292 ! ultraviolet--visible spectrophotometry
+is_a: CHMO:0000292 ! ultraviolet-visible spectrophotometry
 created_by: burchh
 creation_date: 2009-04-03T09:52:05Z
 
@@ -14355,6 +14356,7 @@ is_a: CHMO:0001388 ! lithography
 [Term]
 id: CHMO:0001390
 name: microlithography
+alt_id: CHMO:001412
 def: "Any synthesis technique involving the transfer of a microsized pattern to a material (a 'resist') by selective exposure to a radiation source (e.g. light or X-rays) or to a beam of charged particles. Upon irradiation, the material experiences a change in its physical properties which changes its response to a developer solution (making it either soluble or insoluble). The desired pattern is then obtained by removing any excess resist with the developer. " [rsc:hjb]
 is_a: CHMO:0001388 ! lithography
 
@@ -14547,12 +14549,6 @@ name: double patterning lithography
 def: "A synthesis method that uses light to transfer a pattern to a substrate. A solution of photoresist (a polymer) is deposited on the substrate by spin coating. The photoresist-coated substrate is then heated to drive off excess solvent ('soft-baked', 'prebaked', 'post-application baked', PAB), typically at 90--100 deg. C. The photoresist is then exposed to two different patterns of intense (typically UV) light using two different masks. A post-exposure bake (PEB) at 120--180 deg. C is performed before immersing the substrate in a 'developer' which removes excess photoresist. Positive photoresist becomes soluble in the developer when exposed; negative photoresist becomes insoluble in the developer. Finally the substrate is baked again ('hard-baked') to solidify the remaining photoresist." [rsc:hjb]
 synonym: "double-patterning lithography" EXACT []
 synonym: "DPL" EXACT []
-is_a: CHMO:0001410 ! photolithography
-
-[Term]
-id: CHMO:0001412
-name: microlithography
-def: "A synthesis method that uses light to transfer a micrometre-sized pattern to a substrate. A solution of photoresist (a polymer) is deposited on the substrate by spin coating. The photoresist-coated substrate is then heated to drive off excess solvent ('soft-baked', 'prebaked', 'post-application baked', PAB), typically at 90--100 deg. C. The photoresist is then exposed to a pattern of intense UV light and a post-exposure bake (PEB) at 120--180 deg. C is performed before immersing the substrate in a 'developer' which removes excess photoresist. Positive photoresist becomes soluble in the developer when exposed; negative photoresist becomes insoluble in the developer. Finally the substrate is baked again ('hard-baked') to solidify the remaining photoresist." [rsc:hjb]
 is_a: CHMO:0001410 ! photolithography
 
 [Term]
@@ -16892,7 +16888,7 @@ name: laser-induced fluorescence detection
 def: "A detection method which is sensitive to naturally fluorescent or tagged compounds. As the sample passes through a small cell it is excited by a focused ultraviolet laser and any fluorescence is detected." [rsc:hjb]
 synonym: "laser induced fluorescence detection" EXACT []
 synonym: "LIF" EXACT []
-is_a: CHMO:0000060 ! fluorescence detection for separation methods
+is_a: CHMO:0000060 ! fluorescence detection
 
 [Term]
 id: CHMO:0001723
@@ -17555,7 +17551,7 @@ name: laser sintering
 def: "The fusing together of small particles by heating the sample with a laser (e.g. a CO2 laser) below its melting point until its particles adhere to each other." [DOI:10.1039/b823329b]
 synonym: "LS" EXACT non-mining_synonym []
 synonym: "selective laser sintering" EXACT []
-synonym: "SLS" EXACT non-mining synonym []
+synonym: "SLS" EXACT non-mining_synonym []
 is_a: CHMO:0001703 ! solid-state sintering
 created_by: burchh
 creation_date: 2009-05-20T02:16:41Z
@@ -18650,8 +18646,9 @@ creation_date: 2009-05-29T12:00:00Z
 
 [Term]
 id: CHMO:0001873
-name: accordian
+name: accordion spectroscopy
 def: "A dimensionality reduction technique used in multidimensional NMR experiments. A nD NMR experiment is represented in n-1 dimensions by concerted, simultaneous interrogation of two spectral dimensions." [rsc:pr]
+xref: doi:10.1021/ja00369a027
 is_a: CHMO:0001806 ! nuclear magnetic resonance method
 created_by: burchh
 creation_date: 2009-05-29T12:00:00Z
@@ -26725,7 +26722,7 @@ def: "Spectroscopy where the sample absorbs radiation from the visible region (3
 synonym: "optical absorption spectroscopy" EXACT []
 synonym: "visible spectrometry" EXACT []
 synonym: "visible spectroscopy" EXACT []
-is_a: CHMO:0000292 ! ultraviolet--visible spectrophotometry
+is_a: CHMO:0000292 ! ultraviolet-visible spectrophotometry
 created_by: burchh
 creation_date: 2009-11-07T01:52:17Z
 
@@ -28545,29 +28542,37 @@ relationship: CHMO:0002748 CHEBI:23377 ! has analyte copper molecular entity
 id: CHMO:0002749
 name: positive mode atmospheric pressure chemical ionization mass spectrometry
 def: "Atmospheric pressure chemical ionization mass spectrometry where the sample is ionized by interaction with positive ions." [RSC:cb]
-is_a: CHMO:0000473
-is_a: CHMO:0000475
+is_a: CHMO:0000473 ! atmospheric pressure chemical ionisation mass spectrometry
+is_a: CHMO:0000475 ! negative ion chemical ionisation mass spectrometry
 
 [Term]
 id: CHMO:0002750
 name: positive mode atmospheric pressure chemical ionization mass spectrometry
 def: "Atmospheric pressure chemical ionization mass spectrometry where the sample is ionized by interaction with negative ions." [RSC:cb]
-is_a: CHMO:0000473
-is_a: CHMO:0000476
+is_a: CHMO:0000473 ! atmospheric pressure chemical ionisation mass spectrometry
+is_a: CHMO:0000476 ! positive ion chemical ionisation mass spectrometry
 
 [Term]
 id: CHMO:0002751
 name: APCI+ MS spectrum
 def: "A mass spectrum obtained from positive mode atmospheric pressure chemical ionization mass spectrometry." [RSC:cb]
-is_a: CHMO:0000807
-relationship: OBI:0000312 CHMO:0002749
+is_a: CHMO:0000807 ! chemical ionisation mass spectrum
+relationship: OBI:0000312 CHMO:0002749 ! is_specified_output_of positive mode atmospheric pressure chemical ionization mass spectrometry
 
 [Term]
 id: CHMO:0002752
 name: APCI- MS spectrum
 def: "A mass spectrum obtained from negative mode atmospheric pressure chemical ionization mass spectrometry." [RSC:cb]
-is_a: CHMO:0000807
-relationship: OBI:0000312 CHMO:0002750
+is_a: CHMO:0000807 ! chemical ionisation mass spectrum
+relationship: OBI:0000312 CHMO:0002750 ! is_specified_output_of positive mode atmospheric pressure chemical ionization mass spectrometry
+
+[Term]
+id: CHMO:0002753
+name: heteronuclear correlation spectrum
+def: "A spectrum obtained from a heteronuclear correlation experiment." [RSC:cb]
+synonym: "HETCOR spectrum" EXACT []
+is_a: CHMO:0000835 ! nuclear magnetic resonance spectrum
+relationship: OBI:0000312 CHMO:0000600 ! is_specified_output_of heteronuclear correlation spectroscopy
 
 [Term]
 id: IAO:0000030
