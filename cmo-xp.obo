@@ -530,8 +530,7 @@ is_a: CHMO:0000053 ! imaging mass spectrometry
 id: CHMO:0000056
 name: Raman microscopy
 alt_id: CHMO:0000673
-def: "The collection of spatially resolved Raman spectra of a sample during optical microscopy." [DOI:10.1039/b815117b, FIX:0000697]
-synonym: "\\muRS" EXACT []
+def: "The collection of spatially resolved Raman spectra of a sample during optical microscopy." [DOI:10.1039/b815117b]
 synonym: "laser Raman microanalysis" EXACT []
 synonym: "LRMA" EXACT []
 synonym: "micro Raman spectrometry" EXACT []
@@ -550,20 +549,22 @@ synonym: "Raman microspectrometry" EXACT []
 synonym: "Raman microspectroscopy" EXACT []
 synonym: "Raman spectral imaging" EXACT []
 synonym: "RCIS" EXACT []
+xref: FIX:0000697
 is_a: CHMO:0001818 ! vibrational microscopy
 
 [Term]
 id: CHMO:0000057
 name: luminescence detection
-def: "The detection of luminescence from a sample." [FIX:0000427, rsc:hjb]
-synonym: "luminescence spectroscopy" EXACT []
+def: "The detection of luminescence from a sample." [rsc:hjb]
+xref: FIX:0000427
 is_a: CHMO:0001709 ! detection method
 
 [Term]
 id: CHMO:0000058
 name: chemiluminescence detection
-def: "The detection of luminescence emitted from a sample as a result of a chemical reaction." [DOI:10.1039/b812750f, FIX:0000427]
+def: "The detection of luminescence emitted from a sample as a result of a chemical reaction." [DOI:10.1039/b812750f]
 synonym: "CL detection" EXACT []
+xref: FIX:0000427
 is_a: CHMO:0000057 ! luminescence detection
 
 [Term]
@@ -1712,7 +1713,6 @@ synonym: "time resolved resonance Rayleigh scattering spectrometry" EXACT []
 synonym: "time resolved resonance Rayleigh spectroscopy" EXACT []
 synonym: "time resolved resonant Rayleigh scattering spectrometry" EXACT []
 synonym: "time resolved resonant Rayleigh spectroscopy" EXACT []
-synonym: "time-resolved resonance Rayleigh scattering" EXACT []
 synonym: "time-resolved resonant Rayleigh scattering" EXACT []
 synonym: "time-resolved resonant Rayleigh scattering spectroscopy" EXACT []
 is_a: CHMO:0000174 ! resonance Rayleigh scattering spectroscopy
@@ -3833,12 +3833,12 @@ is_a: CHMO:0000366 ! electron energy loss spectroscopy
 [Term]
 id: CHMO:0000373
 name: transmission electron energy loss spectroscopy
+alt_id: CHMO:0002296
 def: "A type of spectroscopy where a beam of electrons with a known, narrow range of kinetic energies is transmitted through a sample and the energy distribution of the transmitted electrons is measured." [AU:T06480]
 synonym: "electron transmission spectrometry" EXACT []
 synonym: "electron transmission spectroscopy" EXACT []
 synonym: "ETS" EXACT []
 synonym: "TEELS" EXACT []
-synonym: "transmission electron energy loss spectrometry" EXACT []
 is_a: CHMO:0000366 ! electron energy loss spectroscopy
 
 [Term]
@@ -4544,7 +4544,6 @@ def: "Any type of spectroscopy where the sample is illuminated with one or more 
 synonym: "direct laser absorption spectrometry" EXACT []
 synonym: "direct laser absorption spectroscopy" EXACT []
 synonym: "DLAS" EXACT []
-synonym: "laser absorption spectroscopy" EXACT []
 is_a: CHMO:0000436 ! laser absorption spectroscopy
 
 [Term]
@@ -6277,16 +6276,16 @@ is_a: CHMO:0000581 ! microspectroscopy
 [Term]
 id: CHMO:0000585
 name: rotational spectroscopy
-def: "A type of spectroscopy which probes the rotational degrees of freedom of a molecule." [FIX:0000031, rsc:cb]
+def: "A type of spectroscopy which probes the rotational degrees of freedom of a molecule." [rsc:cb]
+xref: FIX:0000031
 is_a: CHMO:0000228 ! spectroscopy
 
 [Term]
 id: CHMO:0000586
 name: microwave spectroscopy
-def: "A type of spectroscopy where the sample is bombarded with radiation in the microwave region (1--1000 mm)." [FIX:0000018, ISBN:048661798X]
+def: "A type of spectroscopy where the sample is bombarded with radiation in the microwave region (1--1000 mm)." [ISBN:048661798X]
 synonym: "microwave spectrometry" EXACT []
-synonym: "rotational spectrometry" EXACT []
-synonym: "rotational spectroscopy" EXACT []
+xref: FIX:0000018
 is_a: CHMO:0000585 ! rotational spectroscopy
 
 [Term]
@@ -7819,7 +7818,7 @@ is_a: CHMO:0000613 ! pulsed nuclear magnetic resonance spectroscopy
 [Term]
 id: CHMO:0000724
 name: one-dimensional nuclear Overhauser enhancement spectroscopy
-def: "A type of homonuclear NMR spectroscopy where only one frequency dimension is employed, based on the nuclear Overhauser enhancement effect in which correlations are seen between nuclei that are spatially proximate within a molecule (\\leq 6 \\AA apart)." [rsc:pr]
+def: "A type of homonuclear NMR spectroscopy where only one frequency dimension is employed, based on the nuclear Overhauser enhancement effect in which correlations are seen between nuclei that are spatially proximate within a molecule (<=6 angstrom apart)." [rsc:pr]
 synonym: "1D NOESY" EXACT []
 synonym: "1D nOesy" EXACT []
 synonym: "1D nuclear Overhauser enhancement spectroscopy" EXACT []
@@ -7831,7 +7830,7 @@ is_a: CHMO:0000607 ! nuclear Overhauser enhancement spectroscopy
 [Term]
 id: CHMO:0000725
 name: two-dimensional nuclear Overhauser enhancement spectroscopy
-def: "A type of homonuclear NMR spectroscopy where a second frequency dimension is employed, based on the nuclear Overhauser enhancement effect in which correlations are seen between nuclei that are spatially proximate within a molecule (\\leq 6 \\AA apart)." [rsc:pr]
+def: "A type of homonuclear NMR spectroscopy where a second frequency dimension is employed, based on the nuclear Overhauser enhancement effect in which correlations are seen between nuclei that are spatially proximate within a molecule (<=6 angstrom apart)." [rsc:pr]
 synonym: "2D homonuclear NOESY " EXACT []
 synonym: "2D NOESY" EXACT []
 synonym: "2D nOesy" EXACT []
@@ -9151,6 +9150,7 @@ is_a: CHMO:0000739 ! 31P nuclear magnetic resonance spectroscopy
 [Term]
 id: CHMO:0000856
 name: magic angle spinning nuclear magnetic resonance spectrum
+alt_id: CHMO:0002440
 def: "A nuclear magnetic resonance spectrum in which line broadening has been averaged to zero by spinning the solid sample very rapidly at the magic angle (54.74 deg. with respect to the direction of the magnetic field)." [rsc:pr]
 synonym: "MAS NMR spectrum" EXACT []
 synonym: "MAS spectrum" EXACT []
@@ -9164,7 +9164,6 @@ synonym: "13C MAS NMR spectrum" EXACT []
 synonym: "13C MAS-NMR spectra" EXACT []
 synonym: "13C MAS-NMR spectrum" EXACT []
 is_a: CHMO:0000856 ! magic angle spinning nuclear magnetic resonance spectrum
-is_a: CHMO:0002440 ! magic angle spinning nuclear magnetic resonance spectrum
 
 [Term]
 id: CHMO:0000858
@@ -10492,7 +10491,9 @@ relationship: BFO:0000057 CHMO:0000990 ! has participant open chromatographic be
 [Term]
 id: CHMO:0001006
 name: affinity chromatography
-def: "A chromatography method where the separation is caused by differing analyte--ligand interactions." [FIX:0000615, OrangeBook:9.2.1.5]
+def: "A chromatography method where the separation is caused by differing analyte--ligand interactions." [OrangeBook:9.2.1.5]
+synonym: "bioaffinity chromatography" EXACT []
+xref: FIX:0000615
 is_a: CHMO:0001001 ! column chromatography
 
 [Term]
@@ -10565,9 +10566,8 @@ is_a: CHMO:0001001 ! column chromatography
 
 [Term]
 id: CHMO:0001015
-name: gas--solid chromatography
+name: gas-solid chromatography
 def: "Gas chromatography where the stationary phase is a solid." [FIX:0000632, rsc:cb]
-synonym: "gas-solid chromatography" EXACT []
 synonym: "GSC" EXACT []
 is_a: CHMO:0001002 ! gas chromatography
 intersection_of: CHMO:0001002 ! gas chromatography
@@ -11607,6 +11607,7 @@ creation_date: 2009-03-06T05:26:27Z
 [Term]
 id: CHMO:0001134
 name: sample preparation method-measurement method
+alt_id: CHMO:0002037
 def: "A method in which a sample preparation method is coupled to a measurement method." [rsc:cb]
 is_a: CHMO:0001133 ! experimental method
 created_by: batchelorc
@@ -11841,7 +11842,6 @@ synonym: "29Si MAS NMR spectrum" EXACT []
 synonym: "29Si MAS-NMR spectra" EXACT []
 synonym: "29Si MAS-NMR spectrum" EXACT []
 is_a: CHMO:0000856 ! magic angle spinning nuclear magnetic resonance spectrum
-is_a: CHMO:0002440 ! magic angle spinning nuclear magnetic resonance spectrum
 created_by: burchh
 creation_date: 2009-03-12T11:17:55Z
 
@@ -13472,7 +13472,6 @@ synonym: "23Na MAS NMR spectrum" EXACT []
 synonym: "23Na MAS-NMR spectra" EXACT []
 synonym: "23Na MAS-NMR spectrum" EXACT []
 is_a: CHMO:0000856 ! magic angle spinning nuclear magnetic resonance spectrum
-is_a: CHMO:0002440 ! magic angle spinning nuclear magnetic resonance spectrum
 created_by: burchh
 creation_date: 2009-05-14T12:42:01Z
 
@@ -14538,9 +14537,9 @@ id: CHMO:0001410
 name: photolithography
 def: "A synthesis method that uses light to transfer a pattern to a substrate. A solution of photoresist (a polymer) is deposited on the substrate by spin coating. The photoresist-coated substrate is then heated to drive off excess solvent ('soft-baked', 'prebaked', 'post-application baked', PAB), typically at 90--100 deg. C. The photoresist is then exposed to a pattern of intense (typically UV) light and a post-exposure bake (PEB) at 120--180 deg. C is performed before immersing the substrate in a 'developer' which removes excess photoresist. Positive photoresist becomes soluble in the developer when exposed; negative photoresist becomes insoluble in the developer. Finally the substrate is baked again ('hard-baked') to solidify the remaining photoresist." [rsc:hjb]
 synonym: "optical lithography" EXACT []
-synonym: "ultra-violet lithography" EXACT []
-synonym: "ultraviolet lithography" EXACT []
-synonym: "UV lithography" EXACT []
+synonym: "ultra-violet lithography" NARROW []
+synonym: "ultraviolet lithography" NARROW []
+synonym: "UV lithography" NARROW []
 is_a: CHMO:0001388 ! lithography
 
 [Term]
@@ -16854,7 +16853,6 @@ def: "A detection method where a liquid containing the sample is atomised in a g
 synonym: "ELS" EXACT []
 synonym: "ELSD" EXACT []
 synonym: "evaporative light scattering" EXACT []
-synonym: "mass detection" EXACT []
 is_a: CHMO:0001709 ! detection method
 
 [Term]
@@ -17022,9 +17020,16 @@ is_a: CHMO:0001735 ! separation method-detection method
 [Term]
 id: CHMO:0001738
 name: liquid chromatography-photodiode array detection
+alt_id: CHMO:0001743
 def: "A liquid chromatography method where the mobile phases passes through a cell where it is illuminated with light in the region 190--1100 nm and any absorption is detected by a photodiode array." [rsc:hjb]
+synonym: "LC-DAD" EXACT []
+synonym: "LC-PAD" EXACT []
 synonym: "LC-PDA" EXACT []
+synonym: "LC/DAD" EXACT []
+synonym: "LC/PAD" EXACT []
 synonym: "LC/PDA" EXACT []
+synonym: "LCDAD" EXACT []
+synonym: "LCPAD" EXACT []
 synonym: "LCPDA" EXACT []
 synonym: "liquid chromatography photodiode array detection" EXACT []
 is_a: CHMO:0001735 ! separation method-detection method
@@ -17073,19 +17078,6 @@ synonym: "LC-FD" EXACT []
 synonym: "LC/FD" EXACT []
 synonym: "LCFD" EXACT []
 synonym: "liquid chromatography fluorescence detection" EXACT []
-is_a: CHMO:0001735 ! separation method-detection method
-
-[Term]
-id: CHMO:0001743
-name: liquid chromatography-photodiode array detection
-def: "A liquid chromatography method that is sensitive to organic compounds. As the sample passes through a cell it is illuminated with light in the region 190--1100 nm and any absorption is detected by a photodiode array." [rsc:hjb]
-synonym: "LC-DAD" EXACT []
-synonym: "LC-PAD" EXACT []
-synonym: "LC/DAD" EXACT []
-synonym: "LC/PAD" EXACT []
-synonym: "LCDAD" EXACT []
-synonym: "LCPAD" EXACT []
-synonym: "liquid chromatography photodiode array detection" EXACT []
 is_a: CHMO:0001735 ! separation method-detection method
 
 [Term]
@@ -17550,8 +17542,6 @@ id: CHMO:0001787
 name: laser sintering
 def: "The fusing together of small particles by heating the sample with a laser (e.g. a CO2 laser) below its melting point until its particles adhere to each other." [DOI:10.1039/b823329b]
 synonym: "LS" EXACT non-mining_synonym []
-synonym: "selective laser sintering" EXACT []
-synonym: "SLS" EXACT non-mining_synonym []
 is_a: CHMO:0001703 ! solid-state sintering
 created_by: burchh
 creation_date: 2009-05-20T02:16:41Z
@@ -17621,7 +17611,7 @@ name: supercritical fluid extraction-Fourier transform infrared spectroscopy
 def: "A method in which the sample is transferred from any matrix to a liquid phase using a supercritical fluid. The sample is then subject to a type of spectroscopy where a single pulse of radiation, from the infrared region, is absorbed, and the spectrum obtained is subject to a Fourier transform." [rsc:hjb]
 synonym: "SFE-FTIR" EXACT []
 synonym: "supercritical fluid extraction-Fourier transform infrared absorption spectroscopy" EXACT []
-is_a: CHMO:0002037 ! sample preparation method-measurement method
+is_a: CHMO:0001134 ! sample preparation method-measurement method
 created_by: burchh
 creation_date: 2009-05-20T02:49:54Z
 
@@ -18190,7 +18180,7 @@ creation_date: 2009-05-29T11:41:12Z
 [Term]
 id: CHMO:0001835
 name: two-dimensional liquid chromatography
-def: "A type of chromatography where the mobile phase is a liquid, an initial separation proceeds in a primary column (commonly ion-exchange), and parts of the eluent from this column are directed into a secondary column (commonly reverse phase)." [FIX:0001153, rsc:hjb]
+def: "A type of chromatography where the mobile phase is a liquid, an initial separation proceeds in a primary column (commonly ion-exchange), and parts of the eluent from this column are directed into a secondary column (commonly reverse phase)." [rsc:hjb]
 synonym: "2D liquid chromatography" EXACT []
 synonym: "2D-LC" EXACT []
 synonym: "LC-LC" EXACT []
@@ -18203,7 +18193,7 @@ creation_date: 2009-05-29T11:51:06Z
 [Term]
 id: CHMO:0001836
 name: two-dimensional liquid chromatography-tandem mass spectrometry
-def: "A method where a sample mixture is first separated sequentially using two different liquid chromatography columns (commonly, ion-exchange followed by reversed-phase) before being analysed by two mass spectrometers in series." [FIX:0001156, rsc:hjb]
+def: "A method where a sample mixture is first separated sequentially using two different liquid chromatography columns (commonly, ion-exchange followed by reversed-phase) before being analysed by two mass spectrometers in series." [rsc:hjb]
 synonym: "2D-LC-MS/MS" EXACT []
 synonym: "2DLC-MS-MS" EXACT []
 synonym: "2DLC-MS/MS" EXACT []
@@ -18214,6 +18204,7 @@ synonym: "2DLCMSMS" EXACT []
 synonym: "two-dimensional chromatography tandem mass spectroscopy" EXACT []
 synonym: "two-dimensional chromatography-tandem mass spectroscopy" EXACT []
 synonym: "two-dimensional liquid chromatography tandem mass spectrometry" EXACT []
+xref: FIX:0001156
 is_a: CHMO:0000701 ! liquid chromatography-tandem mass spectrometry
 is_a: CHMO:0002007 ! two-dimensional liquid chromatography-mass spectrometry
 relationship: BFO:0000118 CHMO:0000575 ! has proper occurrent part tandem mass spectrometry
@@ -19106,7 +19097,6 @@ synonym: "27Al MAS NMR spectrum" EXACT []
 synonym: "27Al MAS-NMR spectra" EXACT []
 synonym: "27Al MAS-NMR spectrum" EXACT []
 is_a: CHMO:0000856 ! magic angle spinning nuclear magnetic resonance spectrum
-is_a: CHMO:0002440 ! magic angle spinning nuclear magnetic resonance spectrum
 created_by: burchh
 creation_date: 2009-06-03T03:32:52Z
 
@@ -20402,6 +20392,7 @@ creation_date: 2009-06-19T02:18:10Z
 [Term]
 id: CHMO:0002018
 name: isopycnic centrifugation
+alt_id: CHMO:0002507
 def: "A method where the components of a sample are separated on the basis of their density, in a density gradient of e.g. CsCl in a centrifuge, according to buoyant density. The species in the sample move through the gradient until they reach a point where their density and that of the gradient are identical." [rsc:hjb]
 synonym: "equilibrium centrifugation" EXACT []
 synonym: "sedimentation equilibrium centrifugation" EXACT []
@@ -20582,12 +20573,9 @@ creation_date: 2009-06-22T04:35:04Z
 id: CHMO:0002032
 name: 121Sb Mossbauer spectroscopy
 def: "A type of spectroscopy where the intensity of a gamma-rays beam transmitted through a solid sample containing 121Sb nuclei is detected." [CHEBI:52624, FIX:0000734, rsc:hjb]
-synonym: "121Sb M\\o\\ssbauer spectroscopy" EXACT []
-synonym: "121Sb M\\ossbauer spectroscopy" EXACT []
 synonym: "121Sb Moessbauer spectroscopy" EXACT []
 synonym: "121Sb Mossbauer spectroscopy" EXACT []
 synonym: "121Sb recoil-free gamma-ray resonance absorption spectroscopy" EXACT []
-synonym: "antimony-121 M\\o\\ssbauer spectroscopy" EXACT []
 synonym: "antimony-121 Moessbauer spectroscopy" EXACT []
 is_a: CHMO:0000417 ! Mossbauer spectroscopy
 created_by: burchh
@@ -20596,14 +20584,12 @@ creation_date: 2009-06-22T04:43:30Z
 [Term]
 id: CHMO:0002033
 name: 125Te Mossbauer spectroscopy
-def: "A type of spectroscopy where the intensity of a gamma-rays beam transmitted through a solid sample containing 125Te nuclei is detected." [CHEBI:52452, FIX:0000735, rsc:hjb]
-synonym: "125Te M\\o\\ssbauer spectroscopy" EXACT []
-synonym: "125Te M\\ossbauer spectroscopy" EXACT []
+def: "A type of spectroscopy where the intensity of a gamma-rays beam transmitted through a solid sample containing 125Te nuclei is detected." [CHEBI:52452, rsc:hjb]
 synonym: "125Te Moessbauer spectroscopy" EXACT []
 synonym: "125Te Mossbauer spectroscopy" EXACT []
 synonym: "125Te recoil-free gamma-ray resonance absorption spectroscopy" EXACT []
-synonym: "tellurium-125 M\\o\\ssbauer spectroscopy" EXACT []
 synonym: "tellurium-125 Moessbauer spectroscopy" EXACT []
+xref: FIX:0000735
 is_a: CHMO:0000417 ! Mossbauer spectroscopy
 created_by: burchh
 creation_date: 2009-06-22T04:46:12Z
@@ -20611,14 +20597,12 @@ creation_date: 2009-06-22T04:46:12Z
 [Term]
 id: CHMO:0002034
 name: 151Eu Mossbauer spectroscopy
-def: "A type of spectroscopy where the intensity of a gamma-rays beam transmitted through a solid sample containing 151Eu nuclei is detected." [CHEBI:52637, FIX:0000736, rsc:hjb]
-synonym: "151Eu M\\o\\ssbauer spectroscopy" EXACT []
-synonym: "151Eu M\\ossbauer spectroscopy" EXACT []
+def: "A type of spectroscopy where the intensity of a gamma-rays beam transmitted through a solid sample containing 151Eu nuclei is detected." [CHEBI:52637, rsc:hjb]
 synonym: "151Eu Moessbauer spectroscopy" EXACT []
 synonym: "151Eu Mossbauer spectroscopy" EXACT []
 synonym: "151Eu recoil-free gamma-ray resonance absorption spectroscopy" EXACT []
-synonym: "europium-151 M\\o\\ssbauer spectroscopy" EXACT []
 synonym: "europium-151 Moessbauer spectroscopy" EXACT []
+xref: FIX:0000736
 is_a: CHMO:0000417 ! Mossbauer spectroscopy
 created_by: burchh
 creation_date: 2009-06-22T04:47:53Z
@@ -20627,12 +20611,9 @@ creation_date: 2009-06-22T04:47:53Z
 id: CHMO:0002035
 name: 129I Mossbauer spectroscopy
 def: "A type of spectroscopy where the intensity of a gamma-rays beam transmitted through a solid sample containing 129I nuclei is detected." [CHEBI:52636, FIX:0000754, rsc:hjb]
-synonym: "129I M\\o\\ssbauer spectroscopy" EXACT []
-synonym: "129I M\\ossbauer spectroscopy" EXACT []
 synonym: "129I Moessbauer spectroscopy" EXACT []
 synonym: "129I Mossbauer spectroscopy" EXACT []
 synonym: "129I recoil-free gamma-ray resonance absorption spectroscopy" EXACT []
-synonym: "iodine-129 M\\o\\ssbauer spectroscopy" EXACT []
 synonym: "iodine-129 Moessbauer spectroscopy" EXACT []
 is_a: CHMO:0000417 ! Mossbauer spectroscopy
 created_by: burchh
@@ -20642,24 +20623,13 @@ creation_date: 2009-06-22T04:49:05Z
 id: CHMO:0002036
 name: 197Au Mossbauer spectroscopy
 def: "A type of spectroscopy where the intensity of a gamma-rays beam transmitted through a solid sample containing 197Au nuclei is detected." [CHEBI:52454, FIX:0000738, rsc:hjb]
-synonym: "197Au M\\o\\ssbauer spectroscopy" EXACT []
-synonym: "197Au M\\ossbauer spectroscopy" EXACT []
 synonym: "197Au Moessbauer spectroscopy" EXACT []
 synonym: "197Au Mossbauer spectroscopy" EXACT []
 synonym: "197Au recoil-free gamma-ray resonance absorption spectroscopy" EXACT []
-synonym: "gold-197 M\\o\\ssbauer spectroscopy" EXACT []
 synonym: "gold-197 Moessbauer spectroscopy" EXACT []
 is_a: CHMO:0000417 ! Mossbauer spectroscopy
 created_by: burchh
 creation_date: 2009-06-22T04:55:14Z
-
-[Term]
-id: CHMO:0002037
-name: sample preparation method-measurement method
-def: "A method in which a sample preparation method is coupled to a measurement method." [rsc:hjb]
-is_a: CHMO:0001793 ! sample transformation method-measurement method
-created_by: burchh
-creation_date: 2009-06-23T04:05:09Z
 
 [Term]
 id: CHMO:0002038
@@ -23026,6 +22996,7 @@ name: strong-anion-exchange chromatography
 def: "Column chromatography where anions are retained by positively charged functional groups that have a permanent positive charge in aqueous solution, such as quaternary ammonium groups, in the stationary phase." [rsc:cb]
 synonym: "SAX chromatography" EXACT []
 is_a: CHMO:0001209 ! anion-exchange chromatography
+relationship: BFO:0000057 CHMO:0002268 ! has participant strong anion-exchange column
 created_by: batchelorc
 creation_date: 2009-08-10T02:43:38Z
 
@@ -23035,6 +23006,7 @@ name: weak-anion-exchange chromatography
 def: "Column chromatography where anions are retained by positively charged functional groups that have a positive charge only at high pH, such as amine groups, in the stationary phase." [rsc:cb]
 synonym: "WAX chromatography" EXACT []
 is_a: CHMO:0001209 ! anion-exchange chromatography
+relationship: BFO:0000057 CHMO:0002269 ! has participant weak anion-exchange column
 created_by: batchelorc
 creation_date: 2009-08-10T02:56:33Z
 
@@ -23043,6 +23015,7 @@ id: CHMO:0002260
 name: strong-cation-exchange chromatography
 def: "Column chromatography where cations are retained by functional groups that are permanently negatively charged in aqueous conditions, for example aliphatic sulfonic acid groups, in the stationary phase." [rsc:cb]
 is_a: CHMO:0001210 ! cation-exchange chromatography
+relationship: BFO:0000057 CHMO:0002266 ! has participant strong cation-exchange column
 created_by: batchelorc
 creation_date: 2009-08-10T03:00:45Z
 
@@ -23051,6 +23024,7 @@ id: CHMO:0002261
 name: weak-cation-exchange chromatography
 def: "Column chromatography where cations are retained by functional groups that are  negatively charged at low pH, for example aliphatic carboxylic acid groups, in the stationary phase." [rsc:cb]
 is_a: CHMO:0001210 ! cation-exchange chromatography
+relationship: BFO:0000057 CHMO:0002267 ! has participant weak cation-exchange column
 created_by: batchelorc
 creation_date: 2009-08-10T03:02:20Z
 
@@ -23153,7 +23127,6 @@ synonym: "2-dimensional small-angle X-ray scattering" EXACT []
 synonym: "2D SAXS" EXACT []
 synonym: "2D-SAXS" EXACT []
 synonym: "SAXS with 2D detection" EXACT []
-synonym: "two-dimensional (2D) SAXS" EXACT []
 synonym: "two-dimensional SAXS" EXACT []
 is_a: CHMO:0000204 ! small-angle X-ray scattering
 created_by: burchh
@@ -23162,7 +23135,7 @@ creation_date: 2009-08-17T01:54:12Z
 [Term]
 id: CHMO:0002273
 name: two-dimensional small-angle X-ray scattering data
-def: "Data which is obtained from an X-ray scattering experiment where two separate beams of X-rays scattered by a sample at low angles (0--10 deg.)." [rsc:hjb]
+def: "Data which is obtained from an X-ray scattering experiment where two separate beams of X-rays scattered by a sample at low angles (0--10 deg)." [rsc:hjb]
 synonym: "2D SAXS pattern" EXACT []
 synonym: "2D-SAXS image" EXACT []
 synonym: "2D-SAXS pattern" EXACT []
@@ -23446,15 +23419,6 @@ synonym: "electron-induced PES" EXACT []
 is_a: CHMO:0000387 ! photoelectron spectroscopy
 created_by: burchh
 creation_date: 2009-08-24T02:32:13Z
-
-[Term]
-id: CHMO:0002296
-name: electron transmission spectroscopy
-def: "A type of spectroscopy where a beam of electrons with a known, narrow range of kinetic energies is passed through a gas cell and structure appearing in the attenuated 'transmitted' electron current as a function of the electron energy is observed.Electron transmission spectroscopy is used to observe temporary negative ion states in atoms and molecules." [FIX:0000669, http://digitalcommons.unl.edu/physicsburrow/6/]
-synonym: "ETS" EXACT []
-is_a: CHMO:0000331 ! electron spectroscopy
-created_by: burchh
-creation_date: 2009-08-24T02:34:18Z
 
 [Term]
 id: CHMO:0002297
@@ -23951,7 +23915,6 @@ synonym: "HRMAS spectra" EXACT []
 synonym: "HRMAS spectrum" EXACT []
 synonym: "HRMAS-NMR spectra" EXACT []
 is_a: CHMO:0000856 ! magic angle spinning nuclear magnetic resonance spectrum
-is_a: CHMO:0002440 ! magic angle spinning nuclear magnetic resonance spectrum
 created_by: burchh
 creation_date: 2009-09-04T04:00:03Z
 
@@ -25024,18 +24987,6 @@ created_by: burchh
 creation_date: 2009-09-23T01:06:22Z
 
 [Term]
-id: CHMO:0002440
-name: magic angle spinning nuclear magnetic resonance spectrum
-def: "A nuclear magnetic resonance spectrum in which line broadening has been averaged to zero by spinning the sample very rapidly at the magic angle (54.74 deg. with respect to the direction of the magnetic field)." [rsc:pr]
-synonym: "MAS NMR spectra" EXACT []
-synonym: "MAS NMR spectrum" EXACT []
-synonym: "MAS-NMR spectra" EXACT []
-synonym: "MAS-NMR spectrum" EXACT []
-is_a: CHMO:0000835 ! nuclear magnetic resonance spectrum
-created_by: burchh
-creation_date: 2009-09-23T02:25:52Z
-
-[Term]
 id: CHMO:0002441
 name: tungsten-187 nuclear magnetic resonance spectrum
 def: "A plot of chemical shift vs. intensity for tungsten-187 nuclei obtained by measuring the effect of the absorption of radio frequency radiation on nuclear spin-state transitions in the presence of a magnetic field." [rsc:pr]
@@ -25344,7 +25295,6 @@ is_a: CHMO:0000993 ! portion of material
 intersection_of: CHMO:0000993 ! portion of material
 intersection_of: BFO:0000087 CHMO:0002740 ! has role analyte role
 relationship: BFO:0000087 CHMO:0002740 ! has role analyte role
-relationship: CHMO:0000175 CHMO:0002746 ! time-resolved resonance Rayleigh scattering experimental sample
 created_by: burchh
 creation_date: 2009-09-29T11:58:40Z
 
@@ -25809,14 +25759,6 @@ def: "An electrode whose response indicates the change of some analytical variab
 is_a: CHMO:0002344 ! electrode
 created_by: burchh
 creation_date: 2009-10-07T02:43:23Z
-
-[Term]
-id: CHMO:0002507
-name: isopycnic centrifugation
-def: "A method where the components of a sample (e.g. DNA) are separated on the basis of their density in a centrifuge according to the centrifugal force they experience. A density gradient is established via equilibrium sedimentation (e.g. using caesium ions), and then analyte molecules concentrate as bands where the molecule density matches that of the surrounding solution." [FIX:0000265, rsc:hjb]
-is_a: CHMO:0001047 ! centrifugation
-created_by: burchh
-creation_date: 2009-10-09T11:16:43Z
 
 [Term]
 id: CHMO:0002508
@@ -28547,7 +28489,7 @@ is_a: CHMO:0000475 ! negative ion chemical ionisation mass spectrometry
 
 [Term]
 id: CHMO:0002750
-name: positive mode atmospheric pressure chemical ionization mass spectrometry
+name: negative mode atmospheric pressure chemical ionization mass spectrometry
 def: "Atmospheric pressure chemical ionization mass spectrometry where the sample is ionized by interaction with negative ions." [RSC:cb]
 is_a: CHMO:0000473 ! atmospheric pressure chemical ionisation mass spectrometry
 is_a: CHMO:0000476 ! positive ion chemical ionisation mass spectrometry
@@ -28564,7 +28506,7 @@ id: CHMO:0002752
 name: APCI- MS spectrum
 def: "A mass spectrum obtained from negative mode atmospheric pressure chemical ionization mass spectrometry." [RSC:cb]
 is_a: CHMO:0000807 ! chemical ionisation mass spectrum
-relationship: OBI:0000312 CHMO:0002750 ! is_specified_output_of positive mode atmospheric pressure chemical ionization mass spectrometry
+relationship: OBI:0000312 CHMO:0002750 ! is_specified_output_of negative mode atmospheric pressure chemical ionization mass spectrometry
 
 [Term]
 id: CHMO:0002753
@@ -28573,6 +28515,59 @@ def: "A spectrum obtained from a heteronuclear correlation experiment." [RSC:cb]
 synonym: "HETCOR spectrum" EXACT []
 is_a: CHMO:0000835 ! nuclear magnetic resonance spectrum
 relationship: OBI:0000312 CHMO:0000600 ! is_specified_output_of heteronuclear correlation spectroscopy
+
+[Term]
+id: CHMO:0002754
+name: C18 column
+def: "A chromatography column where the stationary phase is an octadecyl-bonded silica." [rsc:cb]
+synonym: "octadecyl silica column" EXACT []
+synonym: "ODS column" EXACT []
+is_a: CHMO:0000976 ! high-performance liquid chromatography column
+
+[Term]
+id: CHMO:0002755
+name: two-dimensional high performance liquid chromatography
+def: "High performance liquid chromatography where initial separation proceeds in a primary column and parts of the eleuent from this column are into a secondary column." [rsc:cb]
+synonym: "2D HPLC" EXACT []
+synonym: "two-dimensional HPLC" EXACT []
+is_a: CHMO:0001835 ! two-dimensional liquid chromatography
+is_a: CHMO:0001997 ! multi-dimensional high-performance liquid chromatography
+
+[Term]
+id: CHMO:0002756
+name: cell membrane chromatography
+def: "Affinity chromatography where a cell membrane has been immobilized on a silica carrier." [rsc:cb]
+xref: doi:10.1007/BF02885029
+is_a: CHMO:0001006 ! affinity chromatography
+
+[Term]
+id: CHMO:0002757
+name: methoxyamination derivatisation
+def: "Derivatisation of a metabolite by addition of pyridinic methoxyamine to stabilise carbonyl moieties." [doi:10.1039/9781847558107-00254, rsc:cb]
+comment: this typically happens prior to GC-MS, but not LC-MS
+synonym: "methoxyamination derivatization" EXACT []
+is_a: CHMO:0001485 ! derivatisation
+
+[Term]
+id: CHMO:0002758
+name: trimethylsilyl derivatisation
+def: "Derivatisation of a metabolite by addition of a trimethylsilyl reagent to protect functional groups such as hydroxy, carboxylic acid, thio and amine groups." [doi:10.1039/9781847558107-00254, rsc:cb]
+comment: this typically happens prior to GC-MS, but not LC-MS
+synonym: "TMS derivatisation" EXACT []
+synonym: "trimethylsilyl derivatization" EXACT []
+is_a: CHMO:0001485 ! derivatisation
+
+[Term]
+id: CHMO:0002759
+name: water:chloroform 2:1 extraction
+def: "Extraction of plant metabolites using a 2:1 v/v mixture of water and chloroform." [rsc:cb]
+is_a: CHMO:0001598 ! solvent extraction
+
+[Term]
+id: CHMO:0002760
+name: water:methanol:chloroform 1:3:1 extraction
+def: "Extraction of plant metabolites using a 1:3:1 v/v mixture of water, methanol and chloroform." [doi:10.1039/9781847558107-00254, rsc:cb]
+is_a: CHMO:0001598 ! solvent extraction
 
 [Term]
 id: IAO:0000030
