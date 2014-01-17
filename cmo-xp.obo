@@ -28482,47 +28482,46 @@ relationship: CHMO:0002748 CHEBI:23377 ! has analyte copper molecular entity
 
 [Term]
 id: CHMO:0002749
-name: positive mode atmospheric pressure chemical ionization mass spectrometry
-def: "Atmospheric pressure chemical ionization mass spectrometry where the sample is ionized by interaction with positive ions." [RSC:cb]
-is_a: CHMO:0000473 ! atmospheric pressure chemical ionisation mass spectrometry
-is_a: CHMO:0000475 ! negative ion chemical ionisation mass spectrometry
+name: retention index
+def: "An experimental method output that consists of a number relating the adjusted retention volume or retention factor of the sample component to the adjusted retention volumes or retention factors of standards eluted before and after the peak of the sample component." [RSC:cb]
+xref: http://goldbook.iupac.org/R05360.html
+is_a: CHMO:0000793 ! experimental method output
+relationship: OBI:0000312 CHMO:0001001 ! is_specified_output_of column chromatography
 
 [Term]
 id: CHMO:0002750
-name: negative mode atmospheric pressure chemical ionization mass spectrometry
-def: "Atmospheric pressure chemical ionization mass spectrometry where the sample is ionized by interaction with negative ions." [RSC:cb]
-is_a: CHMO:0000473 ! atmospheric pressure chemical ionisation mass spectrometry
-is_a: CHMO:0000476 ! positive ion chemical ionisation mass spectrometry
+name: ion source temperature setting
+def: "The operating temperature to which an ion source is set." [RSC:cb]
+is_a: IAO:0000140 ! setting datum
+relationship: IAO:0000136 CHMO:0000960 ! is_about ion source
 
 [Term]
 id: CHMO:0002751
-name: APCI+ MS spectrum
-def: "A mass spectrum obtained from positive mode atmospheric pressure chemical ionization mass spectrometry." [RSC:cb]
-is_a: CHMO:0000807 ! chemical ionisation mass spectrum
-relationship: OBI:0000312 CHMO:0002749 ! is_specified_output_of positive mode atmospheric pressure chemical ionization mass spectrometry
+name: carrier gas flow rate
+def: "The volume of carrier gas passing through a chromatography column in unit time." [RSC:cb]
+xref: http://goldbook.iupac.org/F02439.html
+is_a: CHMO:0000793 ! experimental method output
+relationship: IAO:0000136 CHMO:0000996 ! is_about gaseous mobile phase
 
 [Term]
 id: CHMO:0002752
-name: APCI- MS spectrum
-def: "A mass spectrum obtained from negative mode atmospheric pressure chemical ionization mass spectrometry." [RSC:cb]
-is_a: CHMO:0000807 ! chemical ionisation mass spectrum
-relationship: OBI:0000312 CHMO:0002750 ! is_specified_output_of negative mode atmospheric pressure chemical ionization mass spectrometry
+name: chromatography column length
+def: "The length specified for a chromatography column." [RSC:cb]
+is_a: CHMO:0002761 ! equipment specification datum
+relationship: IAO:0000136 CHMO:0000997 ! is_about chromatography column
 
 [Term]
 id: CHMO:0002753
-name: heteronuclear correlation spectrum
-def: "A spectrum obtained from a heteronuclear correlation experiment." [RSC:cb]
-synonym: "HETCOR spectrum" EXACT []
-is_a: CHMO:0000835 ! nuclear magnetic resonance spectrum
-relationship: OBI:0000312 CHMO:0000600 ! is_specified_output_of heteronuclear correlation spectroscopy
+name: chromatography column inner diameter
+def: "The inner diameter specified for a chromatography column." [RSC:cb]
+is_a: CHMO:0002761 ! equipment specification datum
+relationship: IAO:0000136 CHMO:0000997 ! is_about chromatography column
 
 [Term]
 id: CHMO:0002754
-name: C18 column
-def: "A chromatography column where the stationary phase is an octadecyl-bonded silica." [rsc:cb]
-synonym: "octadecyl silica column" EXACT []
-synonym: "ODS column" EXACT []
-is_a: CHMO:0000976 ! high-performance liquid chromatography column
+name: chromatography temperature program
+def: "The plan specification for the temperatures in different places and times in a chromatography experiment." [RSC:cb]
+is_a: IAO:0000104 ! plan specification
 
 [Term]
 id: CHMO:0002755
@@ -28570,9 +28569,89 @@ def: "Extraction of plant metabolites using a 1:3:1 v/v mixture of water, methan
 is_a: CHMO:0001598 ! solvent extraction
 
 [Term]
+id: CHMO:0002761
+name: equipment specification datum
+def: "A data item that describes a non-adjustable specification of a piece of equipment." [RSC:cb]
+comment: Example: the length of a chromatography column as ordered from a supplier or indeed a glassblower. To be distinguished from a 'setting datum', IAO:0000140, which I take to be an adjustable parameter. Placeholder for now.
+is_a: IAO:0000027 ! data item
+
+[Term]
+id: CHMO:0002762
+name: negative mode atmospheric pressure chemical ionization mass spectrometry
+def: "Atmospheric pressure chemical ionization mass spectrometry where the sample is ionized by interaction with negative ions." [RSC:cb]
+is_a: CHMO:0000473 ! atmospheric pressure chemical ionisation mass spectrometry
+is_a: CHMO:0000476 ! positive ion chemical ionisation mass spectrometry
+
+[Term]
+id: CHMO:0002763
+name: positive mode atmospheric pressure chemical ionization mass spectrometry
+def: "Atmospheric pressure chemical ionization mass spectrometry where the sample is ionized by interaction with positive ions." [RSC:cb]
+is_a: CHMO:0000473 ! atmospheric pressure chemical ionisation mass spectrometry
+is_a: CHMO:0000475 ! negative ion chemical ionisation mass spectrometry
+
+[Term]
+id: CHMO:0002764
+name: APCI+ MS spectrum
+def: "A mass spectrum obtained from positive mode atmospheric pressure chemical ionization mass spectrometry." [RSC:cb]
+is_a: CHMO:0000807 ! chemical ionisation mass spectrum
+relationship: OBI:0000312 CHMO:0002763 ! is_specified_output_of positive mode atmospheric pressure chemical ionization mass spectrometry
+
+[Term]
+id: CHMO:0002765
+name: APCI- MS spectrum
+def: "A mass spectrum obtained from negative mode atmospheric pressure chemical ionization mass spectrometry." [RSC:cb]
+is_a: CHMO:0000807 ! chemical ionisation mass spectrum
+relationship: OBI:0000312 CHMO:0002762 ! is_specified_output_of negative mode atmospheric pressure chemical ionization mass spectrometry
+
+[Term]
+id: CHMO:0002766
+name: heteronuclear correlation spectrum
+def: "A spectrum obtained from a heteronuclear correlation experiment." [RSC:cb]
+synonym: "HETCOR spectrum" EXACT []
+is_a: CHMO:0000835 ! nuclear magnetic resonance spectrum
+relationship: OBI:0000312 CHMO:0000600 ! is_specified_output_of heteronuclear correlation spectroscopy
+
+[Term]
+id: CHMO:0002767
+name: C18 column
+def: "A chromatography column where the stationary phase is an octadecyl-bonded silica." [rsc:cb]
+synonym: "octadecyl silica column" EXACT []
+synonym: "ODS column" EXACT []
+is_a: CHMO:0000976 ! high-performance liquid chromatography column
+
+[Term]
+id: CHMO:0002768
+name: gas chromatograph-mass spectrometer transfer line
+def: "A piece of apparatus connecting a gas chromatograph to a mass spectrometer." [RSC:cb]
+is_a: CHMO:0000998 ! piece of apparatus
+
+[Term]
+id: CHMO:0002769
+name: gas chromatograph-mass spectrometer transfer line temperature setting
+def: "The specified temperature for a gas chromatograph-mass spectrometer transfer line." [RSC:cb]
+is_a: IAO:0000140 ! setting datum
+relationship: BFO:0000137 CHMO:0002754 ! proper part of continuant at all times chromatography temperature program
+relationship: IAO:0000136 CHMO:0002768 ! is_about gas chromatograph-mass spectrometer transfer line
+
+[Term]
+id: IAO:0000027
+name: data item
+is_a: IAO:0000030 ! information content entity
+
+[Term]
 id: IAO:0000030
 name: information content entity
 is_a: BFO:0000031 ! generically dependent continuant
+
+[Term]
+id: IAO:0000104
+name: plan specification
+is_a: IAO:0000030 ! information content entity
+
+[Term]
+id: IAO:0000140
+name: setting datum
+is_a: IAO:0000027 ! data item
 
 [Term]
 id: OBI:0000011
@@ -28606,6 +28685,10 @@ name: has continuant part at all times
 [Typedef]
 id: BFO:0000118
 name: has proper occurrent part
+
+[Typedef]
+id: BFO:0000137
+name: proper part of continuant at all times
 
 [Typedef]
 id: BFO:0000174
