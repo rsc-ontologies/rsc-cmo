@@ -1,6 +1,5 @@
 format-version: 1.2
-data-version: releases/2013-03-05
-date: 20:05:2013 11:58
+data-version: releases/2014-02-11
 saved-by: batchelorc
 synonymtypedef: non-mining_synonym "Non-mining synonym" EXACT
 ontology: cmo-xp
@@ -10404,8 +10403,8 @@ def: "A fluid that percolates through or along the stationary bed in chromatogra
 synonym: "eluent" EXACT []
 is_a: CHMO:0000994 ! chromatographic phase
 intersection_of: CHMO:0000994 ! chromatographic phase
-intersection_of: BFO:0000085 CHMO:0002742 ! BFO:0000085 elution
-relationship: BFO:0000085 CHMO:0002742 ! BFO:0000085 elution
+intersection_of: BFO:0000085 CHMO:0002742 ! has function at some time elution
+relationship: BFO:0000085 CHMO:0002742 ! has function at some time elution
 
 [Term]
 id: CHMO:0000996
@@ -10429,6 +10428,7 @@ is_a: CHMO:0000993 ! portion of material
 id: CHMO:0000999
 name: separation method
 def: "A method that results in the separation of two or more components according to some property." [FIX:0000002, rsc:cb]
+synonym: "partition" EXACT []
 is_a: CHMO:0001267 ! sample transformation method
 
 [Term]
@@ -11578,12 +11578,13 @@ creation_date: 2009-03-06T04:58:01Z
 
 [Term]
 id: CHMO:0001131
-name: preparation method
+name: sample preparation step
 alt_id: CHMO:0001461
-def: "Any method used to modify an existing sample." [FIX:0000258, rsc:hjb]
+def: "Any method used to modify an existing sample." [rsc:hjb]
 synonym: "preparative method" EXACT []
 synonym: "sample preparation" EXACT []
 synonym: "sample preparative method" EXACT []
+xref: FIX:0000258
 is_a: CHMO:0001267 ! sample transformation method
 created_by: batchelorc
 creation_date: 2009-03-06T05:22:11Z
@@ -11592,7 +11593,7 @@ creation_date: 2009-03-06T05:22:11Z
 id: CHMO:0001132
 name: laser ablation
 def: "A sample preparation method where material is removed from a specimen by illuminating it with a laser beam." [rsc:cb]
-is_a: CHMO:0001131 ! preparation method
+is_a: CHMO:0001131 ! sample preparation step
 created_by: batchelorc
 creation_date: 2009-03-06T05:23:07Z
 
@@ -14919,7 +14920,7 @@ name: peptisation
 def: "Reversal of coagulation or flocculation, i.e., the dispersion of aggregates to form a colloidally stable suspension or emulsion" [DOI:10.1351/pac200779101801]
 synonym: "deflocculation" EXACT []
 synonym: "peptization" EXACT []
-is_a: CHMO:0001131 ! preparation method
+is_a: CHMO:0001131 ! sample preparation step
 created_by: burchh
 creation_date: 2009-05-18T09:45:58Z
 
@@ -14949,27 +14950,27 @@ synonym: "aging" EXACT []
 synonym: "dispersion hardening" EXACT []
 synonym: "precipitate ageing" EXACT []
 synonym: "precipitation hardening" EXACT []
-is_a: CHMO:0001131 ! preparation method
+is_a: CHMO:0001131 ! sample preparation step
 
 [Term]
 id: CHMO:0001465
 name: annealing
 def: "A heat treatment that alters the microstructure of a material causing changes in its properties such as strength and hardness" [rsc:hjb]
-is_a: CHMO:0001131 ! preparation method
+is_a: CHMO:0002770 ! heating
 
 [Term]
 id: CHMO:0001466
 name: atomisation
 def: "The conversion of a vaporized sample into atomic components." [rsc:hjb]
 synonym: "atomization" EXACT []
-is_a: CHMO:0001131 ! preparation method
+is_a: CHMO:0001131 ! sample preparation step
 
 [Term]
 id: CHMO:0001467
 name: calcination
 def: "The heating of a sample to high temperatures in air or oxygen." [rsc:hjb]
 synonym: "calcining" EXACT []
-is_a: CHMO:0001131 ! preparation method
+is_a: CHMO:0002770 ! heating
 
 [Term]
 id: CHMO:0001468
@@ -14977,20 +14978,20 @@ name: carbo-reduction
 def: "A process in which a metal oxide is reduced in the presence of carbon or a carbon-containing compound." [rsc:hjb]
 synonym: "carbo reduction" EXACT []
 synonym: "carboreduction" EXACT []
-is_a: CHMO:0001131 ! preparation method
+is_a: CHMO:0001131 ! sample preparation step
 
 [Term]
 id: CHMO:0001469
 name: ceramisation
 def: "A process in which a ceramic precursor is converted into a ceramic." [rsc:hjb]
 synonym: "ceramization" EXACT []
-is_a: CHMO:0001131 ! preparation method
+is_a: CHMO:0001131 ! sample preparation step
 
 [Term]
 id: CHMO:0001470
 name: coating method
 def: "The application of a thin cover to a sample." [rsc:hjb]
-is_a: CHMO:0001131 ! preparation method
+is_a: CHMO:0001131 ! sample preparation step
 
 [Term]
 id: CHMO:0001471
@@ -15013,13 +15014,13 @@ id: CHMO:0001473
 name: combustion
 def: "An exothermic chemical reaction between a fuel (usually a hydrocarbon) and an oxidant (usually oxygen) which is sometimes accompanied by the production of light." [rsc:hjb]
 synonym: "burning" EXACT []
-is_a: CHMO:0001131 ! preparation method
+is_a: CHMO:0001131 ! sample preparation step
 
 [Term]
 id: CHMO:0001474
 name: sample cooling
 def: "The transfer of thermal energy from a sample to its surrounding environment." [rsc:hjb]
-is_a: CHMO:0001131 ! preparation method
+is_a: CHMO:0001131 ! sample preparation step
 
 [Term]
 id: CHMO:0001475
@@ -15039,7 +15040,7 @@ id: CHMO:0001477
 name: crystallisation
 def: "The formation of a crystalline solid from a solution, melt vapour, or a different solid phase, generally by lowering the temperature or by evaporation of a solvent." [AU:C01434, FIX:0000214]
 synonym: "crystallization" EXACT []
-is_a: CHMO:0001131 ! preparation method
+is_a: CHMO:0001131 ! sample preparation step
 
 [Term]
 id: CHMO:0001478
@@ -15063,7 +15064,7 @@ is_a: CHMO:0001477 ! crystallisation
 id: CHMO:0001480
 name: curing
 def: "A chemical process in which a prepolymer or polymer is converted into a polymer of higher molar mass and then into a network." [rsc:crb]
-is_a: CHMO:0001131 ! preparation method
+is_a: CHMO:0001131 ! sample preparation step
 
 [Term]
 id: CHMO:0001481
@@ -15093,14 +15094,14 @@ is_a: CHMO:0001480 ! curing
 id: CHMO:0001484
 name: densification
 def: "The removal of impurities and elimination of pores from a xerogel (a gel that has been dried with unhindered shrinkage)." [rsc:crb]
-is_a: CHMO:0001131 ! preparation method
+is_a: CHMO:0001131 ! sample preparation step
 
 [Term]
 id: CHMO:0001485
 name: derivatisation
 def: "The transformation of a chemical compound (the 'educt') into another similar compound (the 'derivative') by altering one or more of its functional groups. Derviatisation is generally perfomed to alter reactivity or change a physical property such as solubility, boiling point, melting point, thermal stability etc. " [rsc:hjb]
 synonym: "derivatization" EXACT []
-is_a: CHMO:0001131 ! preparation method
+is_a: CHMO:0001131 ! sample preparation step
 
 [Term]
 id: CHMO:0001486
@@ -15115,7 +15116,7 @@ is_a: CHMO:0001485 ! derivatisation
 id: CHMO:0001487
 name: decomposition
 def: "The breakdown of a single phase into two or more phases by heating or treatment with acid, alkali or enzymes. " [AU:D01547]
-is_a: CHMO:0001131 ! preparation method
+is_a: CHMO:0001131 ! sample preparation step
 
 [Term]
 id: CHMO:0001488
@@ -15209,6 +15210,7 @@ id: CHMO:0001500
 name: thermal decomposition
 def: "The separation of a chemical compound into elements or smaller compounds by heating it to a high temperature (approx. 1000 deg. C)." [rsc:hjb]
 is_a: CHMO:0001487 ! decomposition
+is_a: CHMO:0002770 ! heating
 
 [Term]
 id: CHMO:0001501
@@ -15256,9 +15258,11 @@ is_a: CHMO:0001502 ! pyrolysis
 
 [Term]
 id: CHMO:0001508
-name: in-source pyrolysis
+name: ion-source pyrolysis
 def: "The chemical degradation of a sample by thermal energy in which the reactor is located within the ion source of a mass spectrometer." [OrangeBook:5.3]
+comment: try to find a located_in relationship
 is_a: CHMO:0001502 ! pyrolysis
+relationship: BFO:0000057 CHMO:0000960 ! has participant ion source
 
 [Term]
 id: CHMO:0001509
@@ -15348,7 +15352,7 @@ is_a: CHMO:0001500 ! thermal decomposition
 id: CHMO:0001522
 name: dialysis
 def: "The separation of molecules in solution by the difference in their rates of diffusion through a semipermeable membrane." [rsc:hjb]
-is_a: CHMO:0001131 ! preparation method
+is_a: CHMO:0001131 ! sample preparation step
 
 [Term]
 id: CHMO:0001523
@@ -15367,7 +15371,7 @@ is_a: CHMO:0001522 ! dialysis
 id: CHMO:0001525
 name: sample dispersion
 def: "The distribution of particles of one phase in a continuous phase of a different nature." [rsc:hjb]
-is_a: CHMO:0001131 ! preparation method
+is_a: CHMO:0001131 ! sample preparation step
 
 [Term]
 id: CHMO:0001526
@@ -15387,7 +15391,7 @@ id: CHMO:0001528
 name: dissection
 def: "The disassembly of an object to determine its internal structure." [rsc:hjb]
 synonym: "anatomization" EXACT []
-is_a: CHMO:0001131 ! preparation method
+is_a: CHMO:0001131 ! sample preparation step
 
 [Term]
 id: CHMO:0001529
@@ -15417,7 +15421,7 @@ is_a: CHMO:0001530 ! laser micro-dissection
 id: CHMO:0001532
 name: distillation
 def: "A method of separating mixtures based on differences in their volatilities in a boiling liquid mixture. The components in a sample mixture are vaporised by the application of heat and then cooled by the action of cold water in a condenser." [rsc:hjb]
-is_a: CHMO:0001131 ! preparation method
+is_a: CHMO:0001131 ! sample preparation step
 
 [Term]
 id: CHMO:0001533
@@ -15493,7 +15497,7 @@ id: CHMO:0001544
 name: droplet dispensing
 def: "The controlled dropwise release of a liquid." [rsc:hjb]
 synonym: "drop dispensing" EXACT []
-is_a: CHMO:0001131 ! preparation method
+is_a: CHMO:0001131 ! sample preparation step
 
 [Term]
 id: CHMO:0001545
@@ -15531,7 +15535,7 @@ id: CHMO:0001549
 name: sample drying
 def: "The process of removing a solvent from a substance." [rsc:hjb]
 synonym: "drying" EXACT non-mining_synonym []
-is_a: CHMO:0001131 ! preparation method
+is_a: CHMO:0001131 ! sample preparation step
 
 [Term]
 id: CHMO:0001550
@@ -15592,7 +15596,7 @@ is_a: CHMO:0001549 ! sample drying
 id: CHMO:0001558
 name: etching
 def: "The process of chemically removing a thin layer from a sample surface, usually to leave behind a pattern." [rsc:hjb]
-is_a: CHMO:0001131 ! preparation method
+is_a: CHMO:0001131 ! sample preparation step
 
 [Term]
 id: CHMO:0001559
@@ -15706,13 +15710,13 @@ id: CHMO:0001573
 name: electroporation
 def: "A method for introducing polar molecules into a host cell through the cell membrane. A large electric pulse (300--400 mV for <1 ms) temporarily disturbs the phospholipid bilayer, allowing molecules like DNA to pass into the cell." [rsc:hjb]
 synonym: "electropermeabilization" EXACT []
-is_a: CHMO:0001131 ! preparation method
+is_a: CHMO:0001131 ! sample preparation step
 
 [Term]
 id: CHMO:0001574
 name: evaporation
 def: "The physical process by which a liquid substance is converted to a gas or vapour. This may occur at or below the normal boiling point of the liquid (the temperature at which a liquid boils at 1 atmosphere pressure) and the process is endothermic." [AU:E02227]
-is_a: CHMO:0001131 ! preparation method
+is_a: CHMO:0001131 ! sample preparation step
 
 [Term]
 id: CHMO:0001575
@@ -15730,7 +15734,7 @@ is_a: CHMO:0002208 ! solvent evaporation
 id: CHMO:0001577
 name: extraction
 def: "The transfer of a solute from a liquid phase to another immiscible or partially-miscible liquid phase in contact with it." [OrangeBook:9.4.1]
-is_a: CHMO:0001131 ! preparation method
+is_a: CHMO:0001131 ! sample preparation step
 
 [Term]
 id: CHMO:0001578
@@ -15873,6 +15877,7 @@ synonym: "stir bar sorptive extraction" EXACT []
 synonym: "stir-bar solid phase extraction" EXACT []
 synonym: "stir-bar sorptive extraction" EXACT []
 is_a: CHMO:0001583 ! liquid--solid extraction
+relationship: BFO:0000057 CHMO:0002776 ! has participant stir bar
 
 [Term]
 id: CHMO:0001592
@@ -16068,7 +16073,7 @@ name: extrusion
 def: "A process used to create objects of a fixed cross-sectional profile by forcing or drawing a material through a die." [rsc:hjb]
 synonym: "extrusion molding" EXACT []
 synonym: "extrusion moulding" EXACT []
-is_a: CHMO:0001131 ! preparation method
+is_a: CHMO:0001131 ! sample preparation step
 
 [Term]
 id: CHMO:0001614
@@ -16139,13 +16144,13 @@ is_a: CHMO:0001618 ! spinning
 id: CHMO:0001624
 name: fermentation
 def: "The process in which cells (microorganisms, plant or animal cells) are cultured in a bioreactor in a liquid or solid medium to convert organic substances into biomass (growth) or into products." [AU:F02337]
-is_a: CHMO:0001131 ! preparation method
+is_a: CHMO:0001131 ! sample preparation step
 
 [Term]
 id: CHMO:0001625
 name: fractionation
 def: "The process of dividing up a sample mixture into smaller quantities according to their physical (e.g. size, solubility) or chemical (e.g. bonding, reactivity) properties." [rsc:hjb]
-is_a: CHMO:0001131 ! preparation method
+is_a: CHMO:0001131 ! sample preparation step
 
 [Term]
 id: CHMO:0001626
@@ -16274,7 +16279,7 @@ is_a: CHMO:0001638 ! plasma protein fractionation
 id: CHMO:0001640
 name: filtration
 def: "The process of segregation of phases; the separation of suspended solids from a liquid or gas, usually by forcing a carrier gas or liquid through a porous medium." [AU:F02388]
-is_a: CHMO:0001131 ! preparation method
+is_a: CHMO:0001131 ! sample preparation step
 
 [Term]
 id: CHMO:0001641
@@ -16317,7 +16322,7 @@ is_a: CHMO:0001640 ! filtration
 id: CHMO:0001646
 name: gelation
 def: "The formation of a gel or solidification of a gelatin solution caused by a change in conditions (such as temperature or pH)." [rsc:hjb]
-is_a: CHMO:0001131 ! preparation method
+is_a: CHMO:0001131 ! sample preparation step
 
 [Term]
 id: CHMO:0001647
@@ -16358,7 +16363,7 @@ synonym: "dry grinding" EXACT []
 synonym: "milling" EXACT []
 synonym: "solid-state grinding" EXACT []
 synonym: "solvent-free grinding" EXACT []
-is_a: CHMO:0001131 ! preparation method
+is_a: CHMO:0001131 ! sample preparation step
 
 [Term]
 id: CHMO:0001653
@@ -16401,7 +16406,7 @@ id: CHMO:0001658
 name: ionisation method
 def: "The physical process of converting an atom or molecule into an ion by removing electrons." [rsc:hjb]
 synonym: "ionization method" EXACT []
-is_a: CHMO:0001131 ! preparation method
+is_a: CHMO:0001131 ! sample preparation step
 
 [Term]
 id: CHMO:0001659
@@ -16525,7 +16530,7 @@ is_a: CHMO:0001669 ! chemical ionisation
 id: CHMO:0001673
 name: isostatic pressing
 def: "The process of pressing a powder under a gas or liquid so that pressure is transmitted equally in all directions." [rsc:hjb]
-is_a: CHMO:0001131 ! preparation method
+is_a: CHMO:0001131 ! sample preparation step
 
 [Term]
 id: CHMO:0001674
@@ -16541,7 +16546,7 @@ id: CHMO:0001675
 name: labelling
 def: "The process of attaching a label onto a substance. Labels are molecular entities that facilitate the detection (through fluorescence, radioactivity, etc.) of the species to which they are attached." [CHEBI:35209, rsc:hjb]
 synonym: "labeling" EXACT []
-is_a: CHMO:0001131 ! preparation method
+is_a: CHMO:0001131 ! sample preparation step
 
 [Term]
 id: CHMO:0001676
@@ -16592,13 +16597,13 @@ is_a: CHMO:0001675 ! labelling
 id: CHMO:0001681
 name: leaching
 def: "The dissolution of material from a solid phase into a liquid in which it is not wholly soluble." [OrangeBook:9.4.1]
-is_a: CHMO:0001131 ! preparation method
+is_a: CHMO:0001131 ! sample preparation step
 
 [Term]
 id: CHMO:0001682
 name: sample melting
 def: "The process of heating a substance to cause the solid--liquid phase change." [rsc:hjb]
-is_a: CHMO:0001131 ! preparation method
+is_a: CHMO:0001131 ! sample preparation step
 
 [Term]
 id: CHMO:0001683
@@ -16619,27 +16624,27 @@ is_a: CHMO:0001683 ! skull melting
 id: CHMO:0001685
 name: mixing
 def: "The combining of components, particles or layers into a more homogeneous state. The mixing may be achieved manually or mechanically by shifting the material with stirrers or pumps or by revolving or shaking the container. The process must not permit segregation of particles of different size or properties. Homogeneity may be considered to have been achieved in a practical sense when the sampling error of the processed portion is negligible compared to the total error of the measurement system." [AU:M03945]
-is_a: CHMO:0001131 ! preparation method
+is_a: CHMO:0001131 ! sample preparation step
 
 [Term]
 id: CHMO:0001686
 name: Ostwald ripening
 def: "The growth of larger crystals from those of smaller size, which have a higher solubility that the larger ones." [OrangeBook:9.5]
 synonym: "Ostwald-ripening" EXACT []
-is_a: CHMO:0001131 ! preparation method
+is_a: CHMO:0001131 ! sample preparation step
 
 [Term]
 id: CHMO:0001687
 name: photodegradation
 def: "The photochemical transformation of a molecule into lower molecular weight fragments, usually in an oxidation process." [AU:P04595]
 synonym: "photo-degradation" EXACT []
-is_a: CHMO:0001131 ! preparation method
+is_a: CHMO:0001131 ! sample preparation step
 
 [Term]
 id: CHMO:0001688
 name: precipitation
 def: "The sedimentation of a solid material (a 'precipitate') from a liquid solution in which the material is present in amounts greater than its solubility in the liquid." [AU:P04795]
-is_a: CHMO:0001131 ! preparation method
+is_a: CHMO:0001131 ! sample preparation step
 
 [Term]
 id: CHMO:0001689
@@ -16705,7 +16710,7 @@ is_a: CHMO:0001688 ! precipitation
 id: CHMO:0001698
 name: radiolysis
 def: "The cleavage of one or more bonds resulting from exposure to high-energy radiation." [AU:R05112]
-is_a: CHMO:0001131 ! preparation method
+is_a: CHMO:0001131 ! sample preparation step
 
 [Term]
 id: CHMO:0001699
@@ -16723,7 +16728,7 @@ is_a: CHMO:0001698 ! radiolysis
 id: CHMO:0001701
 name: sintering
 def: "The fusing together of small particles by heating the sample below its melting point until its particles adhere to each other." [rsc:hjb]
-is_a: CHMO:0001131 ! preparation method
+is_a: CHMO:0001131 ! sample preparation step
 
 [Term]
 id: CHMO:0001702
@@ -16768,7 +16773,7 @@ is_a: CHMO:0001703 ! solid-state sintering
 id: CHMO:0001707
 name: sonication
 def: "The irradiation of a liquid sample with sound (20--20 000 Hz) waves resulting in agitation. Sound waves propagate into the liquid media result in alternating high-pressure (compression) and low-pressure (rarefaction) cycles. During rarefaction, high-intensity sonic waves create small vacuum bubbles or voids in the liquid, which then collapse violently (cavitation) during compression, creating very high local temperatures." [AU:S05766]
-is_a: CHMO:0001131 ! preparation method
+is_a: CHMO:0001131 ! sample preparation step
 
 [Term]
 id: CHMO:0001708
@@ -20889,7 +20894,7 @@ creation_date: 2009-06-30T10:43:24Z
 id: CHMO:0002066
 name: trituration
 def: "A process used to purify crude chemical compounds containing solid impurities. A solvent is chosen in which the desired product is insoluble and the undesired by-products are very soluble (or vice versa). The crude material is washed with the solvent and filtered away, leaving the purified product in solid form and any impurities in solution." [rsc:hjb]
-is_a: CHMO:0001131 ! preparation method
+is_a: CHMO:0001131 ! sample preparation step
 created_by: burchh
 creation_date: 2009-07-01T02:42:13Z
 
@@ -21834,7 +21839,7 @@ creation_date: 2009-07-11T03:52:20Z
 id: CHMO:0002151
 name: passivation
 def: "Any process that makes one sample unreactive to another, prior to using the samples together." [rsc:hjb]
-is_a: CHMO:0001131 ! preparation method
+is_a: CHMO:0001131 ! sample preparation step
 created_by: burchh
 creation_date: 2009-07-11T04:28:44Z
 
@@ -21895,7 +21900,7 @@ id: CHMO:0002157
 name: deionisation method
 def: "The removal of ions from a solution using an ion-exchange method." [rsc:hjb]
 synonym: "deionization" EXACT []
-is_a: CHMO:0001131 ! preparation method
+is_a: CHMO:0001131 ! sample preparation step
 created_by: burchh
 creation_date: 2009-07-13T01:17:32Z
 
@@ -22331,7 +22336,7 @@ creation_date: 2009-07-21T01:15:45Z
 id: CHMO:0002196
 name: activation
 def: "Any process that involves preparing or exciting a sample for a subsequent reaction." [rsc:hjb]
-is_a: CHMO:0001131 ! preparation method
+is_a: CHMO:0001131 ! sample preparation step
 created_by: burchh
 creation_date: 2009-07-21T03:00:23Z
 
@@ -22446,6 +22451,7 @@ creation_date: 2009-07-24T02:18:50Z
 id: CHMO:0002208
 name: solvent evaporation
 def: "The removal of solvent from a sample, usually by the application of heat." [rsc:hjb]
+synonym: "drying" EXACT []
 is_a: CHMO:0001574 ! evaporation
 created_by: burchh
 creation_date: 2009-07-24T02:31:03Z
@@ -22522,11 +22528,9 @@ creation_date: 2009-07-28T01:20:14Z
 
 [Term]
 id: CHMO:0002215
-name: dry--wet phase inversion technique
+name: dry-wet phase inversion technique
 def: "A technique for preparing a polymer membrane by mixing polymer and solvent, then casting this solution onto a surface and allowing the solvent to partially evaporate. The film is them immersed in a nonsolvent causing solidification." [ISBN:3540739939]
 synonym: "dry-wet phase inversion technique" EXACT []
-synonym: "Loeb--Sourirajan method" EXACT []
-synonym: "Loeb--Sourirajan technique" EXACT []
 synonym: "Loeb-Sourirajan method" EXACT []
 synonym: "Loeb-Sourirajan technique" EXACT []
 is_a: CHMO:0002214 ! phase inversion technique
@@ -22547,7 +22551,7 @@ creation_date: 2009-07-28T01:23:05Z
 id: CHMO:0002217
 name: sublimation
 def: "Any technique used to purify samples by forcing it to pass from the solid to gas phase without passing through an intermediate liquid phase." [rsc:hjb]
-is_a: CHMO:0001131 ! preparation method
+is_a: CHMO:0001131 ! sample preparation step
 created_by: burchh
 creation_date: 2009-07-28T03:22:04Z
 
@@ -22691,7 +22695,7 @@ creation_date: 2009-07-29T09:59:13Z
 id: CHMO:0002231
 name: purification
 def: "Any technique used to physically separate an analyte from byproducts, reagents or contaminating substances." [rsc:hjb]
-is_a: CHMO:0001131 ! preparation method
+is_a: CHMO:0001131 ! sample preparation step
 created_by: burchh
 creation_date: 2009-07-29T03:59:53Z
 
@@ -26118,7 +26122,7 @@ synonym: "programmed temperature vaporization" EXACT []
 synonym: "programmed-temperature vaporisation" EXACT []
 synonym: "programmed-temperature vaporization" EXACT []
 synonym: "PTV" EXACT []
-is_a: CHMO:0001131 ! preparation method
+is_a: CHMO:0001131 ! sample preparation step
 created_by: burchh
 creation_date: 2009-10-21T06:16:02Z
 
@@ -26214,7 +26218,7 @@ creation_date: 2009-10-23T02:02:34Z
 id: CHMO:0002548
 name: polymer preparation method
 def: "Any experimental method used to prepare polymer samples." [rsc:hjb]
-is_a: CHMO:0001131 ! preparation method
+is_a: CHMO:0001131 ! sample preparation step
 created_by: burchh
 creation_date: 2009-10-23T02:18:04Z
 
@@ -26733,7 +26737,7 @@ creation_date: 2009-11-13T01:16:15Z
 id: CHMO:0002598
 name: glow discharge synthesis
 def: "A synthesis method where an electrical discharge is passed under reduced pressure between two electrodes." [rsc:hjb]
-is_a: CHMO:0001131 ! preparation method
+is_a: CHMO:0001131 ! sample preparation step
 created_by: burchh
 creation_date: 2009-11-14T11:00:18Z
 
@@ -28468,8 +28472,8 @@ name: experimental sample
 def: "A portion of material that is the subject of an experiment." [rsc:cb]
 is_a: CHMO:0000993 ! portion of material
 intersection_of: CHMO:0000993 ! portion of material
-intersection_of: BFO:0000085 CHMO:0002745 ! BFO:0000085 experimental sample function
-relationship: BFO:0000085 CHMO:0002745 ! BFO:0000085 experimental sample function
+intersection_of: BFO:0000085 CHMO:0002745 ! has function at some time experimental sample function
+relationship: BFO:0000085 CHMO:0002745 ! has function at some time experimental sample function
 
 [Term]
 id: CHMO:0002747
@@ -28634,6 +28638,51 @@ relationship: BFO:0000137 CHMO:0002754 ! proper part of continuant at all times 
 relationship: IAO:0000136 CHMO:0002768 ! is_about gas chromatograph-mass spectrometer transfer line
 
 [Term]
+id: CHMO:0002770
+name: heating
+def: "A sample preparation step involving the increase in temperature of a sample." [RSC:cb]
+comment: ought to be in OBI. Will put here pro tem.
+is_a: CHMO:0001131 ! sample preparation step
+
+[Term]
+id: CHMO:0002771
+name: concentrating
+def: "A preparative step where the concentration of one component is increased." [RSC:cb]
+is_a: CHMO:0001131 ! sample preparation step
+
+[Term]
+id: CHMO:0002772
+name: degassing
+def: "A preparative step involving the removal of dissolved gases from a sample." [RSC:cb]
+synonym: "degasification" EXACT []
+xref: http://en.wikipedia.org/wiki/Degasification
+is_a: CHMO:0001131 ! sample preparation step
+
+[Term]
+id: CHMO:0002773
+name: dissolving
+def: "A mixing step where a soluble component is mixed with a liquid component." [RSC:cb]
+is_a: CHMO:0001685 ! mixing
+
+[Term]
+id: CHMO:0002774
+name: stirring
+def: "A preparative step involving the agitation of a solution through circular motion." [RSC:cb]
+is_a: CHMO:0001685 ! mixing
+
+[Term]
+id: CHMO:0002775
+name: magnetic stirring
+def: "Stirring achieved by rotating a magnetic stir bar in a solution." [RSC:cb]
+is_a: CHMO:0002774 ! stirring
+
+[Term]
+id: CHMO:0002776
+name: stir bar
+is_a: CHMO:0000998 ! piece of apparatus
+relationship: BFO:0000056 CHMO:0002774 ! participates in at some time stirring
+
+[Term]
 id: IAO:0000027
 name: data item
 is_a: IAO:0000030 ! information content entity
@@ -28658,6 +28707,13 @@ id: OBI:0000011
 name: planned process
 is_a: BFO:0000015 ! process
 
+[Term]
+id: OBI:0302888
+name: washing
+def: "Washing is a process by which a material entity acting as contaminant (e.g. excess staining reagent) is removed by application of one or more cycles of solution in flow." [obi:prs]
+synonym: "rinsing" EXACT [RSC:cb]
+is_a: CHMO:0002742 ! elution
+
 [Typedef]
 id: BFO:0000054
 name: realized in
@@ -28672,7 +28728,7 @@ name: has participant
 
 [Typedef]
 id: BFO:0000085
-name: BFO:0000085
+name: has function at some time
 
 [Typedef]
 id: BFO:0000087
