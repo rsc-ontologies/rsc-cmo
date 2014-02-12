@@ -1,5 +1,5 @@
 format-version: 1.2
-data-version: releases/2014-02-11
+data-version: releases/2014-02-12
 saved-by: batchelorc
 synonymtypedef: non-mining_synonym "Non-mining synonym" EXACT
 ontology: cmo-xp
@@ -52,6 +52,11 @@ relationship: BFO:0000110 CHEBI:28694 ! has continuant part at all times copper 
 [Term]
 id: CHEBI:28694
 name: copper atom
+is_a: CHEBI:23367 ! molecular entity
+
+[Term]
+id: CHEBI:46729
+name: vitreous silica
 is_a: CHEBI:23367 ! molecular entity
 
 [Term]
@@ -9995,12 +10000,6 @@ name: scanning probe microscope
 def: "A microscope which uses a probe to scan the surface of the specimen, mechanically moving the probe in a raster scan of the specimen, line by line, and recording the probe-surface interaction as a function of position, producing an image of the surface. A feedback loop is used to maintain a fixed relationship between the probe and surface during scanning." [CHMO:0000112]
 synonym: "SPM" EXACT []
 is_a: CHMO:0000953 ! microscope
-
-[Term]
-id: CHMO:0000944
-name: X-ray source
-def: "A piece of apparatus which produces X-rays." [rsc:cb]
-is_a: CHMO:0000998 ! piece of apparatus
 
 [Term]
 id: CHMO:0000945
@@ -28683,6 +28682,109 @@ is_a: CHMO:0000998 ! piece of apparatus
 relationship: BFO:0000056 CHMO:0002774 ! participates in at some time stirring
 
 [Term]
+id: CHMO:0002777
+name: Kugelrohr
+def: "A short-path vacuum distillation apparatus consisting of an electric heater and two or more glass bulbs. The compound to be distilled is placed in the last bulb." [http://en.wikipedia.org/wiki/Kugelrohr]
+is_a: CHMO:0000998 ! piece of apparatus
+relationship: BFO:0000056 CHMO:0001540 ! participates in at some time vacuum distillation
+
+[Term]
+id: CHMO:0002778
+name: copper K-alpha source
+def: "An X-ray source where copper atoms emit X-rays through a 1s from 2p transition." [RSC:cb]
+is_a: OBI:0001138 ! X-ray source
+
+[Term]
+id: CHMO:0002779
+name: molybdenum K-alpha source
+def: "An X-ray source where molybdenum atoms emit X-rays through a 1s from 2p transition." [RSC:cb]
+is_a: OBI:0001138 ! X-ray source
+
+[Term]
+id: CHMO:0002780
+name: cobalt K-alpha source
+def: "An X-ray source where cobalt atoms emit X-rays through a 1s from 2p transition." [RSC:cb]
+is_a: OBI:0001138 ! X-ray source
+
+[Term]
+id: CHMO:0002781
+name: aluminium K-alpha source
+def: "An X-ray source where aluminium atoms emit X-rays through a 1s from 2p transition." [RSC:cb]
+is_a: OBI:0001138 ! X-ray source
+
+[Term]
+id: CHMO:0002782
+name: silica gel
+def: "Vitreous silica in granular form for experimental purposes." [RSC:cb]
+is_a: CHMO:0000985 ! solid stationary phase
+relationship: BFO:0000110 CHEBI:46729 ! has continuant part at all times vitreous silica
+
+[Term]
+id: CHMO:0002783
+name: laboratory atmosphere
+def: "A gaseous environment in which an experiment takes place. This may be unreactive in order to prevent unintended reactions or reactive (for example gaseous hydrogen) to promote reactions." [RSC:cb]
+comment: Not to be confused with OBI's "atmosphere", OBI:0001498, which is biological.
+is_a: CHMO:0002743 ! matrix
+
+[Term]
+id: CHMO:0002784
+name: argon atmosphere
+def: "A laboratory atmosphere consisting of argon." [RSC:cb]
+is_a: CHMO:0002783 ! laboratory atmosphere
+
+[Term]
+id: CHMO:0002785
+name: nitrogen atmosphere
+def: "A laboratory atmosphere consisting of gaseous diatomic nitrogen." [RSC:cb]
+is_a: CHMO:0002783 ! laboratory atmosphere
+
+[Term]
+id: CHMO:0002786
+name: filter cake
+def: "The material left behind in the filter as a result of filtration." [RSC:cb]
+is_a: CHMO:0000993 ! portion of material
+relationship: BFO:0000068 CHMO:0001640 ! begins to exist during filtration
+
+[Term]
+id: CHMO:0002787
+name: syringe pump
+def: "A syringe which has the function of pumping material into an experiment." [RSC:cb]
+is_a: CHMO:0000998 ! piece of apparatus
+relationship: BFO:0000085 OBI:0001042 ! has function at some time pump function
+
+[Term]
+id: CHMO:0002788
+name: hydrogen atmosphere
+def: "A laboratory atmosphere consisting of gaseous diatomic hydrogen." [RSC:cb]
+is_a: CHMO:0002783 ! laboratory atmosphere
+
+[Term]
+id: CHMO:0002789
+name: hydrogenator
+def: "A piece of apparatus for carrying out hydrogenation reactions, usually under high pressure." [RSC:cb]
+comment: See for example http://www.parrinst.com/products/hydrogenation/3926-hydrogenator/
+is_a: CHMO:0000998 ! piece of apparatus
+relationship: BFO:0000178 CHMO:0002788 ! has continuant part at some time hydrogen atmosphere
+
+[Term]
+id: CHMO:0002790
+name: fragmentor voltage
+def: "A setting datum that specifies the potential difference in a mass spectrometer where labile ions may dissociate." [RSC:cb]
+is_a: IAO:0000140 ! setting datum
+
+[Term]
+id: CHMO:0002791
+name: skimmer voltage
+def: "A setting datum that specifies the potential difference across a skimmer." [doi:10.1351/PAC-REC-06-04-06]
+is_a: IAO:0000140 ! setting datum
+
+[Term]
+id: CHMO:0002792
+name: capillary voltage
+def: "A setting datum that specifies the potential difference across the tip of the capillary in electrospray ionisation." [http://www.astbury.leeds.ac.uk/facil/MStut/mstutorial.htm]
+is_a: IAO:0000140 ! setting datum
+
+[Term]
 id: IAO:0000027
 name: data item
 is_a: IAO:0000030 ! information content entity
@@ -28708,6 +28810,20 @@ name: planned process
 is_a: BFO:0000015 ! process
 
 [Term]
+id: OBI:0001042
+name: pump function
+def: "A transfer function where the transfer requires work to move the entity, often against a gradient." [obi:EAGLE-I]
+is_a: BFO:0000034 ! function
+
+[Term]
+id: OBI:0001138
+name: X-ray source
+alt_id: CHMO:0000944
+def: "A device that is used to generate X-rays." [obi:es]
+synonym: "X-ray generator" EXACT []
+is_a: CHMO:0000998 ! piece of apparatus
+
+[Term]
 id: OBI:0302888
 name: washing
 def: "Washing is a process by which a material entity acting as contaminant (e.g. excess staining reagent) is removed by application of one or more cycles of solution in flow." [obi:prs]
@@ -28725,6 +28841,16 @@ name: participates in at some time
 [Typedef]
 id: BFO:0000057
 name: has participant
+
+[Typedef]
+id: BFO:0000068
+name: begins to exist during
+is_a: BFO:0000056 ! participates in at some time
+
+[Typedef]
+id: BFO:0000069
+name: ceases to exist during
+is_a: BFO:0000056 ! participates in at some time
 
 [Typedef]
 id: BFO:0000085
