@@ -1,5 +1,5 @@
 format-version: 1.2
-data-version: releases/2014-07-04
+data-version: releases/2014-07-17
 saved-by: batchelorc
 synonymtypedef: non-mining_synonym "Non-mining synonym" EXACT
 ontology: chmo
@@ -65,6 +65,11 @@ intersection_of: BFO:0000110 CHEBI:28694 ! has continuant part at all times copp
 relationship: BFO:0000110 CHEBI:28694 ! has continuant part at all times copper atom
 
 [Term]
+id: CHEBI:28262
+name: dimethyl sulfoxide
+is_a: CHEBI:23367 ! molecular entity
+
+[Term]
 id: CHEBI:28694
 name: copper atom
 is_a: CHEBI:23367 ! molecular entity
@@ -83,7 +88,7 @@ is_a: CHMO:0000993 ! portion of material
 id: CHMO:0000000
 name: measurement method
 def: "A detection method which results in the generation of a set of data, for example a spectrum, a numerical measurement, an image or crystal data." [rsc:cb]
-is_a: CHMO:0001133 ! experimental method
+is_a: OBI:0000011 ! planned process
 
 [Term]
 id: CHMO:0000001
@@ -13086,7 +13091,7 @@ creation_date: 2009-04-16T10:48:27Z
 id: CHMO:0001267
 name: sample transformation method
 def: "Any method used to transform a sample in a laboratory." [rsc:hjb]
-is_a: CHMO:0001133 ! experimental method
+is_a: OBI:0000094 ! material processing
 created_by: burchh
 creation_date: 2009-04-16T03:08:30Z
 
@@ -13531,7 +13536,7 @@ creation_date: 2009-05-14T12:47:35Z
 id: CHMO:0001301
 name: synthesis method
 def: "A method used to synthesise a sample." [rsc:hjb]
-is_a: CHMO:0001133 ! experimental method
+is_a: OBI:0000094 ! material processing
 
 [Term]
 id: CHMO:0001302
@@ -15123,7 +15128,7 @@ is_a: CHMO:0001131 ! sample preparation step
 [Term]
 id: CHMO:0001485
 name: derivatisation
-def: "The transformation of a chemical compound (the 'educt') into another similar compound (the 'derivative') by altering one or more of its functional groups. Derviatisation is generally perfomed to alter reactivity or change a physical property such as solubility, boiling point, melting point, thermal stability etc. " [rsc:hjb]
+def: "The transformation of a chemical compound (the 'educt') into another similar compound (the 'derivative') by altering one or more of its functional groups. Derivatisation is generally perfomed to alter reactivity or change a physical property such as solubility, boiling point, melting point, thermal stability etc. " [rsc:hjb]
 synonym: "derivatization" EXACT []
 is_a: CHMO:0001131 ! sample preparation step
 
@@ -16651,27 +16656,27 @@ is_a: CHMO:0001683 ! skull melting
 id: CHMO:0001685
 name: mixing
 def: "The combining of components, particles or layers into a more homogeneous state. The mixing may be achieved manually or mechanically by shifting the material with stirrers or pumps or by revolving or shaking the container. The process must not permit segregation of particles of different size or properties. Homogeneity may be considered to have been achieved in a practical sense when the sampling error of the processed portion is negligible compared to the total error of the measurement system." [AU:M03945]
-is_a: CHMO:0001131 ! sample preparation step
+is_a: OBI:0000094 ! material processing
 
 [Term]
 id: CHMO:0001686
 name: Ostwald ripening
 def: "The growth of larger crystals from those of smaller size, which have a higher solubility that the larger ones." [OrangeBook:9.5]
 synonym: "Ostwald-ripening" EXACT []
-is_a: CHMO:0001131 ! sample preparation step
+is_a: OBI:0000094 ! material processing
 
 [Term]
 id: CHMO:0001687
 name: photodegradation
 def: "The photochemical transformation of a molecule into lower molecular weight fragments, usually in an oxidation process." [AU:P04595]
 synonym: "photo-degradation" EXACT []
-is_a: CHMO:0001131 ! sample preparation step
+is_a: OBI:0000094 ! material processing
 
 [Term]
 id: CHMO:0001688
 name: precipitation
 def: "The sedimentation of a solid material (a 'precipitate') from a liquid solution in which the material is present in amounts greater than its solubility in the liquid." [AU:P04795]
-is_a: CHMO:0001131 ! sample preparation step
+is_a: OBI:0000094 ! material processing
 
 [Term]
 id: CHMO:0001689
@@ -21858,7 +21863,7 @@ creation_date: 2009-07-11T12:13:07Z
 [Term]
 id: CHMO:0002150
 name: microemulsion method
-def: "A method for dispersing two or more immiscible liquids as \\mum-sized droplets by shaking, stirring or homogenising the mixture." [rsc:hjb]
+def: "A method for dispersing two or more immiscible liquids as micrometre-sized droplets by shaking, stirring or homogenising the mixture." [rsc:hjb]
 synonym: "microemulsion methods" EXACT []
 synonym: "microemulsion technique" EXACT []
 is_a: CHMO:0002064 ! emulsion method
@@ -22580,7 +22585,7 @@ creation_date: 2009-07-28T01:23:05Z
 [Term]
 id: CHMO:0002217
 name: sublimation
-def: "Any technique used to purify samples by forcing it to pass from the solid to gas phase without passing through an intermediate liquid phase." [rsc:hjb]
+def: "Any technique used to purify a sample by forcing it to pass from the solid to gas phase without passing through an intermediate liquid phase." [rsc:hjb]
 is_a: CHMO:0001131 ! sample preparation step
 created_by: burchh
 creation_date: 2009-07-28T03:22:04Z
@@ -22589,7 +22594,7 @@ creation_date: 2009-07-28T03:22:04Z
 id: CHMO:0002218
 name: fractional sublimation
 def: "A method for purifying samples by heating the sample under reduced pressure and allowing the fractions to sublime order of increasing sublimation temperature (a function of vapor pressure)." [DOI:10.1021/ac60144a021]
-is_a: CHMO:0002219 ! vacuum sublimation
+is_a: CHMO:0002217 ! sublimation
 created_by: burchh
 creation_date: 2009-07-28T03:22:24Z
 
@@ -22730,7 +22735,7 @@ creation_date: 2009-07-29T09:59:13Z
 id: CHMO:0002231
 name: purification
 def: "Any technique used to physically separate an analyte from byproducts, reagents or contaminating substances." [rsc:hjb]
-is_a: CHMO:0001131 ! sample preparation step
+is_a: CHMO:0000998 ! piece of apparatus
 created_by: burchh
 creation_date: 2009-07-29T03:59:53Z
 
@@ -28701,7 +28706,7 @@ is_a: CHMO:0001685 ! mixing
 [Term]
 id: CHMO:0002774
 name: stirring
-def: "A preparative step involving the agitation of a solution through circular motion." [RSC:cb]
+def: "Mixing involving the agitation of a solution through circular motion." [RSC:cb]
 is_a: CHMO:0001685 ! mixing
 
 [Term]
@@ -28718,8 +28723,9 @@ relationship: BFO:0000056 CHMO:0002774 ! participates in at some time stirring
 
 [Term]
 id: CHMO:0002777
-name: Kugelrohr
+name: Kugelrohr condenser
 def: "A short-path vacuum distillation apparatus consisting of an electric heater and two or more glass bulbs. The compound to be distilled is placed in the last bulb." [http://en.wikipedia.org/wiki/Kugelrohr]
+synonym: "Kugelrohr apparatus" EXACT []
 is_a: CHMO:0000998 ! piece of apparatus
 relationship: BFO:0000056 CHMO:0001540 ! participates in at some time vacuum distillation
 
@@ -29051,6 +29057,62 @@ def: "The concentration of a solute in a saturated solution of water and the sol
 is_a: CHMO:0002815 ! solubility
 
 [Term]
+id: CHMO:0002826
+name: Dean-Stark apparatus
+synonym: "Dean-Stark condenser" EXACT []
+synonym: "Dean-Stark trap" EXACT []
+is_a: CHMO:0000998 ! piece of apparatus
+
+[Term]
+id: CHMO:0002827
+name: weighing
+def: "Determination of the mass of a sample." [RSC:cb]
+is_a: CHMO:0000000 ! measurement method
+
+[Term]
+id: CHMO:0002828
+name: experimental planning process
+def: "A process that contributes to producing a plan for an experiment." [RSC:cb]
+is_a: BFO:0000015 ! process
+
+[Term]
+id: CHMO:0002829
+name: storage in dimethyl sulfoxide
+def: "Storage of a sample that has been dissolved in dimethyl sulfoxide." [RSC:cb]
+comment: CHEBI:28262 here is a placeholder - really there should be a portion of material descendant like 'buffer solution'
+synonym: "storage in DMSO" EXACT []
+is_a: OBI:0302893 ! storage
+relationship: BFO:0000057 CHEBI:28262 ! has participant dimethyl sulfoxide
+
+[Term]
+id: CHMO:0002830
+name: experimental plan revision
+def: "An experimental planning process in which a plan specification is modified, resulting in a new plan specification." [RSC:cb]
+is_a: CHMO:0002828 ! experimental planning process
+relationship: OBI:0000293 IAO:0000104 ! has_specified_input plan specification
+relationship: OBI:0000299 IAO:0000104 ! has_specified_output plan specification
+
+[Term]
+id: CHMO:0002831
+name: material acquisition
+def: "A planned process in which materials for an experiment are acquired from an external supplier." [RSC:cb]
+is_a: OBI:0000011 ! planned process
+
+[Term]
+id: CHMO:0002832
+name: material disposal
+def: "A planned process in which materials for an experiment are removed permanently from the laboratory." [RSC:cb]
+comment: makes no judgement about whether this is a good way to do it, or a bad way such as tipping down the sink.
+is_a: OBI:0000011 ! planned process
+
+[Term]
+id: CHMO:0002833
+name: experimental plan creation
+def: "An experimental planning process in which a plan specification is created de novo." [RSC:cb]
+is_a: CHMO:0002828 ! experimental planning process
+relationship: OBI:0000299 IAO:0000104 ! has_specified_output plan specification
+
+[Term]
 id: IAO:0000027
 name: data item
 is_a: IAO:0000030 ! information content entity
@@ -29074,6 +29136,25 @@ is_a: IAO:0000027 ! data item
 id: OBI:0000011
 name: planned process
 is_a: BFO:0000015 ! process
+
+[Term]
+id: OBI:0000094
+name: material processing
+def: "A planned process which results in physical changes in a specified input material." [obi:bp, obi:fg, obi:jf, obi:mc, obi:prs]
+synonym: "material transformations" EXACT []
+is_a: OBI:0000011 ! planned process
+
+[Term]
+id: OBI:0000796
+name: purification objective
+def: " The objective to separate a material entity into different compositions of which one or more have are purified fractions that contain higher concentration of a desired component, while others contain impurities and are not of interest." [obi:bp]
+is_a: IAO:0000030 ! information content entity
+
+[Term]
+id: OBI:0000838
+name: material maintenance
+def: "A process with that achieves the objective to maintain some or all of the characteristics of an input material over time." [obi:bp]
+is_a: OBI:0000011 ! planned process
 
 [Term]
 id: OBI:0001042
@@ -29103,6 +29184,12 @@ name: washing
 def: "Washing is a process by which a material entity acting as contaminant (e.g. excess staining reagent) is removed by application of one or more cycles of solution in flow." [obi:prs]
 synonym: "rinsing" EXACT [RSC:cb]
 is_a: CHMO:0002742 ! elution
+
+[Term]
+id: OBI:0302893
+name: storage
+def: "A maintenance process by which material entities that are not actively metabolizing are placed in well identified location and possibly under controlled environment in ad-hoc devices/structures in order to preserve and protect them from decay/alteration and maintain availability." [obi:prs]
+is_a: OBI:0000838 ! material maintenance
 
 [Typedef]
 id: BFO:0000054
@@ -29170,6 +29257,11 @@ id: IAO:0000136
 name: is_about
 
 [Typedef]
+id: OBI:0000293
+name: has_specified_input
+is_a: BFO:0000057 ! has participant
+
+[Typedef]
 id: OBI:0000299
 name: has_specified_output
 is_a: BFO:0000057 ! has participant
@@ -29178,4 +29270,9 @@ is_a: BFO:0000057 ! has participant
 id: OBI:0000312
 name: is_specified_output_of
 is_a: BFO:0000056 ! participates in at some time
+
+[Typedef]
+id: OBI:0000417
+name: achieves_planned_objective
+def: "This relation obtains between a planned process and a objective specification when the criteria specified in the objective specification are met at the end of the planned process." [obi:ar, obi:bp]
 
