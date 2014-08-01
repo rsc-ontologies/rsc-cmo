@@ -1,5 +1,5 @@
 format-version: 1.2
-data-version: releases/2014-07-17
+data-version: releases/2014-08-01
 saved-by: batchelorc
 synonymtypedef: non-mining_synonym "Non-mining synonym" EXACT
 ontology: chmo
@@ -85,18 +85,12 @@ name: mixture
 is_a: CHMO:0000993 ! portion of material
 
 [Term]
-id: CHMO:0000000
-name: measurement method
-def: "A detection method which results in the generation of a set of data, for example a spectrum, a numerical measurement, an image or crystal data." [rsc:cb]
-is_a: OBI:0000011 ! planned process
-
-[Term]
 id: CHMO:0000001
 name: colorimetry
 def: "The determination of the spectral absorbance of a solution. This method is often used to determine the concentration of a chemical in a solution." [rsc:hjb]
 synonym: "colorimetric method" EXACT []
 synonym: "colourimetry" EXACT []
-is_a: CHMO:0000000 ! measurement method
+is_a: OBI:0000070 ! assay
 
 [Term]
 id: CHMO:0000002
@@ -112,11 +106,12 @@ is_a: CHMO:0002739 ! quantitative determination method
 [Term]
 id: CHMO:0000003
 name: electrochemical analysis
+alt_id: FIX:0000764
 def: "The use of an electrochemical cell to measure a qualitative or quantitative response." [FIX:0000764, OrangeBook:8.1]
 synonym: "electroanalytical method" EXACT []
 synonym: "electrochemical assay" EXACT []
 synonym: "electrochemical method" EXACT []
-is_a: CHMO:0001133 ! experimental method
+is_a: OBI:0000070 ! assay
 
 [Term]
 id: CHMO:0000004
@@ -166,9 +161,11 @@ is_a: CHMO:0000004 ! amperometry
 [Term]
 id: CHMO:0000010
 name: conductometry
-def: "The measurement of the conductance of a solution as a function of concentration. Measurements are made indirectly across the resistance of the solution with alternating current." [FIX:0000768, FIX:0000770, Orange:8.5.4]
+alt_id: FIX:0000768
+alt_id: FIX:0000770
+def: "The measurement of the conductance of a solution as a function of concentration. Measurements are made indirectly across the resistance of the solution with alternating current." [Orange:8.5.4]
 synonym: "conductimetry" EXACT []
-is_a: CHMO:0000000 ! measurement method
+is_a: OBI:0000070 ! assay
 
 [Term]
 id: CHMO:0000011
@@ -448,12 +445,6 @@ synonym: "CSV" EXACT []
 is_a: CHMO:0000041 ! stripping voltammetry
 
 [Term]
-id: CHMO:0000048
-name: imaging method
-def: "A method which results in the generation of an image." [rsc:cb]
-is_a: CHMO:0000000 ! measurement method
-
-[Term]
 id: CHMO:0000049
 name: chemical imaging
 def: "The simultaneous measurement of spectra and images. A radiation source illuminates the sample and a series of spatially resolved spectra are collected." [rsc:hjb]
@@ -466,7 +457,7 @@ synonym: "imaging spectroscopy" EXACT []
 synonym: "multispectral imaging" EXACT []
 synonym: "spectral imaging" EXACT []
 synonym: "spectroscopic imaging" EXACT []
-is_a: CHMO:0000048 ! imaging method
+is_a: OBI:0000185 ! imaging assay
 
 [Term]
 id: CHMO:0000050
@@ -676,7 +667,7 @@ id: CHMO:0000067
 name: microscopy
 def: "Any technique where a microscope is used to view a small object (or specimen) by producing a magnified image." [rsc:hjb]
 xref: FIX:0000005
-is_a: CHMO:0000048 ! imaging method
+is_a: OBI:0000185 ! imaging assay
 
 [Term]
 id: CHMO:0000068
@@ -1355,7 +1346,7 @@ name: profilometry
 def: "The measurement of the profile of a surface in order to quantify its roughness." [rsc:hjb]
 synonym: "SP" EXACT non-mining_synonym []
 synonym: "surface profilometry" EXACT []
-is_a: CHMO:0000048 ! imaging method
+is_a: OBI:0000185 ! imaging assay
 
 [Term]
 id: CHMO:0000136
@@ -1390,7 +1381,7 @@ is_a: CHMO:0000137 ! optical profilometry
 id: CHMO:0000140
 name: reciprocal-space method
 def: "Any detection or measurement method for a set of points in reciprocal space." [rsc:hjb]
-is_a: CHMO:0000000 ! measurement method
+is_a: OBI:0000070 ! assay
 
 [Term]
 id: CHMO:0000141
@@ -2072,7 +2063,7 @@ is_a: CHMO:0000200 ! X-ray scattering
 id: CHMO:0000208
 name: reflection method
 def: "Any method for determining structure where the change in direction or intensity of reflected radiation or particles is detected." [rsc:hjb]
-is_a: CHMO:0000000 ! measurement method
+is_a: OBI:0000070 ! assay
 
 [Term]
 id: CHMO:0000209
@@ -2260,7 +2251,7 @@ id: CHMO:0000228
 name: spectroscopy
 def: "The study of the interaction of a sample with radiation or particles for measurement or detection." [AU:S05848]
 synonym: "spectrometry" EXACT []
-is_a: CHMO:0000000 ! measurement method
+is_a: OBI:0000070 ! assay
 
 [Term]
 id: CHMO:0000229
@@ -2273,8 +2264,6 @@ is_a: CHMO:0000228 ! spectroscopy
 id: CHMO:0000230
 name: alpha-particle spectroscopy
 def: "Spectrometry where the alpha-particles (or 4He nuclei) spontaneously emitted from radioisotopes are detected." [rsc:hjb]
-synonym: "\\alpha-particle spectrometry" EXACT []
-synonym: "\\alpha-particle spectroscopy" EXACT []
 synonym: "alpha spectroscopy" EXACT []
 synonym: "alpha-particle spectrometry" EXACT []
 is_a: CHMO:0000228 ! spectroscopy
@@ -2282,7 +2271,8 @@ is_a: CHMO:0000228 ! spectroscopy
 [Term]
 id: CHMO:0000232
 name: electronic spectroscopy
-def: "Any spectroscopic method which probes the electronic degrees of freedom of an atom or molecule." [FIX:0000032, rsc:cb]
+alt_id: FIX:0000032
+def: "Any spectroscopic method which probes the electronic degrees of freedom of an atom or molecule." [rsc:cb]
 is_a: CHMO:0000228 ! spectroscopy
 
 [Term]
@@ -2338,11 +2328,9 @@ name: capillary electrophoresis-electrothermal atomic absorption spectrometry
 def: "A method where a liquid sample is first separated by capillary electrophoresis, then vaporised and atomised using a probe which is rapidly heated by passing a current through it. The sample is then analysed by illuminating it with ultraviolet or visible light which is absorbed by the non-excited atoms at characteristic wavelengths." [rsc:hjb]
 synonym: "capillary electrophoresis electrothermal atomic absorption spectroscopy" EXACT []
 synonym: "CE-ETAAS" EXACT []
-is_a: CHMO:0001048 ! separation method-measurement method
-intersection_of: CHMO:0001048 ! separation method-measurement method
-intersection_of: BFO:0000118 CHMO:0000237 ! has proper occurrent part electrothermal atomic absorption spectrometry
+is_a: CHMO:0000237 ! electrothermal atomic absorption spectrometry
+intersection_of: CHMO:0000237 ! electrothermal atomic absorption spectrometry
 intersection_of: BFO:0000118 CHMO:0001024 ! has proper occurrent part capillary electrophoresis
-relationship: BFO:0000118 CHMO:0000237 ! has proper occurrent part electrothermal atomic absorption spectrometry
 relationship: BFO:0000118 CHMO:0001024 ! has proper occurrent part capillary electrophoresis
 
 [Term]
@@ -2656,7 +2644,7 @@ is_a: CHMO:0000267 ! inductively-coupled plasma atomic emission spectroscopy
 [Term]
 id: CHMO:0000269
 name: laser ablation inductively-coupled plasma atomic emission spectroscopy
-def: "A type of atomic emission spectrometry where the sample is vaporised by laser ablation and excited using a plasma generated by electromagnetic induction." [rsc:hjb]
+def: "Inductively coupled atomic emission spectrometry where the sample is vaporised by laser ablation." [rsc:hjb]
 synonym: "LA ICP AES" EXACT []
 synonym: "LA ICP-AES" EXACT []
 synonym: "laser ablation ICP AES" EXACT []
@@ -2666,7 +2654,7 @@ is_a: CHMO:0000267 ! inductively-coupled plasma atomic emission spectroscopy
 [Term]
 id: CHMO:0000270
 name: laser microprobe inductively coupled plasma atomic emission spectroscopy
-def: "A type of atomic emission spectrometry where the sample is vaporised by laser ablation with a finely focused (<10 m diameter) laser and excited using a plasma generated by electromagnetic induction." [rsc:hjb]
+def: "Inductively coupled atomic emission spectrometry where the sample is vaporised by laser ablation with a finely focused (<10 m diameter) laser." [rsc:hjb]
 synonym: "laser microprobe ICP-AES" EXACT []
 synonym: "LM-ICP-AES" EXACT []
 is_a: CHMO:0000269 ! laser ablation inductively-coupled plasma atomic emission spectroscopy
@@ -2674,24 +2662,22 @@ is_a: CHMO:0000269 ! laser ablation inductively-coupled plasma atomic emission s
 [Term]
 id: CHMO:0000271
 name: liquid chromatography-inductively coupled plasma atomic emission spectroscopy
-def: "A method where the sample mixture is first separated by liquid chromatography and then excited using a plasma generated by electromagnetic induction, and the emission of electromagnetic radiation from the sample at characteristic wavelengths is detected." [rsc:hjb]
+def: "Inductively coupled plasma atomic emission spectroscopy where the sample mixture is first separated by liquid chromatography." [rsc:hjb]
 synonym: "LC-ICP-AES" EXACT []
 synonym: "LC-ICP-OES" EXACT []
 synonym: "liquid chromatography inductively coupled plasma atomic emission spectrometry" EXACT []
 synonym: "liquid chromatography inductively coupled plasma atomic emission spectroscopy" EXACT []
 synonym: "liquid chromatography inductively coupled plasma optical emission spectrometry" EXACT []
 synonym: "liquid chromatography inductively coupled plasma optical emission spectroscopy" EXACT []
-is_a: CHMO:0001048 ! separation method-measurement method
-intersection_of: CHMO:0001048 ! separation method-measurement method
+is_a: CHMO:0001004 ! liquid chromatography
+intersection_of: CHMO:0001004 ! liquid chromatography
 intersection_of: BFO:0000118 CHMO:0000267 ! has proper occurrent part inductively-coupled plasma atomic emission spectroscopy
-intersection_of: BFO:0000118 CHMO:0001004 ! has proper occurrent part liquid chromatography
 relationship: BFO:0000118 CHMO:0000267 ! has proper occurrent part inductively-coupled plasma atomic emission spectroscopy
-relationship: BFO:0000118 CHMO:0001004 ! has proper occurrent part liquid chromatography
 
 [Term]
 id: CHMO:0000272
 name: nebulisation inductively-coupled plasma atomic emission spectroscopy
-def: "A type of atomic emission spectrometry where the sample mixture is first passed through a nebuliser to form a mist of finely dispersed droplets (using compressed air) and then excited using a plasma generated by electromagnetic inductance." [rsc:hjb]
+def: "Inductively-coupled atomic emission spectrometry where the sample mixture is first passed through a nebuliser to form a mist of finely dispersed droplets using compressed air." [rsc:hjb]
 synonym: "nebulisation inductively coupled plasma atomic emission spectrometry" EXACT []
 synonym: "nebulization inductively coupled plasma atomic emission spectrometry" EXACT []
 synonym: "nebulization inductively coupled plasma atomic emission spectroscopy" EXACT []
@@ -4203,7 +4189,8 @@ is_a: CHMO:0000387 ! photoelectron spectroscopy
 [Term]
 id: CHMO:0000404
 name: X-ray photoelectron spectroscopy
-def: "Spectroscopy where the sample is illuminated with X-rays causing ionisation and the emission of photoelectrons, the energies of which are measured." [AU:X06716, FIX:0000041]
+alt_id: FIX:0000041
+def: "Spectroscopy where the sample is illuminated with X-rays causing ionisation and the emission of photoelectrons, the energies of which are measured." [AU:X06716]
 synonym: "electron spectrometry for chemical analysis" EXACT []
 synonym: "electron spectrometry for chemical applications" EXACT []
 synonym: "electron spectroscopy for chemical analysis" EXACT []
@@ -5008,16 +4995,9 @@ synonym: "resonant electron capture negative ionization mass spectroscopy." EXAC
 is_a: CHMO:0000470 ! mass spectrometry
 
 [Term]
-id: CHMO:0000479
-name: electron impact ionisation mass spectrometry
-def: "An *obsolete* synonym for electron ionisation mass spectrometry." [ISBN:978-0-470-51634-8]
-synonym: "electron-impact ionisation mass spectrosopy" EXACT []
-synonym: "electron-impact ionization mass spectrosopy" EXACT []
-is_obsolete: true
-
-[Term]
 id: CHMO:0000480
 name: electron ionisation mass spectrometry
+alt_id: CHMO:0000479
 def: "Mass spectrometry where the sample is ionised by electrons (energy 70 eV) which have been emitted from a glowing filament and accelerated through an electric field." [FIX:0000089, ISBN:0-534-98144-5]
 synonym: "EI-MS" EXACT []
 synonym: "electron impact ionisation mass spectrometry" NARROW []
@@ -5134,12 +5114,11 @@ synonym: "high performance liquid chromatography-nanoelectrospray ionization mas
 synonym: "high performance liquid chromatography-nanoelectrospray ionization mass spectroscopy" EXACT []
 synonym: "HPLC-nano-HPLC" EXACT []
 synonym: "HPLC-nanoESI" EXACT []
+is_a: CHMO:0000488 ! nanoelectrospray ionisation mass spectrometry
 is_a: CHMO:0000751 ! liquid chromatography-electrospray ionisation mass spectrometry
 is_a: CHMO:0000796 ! high-performance liquid chromatography-mass spectrometry
-intersection_of: CHMO:0001048 ! separation method-measurement method
-intersection_of: BFO:0000118 CHMO:0000488 ! has proper occurrent part nanoelectrospray ionisation mass spectrometry
+intersection_of: CHMO:0000488 ! nanoelectrospray ionisation mass spectrometry
 intersection_of: BFO:0000118 CHMO:0001009 ! has proper occurrent part high-performance liquid chromatography
-relationship: BFO:0000118 CHMO:0000488 ! has proper occurrent part nanoelectrospray ionisation mass spectrometry
 relationship: BFO:0000118 CHMO:0001009 ! has proper occurrent part high-performance liquid chromatography
 
 [Term]
@@ -5154,7 +5133,8 @@ is_a: CHMO:0000482 ! electrospray ionisation mass spectrometry
 [Term]
 id: CHMO:0000491
 name: field ionisation mass spectrometry
-def: "Mass spectrometry where the sample is ionised by interaction with a high electric field." [AU:F02360, FIX:0000913]
+alt_id: FIX:0000913
+def: "Mass spectrometry where the sample is ionised by interaction with a high electric field." [AU:F02360]
 synonym: "FI-MS" EXACT []
 synonym: "FI/MS" EXACT []
 synonym: "field ionisation mass spectroscopy" EXACT []
@@ -5184,6 +5164,10 @@ synonym: "pyrolysis field desorption mass spectroscopy" EXACT []
 synonym: "pyrolysis-field desorption mass spectrometry" EXACT []
 synonym: "pyrolysis-field desorption mass spectroscopy" EXACT []
 is_a: CHMO:0000492 ! field desorption mass spectrometry
+is_a: CHMO:0000495 ! pyrolysis field ionisation mass spectrometry
+intersection_of: CHMO:0000492 ! field desorption mass spectrometry
+intersection_of: BFO:0000118 CHMO:0001502 ! has proper occurrent part pyrolysis
+relationship: BFO:0000118 CHMO:0001502 ! has proper occurrent part pyrolysis
 
 [Term]
 id: CHMO:0000494
@@ -5216,6 +5200,9 @@ synonym: "pyrolysis-field ionisation mass spectroscopy" EXACT []
 synonym: "pyrolysis-field ionization mass spectrometry" EXACT []
 synonym: "pyrolysis-field ionization mass spectroscopy" EXACT []
 is_a: CHMO:0000491 ! field ionisation mass spectrometry
+intersection_of: CHMO:0000491 ! field ionisation mass spectrometry
+intersection_of: BFO:0000118 CHMO:0001502 ! has proper occurrent part pyrolysis
+relationship: BFO:0000118 CHMO:0001502 ! has proper occurrent part pyrolysis
 
 [Term]
 id: CHMO:0000496
@@ -5236,11 +5223,15 @@ synonym: "temperature-resolved pyrolysis field ionisation mass spectroscopy" EXA
 synonym: "temperature-resolved pyrolysis field ionization mass spectrometry" EXACT []
 synonym: "temperature-resolved pyrolysis field ionization mass spectroscopy" EXACT []
 is_a: CHMO:0000493 ! pyrolysis field desorption mass spectrometry
+intersection_of: CHMO:0000492 ! field desorption mass spectrometry
+intersection_of: BFO:0000118 CHMO:0001518 ! has proper occurrent part stepwise pyrolysis
+relationship: BFO:0000118 CHMO:0001518 ! has proper occurrent part stepwise pyrolysis
 
 [Term]
 id: CHMO:0000497
 name: gas chromatography-mass spectrometry
-def: "Any method where a sample mixture is first separated by gas chromatography then ionised and characterised according to mass-to-charge ratio and relative abundance." [FIX:0000921, rsc:hjb]
+alt_id: FIX:0000921
+def: "Any method where a sample mixture is first separated by gas chromatography then ionised and characterised according to mass-to-charge ratio and relative abundance." [rsc:hjb]
 synonym: "gas chromatography mass spectrometry" EXACT []
 synonym: "gas chromatography mass spectroscopy" EXACT []
 synonym: "gas chromatography-mass spectroscopy" EXACT []
@@ -5249,11 +5240,9 @@ synonym: "GC MS" EXACT []
 synonym: "GC-MS" EXACT []
 synonym: "GC/MS" EXACT []
 synonym: "GCMS" EXACT []
-is_a: CHMO:0001048 ! separation method-measurement method
-intersection_of: CHMO:0001048 ! separation method-measurement method
-intersection_of: BFO:0000118 CHMO:0000470 ! has proper occurrent part mass spectrometry
+is_a: CHMO:0000470 ! mass spectrometry
+intersection_of: CHMO:0000470 ! mass spectrometry
 intersection_of: BFO:0000118 CHMO:0001002 ! has proper occurrent part gas chromatography
-relationship: BFO:0000118 CHMO:0000470 ! has proper occurrent part mass spectrometry
 relationship: BFO:0000118 CHMO:0001002 ! has proper occurrent part gas chromatography
 
 [Term]
@@ -5279,6 +5268,9 @@ synonym: "ion mobility spectrometry-mass spectrometry" EXACT []
 synonym: "ion mobility spectroscopy mass spectroscopy" EXACT []
 synonym: "ion mobility spectroscopy-mass spectroscopy" EXACT []
 is_a: CHMO:0000470 ! mass spectrometry
+intersection_of: CHMO:0000470 ! mass spectrometry
+intersection_of: BFO:0000118 CHMO:0000430 ! has proper occurrent part ion mobility spectroscopy
+relationship: BFO:0000118 CHMO:0000430 ! has proper occurrent part ion mobility spectroscopy
 
 [Term]
 id: CHMO:0000500
@@ -5392,6 +5384,9 @@ synonym: "elemental analyser isotope ratio mass spectrometry" EXACT []
 synonym: "elemental analyser isotope ratio mass spectroscopy" EXACT []
 synonym: "elemental analysis isotope ratio mass spectroscopy" EXACT []
 is_a: CHMO:0000506 ! isotope ratio mass spectrometry
+intersection_of: CHMO:0000506 ! isotope ratio mass spectrometry
+intersection_of: BFO:0000118 CHMO:0001075 ! has proper occurrent part elemental analysis
+relationship: BFO:0000118 CHMO:0001075 ! has proper occurrent part elemental analysis
 
 [Term]
 id: CHMO:0000508
@@ -5403,10 +5398,9 @@ synonym: "GC IRMS" EXACT []
 synonym: "GC-IR-MS" EXACT []
 synonym: "GC-IRMS" EXACT []
 is_a: CHMO:0000497 ! gas chromatography-mass spectrometry
-intersection_of: CHMO:0001048 ! separation method-measurement method
-intersection_of: BFO:0000118 CHMO:0000506 ! has proper occurrent part isotope ratio mass spectrometry
+is_a: CHMO:0000506 ! isotope ratio mass spectrometry
+intersection_of: CHMO:0000506 ! isotope ratio mass spectrometry
 intersection_of: BFO:0000118 CHMO:0001002 ! has proper occurrent part gas chromatography
-relationship: BFO:0000118 CHMO:0000506 ! has proper occurrent part isotope ratio mass spectrometry
 relationship: BFO:0000118 CHMO:0001002 ! has proper occurrent part gas chromatography
 
 [Term]
@@ -5418,11 +5412,10 @@ synonym: "LC-IR-MS" EXACT []
 synonym: "LC-IRMS" EXACT []
 synonym: "liquid chromatography isotope ratio mass spectrometry" EXACT []
 synonym: "liquid chromatography isotope ratio mass spectroscopy" EXACT []
+is_a: CHMO:0000506 ! isotope ratio mass spectrometry
 is_a: CHMO:0000524 ! liquid chromatography-mass spectrometry
-intersection_of: CHMO:0001048 ! separation method-measurement method
-intersection_of: BFO:0000118 CHMO:0000506 ! has proper occurrent part isotope ratio mass spectrometry
+intersection_of: CHMO:0000506 ! isotope ratio mass spectrometry
 intersection_of: BFO:0000118 CHMO:0001004 ! has proper occurrent part liquid chromatography
-relationship: BFO:0000118 CHMO:0000506 ! has proper occurrent part isotope ratio mass spectrometry
 relationship: BFO:0000118 CHMO:0001004 ! has proper occurrent part liquid chromatography
 
 [Term]
@@ -5452,11 +5445,10 @@ synonym: "high performance liquid chromatography isotope dilution inductively co
 synonym: "HPLC-ID-ICP-MS" EXACT []
 synonym: "HPLC-ID-ICPMS" EXACT []
 is_a: CHMO:0000509 ! liquid chromatography-isotope ratio mass spectrometry
+is_a: CHMO:0000511 ! isotope dilution inductively coupled plasma mass spectrometry
 is_a: CHMO:0000796 ! high-performance liquid chromatography-mass spectrometry
-intersection_of: CHMO:0001048 ! separation method-measurement method
-intersection_of: BFO:0000118 CHMO:0000511 ! has proper occurrent part isotope dilution inductively coupled plasma mass spectrometry
+intersection_of: CHMO:0000511 ! isotope dilution inductively coupled plasma mass spectrometry
 intersection_of: BFO:0000118 CHMO:0001009 ! has proper occurrent part high-performance liquid chromatography
-relationship: BFO:0000118 CHMO:0000511 ! has proper occurrent part isotope dilution inductively coupled plasma mass spectrometry
 relationship: BFO:0000118 CHMO:0001009 ! has proper occurrent part high-performance liquid chromatography
 
 [Term]
@@ -5480,6 +5472,7 @@ is_a: CHMO:0000506 ! isotope ratio mass spectrometry
 [Term]
 id: CHMO:0000515
 name: laser desorption-ionisation mass spectrometry
+alt_id: FIX:0000080
 def: "Mass spectrometry where the sample is vaporised and ionised using a high-energy pulsed laser." [rsc:hjb]
 synonym: "laser desorption mass spectrometry" EXACT []
 synonym: "laser desorption mass spectroscopy" EXACT []
@@ -5503,7 +5496,6 @@ synonym: "LDIMS" EXACT []
 synonym: "LDMS" EXACT []
 synonym: "LIMA" EXACT []
 synonym: "LIMS" EXACT []
-xref: FIX:0000080
 is_a: CHMO:0000712 ! laser mass spectrometry
 
 [Term]
@@ -5613,34 +5605,33 @@ synonym: "LC-MALDI-MS" EXACT []
 synonym: "liquid chromatography matrix-assisted laser desorption-ionisation mass spectrometry" EXACT []
 synonym: "liquid chromatography matrix-assisted laser desorption-ionisation mass spectroscopy" EXACT []
 synonym: "liquid chromatography matrix-assisted laser desorption-ionization mass spectroscopy" EXACT []
+is_a: CHMO:0000519 ! matrix-assisted laser desorption--ionisation mass spectrometry
 is_a: CHMO:0000524 ! liquid chromatography-mass spectrometry
-intersection_of: CHMO:0001048 ! separation method-measurement method
-intersection_of: BFO:0000118 CHMO:0000519 ! has proper occurrent part matrix-assisted laser desorption--ionisation mass spectrometry
+intersection_of: CHMO:0000519 ! matrix-assisted laser desorption--ionisation mass spectrometry
 intersection_of: BFO:0000118 CHMO:0001004 ! has proper occurrent part liquid chromatography
-relationship: BFO:0000118 CHMO:0000519 ! has proper occurrent part matrix-assisted laser desorption--ionisation mass spectrometry
 relationship: BFO:0000118 CHMO:0001004 ! has proper occurrent part liquid chromatography
 
 [Term]
 id: CHMO:0000524
 name: liquid chromatography-mass spectrometry
-def: "A method where a sample mixture is first separated by liquid chromatography before being converted into ions which are characterised by their mass-to-charge ratio and relative abundance." [FIX:0000924, rsc:hjb]
+alt_id: FIX:0000924
+def: "A method where a sample mixture is first separated by liquid chromatography before being converted into ions which are characterised by their mass-to-charge ratio and relative abundance." [rsc:hjb]
 synonym: "iquid chromatography/mass spectrometry" EXACT []
 synonym: "LC MS" EXACT []
 synonym: "LC-MS" EXACT []
 synonym: "LC/MS" EXACT []
 synonym: "LCMS" EXACT []
 synonym: "liquid chromatography mass spectrometry" EXACT []
-is_a: CHMO:0001048 ! separation method-measurement method
-intersection_of: CHMO:0001048 ! separation method-measurement method
-intersection_of: BFO:0000118 CHMO:0000470 ! has proper occurrent part mass spectrometry
+is_a: CHMO:0000470 ! mass spectrometry
+intersection_of: CHMO:0000470 ! mass spectrometry
 intersection_of: BFO:0000118 CHMO:0001004 ! has proper occurrent part liquid chromatography
-relationship: BFO:0000118 CHMO:0000470 ! has proper occurrent part mass spectrometry
 relationship: BFO:0000118 CHMO:0001004 ! has proper occurrent part liquid chromatography
 
 [Term]
 id: CHMO:0000525
 name: photoionisation mass spectrometry
-def: "Mass spectrometry where the sample is irradiated with an ultraviolet laser. The sample absorbs one or more photons resulting in ionisation." [FIX:0000906, rsc:hjb]
+alt_id: FIX:0000906
+def: "Mass spectrometry where the sample is irradiated with an ultraviolet laser. The sample absorbs one or more photons resulting in ionisation." [rsc:hjb]
 synonym: "photoionisation mass spectroscopy" EXACT []
 synonym: "photoionization mass spectroscopy" EXACT []
 synonym: "PI-MS" EXACT []
@@ -5651,7 +5642,8 @@ is_a: CHMO:0000712 ! laser mass spectrometry
 [Term]
 id: CHMO:0000526
 name: atmospheric pressure photoionisation mass spectrometry
-def: "Mass spectrometry where the sample is irradiated with an ultraviolet laser at atmospheric pressure. The sample absorbs one or more photons resulting in ionisation." [FIX:0000907, rsc:hjb]
+alt_id: FIX:0000907
+def: "Mass spectrometry where the sample is irradiated with an ultraviolet laser at atmospheric pressure. The sample absorbs one or more photons resulting in ionisation." [rsc:hjb]
 synonym: "APPI MS" EXACT []
 synonym: "APPI-MS" EXACT []
 synonym: "APPIMS" EXACT []
@@ -5865,10 +5857,8 @@ synonym: "HPLC-ICPMS" EXACT []
 synonym: "HPLC/ICP-MS" EXACT []
 is_a: CHMO:0000552 ! liquid chromatography-inductively coupled plasma mass spectrometry
 is_a: CHMO:0000796 ! high-performance liquid chromatography-mass spectrometry
-intersection_of: CHMO:0001048 ! separation method-measurement method
-intersection_of: BFO:0000118 CHMO:0000538 ! has proper occurrent part inductively coupled plasma mass spectrometry
+intersection_of: CHMO:0000538 ! inductively coupled plasma mass spectrometry
 intersection_of: BFO:0000118 CHMO:0001009 ! has proper occurrent part high-performance liquid chromatography
-relationship: BFO:0000118 CHMO:0000538 ! has proper occurrent part inductively coupled plasma mass spectrometry
 relationship: BFO:0000118 CHMO:0001009 ! has proper occurrent part high-performance liquid chromatography
 
 [Term]
@@ -5961,10 +5951,9 @@ synonym: "LC/ICP-MS" EXACT []
 synonym: "liquid chromatography inductively coupled plasma mass spectroscopy" EXACT []
 synonym: "liquid chromatography-inductively coupled plasma mass spectrometry" EXACT []
 is_a: CHMO:0000524 ! liquid chromatography-mass spectrometry
-intersection_of: CHMO:0001048 ! separation method-measurement method
-intersection_of: BFO:0000118 CHMO:0000538 ! has proper occurrent part inductively coupled plasma mass spectrometry
+is_a: CHMO:0000538 ! inductively coupled plasma mass spectrometry
+intersection_of: CHMO:0000538 ! inductively coupled plasma mass spectrometry
 intersection_of: BFO:0000118 CHMO:0001004 ! has proper occurrent part liquid chromatography
-relationship: BFO:0000118 CHMO:0000538 ! has proper occurrent part inductively coupled plasma mass spectrometry
 relationship: BFO:0000118 CHMO:0001004 ! has proper occurrent part liquid chromatography
 
 [Term]
@@ -5990,11 +5979,9 @@ synonym: "SEC/ICPMS" EXACT []
 synonym: "size-exclusion chromatography inductively coupled mass spectrometry" EXACT []
 synonym: "size-exclusion chromatography inductively coupled mass spectroscopy" EXACT []
 synonym: "size-exclusion chromatography-inductively coupled plasma mass spectroscopy" EXACT []
-is_a: CHMO:0000552 ! liquid chromatography-inductively coupled plasma mass spectrometry
-intersection_of: CHMO:0001048 ! separation method-measurement method
-intersection_of: BFO:0000118 CHMO:0000538 ! has proper occurrent part inductively coupled plasma mass spectrometry
+is_a: CHMO:0000538 ! inductively coupled plasma mass spectrometry
+intersection_of: CHMO:0000538 ! inductively coupled plasma mass spectrometry
 intersection_of: BFO:0000118 CHMO:0001013 ! has proper occurrent part size-exclusion chromatography
-relationship: BFO:0000118 CHMO:0000538 ! has proper occurrent part inductively coupled plasma mass spectrometry
 relationship: BFO:0000118 CHMO:0001013 ! has proper occurrent part size-exclusion chromatography
 
 [Term]
@@ -6006,12 +5993,9 @@ synonym: "size-exclusion chromatography-high performance liquid chromatography i
 synonym: "size-exclusion chromatography-high performance liquid chromatography-inductively coupled plasma mass spectroscopy" EXACT []
 is_a: CHMO:0000543 ! high performance liquid chromatography-inductively coupled plasma mass spectrometry
 is_a: CHMO:0000554 ! size-exclusion chromatography-inductively coupled plasma mass spectrometry
-is_a: CHMO:0002008 ! two-dimensional high-performance liquid chromatography-mass spectrometry
-intersection_of: CHMO:0001048 ! separation method-measurement method
-intersection_of: BFO:0000118 CHMO:0000538 ! has proper occurrent part inductively coupled plasma mass spectrometry
+intersection_of: CHMO:0000538 ! inductively coupled plasma mass spectrometry
 intersection_of: BFO:0000118 CHMO:0001009 ! has proper occurrent part high-performance liquid chromatography
 intersection_of: BFO:0000118 CHMO:0001013 ! has proper occurrent part size-exclusion chromatography
-relationship: BFO:0000118 CHMO:0000538 ! has proper occurrent part inductively coupled plasma mass spectrometry
 relationship: BFO:0000118 CHMO:0001009 ! has proper occurrent part high-performance liquid chromatography
 relationship: BFO:0000118 CHMO:0001013 ! has proper occurrent part size-exclusion chromatography
 
@@ -6267,12 +6251,7 @@ synonym: "HPLC ESI MS/MS" EXACT []
 synonym: "HPLC-ESI-MS-MS" EXACT []
 synonym: "HPLC-ESI-MS/MS" EXACT []
 synonym: "HPLC-ESI-MS2" EXACT []
-is_a: CHMO:0000701 ! liquid chromatography-tandem mass spectrometry
-is_a: CHMO:0000751 ! liquid chromatography-electrospray ionisation mass spectrometry
-is_a: CHMO:0000796 ! high-performance liquid chromatography-mass spectrometry
-intersection_of: CHMO:0001048 ! separation method-measurement method
-intersection_of: BFO:0000118 CHMO:0000577 ! has proper occurrent part electrospray ionisation tandem mass spectrometry
-relationship: BFO:0000118 CHMO:0000577 ! has proper occurrent part electrospray ionisation tandem mass spectrometry
+is_a: CHMO:0000577 ! electrospray ionisation tandem mass spectrometry
 
 [Term]
 id: CHMO:0000579
@@ -7427,9 +7406,9 @@ is_a: CHMO:0002515 ! laser Raman spectroscopy
 
 [Term]
 id: CHMO:0000681
-name: thermal analysis method
+name: thermal analysis
 def: "Any measurement technique in which a physical property of the sample is measured as a function of temperature." [Orange:5.2.1]
-is_a: CHMO:0000000 ! measurement method
+is_a: OBI:0000070 ! assay
 
 [Term]
 id: CHMO:0000682
@@ -7437,7 +7416,7 @@ name: calorimetry
 def: "The measurement of thermodynamic parameters (e.g. enthalpy) during a chemical or biochemical reaction." [rsc:hjb]
 synonym: "enthalpimetric analysis" EXACT []
 synonym: "enthalpimetry" EXACT []
-is_a: CHMO:0000681 ! thermal analysis method
+is_a: CHMO:0000681 ! thermal analysis
 
 [Term]
 id: CHMO:0000683
@@ -7476,19 +7455,19 @@ id: CHMO:0000687
 name: differential thermal analysis
 def: "The measurement of the temperature difference between the sample and a reference material." [Orange:5.2.2]
 synonym: "DTA" EXACT []
-is_a: CHMO:0000681 ! thermal analysis method
+is_a: CHMO:0000681 ! thermal analysis
 
 [Term]
 id: CHMO:0000688
 name: thermoacoustimetry
 def: "Thermal analysis where the characteristics of imposed acoustic wave passing through the sample are measured." [Orange:5.2.2]
-is_a: CHMO:0000681 ! thermal analysis method
+is_a: CHMO:0000681 ! thermal analysis
 
 [Term]
 id: CHMO:0000689
 name: thermodilatometry
 def: "The measurement of a dimension of the sample under negligible load as a function of temperature." [Orange:5.2.2]
-is_a: CHMO:0000681 ! thermal analysis method
+is_a: CHMO:0000681 ! thermal analysis
 
 [Term]
 id: CHMO:0000690
@@ -7504,19 +7483,19 @@ synonym: "thermogravimetric (TG) analyses" EXACT []
 synonym: "thermogravimetric (TG) analysis" EXACT []
 synonym: "thermogravimetric (TGA) analysis" EXACT []
 synonym: "thermogravimetric analysis" EXACT []
-is_a: CHMO:0000681 ! thermal analysis method
+is_a: CHMO:0000681 ! thermal analysis
 
 [Term]
 id: CHMO:0000691
 name: thermomagnetometry
 def: "The measurement of the magnetic susceptibility of a sample as a function of temperature." [rsc:hjb]
-is_a: CHMO:0000681 ! thermal analysis method
+is_a: CHMO:0000681 ! thermal analysis
 
 [Term]
 id: CHMO:0000692
 name: thermoptometry
 def: "The measurement of an optical characteristic of a sample as a function of temperature." [Orange:5.2.2]
-is_a: CHMO:0000681 ! thermal analysis method
+is_a: CHMO:0000681 ! thermal analysis
 
 [Term]
 id: CHMO:0000693
@@ -7547,7 +7526,7 @@ is_a: CHMO:0000695 ! thermorefractometry
 id: CHMO:0000697
 name: thermosonimetry
 def: "The measurement of the sound emitted by a sample as a function of temperature." [Orange:5.2.2]
-is_a: CHMO:0000681 ! thermal analysis method
+is_a: CHMO:0000681 ! thermal analysis
 
 [Term]
 id: CHMO:0000698
@@ -7594,10 +7573,9 @@ synonym: "liquid chromatography tandem mass spectrometry" EXACT []
 synonym: "liquid chromatography tandem mass spectroscopy" EXACT []
 synonym: "liquid chromatography-tandem mass spectroscopy" EXACT []
 is_a: CHMO:0000524 ! liquid chromatography-mass spectrometry
-intersection_of: CHMO:0001048 ! separation method-measurement method
-intersection_of: BFO:0000118 CHMO:0000575 ! has proper occurrent part tandem mass spectrometry
+is_a: CHMO:0000575 ! tandem mass spectrometry
+intersection_of: CHMO:0000575 ! tandem mass spectrometry
 intersection_of: BFO:0000118 CHMO:0001004 ! has proper occurrent part liquid chromatography
-relationship: BFO:0000118 CHMO:0000575 ! has proper occurrent part tandem mass spectrometry
 relationship: BFO:0000118 CHMO:0001004 ! has proper occurrent part liquid chromatography
 
 [Term]
@@ -7613,10 +7591,8 @@ synonym: "CE-MS" EXACT []
 synonym: "CE/MS" EXACT []
 synonym: "CEMS" EXACT []
 is_a: CHMO:0000706 ! electrophoresis-mass spectrometry
-intersection_of: CHMO:0001048 ! separation method-measurement method
-intersection_of: BFO:0000118 CHMO:0000470 ! has proper occurrent part mass spectrometry
+intersection_of: CHMO:0000470 ! mass spectrometry
 intersection_of: BFO:0000118 CHMO:0001024 ! has proper occurrent part capillary electrophoresis
-relationship: BFO:0000118 CHMO:0000470 ! has proper occurrent part mass spectrometry
 relationship: BFO:0000118 CHMO:0001024 ! has proper occurrent part capillary electrophoresis
 
 [Term]
@@ -7628,11 +7604,10 @@ synonym: "capillary electrophoresis-ICPMS" EXACT []
 synonym: "CE-ICP-MS" EXACT []
 synonym: "CE-ICPMS" EXACT []
 synonym: "CE/ICP/MS" EXACT []
+is_a: CHMO:0000538 ! inductively coupled plasma mass spectrometry
 is_a: CHMO:0000702 ! capillary electrophoresis-mass spectrometry
-intersection_of: CHMO:0001048 ! separation method-measurement method
-intersection_of: BFO:0000118 CHMO:0000538 ! has proper occurrent part inductively coupled plasma mass spectrometry
+intersection_of: CHMO:0000538 ! inductively coupled plasma mass spectrometry
 intersection_of: BFO:0000118 CHMO:0001024 ! has proper occurrent part capillary electrophoresis
-relationship: BFO:0000118 CHMO:0000538 ! has proper occurrent part inductively coupled plasma mass spectrometry
 relationship: BFO:0000118 CHMO:0001024 ! has proper occurrent part capillary electrophoresis
 
 [Term]
@@ -7662,11 +7637,9 @@ def: "Any method where the sample is first separated by electrophoresis, before 
 synonym: "E-MS" EXACT []
 synonym: "electrophoresis mass spectroscopy" EXACT []
 synonym: "electrophoresis-mass spectrometry" EXACT []
-is_a: CHMO:0001048 ! separation method-measurement method
-intersection_of: CHMO:0001048 ! separation method-measurement method
-intersection_of: BFO:0000118 CHMO:0000470 ! has proper occurrent part mass spectrometry
+is_a: CHMO:0000470 ! mass spectrometry
+intersection_of: CHMO:0000470 ! mass spectrometry
 intersection_of: BFO:0000118 CHMO:0001019 ! has proper occurrent part electrophoresis
-relationship: BFO:0000118 CHMO:0000470 ! has proper occurrent part mass spectrometry
 relationship: BFO:0000118 CHMO:0001019 ! has proper occurrent part electrophoresis
 
 [Term]
@@ -7675,11 +7648,9 @@ name: two-dimensional gel electrophoresis-mass spectrometry
 def: "A method where a sample mixture is first separated by two-dimensional gel electrophoresis, before being converted into ions which are characterised by their mass-to-charge ratio and relative abundance." [rsc:hjb]
 synonym: "2DE-MS" EXACT []
 synonym: "two-dimensional gel electrophoresis mass spectrometry" EXACT []
-is_a: CHMO:0002038 ! two-dimensional separation method-measurement method
-intersection_of: CHMO:0001048 ! separation method-measurement method
-intersection_of: BFO:0000118 CHMO:0000470 ! has proper occurrent part mass spectrometry
+is_a: CHMO:0000470 ! mass spectrometry
+intersection_of: CHMO:0000470 ! mass spectrometry
 intersection_of: BFO:0000118 CHMO:0001029 ! has proper occurrent part two dimensional gel electrophoresis
-relationship: BFO:0000118 CHMO:0000470 ! has proper occurrent part mass spectrometry
 relationship: BFO:0000118 CHMO:0001029 ! has proper occurrent part two dimensional gel electrophoresis
 
 [Term]
@@ -7740,10 +7711,8 @@ def: "A method where a sample mixture is first separated by high-performance liq
 synonym: "high performance liquid chromatography nuclear magnetic resonance spectroscopy" EXACT []
 synonym: "HPLC-NMR" EXACT []
 is_a: CHMO:0002708 ! liquid chromatography nuclear magnetic resonance spectroscopy
-intersection_of: CHMO:0001048 ! separation method-measurement method
-intersection_of: BFO:0000118 CHMO:0000613 ! has proper occurrent part pulsed nuclear magnetic resonance spectroscopy
+intersection_of: CHMO:0000613 ! pulsed nuclear magnetic resonance spectroscopy
 intersection_of: BFO:0000118 CHMO:0001009 ! has proper occurrent part high-performance liquid chromatography
-relationship: BFO:0000118 CHMO:0000613 ! has proper occurrent part pulsed nuclear magnetic resonance spectroscopy
 relationship: BFO:0000118 CHMO:0001009 ! has proper occurrent part high-performance liquid chromatography
 
 [Term]
@@ -7757,6 +7726,9 @@ synonym: "ultra-performance LC-MS" EXACT []
 synonym: "UPLC-MS" EXACT []
 synonym: "UPLC/MS" EXACT []
 is_a: CHMO:0000796 ! high-performance liquid chromatography-mass spectrometry
+intersection_of: CHMO:0000470 ! mass spectrometry
+intersection_of: BFO:0000118 CHMO:0000795 ! has proper occurrent part ultra high performance liquid chromatography
+relationship: BFO:0000118 CHMO:0000795 ! has proper occurrent part ultra high performance liquid chromatography
 
 [Term]
 id: CHMO:0000716
@@ -7766,20 +7738,17 @@ synonym: "high performance liquid chromatography nuclear magnetic resonance mass
 synonym: "high performance liquid chromatography-nuclear magnetic resonance-mass spectrometry" EXACT []
 synonym: "HPLC-NMR-MS" EXACT []
 synonym: "HPLC/NMR/MS" EXACT []
-is_a: CHMO:0000714 ! high-performance liquid chromatography nuclear magnetic resonance spectroscopy
 is_a: CHMO:0000796 ! high-performance liquid chromatography-mass spectrometry
-intersection_of: CHMO:0001048 ! separation method-measurement method
-intersection_of: BFO:0000118 CHMO:0000470 ! has proper occurrent part mass spectrometry
+intersection_of: CHMO:0000470 ! mass spectrometry
 intersection_of: BFO:0000118 CHMO:0000613 ! has proper occurrent part pulsed nuclear magnetic resonance spectroscopy
 intersection_of: BFO:0000118 CHMO:0001009 ! has proper occurrent part high-performance liquid chromatography
-relationship: BFO:0000118 CHMO:0000470 ! has proper occurrent part mass spectrometry
 relationship: BFO:0000118 CHMO:0000613 ! has proper occurrent part pulsed nuclear magnetic resonance spectroscopy
 relationship: BFO:0000118 CHMO:0001009 ! has proper occurrent part high-performance liquid chromatography
 
 [Term]
 id: CHMO:0000717
 name: extractive electrospray ionisation mass spectrometry
-def: "Mass spectrometry where a neutral sample, in the form of a gas or aerosol flow, is ionised by directing it into a plume of charged droplets, generated by forcing a solution of pure solvent through a small heated capillary (at a flow rate of 1--10 \\muL min-1) into an electric field." [rsc:hjb]
+def: "Mass spectrometry where a neutral sample, in the form of a gas or aerosol flow, is ionised by directing it into a plume of charged droplets, generated by forcing a solution of pure solvent through a small heated capillary (at a flow rate of 1-10 microlitres per minute) into an electric field." [rsc:hjb]
 synonym: "EESI-MS" EXACT []
 synonym: "EESI/MS" EXACT []
 synonym: "extractive electrospray ionisation mass spectroscopy" EXACT []
@@ -7790,7 +7759,8 @@ is_a: CHMO:0000482 ! electrospray ionisation mass spectrometry
 [Term]
 id: CHMO:0000718
 name: Carr-Purcell-Meiboom-Gill pulse sequence
-def: "A pulse sequence which is applied during nuclear magnetic resonance spectroscopy to measure spin--spin (T2) relaxation times. For the pulse sequence see Rev. Sci. Inst., (1958), 29, pg 688." [DOI:10.1016/S1090-7807(03)00108-3, FIX:0000215]
+alt_id: FIX:0000215
+def: "A pulse sequence which is applied during nuclear magnetic resonance spectroscopy to measure spin--spin (T2) relaxation times. For the pulse sequence see Rev. Sci. Inst., (1958), 29, pg 688." [DOI:10.1016/S1090-7807(03)00108-3]
 synonym: "Carr, Purcell,Meiboom,Gill pulse sequence" EXACT []
 synonym: "Carr-Purcell Meiboom-Gill pulse sequence" EXACT []
 synonym: "Carr-Purcell-Meiboom-Gill pulse sequence" EXACT []
@@ -7969,10 +7939,9 @@ name: gas chromatography time-of-flight mass spectrometry
 def: "A method where a sample mixture is first separated by gas chromatography then sample ions with different masses are accelerated to the same (known) kinetic energy and the time taken for each ion to reach a detector at a known distance is measured. This time is dependent on the mass-to-charge ratio of the ion." [rsc:cb]
 synonym: "GC-TOF-MS" EXACT []
 is_a: CHMO:0000497 ! gas chromatography-mass spectrometry
-intersection_of: CHMO:0001048 ! separation method-measurement method
-intersection_of: BFO:0000118 CHMO:0000580 ! has proper occurrent part time-of-flight mass spectrometry
+is_a: CHMO:0000580 ! time-of-flight mass spectrometry
+intersection_of: CHMO:0000580 ! time-of-flight mass spectrometry
 intersection_of: BFO:0000118 CHMO:0001002 ! has proper occurrent part gas chromatography
-relationship: BFO:0000118 CHMO:0000580 ! has proper occurrent part time-of-flight mass spectrometry
 relationship: BFO:0000118 CHMO:0001002 ! has proper occurrent part gas chromatography
 
 [Term]
@@ -7991,11 +7960,10 @@ def: "Mass spectrometry where the sample mixture is first separated by liquid ch
 synonym: "LC-ESI-TOF-MS" EXACT []
 synonym: "LC/ESI-TOF-MS" EXACT []
 synonym: "liquid chromatography electrospray ionisation time-of-flight mass spectrometry" EXACT []
+is_a: CHMO:0000736 ! electrospray ionisation time-of-flight mass spectrometry
 is_a: CHMO:0000751 ! liquid chromatography-electrospray ionisation mass spectrometry
-intersection_of: CHMO:0001048 ! separation method-measurement method
-intersection_of: BFO:0000118 CHMO:0000736 ! has proper occurrent part electrospray ionisation time-of-flight mass spectrometry
+intersection_of: CHMO:0000736 ! electrospray ionisation time-of-flight mass spectrometry
 intersection_of: BFO:0000118 CHMO:0001004 ! has proper occurrent part liquid chromatography
-relationship: BFO:0000118 CHMO:0000736 ! has proper occurrent part electrospray ionisation time-of-flight mass spectrometry
 relationship: BFO:0000118 CHMO:0001004 ! has proper occurrent part liquid chromatography
 
 [Term]
@@ -8007,11 +7975,10 @@ synonym: "reversed-phase liquid chromatography electrospray ionisation tandem ma
 synonym: "RPLC-LC-ESI-MS-MS" EXACT []
 synonym: "RPLC-LC-ESI-MS/MS" EXACT []
 synonym: "RPLC-LC-ESI-MS2" EXACT []
-is_a: CHMO:0000578 ! high-performance liquid chromatography-electrospray ionisation tandem mass spectrometry
-intersection_of: CHMO:0001048 ! separation method-measurement method
-intersection_of: BFO:0000118 CHMO:0000577 ! has proper occurrent part electrospray ionisation tandem mass spectrometry
+is_a: CHMO:0000577 ! electrospray ionisation tandem mass spectrometry
+is_a: CHMO:0000701 ! liquid chromatography-tandem mass spectrometry
+intersection_of: CHMO:0000577 ! electrospray ionisation tandem mass spectrometry
 intersection_of: BFO:0000118 CHMO:0001050 ! has proper occurrent part reversed-phase liquid chromatography
-relationship: BFO:0000118 CHMO:0000577 ! has proper occurrent part electrospray ionisation tandem mass spectrometry
 relationship: BFO:0000118 CHMO:0001050 ! has proper occurrent part reversed-phase liquid chromatography
 
 [Term]
@@ -8142,11 +8109,9 @@ synonym: "cap-LC-ICPMS" EXACT []
 synonym: "capillary liquid chromatography inductively coupled plasma mass spectroscopy" EXACT []
 synonym: "CapLC-ICPMS" EXACT []
 synonym: "capLC-ICPMS" EXACT []
-is_a: CHMO:0001048 ! separation method-measurement method
-intersection_of: CHMO:0001048 ! separation method-measurement method
-intersection_of: BFO:0000118 CHMO:0000538 ! has proper occurrent part inductively coupled plasma mass spectrometry
+is_a: CHMO:0000538 ! inductively coupled plasma mass spectrometry
+intersection_of: CHMO:0000538 ! inductively coupled plasma mass spectrometry
 intersection_of: BFO:0000118 CHMO:0001049 ! has proper occurrent part capillary liquid chromatography
-relationship: BFO:0000118 CHMO:0000538 ! has proper occurrent part inductively coupled plasma mass spectrometry
 relationship: BFO:0000118 CHMO:0001049 ! has proper occurrent part capillary liquid chromatography
 
 [Term]
@@ -8158,11 +8123,10 @@ synonym: "LC-ESIMS" EXACT []
 synonym: "LC/ESIMS" EXACT []
 synonym: "liquid chromatography electrospray ionisation mass spectrometry" EXACT []
 synonym: "liquid chromatography electrospray ionisation mass spectroscopy" EXACT []
+is_a: CHMO:0000482 ! electrospray ionisation mass spectrometry
 is_a: CHMO:0000524 ! liquid chromatography-mass spectrometry
-intersection_of: CHMO:0001048 ! separation method-measurement method
-intersection_of: BFO:0000118 CHMO:0000482 ! has proper occurrent part electrospray ionisation mass spectrometry
+intersection_of: CHMO:0000482 ! electrospray ionisation mass spectrometry
 intersection_of: BFO:0000118 CHMO:0001004 ! has proper occurrent part liquid chromatography
-relationship: BFO:0000118 CHMO:0000482 ! has proper occurrent part electrospray ionisation mass spectrometry
 relationship: BFO:0000118 CHMO:0001004 ! has proper occurrent part liquid chromatography
 
 [Term]
@@ -8186,11 +8150,10 @@ def: "Amethod where a sample mixture is first separated by liquid chromatography
 synonym: "LC-ITMS" EXACT []
 synonym: "liquid chromatography ion trap mass spectrometry" EXACT []
 synonym: "liquid chromatography ion trap mass spectroscopy" EXACT []
+is_a: CHMO:0000500 ! ion trap mass spectrometry
 is_a: CHMO:0000524 ! liquid chromatography-mass spectrometry
-intersection_of: CHMO:0001048 ! separation method-measurement method
-intersection_of: BFO:0000118 CHMO:0000500 ! has proper occurrent part ion trap mass spectrometry
+intersection_of: CHMO:0000500 ! ion trap mass spectrometry
 intersection_of: BFO:0000118 CHMO:0001004 ! has proper occurrent part liquid chromatography
-relationship: BFO:0000118 CHMO:0000500 ! has proper occurrent part ion trap mass spectrometry
 relationship: BFO:0000118 CHMO:0001004 ! has proper occurrent part liquid chromatography
 
 [Term]
@@ -8574,13 +8537,13 @@ is_a: CHMO:0000291 ! spectrophotometry
 
 [Term]
 id: CHMO:0000793
-name: experimental method output
-def: "An information content entity that is output by an experimental method." [rsc:cb, rsc:hjb]
+name: assay output
+def: "An information content entity that is output by an assay." [rsc:cb, rsc:hjb]
 synonym: "experimental data" EXACT []
 is_a: IAO:0000030 ! information content entity
 intersection_of: IAO:0000030 ! information content entity
-intersection_of: OBI:0000312 CHMO:0001133 ! is_specified_output_of experimental method
-relationship: OBI:0000312 CHMO:0001133 ! is_specified_output_of experimental method
+intersection_of: OBI:0000312 OBI:0000070 ! is_specified_output_of assay
+relationship: OBI:0000312 OBI:0000070 ! is_specified_output_of assay
 
 [Term]
 id: CHMO:0000794
@@ -8611,10 +8574,8 @@ synonym: "high performance liquid chromatography-mass spectrometry" EXACT []
 synonym: "high performance liquid chromatography-mass spectroscopy" EXACT []
 synonym: "HPLC-MS" EXACT []
 is_a: CHMO:0000524 ! liquid chromatography-mass spectrometry
-intersection_of: CHMO:0001048 ! separation method-measurement method
-intersection_of: BFO:0000118 CHMO:0000470 ! has proper occurrent part mass spectrometry
+intersection_of: CHMO:0000470 ! mass spectrometry
 intersection_of: BFO:0000118 CHMO:0001009 ! has proper occurrent part high-performance liquid chromatography
-relationship: BFO:0000118 CHMO:0000470 ! has proper occurrent part mass spectrometry
 relationship: BFO:0000118 CHMO:0001009 ! has proper occurrent part high-performance liquid chromatography
 
 [Term]
@@ -8647,7 +8608,7 @@ name: spectrum
 def: "A plot of a measured quantity against some experimental parameter." [rsc:cb]
 synonym: "spectra" EXACT []
 synonym: "spectrum plot" EXACT []
-is_a: CHMO:0000793 ! experimental method output
+is_a: CHMO:0000793 ! assay output
 
 [Term]
 id: CHMO:0000801
@@ -9358,10 +9319,9 @@ synonym: "gas chromatography inductively coupled plasma mass spectroscopy" EXACT
 synonym: "GC-ICP-MS" EXACT []
 synonym: "GC-ICP/MS" EXACT []
 is_a: CHMO:0000497 ! gas chromatography-mass spectrometry
-intersection_of: CHMO:0001048 ! separation method-measurement method
-intersection_of: BFO:0000118 CHMO:0000538 ! has proper occurrent part inductively coupled plasma mass spectrometry
+is_a: CHMO:0000538 ! inductively coupled plasma mass spectrometry
+intersection_of: CHMO:0000538 ! inductively coupled plasma mass spectrometry
 intersection_of: BFO:0000118 CHMO:0001002 ! has proper occurrent part gas chromatography
-relationship: BFO:0000118 CHMO:0000538 ! has proper occurrent part inductively coupled plasma mass spectrometry
 relationship: BFO:0000118 CHMO:0001002 ! has proper occurrent part gas chromatography
 
 [Term]
@@ -9374,11 +9334,9 @@ synonym: "IEC-ICP-MS" EXACT []
 synonym: "ion chromatography inductively coupled plasma mass spectrometry" EXACT []
 synonym: "ion chromatography inductively coupled plasma mass spectroscopy" EXACT []
 synonym: "ion chromatography-inductively coupled plasma mass spectrometry" EXACT []
-is_a: CHMO:0001048 ! separation method-measurement method
-intersection_of: CHMO:0001048 ! separation method-measurement method
-intersection_of: BFO:0000118 CHMO:0000538 ! has proper occurrent part inductively coupled plasma mass spectrometry
+is_a: CHMO:0000538 ! inductively coupled plasma mass spectrometry
+intersection_of: CHMO:0000538 ! inductively coupled plasma mass spectrometry
 intersection_of: BFO:0000118 CHMO:0001014 ! has proper occurrent part ion-exchange chromatography
-relationship: BFO:0000118 CHMO:0000538 ! has proper occurrent part inductively coupled plasma mass spectrometry
 relationship: BFO:0000118 CHMO:0001014 ! has proper occurrent part ion-exchange chromatography
 
 [Term]
@@ -9781,7 +9739,7 @@ name: rheometry
 def: "The study of the flow of fluids which cannot be defined by a single value of viscosity. Rheometry is the measurement of the relationship between deformation and stress for these liquids." [rsc:hjb]
 synonym: "rheological measurements" EXACT []
 synonym: "rheology" EXACT []
-is_a: CHMO:0000000 ! measurement method
+is_a: OBI:0000070 ! assay
 
 [Term]
 id: CHMO:0000916
@@ -9871,9 +9829,10 @@ is_a: CHMO:0000922 ! voltammogram
 [Term]
 id: CHMO:0000924
 name: magnetometry
-def: "The measurement of the strength and/or direction of magnetic fields, or the magnetic susceptibility of a sample." [FIX:0000048, rsc:hjb]
+alt_id: FIX:0000048
+def: "The measurement of the strength and/or direction of magnetic fields, or the magnetic susceptibility of a sample." [rsc:hjb]
 synonym: "magnetic susceptibility measurements" EXACT []
-is_a: CHMO:0000000 ! measurement method
+is_a: OBI:0000070 ! assay
 
 [Term]
 id: CHMO:0000925
@@ -9895,7 +9854,7 @@ is_a: CHMO:0000924 ! magnetometry
 id: CHMO:0000927
 name: velocimetry
 def: "The measurement of the velocity of a moving object or medium." [DOI:047139484X]
-is_a: CHMO:0000000 ! measurement method
+is_a: OBI:0000070 ! assay
 
 [Term]
 id: CHMO:0000928
@@ -10457,9 +10416,10 @@ is_a: CHMO:0000993 ! portion of material
 [Term]
 id: CHMO:0000999
 name: separation method
-def: "A method that results in the separation of two or more components according to some property." [FIX:0000002, rsc:cb]
+alt_id: FIX:0000002
+def: "A method that results in the separation of two or more components according to some property." [rsc:cb]
 synonym: "partition" EXACT []
-is_a: CHMO:0001267 ! sample transformation method
+is_a: OBI:0000094 ! material processing
 
 [Term]
 id: CHMO:0001000
@@ -10873,16 +10833,10 @@ synonym: "isotachophoretic focussing" EXACT []
 is_a: CHMO:0001025 ! isotachophoresis
 
 [Term]
-id: CHMO:0001047
-name: centrifugation
-def: "A method where components of a sample are separated on the basis of their density in a centrifuge according to the centrifugal force they experience." [FIX:0000259, FIX:0000260, rsc:cb]
-is_a: CHMO:0000999 ! separation method
-
-[Term]
 id: CHMO:0001048
 name: separation method-measurement method
 def: "A method in which a separation method is coupled to a measurement method in order to perform measurements upon different components of a sample." [rsc:cb]
-is_a: CHMO:0001793 ! sample transformation method-measurement method
+is_obsolete: true
 
 [Term]
 id: CHMO:0001049
@@ -11183,8 +11137,7 @@ is_a: CHMO:0000613 ! pulsed nuclear magnetic resonance spectroscopy
 id: CHMO:0001082
 name: osmometry
 def: "The measurement of the osmotic strength of a substance which often used to determine its molecular weight." [rsc:hjb]
-synonym: "osometry" EXACT []
-is_a: CHMO:0000000 ! measurement method
+is_a: OBI:0000070 ! assay
 
 [Term]
 id: CHMO:0001083
@@ -11271,7 +11224,7 @@ synonym: "EPR imaging" EXACT []
 synonym: "EPRI" EXACT []
 synonym: "ESR imaging" EXACT []
 synonym: "ESRI" EXACT []
-is_a: CHMO:0000048 ! imaging method
+is_a: OBI:0000185 ! imaging assay
 
 [Term]
 id: CHMO:0001093
@@ -11354,13 +11307,13 @@ is_a: CHMO:0000307 ! X-ray emission spectroscopy
 id: CHMO:0001102
 name: autoradiography
 def: "The recording of the image of an object through the effect of ionising radiation on a film or emulsion." [rsc:cb]
-is_a: CHMO:0000048 ! imaging method
+is_a: OBI:0000185 ! imaging assay
 
 [Term]
 id: CHMO:0001103
 name: recorded image
 def: "A data set consisting of a 2D representation obtained from a sample." [rsc:cb]
-is_a: CHMO:0000793 ! experimental method output
+is_a: CHMO:0000793 ! assay output
 
 [Term]
 id: CHMO:0001104
@@ -11607,40 +11560,20 @@ created_by: batchelorc
 creation_date: 2009-03-06T04:58:01Z
 
 [Term]
-id: CHMO:0001131
-name: sample preparation step
-alt_id: CHMO:0001461
-def: "Any method used to modify an existing sample." [rsc:hjb]
-synonym: "preparative method" EXACT []
-synonym: "sample preparation" EXACT []
-synonym: "sample preparative method" EXACT []
-xref: FIX:0000258
-is_a: CHMO:0001267 ! sample transformation method
-created_by: batchelorc
-creation_date: 2009-03-06T05:22:11Z
-
-[Term]
 id: CHMO:0001132
 name: laser ablation
 def: "A sample preparation method where material is removed from a specimen by illuminating it with a laser beam." [rsc:cb]
-is_a: CHMO:0001131 ! sample preparation step
+is_a: OBI:0000094 ! material processing
 created_by: batchelorc
 creation_date: 2009-03-06T05:23:07Z
-
-[Term]
-id: CHMO:0001133
-name: experimental method
-def: "A planned process carried out by a human experimenter." [rsc:cb]
-is_a: OBI:0000011 ! planned process
-created_by: batchelorc
-creation_date: 2009-03-06T05:26:27Z
 
 [Term]
 id: CHMO:0001134
 name: sample preparation method-measurement method
 alt_id: CHMO:0002037
 def: "A method in which a sample preparation method is coupled to a measurement method." [rsc:cb]
-is_a: CHMO:0001133 ! experimental method
+is_a: OBI:0000070 ! assay
+is_obsolete: true
 created_by: batchelorc
 creation_date: 2009-03-06T05:31:37Z
 
@@ -11648,7 +11581,7 @@ creation_date: 2009-03-06T05:31:37Z
 id: CHMO:0001135
 name: viscometry
 def: "The measurement of the viscosity of fluids by observing the relative motion of the fluid and an object. Viscometry is used to measure the molecular weight of polymers." [rsc:hjb]
-is_a: CHMO:0000000 ! measurement method
+is_a: OBI:0000070 ! assay
 created_by: burchh
 creation_date: 2009-03-11T04:06:10Z
 
@@ -11879,7 +11812,7 @@ creation_date: 2009-03-12T11:17:55Z
 [Term]
 id: CHMO:0001157
 name: single pulse--pulsed laser polymerization--near-infrared technique
-def: "A technique for measuring the time-resolved concentration of monomer during polymerisation reactions. The polymerisation is initiated by a single pulse of laser radiation and the monomer concentration is monitored by measuring absorbance in the near-infrared (0.8--2 \\mum) region." [ISBN:386727682X]
+def: "A technique for measuring the time-resolved concentration of monomers during polymerisation reactions. The polymerisation is initiated by a single pulse of laser radiation and the monomer concentration is monitored by measuring absorbance in the near-infrared (0.8--2 \\mum) region." [ISBN:386727682X]
 synonym: "single pulse-pulsed laser polymerization-near-infrared " EXACT []
 synonym: "SP-PLP-NIR" EXACT []
 is_a: CHMO:0000638 ! near-infrared absorption spectroscopy
@@ -11888,7 +11821,7 @@ creation_date: 2009-03-13T11:42:53Z
 
 [Term]
 id: CHMO:0001158
-name: single pulse--pulsed laser polymerization--electron spin resonance
+name: single pulse-pulsed laser polymerization-electron spin resonance
 def: "A technique for measuring the time-resolved concentration of radicals during polymerisation reactions. The polymerisation is initiated by a single pulse of laser radiation and the radical concentration is monitored by measuring response of the unpaired electrons to short (ns) pulses of microwave radiation in a magnetic field." [DOI:10.1021/ma802078g]
 synonym: "single pulse-pulsed laser polymerization-electron paramagnetic resonance " EXACT []
 synonym: "single pulse-pulsed laser polymerization-electron spin resonance " EXACT []
@@ -11900,7 +11833,7 @@ creation_date: 2009-03-13T11:45:02Z
 
 [Term]
 id: CHMO:0001159
-name: pulsed laser polymerisation--size-exclusion chromatography
+name: pulsed laser polymerisation-size exclusion chromatography
 def: "A technique for measuring the propagation rate coefficient during polymerisation reactions. The polymerisation is initiated by laser irradiation and the chain length distribution is subsequently determined by size-exclusion chromatography." [DOI:10.1021/ma802078g, ISBN:0471461571]
 synonym: "PLP-SEC" EXACT []
 synonym: "PLP/SEC" EXACT []
@@ -11908,7 +11841,9 @@ synonym: "pulsed laser polymerisation size exclusion chromatography" EXACT []
 synonym: "pulsed laser polymerisation-size exclusion chromatography" EXACT []
 synonym: "pulsed laser polymerisation-size-exclusion chromatography" EXACT []
 synonym: "pulsed-laser polymerisation-size-exclusion chromatography" EXACT []
-is_a: CHMO:0001013 ! size-exclusion chromatography
+is_a: CHMO:0002834 ! polymerisation propagation rate coefficient determination
+relationship: BFO:0000118 CHMO:0001013 ! has proper occurrent part size-exclusion chromatography
+relationship: BFO:0000118 CHMO:0002552 ! has proper occurrent part pulsed laser polymerisation
 created_by: burchh
 creation_date: 2009-03-13T12:37:11Z
 
@@ -11939,7 +11874,7 @@ creation_date: 2009-03-13T12:55:35Z
 
 [Term]
 id: CHMO:0001162
-name: pulsed laser polymerisation--size-exclusion chromatography--nuclear magnetic resonance
+name: pulsed laser polymerisation-size exclusion chromatography-nuclear magnetic resonance
 def: "A technique for measuring the propagation rate coefficient during polymerisation reactions. The polymerisation is initiated by laser irradiation and the chain length distribution is subsequently determined by size-exclusion chromatography and the composition of the copolymer products is determined by NMR." [DOI:10.1021/ma801435t]
 synonym: "PLP-SEC-NMR" EXACT []
 synonym: "PLP/SEC/NMR" EXACT []
@@ -11947,7 +11882,10 @@ synonym: "pulsed laser polymerisation size exclusion chromatography nuclear magn
 synonym: "pulsed laser polymerisation-size exclusion chromatography-nuclear magnetic resonance" EXACT []
 synonym: "pulsed laser polymerisation-size-exclusion chromatography-nuclear magnetic resonance" EXACT []
 synonym: "pulsed-laser polymerisation-size-exclusion chromatography" EXACT []
-is_a: CHMO:0001013 ! size-exclusion chromatography
+is_a: CHMO:0002834 ! polymerisation propagation rate coefficient determination
+relationship: BFO:0000118 CHMO:0000103 ! has proper occurrent part confocal microscopy
+relationship: BFO:0000118 CHMO:0000713 ! has proper occurrent part continuous-wave nuclear magnetic resonance spectroscopy
+relationship: BFO:0000118 CHMO:0002552 ! has proper occurrent part pulsed laser polymerisation
 created_by: burchh
 creation_date: 2009-03-13T01:01:06Z
 
@@ -11956,7 +11894,7 @@ id: CHMO:0001163
 name: tensiometry
 def: "The measurement of the surface tension of a liquid." [rsc:hjb]
 synonym: "surface tensiometry" EXACT []
-is_a: CHMO:0000000 ! measurement method
+is_a: OBI:0000070 ! assay
 created_by: burchh
 creation_date: 2009-03-13T01:09:04Z
 
@@ -11992,36 +11930,36 @@ creation_date: 2009-03-13T01:24:23Z
 
 [Term]
 id: CHMO:0001167
-name: sorption--desorption measurements
+name: sorption--desorption measurement
 def: "A method for determining surface area by measuring the amount of an inert gaseous or liquid substance (the 'sorbent', usually H2 or N2) which adsorbs onto the surface of interest (the 'sorbate'), and the subsequent amount that desorbs at a constant temperature. Regression analysis is then applied to the data, resulting in an isotherm." [rsc:hjb]
 synonym: "adsorption-desorption" EXACT []
 synonym: "adsorption/desorption " EXACT []
 synonym: "sorption-desorption " EXACT []
 synonym: "sorption/desorption " EXACT []
-is_a: CHMO:0000000 ! measurement method
+is_a: OBI:0000070 ! assay
 created_by: burchh
 creation_date: 2009-03-13T01:27:03Z
 
 [Term]
 id: CHMO:0001168
-name: sorption measurements
+name: sorption measurement
 def: "A method for determining surface area by measuring the amount of an inert gasesous or liquid substance (the 'sorbent', usually H2 or N2) which adsorbs onto the surface of interest (the 'sorbate'). Regression analysis is then applied to the data, resulting in an isotherm." [rsc:hjb]
 synonym: "adsorption measurements" EXACT []
 synonym: "adsorptions" EXACT []
 synonym: "sorptions" EXACT []
-is_a: CHMO:0001167 ! sorption--desorption measurements
+is_a: CHMO:0001167 ! sorption--desorption measurement
 created_by: burchh
 creation_date: 2009-03-13T03:27:07Z
 
 [Term]
 id: CHMO:0001169
-name: nitrogen sorption measurements
+name: nitrogen sorption measurement
 def: "A method for determining surface area by measuring the amount of N2 that adsorbs onto the surface of interest (the 'sorbate'). Regression analysis is then applied to the data, resulting in an isotherm." [rsc:hjb]
 synonym: "N2 adsorption measurements" EXACT []
 synonym: "N2 sorption" EXACT []
 synonym: "nitrogen adsorption measurements" EXACT []
 synonym: "nitrogen sorptions" EXACT []
-is_a: CHMO:0001168 ! sorption measurements
+is_a: CHMO:0001168 ! sorption measurement
 created_by: burchh
 creation_date: 2009-03-13T03:28:52Z
 
@@ -12534,8 +12472,9 @@ creation_date: 2009-03-25T11:33:54Z
 [Term]
 id: CHMO:0001215
 name: magnetic resonance method
-def: "Any technique which detects the response of spins to a perturbing magnetic field." [FIX:0000012, rsc:hjb]
-is_a: CHMO:0000000 ! measurement method
+alt_id: FIX:0000012
+def: "Any technique which detects the response of spins to a perturbing magnetic field." [rsc:hjb]
+is_a: OBI:0000070 ! assay
 created_by: burchh
 creation_date: 2009-03-25T11:36:57Z
 
@@ -12848,7 +12787,7 @@ creation_date: 2009-03-26T01:11:53Z
 id: CHMO:0001247
 name: charge transport measurement method
 def: "Any technique for measuring charge transport." [rsc:hjb]
-is_a: CHMO:0000000 ! measurement method
+is_a: OBI:0000070 ! assay
 created_by: burchh
 creation_date: 2009-03-26T01:21:58Z
 
@@ -13031,7 +12970,10 @@ synonym: "GC IR" EXACT []
 synonym: "GC-IR" EXACT []
 synonym: "GC/IR" EXACT []
 synonym: "GCIR" EXACT []
-is_a: CHMO:0001048 ! separation method-measurement method
+is_a: CHMO:0000630 ! infrared absorption spectroscopy
+intersection_of: CHMO:0000630 ! infrared absorption spectroscopy
+intersection_of: BFO:0000118 CHMO:0001002 ! has proper occurrent part gas chromatography
+relationship: BFO:0000118 CHMO:0001002 ! has proper occurrent part gas chromatography
 created_by: burchh
 creation_date: 2009-04-06T11:47:54Z
 
@@ -13086,14 +13028,6 @@ synonym: "synchrotron small angle X-ray scattering (SAXS)" EXACT []
 is_a: CHMO:0000204 ! small-angle X-ray scattering
 created_by: burchh
 creation_date: 2009-04-16T10:48:27Z
-
-[Term]
-id: CHMO:0001267
-name: sample transformation method
-def: "Any method used to transform a sample in a laboratory." [rsc:hjb]
-is_a: OBI:0000094 ! material processing
-created_by: burchh
-creation_date: 2009-04-16T03:08:30Z
 
 [Term]
 id: CHMO:0001268
@@ -13335,20 +13269,19 @@ def: "Mass spectrometry involving multiple mass-selection steps, with some form 
 synonym: "nanoESI QTOF MS/MS" EXACT []
 synonym: "nanoESI-Q-TOF MS/MS" EXACT []
 synonym: "nanoflow high-pressure liquid chromatography electrospray-quadrupole-time-of-flight tandem mass spectrometry" EXACT []
-synonym: "nanoHPLC-ESI QTOF MS/MS   " EXACT []
+synonym: "nanoHPLC-ESI QTOF MS/MS" EXACT []
 synonym: "nanoHPLC-ESI QTOF MS2" EXACT []
 synonym: "nanoHPLC-ESI-QTOF MS/MS" EXACT []
-synonym: "nHPLC-ESI QTOF MS/MS   " EXACT []
-is_a: CHMO:0001735 ! separation method-detection method
+synonym: "nHPLC-ESI QTOF MS/MS" EXACT []
+is_a: CHMO:0002719 ! quadrupole time-of-flight mass spectrometry
 created_by: burchh
 creation_date: 2009-05-06T03:00:50Z
 
 [Term]
 id: CHMO:0001285
-name: gravimetry
-def: "Any method used to directly determine the mass of a sample." [rsc:hjb]
-synonym: "gravimetric analysis" EXACT []
-is_a: CHMO:0000000 ! measurement method
+name: gravimetric analysis
+def: "Any method used to determine an analyte on the basis of a mass of a sample." [rsc:crb]
+is_a: OBI:0000070 ! assay
 created_by: burchh
 creation_date: 2009-05-06T03:21:36Z
 
@@ -13358,7 +13291,7 @@ name: quartz crystal microgravimetry
 def: "A method used to measure the mass (micrograms) per unit area of a sample using a quartz crystal microbalance (a piece of apparatus that measures the change in frequency of a quartz crystal sandwiched between a pair of electrodes as a function of the mass of the sample)." [rsc:hjb]
 synonym: "QCM measurements" EXACT []
 synonym: "QCM technique" EXACT []
-is_a: CHMO:0001285 ! gravimetry
+is_a: CHMO:0001285 ! gravimetric analysis
 created_by: burchh
 creation_date: 2009-05-06T03:22:12Z
 
@@ -14949,7 +14882,7 @@ name: peptisation
 def: "Reversal of coagulation or flocculation, i.e., the dispersion of aggregates to form a colloidally stable suspension or emulsion" [DOI:10.1351/pac200779101801]
 synonym: "deflocculation" EXACT []
 synonym: "peptization" EXACT []
-is_a: CHMO:0001131 ! sample preparation step
+is_a: OBI:0000094 ! material processing
 created_by: burchh
 creation_date: 2009-05-18T09:45:58Z
 
@@ -14979,27 +14912,27 @@ synonym: "aging" EXACT []
 synonym: "dispersion hardening" EXACT []
 synonym: "precipitate ageing" EXACT []
 synonym: "precipitation hardening" EXACT []
-is_a: CHMO:0001131 ! sample preparation step
+is_a: OBI:0000094 ! material processing
 
 [Term]
 id: CHMO:0001465
 name: annealing
 def: "A heat treatment that alters the microstructure of a material causing changes in its properties such as strength and hardness" [rsc:hjb]
-is_a: CHMO:0002770 ! heating
+is_a: CHMO:0002770 ! sample heating
 
 [Term]
 id: CHMO:0001466
 name: atomisation
 def: "The conversion of a vaporized sample into atomic components." [rsc:hjb]
 synonym: "atomization" EXACT []
-is_a: CHMO:0001131 ! sample preparation step
+is_a: OBI:0000094 ! material processing
 
 [Term]
 id: CHMO:0001467
 name: calcination
 def: "The heating of a sample to high temperatures in air or oxygen." [rsc:hjb]
 synonym: "calcining" EXACT []
-is_a: CHMO:0002770 ! heating
+is_a: CHMO:0002770 ! sample heating
 
 [Term]
 id: CHMO:0001468
@@ -15007,20 +14940,20 @@ name: carbo-reduction
 def: "A process in which a metal oxide is reduced in the presence of carbon or a carbon-containing compound." [rsc:hjb]
 synonym: "carbo reduction" EXACT []
 synonym: "carboreduction" EXACT []
-is_a: CHMO:0001131 ! sample preparation step
+is_a: OBI:0000094 ! material processing
 
 [Term]
 id: CHMO:0001469
 name: ceramisation
 def: "A process in which a ceramic precursor is converted into a ceramic." [rsc:hjb]
 synonym: "ceramization" EXACT []
-is_a: CHMO:0001131 ! sample preparation step
+is_a: OBI:0000094 ! material processing
 
 [Term]
 id: CHMO:0001470
 name: coating method
 def: "The application of a thin cover to a sample." [rsc:hjb]
-is_a: CHMO:0001131 ! sample preparation step
+is_a: OBI:0000094 ! material processing
 
 [Term]
 id: CHMO:0001471
@@ -15043,13 +14976,13 @@ id: CHMO:0001473
 name: combustion
 def: "An exothermic chemical reaction between a fuel (usually a hydrocarbon) and an oxidant (usually oxygen) which is sometimes accompanied by the production of light." [rsc:hjb]
 synonym: "burning" EXACT []
-is_a: CHMO:0001131 ! sample preparation step
+is_a: OBI:0000094 ! material processing
 
 [Term]
 id: CHMO:0001474
 name: sample cooling
 def: "The transfer of thermal energy from a sample to its surrounding environment." [rsc:hjb]
-is_a: CHMO:0001131 ! sample preparation step
+is_a: OBI:0000094 ! material processing
 
 [Term]
 id: CHMO:0001475
@@ -15069,7 +15002,7 @@ id: CHMO:0001477
 name: crystallisation
 def: "The formation of a crystalline solid from a solution, melt vapour, or a different solid phase, generally by lowering the temperature or by evaporation of a solvent." [AU:C01434, FIX:0000214]
 synonym: "crystallization" EXACT []
-is_a: CHMO:0001131 ! sample preparation step
+is_a: OBI:0000094 ! material processing
 
 [Term]
 id: CHMO:0001478
@@ -15093,7 +15026,7 @@ is_a: CHMO:0001477 ! crystallisation
 id: CHMO:0001480
 name: curing
 def: "A chemical process in which a prepolymer or polymer is converted into a polymer of higher molar mass and then into a network." [rsc:crb]
-is_a: CHMO:0001131 ! sample preparation step
+is_a: OBI:0000094 ! material processing
 
 [Term]
 id: CHMO:0001481
@@ -15123,14 +15056,14 @@ is_a: CHMO:0001480 ! curing
 id: CHMO:0001484
 name: densification
 def: "The removal of impurities and elimination of pores from a xerogel (a gel that has been dried with unhindered shrinkage)." [rsc:crb]
-is_a: CHMO:0001131 ! sample preparation step
+is_a: OBI:0000094 ! material processing
 
 [Term]
 id: CHMO:0001485
 name: derivatisation
 def: "The transformation of a chemical compound (the 'educt') into another similar compound (the 'derivative') by altering one or more of its functional groups. Derivatisation is generally perfomed to alter reactivity or change a physical property such as solubility, boiling point, melting point, thermal stability etc. " [rsc:hjb]
 synonym: "derivatization" EXACT []
-is_a: CHMO:0001131 ! sample preparation step
+is_a: OBI:0000094 ! material processing
 
 [Term]
 id: CHMO:0001486
@@ -15145,7 +15078,7 @@ is_a: CHMO:0001485 ! derivatisation
 id: CHMO:0001487
 name: decomposition
 def: "The breakdown of a single phase into two or more phases by heating or treatment with acid, alkali or enzymes. " [AU:D01547]
-is_a: CHMO:0001131 ! sample preparation step
+is_a: OBI:0000094 ! material processing
 
 [Term]
 id: CHMO:0001488
@@ -15239,7 +15172,7 @@ id: CHMO:0001500
 name: thermal decomposition
 def: "The separation of a chemical compound into elements or smaller compounds by heating it to a high temperature (approx. 1000 deg. C)." [rsc:hjb]
 is_a: CHMO:0001487 ! decomposition
-is_a: CHMO:0002770 ! heating
+is_a: CHMO:0002770 ! sample heating
 
 [Term]
 id: CHMO:0001501
@@ -15381,7 +15314,7 @@ is_a: CHMO:0001500 ! thermal decomposition
 id: CHMO:0001522
 name: dialysis
 def: "The separation of molecules in solution by the difference in their rates of diffusion through a semipermeable membrane." [rsc:hjb]
-is_a: CHMO:0001131 ! sample preparation step
+is_a: OBI:0000094 ! material processing
 
 [Term]
 id: CHMO:0001523
@@ -15400,7 +15333,7 @@ is_a: CHMO:0001522 ! dialysis
 id: CHMO:0001525
 name: sample dispersion
 def: "The distribution of particles of one phase in a continuous phase of a different nature." [rsc:hjb]
-is_a: CHMO:0001131 ! sample preparation step
+is_a: OBI:0000094 ! material processing
 
 [Term]
 id: CHMO:0001526
@@ -15420,7 +15353,7 @@ id: CHMO:0001528
 name: dissection
 def: "The disassembly of an object to determine its internal structure." [rsc:hjb]
 synonym: "anatomization" EXACT []
-is_a: CHMO:0001131 ! sample preparation step
+is_a: OBI:0000094 ! material processing
 
 [Term]
 id: CHMO:0001529
@@ -15450,7 +15383,7 @@ is_a: CHMO:0001530 ! laser micro-dissection
 id: CHMO:0001532
 name: distillation
 def: "A method of separating mixtures based on differences in their volatilities in a boiling liquid mixture. The components in a sample mixture are vaporised by the application of heat and then cooled by the action of cold water in a condenser." [rsc:hjb]
-is_a: CHMO:0001131 ! sample preparation step
+is_a: OBI:0000094 ! material processing
 
 [Term]
 id: CHMO:0001533
@@ -15526,7 +15459,7 @@ id: CHMO:0001544
 name: droplet dispensing
 def: "The controlled dropwise release of a liquid." [rsc:hjb]
 synonym: "drop dispensing" EXACT []
-is_a: CHMO:0001131 ! sample preparation step
+is_a: OBI:0000094 ! material processing
 
 [Term]
 id: CHMO:0001545
@@ -15564,7 +15497,7 @@ id: CHMO:0001549
 name: sample drying
 def: "The process of removing a solvent from a substance." [rsc:hjb]
 synonym: "drying" EXACT non-mining_synonym []
-is_a: CHMO:0001131 ! sample preparation step
+is_a: OBI:0000094 ! material processing
 
 [Term]
 id: CHMO:0001550
@@ -15625,7 +15558,7 @@ is_a: CHMO:0001549 ! sample drying
 id: CHMO:0001558
 name: etching
 def: "The process of chemically removing a thin layer from a sample surface, usually to leave behind a pattern." [rsc:hjb]
-is_a: CHMO:0001131 ! sample preparation step
+is_a: OBI:0000094 ! material processing
 
 [Term]
 id: CHMO:0001559
@@ -15735,17 +15668,10 @@ synonym: "wet anisotropic etching" EXACT []
 is_a: CHMO:0001571 ! wet etching
 
 [Term]
-id: CHMO:0001573
-name: electroporation
-def: "A method for introducing polar molecules into a host cell through the cell membrane. A large electric pulse (300--400 mV for <1 ms) temporarily disturbs the phospholipid bilayer, allowing molecules like DNA to pass into the cell." [rsc:hjb]
-synonym: "electropermeabilization" EXACT []
-is_a: CHMO:0001131 ! sample preparation step
-
-[Term]
 id: CHMO:0001574
 name: evaporation
 def: "The physical process by which a liquid substance is converted to a gas or vapour. This may occur at or below the normal boiling point of the liquid (the temperature at which a liquid boils at 1 atmosphere pressure) and the process is endothermic." [AU:E02227]
-is_a: CHMO:0001131 ! sample preparation step
+is_a: OBI:0000094 ! material processing
 
 [Term]
 id: CHMO:0001575
@@ -15763,7 +15689,7 @@ is_a: CHMO:0002208 ! solvent evaporation
 id: CHMO:0001577
 name: extraction
 def: "The transfer of a solute from a liquid phase to another immiscible or partially-miscible liquid phase in contact with it." [OrangeBook:9.4.1]
-is_a: CHMO:0001131 ! sample preparation step
+is_a: OBI:0000094 ! material processing
 
 [Term]
 id: CHMO:0001578
@@ -16073,7 +15999,7 @@ is_a: CHMO:0001607 ! solid--liquid extraction
 
 [Term]
 id: CHMO:0001610
-name: supercritical-fluid extraction
+name: supercritical fluid extraction
 def: "The process of transferring a substance from any matrix to a liquid phase using a supercritical fluid." [OrangeBook:9.2.7.7]
 synonym: "SCFE" EXACT []
 synonym: "SFE" EXACT []
@@ -16105,7 +16031,7 @@ name: extrusion
 def: "A process used to create objects of a fixed cross-sectional profile by forcing or drawing a material through a die." [rsc:hjb]
 synonym: "extrusion molding" EXACT []
 synonym: "extrusion moulding" EXACT []
-is_a: CHMO:0001131 ! sample preparation step
+is_a: OBI:0000094 ! material processing
 
 [Term]
 id: CHMO:0001614
@@ -16176,13 +16102,13 @@ is_a: CHMO:0001618 ! spinning
 id: CHMO:0001624
 name: fermentation
 def: "The process in which cells (microorganisms, plant or animal cells) are cultured in a bioreactor in a liquid or solid medium to convert organic substances into biomass (growth) or into products." [AU:F02337]
-is_a: CHMO:0001131 ! sample preparation step
+is_a: OBI:0000094 ! material processing
 
 [Term]
 id: CHMO:0001625
 name: fractionation
 def: "The process of dividing up a sample mixture into smaller quantities according to their physical (e.g. size, solubility) or chemical (e.g. bonding, reactivity) properties." [rsc:hjb]
-is_a: CHMO:0001131 ! sample preparation step
+is_a: OBI:0000094 ! material processing
 
 [Term]
 id: CHMO:0001626
@@ -16311,7 +16237,7 @@ is_a: CHMO:0001638 ! plasma protein fractionation
 id: CHMO:0001640
 name: filtration
 def: "The process of segregation of phases; the separation of suspended solids from a liquid or gas, usually by forcing a carrier gas or liquid through a porous medium." [AU:F02388]
-is_a: CHMO:0001131 ! sample preparation step
+is_a: OBI:0000094 ! material processing
 
 [Term]
 id: CHMO:0001641
@@ -16354,7 +16280,7 @@ is_a: CHMO:0001640 ! filtration
 id: CHMO:0001646
 name: gelation
 def: "The formation of a gel or solidification of a gelatin solution caused by a change in conditions (such as temperature or pH)." [rsc:hjb]
-is_a: CHMO:0001131 ! sample preparation step
+is_a: OBI:0000094 ! material processing
 
 [Term]
 id: CHMO:0001647
@@ -16395,7 +16321,7 @@ synonym: "dry grinding" EXACT []
 synonym: "milling" EXACT []
 synonym: "solid-state grinding" EXACT []
 synonym: "solvent-free grinding" EXACT []
-is_a: CHMO:0001131 ! sample preparation step
+is_a: OBI:0000094 ! material processing
 
 [Term]
 id: CHMO:0001653
@@ -16438,7 +16364,7 @@ id: CHMO:0001658
 name: ionisation method
 def: "The physical process of converting an atom or molecule into an ion by removing electrons." [rsc:hjb]
 synonym: "ionization method" EXACT []
-is_a: CHMO:0001131 ! sample preparation step
+is_a: OBI:0000094 ! material processing
 
 [Term]
 id: CHMO:0001659
@@ -16562,7 +16488,7 @@ is_a: CHMO:0001669 ! chemical ionisation
 id: CHMO:0001673
 name: isostatic pressing
 def: "The process of pressing a powder under a gas or liquid so that pressure is transmitted equally in all directions." [rsc:hjb]
-is_a: CHMO:0001131 ! sample preparation step
+is_a: OBI:0000094 ! material processing
 
 [Term]
 id: CHMO:0001674
@@ -16578,7 +16504,7 @@ id: CHMO:0001675
 name: labelling
 def: "The process of attaching a label onto a substance. Labels are molecular entities that facilitate the detection (through fluorescence, radioactivity, etc.) of the species to which they are attached." [CHEBI:35209, rsc:hjb]
 synonym: "labeling" EXACT []
-is_a: CHMO:0001131 ! sample preparation step
+is_a: OBI:0000094 ! material processing
 
 [Term]
 id: CHMO:0001676
@@ -16629,13 +16555,13 @@ is_a: CHMO:0001675 ! labelling
 id: CHMO:0001681
 name: leaching
 def: "The dissolution of material from a solid phase into a liquid in which it is not wholly soluble." [OrangeBook:9.4.1]
-is_a: CHMO:0001131 ! sample preparation step
+is_a: OBI:0000094 ! material processing
 
 [Term]
 id: CHMO:0001682
 name: sample melting
 def: "The process of heating a substance to cause the solid--liquid phase change." [rsc:hjb]
-is_a: CHMO:0001131 ! sample preparation step
+is_a: OBI:0000094 ! material processing
 
 [Term]
 id: CHMO:0001683
@@ -16661,7 +16587,7 @@ is_a: OBI:0000094 ! material processing
 [Term]
 id: CHMO:0001686
 name: Ostwald ripening
-def: "The growth of larger crystals from those of smaller size, which have a higher solubility that the larger ones." [OrangeBook:9.5]
+def: "The growth of larger crystals from those of smaller size, which have a higher solubility than the larger ones." [OrangeBook:9.5]
 synonym: "Ostwald-ripening" EXACT []
 is_a: OBI:0000094 ! material processing
 
@@ -16742,7 +16668,7 @@ is_a: CHMO:0001688 ! precipitation
 id: CHMO:0001698
 name: radiolysis
 def: "The cleavage of one or more bonds resulting from exposure to high-energy radiation." [AU:R05112]
-is_a: CHMO:0001131 ! sample preparation step
+is_a: OBI:0000094 ! material processing
 
 [Term]
 id: CHMO:0001699
@@ -16760,7 +16686,7 @@ is_a: CHMO:0001698 ! radiolysis
 id: CHMO:0001701
 name: sintering
 def: "The fusing together of small particles by heating the sample below its melting point until its particles adhere to each other." [rsc:hjb]
-is_a: CHMO:0001131 ! sample preparation step
+is_a: OBI:0000094 ! material processing
 
 [Term]
 id: CHMO:0001702
@@ -16804,8 +16730,8 @@ is_a: CHMO:0001703 ! solid-state sintering
 [Term]
 id: CHMO:0001707
 name: sonication
-def: "The irradiation of a liquid sample with sound (20--20 000 Hz) waves resulting in agitation. Sound waves propagate into the liquid media result in alternating high-pressure (compression) and low-pressure (rarefaction) cycles. During rarefaction, high-intensity sonic waves create small vacuum bubbles or voids in the liquid, which then collapse violently (cavitation) during compression, creating very high local temperatures." [AU:S05766]
-is_a: CHMO:0001131 ! sample preparation step
+def: "The irradiation of a liquid sample with sound (20 Hz-20 kHz) waves resulting in agitation. Sound waves propagate into the liquid media result in alternating high-pressure (compression) and low-pressure (rarefaction) cycles. During rarefaction, high-intensity sonic waves create small vacuum bubbles or voids in the liquid, which then collapse violently (cavitation) during compression, creating very high local temperatures." [AU:S05766]
+is_a: OBI:0000094 ! material processing
 
 [Term]
 id: CHMO:0001708
@@ -16818,7 +16744,7 @@ is_a: CHMO:0001707 ! sonication
 id: CHMO:0001709
 name: detection method
 def: "A method used to indicate the presence of a substance within a sample." [rsc:hjb]
-is_a: CHMO:0001133 ! experimental method
+is_a: OBI:0000070 ! assay
 
 [Term]
 id: CHMO:0001710
@@ -17008,7 +16934,7 @@ is_a: CHMO:0001709 ! detection method
 [Term]
 id: CHMO:0001733
 name: ultraviolet detection
-def: "A detection method which is sensitive to unsaturated organic compounds. As the sample passes through a cell it is illuminated with light in the region 190--350nm and any absorption is detected." [rsc:hjb]
+def: "A detection method which is sensitive to unsaturated organic compounds. As the sample passes through a cell it is illuminated with light in the region 190-350nm and any absorption is detected." [rsc:hjb]
 synonym: "ultra-violet detection" EXACT []
 synonym: "UV detection" EXACT []
 is_a: CHMO:0001709 ! detection method
@@ -17016,7 +16942,7 @@ is_a: CHMO:0001709 ! detection method
 [Term]
 id: CHMO:0001734
 name: phosphate buffer
-def: "A buffer solution in which the pH is maintained by phosphoric acid--phosphate anion or phosphate--hydrogen phosphate equilibria." [rsc:cb]
+def: "A buffer solution in which the pH is maintained by phosphoric acid-phosphate anion or phosphate-hydrogen phosphate equilibria." [rsc:cb]
 synonym: "phosphate buffer solution" EXACT []
 is_a: CHMO:0001462 ! buffer solution
 created_by: batchelorc
@@ -17027,38 +16953,40 @@ id: CHMO:0001735
 name: separation method-detection method
 def: "An experiment in which a separation method is coupled to a detection method in order to detect one or more different components of a sample." [rsc:hjb]
 is_a: CHMO:0001792 ! sample transformation method-detection method
+is_obsolete: true
 
 [Term]
 id: CHMO:0001736
 name: gas chromatography-flame ionisation detection
-def: "A gas chromatography method that is sensitive to compounds containing C--H bonds. The eluent is mixed with H2 and air and ignited. Any positively-charged radicals resulting from this process are collected at a cathode allowing the current to be measured." [FIX:0000859, ISBN:0-13-147835-4]
+alt_id: FIX:0000859
+def: "Flame ionisation detection that is sensitive to compounds containing C-H bonds. The eluent is mixed with H2 and air and ignited. Any positively-charged radicals resulting from this process are collected at a cathode allowing the current to be measured." [ISBN:0-13-147835-4]
 synonym: "gas chromatography flame ionisation detection" EXACT []
 synonym: "gas chromatography flame ionization detection" EXACT []
-synonym: "gas chromatography-flame ionisation detector" EXACT []
 synonym: "gas chromatography-flame ionization detection" EXACT []
-synonym: "gas chromatography-flame ionization detector" EXACT []
 synonym: "GC-FID" EXACT []
 synonym: "GC/FID" EXACT []
 synonym: "GCFID" EXACT []
-is_a: CHMO:0001735 ! separation method-detection method
+is_a: CHMO:0001719 ! flame ionisation detection
+relationship: BFO:0000118 CHMO:0001002 ! has proper occurrent part gas chromatography
 
 [Term]
 id: CHMO:0001737
-name: gas chromatography-nitrogen--phosphorus detection
-def: "A gas chromatography method that is sensitive to compounds containing N and P. The eluent is mixed with H2 and air in the presence of a small, heated bead of an alkali salt such as Rb2SO4. Any positively-charged radicals resulting from this process are collected at a cathode allowing the current to be measured." [ISBN:0-13-147835-4]
+name: gas chromatography-nitrogen-phosphorus detection
+def: "Nitrogen-phosphorus detection where the input is from a gas chromatography separation." [ISBN:0-13-147835-4]
 synonym: "gas chromatography nitrogen phosphorus detection" EXACT []
 synonym: "gas chromatography nitrogen-phosphorus detection" EXACT []
 synonym: "gas chromatography-nitrogen-phosphorus detection" EXACT []
 synonym: "GC-NPD" EXACT []
 synonym: "GC/NPD" EXACT []
 synonym: "GCNPD" EXACT []
-is_a: CHMO:0001735 ! separation method-detection method
+is_a: CHMO:0001726 ! nitrogen--phosphorus detection
+relationship: BFO:0000118 CHMO:0001002 ! has proper occurrent part gas chromatography
 
 [Term]
 id: CHMO:0001738
 name: liquid chromatography-photodiode array detection
 alt_id: CHMO:0001743
-def: "A liquid chromatography method where the mobile phases passes through a cell where it is illuminated with light in the region 190--1100 nm and any absorption is detected by a photodiode array." [rsc:hjb]
+def: "Photodiode array detection where input is the mobile phase from a liquid chromatography separation." [rsc:crb]
 synonym: "LC-DAD" EXACT []
 synonym: "LC-PAD" EXACT []
 synonym: "LC-PDA" EXACT []
@@ -17069,29 +16997,35 @@ synonym: "LCDAD" EXACT []
 synonym: "LCPAD" EXACT []
 synonym: "LCPDA" EXACT []
 synonym: "liquid chromatography photodiode array detection" EXACT []
-is_a: CHMO:0001735 ! separation method-detection method
+is_a: CHMO:0001728 ! photodiode array detection
+relationship: BFO:0000118 CHMO:0001004 ! has proper occurrent part liquid chromatography
 
 [Term]
 id: CHMO:0001739
-name: gas chromatography-thermal energy analyser
-def: "A gas chromatography method that is sensitive to compounds containing NO and NO2 groups. The eluent is pyrolysed (at 275 deg. C) producing radicals, which react with ozone under low pressure to produce chemiluminescence." [DOI:10.1021/ac60357a073]
-synonym: "gas chromatography thermal energy analyser" EXACT []
-synonym: "gas chromatography thermal energy analyzer" EXACT []
-synonym: "gas chromatography-thermal energy analyzer" EXACT []
+name: gas chromatography-thermal energy analysis
+def: "A gas chromatography method that is sensitive to compounds containing NO and NO2 groups. The eluent is pyrolysed (at 275 deg C) producing radicals, which react with ozone under low pressure to produce chemiluminescence." [DOI:10.1021/ac60357a073]
+synonym: "gas chromatography thermal energy analysis" EXACT []
+synonym: "gas chromatography-thermal energy analysis" EXACT []
 synonym: "GC-TEA" EXACT []
 synonym: "GC/TEA" EXACT []
 synonym: "GCTEA" EXACT []
-is_a: CHMO:0001735 ! separation method-detection method
+is_a: CHMO:0002835 ! determination of nitrosamines
+intersection_of: CHMO:0002835 ! determination of nitrosamines
+intersection_of: BFO:0000118 CHMO:0001002 ! has proper occurrent part gas chromatography
+relationship: BFO:0000118 CHMO:0001002 ! has proper occurrent part gas chromatography
 
 [Term]
 id: CHMO:0001740
 name: gas chromatography-thermal conductivity detection
-def: "A gas chromatography method that is sensitive to inorganic gases. A hot (450 deg. C) filament is used to heat the eluent and the difference in thermal conductivity caused by the presence of the sample is measured." [ISBN:0471229830]
+def: "Thermal conductivity detection where the sample is the eluent from a gas chromatography separation." [ISBN:0471229830]
 synonym: "gas chromatography thermal conductivity detection" EXACT []
 synonym: "GC-TCD" EXACT []
 synonym: "GC/CD" EXACT []
 synonym: "GCTCD" EXACT []
-is_a: CHMO:0001735 ! separation method-detection method
+is_a: CHMO:0001731 ! thermal conductivity detection
+intersection_of: CHMO:0001731 ! thermal conductivity detection
+intersection_of: BFO:0000118 CHMO:0001002 ! has proper occurrent part gas chromatography
+relationship: BFO:0000118 CHMO:0001002 ! has proper occurrent part gas chromatography
 
 [Term]
 id: CHMO:0001741
@@ -17105,7 +17039,10 @@ synonym: "GC/FPD" EXACT []
 synonym: "GC/SCD GC-SCD" EXACT []
 synonym: "GCFPD" EXACT []
 synonym: "GCSCD" EXACT []
-is_a: CHMO:0001735 ! separation method-detection method
+is_a: CHMO:0001720 ! flame photometric detection
+intersection_of: CHMO:0001720 ! flame photometric detection
+intersection_of: BFO:0000118 CHMO:0001002 ! has proper occurrent part gas chromatography
+relationship: BFO:0000118 CHMO:0001002 ! has proper occurrent part gas chromatography
 
 [Term]
 id: CHMO:0001742
@@ -17115,7 +17052,10 @@ synonym: "LC-FD" EXACT []
 synonym: "LC/FD" EXACT []
 synonym: "LCFD" EXACT []
 synonym: "liquid chromatography fluorescence detection" EXACT []
-is_a: CHMO:0001735 ! separation method-detection method
+is_a: CHMO:0000060 ! fluorescence detection
+intersection_of: CHMO:0000060 ! fluorescence detection
+intersection_of: BFO:0000118 CHMO:0001004 ! has proper occurrent part liquid chromatography
+relationship: BFO:0000118 CHMO:0001004 ! has proper occurrent part liquid chromatography
 
 [Term]
 id: CHMO:0001744
@@ -17125,7 +17065,10 @@ synonym: "LC-RID" EXACT []
 synonym: "LC/RID" EXACT []
 synonym: "LCRID" EXACT []
 synonym: "liquid chromatography refractive index detection" EXACT []
-is_a: CHMO:0001735 ! separation method-detection method
+is_a: CHMO:0001730 ! refractive index detection
+intersection_of: CHMO:0001730 ! refractive index detection
+intersection_of: BFO:0000118 CHMO:0001004 ! has proper occurrent part liquid chromatography
+relationship: BFO:0000118 CHMO:0001004 ! has proper occurrent part liquid chromatography
 
 [Term]
 id: CHMO:0001745
@@ -17139,7 +17082,10 @@ synonym: "LCELS" EXACT []
 synonym: "liquid chromatography evaporative light scattering" EXACT []
 synonym: "liquid chromatography evaporative light scattering detection" EXACT []
 synonym: "liquid chromatography-evaporative light scattering" EXACT []
-is_a: CHMO:0001735 ! separation method-detection method
+is_a: CHMO:0001718 ! evaporative light scattering detection
+intersection_of: CHMO:0001718 ! evaporative light scattering detection
+intersection_of: BFO:0000118 CHMO:0001004 ! has proper occurrent part liquid chromatography
+relationship: BFO:0000118 CHMO:0001004 ! has proper occurrent part liquid chromatography
 
 [Term]
 id: CHMO:0001746
@@ -17153,7 +17099,10 @@ synonym: "liquid chromatography electrochemical detection" EXACT []
 synonym: "liquid chromatography electrochemistry" EXACT []
 synonym: "liquid chromatography-electrochemistry" EXACT []
 synonym: "liquid chromatography/electrochemistry" EXACT []
-is_a: CHMO:0001735 ! separation method-detection method
+is_a: CHMO:0001713 ! electrochemical detection
+intersection_of: CHMO:0001713 ! electrochemical detection
+intersection_of: BFO:0000118 CHMO:0001004 ! has proper occurrent part liquid chromatography
+relationship: BFO:0000118 CHMO:0001004 ! has proper occurrent part liquid chromatography
 
 [Term]
 id: CHMO:0001747
@@ -17168,12 +17117,15 @@ synonym: "gas chromatography-pulse-discharge helium ionization detection" EXACT 
 synonym: "GC-PDHID" EXACT []
 synonym: "GC/PDHID" EXACT []
 synonym: "GCPDHID" EXACT []
-is_a: CHMO:0001735 ! separation method-detection method
+is_a: CHMO:0001725 ! pulsed discharge helium ionisation detection
+intersection_of: CHMO:0001725 ! pulsed discharge helium ionisation detection
+intersection_of: BFO:0000118 CHMO:0001002 ! has proper occurrent part gas chromatography
+relationship: BFO:0000118 CHMO:0001002 ! has proper occurrent part gas chromatography
 
 [Term]
 id: CHMO:0001748
 name: acetate buffer
-def: "A buffer solution in which the pH is maintained by an acetic acid--acetate equilibrium." [rsc:cb]
+def: "A buffer solution in which the pH is maintained by an acetic acid-acetate equilibrium." [rsc:cb]
 is_a: CHMO:0001462 ! buffer solution
 created_by: batchelorc
 creation_date: 2009-05-18T03:00:58Z
@@ -17363,7 +17315,7 @@ creation_date: 2009-05-20T10:18:22Z
 id: CHMO:0001768
 name: trapping method
 def: "Any method used to trap a sample for further analysis." [rsc:hjb]
-is_a: CHMO:0001133 ! experimental method
+is_a: OBI:0000011 ! planned process
 created_by: burchh
 creation_date: 2009-05-20T10:29:44Z
 
@@ -17629,26 +17581,31 @@ creation_date: 2009-05-20T02:37:17Z
 [Term]
 id: CHMO:0001792
 name: sample transformation method-detection method
-def: "A method in which a sample transformation method is coupled to a detection method." [rsc:hjb]
-is_a: CHMO:0001133 ! experimental method
+def: "A method consisting of a sample transformation method coupled to a detection method." [rsc:hjb]
+is_a: OBI:0000070 ! assay
+is_obsolete: true
 created_by: burchh
 creation_date: 2009-05-20T02:47:37Z
 
 [Term]
 id: CHMO:0001793
 name: sample transformation method-measurement method
-def: "A method in which a sample transformation method is coupled to a measurement method." [rsc:hjb]
-is_a: CHMO:0001133 ! experimental method
+def: "A method consisting of a sample transformation method coupled to a measurement method." [rsc:hjb]
+is_a: OBI:0000070 ! assay
+is_obsolete: true
 created_by: burchh
 creation_date: 2009-05-20T02:49:30Z
 
 [Term]
 id: CHMO:0001794
 name: supercritical fluid extraction-Fourier transform infrared spectroscopy
-def: "A method in which the sample is transferred from any matrix to a liquid phase using a supercritical fluid. The sample is then subject to Spectroscopy where a single pulse of radiation, from the infrared region, is absorbed, and the spectrum obtained is subject to a Fourier transform." [rsc:hjb]
+def: "Fourier transform infrared spectroscopy where the sample is initially transferred from a matrix to a liquid phase using a supercritical fluid." [rsc:hjb]
 synonym: "SFE-FTIR" EXACT []
 synonym: "supercritical fluid extraction-Fourier transform infrared absorption spectroscopy" EXACT []
-is_a: CHMO:0001134 ! sample preparation method-measurement method
+is_a: CHMO:0000636 ! Fourier transform infrared spectroscopy
+intersection_of: CHMO:0000636 ! Fourier transform infrared spectroscopy
+intersection_of: BFO:0000118 CHMO:0001610 ! has proper occurrent part supercritical fluid extraction
+relationship: BFO:0000118 CHMO:0001610 ! has proper occurrent part supercritical fluid extraction
 created_by: burchh
 creation_date: 2009-05-20T02:49:54Z
 
@@ -17728,7 +17685,7 @@ synonym: "EQCM measurements" EXACT []
 synonym: "eQCM measurements" EXACT []
 synonym: "EQCM technique" EXACT []
 synonym: "eQCM technique" EXACT []
-is_a: CHMO:0001285 ! gravimetry
+is_a: CHMO:0001285 ! gravimetric analysis
 created_by: burchh
 creation_date: 2009-05-21T12:56:07Z
 
@@ -18298,14 +18255,6 @@ created_by: burchh
 creation_date: 2009-05-29T01:13:26Z
 
 [Term]
-id: CHMO:0001840
-name: part of experimental method
-def: "Any part of an experimental method." [rsc:hjb]
-is_obsolete: true
-created_by: burchh
-creation_date: 2009-05-29T01:28:49Z
-
-[Term]
 id: CHMO:0001841
 name: nuclear magnetic resonance pulse sequence
 def: "A series of short (microsecond) bursts (pulses) of rf radiation separated by delays (of defined duration) designed to interact with, and manipulate the magnetic moments of spin-active nuclei during NMR spectroscopy." [rsc:pr]
@@ -18847,7 +18796,7 @@ creation_date: 2009-05-29T12:00:00Z
 id: CHMO:0001891
 name: chemical map
 def: "A data set derived from microspectroscopy consisting of a three-dimensional image where two axes describe the x and y spatial dimensions and the third dimension represents spectral wavelength. The image is obtained by stacking one image per spectral wavelength sequentially." [http://www.spectroscopyeurope.com/NIR_14_3.pdf]
-is_a: CHMO:0000793 ! experimental method output
+is_a: CHMO:0000793 ! assay output
 relationship: OBI:0000312 CHMO:0000581 ! is_specified_output_of microspectroscopy
 created_by: burchh
 creation_date: 2009-06-01T10:34:07Z
@@ -18894,7 +18843,7 @@ synonym: "IR imaging" EXACT []
 synonym: "IR thermography" EXACT []
 synonym: "thermal imaging" EXACT []
 synonym: "thermographic imaging" EXACT []
-is_a: CHMO:0000048 ! imaging method
+is_a: OBI:0000185 ! imaging assay
 created_by: burchh
 creation_date: 2009-06-01T10:52:23Z
 
@@ -19031,8 +18980,8 @@ creation_date: 2009-06-03T09:34:21Z
 [Term]
 id: CHMO:0001904
 name: supercritical fluid method
-def: "Any sample transfrormation method that uses a supercritical fluid." [rsc:hjb]
-is_a: CHMO:0001267 ! sample transformation method
+def: "Any material processing method that uses a supercritical fluid." [rsc:hjb]
+is_a: OBI:0000094 ! material processing
 created_by: burchh
 creation_date: 2009-06-03T09:36:47Z
 
@@ -19110,7 +19059,7 @@ creation_date: 2009-06-03T10:26:20Z
 id: CHMO:0001910
 name: structure data
 def: "Data obtained from a structure determination method." [rsc:hjb]
-is_a: CHMO:0000793 ! experimental method output
+is_a: CHMO:0000793 ! assay output
 created_by: burchh
 creation_date: 2009-06-03T03:25:14Z
 
@@ -19490,16 +19439,17 @@ creation_date: 2009-06-08T02:03:47Z
 [Term]
 id: CHMO:0001937
 name: gas chromatography-pulse-discharge photoionisation detection
-def: "A gas chromatography method that is sensitive to compounds containing N and P. The eluent is mixed with H2 and air in the presence of a small, heated bead of an alkali salt such as Rb2SO4. Any positively-charged radicals resulting from this process are collected at a cathode allowing the current to be measured." [ISBN:0-13-147835-4]
-synonym: "gas chromatography pulse discharge photoionisation detection " EXACT []
-synonym: "gas chromatography pulse discharge photoionization detection " EXACT []
-synonym: "gas chromatography-pulse-discharge photoionization detection " EXACT []
-synonym: "gas chromatography-pulsed-discharge photoionisation detection " EXACT []
-synonym: "gas chromatography-pulsed-discharge photoionization detection " EXACT []
+def: "A detection method where a DC voltage pulse is passed through a carrier gas generating high-energy (13.5--17.5 eV) photons which photoionise the elements a sample obtained by gas chromatography, and the current generated by this ionisation is measured." [ISBN:0-13-147835-4]
+synonym: "gas chromatography pulse discharge photoionisation detection" EXACT []
+synonym: "gas chromatography pulse discharge photoionization detection" EXACT []
+synonym: "gas chromatography-pulse-discharge photoionization detection" EXACT []
+synonym: "gas chromatography-pulsed-discharge photoionisation detection" EXACT []
+synonym: "gas chromatography-pulsed-discharge photoionization detection" EXACT []
 synonym: "GC-PDPID" EXACT []
 synonym: "GC/PDPID" EXACT []
 synonym: "GCPDPID" EXACT []
-is_a: CHMO:0001735 ! separation method-detection method
+is_a: CHMO:0001933 ! pulse-discharge photoionisation detection
+relationship: BFO:0000118 CHMO:0001002 ! has proper occurrent part gas chromatography
 created_by: burchh
 creation_date: 2009-06-08T02:12:16Z
 
@@ -19514,7 +19464,7 @@ synonym: "collision induced dissociation " EXACT []
 synonym: "collision-activated dissociation " EXACT []
 synonym: "collisionally activated dissociation " EXACT []
 synonym: "collisionally-activated dissociation " EXACT []
-is_a: CHMO:0001267 ! sample transformation method
+is_a: OBI:0000094 ! material processing
 created_by: burchh
 creation_date: 2009-06-08T04:07:29Z
 
@@ -20298,6 +20248,7 @@ id: CHMO:0002002
 name: two-dimensional separation method-detection method
 def: "An experiment in which a two-dimensional separation method is coupled to a detection method in order to detect one or more different components of a sample." [rsc:hjb]
 is_a: CHMO:0001735 ! separation method-detection method
+is_obsolete: true
 created_by: burchh
 creation_date: 2009-06-19T11:59:17Z
 
@@ -20313,7 +20264,10 @@ creation_date: 2009-06-19T11:48:19Z
 id: CHMO:0002004
 name: two-dimensional chromatography-mass spectrometry
 def: "A method in which a two-dimensional chromatography method is coupled to mass spectrometry." [rsc:hjb]
-is_a: CHMO:0002038 ! two-dimensional separation method-measurement method
+is_a: CHMO:0000470 ! mass spectrometry
+intersection_of: CHMO:0000470 ! mass spectrometry
+intersection_of: BFO:0000118 CHMO:0001018 ! has proper occurrent part two-dimensional chromatography
+relationship: BFO:0000118 CHMO:0001018 ! has proper occurrent part two-dimensional chromatography
 created_by: burchh
 creation_date: 2009-06-19T12:00:43Z
 
@@ -20365,7 +20319,7 @@ creation_date: 2009-06-19T01:45:33Z
 id: CHMO:0002010
 name: analytical centrifugation
 def: "A separation method where components of a sample are separated on the basis of their density in a centrifuge according to the centrifugal force they experience. During centrifugation the sample can be monitored in real time through an optical detection system or using ultraviolet light absorption." [FIX:0000255, rsc:hjb]
-is_a: CHMO:0001047 ! centrifugation
+is_a: OBI:0302886 ! centrifugation
 created_by: burchh
 creation_date: 2009-06-19T01:54:54Z
 
@@ -20373,7 +20327,7 @@ creation_date: 2009-06-19T01:54:54Z
 id: CHMO:0002011
 name: sequential centrifugation
 def: "A separation method where the components of a sample are separated on the basis of their density in a centrifuge according to the centrifugal force they experience. The sample is centrifuged in a number of separate, sequential steps." [rsc:hjb]
-is_a: CHMO:0001047 ! centrifugation
+is_a: OBI:0302886 ! centrifugation
 created_by: burchh
 creation_date: 2009-06-19T01:59:21Z
 
@@ -20382,7 +20336,7 @@ id: CHMO:0002012
 name: low-speed centrifugation
 def: "A separation method where the components of a sample  are separated on the basis of their density in a centrifuge according to the centrifugal force they experience. Samples are spun at <5000 rpm." [FIX:0000261, rsc:hjb]
 synonym: "low speed centrifugation" EXACT []
-is_a: CHMO:0001047 ! centrifugation
+is_a: OBI:0302886 ! centrifugation
 created_by: burchh
 creation_date: 2009-06-19T02:00:33Z
 
@@ -20391,7 +20345,7 @@ id: CHMO:0002013
 name: high-speed centrifugation
 def: "A separation method where components of a sample are separated on the basis of their density in a centrifuge according to the centrifugal force they experience. Samples are spun at >5000 rpm." [rsc:hjb]
 synonym: "high speed centrifugation" EXACT []
-is_a: CHMO:0001047 ! centrifugation
+is_a: OBI:0302886 ! centrifugation
 created_by: burchh
 creation_date: 2009-06-19T02:03:14Z
 
@@ -20399,7 +20353,7 @@ creation_date: 2009-06-19T02:03:14Z
 id: CHMO:0002014
 name: preparative centrifugation
 def: "A method where a sample is purified by removing impurities on the basis of their density in a centrifuge." [rsc:hjb]
-is_a: CHMO:0001047 ! centrifugation
+is_a: OBI:0302886 ! centrifugation
 created_by: burchh
 creation_date: 2009-06-19T02:05:24Z
 
@@ -20425,7 +20379,7 @@ id: CHMO:0002017
 name: density-gradient centrifugation
 def: "A method where the components of a sample are separated on the basis of their density, in a dense medium or density gradient, in a centrifuge, according to the centrifugal force they experience." [rsc:hjb]
 synonym: "density gradient centrifugation" EXACT []
-is_a: CHMO:0001047 ! centrifugation
+is_a: OBI:0302886 ! centrifugation
 created_by: burchh
 creation_date: 2009-06-19T02:18:10Z
 
@@ -20675,7 +20629,7 @@ creation_date: 2009-06-22T04:55:14Z
 id: CHMO:0002038
 name: two-dimensional separation method-measurement method
 def: "A method in which a two-dimensional separation method is coupled to a measurement method." [rsc:hjb]
-is_a: CHMO:0001048 ! separation method-measurement method
+is_obsolete: true
 created_by: burchh
 creation_date: 2009-06-23T04:50:10Z
 
@@ -20687,7 +20641,7 @@ synonym: "O.D. measurement" EXACT []
 synonym: "OD measurement" EXACT []
 synonym: "optical densiometry" EXACT []
 synonym: "optical densitometry" EXACT []
-is_a: CHMO:0000000 ! measurement method
+is_a: OBI:0000070 ! assay
 created_by: burchh
 creation_date: 2009-06-29T05:59:59Z
 
@@ -20928,8 +20882,8 @@ creation_date: 2009-06-30T10:43:24Z
 [Term]
 id: CHMO:0002066
 name: trituration
-def: "A process used to purify crude chemical compounds containing solid impurities. A solvent is chosen in which the desired product is insoluble and the undesired by-products are very soluble (or vice versa). The crude material is washed with the solvent and filtered away, leaving the purified product in solid form and any impurities in solution." [rsc:hjb]
-is_a: CHMO:0001131 ! sample preparation step
+def: "Purification of crude chemical compounds containing solid impurities where a solvent is chosen in which the desired product is insoluble and the undesired by-products are very soluble (or vice versa). The crude material is washed with the solvent and filtered away, leaving the purified product in solid form and any impurities in solution." [rsc:hjb]
+is_a: CHMO:0002231 ! purification
 created_by: burchh
 creation_date: 2009-07-01T02:42:13Z
 
@@ -21232,7 +21186,7 @@ creation_date: 2009-07-03T09:08:14Z
 id: CHMO:0002092
 name: volumetry
 def: "A method for determining the exact amount of an analyte by adding an equivalent amount of a reagent of exactly known concentration to the sample." [rsc:hjb]
-is_a: CHMO:0000000 ! measurement method
+is_a: OBI:0000070 ! assay
 created_by: burchh
 creation_date: 2009-07-03T09:40:56Z
 
@@ -21264,7 +21218,7 @@ def: "The measurement of the density of a sample." [rsc:hjb]
 synonym: "densiometric measurements" EXACT []
 synonym: "densitometric measurements" EXACT []
 synonym: "densitometry" EXACT []
-is_a: CHMO:0000000 ! measurement method
+is_a: OBI:0000070 ! assay
 created_by: burchh
 creation_date: 2009-07-03T09:43:27Z
 
@@ -21310,7 +21264,7 @@ name: holography
 def: "The recording of an interference pattern on a photographic film. Coherent light from a laser is reflected from an object and combined at the film with light from a reference beam. Both the phase and amplitude of the light scattered by the object is recorded." [rsc:hjb]
 synonym: "laser holography" EXACT []
 synonym: "optical holography" EXACT []
-is_a: CHMO:0000048 ! imaging method
+is_a: OBI:0000185 ! imaging assay
 created_by: burchh
 creation_date: 2009-07-06T09:52:01Z
 
@@ -21509,7 +21463,7 @@ creation_date: 2009-07-07T02:38:06Z
 id: CHMO:0002119
 name: granulometry
 def: "The measurement of the size distribution in a collection of grains." [rsc:hjb]
-is_a: CHMO:0000000 ! measurement method
+is_a: OBI:0000070 ! assay
 created_by: burchh
 creation_date: 2009-07-08T09:57:28Z
 
@@ -21548,14 +21502,12 @@ creation_date: 2009-07-08T10:37:10Z
 id: CHMO:0002123
 name: zeta-potential measurement
 def: "The measurement of the overall charge a particle acquires in a specific medium. A number of different experimental methods can be used including electrophoretic light scattering and laser Doppler velocimetry." [rsc:hjb]
-synonym: "\\zeta-potential analysis" EXACT []
-synonym: "\\zeta-potential measurement" EXACT []
 synonym: "zeta potential analysis" EXACT []
 synonym: "zeta potential measurement" EXACT []
 synonym: "zeta-potential analysis" EXACT []
 synonym: "zeta-potential measurements" EXACT []
 synonym: "zeta-potential studies" EXACT []
-is_a: CHMO:0000000 ! measurement method
+is_a: OBI:0000070 ! assay
 created_by: burchh
 creation_date: 2009-07-08T10:41:53Z
 
@@ -21874,7 +21826,7 @@ creation_date: 2009-07-11T03:52:20Z
 id: CHMO:0002151
 name: passivation
 def: "Any process that makes one sample unreactive to another, prior to using the samples together." [rsc:hjb]
-is_a: CHMO:0001131 ! sample preparation step
+is_a: OBI:0000094 ! material processing
 created_by: burchh
 creation_date: 2009-07-11T04:28:44Z
 
@@ -21935,7 +21887,7 @@ id: CHMO:0002157
 name: deionisation method
 def: "The removal of ions from a solution using an ion-exchange method." [rsc:hjb]
 synonym: "deionization" EXACT []
-is_a: CHMO:0001131 ! sample preparation step
+is_a: OBI:0000094 ! material processing
 created_by: burchh
 creation_date: 2009-07-13T01:17:32Z
 
@@ -22371,7 +22323,7 @@ creation_date: 2009-07-21T01:15:45Z
 id: CHMO:0002196
 name: activation
 def: "Any process that involves preparing or exciting a sample for a subsequent reaction." [rsc:hjb]
-is_a: CHMO:0001131 ! sample preparation step
+is_a: OBI:0000094 ! material processing
 created_by: burchh
 creation_date: 2009-07-21T03:00:23Z
 
@@ -22584,9 +22536,9 @@ creation_date: 2009-07-28T01:23:05Z
 
 [Term]
 id: CHMO:0002217
-name: sublimation
+name: sample sublimation
 def: "Any technique used to purify a sample by forcing it to pass from the solid to gas phase without passing through an intermediate liquid phase." [rsc:hjb]
-is_a: CHMO:0001131 ! sample preparation step
+is_a: CHMO:0002231 ! purification
 created_by: burchh
 creation_date: 2009-07-28T03:22:04Z
 
@@ -22594,7 +22546,7 @@ creation_date: 2009-07-28T03:22:04Z
 id: CHMO:0002218
 name: fractional sublimation
 def: "A method for purifying samples by heating the sample under reduced pressure and allowing the fractions to sublime order of increasing sublimation temperature (a function of vapor pressure)." [DOI:10.1021/ac60144a021]
-is_a: CHMO:0002217 ! sublimation
+is_a: CHMO:0002217 ! sample sublimation
 created_by: burchh
 creation_date: 2009-07-28T03:22:24Z
 
@@ -22603,7 +22555,7 @@ id: CHMO:0002219
 name: vacuum sublimation
 def: "A technique for purifying solid samples by heating the sample under vacuum. The sample sublimes and the vapours condense as a purified compound on a cooled surface, leaving the non-volatile residue impurities behind." [rsc:hjb]
 synonym: "vacuum-sublimation method" EXACT []
-is_a: CHMO:0002217 ! sublimation
+is_a: CHMO:0002217 ! sample sublimation
 created_by: burchh
 creation_date: 2009-07-28T03:23:24Z
 
@@ -22735,7 +22687,7 @@ creation_date: 2009-07-29T09:59:13Z
 id: CHMO:0002231
 name: purification
 def: "Any technique used to physically separate an analyte from byproducts, reagents or contaminating substances." [rsc:hjb]
-is_a: CHMO:0000998 ! piece of apparatus
+is_a: OBI:0000094 ! material processing
 created_by: burchh
 creation_date: 2009-07-29T03:59:53Z
 
@@ -22937,7 +22889,7 @@ creation_date: 2009-08-05T12:03:49Z
 id: CHMO:0002249
 name: porosimetry
 def: "The measurement of the pore diameter, pore-size distribution and total pore volume of a sample." [rsc:hjb]
-is_a: CHMO:0000000 ! measurement method
+is_a: OBI:0000070 ! assay
 created_by: burchh
 creation_date: 2009-08-05T06:14:39Z
 
@@ -24472,8 +24424,9 @@ creation_date: 2009-09-15T06:09:09Z
 [Term]
 id: CHMO:0002386
 name: dielectrometry
-def: "The measurement of the relative permittivity of a solution as a function of concentration. Measurements are made indirectly across the resistance of the solution with alternating current." [FIX:0000706, Orange:8.5.4]
-is_a: CHMO:0000000 ! measurement method
+alt_id: FIX:0000706
+def: "The measurement of the relative permittivity of a solution as a function of concentration. Measurements are made indirectly across the resistance of the solution with alternating current." [Orange:8.5.4]
+is_a: OBI:0000070 ! assay
 created_by: burchh
 creation_date: 2009-09-15T06:14:13Z
 
@@ -24968,7 +24921,7 @@ name: interferometry
 def: "The measurement of the properties of two or more lasers or waves by studying the pattern of interference created by their superposition." [rsc:hjb]
 synonym: "laser interferometry" EXACT []
 synonym: "optical interferometry" EXACT []
-is_a: CHMO:0000000 ! measurement method
+is_a: OBI:0000070 ! assay
 created_by: burchh
 creation_date: 2009-09-22T05:07:26Z
 
@@ -26161,7 +26114,7 @@ synonym: "programmed temperature vaporization" EXACT []
 synonym: "programmed-temperature vaporisation" EXACT []
 synonym: "programmed-temperature vaporization" EXACT []
 synonym: "PTV" EXACT []
-is_a: CHMO:0001131 ! sample preparation step
+is_a: OBI:0000094 ! material processing
 created_by: burchh
 creation_date: 2009-10-21T06:16:02Z
 
@@ -26257,7 +26210,7 @@ creation_date: 2009-10-23T02:02:34Z
 id: CHMO:0002548
 name: polymer preparation method
 def: "Any experimental method used to prepare polymer samples." [rsc:hjb]
-is_a: CHMO:0001131 ! sample preparation step
+is_a: OBI:0000094 ! material processing
 created_by: burchh
 creation_date: 2009-10-23T02:18:04Z
 
@@ -26601,7 +26554,7 @@ creation_date: 2009-11-03T05:37:59Z
 id: CHMO:0002580
 name: colorimetric test
 def: "A test which produces colour change in the sample." [rsc:hjb]
-is_a: CHMO:0001133 ! experimental method
+is_a: OBI:0000070 ! assay
 relationship: BFO:0000118 CHMO:0000001 ! has proper occurrent part colorimetry
 created_by: burchh
 creation_date: 2009-11-03T05:47:01Z
@@ -26633,7 +26586,7 @@ def: "A method for determining surface area by measuring the amount of an N2 whi
 synonym: "N2 sorption--desorption experiments" EXACT []
 synonym: "N2 sorption--desorption measurements" EXACT []
 synonym: "N2 sorption-desorption measurements" EXACT []
-is_a: CHMO:0001167 ! sorption--desorption measurements
+is_a: CHMO:0001167 ! sorption--desorption measurement
 created_by: burchh
 creation_date: 2009-11-04T04:52:09Z
 
@@ -26776,7 +26729,7 @@ creation_date: 2009-11-13T01:16:15Z
 id: CHMO:0002598
 name: glow discharge synthesis
 def: "A synthesis method where an electrical discharge is passed under reduced pressure between two electrodes." [rsc:hjb]
-is_a: CHMO:0001131 ! sample preparation step
+is_a: OBI:0000094 ! material processing
 created_by: burchh
 creation_date: 2009-11-14T11:00:18Z
 
@@ -27297,7 +27250,7 @@ creation_date: 2009-12-11T02:55:31Z
 id: CHMO:0002642
 name: dilatometry
 def: "The measurement and study of dimensional changes in polymers as a function of temperature, fluid absorption, mechanical stress or chemical reaction." [rsc:hjb]
-is_a: CHMO:0000000 ! measurement method
+is_a: OBI:0000070 ! assay
 created_by: burchh
 creation_date: 2009-12-14T05:43:36Z
 
@@ -27658,7 +27611,7 @@ creation_date: 2010-01-13T10:20:06Z
 id: CHMO:0002672
 name: desorption measurements
 def: "A method for determining surface area by measuring the amount of an inert gasesous or liquid substance (the 'sorbent', usually H2 or N2) which desorbs from the surface of interest (the 'sorbate'). Regression analysis is then applied to the data, resulting in an isotherm." [rsc:hjb]
-is_a: CHMO:0001167 ! sorption--desorption measurements
+is_a: CHMO:0001167 ! sorption--desorption measurement
 created_by: burchh
 creation_date: 2010-01-13T10:26:50Z
 
@@ -28074,7 +28027,10 @@ name: liquid chromatography nuclear magnetic resonance spectroscopy
 def: "A method where a sample mixture is first separated by liquid chromatography before the energy states of spin-active nuclei in the sample, placed in a static magnetic field, are interrogated by inducing transitions between the states via radio frequency irradiation." [FIX:00001158]
 synonym: "LC-NMR" EXACT []
 synonym: "liquid chromatography nuclear magnetic resonance spectroscopy" EXACT []
-is_a: CHMO:0001048 ! separation method-measurement method
+is_a: CHMO:0000613 ! pulsed nuclear magnetic resonance spectroscopy
+intersection_of: CHMO:0000613 ! pulsed nuclear magnetic resonance spectroscopy
+intersection_of: BFO:0000118 CHMO:0001004 ! has proper occurrent part liquid chromatography
+relationship: BFO:0000118 CHMO:0001004 ! has proper occurrent part liquid chromatography
 created_by: Hils
 creation_date: 2010-07-24T11:09:14Z
 
@@ -28226,9 +28182,9 @@ synonym: "QTOF MS" EXACT []
 synonym: "QTOF-MS" EXACT []
 synonym: "quadrupolar time-of-flight mass spectrometer" EXACT []
 is_a: CHMO:0000504 ! quadrupole mass spectrometry
-is_a: CHMO:0000962 ! orthogonal-acceleration time-of-flight mass spectrometer
-is_a: CHMO:0000963 ! quadrupole mass spectrometer
 relationship: BFO:0000057 CHMO:0000961 ! has participant orthogonal-acceleration ion source
+relationship: BFO:0000057 CHMO:0000962 ! has participant orthogonal-acceleration time-of-flight mass spectrometer
+relationship: BFO:0000057 CHMO:0000963 ! has participant quadrupole mass spectrometer
 created_by: Hils
 creation_date: 2010-07-25T05:22:22Z
 
@@ -28250,7 +28206,8 @@ def: "A gas chromatography method that is sensitive to individual elements. The 
 synonym: "gas chromatography microwave-induced plasma atomic emission detection" EXACT []
 synonym: "GC-MIP-AED" EXACT []
 synonym: "GC/MIP/AED" EXACT []
-is_a: CHMO:0001735 ! separation method-detection method
+is_a: CHMO:0002720 ! microwave induced plasma atomic emission detection
+relationship: BFO:0000118 CHMO:0001002 ! has proper occurrent part gas chromatography
 created_by: Hils
 creation_date: 2010-07-25T05:44:34Z
 
@@ -28458,7 +28415,7 @@ creation_date: 2010-07-28T04:42:32Z
 id: CHMO:0002739
 name: quantitative determination method
 def: "A measurement method which obtains the concentration or quantity of a specified substance in an analyte." [rsc:cb]
-is_a: CHMO:0000000 ! measurement method
+is_a: OBI:0000070 ! assay
 created_by: batchelorc
 creation_date: 2012-04-13T11:50:09Z
 
@@ -28468,7 +28425,7 @@ name: analyte role
 def: "The role inhering in that portion of a sample which is measured by an experiment." [rsc:cb]
 is_a: BFO:0000023 ! role
 disjoint_from: CHMO:0002744 ! matrix role
-relationship: BFO:0000054 CHMO:0000000 ! realized in measurement method
+relationship: BFO:0000054 OBI:0000070 ! realized in assay
 
 [Term]
 id: CHMO:0002741
@@ -28528,7 +28485,7 @@ id: CHMO:0002749
 name: retention index
 def: "An experimental method output that consists of a number relating the adjusted retention volume or retention factor of the sample component to the adjusted retention volumes or retention factors of standards eluted before and after the peak of the sample component." [RSC:cb]
 xref: http://goldbook.iupac.org/R05360.html
-is_a: CHMO:0000793 ! experimental method output
+is_a: CHMO:0000793 ! assay output
 relationship: OBI:0000312 CHMO:0001001 ! is_specified_output_of column chromatography
 
 [Term]
@@ -28678,16 +28635,16 @@ relationship: IAO:0000136 CHMO:0002768 ! is_about gas chromatograph-mass spectro
 
 [Term]
 id: CHMO:0002770
-name: heating
+name: sample heating
 def: "A sample preparation step involving the increase in temperature of a sample." [RSC:cb]
 comment: ought to be in OBI. Will put here pro tem.
-is_a: CHMO:0001131 ! sample preparation step
+is_a: OBI:0000094 ! material processing
 
 [Term]
 id: CHMO:0002771
 name: concentrating
 def: "A preparative step where the concentration of one component is increased." [RSC:cb]
-is_a: CHMO:0001131 ! sample preparation step
+is_a: OBI:0000094 ! material processing
 
 [Term]
 id: CHMO:0002772
@@ -28695,7 +28652,7 @@ name: degassing
 def: "A preparative step involving the removal of dissolved gases from a sample." [RSC:cb]
 synonym: "degasification" EXACT []
 xref: http://en.wikipedia.org/wiki/Degasification
-is_a: CHMO:0001131 ! sample preparation step
+is_a: OBI:0000094 ! material processing
 
 [Term]
 id: CHMO:0002773
@@ -28847,7 +28804,7 @@ is_a: CHMO:0002794 ! chemosensor
 id: CHMO:0002796
 name: dosimetry
 def: "Measurement of the dose of a substance taken up by an object." [doi:10.1039/9781847559753-00013]
-is_a: CHMO:0000000 ! measurement method
+is_a: OBI:0000070 ! assay
 relationship: BFO:0000057 CHMO:0002797 ! has participant dosimeter
 
 [Term]
@@ -28972,8 +28929,8 @@ is_a: CHMO:0000645 ! diffuse reflectance infrared Fourier transform spectroscopy
 id: CHMO:0002814
 name: measurement of concentration
 def: "A measurement method that determines the concentration of a constituent in some solution." [RSC:cb]
-is_a: CHMO:0000000 ! measurement method
-intersection_of: CHMO:0000000 ! measurement method
+is_a: OBI:0000070 ! assay
+intersection_of: OBI:0000070 ! assay
 intersection_of: OBI:0000299 CHMO:0002820 ! has_specified_output concentration
 relationship: OBI:0000299 CHMO:0002820 ! has_specified_output concentration
 
@@ -29001,7 +28958,7 @@ is_a: BFO:0000016 ! disposition
 id: CHMO:0002818
 name: angle of optical rotation
 def: "An experimental method output that consists of the angle through which plane polarized light is rotated clockwise, as seen when facing the light source, in passing through an optically active medium." [doi:10.1351/goldbook.A00348]
-is_a: CHMO:0000793 ! experimental method output
+is_a: CHMO:0000793 ! assay output
 relationship: IAO:0000136 CHMO:0002817 ! is_about optical activity
 relationship: OBI:0000312 CHMO:0000779 ! is_specified_output_of polarimetry
 
@@ -29009,14 +28966,14 @@ relationship: OBI:0000312 CHMO:0000779 ! is_specified_output_of polarimetry
 id: CHMO:0002819
 name: temperature-programmed absorption
 def: "A sample preparation method where a sample is heated slowly in a gas." [RSC:cb]
-is_a: CHMO:0002770 ! heating
+is_a: CHMO:0002770 ! sample heating
 
 [Term]
 id: CHMO:0002820
 name: concentration
 def: "Experimental method output expressing the contribution of one constituent to the composition of a mixture." [RSC:cb]
 comment: based heavily on doi:10.1351/goldbook.C01222
-is_a: CHMO:0000793 ! experimental method output
+is_a: CHMO:0000793 ! assay output
 relationship: IAO:0000136 CHEBI:60004 ! is_about mixture
 
 [Term]
@@ -29067,7 +29024,7 @@ is_a: CHMO:0000998 ! piece of apparatus
 id: CHMO:0002827
 name: weighing
 def: "Determination of the mass of a sample." [RSC:cb]
-is_a: CHMO:0000000 ! measurement method
+is_a: OBI:0000070 ! assay
 
 [Term]
 id: CHMO:0002828
@@ -29113,6 +29070,17 @@ is_a: CHMO:0002828 ! experimental planning process
 relationship: OBI:0000299 IAO:0000104 ! has_specified_output plan specification
 
 [Term]
+id: CHMO:0002834
+name: polymerisation propagation rate coefficient determination
+def: "An assay to determine the propagation rate coefficient of a polymerisation process." [RSC:cb]
+is_a: OBI:0000070 ! assay
+
+[Term]
+id: CHMO:0002835
+name: determination of nitrosamines
+is_a: CHMO:0002739 ! quantitative determination method
+
+[Term]
 id: IAO:0000027
 name: data item
 is_a: IAO:0000030 ! information content entity
@@ -29135,14 +29103,40 @@ is_a: IAO:0000027 ! data item
 [Term]
 id: OBI:0000011
 name: planned process
+alt_id: CHMO:0001840
 is_a: BFO:0000015 ! process
+
+[Term]
+id: OBI:0000070
+name: assay
+alt_id: CHMO:0000000
+alt_id: CHMO:0001133
+def: "A planned process with the objective to produce information about the material entity that is the evaluant, by physically examining it or its proxies." [obi:pppb]
+synonym: "measurement method" EXACT []
+is_a: OBI:0000011 ! planned process
 
 [Term]
 id: OBI:0000094
 name: material processing
+alt_id: CHMO:0001131
+alt_id: CHMO:0001267
+alt_id: CHMO:0001461
+alt_id: FIX:0000258
 def: "A planned process which results in physical changes in a specified input material." [obi:bp, obi:fg, obi:jf, obi:mc, obi:prs]
 synonym: "material transformations" EXACT []
+synonym: "preparative method" EXACT []
+synonym: "sample preparation" EXACT []
+synonym: "sample preparation step" EXACT []
+synonym: "sample preparative method" EXACT []
 is_a: OBI:0000011 ! planned process
+
+[Term]
+id: OBI:0000185
+name: imaging assay
+alt_id: CHMO:0000048
+def: "An imaging assay is an assay to produce a picture of an entity." [obi:pppb]
+synonym: "imaging assay" EXACT []
+is_a: OBI:0000070 ! assay
 
 [Term]
 id: OBI:0000796
@@ -29179,6 +29173,15 @@ synonym: "principal component analysis" EXACT []
 is_a: OBI:0000011 ! planned process
 
 [Term]
+id: OBI:0302886
+name: centrifugation
+alt_id: CHMO:0001047
+alt_id: FIX:0000259
+alt_id: FIX:0000260
+def: "A process separating molecules by size or density using centrifugal forces generated by a spinning rotor. G-forces of several hundred thousand times gravity are generated in ultracentrifugation." [obi:prs]
+is_a: OBI:0600014 ! material component separation
+
+[Term]
 id: OBI:0302888
 name: washing
 def: "Washing is a process by which a material entity acting as contaminant (e.g. excess staining reagent) is removed by application of one or more cycles of solution in flow." [obi:prs]
@@ -29190,6 +29193,20 @@ id: OBI:0302893
 name: storage
 def: "A maintenance process by which material entities that are not actively metabolizing are placed in well identified location and possibly under controlled environment in ad-hoc devices/structures in order to preserve and protect them from decay/alteration and maintain availability." [obi:prs]
 is_a: OBI:0000838 ! material maintenance
+
+[Term]
+id: OBI:0302912
+name: electroporation
+alt_id: CHMO:0001573
+def: "A process in which a significant increase in the electrical conductivity and permeability of the cell plasma membrane caused by an externally applied electrical field. It is usually used in molecular biology as a way of introducing some substance into a cell, such as loading it with a molecular probe, a drug that can change the cell's function, or a piece of coding DNA." [obi:prs]
+synonym: "electropermeabilization" EXACT []
+is_a: OBI:0000094 ! material processing
+
+[Term]
+id: OBI:0600014
+name: material component separation
+def: "A material processing in which components of an input material become segregated in space." [obi:bp]
+is_a: OBI:0000094 ! material processing
 
 [Typedef]
 id: BFO:0000054
