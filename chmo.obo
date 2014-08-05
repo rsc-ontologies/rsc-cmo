@@ -29081,6 +29081,12 @@ name: determination of nitrosamines
 is_a: CHMO:0002739 ! quantitative determination method
 
 [Term]
+id: CHMO:0002836
+name: Stöber process
+def: "A material processing process that produces monodisperse particles of silica by adding tetraethyl silicate to an excess of water containing a low-molar-mass alcohol and stirring." [http://en.wikipedia.org/wiki/St%C3%B6ber_process]
+is_a: OBI:0000094 ! material processing
+
+[Term]
 id: IAO:0000027
 name: data item
 is_a: IAO:0000030 ! information content entity
