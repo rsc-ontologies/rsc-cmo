@@ -75,14 +75,49 @@ name: copper atom
 is_a: CHEBI:23367 ! molecular entity
 
 [Term]
+id: CHEBI:33418
+name: graphite
+is_a: CHEBI:23367 ! molecular entity
+
+[Term]
 id: CHEBI:46729
 name: vitreous silica
 is_a: CHEBI:23367 ! molecular entity
 
 [Term]
+id: CHEBI:50594
+name: carbon nanotube
+is_a: CHEBI:50796 ! nanotube
+
+[Term]
+id: CHEBI:50795
+name: nanostructure
+is_a: CHEBI:23367 ! molecular entity
+
+[Term]
+id: CHEBI:50796
+name: nanotube
+is_a: CHEBI:50795 ! nanostructure
+
+[Term]
+id: CHEBI:50803
+name: nanoparticle
+is_a: CHEBI:50795 ! nanostructure
+
+[Term]
+id: CHEBI:50825
+name: gold nanoparticle
+is_a: CHEBI:50803 ! nanoparticle
+
+[Term]
 id: CHEBI:60004
 name: mixture
 is_a: CHMO:0000993 ! portion of material
+
+[Term]
+id: CHEBI:60027
+name: polymer
+is_a: CHEBI:23367 ! molecular entity
 
 [Term]
 id: CHMO:0000001
@@ -22769,7 +22804,10 @@ creation_date: 2009-07-31T04:20:12Z
 id: CHMO:0002239
 name: carbon nanotube synthesis method
 def: "Any method used to synthesise carbon nanotubes." [rsc:hjb]
-is_a: CHMO:0001301 ! synthesis method
+is_a: CHMO:0002838 ! nanostructure synthesis
+intersection_of: OBI:0000094 ! material processing
+intersection_of: OBI:0000299 CHEBI:50594 ! has_specified_output carbon nanotube
+relationship: OBI:0000299 CHEBI:50594 ! has_specified_output carbon nanotube
 created_by: burchh
 creation_date: 2009-08-04T05:09:48Z
 
@@ -25360,14 +25398,15 @@ creation_date: 2009-09-29T06:50:18Z
 [Term]
 id: CHMO:0002476
 name: wire electrical explosion method
-def: "A synthesis method for metal nanopowders that consists of passing a pulse of a high-density current (104--\n106 A/mm2) through a wire causing the explosive disintegration of the metal (accompanied by a bright flash of light, a shock wave, the dispersion of the metal, and the fast expansion of a mixture of boiling metal droplets and vapour to the surrounding medium) and the production of metal , particles with characteristic sizes of tens of  \\mum to a few nm." [DOI:10.1134/S1995078009070039]
+def: "A synthesis method for metal nanopowders that consists of passing a pulse of a high-density current (10^4 to 10^6 A/mm^2) through a wire causing the explosive disintegration of the metal (accompanied by a bright flash of light, a shock wave, the dispersion of the metal, and the fast expansion of a mixture of boiling metal droplets and vapour to the surrounding medium) and the production of metal , particles with characteristic sizes of tens of  \\mum to a few nm." [DOI:10.1134/S1995078009070039]
 synonym: "EEW" EXACT []
 synonym: "EEW method" EXACT []
 synonym: "electrical explosion of wire" EXACT []
 synonym: "electrical explosion of wire method" EXACT []
 synonym: "WEE" EXACT []
 synonym: "WEE method" EXACT []
-is_a: CHMO:0001301 ! synthesis method
+is_a: CHMO:0002837 ! nanoparticle synthesis
+relationship: OBI:0000299 CHEBI:50803 ! has_specified_output nanoparticle
 created_by: burchh
 creation_date: 2009-09-29T06:51:48Z
 
@@ -26211,6 +26250,9 @@ id: CHMO:0002548
 name: polymer preparation method
 def: "Any experimental method used to prepare polymer samples." [rsc:hjb]
 is_a: OBI:0000094 ! material processing
+intersection_of: OBI:0000094 ! material processing
+intersection_of: OBI:0000299 CHEBI:60027 ! has_specified_output polymer
+relationship: OBI:0000299 CHEBI:60027 ! has_specified_output polymer
 created_by: burchh
 creation_date: 2009-10-23T02:18:04Z
 
@@ -26851,7 +26893,10 @@ id: CHMO:0002609
 name: graphitisation
 def: "The conversion of an organic material in an inert atmosphere at temperatures in excess of 1800 deg. C to produce a graphite crystal structure." [rsc:hjb]
 synonym: "graphitization" EXACT []
-is_a: CHMO:0001301 ! synthesis method
+is_a: OBI:0000094 ! material processing
+intersection_of: OBI:0000094 ! material processing
+intersection_of: OBI:0000299 CHEBI:33418 ! has_specified_output graphite
+relationship: OBI:0000299 CHEBI:33418 ! has_specified_output graphite
 created_by: burchh
 creation_date: 2009-11-19T02:07:20Z
 
@@ -27105,7 +27150,8 @@ name: Brust method
 def: "A method for synthesising gold nanoparticles from HAuCl4 in non-aqueous solution (e.g. toluene) using tetraoctylammonium bromide as a phase-transfer catalyst and sodium borohydride to reduce Au(III) to Au(0)." [DOI:10.1039/C39940000801]
 synonym: "Brust nanoparticle synthesis" EXACT []
 synonym: "Brust synthesis" EXACT []
-is_a: CHMO:0001301 ! synthesis method
+is_a: CHMO:0002837 ! nanoparticle synthesis
+relationship: OBI:0000299 CHEBI:50825 ! has_specified_output gold nanoparticle
 created_by: burchh
 creation_date: 2009-12-01T04:48:20Z
 
@@ -27995,7 +28041,8 @@ def: "A method for producing metal nanoparticles by the reduction of metal salts
 synonym: "Bonnemann colloidal method" EXACT []
 synonym: "Bonnemann method" EXACT []
 synonym: "Bonnemann's method" EXACT []
-is_a: CHMO:0001301 ! synthesis method
+is_a: CHMO:0002837 ! nanoparticle synthesis
+relationship: OBI:0000299 CHEBI:50803 ! has_specified_output nanoparticle
 created_by: Hils
 creation_date: 2010-07-24T10:52:23Z
 
@@ -29085,6 +29132,24 @@ id: CHMO:0002836
 name: Stöber process
 def: "A material processing process that produces monodisperse particles of silica by adding tetraethyl silicate to an excess of water containing a low-molar-mass alcohol and stirring." [http://en.wikipedia.org/wiki/St%C3%B6ber_process]
 is_a: OBI:0000094 ! material processing
+
+[Term]
+id: CHMO:0002837
+name: nanoparticle synthesis
+def: "A material processing process that is intended to produce nanoparticles." [RSC:cb]
+is_a: CHMO:0002838 ! nanostructure synthesis
+intersection_of: OBI:0000094 ! material processing
+intersection_of: OBI:0000299 CHEBI:50803 ! has_specified_output nanoparticle
+relationship: OBI:0000299 CHEBI:50803 ! has_specified_output nanoparticle
+
+[Term]
+id: CHMO:0002838
+name: nanostructure synthesis
+def: "A material processing process that is intended to produce nanostructures." [RSC:cb]
+is_a: OBI:0000094 ! material processing
+intersection_of: OBI:0000094 ! material processing
+intersection_of: OBI:0000299 CHEBI:50795 ! has_specified_output nanostructure
+relationship: OBI:0000299 CHEBI:50795 ! has_specified_output nanostructure
 
 [Term]
 id: IAO:0000027
