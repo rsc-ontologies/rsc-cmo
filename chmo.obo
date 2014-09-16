@@ -1,5 +1,5 @@
 format-version: 1.2
-data-version: releases/2014-08-01
+data-version: releases/2014-09-16
 saved-by: batchelorc
 synonymtypedef: non-mining_synonym "Non-mining synonym" EXACT
 ontology: chmo
@@ -29107,7 +29107,7 @@ id: CHMO:0002832
 name: material disposal
 def: "A planned process in which materials for an experiment are removed permanently from the laboratory." [RSC:cb]
 comment: makes no judgement about whether this is a good way to do it, or a bad way such as tipping down the sink.
-is_a: OBI:0000011 ! planned process
+is_a: CHMO:0002845 ! waste management
 
 [Term]
 id: CHMO:0002833
@@ -29152,6 +29152,135 @@ intersection_of: OBI:0000299 CHEBI:50795 ! has_specified_output nanostructure
 relationship: OBI:0000299 CHEBI:50795 ! has_specified_output nanostructure
 
 [Term]
+id: CHMO:0002839
+name: planned process setup
+def: "A planned process involving setting up the equipment for another planned process." [RSC:cb]
+is_a: OBI:0000011 ! planned process
+
+[Term]
+id: CHMO:0002840
+name: planned process startup
+def: "Part of a planned process where the equipment has been set up and human intervention is required to set the subprocesses going." [RSC:cb]
+is_a: OBI:0000011 ! planned process
+
+[Term]
+id: CHMO:0002841
+name: planned process adjustment
+def: "A process that involves adjusting a planned process in some respect. This may either be to adjust a parameter not fully specified in the plan or to adjust a parameter that was already specified in the plan." [RSC:cb]
+is_a: BFO:0000015 ! process
+
+[Term]
+id: CHMO:0002842
+name: stopped process adjustment
+def: "A planned process adjustment that takes place when the subprocesses of the planned process have been suspended." [RSC:cb]
+is_a: CHMO:0002841 ! planned process adjustment
+
+[Term]
+id: CHMO:0002843
+name: ongoing process adjustment
+def: "A planned process adjustment that takes place while at least one subprocess is taking place." [RSC:cb]
+comment: needs a bit of tweakage, I expect. What about "waiting"?
+is_a: CHMO:0002841 ! planned process adjustment
+
+[Term]
+id: CHMO:0002844
+name: hazard replacement
+def: "An experimental plan revision that involves creating a new experimental plan that has a lessened hazard compared to its predecessor." [RSC:cb]
+is_a: CHMO:0002830 ! experimental plan revision
+
+[Term]
+id: CHMO:0002845
+name: waste management
+def: "A planned process that involves all aspects of dealing with the waste produced in experiments." [RSC:cb]
+is_a: OBI:0000011 ! planned process
+
+[Term]
+id: CHMO:0002846
+name: autoclaving
+def: "A material processing step that involves heating apparatus in an autoclave." [RSC:cb]
+comment: does every autoclaving happen as part of waste management?
+is_a: OBI:0000094 ! material processing
+relationship: BFO:0000057 CHMO:0002166 ! has participant autoclave
+
+[Term]
+id: CHMO:0002847
+name: limit of linearity
+def: "The largest measure at which the sensitivity of the detector is constant to within a specified variation." [http://iupac.org/publications/analytical_compendium/Cha09sec245.pdf]
+is_a: CHMO:0002803 ! method specification datum
+
+[Term]
+id: CHMO:0002848
+name: dynamic range
+def: "The working range over which an incremental change in concentration or mass flow rate produces an incremental change in response." [http://iupac.org/publications/analytical_compendium/Cha09sec245.pdf]
+comment: The dynamic range is greater than the linear range.
+is_a: CHMO:0002805 ! working range
+
+[Term]
+id: CHMO:0002849
+name: repeatability standard deviation
+def: "The standard deviation of independent measurements obtained with the same method on identical test material under the same conditions." [http://iupac.org/publications/analytical_compendium/Cha02sec2.pdf]
+comment: Same operator, same apparatus, same laboratory, after short intervals of time.
+is_a: CHMO:0002803 ! method specification datum
+
+[Term]
+id: CHMO:0002850
+name: reproducibility standard deviation
+def: "The standard deviation of independent measurements obtained with the same method on identical test material under different conditions." [http://iupac.org/publications/analytical_compendium/Cha02sec2.pdf]
+comment: different operator, different apparatus, different laboratory, and/or after different intervals of time.
+is_a: CHMO:0002803 ! method specification datum
+
+[Term]
+id: CHMO:0002851
+name: spiked sample
+def: "An experimental sample that is produced by spiking test material that is essentially free of a given analyte." [http://iupac.org/publications/analytical_compendium/Cha18sec61.pdf]
+is_a: CHMO:0002746 ! experimental sample
+relationship: OBI:0000312 CHMO:0002852 ! is_specified_output_of spiking
+
+[Term]
+id: CHMO:0002852
+name: spiking
+def: "A material processing step that involves taking a test material with an adequately low background level of the intended analyte and mixing it with a known amount of analyte." [http://iupac.org/publications/analytical_compendium/Cha18sec61.pdf]
+is_a: OBI:0000094 ! material processing
+
+[Term]
+id: CHMO:0002853
+name: fraction extracted
+def: "The fraction of the total quantity of a substance extracted in a separation experiment under specified conditions." [http://iupac.org/publications/analytical_compendium/Cha09sec43.pdf]
+synonym: "recovery factor" EXACT []
+is_a: CHMO:0000793 ! assay output
+
+[Term]
+id: CHMO:0002854
+name: sample throughput
+def: "The quantity of gas, in pressure-volume units, at a specified temperature, flowing per unit time across a specified open cross section." [http://iupac.org/publications/analytical_compendium/Cha12sec44.pdf]
+is_a: CHMO:0002803 ! method specification datum
+
+[Term]
+id: CHMO:0002855
+name: percentage yield
+def: "The mass of the product of a synthesis expressed as a percentage of the theoretical maximum mass given the masses of the reactants." [RSC:cb]
+is_a: CHMO:0000793 ! assay output
+
+[Term]
+id: CHMO:0002856
+name: enantiomer excess
+def: "The absolute value of the mole fraction for one enantiomer of a compound minus the mole fraction for the other enantiomer." [doi:10.1359/goldbook.E02070]
+comment: most people quote percentage enantiomer excess, CHMO:2857
+is_a: CHMO:0000793 ! assay output
+
+[Term]
+id: CHMO:0002857
+name: percentage enantiomer excess
+def: "The absolute value of the mole fraction for one enantiomer of a compound minus the mole fraction for the other enantiomer multiplied by 100%." [doi:10.1359/goldbook.E02070]
+is_a: CHMO:0000793 ! assay output
+
+[Term]
+id: CHMO:0002858
+name: diastereomeric ratio
+def: "The ratio of the percentage of one diastereomer in a mixture to that of the other." [doi:10.1359/goldbook.D01681]
+is_a: CHMO:0000793 ! assay output
+
+[Term]
 id: IAO:0000027
 name: data item
 is_a: IAO:0000030 ! information content entity
@@ -29169,6 +29298,18 @@ is_a: IAO:0000030 ! information content entity
 [Term]
 id: IAO:0000140
 name: setting datum
+is_a: IAO:0000027 ! data item
+
+[Term]
+id: OBCS:0000058
+name: sensitivity
+def: "A data item that measures the proportion of actual positives which are correctly identified as such (e.g. the percentage of sick people who are correctly identified as having the condition)." [OBCS:YQH]
+is_a: IAO:0000027 ! data item
+
+[Term]
+id: OBCS:0000059
+name: specificity
+def: "A data item that refers to the proportion of negatives in a binary classification test which are correctly identified." [OBCS:YQH]
 is_a: IAO:0000027 ! data item
 
 [Term]
