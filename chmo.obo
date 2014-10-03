@@ -1,5 +1,5 @@
 format-version: 1.2
-data-version: releases/2014-09-16
+data-version: releases/2014-10-03
 saved-by: batchelorc
 synonymtypedef: non-mining_synonym "Non-mining synonym" EXACT
 ontology: chmo
@@ -29264,20 +29264,38 @@ is_a: CHMO:0000793 ! assay output
 [Term]
 id: CHMO:0002856
 name: enantiomer excess
-def: "The absolute value of the mole fraction for one enantiomer of a compound minus the mole fraction for the other enantiomer." [doi:10.1359/goldbook.E02070]
+def: "The absolute value of the mole fraction for one enantiomer in a mixture minus the mole fraction for the other enantiomer." [doi:10.1359/goldbook.E02070]
 comment: most people quote percentage enantiomer excess, CHMO:2857
 is_a: CHMO:0000793 ! assay output
 
 [Term]
 id: CHMO:0002857
 name: percentage enantiomer excess
-def: "The absolute value of the mole fraction for one enantiomer of a compound minus the mole fraction for the other enantiomer multiplied by 100%." [doi:10.1359/goldbook.E02070]
+def: "The absolute value of the mole fraction for one enantiomer in a mixture minus the mole fraction for the other enantiomer multiplied by 100%." [doi:10.1359/goldbook.E02070]
 is_a: CHMO:0000793 ! assay output
 
 [Term]
 id: CHMO:0002858
 name: diastereomeric ratio
 def: "The ratio of the percentage of one diastereomer in a mixture to that of the other." [doi:10.1359/goldbook.D01681]
+is_a: CHMO:0000793 ! assay output
+
+[Term]
+id: CHMO:0002859
+name: enantiomeric ratio
+def: "The ratio of the percentage of one enantiomer in a mixture to that of the other." [RSC:cb]
+is_a: CHMO:0000793 ! assay output
+
+[Term]
+id: CHMO:0002860
+name: diastereomeric excess
+def: "The absolute value of the mole fraction for one diastereomer in a mixture minus the mole fraction for the other." [RSC:cb]
+is_a: CHMO:0000793 ! assay output
+
+[Term]
+id: CHMO:0002861
+name: percentage diastereomeric excess
+def: "The absolute value of the mole fraction for one diastereomer in a mixture minus the mole fraction for the other multiplied by 100%." [RSC:cb]
 is_a: CHMO:0000793 ! assay output
 
 [Term]
