@@ -110,6 +110,11 @@ name: gold nanoparticle
 is_a: CHEBI:50803 ! nanoparticle
 
 [Term]
+id: CHEBI:52455
+name: lead-207
+is_a: CHEBI:23367 ! molecular entity
+
+[Term]
 id: CHEBI:60004
 name: mixture
 is_a: CHMO:0000993 ! portion of material
@@ -2685,6 +2690,7 @@ synonym: "LA ICP-AES" EXACT []
 synonym: "laser ablation ICP AES" EXACT []
 synonym: "laser ablation inductively coupled plasma atomic emission spectrometry" EXACT []
 is_a: CHMO:0000267 ! inductively-coupled plasma atomic emission spectroscopy
+relationship: BFO:0000118 CHMO:0001132 ! has proper occurrent part laser ablation
 
 [Term]
 id: CHMO:0000270
@@ -6667,19 +6673,20 @@ is_a: CHMO:0000591 ! nuclear magnetic resonance spectroscopy
 [Term]
 id: CHMO:0000614
 name: solid-state nuclear magnetic resonance spectroscopy
+alt_id: FIX:0000649
 def: "Spectroscopy where the response of nuclei with non-zero spin, in a solid sample, to a perturbing magnetic field is detected. Each experiment consists of a sequence of radio frequency pulses with delay periods in between them." [rsc:pr]
 synonym: "solid state NMR" EXACT []
 synonym: "solid state nuclear magnetic resonance spectrometry" EXACT []
 synonym: "solid-state NMR" EXACT []
 synonym: "SS-NMR" EXACT []
 synonym: "SSNMR" EXACT []
-xref: FIX:0000649
 is_a: CHMO:0000613 ! pulsed nuclear magnetic resonance spectroscopy
 
 [Term]
 id: CHMO:0000615
 name: magic angle spinning
-def: "A type of NMR spectroscopy using a solid sample. Anisotropic interactions between nuclei, which are usually averaged by Brownian motion in liquid samples, cause significant line broadening in solid state NMR, but can be averaged to zero by spinning the sample very rapidly at the magic angle (54.74 deg. with respect to the direction of the magnetic field)." [FIX:0000471, ISBN:0-19-280031-0]
+alt_id: FIX:0000471
+def: "A type of NMR spectroscopy using a solid sample. Anisotropic interactions between nuclei, which are usually averaged by Brownian motion in liquid samples, cause significant line broadening in solid state NMR, but can be averaged to zero by spinning the sample very rapidly at the magic angle (54.74 deg. with respect to the direction of the magnetic field)." [ISBN:0-19-280031-0]
 synonym: "magic angle spinning nuclear magnetic resonance spectrometry" EXACT []
 synonym: "magic-angle spinning" EXACT []
 synonym: "MAS NMR" EXACT []
@@ -6689,6 +6696,7 @@ synonym: "solid-state magic-angle-spinning NMR" EXACT []
 synonym: "SS-MAS NMR" EXACT []
 synonym: "ss-MAS-NMR" EXACT []
 is_a: CHMO:0000614 ! solid-state nuclear magnetic resonance spectroscopy
+relationship: OBI:0000417 CHMO:0002884 ! achieves_planned_objective anisotropic nucleus-nucleus interaction line broadening minimization objective
 
 [Term]
 id: CHMO:0000616
@@ -6701,7 +6709,8 @@ is_a: CHMO:0000615 ! magic angle spinning
 [Term]
 id: CHMO:0000617
 name: cross-polarisation magic angle spinning
-def: "A type of NMR spectroscopy using a solid sample. Anisotropic interactions between nuclei, which are usually averaged by Brownian motion in liquid samples, cause significant line broadening in solid state NMR, but can be averaged to zero by spinning the sample very rapidly at the magic angle (54.74 deg. with respect to the direction of the magnetic field). Cross polarisation is used to enhance the signal from weakly coupled nuclei." [FIX:0001002, ISBN:0-19-855567-9]
+alt_id: FIX:0001002
+def: "Magic angle spinning spectroscopy where cross polarisation is used to enhance the signal from weakly coupled nuclei." [ISBN:0-19-855567-9]
 synonym: "CP-MAS" EXACT []
 synonym: "CP-MAS NMR" EXACT []
 synonym: "CP/MAS" EXACT []
@@ -6720,7 +6729,7 @@ is_a: CHMO:0000615 ! magic angle spinning
 [Term]
 id: CHMO:0000618
 name: high-resolution magic angle spinning
-def: "A type of NMR spectroscopy using a solid sample and a high resolution magnetic susceptibility matching probe. Anisotropic interactions between nuclei, which are usually averaged by Brownian motion in liquid samples, cause significant line broadening in solid state NMR, but can be averaged to zero by spinning the sample very rapidly at the magic angle (54.74 deg. with respect to the direction of the magnetic field)." [rsc:pr]
+def: "Magic angle spinning spectroscopy using a high resolution magnetic susceptibility matching probe." [rsc:pr]
 synonym: "high resolution magic-angle spinning" EXACT []
 synonym: "HR MAS" EXACT []
 synonym: "HR-MAS" EXACT []
@@ -6733,7 +6742,8 @@ is_a: CHMO:0000615 ! magic angle spinning
 [Term]
 id: CHMO:0000619
 name: photoacoustic spectroscopy
-def: "Spectroscopy where the sound emitted when a gaseous sample is exposed to an intense laser beam, which is rapidly interrupted by a rotating slotted disk, is measured." [FIX:0000700, rsc:hjb]
+alt_id: FIX:0000700
+def: "Spectroscopy where the sound emitted when a gaseous sample is exposed to an intense laser beam, which is rapidly interrupted by a rotating slotted disk, is measured." [rsc:hjb]
 synonym: "laser-induced optoacoustic spectrometry" EXACT []
 synonym: "laser-induced optoacoustic spectroscopy" EXACT []
 synonym: "LIOAS" EXACT []
@@ -6753,7 +6763,8 @@ is_a: CHMO:0000228 ! spectroscopy
 [Term]
 id: CHMO:0000620
 name: infrared photoacoustic spectroscopy
-def: "Spectroscopy where the sound emitted when a gaseous sample is exposed to an intense infrared laser beam, which is rapidly interrupted by a rotating slotted disk, is measured." [FIX:0000661, rsc:hjb]
+alt_id: FIX:0000661
+def: "Spectroscopy where the sound emitted when a gaseous sample is exposed to an intense infrared laser beam, which is rapidly interrupted by a rotating slotted disk, is measured." [rsc:hjb]
 synonym: "infra-red optoacoustic spectrometry" EXACT []
 synonym: "infra-red photoacoustic spectrometry" EXACT []
 synonym: "infra-red photoacoustic spectroscopy" EXACT []
@@ -6772,11 +6783,12 @@ synonym: "IR-PAS" EXACT []
 synonym: "IROAS" EXACT []
 synonym: "IRPAS" EXACT []
 is_a: CHMO:0000619 ! photoacoustic spectroscopy
+relationship: BFO:0000057 CHMO:0002885 ! has participant slotted disc
 
 [Term]
 id: CHMO:0000621
 name: Fourier transform infrared photoacoustic spectroscopy
-def: "Spectroscopy where the sound emitted when a gaseous sample is exposed to an intense infrared laser beam, which is rapidly interrupted by a rotating slotted disk, is measured. The spectrum is then subject to a Fourier transform." [rsc:hjb]
+def: "Infrared photoacoustic spectroscopy where the spectrum is then subject to a Fourier transform." [rsc:hjb]
 synonym: "Fourier transform infra-red photoacoustic spectroscopy" EXACT []
 synonym: "FT-IR OAS" EXACT []
 synonym: "FT-IR optoacoustic spectrometry" EXACT []
@@ -6814,7 +6826,8 @@ is_a: CHMO:0000228 ! spectroscopy
 [Term]
 id: CHMO:0000624
 name: surface plasmon resonance spectroscopy
-def: "Spectroscopy where the resonant excitation of surface plasmons (usually on a noble metal e.g. Au or Ag surface) by ultraviolet or visible light is measured. The light source is incident on the noble metal surface through a prism, at a range of angles that are above the critical angle where total internal reflection occurs. At a certain angle excitation of the surface plasmons occurs, leading to a minimum in the reflected light. The resonance angle shifts whenever the optical density of the sample in contact with the noble metal undergoes a change, and thus it allows detection of the adsorption or desorption of molecules." [DOI:10.1039/b9nr00156e, FIX:0000393]
+alt_id: FIX:0000393
+def: "Spectroscopy where the resonant excitation of surface plasmons (usually on a noble metal e.g. Au or Ag surface) by ultraviolet or visible light is measured. The light source is incident on the noble metal surface through a prism, at a range of angles that are above the critical angle where total internal reflection occurs. At a certain angle excitation of the surface plasmons occurs, leading to a minimum in the reflected light. The resonance angle shifts whenever the optical density of the sample in contact with the noble metal undergoes a change, and thus it allows detection of the adsorption or desorption of molecules." [DOI:10.1039/b9nr00156e]
 synonym: "SPR" EXACT []
 synonym: "SPR spectrometry" EXACT []
 synonym: "SPR spectroscopy" EXACT []
@@ -6848,7 +6861,7 @@ is_a: CHMO:0000624 ! surface plasmon resonance spectroscopy
 [Term]
 id: CHMO:0000627
 name: terahertz time-domain spectroscopy
-def: "Spectroscopy using short pulses of radiation from the teraherz range (1 mm--100 \\mu m)." [rsc:hjb]
+def: "Spectroscopy using short pulses of radiation from the teraherz range (1 millimetre to 100 micrometres)." [rsc:hjb]
 synonym: "terahertz time-domain spectrometry" EXACT []
 synonym: "Thz-TDS" EXACT []
 is_a: CHMO:0000228 ! spectroscopy
@@ -6871,7 +6884,9 @@ is_a: CHMO:0000628 ! vibrational spectroscopy
 [Term]
 id: CHMO:0000630
 name: infrared absorption spectroscopy
-def: "Spectroscopy where the sample absorbs radiation from the infrared region (0.78--1000 \\mum)." [FIX:0000015, FIX:0000658, ISBN:978-3-540-74597-6]
+alt_id: FIX:0000015
+alt_id: FIX:0000658
+def: "Spectroscopy where the sample absorbs radiation from the infrared region (0.78 to 1000 micrometres)." [FIX:0000015, FIX:0000658, ISBN:978-3-540-74597-6]
 synonym: "infra-red absorption spectrometry" EXACT []
 synonym: "infra-red absorption spectroscopy" EXACT []
 synonym: "infra-red spectrometry" EXACT []
@@ -7041,7 +7056,8 @@ is_a: CHMO:0000630 ! infrared absorption spectroscopy
 [Term]
 id: CHMO:0000642
 name: transient infrared spectroscopy
-def: "Spectroscopy where transient species such as radicals, ions or reactive intermediates are studied using pulses from an infrared laser. The infrared absorbance of the sample before and after an excitation laser pulse is measured." [FIX:0001068, ISBN:9810217498]
+alt_id: FIX:0001068
+def: "Spectroscopy where transient species such as radicals, ions or reactive intermediates are studied using pulses from an infrared laser. The infrared absorbance of the sample before and after an excitation laser pulse is measured." [ISBN:9810217498]
 synonym: "infrared laser transient absorption spectroscopy" EXACT []
 synonym: "infrared transient absorption spectroscopy" EXACT []
 synonym: "IR laser transient absorption spectroscopy" EXACT []
@@ -7050,11 +7066,13 @@ synonym: "TIRS" EXACT []
 synonym: "transient infrared spectrometry" EXACT []
 synonym: "transient infrared spectroscopy" EXACT []
 is_a: CHMO:0000630 ! infrared absorption spectroscopy
+relationship: BFO:0000057 OBI:0400064 ! has participant laser
 
 [Term]
 id: CHMO:0000643
 name: infrared reflectance spectroscopy
-def: "Spectroscopy where the reflection or scattering of infrared radiation (0.78--1000 \\mum) by a sample is detected." [FIX:0000652, rsc:hjb]
+alt_id: FIX:0000652
+def: "Spectroscopy where the reflection or scattering of infrared radiation (0.78--1000 \\mum) by a sample is detected." [rsc:hjb]
 synonym: "infra-red reflectance spectrometry" EXACT []
 synonym: "infrared reflectance spectrometry" EXACT []
 synonym: "infrared reflectance spectroscopy" EXACT []
@@ -7067,7 +7085,8 @@ is_a: CHMO:0000628 ! vibrational spectroscopy
 [Term]
 id: CHMO:0000644
 name: diffuse reflectance infrared spectroscopy
-def: "Spectroscopy where the diffuse reflection of infrared radiation by a sample is measured." [FIX:0000656, rsc:hjb]
+alt_id: FIX:0000656
+def: "Spectroscopy where the diffuse reflection of infrared radiation by a sample is measured." [rsc:hjb]
 synonym: "diffuse reflectance IR spectroscopy" EXACT []
 is_a: CHMO:0000643 ! infrared reflectance spectroscopy
 
@@ -11582,7 +11601,8 @@ creation_date: 2009-03-06T04:48:25Z
 [Term]
 id: CHMO:0001129
 name: displacement chromatography
-def: "Chromatography where the mobile phase contains a compound (the displacer) more strongly retained than the components of the sample under examination. The sample is fed into the system as a finite slug." [AU:D01797, FIX:0000618]
+alt_id: FIX:0000618
+def: "Chromatography where the mobile phase contains a compound (the displacer) more strongly retained than the components of the sample under examination. The sample is fed into the system as a finite slug." [AU:D01797]
 is_a: CHMO:0001000 ! chromatography
 created_by: batchelorc
 creation_date: 2009-03-06T04:48:37Z
@@ -11601,6 +11621,7 @@ id: CHMO:0001132
 name: laser ablation
 def: "A sample preparation method where material is removed from a specimen by illuminating it with a laser beam." [rsc:cb]
 is_a: OBI:0000094 ! material processing
+relationship: BFO:0000057 OBI:0400064 ! has participant laser
 created_by: batchelorc
 creation_date: 2009-03-06T05:23:07Z
 
@@ -11671,6 +11692,7 @@ synonym: "207Pb NMR" EXACT []
 synonym: "207Pb NMR spectroscopy" EXACT []
 synonym: "207Pb-NMR" EXACT []
 is_a: CHMO:0000613 ! pulsed nuclear magnetic resonance spectroscopy
+relationship: BFO:0000057 CHEBI:52455 ! has participant lead-207
 created_by: burchh
 creation_date: 2009-03-11T04:49:20Z
 
@@ -13724,6 +13746,7 @@ synonym: "laser-induced chemical vapour deposition" EXACT []
 synonym: "laser-induced CVD" EXACT []
 synonym: "LCVD" EXACT []
 is_a: CHMO:0001314 ! chemical vapour deposition
+relationship: BFO:0000057 OBI:0400064 ! has participant laser
 
 [Term]
 id: CHMO:0001322
@@ -15026,6 +15049,7 @@ id: CHMO:0001475
 name: laser cooling
 def: "A technique for cooling atoms by directing two laser beams (with energy just below an electronic transition) at the sample from opposite directions. Scattering of the laser photons by the atoms in the sample reduces their kinetic energy." [rsc:hjb]
 is_a: CHMO:0001474 ! sample cooling
+relationship: BFO:0000057 OBI:0400064 ! has participant laser
 
 [Term]
 id: CHMO:0001476
@@ -15274,6 +15298,7 @@ id: CHMO:0001510
 name: laser pyrolysis
 def: "A technique used to synthesize ultrafine powders by heating a mixture of reactant vapour and inert gas with a laser." [ISBN:3527303022]
 is_a: CHMO:0001502 ! pyrolysis
+relationship: BFO:0000057 OBI:0400064 ! has participant laser
 
 [Term]
 id: CHMO:0001511
@@ -15405,6 +15430,7 @@ name: laser micro-dissection
 def: "A type of dissection where a laser is coupled to a microscope and focused onto a biological sample (e.g. tissue) on the slide." [rsc:hjb]
 synonym: "laser microdissection" EXACT []
 is_a: CHMO:0001529 ! micro-dissection
+relationship: BFO:0000057 OBI:0400064 ! has participant laser
 
 [Term]
 id: CHMO:0001531
@@ -16433,6 +16459,7 @@ synonym: "electrospray-assisted laser desorption-ionization" EXACT []
 synonym: "laser desorption electrospray ionisation" EXACT []
 synonym: "laser desorption electrospray ionization" EXACT []
 is_a: CHMO:0001659 ! electrospray ionisation
+relationship: BFO:0000057 OBI:0400064 ! has participant laser
 
 [Term]
 id: CHMO:0001662
@@ -16457,6 +16484,7 @@ def: "An ionisation method where the sample is vaporised using a high-energy pul
 synonym: "LAESI" EXACT []
 synonym: "laser ablation electrospray ionization" EXACT []
 is_a: CHMO:0001659 ! electrospray ionisation
+relationship: BFO:0000118 CHMO:0001132 ! has proper occurrent part laser ablation
 
 [Term]
 id: CHMO:0001665
@@ -16753,6 +16781,7 @@ name: selective laser sintering
 def: "The fusing together of small particles by heating the sample below its melting point, using a high-energy laser, until its particles adhere to each other." [rsc:hjb]
 synonym: "SLS" EXACT []
 is_a: CHMO:0001703 ! solid-state sintering
+relationship: BFO:0000057 OBI:0400064 ! has participant laser
 
 [Term]
 id: CHMO:0001706
@@ -16889,6 +16918,7 @@ def: "A detection method which is sensitive to naturally fluorescent or tagged c
 synonym: "laser induced fluorescence detection" EXACT []
 synonym: "LIF" EXACT []
 is_a: CHMO:0000060 ! fluorescence detection
+relationship: BFO:0000057 OBI:0400064 ! has participant laser
 
 [Term]
 id: CHMO:0001723
@@ -17366,13 +17396,14 @@ synonym: "laser tweezing" EXACT []
 synonym: "optical trapping" EXACT []
 synonym: "optical tweezing" EXACT []
 is_a: CHMO:0001768 ! trapping method
+relationship: BFO:0000057 OBI:0400064
 created_by: burchh
 creation_date: 2009-05-20T10:35:42Z
 
 [Term]
 id: CHMO:0001770
 name: deep-level transient spectroscopy
-def: "A method for determining the extent of intrinsic and process-induced defects in the  crystalline layers within  semiconductor devices. Defects arising from impurities, grain boundaries, interfaces, etc. result in the creation of traps that capture free electrons and holes. By monitoring the capacitance  produced by applying a voltage pulse to the semiconductor junction at different temperatures, spectra are generated which exhibit a peak for each 'deep level' (each energy level near the center of the band gap). The height of the peak is proportional to the defect density and the emission rate and temperature dependence are characteristic for each type of defect." [DOI:10.1063/1.1663719]
+def: "A method for determining the extent of intrinsic and process-induced defects in the crystalline layers within  semiconductor devices. Defects arising from impurities, grain boundaries, interfaces, etc. result in the creation of traps that capture free electrons and holes. By monitoring the capacitance  produced by applying a voltage pulse to the semiconductor junction at different temperatures, spectra are generated which exhibit a peak for each 'deep level' (each energy level near the center of the band gap). The height of the peak is proportional to the defect density and the emission rate and temperature dependence are characteristic for each type of defect." [DOI:10.1063/1.1663719]
 synonym: "C-DLTS" EXACT []
 synonym: "capacitance deep level transient spectroscopy" EXACT []
 synonym: "capacitance deep-level transient spectroscopy" EXACT []
@@ -17571,6 +17602,7 @@ name: laser sintering
 def: "The fusing together of small particles by heating the sample with a laser (e.g. a CO2 laser) below its melting point until its particles adhere to each other." [DOI:10.1039/b823329b]
 synonym: "LS" EXACT non-mining_synonym []
 is_a: CHMO:0001703 ! solid-state sintering
+relationship: BFO:0000057 OBI:0400064 ! has participant laser
 created_by: burchh
 creation_date: 2009-05-20T02:16:41Z
 
@@ -23152,6 +23184,7 @@ def: "A method for obtaining colloidal solutions of nanoparticles by the condens
 synonym: "LASiS" EXACT []
 synonym: "LASiS technique" EXACT []
 is_a: CHMO:0002063 ! colloid method
+relationship: BFO:0000118 CHMO:0001132 ! has proper occurrent part laser ablation
 created_by: burchh
 creation_date: 2009-08-17T10:51:13Z
 
@@ -29417,6 +29450,26 @@ synonym: "HPTLC" EXACT []
 is_a: CHMO:0001007 ! thin-layer chromatography
 
 [Term]
+id: CHMO:0002884
+name: anisotropic nucleus-nucleus interaction line broadening minimization objective
+def: "An objective to minimize line broadening in solid state NMR that is caused by anisotropic interactions between nuclei." [RSC:cb]
+comment: Usually solved by magic-angle spinning.
+is_a: IAO:0000005 ! objective specification
+
+[Term]
+id: CHMO:0002885
+name: slotted disc
+def: "A disc with a slot in it." [RSC:cb]
+comment: This is used in photoacoustic spectroscopy to break a continuous laser beam into a pulsed one.
+synonym: "slotted disk" EXACT []
+is_a: CHMO:0000998 ! piece of apparatus
+
+[Term]
+id: IAO:0000005
+name: objective specification
+is_a: IAO:0000033 ! directive information entity
+
+[Term]
 id: IAO:0000027
 name: data item
 is_a: IAO:0000030 ! information content entity
@@ -29425,6 +29478,11 @@ is_a: IAO:0000030 ! information content entity
 id: IAO:0000030
 name: information content entity
 is_a: BFO:0000031 ! generically dependent continuant
+
+[Term]
+id: IAO:0000033
+name: directive information entity
+is_a: IAO:0000030 ! information content entity
 
 [Term]
 id: IAO:0000104
@@ -29499,6 +29557,12 @@ def: "A process with that achieves the objective to maintain some or all of the 
 is_a: OBI:0000011 ! planned process
 
 [Term]
+id: OBI:0001032
+name: light emission device
+def: "A device which has a function to emit light." [obi:hp]
+is_a: CHMO:0000998 ! piece of apparatus
+
+[Term]
 id: OBI:0001042
 name: pump function
 def: "A transfer function where the transfer requires work to move the entity, often against a gradient." [obi:EAGLE-I]
@@ -29549,6 +29613,18 @@ alt_id: CHMO:0001573
 def: "A process in which a significant increase in the electrical conductivity and permeability of the cell plasma membrane caused by an externally applied electrical field. It is usually used in molecular biology as a way of introducing some substance into a cell, such as loading it with a molecular probe, a drug that can change the cell's function, or a piece of coding DNA." [obi:prs]
 synonym: "electropermeabilization" EXACT []
 is_a: OBI:0000094 ! material processing
+
+[Term]
+id: OBI:0400064
+name: laser
+def: "A laser (acronym for light amplification by the stimulated emission of radiation) is a light source that emits photons of the same characteristics in a coherent beam. A laser uses a solid, liquid or gaseous lasing medium, that contains molecules, of which some atoms have electrons that emit photons of the same frequency when falling back to their normal orbital after excitation (pumping) by external means A laser is the most common way to irradiate a cell in a flow cytometer." [obi:jq]
+is_a: OBI:0400065 ! light source
+
+[Term]
+id: OBI:0400065
+name: light source
+def: "A light source is an optical subsystem that provides light for use in a distant area using a delivery system (e.g., fiber optics). Light sources may include one of a variety of lamps (e.g., xenon, halogen, mercury). Most light sources are operated from line power, but some may be powered from batteries. They are mostly used in endoscopic, microscopic, and other examination and/or in surgical procedures. The light source is part of the optical subsystem. In a flow cytometer the light source directs high intensity light at particles at the interrogation point. The light source in a flow cytometer is usually a laser." [obi:jq]
+is_a: OBI:0001032 ! light emission device
 
 [Term]
 id: OBI:0600014
