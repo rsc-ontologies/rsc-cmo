@@ -1,5 +1,5 @@
 format-version: 1.2
-data-version: releases/2014-10-03
+data-version: releases/2014-11-04
 saved-by: batchelorc
 synonymtypedef: non-mining_synonym "Non-mining synonym" EXACT
 ontology: chmo
@@ -151,7 +151,7 @@ def: "The use of an electrochemical cell to measure a qualitative or quantitativ
 synonym: "electroanalytical method" EXACT []
 synonym: "electrochemical assay" EXACT []
 synonym: "electrochemical method" EXACT []
-is_a: OBI:0000070 ! assay
+is_a: OBI:0000443
 
 [Term]
 id: CHMO:0000004
@@ -210,7 +210,8 @@ is_a: OBI:0000070 ! assay
 [Term]
 id: CHMO:0000011
 name: high-frequency conductometry
-def: "The measurement of the conductance of a solution as a function of concentration. Measurements are made indirectly across the resistance of the solution with high-frequency alternating current (>0.1 MHz)." [FIX:0000773, rsc:hjb]
+alt_id: FIX:0000773
+def: "The measurement of the conductance of a solution as a function of concentration. Measurements are made indirectly across the resistance of the solution with high-frequency alternating current (>0.1 MHz)." [rsc:hjb]
 synonym: "high frequency conductimetry" EXACT []
 synonym: "high frequency conductometry" EXACT []
 is_a: CHMO:0000010 ! conductometry
@@ -271,6 +272,7 @@ is_a: CHMO:0000017 ! chrono-potentiometry
 id: CHMO:0000019
 name: anodic stripping potentiometry
 def: "An electrochemical technique where the analyte of interest is electroplated onto the working electrode before being removed or 'stripped' by re-oxidation using either oxidants in the sample or by applying a small constant current, or a combination of both. During removal the time-dependence of the potential difference between the indicator and reference electrodes is measured under conditions where the current passed is sufficiently small to maintain thermodynamic equilibrium." [DOI:10.1016/j.talanta.2004.07.034]
+synonym: "anodic-stripping voltammetry" EXACT []
 synonym: "ASP" EXACT []
 is_a: CHMO:0000018 ! stripping potentiometry
 
@@ -278,6 +280,7 @@ is_a: CHMO:0000018 ! stripping potentiometry
 id: CHMO:0000020
 name: cathodic stripping potentiometry
 def: "An electrochemical technique where the analyte of interest is electroplated onto the working electrode before being removed or 'stripped' by re-reduction. During removal the time-dependence of the potential difference between the indicator and reference electrodes is measured under conditions where the current passed is sufficiently small to maintain thermodynamic equilibrium." [DOI:10.1016/j.talanta.2004.07.034]
+synonym: "cathodic-stripping voltammetry" EXACT []
 synonym: "CSP" EXACT []
 is_a: CHMO:0000018 ! stripping potentiometry
 
@@ -591,6 +594,7 @@ is_a: CHMO:0000053 ! imaging mass spectrometry
 id: CHMO:0000056
 name: Raman microscopy
 alt_id: CHMO:0000673
+alt_id: FIX:0000697
 def: "The collection of spatially resolved Raman spectra of a sample during optical microscopy." [DOI:10.1039/b815117b]
 synonym: "laser Raman microanalysis" EXACT []
 synonym: "LRMA" EXACT []
@@ -610,14 +614,13 @@ synonym: "Raman microspectrometry" EXACT []
 synonym: "Raman microspectroscopy" EXACT []
 synonym: "Raman spectral imaging" EXACT []
 synonym: "RCIS" EXACT []
-xref: FIX:0000697
 is_a: CHMO:0001818 ! vibrational microscopy
 
 [Term]
 id: CHMO:0000057
 name: luminescence detection
+alt_id: FIX:0000427
 def: "The detection of luminescence from a sample." [rsc:hjb]
-xref: FIX:0000427
 is_a: CHMO:0001709 ! detection method
 
 [Term]
@@ -625,7 +628,6 @@ id: CHMO:0000058
 name: chemiluminescence detection
 def: "The detection of luminescence emitted from a sample as a result of a chemical reaction." [DOI:10.1039/b812750f]
 synonym: "CL detection" EXACT []
-xref: FIX:0000427
 is_a: CHMO:0000057 ! luminescence detection
 
 [Term]
@@ -674,7 +676,10 @@ is_a: CHMO:0000062 ! Forster resonance energy transfer
 [Term]
 id: CHMO:0000064
 name: fluorescence resonance energy transfer
-def: "A method for determining the distance between molecules using an energy transfer between two fluorescent chromophores (a donor and an acceptor) in close proximity (typically <10 nm) via a nonradiative, long-range dipole--dipole coupling mechanism. Energy transfer usually occurs between a cyan fluorescent protein (donor) and a yellow fluorescent protein (acceptor)." [FIX:0000472, FIX:0000473, rsc:hjb]
+alt_id: FIX:0000472
+alt_id: FIX:0000473
+def: "A method for determining the distance between molecules using an energy transfer between two fluorescent chromophores (a donor and an acceptor) in close proximity (typically <10 nm) via a nonradiative, long-range dipole--dipole coupling mechanism. Energy transfer usually occurs between a cyan fluorescent protein (donor) and a yellow fluorescent protein (acceptor)." [rsc:hjb]
+synonym: "fluorescence resonance energy transfer assay" EXACT []
 synonym: "fluorescence resonance energy transfer microscopy" EXACT []
 synonym: "fluorescent resonance energy transfer" EXACT []
 synonym: "FRET" EXACT non-mining_synonym []
@@ -705,22 +710,24 @@ is_a: CHMO:0002406 ! fluorescence quenching method
 [Term]
 id: CHMO:0000067
 name: microscopy
+alt_id: FIX:0000005
 def: "Any technique where a microscope is used to view a small object (or specimen) by producing a magnified image." [rsc:hjb]
-xref: FIX:0000005
 is_a: OBI:0000185 ! imaging assay
+relationship: BFO:0000057 CHMO:0000953 ! has participant microscope
 
 [Term]
 id: CHMO:0000068
 name: electron microscopy
-def: "A type of microscopy where the specimen is bombarded with a finely focused (<10 nm diameter) electron beam with an acceleration voltage 50-150 kV under vacuum. The interaction of the electrons with the specimen produces transmitted, secondary, backscattered and diffracted electrons and characteristic X-rays which are detected." [AU:S05484]
+alt_id: FIX:0000051
+def: "Microscopy where the specimen is bombarded with a finely focused (<10 nm diameter) electron beam with an acceleration voltage 50-150 kV under vacuum. The interaction of the electrons with the specimen produces transmitted, secondary, backscattered and diffracted electrons and characteristic X-rays which are detected." [AU:S05484]
 synonym: "EM" EXACT []
-xref: FIX:0000051
 is_a: CHMO:0000067 ! microscopy
+relationship: BFO:0000057 CHMO:0001088 ! has participant electron microscope
 
 [Term]
 id: CHMO:0000069
 name: field-emission electron microscopy
-def: "A type of microscopy where the specimen is bombarded with a finely focused (<10 nm diameter) electron beam produced by field emission with an acceleration voltage 50-150 kV under vacuum. The interaction of the electrons with the specimen produces transmitted, secondary, backscattered and diffracted electrons and characteristic X-rays which are detected." [Orange:17.2.7]
+def: "Microscopy where the specimen is bombarded with a finely focused (<10 nm diameter) electron beam produced by field emission with an acceleration voltage 50-150 kV under vacuum. The interaction of the electrons with the specimen produces transmitted, secondary, backscattered and diffracted electrons and characteristic X-rays which are detected." [Orange:17.2.7]
 synonym: "FEM" EXACT []
 synonym: "field electron microscopy" EXACT []
 synonym: "field emission electron microscopy" EXACT []
@@ -731,7 +738,7 @@ is_a: CHMO:0000068 ! electron microscopy
 [Term]
 id: CHMO:0000070
 name: low-energy electron microscopy
-def: "A type of microscopy where the specimen is bombarded with a finely focused (<10 nm diameter) low energy (1--100 eV) electron beam with an acceleration voltage 50--150 kV under vacuum. The interaction of the electrons with the specimen produces transmitted, secondary, backscattered and diffracted electrons and characteristic X-rays which are detected." [rsc:hjb]
+def: "Microscopy where the specimen is bombarded with a finely focused (<10 nm diameter) low energy (1--100 eV) electron beam with an acceleration voltage 50--150 kV under vacuum. The interaction of the electrons with the specimen produces transmitted, secondary, backscattered and diffracted electrons and characteristic X-rays which are detected." [rsc:hjb]
 synonym: "LE EM" EXACT []
 synonym: "LEEM" EXACT []
 synonym: "low energy electron microscopy" EXACT []
@@ -742,7 +749,7 @@ is_a: CHMO:0000068 ! electron microscopy
 [Term]
 id: CHMO:0000071
 name: spin-polarised low energy electron microscopy
-def: "A type of microscopy where the specimen is bombarded with a finely focused (<10 nm diameter) low energy (1--100 eV) electron beam with an acceleration voltage 50--150 kV under vacuum. The interaction of the electrons with the specimen produces transmitted, secondary, backscattered and diffracted electrons and characteristic X-rays which are detected. A magnet is used to align all electron spins parallel to the sample surface." [rsc:hjb]
+def: "Microscopy where the specimen is bombarded with a finely focused (<10 nm diameter) low energy (1--100 eV) electron beam with an acceleration voltage 50--150 kV under vacuum. The interaction of the electrons with the specimen produces transmitted, secondary, backscattered and diffracted electrons and characteristic X-rays which are detected. A magnet is used to align all electron spins parallel to the sample surface." [rsc:hjb]
 synonym: "spin polarised LEEM" EXACT []
 synonym: "spin polarised low energy electron microscopy" EXACT []
 synonym: "spin polarized LEEM" EXACT []
@@ -756,7 +763,7 @@ is_a: CHMO:0000070 ! low-energy electron microscopy
 [Term]
 id: CHMO:0000072
 name: reflection electron microscopy
-def: "A type of microscopy where the specimen is bombarded with a finely focused (<10 nm diameter) electron beam with an acceleration voltage 50--150 kV under vacuum. The electrons elastically scattered by the specimen are detected." [rsc:hjb]
+def: "Microscopy where the specimen is bombarded with a finely focused (<10 nm diameter) electron beam with an acceleration voltage 50--150 kV under vacuum. The electrons elastically scattered by the specimen are detected." [rsc:hjb]
 synonym: "reflection EM" EXACT []
 synonym: "REM" EXACT []
 is_a: CHMO:0000068 ! electron microscopy
@@ -764,7 +771,7 @@ is_a: CHMO:0000068 ! electron microscopy
 [Term]
 id: CHMO:0000073
 name: scanning electron microscopy
-def: "A type of microscopy where a finely focused (<10 nm diameter) electron beam with an acceleration voltage 50--150 kV is scanned across the specimen under vacuum and the interaction of the electrons with the specimen is determined." [AU:S05484, FIX:0000124]
+def: "Microscopy where a finely focused (<10 nm diameter) electron beam with an acceleration voltage 50--150 kV is scanned across the specimen under vacuum and the interaction of the electrons with the specimen is determined." [AU:S05484, FIX:0000124]
 synonym: "scanning electronic microscopy" EXACT []
 synonym: "SEM" EXACT []
 is_a: CHMO:0000068 ! electron microscopy
@@ -772,7 +779,7 @@ is_a: CHMO:0000068 ! electron microscopy
 [Term]
 id: CHMO:0000074
 name: field-emission scanning electron microscopy
-def: "A type of microscopy where a finely focused (<10 nm diameter) electron beam produced by thermionic emission heating (field emission) and with an acceleration voltage 50--150 kV is scanned across the specimen under vacuum and the interaction of the electrons with the specimen is determined." [DOI:10.1039/b818058j]
+def: "Microscopy where a finely focused (<10 nm diameter) electron beam produced by thermionic emission heating (field emission) and with an acceleration voltage 50--150 kV is scanned across the specimen under vacuum and the interaction of the electrons with the specimen is determined." [DOI:10.1039/b818058j]
 synonym: "FE SEM" EXACT []
 synonym: "FE-SEM" EXACT []
 synonym: "FE/SEM" EXACT []
@@ -788,7 +795,7 @@ is_a: CHMO:0000073 ! scanning electron microscopy
 [Term]
 id: CHMO:0000075
 name: cold-field-emission scanning electron microscopy
-def: "A type of microscopy where a finely focused (<10 nm diameter) electron beam produced by applying a high voltage to a tungsten crystal (cold-field emission) and with an acceleration voltage 50--150 kV is scanned across the specimen under vacuum and the interaction of the electrons with the specimen is determined." [ISBN:0763701920]
+def: "Microscopy where a finely focused (<10 nm diameter) electron beam produced by applying a high voltage to a tungsten crystal (cold-field emission) and with an acceleration voltage 50--150 kV is scanned across the specimen under vacuum and the interaction of the electrons with the specimen is determined." [ISBN:0763701920]
 synonym: "CFE SEM" EXACT []
 synonym: "CFE-SEM" EXACT []
 synonym: "CFE/SEM" EXACT []
@@ -805,7 +812,7 @@ is_a: CHMO:0000074 ! field-emission scanning electron microscopy
 [Term]
 id: CHMO:0000076
 name: environmental scanning electron microscopy
-def: "A type of microscopy where a finely focused (<10 nm diameter) electron beam with an acceleration voltage 50--150 kV is scanned across the specimen in a gaseous environment and the interaction of the electrons with the specimen is determined." [rsc:hjb]
+def: "Microscopy where a finely focused (<10 nm diameter) electron beam with an acceleration voltage 50--150 kV is scanned across the specimen in a gaseous environment and the interaction of the electrons with the specimen is determined." [rsc:hjb]
 synonym: "E-SEM" EXACT []
 synonym: "environmental SEM" EXACT []
 synonym: "ESEM" EXACT []
@@ -814,7 +821,7 @@ is_a: CHMO:0000073 ! scanning electron microscopy
 [Term]
 id: CHMO:0000077
 name: scanning electron microscopy energy dispersive X-ray spectroscopy
-def: "A type of microscopy where a finely focused (<10 nm diameter) electron beam with an acceleration voltage 50--150 kV is scanned across the specimen under vacuum. The interaction of electrons with the specimen produces X-rays (with energies characteristic of atomic number) which are detected as a function of wavelength." [rsc:hjb]
+def: "Microscopy where a finely focused (<10 nm diameter) electron beam with an acceleration voltage 50--150 kV is scanned across the specimen under vacuum. The interaction of electrons with the specimen produces X-rays (with energies characteristic of atomic number) which are detected as a function of wavelength." [rsc:hjb]
 synonym: "scanning electron microscopy-energy dispersive X-ray spectroscopy" EXACT []
 synonym: "scanning electron microscopy/energy dispersive X-ray analysis" EXACT []
 synonym: "scanning electron microscopy/energy dispersive X-ray spectroscopy" EXACT []
@@ -828,14 +835,14 @@ is_a: CHMO:0000073 ! scanning electron microscopy
 [Term]
 id: CHMO:0000078
 name: scanning electron acoustic microscopy
-def: "A type of microscopy where a pulsed electron beam is scanned over the surface of the specimen in order to generate elastic waves which are reflected and detected." [DOI:10.1007/s10853-005-7244-2]
+def: "Microscopy where a pulsed electron beam is scanned over the surface of the specimen in order to generate elastic waves which are reflected and detected." [DOI:10.1007/s10853-005-7244-2]
 synonym: "SEAM" EXACT []
 is_a: CHMO:0000073 ! scanning electron microscopy
 
 [Term]
 id: CHMO:0000079
 name: scanning Auger microscopy
-def: "A type of microscopy where a focused electron beam of small diameter is used to produce Auger electrons which are detected." [rsc:hjb]
+def: "Microscopy where a focused electron beam of small diameter is used to produce Auger electrons which are detected." [rsc:hjb]
 synonym: "SAM" EXACT non-mining_synonym []
 synonym: "scanning Auger electron microscopy" EXACT []
 is_a: CHMO:0000073 ! scanning electron microscopy
@@ -843,14 +850,14 @@ is_a: CHMO:0000073 ! scanning electron microscopy
 [Term]
 id: CHMO:0000080
 name: transmission electron microscopy
-def: "A type of microscopy where an electron-transparent specimen is bombarded with a finely focused (<10 nm diameter) electron beam with an acceleration voltage 50--150 kV under vacuum and the intensities of the transmitted electrons are measured." [AU:T06481, FIX:0000126]
+def: "Microscopy where an electron-transparent specimen is bombarded with a finely focused (<10 nm diameter) electron beam with an acceleration voltage 50--150 kV under vacuum and the intensities of the transmitted electrons are measured." [AU:T06481, FIX:0000126]
 synonym: "TEM" EXACT []
 is_a: CHMO:0000068 ! electron microscopy
 
 [Term]
 id: CHMO:0000081
 name: cryogenic transmission electron microscopy
-def: "A type of microscopy where an electron-transparent specimen, which is cooled in liquid ethane to 180 deg. C, is bombarded with a finely focused (<10 nm diameter) electron beam with an acceleration voltage 50--150 kV under vacuum and the intensities of the transmitted electrons are measured." [DOI:10.1021/jp013639d]
+def: "Microscopy where an electron-transparent specimen, which is cooled in liquid ethane to 180 deg. C, is bombarded with a finely focused (<10 nm diameter) electron beam with an acceleration voltage 50--150 kV under vacuum and the intensities of the transmitted electrons are measured." [DOI:10.1021/jp013639d]
 synonym: "cryo TEM" EXACT []
 synonym: "cryo-TEM" EXACT []
 synonym: "cryo-transmission electron microscopy " EXACT []
@@ -863,7 +870,7 @@ is_a: CHMO:0002413 ! cryogenic electron microscopy
 [Term]
 id: CHMO:0000082
 name: energy-filtered transmission electron microscopy
-def: "A type of microscopy where an electron-transparent specimen is bombarded with a finely focused (<10 nm diameter) electron beam with an acceleration voltage 50--150 kV under vacuum and the intensities of transmitted electrons of particular kinetic energies are measured." [rsc:hjb]
+def: "Microscopy where an electron-transparent specimen is bombarded with a finely focused (<10 nm diameter) electron beam with an acceleration voltage 50--150 kV under vacuum and the intensities of transmitted electrons of particular kinetic energies are measured." [rsc:hjb]
 synonym: "EF-TEM" EXACT []
 synonym: "EF/TEM" EXACT []
 synonym: "EFTEM" EXACT []
@@ -877,7 +884,7 @@ is_a: CHMO:0000080 ! transmission electron microscopy
 [Term]
 id: CHMO:0000083
 name: freeze-fracture transmission electron microscopy
-def: "A type of microscopy where the electron-transparent specimen (normally a fresh tissue or cell suspension) is prepared by rapid freezing using liquid nitrogen, then fractured, and the cold fractured surface is coated with Pt or Au by evaporation. The specimen is then bombarded with a finely focused (<10 nm diameter) electron beam with an acceleration voltage 50--150 kV under vacuum and the intensities of the transmitted electrons are measured." [DOI:10.1039/b813498g]
+def: "Microscopy where the electron-transparent specimen (normally a fresh tissue or cell suspension) is prepared by rapid freezing using liquid nitrogen, then fractured, and the cold fractured surface is coated with Pt or Au by evaporation. The specimen is then bombarded with a finely focused (<10 nm diameter) electron beam with an acceleration voltage 50--150 kV under vacuum and the intensities of the transmitted electrons are measured." [DOI:10.1039/b813498g]
 synonym: "FF-TEM" EXACT []
 synonym: "FF/TEM" EXACT []
 synonym: "FFTEM" EXACT []
@@ -889,7 +896,7 @@ is_a: CHMO:0000080 ! transmission electron microscopy
 [Term]
 id: CHMO:0000084
 name: high-resolution transmission electron microscopy
-def: "A type of microscopy where an electron-transparent specimen is bombarded with several finely focused (<10 nm diameter) electron beams with an acceleration voltage 50--150 kV under vacuum, and the phase contrast between the transmitted interfering electron waves is used to produce an image." [rsc:hjb]
+def: "Microscopy where an electron-transparent specimen is bombarded with several finely focused (<10 nm diameter) electron beams with an acceleration voltage 50--150 kV under vacuum, and the phase contrast between the transmitted interfering electron waves is used to produce an image." [rsc:hjb]
 synonym: "high resolution (HR) TEM" EXACT []
 synonym: "high resolution TEM" EXACT []
 synonym: "high resolution transmission electron microscopy" EXACT []
@@ -907,7 +914,7 @@ is_a: CHMO:0000080 ! transmission electron microscopy
 [Term]
 id: CHMO:0000085
 name: high-voltage transmission electron microscopy
-def: "A type of microscopy where an electron-transparent specimen is bombarded with a finely focused (<10 nm diameter) electron beam with an acceleration voltage 700--3000 kV under vacuum and the intensities of the transmitted electrons are measured." [rsc:hjb]
+def: "Microscopy where an electron-transparent specimen is bombarded with a finely focused (<10 nm diameter) electron beam with an acceleration voltage 700--3000 kV under vacuum and the intensities of the transmitted electrons are measured." [rsc:hjb]
 synonym: "high voltage TEM" EXACT []
 synonym: "high voltage transmission electron microscopy" EXACT []
 synonym: "high-voltage TEM" EXACT []
@@ -920,7 +927,7 @@ is_a: CHMO:0000080 ! transmission electron microscopy
 [Term]
 id: CHMO:0000086
 name: scanning transmission electron microscopy
-def: "A type of microscopy where a finely focused (<10 nm diameter) electron beam with an acceleration voltage 50--150 kV is scanned across an electron-transparent specimen under vacuum and the intensities of the transmitted electrons are measured." [rsc:hjb]
+def: "Microscopy where a finely focused (<10 nm diameter) electron beam with an acceleration voltage 50--150 kV is scanned across an electron-transparent specimen under vacuum and the intensities of the transmitted electrons are measured." [rsc:hjb]
 synonym: "scanning TEM" EXACT []
 synonym: "STEM" EXACT []
 is_a: CHMO:0000080 ! transmission electron microscopy
@@ -937,7 +944,7 @@ is_a: CHMO:0000067 ! microscopy
 [Term]
 id: CHMO:0000088
 name: fluorescence laser scanning microscopy
-def: "A type of microscopy where the specimen can be made to fluoresce (emit energy as visible light) by scanning a laser spot of specific wavelength over its surface." [FIX:0000380, rsc:hjb]
+def: "Microscopy where the specimen can be made to fluoresce (emit energy as visible light) by scanning a laser spot of specific wavelength over its surface." [FIX:0000380, rsc:hjb]
 synonym: "FLSM" EXACT []
 synonym: "laser scanning fluorescence microscopy" EXACT []
 synonym: "laser scanning microscopy" EXACT []
@@ -947,7 +954,7 @@ is_a: CHMO:0000087 ! fluorescence microscopy
 [Term]
 id: CHMO:0000089
 name: confocal laser scanning microscopy
-def: "A type of microscopy where the specimen can be made to fluoresce (emit energy as visible light) by scanning a gas (Ar or Kr) laser spot of specific wavelength over its surface and using a spatial pinhole to eliminate out-of-focus fluorescence." [DOI:10.1039/b807581f]
+def: "Microscopy where the specimen can be made to fluoresce (emit energy as visible light) by scanning a gas (Ar or Kr) laser spot of specific wavelength over its surface and using a spatial pinhole to eliminate out-of-focus fluorescence." [DOI:10.1039/b807581f]
 synonym: "CLSM" EXACT []
 synonym: "confocal fluorescence imaging" EXACT []
 synonym: "confocal fluorescence microscopy" EXACT []
@@ -962,7 +969,7 @@ is_a: CHMO:0000088 ! fluorescence laser scanning microscopy
 [Term]
 id: CHMO:0000090
 name: multi-photon laser scanning microscopy
-def: "A type of microscopy where the specimen can be made to fluoresce (emit energy as visible light) by scanning a solid-state (Ti sapphire) laser spot of specific wavelength over its surface to produce multi-photon fluorescence (i.e. the fluorophore simultaneously absorbs multiple photons of typically one half to one third of the energy required for single-photon excitation)." [FIX:0000383, rsc:hjb]
+def: "Microscopy where the specimen can be made to fluoresce (emit energy as visible light) by scanning a solid-state (Ti sapphire) laser spot of specific wavelength over its surface to produce multi-photon fluorescence (i.e. the fluorophore simultaneously absorbs multiple photons of typically one half to one third of the energy required for single-photon excitation)." [FIX:0000383, rsc:hjb]
 synonym: "MPLSM" EXACT []
 synonym: "multi photon laser scanning microscopy" EXACT []
 synonym: "multiphoton laser scanning fluorescence microscopy " EXACT []
@@ -972,7 +979,7 @@ is_a: CHMO:0000088 ! fluorescence laser scanning microscopy
 [Term]
 id: CHMO:0000091
 name: fluorescence lifetime imaging microscopy
-def: "A type of microscopy where the specimen can be made to fluoresce (emit energy as visible light) by illuminating it with light of specific wavelengths and the spatial distribution of mean fluorescence lifetimes (usually on the ns scale) is mapped within the microscopic images." [DOI:10.1007/b102213]
+def: "Microscopy where the specimen can be made to fluoresce (emit energy as visible light) by illuminating it with light of specific wavelengths and the spatial distribution of mean fluorescence lifetimes (usually on the ns scale) is mapped within the microscopic images." [DOI:10.1007/b102213]
 synonym: "FLIM" EXACT []
 synonym: "fluorescence-lifetime imaging microscopy" EXACT []
 is_a: CHMO:0000087 ! fluorescence microscopy
@@ -980,7 +987,7 @@ is_a: CHMO:0000087 ! fluorescence microscopy
 [Term]
 id: CHMO:0000092
 name: infrared fluorescence microscopy
-def: "A type of microscopy where the specimen can be made to fluoresce (emit energy as visible light) by illuminating it with radiation in the infra-red region (2.5--16 &#x3bc;m)." [rsc:hjb]
+def: "Microscopy where the specimen can be made to fluoresce (emit energy as visible light) by illuminating it with radiation in the infra-red region (2.5--16 &#x3bc;m)." [rsc:hjb]
 synonym: "infra-red fluorescence microscopy" EXACT []
 synonym: "IR fluorescence microscopy" EXACT []
 is_a: CHMO:0000087 ! fluorescence microscopy
@@ -988,7 +995,7 @@ is_a: CHMO:0000087 ! fluorescence microscopy
 [Term]
 id: CHMO:0000093
 name: near-infrared fluorescence microscopy
-def: "A type of microscopy where the specimen can be made to fluoresce (emit energy as visible light) by illuminating it with radiation in the near infra-red region (0.8--2.5 &#x3bc;m)." [rsc:hjb]
+def: "Microscopy where the specimen can be made to fluoresce (emit energy as visible light) by illuminating it with radiation in the near infra-red region (0.8--2.5 &#x3bc;m)." [rsc:hjb]
 synonym: "near infra-red fluorescence microscopy" EXACT []
 synonym: "near-infrared fluorescence microscopy" EXACT []
 synonym: "NIRF microscopy" EXACT []
@@ -998,7 +1005,7 @@ is_a: CHMO:0000092 ! infrared fluorescence microscopy
 [Term]
 id: CHMO:0000094
 name: total internal reflection fluorescence microscopy
-def: "A type of microscopy where the specimen (a fluorophore) can be made to fluoresce (emit energy as visible light) by illuminating it with light of specific wavelength. The light is totally internally reflected to generate an evanescent wave at the glass microscope slide-water interface. The evanescent wave selectively illuminates and excites fluorophores in a restricted region of the specimen allowing fluorophores on the surface to be imaged (normally the fluorescence of surface fluorophores is overwhelmed by background fluorescence)." [rsc:hjb]
+def: "Microscopy where the specimen (a fluorophore) can be made to fluoresce (emit energy as visible light) by illuminating it with light of specific wavelength. The light is totally internally reflected to generate an evanescent wave at the glass microscope slide-water interface. The evanescent wave selectively illuminates and excites fluorophores in a restricted region of the specimen allowing fluorophores on the surface to be imaged (normally the fluorescence of surface fluorophores is overwhelmed by background fluorescence)." [rsc:hjb]
 synonym: "TIRF microscopy" EXACT []
 synonym: "TIRFM" EXACT []
 is_a: CHMO:0000087 ! fluorescence microscopy
@@ -1006,7 +1013,7 @@ is_a: CHMO:0000087 ! fluorescence microscopy
 [Term]
 id: CHMO:0000095
 name: ultraviolet fluorescence microscopy
-def: "A type of microscopy where the specimen can be made to fluoresce (emit energy as visible light) by illuminating it with radiation in the ultra-violet region (4--380 nm)." [ISBN:0632034335]
+def: "Microscopy where the specimen can be made to fluoresce (emit energy as visible light) by illuminating it with radiation in the ultra-violet region (4--380 nm)." [ISBN:0632034335]
 synonym: "ultra-violet fluorescence microscopy" EXACT []
 synonym: "ultraviolet fluorescence microscopy" EXACT []
 synonym: "UV fluorescence microscopy" EXACT []
@@ -1017,20 +1024,20 @@ is_a: CHMO:0000087 ! fluorescence microscopy
 [Term]
 id: CHMO:0000096
 name: visible fluorescence microscopy
-def: "A type of microscopy where the specimen can be made to fluoresce (emit energy as visible light) by illuminating it with radiation in the visible region (380--750 nm)." [rsc:hjb]
+def: "Microscopy where the specimen can be made to fluoresce (emit energy as visible light) by illuminating it with radiation in the visible region (380--750 nm)." [rsc:hjb]
 is_a: CHMO:0000087 ! fluorescence microscopy
 
 [Term]
 id: CHMO:0000097
 name: ion microscopy
-def: "A type of microscopy where ions are used to produce an image." [FIX:0000962, rsc:hjb]
+def: "Microscopy where ions are used to produce an image." [FIX:0000962, rsc:hjb]
 synonym: "IM" EXACT []
 is_a: CHMO:0000067 ! microscopy
 
 [Term]
 id: CHMO:0000098
 name: field ion microscopy
-def: "A type of microscopy where atoms of an inert gas in the vicinty of the specimen (which is in the form of a very sharp tip <10 m diameter) are ionised by the application of a strong electric field to the tip and an image is produced by the projection of the ions onto a fluorescent screen. The image consists of a pattern of spots of light which correspond to individual atoms on the specimen surface." [Orange:17.2.7]
+def: "Microscopy where atoms of an inert gas in the vicinty of the specimen (which is in the form of a very sharp tip <10 m diameter) are ionised by the application of a strong electric field to the tip and an image is produced by the projection of the ions onto a fluorescent screen. The image consists of a pattern of spots of light which correspond to individual atoms on the specimen surface." [Orange:17.2.7]
 synonym: "field ionisation microscopy" EXACT []
 synonym: "field ionization microscopy" EXACT []
 synonym: "field-ion microscopy" EXACT []
@@ -1042,7 +1049,7 @@ is_a: CHMO:0000097 ! ion microscopy
 [Term]
 id: CHMO:0000099
 name: atom probe field ion microscopy
-def: "A type of microscopy where atoms in the vicinty of the specimen (which is in the form of a very sharp tip <10 m diameter) are ionised by the application of a strong electric field to the tip and an image is produced by the projection of the ions onto a fluorescent screen. The image consists of a pattern of spots of light which correspond to individual atoms on the specimen surface. When a sudden voltage pulse is applied to the tip, atoms from the surface of the specimen itself are be ejected and travel down a drift tube where their arrival time (a measure of the mass of the atom) can be determined. This allows the atomic composition of the specimen to be determined." [rsc:hjb]
+def: "Microscopy where atoms in the vicinty of the specimen (which is in the form of a very sharp tip <10 m diameter) are ionised by the application of a strong electric field to the tip and an image is produced by the projection of the ions onto a fluorescent screen. The image consists of a pattern of spots of light which correspond to individual atoms on the specimen surface. When a sudden voltage pulse is applied to the tip, atoms from the surface of the specimen itself are be ejected and travel down a drift tube where their arrival time (a measure of the mass of the atom) can be determined. This allows the atomic composition of the specimen to be determined." [rsc:hjb]
 synonym: "AP field ionisation microscopy" EXACT []
 synonym: "AP field ionization microscopy" EXACT []
 synonym: "AP field-ion microscopy" EXACT []
@@ -1063,20 +1070,20 @@ is_a: CHMO:0000098 ! field ion microscopy
 [Term]
 id: CHMO:0000100
 name: helium-ion microscopy
-def: "A type of microscopy where atoms of He gas in the vicinty of the specimen are ionised and an image is produced by the projection of the ions onto a fluorescent screen. The image consists of a pattern of spots of light which correspond to individual atoms on the specimen surface." [rsc:hjb]
+def: "Microscopy where atoms of He gas in the vicinty of the specimen are ionised and an image is produced by the projection of the ions onto a fluorescent screen. The image consists of a pattern of spots of light which correspond to individual atoms on the specimen surface." [rsc:hjb]
 is_a: CHMO:0000098 ! field ion microscopy
 
 [Term]
 id: CHMO:0000101
 name: scanning ion microscopy
-def: "A type of microscopy where an ion beam is scanned over the specimen surface and the secondary electrons emitted are detected." [FIX:0000963, rsc:hjb]
+def: "Microscopy where an ion beam is scanned over the specimen surface and the secondary electrons emitted are detected." [FIX:0000963, rsc:hjb]
 synonym: "SIM" EXACT non-mining_synonym []
 is_a: CHMO:0000097 ! ion microscopy
 
 [Term]
 id: CHMO:0000102
 name: optical microscopy
-def: "A type of microscopy where the specimen is illuminated with visible light and a system of lenses is used to produce an image." [FIX:0000113, rsc:hjb]
+def: "Microscopy where the specimen is illuminated with visible light and a system of lenses is used to produce an image." [FIX:0000113, rsc:hjb]
 synonym: "light microscopy" EXACT []
 synonym: "OM" EXACT []
 is_a: CHMO:0000067 ! microscopy
@@ -1084,13 +1091,13 @@ is_a: CHMO:0000067 ! microscopy
 [Term]
 id: CHMO:0000103
 name: confocal microscopy
-def: "A type of microscopy where visible light coming from the specimen is collected and guided through a pinhole before it is detected. The pinhole allows only light from the focal point to pass to the detector, reducing background interference." [ISBN:978-3-540-74597-6]
+def: "Microscopy where visible light coming from the specimen is collected and guided through a pinhole before it is detected. The pinhole allows only light from the focal point to pass to the detector, reducing background interference." [ISBN:978-3-540-74597-6]
 is_a: CHMO:0000102 ! optical microscopy
 
 [Term]
 id: CHMO:0000104
 name: bright-field microscopy
-def: "A type of microscopy where the specimen is illuminated with light transmitted from a source on the opposite side of the specimen from the objective." [rsc:hjb]
+def: "Microscopy where the specimen is illuminated with light transmitted from a source on the opposite side of the specimen from the objective." [rsc:hjb]
 synonym: "bright field microscopy" EXACT []
 synonym: "bright-field optical microscopy" EXACT []
 synonym: "transmitted light microscopy" EXACT []
@@ -1100,13 +1107,13 @@ is_a: CHMO:0000102 ! optical microscopy
 [Term]
 id: CHMO:0000105
 name: comparison light microscopy
-def: "A type of microscopy where two specimens can be compared by illuminating them with visible light using two identical sets of microscope lenses which are linked by an optical bridge." [ISBN:0-85404-539-2]
+def: "Microscopy where two specimens can be compared by illuminating them with visible light using two identical sets of microscope lenses which are linked by an optical bridge." [ISBN:0-85404-539-2]
 is_a: CHMO:0000102 ! optical microscopy
 
 [Term]
 id: CHMO:0000106
 name: optical interference microscopy
-def: "A type of microscopy where the specimen is illuminated with visible light split into two beams, which then interfere to produce fringes whose spacing is proportional to the height of the specimen." [rsc:hjb]
+def: "Microscopy where the specimen is illuminated with visible light split into two beams, which then interfere to produce fringes whose spacing is proportional to the height of the specimen." [rsc:hjb]
 synonym: "interference optical microscopy" EXACT []
 synonym: "IOM" EXACT []
 synonym: "OIM" EXACT []
@@ -1115,7 +1122,7 @@ is_a: CHMO:0000102 ! optical microscopy
 [Term]
 id: CHMO:0000107
 name: differential interference contrast microscopy
-def: "A type of microscopy where the specimen is illuminated with polarised visible light split into two beams, which then interfere to produce fringes whose spacing is proportional to the height of the specimen." [rsc:hjb]
+def: "Microscopy where the specimen is illuminated with polarised visible light split into two beams, which then interfere to produce fringes whose spacing is proportional to the height of the specimen." [rsc:hjb]
 synonym: "DIC" EXACT []
 synonym: "DIC microscopy" EXACT []
 synonym: "NIC" EXACT []
@@ -1127,13 +1134,13 @@ is_a: CHMO:0000106 ! optical interference microscopy
 [Term]
 id: CHMO:0000108
 name: low coherence interference microscopy
-def: "A type of microscopy where the specimen is illuminated with short-coherence length visible light split into two beams, which then interfere to produce fringes whose spacing is proportional to the height of the specimen." [ISBN:0824742524]
+def: "Microscopy where the specimen is illuminated with short-coherence length visible light split into two beams, which then interfere to produce fringes whose spacing is proportional to the height of the specimen." [ISBN:0824742524]
 is_a: CHMO:0000106 ! optical interference microscopy
 
 [Term]
 id: CHMO:0000109
 name: coherence probe microscopy
-def: "A type of microscopy where the surface of the specimen is illuminated with short-coherence length visible light split into two beams, which then interfere to produce fringes whose spacing is proportional to the profile of the specimen." [ISBN:0824742524]
+def: "Microscopy where the surface of the specimen is illuminated with short-coherence length visible light split into two beams, which then interfere to produce fringes whose spacing is proportional to the profile of the specimen." [ISBN:0824742524]
 synonym: "coherence-probe microscopy" EXACT []
 synonym: "CPM" EXACT []
 synonym: "phase correlation microscopy" EXACT []
@@ -1142,7 +1149,7 @@ is_a: CHMO:0000108 ! low coherence interference microscopy
 [Term]
 id: CHMO:0000110
 name: phase contrast microscopy
-def: "A type of microscopy where a transparent specimen is illuminated with visible light and small phase shifts in the light passing through the specimen are used to produce an image." [rsc:hjb]
+def: "Microscopy where a transparent specimen is illuminated with visible light and small phase shifts in the light passing through the specimen are used to produce an image." [rsc:hjb]
 synonym: "PCM" EXACT []
 synonym: "phase-contrast microscopy" EXACT []
 is_a: CHMO:0000102 ! optical microscopy
@@ -1150,7 +1157,7 @@ is_a: CHMO:0000102 ! optical microscopy
 [Term]
 id: CHMO:0000111
 name: polarising light microscopy
-def: "A type of microscopy where the specimen placed between two orthogonal polarising filters and illuminated with visible light." [rsc:hjb]
+def: "Microscopy where the specimen placed between two orthogonal polarising filters and illuminated with visible light." [rsc:hjb]
 synonym: "optical polarisation microscopy" EXACT []
 synonym: "optical polarising microscopy" EXACT []
 synonym: "optical polarization microscopy" EXACT []
@@ -1168,7 +1175,7 @@ is_a: CHMO:0000102 ! optical microscopy
 [Term]
 id: CHMO:0000112
 name: scanning probe microscopy
-def: "A type of microscopy which uses a probe to scan the surface of the specimen and measure some form of interaction between surface and probe. An image of the surface is obtained by mechanically moving the probe in a raster scan of the specimen, line by line, and recording the probe-surface interaction as a function of position. A feedback loop is used to maintain a fixed relationship between the probe and surface during scanning." [FIX:0000121, ISBN:1-86094-199-0]
+def: "Microscopy which uses a probe to scan the surface of the specimen and measure some form of interaction between surface and probe. An image of the surface is obtained by mechanically moving the probe in a raster scan of the specimen, line by line, and recording the probe-surface interaction as a function of position. A feedback loop is used to maintain a fixed relationship between the probe and surface during scanning." [FIX:0000121, ISBN:1-86094-199-0]
 synonym: "scanning-probe microscopy" EXACT []
 synonym: "SPM" EXACT []
 is_a: CHMO:0000067 ! microscopy
@@ -1176,7 +1183,7 @@ is_a: CHMO:0000067 ! microscopy
 [Term]
 id: CHMO:0000113
 name: atomic force microscopy
-def: "A type of microscopy which uses a sharp spike (known as a 'tip') mounted on the end of a cantilever to scan the surface of the specimen. An image of the surface is obtained by mechanically moving the probe in a raster scan of the specimen, line by line, and recording the force experienced by the tip as a function of position. A feedback loop is used to maintain a fixed relationship between the tip and surface during scanning." [FIX:0000114, rsc:hjb]
+def: "Microscopy which uses a sharp spike (known as a 'tip') mounted on the end of a cantilever to scan the surface of the specimen. An image of the surface is obtained by mechanically moving the probe in a raster scan of the specimen, line by line, and recording the force experienced by the tip as a function of position. A feedback loop is used to maintain a fixed relationship between the tip and surface during scanning." [FIX:0000114, rsc:hjb]
 synonym: "AFM" EXACT []
 synonym: "atomic force imaging" EXACT []
 synonym: "atomic-force microscopy" EXACT []
@@ -1187,7 +1194,7 @@ is_a: CHMO:0000112 ! scanning probe microscopy
 [Term]
 id: CHMO:0000114
 name: piezoresponse force microscopy
-def: "A type of microscopy where an electric field is applied to a sharp spike (known as a 'tip') which is mounted on the end of a cantilever. The tip scans the surface of a piezoelectric specimen and the distortion of the electric field by the specimen is measured as a function of position. A feedback loop is used to maintain a fixed relationship between the tip and surface during scanning." [DOI:10.1007/s10853-005-7244-2]
+def: "Microscopy where an electric field is applied to a sharp spike (known as a 'tip') which is mounted on the end of a cantilever. The tip scans the surface of a piezoelectric specimen and the distortion of the electric field by the specimen is measured as a function of position. A feedback loop is used to maintain a fixed relationship between the tip and surface during scanning." [DOI:10.1007/s10853-005-7244-2]
 synonym: "PFM" EXACT non-mining_synonym []
 synonym: "piezo-force microscopy" EXACT []
 is_a: CHMO:0000113 ! atomic force microscopy
@@ -1195,7 +1202,7 @@ is_a: CHMO:0000113 ! atomic force microscopy
 [Term]
 id: CHMO:0000115
 name: magnetic force microscopy
-def: "A type of microscopy which uses a sharp magnetic spike (known as a 'tip') mounted on the end of a cantilever to scan the surface of a magnetic specimen. An image of the surface is obtained by mechanically moving the tip in a raster scan of the specimen, line by line, and recording the magnetic force experienced by it as a function of position. A feedback loop is used to maintain a fixed relationship between the tip and surface during scanning." [FIX:0000118, ISBN:1-86094-199-0]
+def: "Microscopy which uses a sharp magnetic spike (known as a 'tip') mounted on the end of a cantilever to scan the surface of a magnetic specimen. An image of the surface is obtained by mechanically moving the tip in a raster scan of the specimen, line by line, and recording the magnetic force experienced by it as a function of position. A feedback loop is used to maintain a fixed relationship between the tip and surface during scanning." [FIX:0000118, ISBN:1-86094-199-0]
 synonym: "magnetic-force microscopy" EXACT []
 synonym: "MFM" EXACT []
 is_a: CHMO:0000113 ! atomic force microscopy
@@ -1203,7 +1210,7 @@ is_a: CHMO:0000113 ! atomic force microscopy
 [Term]
 id: CHMO:0000116
 name: photonic force microscopy
-def: "A type of microscopy where optical tweezers are used to trap a small fluorescent latex bead which is then scanned across biological specimens in aqueous solution. An image of the surface is obtained by mechanically moving the bead in a raster scan of the specimen, line by line, and recording the fluorescence intensity as a function of position. A feedback loop is used to maintain a fixed relationship between the bead and surface during scanning." [DOI:10.1006/jsbi.1997.3881]
+def: "Microscopy where optical tweezers are used to trap a small fluorescent latex bead which is then scanned across biological specimens in aqueous solution. An image of the surface is obtained by mechanically moving the bead in a raster scan of the specimen, line by line, and recording the fluorescence intensity as a function of position. A feedback loop is used to maintain a fixed relationship between the bead and surface during scanning." [DOI:10.1006/jsbi.1997.3881]
 synonym: "PFM" EXACT []
 synonym: "photonic-force microscopy" EXACT []
 is_a: CHMO:0000112 ! scanning probe microscopy
@@ -1211,7 +1218,7 @@ is_a: CHMO:0000112 ! scanning probe microscopy
 [Term]
 id: CHMO:0000117
 name: scanning capacitance microscopy
-def: "A type of microscopy which uses a small electrode to scan the surface of the specimen. An image of the surface is obtained by mechanically moving the probe in a raster scan of the specimen, line by line, and recording the electrostatic capacitance of the surface as a function of position. A feedback loop is used to maintain a fixed relationship between the electrode and surface during scanning." [rsc:hjb]
+def: "Microscopy which uses a small electrode to scan the surface of the specimen. An image of the surface is obtained by mechanically moving the probe in a raster scan of the specimen, line by line, and recording the electrostatic capacitance of the surface as a function of position. A feedback loop is used to maintain a fixed relationship between the electrode and surface during scanning." [rsc:hjb]
 synonym: "SCAM" EXACT []
 synonym: "scanning-capacitance microscopy" EXACT []
 is_a: CHMO:0000112 ! scanning probe microscopy
@@ -1226,7 +1233,7 @@ is_a: CHMO:0000112 ! scanning probe microscopy
 [Term]
 id: CHMO:0000119
 name: photon scanning tunnelling microscopy
-def: "A type of microscopy where the specimen is illuminated with a near-field of photons. An image of the surface is obtained by mechanically moving an optical fibre probe in a raster scan over the specimen, line by line, and detecting any photons which tunnel from the specimen to the probe as a function of position. A feedback loop is used to maintain a fixed relationship between the optical fibre probe and surface during scanning." [USPatent:5018865]
+def: "Microscopy where the specimen is illuminated with a near-field of photons. An image of the surface is obtained by mechanically moving an optical fibre probe in a raster scan over the specimen, line by line, and detecting any photons which tunnel from the specimen to the probe as a function of position. A feedback loop is used to maintain a fixed relationship between the optical fibre probe and surface during scanning." [USPatent:5018865]
 synonym: "photon scanning tunneling microscopy" EXACT []
 synonym: "photon-scanning tunneling microscopy" EXACT []
 synonym: "photon-scanning tunnelling microscopy" EXACT []
@@ -1236,7 +1243,7 @@ is_a: CHMO:0000118 ! scanning near-field microscopy
 [Term]
 id: CHMO:0000120
 name: scanning near-field optical microscopy
-def: "A type of microscopy where a probe consisting of a laser transmitted through a tapered optical fibre is positioned very close to (<10 nm from) the surface of the specimen. The tip is coated with metal (to prevent light from escaping from the sides) and near-field (or evanescent field) light is emitted through a small opening or 'aperture' (50--100 nm in diameter) at the apex of the probe. An image is produced by scanning the probe over the specimen and detecting the disturbance of the near-field as a function of position. A force feedback loop is used to maintain a fixed relationship between the probe and surface during scanning." [FIX:0000385, ISBN:1-86094-199-0]
+def: "Microscopy where a probe consisting of a laser transmitted through a tapered optical fibre is positioned very close to (<10 nm from) the surface of the specimen. The tip is coated with metal (to prevent light from escaping from the sides) and near-field (or evanescent field) light is emitted through a small opening or 'aperture' (50--100 nm in diameter) at the apex of the probe. An image is produced by scanning the probe over the specimen and detecting the disturbance of the near-field as a function of position. A force feedback loop is used to maintain a fixed relationship between the probe and surface during scanning." [FIX:0000385, ISBN:1-86094-199-0]
 synonym: "aperture NSOM" EXACT []
 synonym: "aperture scanning near-field optical microscopy" EXACT []
 synonym: "aperture SNOM" EXACT []
@@ -1250,13 +1257,13 @@ is_a: CHMO:0000118 ! scanning near-field microscopy
 [Term]
 id: CHMO:0000121
 name: fluorescence scanning near-field optical microscopy
-def: "A type of microscopy where a probe consisting of a laser of a specific wavelength transmitted through a tapered optical fibre is positioned very close to (<10 nm from) the surface of the specimen. The tip is coated with metal (to prevent light from escaping from the sides) and near-field (or evanescent field) light is emitted through a small opening or 'aperture' (50--100 nm in diameter) at the apex of the probe. An image is produced by scanning the probe over the specimen and detecting the fluorescence intensity from fluorophores on the surface of the specimen as a function of position. A force feedback loop is used to maintain a fixed relationship between the probe and surface during scanning." [rsc:hjb]
+def: "Microscopy where a probe consisting of a laser of a specific wavelength transmitted through a tapered optical fibre is positioned very close to (<10 nm from) the surface of the specimen. The tip is coated with metal (to prevent light from escaping from the sides) and near-field (or evanescent field) light is emitted through a small opening or 'aperture' (50--100 nm in diameter) at the apex of the probe. An image is produced by scanning the probe over the specimen and detecting the fluorescence intensity from fluorophores on the surface of the specimen as a function of position. A force feedback loop is used to maintain a fixed relationship between the probe and surface during scanning." [rsc:hjb]
 is_a: CHMO:0000120 ! scanning near-field optical microscopy
 
 [Term]
 id: CHMO:0000122
 name: infrared scanning near-field optical microscopy
-def: "A type of microscopy where a probe consisting of an infrared laser transmitted through a tapered optical fibre is positioned very close to (<10 nm from) the surface of the specimen. The tip is coated with metal (to prevent light from escaping from the sides) and near-field (or evanescent field) infrared radiation is emitted through a small opening or 'aperture' (50--100 nm in diameter) at the apex of the probe. An image is produced by scanning the probe over the specimen and detecting the disturbance of the infrared near-field as a function of position. A force feedback loop is used to maintain a fixed relationship between the probe and surface during scanning." [DOI:10.1016/j.jallcom.2005.02.057]
+def: "Microscopy where a probe consisting of an infrared laser transmitted through a tapered optical fibre is positioned very close to (<10 nm from) the surface of the specimen. The tip is coated with metal (to prevent light from escaping from the sides) and near-field (or evanescent field) infrared radiation is emitted through a small opening or 'aperture' (50--100 nm in diameter) at the apex of the probe. An image is produced by scanning the probe over the specimen and detecting the disturbance of the infrared near-field as a function of position. A force feedback loop is used to maintain a fixed relationship between the probe and surface during scanning." [DOI:10.1016/j.jallcom.2005.02.057]
 synonym: "infra-red near-field scanning optical microscopy" EXACT []
 synonym: "infra-red scanning near-field optical microscopy" EXACT []
 synonym: "infrared near-field scanning optical microscopy" EXACT []
@@ -1270,7 +1277,7 @@ is_a: CHMO:0000120 ! scanning near-field optical microscopy
 [Term]
 id: CHMO:0000123
 name: microwave scanning near-field microscopy
-def: "A type of microscopy where a probe consisting of a microwave radiation source transmitted through a tapered optical fibre is positioned very close to (<10 nm from) the surface of the specimen. The tip is coated with metal (to prevent light from escaping from the sides) and near-field (or evanescent field) microwave radiation is emitted through a small opening or 'aperture' (50--100 nm in diameter) at the apex of the probe. An image is produced by scanning the probe over the specimen and detecting the disturbance of the microwave near-field as a function of position. A force feedback loop is used to maintain a fixed relationship between the probe and surface during scanning." [rsc:hjb]
+def: "Microscopy where a probe consisting of a microwave radiation source transmitted through a tapered optical fibre is positioned very close to (<10 nm from) the surface of the specimen. The tip is coated with metal (to prevent light from escaping from the sides) and near-field (or evanescent field) microwave radiation is emitted through a small opening or 'aperture' (50--100 nm in diameter) at the apex of the probe. An image is produced by scanning the probe over the specimen and detecting the disturbance of the microwave near-field as a function of position. A force feedback loop is used to maintain a fixed relationship between the probe and surface during scanning." [rsc:hjb]
 synonym: "microwave near-field scanning microscopy" EXACT []
 synonym: "near-field scanning microwave microscopy" EXACT []
 synonym: "NSMM" EXACT []
@@ -1280,7 +1287,7 @@ is_a: CHMO:0000120 ! scanning near-field optical microscopy
 [Term]
 id: CHMO:0000124
 name: apertureless near-field scanning optical microscopy
-def: "A type of microscopy where a laser spot is focused on a solid sharp metallic probe producing a confined light field very close to (<10 nm from) the surface of the specimen. An image is produced by scanning the probe over the specimen and detecting the scattering of the incident light by the probe as a function of position. A force feedback loop is used to maintain a fixed relationship between the probe and surface during scanning." [DOI:10.1039/b815925d]
+def: "Microscopy where a laser spot is focused on a solid sharp metallic probe producing a confined light field very close to (<10 nm from) the surface of the specimen. An image is produced by scanning the probe over the specimen and detecting the scattering of the incident light by the probe as a function of position. A force feedback loop is used to maintain a fixed relationship between the probe and surface during scanning." [DOI:10.1039/b815925d]
 synonym: "aNSOM" EXACT []
 synonym: "apertureless scanning near-field optical microscopy" EXACT []
 synonym: "aSNOM" EXACT []
@@ -1295,7 +1302,7 @@ is_a: CHMO:0000118 ! scanning near-field microscopy
 [Term]
 id: CHMO:0000125
 name: scanning plasmon near-field microscopy
-def: "A type of microscopy where a laser spot is focused on a solid sharp noble metal probe very close to (<10 nm from) the surface of the specimen. The laser spot excites plasmons at the probe-surface interface and an image is produced by scanning the probe over the specimen and detecting the electromagnetic field as a function of position. A force feedback loop is used to maintain a fixed relationship between the probe and surface during scanning." [DOI:10.1039/b109955h]
+def: "Microscopy where a laser spot is focused on a solid sharp noble metal probe very close to (<10 nm from) the surface of the specimen. The laser spot excites plasmons at the probe-surface interface and an image is produced by scanning the probe over the specimen and detecting the electromagnetic field as a function of position. A force feedback loop is used to maintain a fixed relationship between the probe and surface during scanning." [DOI:10.1039/b109955h]
 synonym: "scanning-plasmon near-field microscopy" EXACT []
 synonym: "SPNM" EXACT []
 is_a: CHMO:0000124 ! apertureless near-field scanning optical microscopy
@@ -1303,7 +1310,7 @@ is_a: CHMO:0000124 ! apertureless near-field scanning optical microscopy
 [Term]
 id: CHMO:0000126
 name: scanning near-field thermal microscopy
-def: "A type of microscopy where a thermocouple probe is positioned very close to the surface of the specimen (in the near-field). An image of the surface is obtained by mechanically moving the thermocouple probe in a raster scan of the specimen, line by line, and recording the surface--probe heat transfer as a function of position. A feedback loop is used to maintain a fixed relationship between the probe and surface during scanning." [rsc:hjb]
+def: "Microscopy where a thermocouple probe is positioned very close to the surface of the specimen (in the near-field). An image of the surface is obtained by mechanically moving the thermocouple probe in a raster scan of the specimen, line by line, and recording the surface--probe heat transfer as a function of position. A feedback loop is used to maintain a fixed relationship between the probe and surface during scanning." [rsc:hjb]
 synonym: "near-field scanning thermal microscopy" EXACT []
 synonym: "NSThM" EXACT []
 synonym: "SNThM" EXACT []
@@ -1312,7 +1319,7 @@ is_a: CHMO:0000118 ! scanning near-field microscopy
 [Term]
 id: CHMO:0000127
 name: scanning electrochemical microscopy
-def: "A type of microscopy where an electrode probe is positioned very close to the surface of the specimen (in the near-field). The surface is mechanically scanned by the electrode in a raster scan and the height required by a feedback loop in order to maintain a constant electrical conductance between the electrode and the specimen is recorded as a function of position." [ISBN:1-86094-199-0]
+def: "Microscopy where an electrode probe is positioned very close to the surface of the specimen (in the near-field). The surface is mechanically scanned by the electrode in a raster scan and the height required by a feedback loop in order to maintain a constant electrical conductance between the electrode and the specimen is recorded as a function of position." [ISBN:1-86094-199-0]
 synonym: "scanning-electrochemical microscopy" EXACT []
 synonym: "SECM" EXACT []
 is_a: CHMO:0000112 ! scanning probe microscopy
@@ -1320,7 +1327,7 @@ is_a: CHMO:0000112 ! scanning probe microscopy
 [Term]
 id: CHMO:0000128
 name: scanning ion conductance microscopy
-def: "A type of microscopy where a probe consisting of a glass nano- or micro- pipette filled with electrolyte is positioned very close to (in the near-field of) a specimen which is held in an oppositely charge electrolyte. An image of the surface is obtained by mechanically moving the pipette in a raster scan of the specimen, line by line, and recording the ion conductance as a function of position. A feedback loop is used to maintain a fixed relationship between the probe and surface during scanning." [ISBN:1-86094-199-0]
+def: "Microscopy where a probe consisting of a glass nano- or micro- pipette filled with electrolyte is positioned very close to (in the near-field of) a specimen which is held in an oppositely charge electrolyte. An image of the surface is obtained by mechanically moving the pipette in a raster scan of the specimen, line by line, and recording the ion conductance as a function of position. A feedback loop is used to maintain a fixed relationship between the probe and surface during scanning." [ISBN:1-86094-199-0]
 synonym: "scanning-ion conductance microscopy" EXACT []
 synonym: "SICM" EXACT []
 is_a: CHMO:0000112 ! scanning probe microscopy
@@ -1328,7 +1335,7 @@ is_a: CHMO:0000112 ! scanning probe microscopy
 [Term]
 id: CHMO:0000129
 name: scanning probe acoustic microscopy
-def: "A type of microscopy where a probe vibrating at its resonant frequency is scanned over the specimen. An image of the surface is obtained by mechanically moving the probe in a raster scan of the specimen, line by line, and recording the resonant frequency (or the amplitude of vibration) of the tip as a function of position. A feedback loop is used to maintain a fixed relationship between the probe and surface during scanning." [DOI:10.1007/s10853-005-7244-2]
+def: "Microscopy where a probe vibrating at its resonant frequency is scanned over the specimen. An image of the surface is obtained by mechanically moving the probe in a raster scan of the specimen, line by line, and recording the resonant frequency (or the amplitude of vibration) of the tip as a function of position. A feedback loop is used to maintain a fixed relationship between the probe and surface during scanning." [DOI:10.1007/s10853-005-7244-2]
 synonym: "SAM" EXACT non-mining_synonym []
 synonym: "scanning acoustic microscopy" EXACT []
 synonym: "SPAM" EXACT []
@@ -1337,7 +1344,7 @@ is_a: CHMO:0000112 ! scanning probe microscopy
 [Term]
 id: CHMO:0000130
 name: scanning near-field acoustic microscopy
-def: "A type of microscopy where a probe vibrating at its resonant frequency is positioned very close to the surface of the specimen (in the near-field). An image of the surface is obtained by mechanically moving the probe in a raster scan of the specimen, line by line, and recording the resonant frequency (or amplitude of vibration) of the tip as a function of position. A feedback loop is used to maintain a fixed relationship between the probe and surface during scanning." [DOI:10.1007/BF00694423]
+def: "Microscopy where a probe vibrating at its resonant frequency is positioned very close to the surface of the specimen (in the near-field). An image of the surface is obtained by mechanically moving the probe in a raster scan of the specimen, line by line, and recording the resonant frequency (or amplitude of vibration) of the tip as a function of position. A feedback loop is used to maintain a fixed relationship between the probe and surface during scanning." [DOI:10.1007/BF00694423]
 synonym: "near-field scanning acoustic microscopy" EXACT []
 synonym: "NSAM" EXACT []
 synonym: "SNAM" EXACT []
@@ -1346,7 +1353,7 @@ is_a: CHMO:0000129 ! scanning probe acoustic microscopy
 [Term]
 id: CHMO:0000131
 name: scanning thermal microscopy
-def: "A type of microscopy where an Wollaston wire probe is scanned over the surface of the specimen and the height required by a feedback loop in order to maintain a constant temperature between the probe and the specimen is recorded as a function of position." [ISBN:1-86094-199-0]
+def: "Microscopy where an Wollaston wire probe is scanned over the surface of the specimen and the height required by a feedback loop in order to maintain a constant temperature between the probe and the specimen is recorded as a function of position." [ISBN:1-86094-199-0]
 synonym: "scanning-thermal microscopy" EXACT []
 synonym: "SThM" EXACT []
 is_a: CHMO:0000112 ! scanning probe microscopy
@@ -1354,7 +1361,7 @@ is_a: CHMO:0000112 ! scanning probe microscopy
 [Term]
 id: CHMO:0000132
 name: scanning tunnelling microscopy
-def: "A type of microscopy which uses a sharp conducting probe (or 'tip') held very close (1 nm) to the surface of the specimen. A bias voltage is applied between the tip and specimen which causes a tunnelling current to flow. An image is obtained by mechanically moving the probe in a raster scan of the specimen, line by line, and recording the tunnelling current as a function of position." [FIX:0000112, ISBN:1-86094-199-0]
+def: "Microscopy which uses a sharp conducting probe (or 'tip') held very close (1 nm) to the surface of the specimen. A bias voltage is applied between the tip and specimen which causes a tunnelling current to flow. An image is obtained by mechanically moving the probe in a raster scan of the specimen, line by line, and recording the tunnelling current as a function of position." [FIX:0000112, ISBN:1-86094-199-0]
 synonym: "scanning tunneling electron microscopy" EXACT []
 synonym: "scanning tunnelling electron microscopy" EXACT []
 synonym: "scanning-tunneling electron microscopy" EXACT []
@@ -1365,7 +1372,7 @@ is_a: CHMO:0000112 ! scanning probe microscopy
 [Term]
 id: CHMO:0000133
 name: thermal lens microscopy
-def: "A type of microscopy where and excitation laser and probe a laser are focused onto a specimen forming a refractive index distribution which results in a concave excitation beam. The strength of this lens is proportional to the sample concentration and is detected by a change in transmittance in the probe beam." [DOI:10.1021/ac05196u]
+def: "Microscopy where and excitation laser and probe a laser are focused onto a specimen forming a refractive index distribution which results in a concave excitation beam. The strength of this lens is proportional to the sample concentration and is detected by a change in transmittance in the probe beam." [DOI:10.1021/ac05196u]
 synonym: "thermal-lens microscopy" EXACT []
 synonym: "TLM" EXACT []
 is_a: CHMO:0000067 ! microscopy
@@ -1373,7 +1380,7 @@ is_a: CHMO:0000067 ! microscopy
 [Term]
 id: CHMO:0000134
 name: ultra-violet thermal lens microscopy
-def: "A type of microscopy where a probe laser and a pulsed ultra-violet excitation laser and are focused onto a specimen forming a refractive index distribution resulting in a concave excitation beam. The strength of this lens is proportional to the sample concentration and is detected by a change in transmittance in the probe beam." [DOI:10.1021/ac05196u]
+def: "Microscopy where a probe laser and a pulsed ultra-violet excitation laser and are focused onto a specimen forming a refractive index distribution resulting in a concave excitation beam. The strength of this lens is proportional to the sample concentration and is detected by a change in transmittance in the probe beam." [DOI:10.1021/ac05196u]
 synonym: "ultra-violet thermal-lens microscopy" EXACT []
 synonym: "ultraviolet thermal lens microscopy" EXACT []
 synonym: "ultraviolet thermal-lens microscopy" EXACT []
@@ -1859,7 +1866,8 @@ is_a: CHMO:0000166 ! light scattering
 [Term]
 id: CHMO:0000181
 name: neutron scattering
-def: "A method for determining structure by measuring the change in direction or energy of scattered neutrons. Neutrons are scattered by the atomic nuclei in the sample and the intensity of the scattering is given by the scattering vector Q = (4/)sin(pi/2)." [FIX:0000400, ISBN:0824719948]
+alt_id: FIX:0000400
+def: "A method for determining structure by measuring the change in direction or energy of scattered neutrons. Neutrons are scattered by the atomic nuclei in the sample and the intensity of the scattering is given by the scattering vector Q = (4/)sin(pi/2)." [ISBN:0824719948]
 synonym: "neutron scattering spectrometry" EXACT []
 synonym: "neutron scattering spectroscopy" EXACT []
 is_a: CHMO:0000160 ! scattering method
@@ -1880,7 +1888,8 @@ is_a: CHMO:0000181 ! neutron scattering
 [Term]
 id: CHMO:0000184
 name: small-angle neutron scattering
-def: "A method for determining structure by measuring the change in direction or energy of scattered neutrons at small angles (corresponding to a scattering vector Q = (4/)sin(\\pi/2) = 0.005--0.2 inverse degrees)." [FIX:0000253, ISBN:9056993003]
+alt_id: FIX:0000253
+def: "A method for determining structure by measuring the change in direction or energy of scattered neutrons at small angles (corresponding to a scattering vector Q = (4/)sin(\\pi/2) = 0.005--0.2 inverse degrees)." [ISBN:9056993003]
 synonym: "low-Q neutron scattering" EXACT []
 synonym: "SANS" EXACT []
 synonym: "small angle neutron scattering" EXACT []
@@ -2318,16 +2327,19 @@ is_a: CHMO:0000228 ! spectroscopy
 [Term]
 id: CHMO:0000233
 name: atomic spectroscopy
-def: "Any spectroscopic technique which is based upon the ability of atoms to absorb or emit electromagnetic radiation. In atomic spectroscopy the sample is vaporised and then atomised." [FIX:0000054, rsc:hjb]
+alt_id: FIX:0000054
+def: "Any spectroscopic technique which is based upon the ability of atoms to absorb or emit electromagnetic radiation. In atomic spectroscopy the sample is vaporised and then atomised." [rsc:hjb]
 synonym: "atomic spectrometry" EXACT []
 is_a: CHMO:0000232 ! electronic spectroscopy
 
 [Term]
 id: CHMO:0000234
 name: atomic absorption spectroscopy
-def: "A type of atomic spectroscopy where the sample is illuminated with ultraviolet or visible light which is absorbed by the non-excited atoms at characteristic wavelengths." [FIX:0000926, ISBN:0-19-280031-0]
+alt_id: FIX:0000926
+def: "A type of atomic spectroscopy where the sample is illuminated with ultraviolet or visible light which is absorbed by the non-excited atoms at characteristic wavelengths." [ISBN:0-19-280031-0]
 synonym: "AAS" EXACT []
 synonym: "atomic absorption spectrometry" EXACT []
+synonym: "atomic-absorption spectrometry" EXACT []
 is_a: CHMO:0000233 ! atomic spectroscopy
 
 [Term]
@@ -2492,9 +2504,11 @@ is_a: CHMO:0000234 ! atomic absorption spectroscopy
 [Term]
 id: CHMO:0000251
 name: atomic emission spectroscopy
-def: "A type of atomic spectroscopy where the atoms in the sample are excited and the emission of electromagnetic radiation at characteristic wavelengths is detected." [FIX:0000927, ISBN:0-19-280031-0]
+alt_id: FIX:0000927
+def: "A type of atomic spectroscopy where the atoms in the sample are excited and the emission of electromagnetic radiation at characteristic wavelengths is detected." [ISBN:0-19-280031-0]
 synonym: "AES" EXACT []
 synonym: "atomic emission spectrometry" EXACT []
+synonym: "atomic-emission spectrometry" EXACT []
 synonym: "OES" EXACT []
 synonym: "optical emission spectrometry" EXACT []
 synonym: "optical emission spectroscopy" EXACT []
@@ -2570,6 +2584,7 @@ def: "A type of atomic emission spectrometry where a high energy laser pulse is 
 synonym: "laser induced plasma spectrometry" EXACT []
 synonym: "laser induced plasma spectroscopy" EXACT []
 synonym: "laser-induced breakdown atomic emission spectrometry" EXACT []
+synonym: "laser-induced breakdown atomic-emission spectrometry" EXACT []
 synonym: "laser-induced plasma atomic emission spectrometry" EXACT []
 synonym: "laser-induced plasma atomic emission spectroscopy" EXACT []
 synonym: "laser-induced plasma spectrometry" EXACT []
@@ -2662,6 +2677,7 @@ synonym: "ICP-AES" EXACT []
 synonym: "ICP-OES" EXACT []
 synonym: "inductively coupled plasma atomic emission spectrometry" EXACT []
 synonym: "inductively coupled plasma atomic emission spectroscopy" EXACT []
+synonym: "inductively coupled plasma atomic-emission spectrometry" EXACT []
 synonym: "inductively coupled plasma optical emission spectrometry" EXACT []
 synonym: "inductively coupled plasma optical emission spectroscopy" EXACT []
 synonym: "inductively coupled plasma-atomic emission spectrometry" EXACT []
@@ -2764,7 +2780,8 @@ is_a: CHMO:0000263 ! plasma atomic emission spectroscopy
 [Term]
 id: CHMO:0000277
 name: microwave induced plasma atomic emission spectrometry
-def: "A type of atomic emission spectrometry where a plasma generated by microwave bombardment is used as the excitation source." [FIX:0000931, ISSN:1430-4171]
+alt_id: FIX:0000931
+def: "Atomic emission spectrometry where a plasma generated by microwave bombardment is used as the excitation source." [ISSN:1430-4171]
 synonym: "microwave-induced plasma atomic emission spectroscopy" EXACT []
 synonym: "MIP AES" EXACT []
 synonym: "MIP-AES" EXACT []
@@ -2773,7 +2790,7 @@ is_a: CHMO:0000263 ! plasma atomic emission spectroscopy
 [Term]
 id: CHMO:0000278
 name: spark atomic emission spectrometry
-def: "A type of atomic emission spectrometry where the sample is excited by an arc or spark between two electrodes." [rsc:hjb]
+def: "Atomic emission spectrometry where the sample is excited by an arc or spark between two electrodes." [rsc:hjb]
 synonym: "spark AES" EXACT []
 synonym: "spark atomic emission spectroscopy" EXACT []
 synonym: "spark OES" EXACT []
@@ -2791,15 +2808,17 @@ is_a: CHMO:0000251 ! atomic emission spectroscopy
 [Term]
 id: CHMO:0000279
 name: atomic fluorescence spectroscopy
-def: "Any type of atomic spectroscopy where an atom absorbs then spontaneously emits a photon." [FIX:0000290, rsc:hjb]
+alt_id: FIX:0000290
+def: "Atomic spectroscopy where an atom absorbs then spontaneously emits a photon." [rsc:hjb]
 synonym: "AFS" EXACT []
 synonym: "atomic fluorescence spectrometry" EXACT []
+synonym: "atomic-fluorescence spectrometry" EXACT []
 is_a: CHMO:0000233 ! atomic spectroscopy
 
 [Term]
 id: CHMO:0000280
 name: cold vapour atomic fluorescence spectroscopy
-def: "A type of atomic fluorescence spectroscopy where no vaporisation step is required because the sample is a volatile heavy metal such as mercury, which is a vapour at room temperature." [rsc:hjb]
+def: "Atomic fluorescence spectroscopy where no vaporisation step is required because the sample is a volatile heavy metal such as mercury, which is a vapour at room temperature." [rsc:hjb]
 synonym: "cold vapor AFS" EXACT []
 synonym: "cold vapor atomic fluorescence spectrometry" EXACT []
 synonym: "cold vapor atomic fluorescence spectroscopy" EXACT []
@@ -2812,7 +2831,7 @@ is_a: CHMO:0000279 ! atomic fluorescence spectroscopy
 [Term]
 id: CHMO:0000281
 name: electrothermal atomic fluorescence spectroscopy
-def: "A type of atomic fluorescence spectroscopy where the sample is atomised using a probe which is rapidly heated by passing a current through it." [rsc:hjb]
+def: "Atomic fluorescence spectroscopy where the sample is atomised using a probe which is rapidly heated by passing a current through it." [rsc:hjb]
 synonym: "electrothermal atomic fluorescence spectrometry" EXACT []
 synonym: "ETAFS" EXACT []
 is_a: CHMO:0000279 ! atomic fluorescence spectroscopy
@@ -2897,7 +2916,8 @@ is_a: CHMO:0000288 ! fluorescence correlation spectroscopy
 [Term]
 id: CHMO:0000290
 name: fluorescence anisotropy
-def: "A method for measuring the binding interaction between two labelled molecules. The sample is excited with vertically polarised light and the polarization of the fluorescence is measured." [FIX:0000128, rsc:hjb]
+alt_id: FIX:0000128
+def: "A method for measuring the binding interaction between two labelled molecules. The sample is excited with vertically polarised light and the polarization of the fluorescence is measured." [rsc:hjb]
 synonym: "FA" EXACT []
 synonym: "fluorescence anisotropy measurement " EXACT []
 synonym: "fluorescence polarisation spectroscopy" EXACT []
@@ -2907,7 +2927,9 @@ is_a: CHMO:0000060 ! fluorescence detection
 [Term]
 id: CHMO:0000291
 name: spectrophotometry
-def: "Spectroscopy where the sample absorbs radiation in the range ultraviolet to near-infrared (0.1--2.5 \\mum) resulting in electronic transitions within the sample." [FIX:0000011, FIX:0000943, ISBN:1566701783]
+alt_id: FIX:0000011
+alt_id: FIX:0000943
+def: "Spectroscopy where the sample absorbs radiation in the range ultraviolet to near-infrared (0.1--2.5 \\mum) resulting in electronic transitions within the sample." [ISBN:1566701783]
 synonym: "MAS" EXACT non-mining_synonym []
 synonym: "molecular absorption spectrophotometry" EXACT []
 synonym: "molecular electronic absorption spectroscopy" EXACT []
@@ -2917,10 +2939,12 @@ relationship: BFO:0000057 CHMO:0002232 ! has participant spectrophotometer
 [Term]
 id: CHMO:0000292
 name: ultraviolet-visible spectrophotometry
-def: "Spectroscopy where the sample absorbs radiation in the range ultraviolet to visible (190-800 nm) resulting in electronic transitions within the sample." [FIX:0000016, rsc:hjb]
+alt_id: FIX:0000016
+def: "Spectroscopy where the sample absorbs radiation in the range ultraviolet to visible (190-800 nm) resulting in electronic transitions within the sample." [rsc:hjb]
 synonym: "absorption spectrophotometry" EXACT []
 synonym: "electronic absorption spectroscopy" EXACT []
 synonym: "molecular electronic absorption spectroscopy" EXACT []
+synonym: "ultra-violet-visible absorption spectrophotometry" EXACT []
 synonym: "ultra-violet-visible spectrometry" EXACT []
 synonym: "ultra-violet-visible spectroscopy" EXACT []
 synonym: "ultraviolet-visible" EXACT []
@@ -2971,7 +2995,7 @@ is_a: CHMO:0000292 ! ultraviolet-visible spectrophotometry
 
 [Term]
 id: CHMO:0000294
-name: reflectance ultraviolet--visible spectrophotometry
+name: reflectance ultraviolet-visible spectrophotometry
 def: "Ultraviolet--visible spectroscopy where the reflection or scattering of radiation from the sample surface is detected." [rsc:hjb]
 synonym: "reflectance ultra-violet--visible spectrophotometry" EXACT []
 synonym: "reflectance ultra-violet-visible spectrometry" EXACT []
@@ -2989,6 +3013,7 @@ synonym: "reflection UV-VIS spectrometry" EXACT []
 synonym: "reflection UV-VIS spectroscopy" EXACT []
 synonym: "reflection UV/VIS spectrometry" EXACT []
 synonym: "reflection UV/VIS spectroscopy" EXACT []
+synonym: "ultra-violet-visible reflectance spectrometry" EXACT []
 is_a: CHMO:0000292 ! ultraviolet-visible spectrophotometry
 
 [Term]
@@ -3161,7 +3186,9 @@ is_a: CHMO:0000307 ! X-ray emission spectroscopy
 [Term]
 id: CHMO:0000309
 name: energy-dispersive X-ray emission spectroscopy
-def: "X-ray emission spectroscopy where the energy spectrum of the X-rays emitted due to core-to-core transitions is measured using a semiconductor detector." [FIX:0000104, FIX:0000677, OrangeBook:16.2]
+alt_id: FIX:0000104
+alt_id: FIX:0000677
+def: "X-ray emission spectroscopy where the energy spectrum of the X-rays emitted due to core-to-core transitions is measured using a semiconductor detector." [OrangeBook:16.2]
 synonym: "EDAX" EXACT []
 synonym: "EDCS" EXACT []
 synonym: "EDS" EXACT []
@@ -3180,6 +3207,7 @@ synonym: "energy dispersive X-ray spectrometry" EXACT []
 synonym: "energy dispersive X-ray spectroscopy" EXACT []
 synonym: "energy distribution curve spectroscopy" EXACT []
 synonym: "energy distribution spectroscopy" EXACT []
+synonym: "energy-dispersive spectrometry" EXACT []
 synonym: "energy-dispersive X-ray emission analysis" EXACT []
 synonym: "X-ray energy dispersive spectroscopy" EXACT []
 synonym: "X-ray energy-dispersive spectroscopy" EXACT []
@@ -3216,7 +3244,10 @@ is_a: CHMO:0000311 ! particle-induced X-ray emission spectroscopy
 [Term]
 id: CHMO:0000313
 name: electron probe X-ray microanalysis
-def: "X-ray emission spectroscopy where the X-rays are generated by bombarding a flat polished sample with a finely focused (<10 \\mum diameter) beam of electrons which results in the ionisation of the inner shells of sample atoms. The decay of the ionised states results in the emission of characteristic X-rays." [FIX:0000105, FIX:0000674, rsc:hjb]
+alt_id: FIX:0000105
+alt_id: FIX:0000674
+def: "X-ray emission spectroscopy where the X-rays are generated by bombarding a flat polished sample with a finely focused (<10 \\mum diameter) beam of electrons which results in the ionisation of the inner shells of sample atoms. The decay of the ionised states results in the emission of characteristic X-rays." [rsc:hjb]
+synonym: "electron micro-probe analysis" EXACT []
 synonym: "electron microprobe analysis" EXACT []
 synonym: "electron probe microanalysis" EXACT []
 synonym: "EMPA" EXACT []
@@ -3260,7 +3291,8 @@ is_a: CHMO:0000307 ! X-ray emission spectroscopy
 [Term]
 id: CHMO:0000316
 name: soft X-ray emission spectroscopy
-def: "X-ray spectroscopy where the sample is bombarded with low energy X-rays and the energies and intensities of the X-rays emitted due to valence-to-core transitions are detected." [FIX:0000672, OrangeBook:17.2.2.2]
+alt_id: FIX:0000672
+def: "X-ray spectroscopy where the sample is bombarded with low energy X-rays and the energies and intensities of the X-rays emitted due to valence-to-core transitions are detected." [OrangeBook:17.2.2.2]
 synonym: "soft X-ray emission spectrometry" EXACT []
 synonym: "soft X-ray fluorescence spectrometry" EXACT []
 synonym: "soft X-ray fluorescence spectroscopy" EXACT []
@@ -4359,6 +4391,7 @@ id: CHMO:0000415
 name: particle-induced gamma-ray emission spectroscopy
 def: "A type of gamma-ray emission spectroscopy where the gamma-rays are produced by bombarding the sample with a focused beam of ions." [rsc:hjb]
 synonym: "particle induced gamma-ray emission spectroscopy" EXACT []
+synonym: "particle-induced gamma-ray emission spectrometry" EXACT []
 synonym: "particle-induced prompt-photon spectrometry" EXACT []
 synonym: "particle-induced prompt-photon spectroscopy" EXACT []
 synonym: "PIGE" EXACT []
@@ -4524,6 +4557,7 @@ name: ion mobility spectroscopy
 def: "Spectroscopy where the velocity of gas phase ions in an electric field is measured." [ISBN:0849322472]
 synonym: "IMS" EXACT non-mining_synonym []
 synonym: "ion mobility spectrometry" EXACT []
+synonym: "ion-mobility spectrometry" EXACT []
 is_a: CHMO:0000425 ! ion spectroscopy
 
 [Term]
@@ -5025,7 +5059,7 @@ relationship: BFO:0000118 CHMO:0001938 ! has proper occurrent part collision-ind
 [Term]
 id: CHMO:0000478
 name: electron capture negative ionisation mass spectrometry
-def: "Mass spectrometry where the sample is ionised by interaction with thermal electrons (electrons with energy 0.1 eV or less)." [ISBN:978-0-470-51634-8]
+def: "Mass spectrometry where the sample is ionised by interaction with thermal electrons (electrons with energy 0.1 eV or less)." [ISBN:9780470516348]
 synonym: "ECNI" EXACT []
 synonym: "electron capture negative ionisation mass spectroscopy" EXACT []
 synonym: "electron capture negative ionization mass spectroscopy" EXACT []
@@ -5039,8 +5073,10 @@ is_a: CHMO:0000470 ! mass spectrometry
 id: CHMO:0000480
 name: electron ionisation mass spectrometry
 alt_id: CHMO:0000479
-def: "Mass spectrometry where the sample is ionised by electrons (energy 70 eV) which have been emitted from a glowing filament and accelerated through an electric field." [FIX:0000089, ISBN:0-534-98144-5]
+alt_id: FIX:0000089
+def: "Mass spectrometry where the sample is ionised by electrons (energy 70 eV) which have been emitted from a glowing filament and accelerated through an electric field." [ISBN:9780534981445]
 synonym: "EI-MS" EXACT []
+synonym: "electron impact mass spectrometry" EXACT []
 synonym: "electron impact ionisation mass spectrometry" NARROW []
 synonym: "electron ionisation mass spectroscopy" EXACT []
 synonym: "electron ionization mass spectrometry" EXACT []
@@ -5059,10 +5095,12 @@ is_a: CHMO:0000480 ! electron ionisation mass spectrometry
 [Term]
 id: CHMO:0000482
 name: electrospray ionisation mass spectrometry
-def: "Spectrometry where the sample is ionised by forcing a solution (usually in an organic solvent) of the sample through a small heated capillary (at a flow rate of 1--10 L min-1) into an electric field to produce a very fine mist of charged droplets. The ions are then characterised by their mass-to-charge ratio and relative abundance." [FIX:0000079, ISBN:978-0-470-51634-8]
+alt_id: FIX:0000079
+def: "Spectrometry where the sample is ionised by forcing a solution (usually in an organic solvent) of the sample through a small heated capillary (at a flow rate of 1-10 L min-1) into an electric field to produce a very fine mist of charged droplets. The ions are then characterised by their mass-to-charge ratio and relative abundance." [ISBN:9780470516348]
 synonym: "electrospray ionisation mass spectroscopy" EXACT []
 synonym: "electrospray ionization mass spectrometry" EXACT []
 synonym: "electrospray ionization mass spectroscopy" EXACT []
+synonym: "electrospray mass spectrometry" EXACT []
 synonym: "ES-MS" EXACT []
 synonym: "ESI MS" EXACT []
 synonym: "ESI-mass spectrometry" EXACT []
@@ -5412,6 +5450,7 @@ synonym: "IR MS" EXACT []
 synonym: "IR-MS" EXACT []
 synonym: "IRMS" EXACT []
 synonym: "isotope ratio mass spectroscopy" EXACT []
+synonym: "isotope-ratio mass spectrometry" EXACT []
 synonym: "isotopic ratios mass spectrometry" EXACT []
 synonym: "isotopic ratios mass spectroscopy" EXACT []
 is_a: CHMO:0000470 ! mass spectrometry
@@ -5579,8 +5618,9 @@ is_a: CHMO:0000712 ! laser mass spectrometry
 
 [Term]
 id: CHMO:0000519
-name: matrix-assisted laser desorption--ionisation mass spectrometry
-def: "Mass spectrometry where the sample (usually a large organic molecule or biomolecule) is vaporised and ionised using a high-energy pulsed laser. The sample is held in a matrix (such as crystallised dihydrobenzoic acid) to protect it from direct laser illumination and to separate the sample molecules." [FIX:0000081, ISBN:978-0-470-51634-8]
+name: matrix-assisted laser desorption-ionisation mass spectrometry
+alt_id: FIX:0000001
+def: "Mass spectrometry where the sample (usually a large organic molecule or biomolecule) is vaporised and ionised using a high-energy pulsed laser. The sample is held in a matrix (such as crystallised dihydrobenzoic acid) to protect it from direct laser illumination and to separate the sample molecules." [ISBN:978-0-470-51634-8]
 synonym: "MALDI MS" EXACT []
 synonym: "MALDI-MS" EXACT []
 synonym: "MALDIMS" EXACT []
@@ -5591,8 +5631,9 @@ is_a: CHMO:0000515 ! laser desorption-ionisation mass spectrometry
 
 [Term]
 id: CHMO:0000520
-name: matrix-assisted laser desorption--ionisation time-of-flight mass spectrometry
-def: "Mass spectrometry where the sample (usually a large organic molecule or biomolecule) is vaporised and ionised using a high-energy pulsed laser. The sample is held in a matrix (such as crystallised dihydrobenzoic acid) to protect it from direct laser illumination and to separate the sample molecules. The sample ions are accelerated to the same (known) kinetic energy and the time taken for each ion to reach a detector at a known distance is measured. This time is dependent on the mass-to-charge ratio of the ion." [FIX:0000920, rsc:hjb]
+name: matrix-assisted laser desorption-ionisation time-of-flight mass spectrometry
+alt_id: FIX:0000920
+def: "Matrix-assisted laser desorption-ionisation mass spectrometry where the sample ions are accelerated to the same (known) kinetic energy and the time taken for each ion to reach a detector at a known distance is measured. This time is dependent on the mass-to-charge ratio of the ion." [rsc:hjb]
 synonym: "MADI-TOF MS" EXACT []
 synonym: "MALDI-TOF MS" EXACT []
 synonym: "MALDI-TOF-MS" EXACT []
@@ -5609,18 +5650,18 @@ synonym: "matrix assisted laser desorption/ionization time of flight mass spectr
 synonym: "matrix-assisted laser desorption ionization (MALDI-TOF) mass spectrometry (MS)" EXACT []
 synonym: "matrix-assisted laser desorption-ionisation time-of-flight mass spectrometry" EXACT []
 synonym: "matrix-associated laser desorption/ionization-time of flight mass spectrometry" EXACT []
-is_a: CHMO:0000519 ! matrix-assisted laser desorption--ionisation mass spectrometry
+is_a: CHMO:0000519 ! matrix-assisted laser desorption-ionisation mass spectrometry
 
 [Term]
 id: CHMO:0000521
-name: sol--gel-assisted laser desorption-ionisation mass spectrometry
-def: "Mass spectrometry where the sample (usually a large organic molecule or biomolecule) is vaporised and ionised using a high-energy pulsed laser. The sample is held in a sol--gel matrix to protect it from direct laser illumination and to separate the sample molecules." [rsc:hjb]
+name: sol-gel-assisted laser desorption-ionisation mass spectrometry
+def: "Mass spectrometry where the sample (usually a large organic molecule or biomolecule) is vaporised and ionised using a high-energy pulsed laser. The sample is held in a sol-gel matrix to protect it from direct laser illumination and to separate the sample molecules." [rsc:hjb]
 synonym: "SGALDI MS" EXACT []
 synonym: "SGALDI-MS" EXACT []
 synonym: "sol-gel-assisted laser desorption-ionisation mass spectrometry" EXACT []
 synonym: "sol-gel-assisted laser desorption-ionisation mass spectroscopy" EXACT []
 synonym: "sol-gel-assisted laser desorption-ionization mass spectroscopy" EXACT []
-is_a: CHMO:0000519 ! matrix-assisted laser desorption--ionisation mass spectrometry
+is_a: CHMO:0000519 ! matrix-assisted laser desorption-ionisation mass spectrometry
 
 [Term]
 id: CHMO:0000522
@@ -5637,7 +5678,7 @@ synonym: "surface-enhanced laser desorption--ionization mass spectrometry" EXACT
 synonym: "surface-enhanced laser desorption-ionisation mass spectrometry" EXACT []
 synonym: "surface-enhanced laser desorption-ionisation mass spectroscopy" EXACT []
 synonym: "surface-enhanced laser desorption-ionization mass spectroscopy" EXACT []
-is_a: CHMO:0000519 ! matrix-assisted laser desorption--ionisation mass spectrometry
+is_a: CHMO:0000519 ! matrix-assisted laser desorption-ionisation mass spectrometry
 
 [Term]
 id: CHMO:0000523
@@ -5647,9 +5688,9 @@ synonym: "LC-MALDI-MS" EXACT []
 synonym: "liquid chromatography matrix-assisted laser desorption-ionisation mass spectrometry" EXACT []
 synonym: "liquid chromatography matrix-assisted laser desorption-ionisation mass spectroscopy" EXACT []
 synonym: "liquid chromatography matrix-assisted laser desorption-ionization mass spectroscopy" EXACT []
-is_a: CHMO:0000519 ! matrix-assisted laser desorption--ionisation mass spectrometry
+is_a: CHMO:0000519 ! matrix-assisted laser desorption-ionisation mass spectrometry
 is_a: CHMO:0000524 ! liquid chromatography-mass spectrometry
-intersection_of: CHMO:0000519 ! matrix-assisted laser desorption--ionisation mass spectrometry
+intersection_of: CHMO:0000519 ! matrix-assisted laser desorption-ionisation mass spectrometry
 intersection_of: BFO:0000118 CHMO:0001004 ! has proper occurrent part liquid chromatography
 relationship: BFO:0000118 CHMO:0001004 ! has proper occurrent part liquid chromatography
 
@@ -6968,13 +7009,15 @@ is_a: CHMO:0000630 ! infrared absorption spectroscopy
 [Term]
 id: CHMO:0000636
 name: Fourier transform infrared spectroscopy
-def: "Spectroscopy where the sample absorbs a single pulse of radiation from the infrared region (0.78--1000 \\mum) and the spectrum obtained is subject to a Fourier transform." [FIX:0000110, rsc:hjb]
+alt_id: FIX:0000110
+def: "Spectroscopy where the sample absorbs a single pulse of radiation from the infrared region (0.78--1000 \\mum) and the spectrum obtained is subject to a Fourier transform." [rsc:hjb]
 synonym: "Fourier transform infra-red absorption spectroscopy" EXACT []
 synonym: "Fourier transform infra-red spectrometry" EXACT []
 synonym: "Fourier transform infrared (FT-IR)" EXACT []
 synonym: "Fourier transform infrared (FT-IR) spectroscopy" EXACT []
 synonym: "Fourier transform infrared spectrometry" EXACT []
 synonym: "Fourier transform infrared spectroscopy" EXACT []
+synonym: "Fourier-transform infra-red absorption spectrometry" EXACT []
 synonym: "Fourier-transform infrared (FTIR) absorption spectroscopy" EXACT []
 synonym: "FT-IR" EXACT []
 synonym: "FT-IR spectroscopy" EXACT []
@@ -7007,6 +7050,7 @@ synonym: "near infrared absorption spectrometry" EXACT []
 synonym: "near infrared absorption spectroscopy" EXACT []
 synonym: "near infrared spectrometry" EXACT []
 synonym: "near infrared spectroscopy" EXACT []
+synonym: "near-infra-red absorption spectrometry" EXACT []
 synonym: "NIR absorbance spectrometry" EXACT []
 synonym: "NIR absorbance spectroscopy" EXACT []
 synonym: "NIRS" EXACT non-mining_synonym []
@@ -7932,14 +7976,14 @@ is_a: CHMO:0000612 ! insensitive nuclei enhancement by polarisation transfer
 [Term]
 id: CHMO:0000729
 name: annular dark-field scanning transmission electron microscopy
-def: "A type of microscopy where a finely focused (<10 nm diameter) electron beam with an acceleration voltage 50--150 kV is scanned across an electron-transparent specimen under vacuum. The beam of electrons is scattered or diffracted before reaching the specimen, and the image results from a weakening of the beam by its interaction with the sample. An annular aperture is used to select electrons that have passed\nthrough given symmetric zones within the objective lens of the microscope." [DOI:10.1002/adma.200502201]
+def: "Microscopy where a finely focused (<10 nm diameter) electron beam with an acceleration voltage 50--150 kV is scanned across an electron-transparent specimen under vacuum. The beam of electrons is scattered or diffracted before reaching the specimen, and the image results from a weakening of the beam by its interaction with the sample. An annular aperture is used to select electrons that have passed\nthrough given symmetric zones within the objective lens of the microscope." [DOI:10.1002/adma.200502201]
 synonym: "ADF-STEM" EXACT []
 is_a: CHMO:0002472 ! dark-field scanning transmission electron microscopy
 
 [Term]
 id: CHMO:0000730
 name: high-angular annular dark-field scanning transmission electron microscopy
-def: "A type of microscopy where a finely focused (<10 nm diameter) electron beam with an acceleration voltage 50--150 kV is scanned across an electron-transparent specimen under vacuum. The beam of electrons is scattered or diffracted at high angles before reaching the specimen, and the image results from a weakening of the beam by its interaction with the sample. An annular aperture is used to select electrons that have passed through given symmetric zones within the objective lens of the microscope." [DOI:10.1002/adma.200502201]
+def: "Microscopy where a finely focused (<10 nm diameter) electron beam with an acceleration voltage 50--150 kV is scanned across an electron-transparent specimen under vacuum. The beam of electrons is scattered or diffracted at high angles before reaching the specimen, and the image results from a weakening of the beam by its interaction with the sample. An annular aperture is used to select electrons that have passed through given symmetric zones within the objective lens of the microscope." [DOI:10.1002/adma.200502201]
 synonym: "HAADF-STEM" EXACT []
 synonym: "high angle annular dark field scanning transmission electron microscopy" EXACT []
 synonym: "high angular annular dark-field scanning transmission electron microscopy" EXACT []
@@ -7949,7 +7993,7 @@ is_a: CHMO:0000729 ! annular dark-field scanning transmission electron microscop
 [Term]
 id: CHMO:0000731
 name: bright-field scanning transmission electron microscopy
-def: "A type of microscopy where a finely focused (<10 nm diameter) electron beam with an acceleration voltage 50--150 kV is scanned across an electron-transparent specimen under vacuum. The beam of electrons passes directly through an aperture before reaching the specimen. The image results from a weakening of the direct beam by its interaction with the sample." [rsc:hjb]
+def: "Microscopy where a finely focused (<10 nm diameter) electron beam with an acceleration voltage 50--150 kV is scanned across an electron-transparent specimen under vacuum. The beam of electrons passes directly through an aperture before reaching the specimen. The image results from a weakening of the direct beam by its interaction with the sample." [rsc:hjb]
 synonym: "BF-STEM" EXACT []
 synonym: "bright field scanning transmission electron microscopy" EXACT []
 is_a: CHMO:0000086 ! scanning transmission electron microscopy
@@ -8307,7 +8351,7 @@ is_a: CHMO:0000648 ! attenuated total reflectance infrared spectroscopy
 [Term]
 id: CHMO:0000764
 name: colloidal probe atomic force microscopy
-def: "A type of microscopy which uses a microparticle (usually made of silica) mounted on the end of a cantilever to scan the surface of a colloidal specimen. An image of the surface is obtained by mechanically moving the probe in a raster scan of the specimen, line by line, and recording the force between the two colloidal surfaces as a function of position. A feedback loop is used to maintain a fixed relationship between the tip and surface during scanning." [DOI:10.1006/jcis.2001.8075]
+def: "Microscopy which uses a microparticle (usually made of silica) mounted on the end of a cantilever to scan the surface of a colloidal specimen. An image of the surface is obtained by mechanically moving the probe in a raster scan of the specimen, line by line, and recording the force between the two colloidal surfaces as a function of position. A feedback loop is used to maintain a fixed relationship between the tip and surface during scanning." [DOI:10.1006/jcis.2001.8075]
 synonym: "colloid force microscopy" EXACT []
 synonym: "colloidal probe AFM" EXACT []
 is_a: CHMO:0000113 ! atomic force microscopy
@@ -8338,7 +8382,7 @@ is_a: CHMO:0000288 ! fluorescence correlation spectroscopy
 [Term]
 id: CHMO:0000768
 name: negative-stain electron microscopy
-def: "A type of microscopy where the specimen is stained with heavy metals salts (to improve contrast) before being bombarded with a finely focused (<10 nm diameter) electron beam with an acceleration voltage 50--150 kV under vacuum. The interaction of the electrons with the specimen produces transmitted, secondary, backscattered and diffracted electrons and characteristic X-rays which are detected." [rsc:hjb]
+def: "Microscopy where the specimen is stained with heavy metals salts (to improve contrast) before being bombarded with a finely focused (<10 nm diameter) electron beam with an acceleration voltage 50--150 kV under vacuum. The interaction of the electrons with the specimen produces transmitted, secondary, backscattered and diffracted electrons and characteristic X-rays which are detected." [rsc:hjb]
 synonym: "negative stain electron microscopy" EXACT []
 synonym: "negative stain EM" EXACT []
 synonym: "negative-stain EM" EXACT []
@@ -8347,7 +8391,7 @@ is_a: CHMO:0000068 ! electron microscopy
 [Term]
 id: CHMO:0000769
 name: high resolution scanning electron microscopy
-def: "A type of microscopy where a finely focused electron beam is scanned across the specimen under vacuum and the secondary and backscattered electrons produced are detected." [rsc:hjb]
+def: "Microscopy where a finely focused electron beam is scanned across the specimen under vacuum and the secondary and backscattered electrons produced are detected." [rsc:hjb]
 synonym: "high resolution SEM" EXACT []
 synonym: "high-resolution scanning electron microscopy" EXACT []
 synonym: "high-resolution SEM" EXACT []
@@ -8375,7 +8419,7 @@ is_a: CHMO:0000677 ! surface-enhanced Raman spectroscopy
 [Term]
 id: CHMO:0000771
 name: multiphoton fluorescence microscopy
-def: "A type of microscopy where fluorophores in the specimen can be made to fluoresce (emit energy as visible light) by absorption of two or more photons." [rsc:hjb]
+def: "Microscopy where fluorophores in the specimen can be made to fluoresce (emit energy as visible light) by absorption of two or more photons." [rsc:hjb]
 synonym: "multi-photon excitation microscopy " EXACT []
 synonym: "multi-photon fluorescence imaging" EXACT []
 synonym: "multi-photon fluorescence microscopy" EXACT []
@@ -8387,7 +8431,7 @@ is_a: CHMO:0000087 ! fluorescence microscopy
 [Term]
 id: CHMO:0000772
 name: two photon fluorescence microscopy
-def: "A type of microscopy where fluorophores in the specimen can be made to fluoresce (emit energy as visible light) by the near-simultaneous absorption of two photons." [rsc:hjb]
+def: "Microscopy where fluorophores in the specimen can be made to fluoresce (emit energy as visible light) by the near-simultaneous absorption of two photons." [rsc:hjb]
 synonym: "two photon excitation microscopy" EXACT []
 synonym: "two photon fluorescence imaging" EXACT []
 synonym: "two-photon excitation imaging" EXACT []
@@ -8575,9 +8619,8 @@ is_a: CHMO:0000835 ! nuclear magnetic resonance spectrum
 
 [Term]
 id: CHMO:0000792
-name: ultraviolet--visible--near infrared spectrophotometry
+name: ultraviolet-visible-near infrared spectrophotometry
 def: "Spectroscopy where the sample absorbs radiation in the range ultraviolet to near-infrared (190--2000 nm) resulting in electronic transitions within the sample." [rsc:hjb]
-synonym: "ultraviolet--visible--near infrared spectroscopy" EXACT []
 synonym: "ultraviolet-visible-near infrared absorption spectroscopy" EXACT []
 synonym: "ultraviolet-visible-near infrared spectrophotometry" EXACT []
 synonym: "ultraviolet-visible-near infrared spectroscopy" EXACT []
@@ -8617,6 +8660,7 @@ is_a: CHMO:0000922 ! voltammogram
 id: CHMO:0000795
 name: ultra high performance liquid chromatography
 def: "Column chromatography where the mobile phase is a liquid, the stationary phase consists of very small (< 2 microm) particles and the inlet pressure is relatively high." [DOI:10.1039/b501767j]
+synonym: "ultra-performance liquid chromatography" EXACT []
 synonym: "UPLC" EXACT []
 is_a: CHMO:0001009 ! high-performance liquid chromatography
 
@@ -10017,7 +10061,7 @@ is_a: CHMO:0000800 ! spectrum
 [Term]
 id: CHMO:0000940
 name: vector piezoresponse force microscopy
-def: "A type of microscopy where an electric field is applied to a sharp spike (known as a 'tip') which is mounted on the end of a cantilever. The tip scans the surface of a piezoelectric specimen and the distortion of the electric field by the specimen is measured as components from three directions (one vertical and two lateral). A feedback loop is used to maintain a fixed relationship between the tip and surface during scanning." [rsc:hjb]
+def: "Microscopy where an electric field is applied to a sharp spike (known as a 'tip') which is mounted on the end of a cantilever. The tip scans the surface of a piezoelectric specimen and the distortion of the electric field by the specimen is measured as components from three directions (one vertical and two lateral). A feedback loop is used to maintain a fixed relationship between the tip and surface during scanning." [rsc:hjb]
 synonym: "vector PFM" EXACT []
 synonym: "VPFM" EXACT []
 is_a: CHMO:0000114 ! piezoresponse force microscopy
@@ -10582,6 +10626,7 @@ id: CHMO:0001011
 name: gel filtration chromatography
 def: "Column chromatography where the separation is caused by exclusion effects within the stationary phase and where the stationary phase is a swollen gel." [Orange:9.2.1.5]
 synonym: "gel permeation chromatography" EXACT []
+synonym: "gel-permeation chromatography" EXACT []
 synonym: "GPC" EXACT []
 is_a: CHMO:0001010 ! exclusion chromatography
 
@@ -10622,9 +10667,9 @@ relationship: BFO:0000057 CHMO:0000985 ! has participant solid stationary phase
 
 [Term]
 id: CHMO:0001016
-name: gas--liquid chromatography
-def: "Gas chromatography where the stationary phase is a liquid." [FIX:0000631, rsc:cb]
-synonym: "gas-liquid chromatography" EXACT []
+name: gas-liquid chromatography
+alt_id: FIX:0000631
+def: "Gas chromatography where the stationary phase is a liquid." [rsc:cb]
 synonym: "GLC" EXACT []
 is_a: CHMO:0001002 ! gas chromatography
 intersection_of: CHMO:0001002 ! gas chromatography
@@ -10642,14 +10687,16 @@ creation_date: 2009-08-24T02:48:54Z
 [Term]
 id: CHMO:0001018
 name: two-dimensional chromatography
-def: "A two-dimensional separation method where the separation processes are both chromatography. initial separation proceeds in a primary column and 'cuts' of the eluent from this column are directed into one or more secondary columns." [FIX:0001152, rsc:cb]
+alt_id: FIX:0001152
+def: "A two-dimensional separation method where the separation processes are both chromatography. initial separation proceeds in a primary column and 'cuts' of the eluent from this column are directed into one or more secondary columns." [rsc:cb]
 synonym: "2D chromatography" EXACT []
 is_a: CHMO:0002001 ! multi-dimensional chromatography
 
 [Term]
 id: CHMO:0001019
 name: electrophoresis
-def: "A separation method where colloidal particles move at different speeds according to their electrophoretic mobilities in a separation medium, across which an electric field is applied." [DOI:10.1351/pac200476020443, FIX:0000097]
+alt_id: FIX:0000097
+def: "A separation method where colloidal particles move at different speeds according to their electrophoretic mobilities in a separation medium, across which an electric field is applied." [DOI:10.1351/pac200476020443]
 synonym: "cataphoresis" EXACT []
 synonym: "electrophoretic analysis" EXACT []
 xref: sep:00140
@@ -11210,7 +11257,7 @@ is_a: CHMO:0001082 ! osmometry
 [Term]
 id: CHMO:0001084
 name: time-lapse fluorescence microscopy
-def: "A type of microscopy where the specimen can be made to fluoresce (emit energy as visible light) and the specimen is imaged at regular time intervals over several hours." [rsc:hjb]
+def: "Microscopy where the specimen can be made to fluoresce (emit energy as visible light) and the specimen is imaged at regular time intervals over several hours." [rsc:hjb]
 synonym: "time-lapse fluorescence imaging" EXACT []
 is_a: CHMO:0000087 ! fluorescence microscopy
 is_a: CHMO:0001074 ! time-lapse microscopy
@@ -11266,7 +11313,7 @@ is_a: CHMO:0000228 ! spectroscopy
 [Term]
 id: CHMO:0001091
 name: aberration-corrected high-resolution transmission electron microscopy
-def: "A type of microscopy where an electron-transparent specimen is bombarded with a finely focused (<10 nm diameter) electron beam with an acceleration voltage 50--150 kV under vacuum and the phase contrast between transmitted electron waves is used to produce an image. The beam is focused using a set of magnetic lenses which removes spherical aberration (an effect where the electron beam is deflected too strongly, resulting in a blurred image)." [rsc:hjb]
+def: "Microscopy where an electron-transparent specimen is bombarded with a finely focused (<10 nm diameter) electron beam with an acceleration voltage 50--150 kV under vacuum and the phase contrast between transmitted electron waves is used to produce an image. The beam is focused using a set of magnetic lenses which removes spherical aberration (an effect where the electron beam is deflected too strongly, resulting in a blurred image)." [rsc:hjb]
 synonym: "aberration corrected high resolution transmission electron microscopy" EXACT []
 synonym: "aberration-corrected HRTEM" EXACT []
 is_a: CHMO:0000084 ! high-resolution transmission electron microscopy
@@ -11444,7 +11491,7 @@ is_a: CHMO:0001110 ! particle-image velocimetry
 [Term]
 id: CHMO:0001112
 name: super-resolution bright-field microscopy
-def: "A type of microscopy where the specimen is illuminated with light transmitted from a source on the opposite side of the specimen from the objective, and image resolution (which is normally limited by diffraction) is enhanced by processing the images with image restoration algorithms." [rsc:hjb]
+def: "Microscopy where the specimen is illuminated with light transmitted from a source on the opposite side of the specimen from the objective, and image resolution (which is normally limited by diffraction) is enhanced by processing the images with image restoration algorithms." [rsc:hjb]
 synonym: "super resolution bright field microscopy" EXACT []
 synonym: "super resolution bright field optical microscopy" EXACT []
 synonym: "super-resolution bright-field optical microscopy" EXACT []
@@ -11678,7 +11725,7 @@ creation_date: 2009-03-11T04:21:50Z
 [Term]
 id: CHMO:0001140
 name: differential confocal microscopy
-def: "A type of microscopy where visible light coming from the specimen (which is placed approximately half a confocal parameter from the focal plane along the optical axis of the microscope) is collected and guided through a pinhole before it is detected. The pinhole allows only light from the focal point to pass to the detector, reducing background interference." [DOI:10.1364/OL.28.001772]
+def: "Microscopy where visible light coming from the specimen (which is placed approximately half a confocal parameter from the focal plane along the optical axis of the microscope) is collected and guided through a pinhole before it is detected. The pinhole allows only light from the focal point to pass to the detector, reducing background interference." [DOI:10.1364/OL.28.001772]
 synonym: "DCM" EXACT []
 is_a: CHMO:0000103 ! confocal microscopy
 created_by: burchh
@@ -13230,7 +13277,7 @@ synonym: "nanoflow high performance liquid chromatography" EXACT []
 synonym: "nanoflow high pressure liquid chromatography" EXACT []
 synonym: "nanoflow high-pressure liquid chromatography" EXACT []
 synonym: "nanoflow HPLC" EXACT []
-synonym: "nanoflow-HPLC" EXACT []
+synonym: "nanoflow liquid chromatography" EXACT []
 synonym: "nanoflowHPLC" EXACT []
 synonym: "nanoHPLC" EXACT []
 synonym: "nHPLC" EXACT []
@@ -13339,8 +13386,8 @@ creation_date: 2009-05-06T03:00:50Z
 [Term]
 id: CHMO:0001285
 name: gravimetric analysis
-def: "Any method used to determine an analyte on the basis of a mass of a sample." [rsc:crb]
-is_a: OBI:0000070 ! assay
+def: "A method used to determine an analyte on the basis of a mass of a sample." [rsc:crb]
+is_a: OBI:0000443 ! analyte assay
 created_by: burchh
 creation_date: 2009-05-06T03:21:36Z
 
@@ -15202,6 +15249,7 @@ name: microwave digestion
 def: "The assisted solubilisation of a sample by the application of radiation in the 1-1000 mm region." [rsc:hjb]
 synonym: "MAD" EXACT []
 synonym: "microwave oven digestion" EXACT []
+synonym: "microwave sample digestion" EXACT []
 synonym: "microwave-assisted digestion" EXACT []
 synonym: "MOD" EXACT []
 is_a: CHMO:0001489 ! sample digestion
@@ -15210,7 +15258,6 @@ is_a: CHMO:0001489 ! sample digestion
 id: CHMO:0001497
 name: ultraviolet photolysis digestion
 def: "The decomposition of a sample by placing it in an organic matrix and irradiating the matrix with radiation in the range 200-435 nm (indirectly, using a mirror). OH radicals generated from the matrix react with the sample, degrading it. " [DOI:10.1016/S0021-9673(02)01335-3]
-synonym: "ultra-vioelt photolysis digestion" EXACT []
 synonym: "UV photolysis digestion" EXACT []
 synonym: "UVPD" EXACT []
 is_a: CHMO:0001489 ! sample digestion
@@ -16812,7 +16859,7 @@ is_a: CHMO:0001707 ! sonication
 id: CHMO:0001709
 name: detection method
 def: "A method used to indicate the presence of a substance within a sample." [rsc:hjb]
-is_a: OBI:0000070 ! assay
+is_a: OBI:0000443 ! analyte assay
 
 [Term]
 id: CHMO:0001710
@@ -17396,7 +17443,7 @@ synonym: "laser tweezing" EXACT []
 synonym: "optical trapping" EXACT []
 synonym: "optical tweezing" EXACT []
 is_a: CHMO:0001768 ! trapping method
-relationship: BFO:0000057 OBI:0400064
+relationship: BFO:0000057 OBI:0400064 ! has participant laser
 created_by: burchh
 creation_date: 2009-05-20T10:35:42Z
 
@@ -18933,7 +18980,7 @@ creation_date: 2009-06-01T04:32:42Z
 [Term]
 id: CHMO:0001896
 name: dynamic force microscopy
-def: "A type of microscopy which uses a sharp spike (known as a 'tip') mounted on the end of a cantilever to scan the surface of the specimen. The tip oscillates, intermittently touching or tapping the surface. An image of the surface is obtained by mechanically moving the probe in a raster scan of the specimen, line by line, and recording the force experienced by the tip as a function of position. A feedback loop is used to maintain a fixed relationship between the tip and surface during scanning." [ISBN:1-86094-199-0]
+def: "Microscopy which uses a sharp spike (known as a 'tip') mounted on the end of a cantilever to scan the surface of the specimen. The tip oscillates, intermittently touching or tapping the surface. An image of the surface is obtained by mechanically moving the probe in a raster scan of the specimen, line by line, and recording the force experienced by the tip as a function of position. A feedback loop is used to maintain a fixed relationship between the tip and surface during scanning." [ISBN:1-86094-199-0]
 synonym: "AC-mode AFM" EXACT []
 synonym: "AFM tapping-mode" EXACT []
 synonym: "DFM" EXACT []
@@ -18954,7 +19001,7 @@ creation_date: 2009-06-02T10:51:10Z
 [Term]
 id: CHMO:0001897
 name: lateral force microscopy
-def: "A type of microscopy which uses a sharp spike (known as a 'tip') mounted on the end of a cantilever to scan the surface of the specimen. An image of the surface is obtained by mechanically moving the probe in a raster scan of the specimen, line by line, and recording the frictional force experienced by the tip as a function of position (the 'twist' of the tip). A feedback loop is used to maintain a fixed relationship between the tip and surface during scanning." [FIX:0000115, ISBN:1-86094-199-0]
+def: "Microscopy which uses a sharp spike (known as a 'tip') mounted on the end of a cantilever to scan the surface of the specimen. An image of the surface is obtained by mechanically moving the probe in a raster scan of the specimen, line by line, and recording the frictional force experienced by the tip as a function of position (the 'twist' of the tip). A feedback loop is used to maintain a fixed relationship between the tip and surface during scanning." [FIX:0000115, ISBN:1-86094-199-0]
 synonym: "lateral force AFM" EXACT []
 synonym: "lateral-force AFM" EXACT []
 synonym: "lateral-force microscopy" EXACT []
@@ -18966,7 +19013,7 @@ creation_date: 2009-06-02T10:58:31Z
 [Term]
 id: CHMO:0001898
 name: non-contact mode atomic force microscopy
-def: "A type of microscopy which uses a sharp spike (known as a 'tip') mounted on the end of a cantilever to scan the surface of the specimen. The tip oscillates in the 'attractive' force region, i.e. avoiding sample contact. An image of the surface is obtained by mechanically moving the probe in a raster scan of the specimen, line by line, and recording the force experienced by the tip as a function of position. A feedback loop is used to maintain a fixed relationship between the tip and surface during scanning." [DOI:10.1016/j.eurpolymj.2008.05.019, DOI:10.1039/b817510a, FIX:0000117]
+def: "Microscopy which uses a sharp spike (known as a 'tip') mounted on the end of a cantilever to scan the surface of the specimen. The tip oscillates in the 'attractive' force region, i.e. avoiding sample contact. An image of the surface is obtained by mechanically moving the probe in a raster scan of the specimen, line by line, and recording the force experienced by the tip as a function of position. A feedback loop is used to maintain a fixed relationship between the tip and surface during scanning." [DOI:10.1016/j.eurpolymj.2008.05.019, DOI:10.1039/b817510a, FIX:0000117]
 synonym: "attractive dynamic scanning force microscopy" EXACT []
 synonym: "DFM-AR" EXACT []
 synonym: "DFMAR" EXACT []
@@ -19310,7 +19357,7 @@ creation_date: 2009-06-04T01:36:35Z
 [Term]
 id: CHMO:0001923
 name: shear force microscopy
-def: "A type of microscopy which uses a sharp spike (known as a 'tip') mounted on the end of a cantilever to scan the surface of the specimen. The tip oscillates parallel to the surface. An image of the surface is obtained by mechanically moving the probe in a raster scan of the specimen, line by line, and recording the force experienced by the tip as a function of position. A feedback loop is used to maintain a fixed relationship between the tip and surface during scanning." [DOI:10.1063/1.106940]
+def: "Microscopy which uses a sharp spike (known as a 'tip') mounted on the end of a cantilever to scan the surface of the specimen. The tip oscillates parallel to the surface. An image of the surface is obtained by mechanically moving the probe in a raster scan of the specimen, line by line, and recording the force experienced by the tip as a function of position. A feedback loop is used to maintain a fixed relationship between the tip and surface during scanning." [DOI:10.1063/1.106940]
 synonym: "dynamic shear force microscopy" EXACT []
 synonym: "shear force AFM" EXACT []
 synonym: "shear force atomic force microscopy" EXACT []
@@ -21500,7 +21547,7 @@ creation_date: 2009-07-06T01:53:59Z
 [Term]
 id: CHMO:0002116
 name: frequency-modulation atomic force microscopy
-def: "A type of microscopy which uses a sharp spike (known as a 'tip') mounted on the end of a cantilever to scan the surface of the specimen. The tip oscillates, intermittently touching or tapping the surface. An image of the surface is obtained by mechanically moving the probe in a raster scan of the specimen, line by line, and recording the force experienced by the tip as a function of position. A feedback loop is used to maintain a fixed relationship between the resonant frequency of the tip and the surface during scanning, which is performed under ultra-high vacuum conditions." [rsc:hjb]
+def: "Microscopy which uses a sharp spike (known as a 'tip') mounted on the end of a cantilever to scan the surface of the specimen. The tip oscillates, intermittently touching or tapping the surface. An image of the surface is obtained by mechanically moving the probe in a raster scan of the specimen, line by line, and recording the force experienced by the tip as a function of position. A feedback loop is used to maintain a fixed relationship between the resonant frequency of the tip and the surface during scanning, which is performed under ultra-high vacuum conditions." [rsc:hjb]
 synonym: "FM-AFM" EXACT []
 synonym: "frequency modulation AFM" EXACT []
 synonym: "frequency modulation atomic force microscopy" EXACT []
@@ -21512,7 +21559,7 @@ creation_date: 2009-07-06T02:26:05Z
 [Term]
 id: CHMO:0002117
 name: liquid atomic force microscopy
-def: "A type of microscopy which uses a sharp spike (known as a 'tip') mounted on the end of a cantilever to scan the surface of the specimen that is immersed in a liquid cell. The tip oscillates, intermittently touching or tapping the surface. An image of the surface is obtained by mechanically moving the probe in a raster scan of the specimen, line by line, and recording the force experienced by the tip as a function of position. A feedback loop is used to maintain a fixed relationship between the tip and surface during scanning." [rsc:hjb]
+def: "Microscopy which uses a sharp spike (known as a 'tip') mounted on the end of a cantilever to scan the surface of the specimen that is immersed in a liquid cell. The tip oscillates, intermittently touching or tapping the surface. An image of the surface is obtained by mechanically moving the probe in a raster scan of the specimen, line by line, and recording the force experienced by the tip as a function of position. A feedback loop is used to maintain a fixed relationship between the tip and surface during scanning." [rsc:hjb]
 synonym: "liquid AFM" EXACT []
 synonym: "solution atomic force microscopy" EXACT []
 synonym: "solution-state AFM" EXACT []
@@ -22186,7 +22233,7 @@ creation_date: 2009-07-16T02:19:49Z
 [Term]
 id: CHMO:0002177
 name: dark-field microscopy
-def: "A type of microscopy where the sample is illuminated with visible light that is not collected by the objective lens. Only the light scattered by the specimen is collected by the lens, producing an image of a light specimen on a black background." [rsc:hjb]
+def: "Microscopy where the sample is illuminated with visible light that is not collected by the objective lens. Only the light scattered by the specimen is collected by the lens, producing an image of a light specimen on a black background." [rsc:hjb]
 synonym: "dark-field optical microscopy" EXACT []
 synonym: "darkfield microscopy" EXACT []
 synonym: "darkfield optical microscopy" EXACT []
@@ -22367,7 +22414,7 @@ creation_date: 2009-07-21T10:29:22Z
 [Term]
 id: CHMO:0002194
 name: epifluorescence microscopy
-def: "A type of microscopy where the specimen can be made to fluoresce (emit energy as visible light) by illuminating it with light of specific wavelengths. In epifluorescence microscopy light is transmitted through the objective lens onto the specimen, eliminating the need to filter out unwanted light directly from the source." [rsc:hjb]
+def: "Microscopy where the specimen can be made to fluoresce (emit energy as visible light) by illuminating it with light of specific wavelengths. In epifluorescence microscopy light is transmitted through the objective lens onto the specimen, eliminating the need to filter out unwanted light directly from the source." [rsc:hjb]
 is_a: CHMO:0000087 ! fluorescence microscopy
 created_by: burchh
 creation_date: 2009-07-21T10:34:34Z
@@ -22793,7 +22840,7 @@ creation_date: 2009-07-31T10:58:46Z
 [Term]
 id: CHMO:0002235
 name: abberration-corrected high-angular annular dark-field scanning transmission electron microscopy
-def: "A type of microscopy where a finely focused (<10 nm diameter) electron beam with an acceleration voltage 50--150 kV is scanned across an electron-transparent specimen under vacuum. The beam of electrons is scattered or diffracted at high angles before reaching the specimen, and the image results from a weakening of the beam by its interaction with the sample. An annular aperture is used to select electrons that have passed through given symmetric zones within the objective lens of the microscope. The electron beam is focused using a set of magnetic lenses which removes spherical aberration (an effect where the electron beam is deflected too strongly, resulting in a blurred image)." [DOI:10.1002/adma.200502201]
+def: "Microscopy where a finely focused (<10 nm diameter) electron beam with an acceleration voltage 50--150 kV is scanned across an electron-transparent specimen under vacuum. The beam of electrons is scattered or diffracted at high angles before reaching the specimen, and the image results from a weakening of the beam by its interaction with the sample. An annular aperture is used to select electrons that have passed through given symmetric zones within the objective lens of the microscope. The electron beam is focused using a set of magnetic lenses which removes spherical aberration (an effect where the electron beam is deflected too strongly, resulting in a blurred image)." [DOI:10.1002/adma.200502201]
 synonym: "abberration corrected high angular annular dark field scanning transmission electron microscopy" EXACT []
 synonym: "abberration-corrected high-angle annular dark-field scanning transmission electron microscopy" EXACT []
 synonym: "AC-HAADF-STEM" EXACT []
@@ -22827,7 +22874,7 @@ creation_date: 2009-07-31T04:13:12Z
 [Term]
 id: CHMO:0002238
 name: transmission electron microscopy energy-dispersive X-ray spectroscopy
-def: "A type of microscopy where the specimen is bombarded with a finely focused (<10 nm diameter) electron beam with an acceleration voltage 50--150 kV under vacuum. The interaction of electrons with the specimen produces X-rays (with energies characteristic of atomic number) which are detected as a function of wavelength." [rsc:hjb]
+def: "Microscopy where the specimen is bombarded with a finely focused (<10 nm diameter) electron beam with an acceleration voltage 50--150 kV under vacuum. The interaction of electrons with the specimen produces X-rays (with energies characteristic of atomic number) which are detected as a function of wavelength." [rsc:hjb]
 synonym: "TEM-EDS" EXACT []
 synonym: "TEM-EDX" EXACT []
 synonym: "TEM/EDS" EXACT []
@@ -23103,6 +23150,7 @@ id: CHMO:0002262
 name: hydrophilic interaction chromatography
 def: "Liquid chromatography where the stationary phase is hydrophilic, the mobile phase is organic and separation is achieved based on polarity." [DOI:10.1039/b905580k]
 synonym: "HILIC" EXACT []
+synonym: "hydrophilic-interaction chromatography" EXACT []
 is_a: CHMO:0001004 ! liquid chromatography
 created_by: batchelorc
 creation_date: 2009-08-14T10:53:59Z
@@ -23361,7 +23409,7 @@ creation_date: 2009-08-20T03:35:34Z
 [Term]
 id: CHMO:0002285
 name: scanning near-field ellipsometric microscopy
-def: "A type of microscopy where a metal-coated AFM tip is positioned very close to the surface of the specimen (in the near-field) and an image of the surface is obtained by mechanically moving the tip in a raster scan of the specimen, line by line, and recording the change in the polarisation of incident light when it is reflected from a surface as a function of position. A feedback loop is used to maintain a fixed relationship between the probe and surface during scanning." [DOI:10.1039/b9nr00156e]
+def: "Microscopy where a metal-coated AFM tip is positioned very close to the surface of the specimen (in the near-field) and an image of the surface is obtained by mechanically moving the tip in a raster scan of the specimen, line by line, and recording the change in the polarisation of incident light when it is reflected from a surface as a function of position. A feedback loop is used to maintain a fixed relationship between the probe and surface during scanning." [DOI:10.1039/b9nr00156e]
 synonym: "SNEM" EXACT []
 is_a: CHMO:0000118 ! scanning near-field microscopy
 created_by: burchh
@@ -23843,7 +23891,7 @@ creation_date: 2009-09-02T12:58:35Z
 [Term]
 id: CHMO:0002329
 name: high-resolution electron microscopy
-def: "A type of microscopy where the specimen bombarded with a finely focused (<10 nm diameter) electron beam with an acceleration voltage 50--150 kV under vacuum. The specimen is tilted such that a low-order zone axis is closely parallel to the incident beam, and columns of atoms are viewed end-on by the beam. The interaction of the electrons with the specimen produces transmitted, secondary, backscattered and diffracted electrons and characteristic X-rays which are detected. HREM imaging is used to explore crystal structures and imperfections on the atomic scale." [ISBN:0849375584]
+def: "Microscopy where the specimen bombarded with a finely focused (<10 nm diameter) electron beam with an acceleration voltage 50--150 kV under vacuum. The specimen is tilted such that a low-order zone axis is closely parallel to the incident beam, and columns of atoms are viewed end-on by the beam. The interaction of the electrons with the specimen produces transmitted, secondary, backscattered and diffracted electrons and characteristic X-rays which are detected. HREM imaging is used to explore crystal structures and imperfections on the atomic scale." [ISBN:0849375584]
 synonym: "high resolution electron microscopy" EXACT []
 synonym: "high resolution EM" EXACT []
 synonym: "high-resolution EM" EXACT []
@@ -24297,6 +24345,7 @@ creation_date: 2009-09-15T03:33:18Z
 id: CHMO:0002371
 name: potentiometric titration
 def: "The process of determining the quantity of a sample by adding measured increments of a titrant until the end-point, at which essentially all of the sample has reacted, is reached. The titration is followed by measuring the potential difference between indicator and reference electrodes under conditions where the current passed is sufficiently small to maintain thermodynamic equilibrium." [FIX:0000066]
+synonym: "potentiometric titrimetry" EXACT []
 is_a: CHMO:0001211 ! titration
 created_by: burchh
 creation_date: 2009-09-15T03:45:00Z
@@ -24783,7 +24832,7 @@ creation_date: 2009-09-17T03:57:55Z
 [Term]
 id: CHMO:0002413
 name: cryogenic electron microscopy
-def: "A type of microscopy where the specimen, which is cooled in liquid ethane to 180 deg. C, is bombarded with a finely focused (<10 nm diameter) electron beam with an acceleration voltage 50--150 kV under vacuum and the interaction of the electrons with the specimen produces transmitted, secondary, backscattered and diffracted electrons and characteristic X-rays which are detected." [DOI:10.1021/jp013639d, FIX:0000052]
+def: "Microscopy where the specimen, which is cooled in liquid ethane to 180 deg. C, is bombarded with a finely focused (<10 nm diameter) electron beam with an acceleration voltage 50--150 kV under vacuum and the interaction of the electrons with the specimen produces transmitted, secondary, backscattered and diffracted electrons and characteristic X-rays which are detected." [DOI:10.1021/jp013639d, FIX:0000052]
 synonym: "cryo EM" EXACT []
 synonym: "cryo-electron microscopy " EXACT []
 synonym: "cryo-EM" EXACT []
@@ -25027,7 +25076,7 @@ creation_date: 2009-09-22T05:11:39Z
 [Term]
 id: CHMO:0002437
 name: reflection interference contrast microscopy
-def: "A type of microscopy that determines the specimen's shape and distance away\nfrom a nearby, usually flat, reflective surface from the interference pattern\nproduced by light reflecting from both the object and the surface. A microscope objective focusses a laser on the fluorescent specimen, and the same objective collects fluorescence. The interference between the fluorescence directly emitted by the specimen and the fluorescence reflected by the surface is observed by measuring the intensity of fluorescence passing through a confocal pinhole." [DOI:10.1039/b9nr00156e]
+def: "Microscopy that determines the specimen's shape and distance away\nfrom a nearby, usually flat, reflective surface from the interference pattern\nproduced by light reflecting from both the object and the surface. A microscope objective focusses a laser on the fluorescent specimen, and the same objective collects fluorescence. The interference between the fluorescence directly emitted by the specimen and the fluorescence reflected by the surface is observed by measuring the intensity of fluorescence passing through a confocal pinhole." [DOI:10.1039/b9nr00156e]
 synonym: "reflection interference contrast (RIC) microscopy" EXACT []
 synonym: "reflection interference contrast (RIC-) microscopy" EXACT []
 synonym: "RIC microscopy" EXACT []
@@ -25261,7 +25310,7 @@ creation_date: 2009-09-23T05:52:42Z
 [Term]
 id: CHMO:0002457
 name: Kelvin probe force microscopy
-def: "A type of microscopy which uses a sharp spike (known as a 'tip') mounted on the end of a cantilever to scan the surface of the specimen. The conducting tip forms a capacitor with the surface, over which it is scanned laterally at a constant separation, in order to map the change in work function of the surface. A feedback loop is used to maintain a fixed relationship between the tip and surface during scanning." [FIX:0000120, rsc:hjb]
+def: "Microscopy which uses a sharp spike (known as a 'tip') mounted on the end of a cantilever to scan the surface of the specimen. The conducting tip forms a capacitor with the surface, over which it is scanned laterally at a constant separation, in order to map the change in work function of the surface. A feedback loop is used to maintain a fixed relationship between the tip and surface during scanning." [FIX:0000120, rsc:hjb]
 synonym: "Kelvin force microscopy" EXACT []
 synonym: "Kelvin probe microscopy" EXACT []
 synonym: "KFM" EXACT []
@@ -25380,7 +25429,7 @@ creation_date: 2009-09-29T12:01:03Z
 [Term]
 id: CHMO:0002470
 name: bright-field transmission electron microscopy
-def: "A type of microscopy where an electron-transparent specimen is bombarded with a finely focused (<10 nm diameter) electron beam with an acceleration voltage 50--150 kV. under vacuum. The beam of electrons passes directly through an aperture before reaching the specimen. The image results from a weakening of the direct beam by its interaction with the sample." [rsc:hjb]
+def: "Microscopy where an electron-transparent specimen is bombarded with a finely focused (<10 nm diameter) electron beam with an acceleration voltage 50--150 kV. under vacuum. The beam of electrons passes directly through an aperture before reaching the specimen. The image results from a weakening of the direct beam by its interaction with the sample." [rsc:hjb]
 synonym: "BF-TEM" EXACT []
 synonym: "bright field TEM" EXACT []
 synonym: "bright field transmission electron microscopy" EXACT []
@@ -25392,7 +25441,7 @@ creation_date: 2009-09-29T06:15:27Z
 [Term]
 id: CHMO:0002471
 name: dark-field transmission electron microscopy
-def: "A type of microscopy where an electron-transparent specimen is bombarded with a finely focused (<10 nm diameter) electron beam with an acceleration voltage 50--150 kV. under vacuum. The beam of electrons is scattered or diffracted before reaching the specimen, and the image results from a weakening of the beam by its interaction with the sample." [rsc:hjb]
+def: "Microscopy where an electron-transparent specimen is bombarded with a finely focused (<10 nm diameter) electron beam with an acceleration voltage 50--150 kV. under vacuum. The beam of electrons is scattered or diffracted before reaching the specimen, and the image results from a weakening of the beam by its interaction with the sample." [rsc:hjb]
 synonym: "DF-TEM" EXACT []
 is_a: CHMO:0000080 ! transmission electron microscopy
 created_by: burchh
@@ -25401,7 +25450,7 @@ creation_date: 2009-09-29T06:25:22Z
 [Term]
 id: CHMO:0002472
 name: dark-field scanning transmission electron microscopy
-def: "A type of microscopy where a finely focused (<10 nm diameter) electron beam with an acceleration voltage 50--150 kV is scanned across an electron-transparent specimen under vacuum. The beam of electrons is scattered or diffracted before reaching the specimen, and the image results from a weakening of the beam by its interaction with the sample." [DOI:10.1002/adma.200502201]
+def: "Microscopy where a finely focused (<10 nm diameter) electron beam with an acceleration voltage 50--150 kV is scanned across an electron-transparent specimen under vacuum. The beam of electrons is scattered or diffracted before reaching the specimen, and the image results from a weakening of the beam by its interaction with the sample." [DOI:10.1002/adma.200502201]
 synonym: "DF-STEM" EXACT []
 is_a: CHMO:0000086 ! scanning transmission electron microscopy
 is_a: CHMO:0002471 ! dark-field transmission electron microscopy
@@ -25938,7 +25987,7 @@ creation_date: 2009-10-09T11:47:14Z
 [Term]
 id: CHMO:0002519
 name: two-photon laser scanning microscopy
-def: "A type of microscopy where the specimen can be made to fluoresce (emit energy as visible light) by scanning a solid-state (Ti sapphire) laser spot of specific wavelength over its surface to produce multi-photon fluorescence (i.e. the fluorophore simultaneously absorbs two photons, each one half of the energy required for single-photon excitation)." [FIX:0000382, rsc:hjb]
+def: "Microscopy where the specimen can be made to fluoresce (emit energy as visible light) by scanning a solid-state (Ti sapphire) laser spot of specific wavelength over its surface to produce multi-photon fluorescence (i.e. the fluorophore simultaneously absorbs two photons, each one half of the energy required for single-photon excitation)." [FIX:0000382, rsc:hjb]
 synonym: "two photon laser scanning microscopy" EXACT []
 synonym: "two photon LSM" EXACT []
 synonym: "two-photon LSM" EXACT []
@@ -25949,7 +25998,7 @@ creation_date: 2009-10-09T01:19:49Z
 [Term]
 id: CHMO:0002520
 name: single-photon laser scanning microscopy
-def: "A type of microscopy where the specimen can be made to fluoresce (emit energy as visible light) by scanning a solid-state (Ti sapphire) laser spot of specific wavelength over its surface to produce single-photon fluorescence." [FIX:0000381, rsc:hjb]
+def: "Microscopy where the specimen can be made to fluoresce (emit energy as visible light) by scanning a solid-state (Ti sapphire) laser spot of specific wavelength over its surface to produce single-photon fluorescence." [FIX:0000381, rsc:hjb]
 synonym: "single photon laser scanning microscopy" EXACT []
 synonym: "single photon LSM" EXACT []
 synonym: "single-photon LSM" EXACT []
@@ -26019,7 +26068,7 @@ creation_date: 2009-10-13T11:34:46Z
 [Term]
 id: CHMO:0002526
 name: transmitted polarising light microscopy
-def: "A type of microscopy where the specimen placed between two orthogonal polarising filters and illuminated with visible light transmitted from a source on the opposite side of the specimen from the objective." [rsc:hjb]
+def: "Microscopy where the specimen placed between two orthogonal polarising filters and illuminated with visible light transmitted from a source on the opposite side of the specimen from the objective." [rsc:hjb]
 synonym: "TPLM" EXACT []
 synonym: "TPOM" EXACT []
 synonym: "transmitted optical polarising microscopy" EXACT []
@@ -26341,7 +26390,7 @@ creation_date: 2009-10-23T02:37:25Z
 [Term]
 id: CHMO:0002553
 name: scanning photocurrent microscopy
-def: "A type of microscopy where a laser is scanned over the surface of the specimen and the photocurrent is recorded as a function of position." [arxiv:0707.3176]
+def: "Microscopy where a laser is scanned over the surface of the specimen and the photocurrent is recorded as a function of position." [arxiv:0707.3176]
 synonym: "SPCM" EXACT []
 is_a: CHMO:0000112 ! scanning probe microscopy
 created_by: burchh
@@ -26518,9 +26567,7 @@ creation_date: 2009-10-25T09:33:24Z
 id: CHMO:0002569
 name: 13C--15N edited 1H--1H nuclear Overhauser enhancement spectroscopy
 def: "A 4D NMR experiment which correlates the chemical shifts of carbon-bound protons with those of their associated 13C nuclei and with the chemical shift of spatially proximate amide protons (<6\\\\A) and the 15N nuclei to which these are bound." [FIX:0000560, rsc:pr]
-synonym: "13C--15N edited 1H--1H NOESY" EXACT []
 synonym: "13C-15N edited 1H-1H NOESY" EXACT []
-synonym: "13C/15N edited 1H--1H NOESY" EXACT []
 synonym: "13C/15N edited 1H-1H NOESY" EXACT []
 is_a: CHMO:0002055 ! four-dimensional nuclear magnetic resonance spectroscopy
 created_by: Hils
@@ -26531,7 +26578,7 @@ id: CHMO:0002570
 name: Sievert's apparatus
 def: "A piece of apparatus, consisting of a gas manifold with a series of tubes and valves connecting the sample chamber to one or more pressure reservoirs of known volume, used for measuring the thermodynamics of hydrogen sorption onto metal samples." [rsc:hjb]
 synonym: "Sieverts apparatus" EXACT []
-synonym: "Sievertsï¿½ apparatus" EXACT []
+synonym: "Sieverts' apparatus" EXACT []
 synonym: "volumetric hydrogen storage capacity apparatus" EXACT []
 is_a: CHMO:0000998 ! piece of apparatus
 created_by: burchh
@@ -26633,7 +26680,7 @@ creation_date: 2009-11-03T05:37:59Z
 id: CHMO:0002580
 name: colorimetric test
 def: "A test which produces colour change in the sample." [rsc:hjb]
-is_a: OBI:0000070 ! assay
+is_a: OBI:0000443 ! analyte assay
 relationship: BFO:0000118 CHMO:0000001 ! has proper occurrent part colorimetry
 created_by: burchh
 creation_date: 2009-11-03T05:47:01Z
@@ -26720,7 +26767,7 @@ creation_date: 2009-11-06T04:43:50Z
 [Term]
 id: CHMO:0002589
 name: cryogenic scanning electron microscopy
-def: "A type of microscopy where a finely focused (<10 nm diameter) electron beam with an acceleration voltage 50--150 kV is scanned across an electron transparent specimen under vacuum and the intensities of the transmitted electrons are measured. A type of microscopy where a finely focused (<10 nm diameter) electron beam with an acceleration voltage 50--150 kV is scanned across the specimen, which is cooled in liquid ethane to 180 deg. C, under vacuum and the interaction of the electrons with the specimen is determined." [DOI:10.1021/b913269d]
+def: "Microscopy where a finely focused (<10 nm diameter) electron beam with an acceleration voltage 50--150 kV is scanned across an electron transparent specimen under vacuum and the intensities of the transmitted electrons are measured. Microscopy where a finely focused (<10 nm diameter) electron beam with an acceleration voltage 50--150 kV is scanned across the specimen, which is cooled in liquid ethane to 180 deg. C, under vacuum and the interaction of the electrons with the specimen is determined." [DOI:10.1021/b913269d]
 synonym: "cryo SEM" EXACT []
 synonym: "cryo-scanning electron microscopy " EXACT []
 synonym: "cryo-SEM" EXACT []
@@ -26796,7 +26843,7 @@ creation_date: 2009-11-13T11:22:55Z
 [Term]
 id: CHMO:0002597
 name: negative-staining transmission electron microscopy
-def: "A type of microscopy where an electron-transparent specimen, that has been stained with heavy metals salts (e.g. uranyl acetate), is bombarded with a finely focused (<10 nm diameter) electron beam with an acceleration voltage 50--150 kV under vacuum and the intensities of the transmitted electrons are measured." [DOI:10.1039/b9nr00246d]
+def: "Microscopy where an electron-transparent specimen, that has been stained with heavy metals salts (e.g. uranyl acetate), is bombarded with a finely focused (<10 nm diameter) electron beam with an acceleration voltage 50--150 kV under vacuum and the intensities of the transmitted electrons are measured." [DOI:10.1039/b9nr00246d]
 synonym: "negative staining TEM" EXACT []
 synonym: "negative staining transmission electron microscopy" EXACT []
 synonym: "negative-staining TEM" EXACT []
@@ -26823,7 +26870,7 @@ creation_date: 2009-11-14T11:00:37Z
 [Term]
 id: CHMO:0002600
 name: amplitude-modulation atomic force microscopy
-def: "A type of microscopy which uses a sharp spike (known as a 'tip') mounted on the end of a cantilever to scan the surface of the specimen. The tip oscillates, intermittently touching or tapping the surface. An image of the surface is obtained by mechanically moving the probe in a raster scan of the specimen, line by line, and recording the force experienced by the tip as a function of position. A feedback loop is used to maintain a fixed relationship between oscillation amplitude or phase of the tip and the surface during scanning, which is performed under ultra-high vacuum conditions." [rsc:hjb]
+def: "Microscopy which uses a sharp spike (known as a 'tip') mounted on the end of a cantilever to scan the surface of the specimen. The tip oscillates, intermittently touching or tapping the surface. An image of the surface is obtained by mechanically moving the probe in a raster scan of the specimen, line by line, and recording the force experienced by the tip as a function of position. A feedback loop is used to maintain a fixed relationship between oscillation amplitude or phase of the tip and the surface during scanning, which is performed under ultra-high vacuum conditions." [rsc:hjb]
 synonym: "AM-AFM" EXACT []
 synonym: "amplitude modulation AFM" EXACT []
 synonym: "amplitude modulation atomic force microscopy" EXACT []
@@ -26951,7 +26998,7 @@ creation_date: 2009-11-19T02:12:30Z
 [Term]
 id: CHMO:0002611
 name: field-emission transmission electron microscopy
-def: "A type of microscopy where an electron-transparent specimen is bombarded with a finely focused (<10 nm diameter) electron beam produced by thermionic emission heating (field emission) and with an acceleration voltage 50--150 kV under vacuum and the intensities of the transmitted electrons are measured." [DOI:10.1039/b9nr00215k]
+def: "Microscopy where an electron-transparent specimen is bombarded with a finely focused (<10 nm diameter) electron beam produced by thermionic emission heating (field emission) and with an acceleration voltage 50--150 kV under vacuum and the intensities of the transmitted electrons are measured." [DOI:10.1039/b9nr00215k]
 synonym: "FE TEM" EXACT []
 synonym: "FE-TEM" EXACT []
 synonym: "FE/TEM" EXACT []
@@ -26982,7 +27029,7 @@ creation_date: 2009-11-21T04:36:31Z
 [Term]
 id: CHMO:0002613
 name: aberration-corrected transmission electron microscopy
-def: "A type of microscopy where a finely focused (<10 nm diameter) electron beam with an acceleration voltage 50--150 kV is scanned across an electron-transparent specimen under vacuum and the intensities of the transmitted electrons are measured. The electron beam is focused using a set of magnetic lenses which removes spherical aberration (an effect where the electron beam is deflected too strongly, described by the spherical aberration coefficient 'Cs', which results in a blurred image)." [DOI:10.1039/b9nr00287a]
+def: "Microscopy where a finely focused (<10 nm diameter) electron beam with an acceleration voltage 50--150 kV is scanned across an electron-transparent specimen under vacuum and the intensities of the transmitted electrons are measured. The electron beam is focused using a set of magnetic lenses which removes spherical aberration (an effect where the electron beam is deflected too strongly, described by the spherical aberration coefficient 'Cs', which results in a blurred image)." [DOI:10.1039/b9nr00287a]
 synonym: "aberration-corrected TEM" EXACT []
 synonym: "Cs-corrected TEM" EXACT []
 synonym: "spherical-aberration-corrected TEM" EXACT []
@@ -26994,7 +27041,7 @@ creation_date: 2009-11-23T04:28:09Z
 [Term]
 id: CHMO:0002614
 name: weak-beam dark-field electron microscopy
-def: "A type of microscopy where the specimen is bombarded with a finely focused (<10 nm diameter) electron beam with an acceleration voltage 50--150 kV under vacuum. The interaction of the electrons with the specimen produces transmitted, secondary, backscattered and diffracted electrons and characteristic X-rays which are detected. A diffracted beam harmonic  (a 'weak beam') is used rather than the diffracted beam itself, allowing much higher resolution to be obtained." [DOI:10.1039/b9nr00287a]
+def: "Microscopy where the specimen is bombarded with a finely focused (<10 nm diameter) electron beam with an acceleration voltage 50--150 kV under vacuum. The interaction of the electrons with the specimen produces transmitted, secondary, backscattered and diffracted electrons and characteristic X-rays which are detected. A diffracted beam harmonic  (a 'weak beam') is used rather than the diffracted beam itself, allowing much higher resolution to be obtained." [DOI:10.1039/b9nr00287a]
 synonym: "WBDF electron microscopy" EXACT []
 synonym: "weak beam dark field electron microscopy" EXACT []
 synonym: "weak-beam dark-field (WBDF) electron microscopy" EXACT []
@@ -27005,7 +27052,7 @@ creation_date: 2009-11-23T04:40:09Z
 [Term]
 id: CHMO:0002615
 name: weak-beam dark-field transmission electron microscopy
-def: "A type of microscopy where an electron-transparent specimen is bombarded with a finely focused (<10 nm diameter) electron beam with an acceleration voltage 50--150 kV under vacuum and the intensities of the transmitted electrons are measured. A diffracted beam harmonic (a 'weak beam') is used rather than the diffracted beam itself, allowing much higher resolution to be obtained." [DOI:10.1039/b9nr00287a]
+def: "Microscopy where an electron-transparent specimen is bombarded with a finely focused (<10 nm diameter) electron beam with an acceleration voltage 50--150 kV under vacuum and the intensities of the transmitted electrons are measured. A diffracted beam harmonic (a 'weak beam') is used rather than the diffracted beam itself, allowing much higher resolution to be obtained." [DOI:10.1039/b9nr00287a]
 synonym: "WBDF TEM" EXACT []
 synonym: "WBDF transmission electron microscopy" EXACT []
 synonym: "weak beam dark field transmission electron microscopy" EXACT []
@@ -27276,7 +27323,7 @@ creation_date: 2009-12-09T10:57:54Z
 [Term]
 id: CHMO:0002638
 name: electrostatic force microscopy
-def: "A type of microscopy which uses a sharp spike (known as a 'tip') mounted on the end of a cantilever to scan the surface of the specimen. A bias voltage is applied between the tip and sample, forming a capacitor with the sample surface, over which it is scanned laterally at a constant separation. The electrostatic force (measured as the change in resonant frequency of the cantilever) is probed as a function of position by changing the applied voltage." [DOI:10.1039/b9nr00256a, FIX:0000119]
+def: "Microscopy which uses a sharp spike (known as a 'tip') mounted on the end of a cantilever to scan the surface of the specimen. A bias voltage is applied between the tip and sample, forming a capacitor with the sample surface, over which it is scanned laterally at a constant separation. The electrostatic force (measured as the change in resonant frequency of the cantilever) is probed as a function of position by changing the applied voltage." [DOI:10.1039/b9nr00256a, FIX:0000119]
 synonym: "EFM" EXACT []
 synonym: "electric force microscopy" EXACT []
 is_a: CHMO:0001898 ! non-contact mode atomic force microscopy
@@ -27422,7 +27469,7 @@ synonym: "positive ion matrix-assisted laser desorption ionization (MALDI-TOF) m
 synonym: "positive ion matrix-assisted laser desorption-ionisation time-of-flight mass spectrometry" EXACT []
 synonym: "positive ion matrix-associated laser desorption/ionization-time of flight mass spectrometry" EXACT []
 is_a: CHMO:0000518 ! positive ion laser desorption mass spectrometry
-is_a: CHMO:0000520 ! matrix-assisted laser desorption--ionisation time-of-flight mass spectrometry
+is_a: CHMO:0000520 ! matrix-assisted laser desorption-ionisation time-of-flight mass spectrometry
 created_by: burchh
 creation_date: 2010-01-04T03:21:27Z
 
@@ -27536,7 +27583,7 @@ creation_date: 2010-01-08T03:20:44Z
 [Term]
 id: CHMO:0002660
 name: chemical force microscopy
-def: "A type of microscopy which uses a chemically functionalised sharp spike (e.g. with thiols) mounted on the end of a cantilever to scan the surface of the specimen. An image of the surface is obtained by mechanically moving the probe in a raster scan of the specimen, line by line, and recording the chemical interactions between the tip and surface (e.g. gold) as a function of position. A feedback loop is used to maintain a fixed relationship between the tip and surface during scanning." [DOI:10.1039/b9nr00279k]
+def: "Microscopy which uses a chemically functionalised sharp spike (e.g. with thiols) mounted on the end of a cantilever to scan the surface of the specimen. An image of the surface is obtained by mechanically moving the probe in a raster scan of the specimen, line by line, and recording the chemical interactions between the tip and surface (e.g. gold) as a function of position. A feedback loop is used to maintain a fixed relationship between the tip and surface during scanning." [DOI:10.1039/b9nr00279k]
 synonym: "CFM" EXACT []
 is_a: CHMO:0000113 ! atomic force microscopy
 created_by: burchh
@@ -27555,7 +27602,7 @@ creation_date: 2010-01-09T10:49:58Z
 [Term]
 id: CHMO:0002662
 name: scattering near-field optical microscopy
-def: "A type of microscopy where a probe consisting of a laser transmitted through a tapered optical fibre is positioned very close to (<10 nm from) the surface of the specimen and focused to a diffraction-limited spot size. A vibrating metallic AFM cantilever tip periodically and locally modifies the electromagnetic field distribution of the excitation laser. An image is produced by scanning the probe over the specimen and detecting the scattered light from the tip as a function of position. A force feedback loop is used to maintain a fixed relationship between the probe and surface during scanning." [DOI:10.1039/b9nr00279k]
+def: "Microscopy where a probe consisting of a laser transmitted through a tapered optical fibre is positioned very close to (<10 nm from) the surface of the specimen and focused to a diffraction-limited spot size. A vibrating metallic AFM cantilever tip periodically and locally modifies the electromagnetic field distribution of the excitation laser. An image is produced by scanning the probe over the specimen and detecting the scattered light from the tip as a function of position. A force feedback loop is used to maintain a fixed relationship between the probe and surface during scanning." [DOI:10.1039/b9nr00279k]
 synonym: "s-SNOM" EXACT []
 synonym: "scattering near-field microscopy" EXACT []
 synonym: "scattering SNOM" EXACT []
@@ -27571,7 +27618,7 @@ creation_date: 2010-01-09T10:52:58Z
 [Term]
 id: CHMO:0002663
 name: infrared scattering near-field optical microscopy
-def: "A type of microscopy where a probe consisting of an infrared laser transmitted through a tapered optical fibre is positioned very close to (<10 nm from) the surface of the specimen and focused to a diffraction-limited spot size. A vibrating metallic AFM cantilever tip periodically and locally modifies the electromagnetic field distribution of the excitation laser. An image is produced by scanning the probe over the specimen and detecting the scattered light from the tip as a function of position. A force feedback loop is used to maintain a fixed relationship between the probe and surface during scanning." [DOI:10.1039/b9nr00279k]
+def: "Microscopy where a probe consisting of an infrared laser transmitted through a tapered optical fibre is positioned very close to (<10 nm from) the surface of the specimen and focused to a diffraction-limited spot size. A vibrating metallic AFM cantilever tip periodically and locally modifies the electromagnetic field distribution of the excitation laser. An image is produced by scanning the probe over the specimen and detecting the scattered light from the tip as a function of position. A force feedback loop is used to maintain a fixed relationship between the probe and surface during scanning." [DOI:10.1039/b9nr00279k]
 synonym: "infrared s-SNOM" EXACT []
 synonym: "infrared scattering SNOM" EXACT []
 synonym: "infrared scattering-type near-field optical microscopy" EXACT []
@@ -27590,7 +27637,7 @@ creation_date: 2010-01-09T11:03:42Z
 [Term]
 id: CHMO:0002664
 name: backscattering near-field optical microscopy
-def: "A type of microscopy where a laser is focused to a diffraction-limited spot size onto an oscillating AFM tip close to the surface of the specimen. An image is produced by scanning the probe over the specimen and detecting the backscattered light from the tip as a function of position. A force feedback loop is used to maintain a fixed relationship between the probe and surface during scanning." [DOI:10.1364/OPEX.13.008893]
+def: "Microscopy where a laser is focused to a diffraction-limited spot size onto an oscillating AFM tip close to the surface of the specimen. An image is produced by scanning the probe over the specimen and detecting the backscattered light from the tip as a function of position. A force feedback loop is used to maintain a fixed relationship between the probe and surface during scanning." [DOI:10.1364/OPEX.13.008893]
 synonym: "back-scattering near-field optical microscopy" EXACT []
 synonym: "back-scattering s-SNOM" EXACT []
 synonym: "back-scattering SNIM" EXACT []
@@ -27658,7 +27705,7 @@ creation_date: 2010-01-09T11:49:34Z
 [Term]
 id: CHMO:0002669
 name: contact mode atomic force microscopy
-def: "A type of microscopy which uses a sharp spike (known as a 'tip') mounted on the end of a cantilever to scan the surface of the specimen. An image of the surface is obtained by mechanically moving the probe in a raster scan of the specimen, line by line, and recording the deflection of the tip, which is in contact with the specimen surface, as a function of position. A feedback loop is used to maintain a fixed relationship between the tip and surface during scanning." [FIX:0000116, rsc:hjb]
+def: "Microscopy which uses a sharp spike (known as a 'tip') mounted on the end of a cantilever to scan the surface of the specimen. An image of the surface is obtained by mechanically moving the probe in a raster scan of the specimen, line by line, and recording the deflection of the tip, which is in contact with the specimen surface, as a function of position. A feedback loop is used to maintain a fixed relationship between the tip and surface during scanning." [FIX:0000116, rsc:hjb]
 synonym: "contact AFM" EXACT []
 synonym: "contact mode AFM" EXACT []
 synonym: "contact-mode AFM" EXACT []
@@ -27675,7 +27722,7 @@ creation_date: 2010-01-11T11:45:17Z
 [Term]
 id: CHMO:0002670
 name: scanning spreading resistance microscopy
-def: "A type of microscopy which uses a sharp conductive spike (known as a 'tip') mounted on the end of a cantilever to scan the surface of the specimen. A two-dimensional map of the carrier concentration profile (resistance) of the semiconducting specimen is obtained by applying a DC bias between the probe and specimen and mechanically moving the probe in a raster scan line-by-line, and recording the current as a function of position. A feedback loop is used to maintain a fixed relationship between the tip and surface during scanning." [rsc:hjb]
+def: "Microscopy which uses a sharp conductive spike (known as a 'tip') mounted on the end of a cantilever to scan the surface of the specimen. A two-dimensional map of the carrier concentration profile (resistance) of the semiconducting specimen is obtained by applying a DC bias between the probe and specimen and mechanically moving the probe in a raster scan line-by-line, and recording the current as a function of position. A feedback loop is used to maintain a fixed relationship between the tip and surface during scanning." [rsc:hjb]
 synonym: "SSRM" EXACT []
 is_a: CHMO:0002669 ! contact mode atomic force microscopy
 created_by: burchh
@@ -28052,7 +28099,7 @@ creation_date: 2010-05-27T02:16:23Z
 [Term]
 id: CHMO:0002703
 name: fluorescence speckle microscopy
-def: "A type of microscopy where a very low concentration of fluorescent subunits in a polymer or peptide reveals the assembly dynamics, movement and turnover of assemblies throughout the image." [DOI:10.1529/biophysj.106.091116]
+def: "Microscopy where a very low concentration of fluorescent subunits in a polymer or peptide reveals the assembly dynamics, movement and turnover of assemblies throughout the image." [DOI:10.1529/biophysj.106.091116]
 synonym: "fluorescent speckle microscopy" EXACT []
 synonym: "FSM" EXACT []
 is_a: CHMO:0000087 ! fluorescence microscopy
@@ -28179,7 +28226,7 @@ creation_date: 2010-07-25T04:28:54Z
 [Term]
 id: CHMO:0002713
 name: magnetic resonance force microscopy
-def: "A type of microscopy which uses a cantilever tipped with a ferromagnetic (iron cobalt) particle to directly detect a modulated spin gradient force between sample spins and the tip to scan the surface of a magnetic specimen. As the ferromagnetic tip moves close to the sample, the nuclear spins become attracted to it and generate a small force on the cantilever. The spins are then repeatedly flipped, causing the cantilever to gently sway back and forth in a synchronous motion. That displacement is measured with an interferometer to create a series of 2D images of the sample." [FIX:000125]
+def: "Microscopy which uses a cantilever tipped with a ferromagnetic (iron cobalt) particle to directly detect a modulated spin gradient force between sample spins and the tip to scan the surface of a magnetic specimen. As the ferromagnetic tip moves close to the sample, the nuclear spins become attracted to it and generate a small force on the cantilever. The spins are then repeatedly flipped, causing the cantilever to gently sway back and forth in a synchronous motion. That displacement is measured with an interferometer to create a series of 2D images of the sample." [FIX:000125]
 synonym: "MRFM" EXACT []
 is_a: CHMO:0000115 ! magnetic force microscopy
 created_by: Hils
@@ -28499,7 +28546,7 @@ creation_date: 2010-07-28T04:42:32Z
 id: CHMO:0002739
 name: quantitative determination method
 def: "A measurement method which obtains the concentration or quantity of a specified substance in an analyte." [rsc:cb]
-is_a: OBI:0000070 ! assay
+is_a: OBI:0000443
 created_by: batchelorc
 creation_date: 2012-04-13T11:50:09Z
 
@@ -29013,8 +29060,8 @@ is_a: CHMO:0000645 ! diffuse reflectance infrared Fourier transform spectroscopy
 id: CHMO:0002814
 name: measurement of concentration
 def: "A measurement method that determines the concentration of a constituent in some solution." [RSC:cb]
-is_a: OBI:0000070 ! assay
-intersection_of: OBI:0000070 ! assay
+is_a: OBI:0000443 ! analyte assay
+intersection_of: OBI:0000443 ! analyte assay
 intersection_of: OBI:0000299 CHMO:0002820 ! has_specified_output concentration
 relationship: OBI:0000299 CHMO:0002820 ! has_specified_output concentration
 
@@ -29344,6 +29391,7 @@ is_a: CHMO:0000575 ! tandem mass spectrometry
 [Term]
 id: CHMO:0002863
 name: dispersive solid phase extraction
+synonym: "dispersive solid-phase extraction" EXACT []
 is_a: CHMO:0001583 ! liquid-solid extraction
 
 [Term]
@@ -29385,6 +29433,7 @@ is_a: CHMO:0002867 ! selected reaction monitoring
 [Term]
 id: CHMO:0002871
 name: dispersive liquid-phase microextraction
+synonym: "dispersive liquid-liquid microextraction" EXACT []
 synonym: "DLLME" EXACT []
 synonym: "DLPME" EXACT []
 is_a: CHMO:0001602 ! liquid-phase micro-extraction
@@ -29465,6 +29514,40 @@ synonym: "slotted disk" EXACT []
 is_a: CHMO:0000998 ! piece of apparatus
 
 [Term]
+id: CHMO:0002886
+name: two-dimensional gas chromatography
+def: "Chromatography where the mobile phase is a gas, initial separation proceeds in a primary column and parts of the eluent from this column are directed into a secondary column." [RSC:cb]
+synonym: "2D gas chromatography" EXACT []
+is_a: CHMO:0002003 ! two-dimensional column chromatography
+
+[Term]
+id: CHMO:0002887
+name: dispersive solid-phase microextraction
+is_a: CHMO:0001586 ! solid-phase micro-extraction
+
+[Term]
+id: CHMO:0002888
+name: immunoaffinity microextraction
+def: "Microextraction using an antibody where the specificity is related to the specificity of the antibody to the compound of interest." [ISBN:9780080554259]
+is_a: CHMO:0002806 ! microextraction
+
+[Term]
+id: CHMO:0002889
+name: immunoaffinity chromatography
+def: "Affinity chromatography where the separation is caused by differing antibody-ligand interactions." [RSC:cb]
+is_a: CHMO:0001006 ! affinity chromatography
+
+[Term]
+id: CHMO:0002890
+name: sequential injection chromatography
+is_a: CHMO:0001000 ! chromatography
+
+[Term]
+id: CHMO:0002891
+name: flow-injection analysis
+is_a: OBI:0000443 ! analyte assay
+
+[Term]
 id: IAO:0000005
 name: objective specification
 is_a: IAO:0000033 ! directive information entity
@@ -29543,6 +29626,19 @@ alt_id: CHMO:0000048
 def: "An imaging assay is an assay to produce a picture of an entity." [obi:pppb]
 synonym: "imaging assay" EXACT []
 is_a: OBI:0000070 ! assay
+
+[Term]
+id: OBI:0000443
+name: analyte assay
+def: "An assay with the objective to capture information about the presence, concentration or amount of an analyte in the evaluant." [obi:ar, obi:bp, obi:hp, obi:ppb, obi:prs]
+is_a: OBI:0000070 ! assay
+
+[Term]
+id: OBI:0000661
+name: ELISA
+def: "ELISA is an assay where an enzyme linked antibody is used to detect a plate bound material in a liquid (the evaluant) utilizing a chemiluminescent reaction. The detected signal is proxy for the concentration of an analyte in the evaluant." [obi:IEDB]
+synonym: "enzyme-linked immunosorbent assay" EXACT []
+is_a: OBI:0000443 ! analyte assay
 
 [Term]
 id: OBI:0000796
