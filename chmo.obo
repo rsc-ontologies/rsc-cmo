@@ -1,5 +1,5 @@
 format-version: 1.2
-data-version: releases/2014-11-04
+data-version: releases/2014-11-10
 saved-by: batchelorc
 synonymtypedef: non-mining_synonym "Non-mining synonym" EXACT
 ontology: chmo
@@ -80,6 +80,11 @@ name: graphite
 is_a: CHEBI:23367 ! molecular entity
 
 [Term]
+id: CHEBI:35255
+name: chloroform
+is_a: CHEBI:23367 ! molecular entity
+
+[Term]
 id: CHEBI:46729
 name: vitreous silica
 is_a: CHEBI:23367 ! molecular entity
@@ -151,7 +156,7 @@ def: "The use of an electrochemical cell to measure a qualitative or quantitativ
 synonym: "electroanalytical method" EXACT []
 synonym: "electrochemical assay" EXACT []
 synonym: "electrochemical method" EXACT []
-is_a: OBI:0000443
+is_a: OBI:0000443 ! analyte assay
 
 [Term]
 id: CHMO:0000004
@@ -658,18 +663,17 @@ is_a: CHMO:0000060 ! fluorescence detection
 [Term]
 id: CHMO:0000062
 name: Forster resonance energy transfer
-def: "A method for determining the distance between molecules using an energy transfer between two chromophores (a donor and an acceptor) in close proximity (typically <10 nm) via a nonradiative, long-range dipole--dipole coupling mechanism." [rsc:hjb]
-synonym: "F&#xf6;rster resonance energy transfer" EXACT []
-synonym: "F&ouml;rster resonance energy transfer" EXACT []
-synonym: "F\\orster resonant energy transfer" EXACT []
-synonym: "Forster resonance energy transfer" EXACT []
+def: "A method for determining the distance between molecules using an energy transfer between two chromophores (a donor and an acceptor) in close proximity (typically <10 nm) via a nonradiative, long-range dipole-dipole coupling mechanism." [rsc:hjb]
+synonym: "Forster resonant energy transfer" EXACT []
 synonym: "FRET" EXACT non-mining_synonym []
+synonym: "Förster resonance energy transfer" EXACT []
 is_a: CHMO:0000760 ! resonance energy transfer
 
 [Term]
 id: CHMO:0000063
 name: bioluminescence resonance energy transfer
-def: "A method for determining the distance between molecules using an energy transfer between two chromophores (a donor and an acceptor) in close proximity (typically <10 nm) via a nonradiative, long-range dipole--dipole coupling mechanism. Energy transfer usually occurs between a luciferase (donor) and a green fluorescent protein (acceptor). The luciferase is bioluminescent therefore external illumination is not required." [rsc:hjb]
+def: "Forster resonance energy transfer in a bioluminescent system, usually between a luciferase (donor) and a green fluorescent protein (acceptor)." [rsc:hjb]
+comment: The luciferase is bioluminescent therefore external illumination is not required.
 synonym: "BRET" EXACT []
 is_a: CHMO:0000062 ! Forster resonance energy transfer
 
@@ -678,7 +682,7 @@ id: CHMO:0000064
 name: fluorescence resonance energy transfer
 alt_id: FIX:0000472
 alt_id: FIX:0000473
-def: "A method for determining the distance between molecules using an energy transfer between two fluorescent chromophores (a donor and an acceptor) in close proximity (typically <10 nm) via a nonradiative, long-range dipole--dipole coupling mechanism. Energy transfer usually occurs between a cyan fluorescent protein (donor) and a yellow fluorescent protein (acceptor)." [rsc:hjb]
+def: "A method for determining the distance between molecules using an energy transfer between two fluorescent chromophores (a donor and an acceptor) in close proximity (typically <10 nm) via a nonradiative, long-range dipole-dipole coupling mechanism. Energy transfer usually occurs between a cyan fluorescent protein (donor) and a yellow fluorescent protein (acceptor)." [rsc:hjb]
 synonym: "fluorescence resonance energy transfer assay" EXACT []
 synonym: "fluorescence resonance energy transfer microscopy" EXACT []
 synonym: "fluorescent resonance energy transfer" EXACT []
@@ -738,7 +742,7 @@ is_a: CHMO:0000068 ! electron microscopy
 [Term]
 id: CHMO:0000070
 name: low-energy electron microscopy
-def: "Microscopy where the specimen is bombarded with a finely focused (<10 nm diameter) low energy (1--100 eV) electron beam with an acceleration voltage 50--150 kV under vacuum. The interaction of the electrons with the specimen produces transmitted, secondary, backscattered and diffracted electrons and characteristic X-rays which are detected." [rsc:hjb]
+def: "Microscopy where the specimen is bombarded with a finely focused (<10 nm diameter) low energy (1-100 eV) electron beam with an acceleration voltage 50-150 kV under vacuum. The interaction of the electrons with the specimen produces transmitted, secondary, backscattered and diffracted electrons and characteristic X-rays which are detected." [rsc:hjb]
 synonym: "LE EM" EXACT []
 synonym: "LEEM" EXACT []
 synonym: "low energy electron microscopy" EXACT []
@@ -749,7 +753,7 @@ is_a: CHMO:0000068 ! electron microscopy
 [Term]
 id: CHMO:0000071
 name: spin-polarised low energy electron microscopy
-def: "Microscopy where the specimen is bombarded with a finely focused (<10 nm diameter) low energy (1--100 eV) electron beam with an acceleration voltage 50--150 kV under vacuum. The interaction of the electrons with the specimen produces transmitted, secondary, backscattered and diffracted electrons and characteristic X-rays which are detected. A magnet is used to align all electron spins parallel to the sample surface." [rsc:hjb]
+def: "Low-energy electron microscopy where a magnet is used to align all electron spins parallel to the sample surface." [rsc:hjb]
 synonym: "spin polarised LEEM" EXACT []
 synonym: "spin polarised low energy electron microscopy" EXACT []
 synonym: "spin polarized LEEM" EXACT []
@@ -763,7 +767,7 @@ is_a: CHMO:0000070 ! low-energy electron microscopy
 [Term]
 id: CHMO:0000072
 name: reflection electron microscopy
-def: "Microscopy where the specimen is bombarded with a finely focused (<10 nm diameter) electron beam with an acceleration voltage 50--150 kV under vacuum. The electrons elastically scattered by the specimen are detected." [rsc:hjb]
+def: "Microscopy where the specimen is bombarded with a finely focused (<10 nm diameter) electron beam with an acceleration voltage 50-150 kV under vacuum. The electrons elastically scattered by the specimen are detected." [rsc:hjb]
 synonym: "reflection EM" EXACT []
 synonym: "REM" EXACT []
 is_a: CHMO:0000068 ! electron microscopy
@@ -771,7 +775,8 @@ is_a: CHMO:0000068 ! electron microscopy
 [Term]
 id: CHMO:0000073
 name: scanning electron microscopy
-def: "Microscopy where a finely focused (<10 nm diameter) electron beam with an acceleration voltage 50--150 kV is scanned across the specimen under vacuum and the interaction of the electrons with the specimen is determined." [AU:S05484, FIX:0000124]
+alt_id: FIX:0000124
+def: "Microscopy where a finely focused (<10 nm diameter) electron beam with an acceleration voltage 50--150 kV is scanned across the specimen under vacuum and the interaction of the electrons with the specimen is determined." [AU:S05484]
 synonym: "scanning electronic microscopy" EXACT []
 synonym: "SEM" EXACT []
 is_a: CHMO:0000068 ! electron microscopy
@@ -795,7 +800,7 @@ is_a: CHMO:0000073 ! scanning electron microscopy
 [Term]
 id: CHMO:0000075
 name: cold-field-emission scanning electron microscopy
-def: "Microscopy where a finely focused (<10 nm diameter) electron beam produced by applying a high voltage to a tungsten crystal (cold-field emission) and with an acceleration voltage 50--150 kV is scanned across the specimen under vacuum and the interaction of the electrons with the specimen is determined." [ISBN:0763701920]
+def: "Microscopy where a finely focused (<10 nm diameter) electron beam produced by applying a high voltage to a tungsten crystal (cold-field emission) and with an acceleration voltage 50-150 kV is scanned across the specimen under vacuum and the interaction of the electrons with the specimen is determined." [ISBN:0763701920]
 synonym: "CFE SEM" EXACT []
 synonym: "CFE-SEM" EXACT []
 synonym: "CFE/SEM" EXACT []
@@ -812,7 +817,7 @@ is_a: CHMO:0000074 ! field-emission scanning electron microscopy
 [Term]
 id: CHMO:0000076
 name: environmental scanning electron microscopy
-def: "Microscopy where a finely focused (<10 nm diameter) electron beam with an acceleration voltage 50--150 kV is scanned across the specimen in a gaseous environment and the interaction of the electrons with the specimen is determined." [rsc:hjb]
+def: "Microscopy where a finely focused (<10 nm diameter) electron beam with an acceleration voltage 50-150 kV is scanned across the specimen in a gaseous environment and the interaction of the electrons with the specimen is determined." [rsc:hjb]
 synonym: "E-SEM" EXACT []
 synonym: "environmental SEM" EXACT []
 synonym: "ESEM" EXACT []
@@ -821,7 +826,7 @@ is_a: CHMO:0000073 ! scanning electron microscopy
 [Term]
 id: CHMO:0000077
 name: scanning electron microscopy energy dispersive X-ray spectroscopy
-def: "Microscopy where a finely focused (<10 nm diameter) electron beam with an acceleration voltage 50--150 kV is scanned across the specimen under vacuum. The interaction of electrons with the specimen produces X-rays (with energies characteristic of atomic number) which are detected as a function of wavelength." [rsc:hjb]
+def: "Microscopy where a finely focused (<10 nm diameter) electron beam with an acceleration voltage 50-150 kV is scanned across the specimen under vacuum. The interaction of electrons with the specimen produces X-rays (with energies characteristic of atomic number) which are detected as a function of wavelength." [rsc:hjb]
 synonym: "scanning electron microscopy-energy dispersive X-ray spectroscopy" EXACT []
 synonym: "scanning electron microscopy/energy dispersive X-ray analysis" EXACT []
 synonym: "scanning electron microscopy/energy dispersive X-ray spectroscopy" EXACT []
@@ -850,14 +855,15 @@ is_a: CHMO:0000073 ! scanning electron microscopy
 [Term]
 id: CHMO:0000080
 name: transmission electron microscopy
-def: "Microscopy where an electron-transparent specimen is bombarded with a finely focused (<10 nm diameter) electron beam with an acceleration voltage 50--150 kV under vacuum and the intensities of the transmitted electrons are measured." [AU:T06481, FIX:0000126]
+alt_id: FIX:0000126
+def: "Electron microscopy where the intensities of the electrons through an electron-transparent specimen are measured." [AU:T06481]
 synonym: "TEM" EXACT []
 is_a: CHMO:0000068 ! electron microscopy
 
 [Term]
 id: CHMO:0000081
 name: cryogenic transmission electron microscopy
-def: "Microscopy where an electron-transparent specimen, which is cooled in liquid ethane to 180 deg. C, is bombarded with a finely focused (<10 nm diameter) electron beam with an acceleration voltage 50--150 kV under vacuum and the intensities of the transmitted electrons are measured." [DOI:10.1021/jp013639d]
+def: "Transmission electron microscopy where the specimen is cooled in liquid ethane to 180 deg. C." [DOI:10.1021/jp013639d]
 synonym: "cryo TEM" EXACT []
 synonym: "cryo-TEM" EXACT []
 synonym: "cryo-transmission electron microscopy " EXACT []
@@ -870,7 +876,7 @@ is_a: CHMO:0002413 ! cryogenic electron microscopy
 [Term]
 id: CHMO:0000082
 name: energy-filtered transmission electron microscopy
-def: "Microscopy where an electron-transparent specimen is bombarded with a finely focused (<10 nm diameter) electron beam with an acceleration voltage 50--150 kV under vacuum and the intensities of transmitted electrons of particular kinetic energies are measured." [rsc:hjb]
+def: "Transmission electron microscopy where the intensities of transmitted electrons of particular kinetic energies are measured." [rsc:hjb]
 synonym: "EF-TEM" EXACT []
 synonym: "EF/TEM" EXACT []
 synonym: "EFTEM" EXACT []
@@ -884,7 +890,7 @@ is_a: CHMO:0000080 ! transmission electron microscopy
 [Term]
 id: CHMO:0000083
 name: freeze-fracture transmission electron microscopy
-def: "Microscopy where the electron-transparent specimen (normally a fresh tissue or cell suspension) is prepared by rapid freezing using liquid nitrogen, then fractured, and the cold fractured surface is coated with Pt or Au by evaporation. The specimen is then bombarded with a finely focused (<10 nm diameter) electron beam with an acceleration voltage 50--150 kV under vacuum and the intensities of the transmitted electrons are measured." [DOI:10.1039/b813498g]
+def: "Transmission electron microscopy where the electron-transparent specimen (normally a fresh tissue or cell suspension) is prepared by rapid freezing using liquid nitrogen, then fractured, and the cold fractured surface is coated with Pt or Au by evaporation." [DOI:10.1039/b813498g]
 synonym: "FF-TEM" EXACT []
 synonym: "FF/TEM" EXACT []
 synonym: "FFTEM" EXACT []
@@ -896,7 +902,7 @@ is_a: CHMO:0000080 ! transmission electron microscopy
 [Term]
 id: CHMO:0000084
 name: high-resolution transmission electron microscopy
-def: "Microscopy where an electron-transparent specimen is bombarded with several finely focused (<10 nm diameter) electron beams with an acceleration voltage 50--150 kV under vacuum, and the phase contrast between the transmitted interfering electron waves is used to produce an image." [rsc:hjb]
+def: "Transmission electron microscopy where the phase contrast between the transmitted interfering electron waves is used to produce an image." [rsc:hjb]
 synonym: "high resolution (HR) TEM" EXACT []
 synonym: "high resolution TEM" EXACT []
 synonym: "high resolution transmission electron microscopy" EXACT []
@@ -935,7 +941,8 @@ is_a: CHMO:0000080 ! transmission electron microscopy
 [Term]
 id: CHMO:0000087
 name: fluorescence microscopy
-def: "Any type of microscopy where the specimen can be made to fluoresce (emit energy as visible light) by illuminating it with light of specific wavelengths. These specimens are called fluorophores." [FIX:0000123, rsc:hjb]
+alt_id: FIX:0000123
+def: "Any type of microscopy where the specimen can be made to fluoresce (emit energy as visible light) by illuminating it with light of specific wavelengths. These specimens are called fluorophores." [rsc:hjb]
 synonym: "fluorescence imaging" EXACT []
 synonym: "fluorescence microscopic imaging" EXACT []
 synonym: "FM" EXACT []
@@ -1030,7 +1037,8 @@ is_a: CHMO:0000087 ! fluorescence microscopy
 [Term]
 id: CHMO:0000097
 name: ion microscopy
-def: "Microscopy where ions are used to produce an image." [FIX:0000962, rsc:hjb]
+alt_id: FIX:0000962
+def: "Microscopy where ions are used to produce an image." [rsc:hjb]
 synonym: "IM" EXACT []
 is_a: CHMO:0000067 ! microscopy
 
@@ -1076,14 +1084,16 @@ is_a: CHMO:0000098 ! field ion microscopy
 [Term]
 id: CHMO:0000101
 name: scanning ion microscopy
-def: "Microscopy where an ion beam is scanned over the specimen surface and the secondary electrons emitted are detected." [FIX:0000963, rsc:hjb]
+alt_id: FIX:0000963
+def: "Microscopy where an ion beam is scanned over the specimen surface and the secondary electrons emitted are detected." [rsc:hjb]
 synonym: "SIM" EXACT non-mining_synonym []
 is_a: CHMO:0000097 ! ion microscopy
 
 [Term]
 id: CHMO:0000102
 name: optical microscopy
-def: "Microscopy where the specimen is illuminated with visible light and a system of lenses is used to produce an image." [FIX:0000113, rsc:hjb]
+alt_id: FIX:0000113
+def: "Microscopy where the specimen is illuminated with visible light and a system of lenses is used to produce an image." [rsc:hjb]
 synonym: "light microscopy" EXACT []
 synonym: "OM" EXACT []
 is_a: CHMO:0000067 ! microscopy
@@ -1357,11 +1367,13 @@ def: "Microscopy where an Wollaston wire probe is scanned over the surface of th
 synonym: "scanning-thermal microscopy" EXACT []
 synonym: "SThM" EXACT []
 is_a: CHMO:0000112 ! scanning probe microscopy
+relationship: BFO:0000057 CHMO:0001098 ! has participant Wollaston wire
 
 [Term]
 id: CHMO:0000132
 name: scanning tunnelling microscopy
-def: "Microscopy which uses a sharp conducting probe (or 'tip') held very close (1 nm) to the surface of the specimen. A bias voltage is applied between the tip and specimen which causes a tunnelling current to flow. An image is obtained by mechanically moving the probe in a raster scan of the specimen, line by line, and recording the tunnelling current as a function of position." [FIX:0000112, ISBN:1-86094-199-0]
+alt_id: FIX:0000112
+def: "Microscopy which uses a sharp conducting probe (or 'tip') held very close (1 nm) to the surface of the specimen. A bias voltage is applied between the tip and specimen which causes a tunnelling current to flow. An image is obtained by mechanically moving the probe in a raster scan of the specimen, line by line, and recording the tunnelling current as a function of position." [ISBN:1-86094-199-0]
 synonym: "scanning tunneling electron microscopy" EXACT []
 synonym: "scanning tunnelling electron microscopy" EXACT []
 synonym: "scanning-tunneling electron microscopy" EXACT []
@@ -1372,15 +1384,17 @@ is_a: CHMO:0000112 ! scanning probe microscopy
 [Term]
 id: CHMO:0000133
 name: thermal lens microscopy
-def: "Microscopy where and excitation laser and probe a laser are focused onto a specimen forming a refractive index distribution which results in a concave excitation beam. The strength of this lens is proportional to the sample concentration and is detected by a change in transmittance in the probe beam." [DOI:10.1021/ac05196u]
+def: "Microscopy where an excitation laser and a probe laser are focused onto a specimen forming a refractive index distribution which results in a concave excitation beam. The strength of this lens is proportional to the sample concentration and is detected by a change in transmittance in the probe beam." [DOI:10.1021/ac05196u]
 synonym: "thermal-lens microscopy" EXACT []
 synonym: "TLM" EXACT []
 is_a: CHMO:0000067 ! microscopy
+relationship: BFO:0000057 CHMO:0002894 ! has participant excitation laser
+relationship: BFO:0000057 CHMO:0002895 ! has participant probe laser
 
 [Term]
 id: CHMO:0000134
 name: ultra-violet thermal lens microscopy
-def: "Microscopy where a probe laser and a pulsed ultra-violet excitation laser and are focused onto a specimen forming a refractive index distribution resulting in a concave excitation beam. The strength of this lens is proportional to the sample concentration and is detected by a change in transmittance in the probe beam." [DOI:10.1021/ac05196u]
+def: "Thermal lens microscopy where the excitation laser is an ultraviolet laser." [DOI:10.1021/ac05196u]
 synonym: "ultra-violet thermal-lens microscopy" EXACT []
 synonym: "ultraviolet thermal lens microscopy" EXACT []
 synonym: "ultraviolet thermal-lens microscopy" EXACT []
@@ -3936,7 +3950,7 @@ id: CHMO:0000374
 name: vibrational electron energy loss spectroscopy
 def: "Spectroscopy where a beam of electrons with a known, narrow range of kinetic energies is reflected by a surface and energy loss the electrons suffer (corresponding to vibrational modes in the sample) is measured." [rsc:hjb]
 synonym: "VEELS" EXACT []
-synonym: "vibrational electron energy loss spectrometry." EXACT []
+synonym: "vibrational electron energy loss spectrometry" EXACT []
 is_a: CHMO:0000366 ! electron energy loss spectroscopy
 
 [Term]
@@ -5064,9 +5078,9 @@ synonym: "ECNI" EXACT []
 synonym: "electron capture negative ionisation mass spectroscopy" EXACT []
 synonym: "electron capture negative ionization mass spectroscopy" EXACT []
 synonym: "resonant electron capture negative ionisation mass spectrometry" EXACT []
-synonym: "resonant electron capture negative ionisation mass spectroscopy." EXACT []
+synonym: "resonant electron capture negative ionisation mass spectroscopy" EXACT []
 synonym: "resonant electron capture negative ionization mass spectrometry" EXACT []
-synonym: "resonant electron capture negative ionization mass spectroscopy." EXACT []
+synonym: "resonant electron capture negative ionization mass spectroscopy" EXACT []
 is_a: CHMO:0000470 ! mass spectrometry
 
 [Term]
@@ -5076,8 +5090,8 @@ alt_id: CHMO:0000479
 alt_id: FIX:0000089
 def: "Mass spectrometry where the sample is ionised by electrons (energy 70 eV) which have been emitted from a glowing filament and accelerated through an electric field." [ISBN:9780534981445]
 synonym: "EI-MS" EXACT []
-synonym: "electron impact mass spectrometry" EXACT []
 synonym: "electron impact ionisation mass spectrometry" NARROW []
+synonym: "electron impact mass spectrometry" EXACT []
 synonym: "electron ionisation mass spectroscopy" EXACT []
 synonym: "electron ionization mass spectrometry" EXACT []
 synonym: "electron ionization mass spectroscopy" EXACT []
@@ -5146,7 +5160,8 @@ is_a: CHMO:0000482 ! electrospray ionisation mass spectrometry
 [Term]
 id: CHMO:0000486
 name: ionspray mass spectrometry
-def: "Mass spectrometry where the sample is ionised by forcing an aqueous solution of the sample through a small heated capillary (at a flow rate of 1--10 L min1) into an electric field to produce a very fine mist of charged droplets." [FIX:0000862, rsc:hjb]
+alt_id: FIX:0000862
+def: "Mass spectrometry where the sample is ionised by forcing an aqueous solution of the sample through a small heated capillary (at a flow rate of 1-10 L min1) into an electric field to produce a very fine mist of charged droplets." [rsc:hjb]
 synonym: "ion spray ionisation mass spectrometry" EXACT []
 synonym: "ion spray ionization mass spectrometry" EXACT []
 synonym: "ionspray mass spectroscopy" EXACT []
@@ -5155,9 +5170,9 @@ synonym: "ISI-MS" EXACT []
 synonym: "ISI/MS" EXACT []
 synonym: "ISMS" EXACT []
 synonym: "pneumatically-assisted electrospray ionisation mass spectrometry" EXACT []
-synonym: "pneumatically-assisted electrospray ionisation mass spectroscopy." EXACT []
+synonym: "pneumatically-assisted electrospray ionisation mass spectroscopy" EXACT []
 synonym: "pneumatically-assisted electrospray ionization mass spectrometry" EXACT []
-synonym: "pneumatically-assisted electrospray ionization mass spectroscopy." EXACT []
+synonym: "pneumatically-assisted electrospray ionization mass spectroscopy" EXACT []
 synonym: "turbo ion-spray mass spectrometry" EXACT []
 synonym: "turbo ion-spray mass spectroscopy" EXACT []
 is_a: CHMO:0000482 ! electrospray ionisation mass spectrometry
@@ -8499,9 +8514,10 @@ is_a: CHMO:0000200 ! X-ray scattering
 id: CHMO:0000779
 name: polarimetry
 alt_id: FIX:0000230
-def: "The measurement of the extent to which a sample interacts with polarized electromagnetic radiation by transmission, reflection, refraction, or diffraction." [FIX:0000230, rsc:hjb]
+def: "The measurement of the extent to which a sample interacts with polarized electromagnetic radiation by transmission, reflection, refraction, or diffraction." [rsc:hjb]
 synonym: "optical rotation measurement" EXACT []
 is_a: CHMO:0000208 ! reflection method
+relationship: OBI:0000299 CHMO:0002897 ! has_specified_output polarimeter
 
 [Term]
 id: CHMO:0000780
@@ -9378,7 +9394,7 @@ synonym: "SGALDI-TOF-MS" EXACT []
 synonym: "SGALDI-TOF/MS" EXACT []
 synonym: "sol-gel-assisted laser desorption-ionisation time-of-flight mass spectrometry" EXACT []
 synonym: "sol-gel-assisted laser desorption-ionisation time-of-flight mass spectroscopy" EXACT []
-is_a: CHMO:0000521 ! sol--gel-assisted laser desorption-ionisation mass spectrometry
+is_a: CHMO:0000521 ! sol-gel-assisted laser desorption-ionisation mass spectrometry
 
 [Term]
 id: CHMO:0000869
@@ -10524,14 +10540,19 @@ is_a: OBI:0000094 ! material processing
 [Term]
 id: CHMO:0001000
 name: chromatography
-def: "A separation method where the components are distributed between two phases, one of which is stationary, while the other moves in a definite direction." [AU:C01075, FIX:0000053]
+alt_id: FIX:0000053
+def: "A separation method where the components are distributed between two phases, one of which is stationary, while the other moves in a definite direction." [AU:C01075]
+synonym: "analytical chromatography" EXACT []
 synonym: "chromatographic analysis" EXACT []
+synonym: "preparative chromatography" EXACT []
 is_a: CHMO:0000999 ! separation method
 
 [Term]
 id: CHMO:0001001
 name: column chromatography
+alt_id: CHMO:0002118
 def: "A chromatography method where the stationary bed is within a tube (of standard length 25 cm). The particles of the solid stationary phase or support coated with a liquid stationary phase may fill the whole inside volume of the tube (packed column) or be concentrated on or along the inside tube wall leaving an open, unrestricted path for the mobile phase in the middle part of the tube (open-tubular column)." [AU:C01182, DOI:10.1021/ac971247q]
+synonym: "preparative column chromatography" NARROW []
 is_a: CHMO:0001000 ! chromatography
 intersection_of: CHMO:0001000 ! chromatography
 intersection_of: BFO:0000057 CHMO:0000997 ! has participant chromatography column
@@ -10540,7 +10561,8 @@ relationship: BFO:0000057 CHMO:0000997 ! has participant chromatography column
 [Term]
 id: CHMO:0001002
 name: gas chromatography
-def: "Column chromatography where the mobile phase is a gas." [FIX:0000098, rsc:cb]
+alt_id: FIX:0000098
+def: "Column chromatography where the mobile phase is a gas." [rsc:cb]
 synonym: "GC" EXACT []
 is_a: CHMO:0001001 ! column chromatography
 intersection_of: CHMO:0001001 ! column chromatography
@@ -10581,9 +10603,8 @@ relationship: BFO:0000057 CHMO:0000990 ! has participant open chromatographic be
 [Term]
 id: CHMO:0001006
 name: affinity chromatography
-def: "A chromatography method where the separation is caused by differing analyte--ligand interactions." [OrangeBook:9.2.1.5]
+def: "Chromatography where the separation is caused by differing biological specificity of the analyte-ligand interactions." [OrangeBook:9.2.1.5]
 synonym: "bioaffinity chromatography" EXACT []
-xref: FIX:0000615
 is_a: CHMO:0001001 ! column chromatography
 
 [Term]
@@ -10608,7 +10629,8 @@ relationship: BFO:0000057 CHMO:0000988 ! has participant chromatography paper
 [Term]
 id: CHMO:0001009
 name: high-performance liquid chromatography
-def: "Column chromatography where the mobile phase is a liquid, the stationary phase consists of very small particles and the inlet pressure is relatively high." [FIX:0000630, OrangeBook:9.2.1.4]
+alt_id: FIX:0000630
+def: "Column chromatography where the mobile phase is a liquid, the stationary phase consists of very small particles and the inlet pressure is relatively high." [OrangeBook:9.2.1.4]
 synonym: "high performance liquid chromatography" EXACT []
 synonym: "high pressure liquid chromatography" EXACT []
 synonym: "high-pressure liquid chromatography" EXACT []
@@ -14080,7 +14102,7 @@ is_a: CHMO:0001349 ! jet deposition
 [Term]
 id: CHMO:0001351
 name: gas jet deposition
-def: "A synthesis method where a flow of carrier gas (moving at the speed of sound) containing vaporised precursors is projected onto a surface, resulting in a deposit." [DOI:10.1088/0256-307X/17/11/018]
+def: "A synthesis method where a flow of carrier gas containing vaporised precursors is projected onto a surface, resulting in a deposit." [DOI:10.1088/0256-307X/17/11/018]
 synonym: "gas-jet deposition" EXACT []
 synonym: "GJD" EXACT []
 synonym: "jet vapor deposition" EXACT []
@@ -14229,7 +14251,7 @@ is_a: CHMO:0001356 ! physical vapour deposition
 [Term]
 id: CHMO:0001365
 name: barrel sputter deposition
-def: "A synthesis technique where a solid target is bombarded with energetic ions (e.g. Ar+) causing atoms to be ejected ('sputtering'). The ejected atoms then deposit, as a thin-film, on a substrate. The substrate is held in a barrel which is swung from side-to-side to ensure even deposition." [DOI:10.1039/b817740f]
+def: "Sputter deposition where the substrate is held in a barrel which is swung from side-to-side to ensure even deposition." [DOI:10.1039/b817740f]
 synonym: "barrel sputtering" EXACT []
 synonym: "barrel-sputtering" EXACT []
 is_a: CHMO:0001364 ! sputter deposition
@@ -14237,7 +14259,7 @@ is_a: CHMO:0001364 ! sputter deposition
 [Term]
 id: CHMO:0001366
 name: ion-assisted deposition
-def: "A synthesis technique where a solid target is bombarded with energetic ions (e.g. Ar+) causing atoms to be ejected ('sputtering'), which deposit, as a thin-film, on a substrate. A secondary ion beam is then used to remove any partially bound atoms from the substrate surface." [rsc:hjb]
+def: "Sputter deposition where a secondary ion beam is then used to remove any partially bound atoms from the substrate surface." [rsc:hjb]
 synonym: "IAD" EXACT []
 synonym: "IBAD" EXACT []
 synonym: "ion beam assisted deposition" EXACT []
@@ -14247,30 +14269,34 @@ is_a: CHMO:0001364 ! sputter deposition
 [Term]
 id: CHMO:0001367
 name: ion-beam sputter deposition
-def: "A synthesis technique where a solid target is bombarded with energetic ions (e.g. Ar+) causing atoms to be ejected ('sputtering'). The ejected atoms then deposit, as a thin-film, on a substrate. Ionisation of the neutral gas atoms requires an external ion source, which generates a focused ion beam." [rsc:hjb]
+def: "Sputter deposition where the energetic ions come from an external ion source, which generates a focused ion beam." [rsc:hjb]
 synonym: "IBS" EXACT []
 synonym: "ion-assisted sputtering" EXACT []
 synonym: "ion-beam sputtering" EXACT []
 synonym: "ion-beam-assisted sputtering" EXACT []
 is_a: CHMO:0001364 ! sputter deposition
+relationship: BFO:0000057 CHMO:0000960 ! has participant ion source
 
 [Term]
 id: CHMO:0001368
 name: magnetron sputter deposition
-def: "A synthesis technique where a solid target is bombarded with energetic ions (e.g. Ar+) generated in a magnetron (a device that uses electrical and magnetic fields to generate heat) causing atoms to be ejected ('sputtering'). The ejected atoms then deposit, as a thin-film, on a substrate. " [rsc:hjb]
+def: "Sputter deposition where the ion source is a magnetron. The ejected atoms then deposit, as a thin-film, on a substrate." [rsc:hjb]
 synonym: "magnetron sputtering" EXACT []
 is_a: CHMO:0001364 ! sputter deposition
+intersection_of: CHMO:0001364 ! sputter deposition
+intersection_of: BFO:0000057 CHMO:0002896 ! has participant magnetron
+relationship: BFO:0000057 CHMO:0002896 ! has participant magnetron
 
 [Term]
 id: CHMO:0001369
 name: high power impulse magnetron sputter deposition
-def: "A synthesis technique where a solid target is bombarded with energetic ions (e.g. Ar+) generated in a magnetron (a device that uses electrical and magnetic fields to generate heat) causing atoms to be ejected ('sputtering'). The ejected atoms then deposit, as a thin-film, on a substrate. The ionisation process uses extremely high power densities of the order of kW cm-2 in short pulses." [rsc:hjb]
-synonym: "high hower pulsed magnetron sputter deposition" EXACT []
-synonym: "high hower pulsed magnetron sputtering" EXACT []
+def: "Magnetron sputter deposition where the ionisation process uses extremely high power densities of the order of kW cm-2 in short pulses." [rsc:hjb]
 synonym: "high impact power magnetron sputter deposition" EXACT []
 synonym: "high impact power magnetron sputtering" EXACT []
 synonym: "high power impulse magnetron sputter deposition" EXACT []
 synonym: "high power impulse magnetron sputtering" EXACT []
+synonym: "high power pulsed magnetron sputter deposition" EXACT []
+synonym: "high power pulsed magnetron sputtering" EXACT []
 synonym: "HIPIMS" EXACT []
 synonym: "HPPMS" EXACT []
 is_a: CHMO:0001364 ! sputter deposition
@@ -14278,7 +14304,7 @@ is_a: CHMO:0001364 ! sputter deposition
 [Term]
 id: CHMO:0001370
 name: radio frequency sputter deposition
-def: "A synthesis technique where a solid target is bombarded with energetic ions (e.g. Ar+) generated in a magnetron (a device that uses electrical and magnetic fields to generate heat) causing atoms to be ejected ('sputtering'). The ejected atoms then deposit, as a thin-film, on a substrate. The sign of the anode--cathode bias is varied at a high rate to avoid charge build-up on insulating targets. " [rsc:hjb]
+def: "A synthesis technique where a solid target is bombarded with energetic ions (e.g. Ar+) generated in a magnetron (a device that uses electrical and magnetic fields to generate heat) causing atoms to be ejected ('sputtering'). The ejected atoms then deposit, as a thin-film, on a substrate. The sign of the anode-cathode bias is varied at a high rate to avoid charge build-up on insulating targets. " [rsc:hjb]
 synonym: "RF sputter deposition" EXACT []
 synonym: "RF sputtering" EXACT []
 is_a: CHMO:0001364 ! sputter deposition
@@ -21569,15 +21595,6 @@ created_by: burchh
 creation_date: 2009-07-06T02:30:09Z
 
 [Term]
-id: CHMO:0002118
-name: preparative column chromatography
-def: "A chromatography method where the stationary bed is within a tube (of standard length 25 cm). Preparative column chromatography involves the collection of eluted pure samples (following synthesis or for subsequent biological testing)." [http://www.chromatography-online.org/Preparative/Introduction/rs1.html]
-synonym: "preparative-column chromatography " EXACT []
-is_a: CHMO:0001001 ! column chromatography
-created_by: burchh
-creation_date: 2009-07-07T02:38:06Z
-
-[Term]
 id: CHMO:0002119
 name: granulometry
 def: "The measurement of the size distribution in a collection of grains." [rsc:hjb]
@@ -26698,19 +26715,18 @@ creation_date: 2009-11-03T05:47:20Z
 [Term]
 id: CHMO:0002582
 name: flash chromatography
-def: "A type of rapid preparative column chromatography where 0.1--10 g of sample mixture is separated in less than 15 min by using pressurised gas to drive the mobile phase through the column." [DOI:10.1021/jo00408a041]
+def: "A type of column chromatography where 0.1-10 g of sample mixture is separated in less than 15 min by using pressurised gas to drive the mobile phase through the column." [DOI:10.1021/jo00408a041]
 synonym: "medium pressure chromatography" EXACT []
 synonym: "medium-pressure chromatography" EXACT []
-is_a: CHMO:0002118 ! preparative column chromatography
+is_a: CHMO:0001001 ! column chromatography
 created_by: burchh
 creation_date: 2009-11-03T06:25:58Z
 
 [Term]
 id: CHMO:0002583
-name: nitrogen sorption--desorption measurements
+name: nitrogen sorption-desorption measurements
 def: "A method for determining surface area by measuring the amount of an N2 which adsorbs onto the surface of interest (the 'sorbate'), and the subsequent amount that desorbs at a constant temperature. Regression analysis is then applied to the data, resulting in an isotherm." [rsc:hjb]
-synonym: "N2 sorption--desorption experiments" EXACT []
-synonym: "N2 sorption--desorption measurements" EXACT []
+synonym: "N2 sorption-desorption experiments" EXACT []
 synonym: "N2 sorption-desorption measurements" EXACT []
 is_a: CHMO:0001167 ! sorption--desorption measurement
 created_by: burchh
@@ -28546,7 +28562,7 @@ creation_date: 2010-07-28T04:42:32Z
 id: CHMO:0002739
 name: quantitative determination method
 def: "A measurement method which obtains the concentration or quantity of a specified substance in an analyte." [rsc:cb]
-is_a: OBI:0000443
+is_a: OBI:0000443 ! analyte assay
 created_by: batchelorc
 creation_date: 2012-04-13T11:50:09Z
 
@@ -29268,8 +29284,9 @@ is_a: CHMO:0002841 ! planned process adjustment
 
 [Term]
 id: CHMO:0002844
-name: hazard replacement
+name: hazard reduction
 def: "An experimental plan revision that involves creating a new experimental plan that has a lessened hazard compared to its predecessor." [RSC:cb]
+comment: was hazard replacement
 is_a: CHMO:0002830 ! experimental plan revision
 
 [Term]
@@ -29548,6 +29565,214 @@ name: flow-injection analysis
 is_a: OBI:0000443 ! analyte assay
 
 [Term]
+id: CHMO:0002892
+name: excitation laser function
+def: "Function of a laser realized by it exciting some internal state of a sample." [RSC:cb]
+is_a: BFO:0000034 ! function
+relationship: BFO:0000052 OBI:0400064 ! inheres_in laser
+
+[Term]
+id: CHMO:0002893
+name: probe laser function
+def: "Function of a laser realized by its interactions with internal state of a sample being measured." [RSC:cb]
+is_a: BFO:0000034 ! function
+relationship: BFO:0000052 OBI:0400064 ! inheres_in laser
+
+[Term]
+id: CHMO:0002894
+name: excitation laser
+def: "A laser that has the function of exciting some internal state of a sample." [RSC:cb]
+is_a: OBI:0400064 ! laser
+relationship: BFO:0000085 CHMO:0002892 ! has function at some time excitation laser function
+
+[Term]
+id: CHMO:0002895
+name: probe laser
+def: "A laser that has the function of probing some internal state of a sample." [RSC:cb]
+is_a: OBI:0400064 ! laser
+relationship: BFO:0000085 CHMO:0002893 ! has function at some time probe laser function
+
+[Term]
+id: CHMO:0002896
+name: magnetron
+def: "A device that uses electrical and magnetic fields to generate heat." [RSC:hjb]
+is_a: CHMO:0000998 ! piece of apparatus
+
+[Term]
+id: CHMO:0002897
+name: polarimeter
+def: "A device that measures the angle of optical rotation of a sample." [RSC:cb]
+is_a: CHMO:0000998 ! piece of apparatus
+
+[Term]
+id: CHMO:0002898
+name: polarimetry of sample dissolved in chloroform
+def: "Polarimetry of a sample that has been dissolved in chloroform." [RSC:cb]
+is_a: CHMO:0000779 ! polarimetry
+relationship: BFO:0000057 CHEBI:35255 ! has participant chloroform
+
+[Term]
+id: CHMO:0002899
+name: polarimetry of sample dissolved in dimethyl sulfoxide
+def: "Polarimetry of a sample that has been dissolved in dimethyl sulfoxide." [RSC:cb]
+is_a: CHMO:0000779 ! polarimetry
+relationship: BFO:0000057 CHEBI:28262 ! has participant dimethyl sulfoxide
+
+[Term]
+id: CHMO:0002900
+name: angle of optical rotation in chloroform
+def: "Angle of optical rotation of a substance that has been obtained with it dissolved in chloroform." [RSC:cb]
+is_a: CHMO:0002818 ! angle of optical rotation
+intersection_of: CHMO:0002818 ! angle of optical rotation
+intersection_of: OBI:0000312 CHMO:0002898 ! is_specified_output_of polarimetry of sample dissolved in chloroform
+relationship: OBI:0000312 CHMO:0002898 ! is_specified_output_of polarimetry of sample dissolved in chloroform
+
+[Term]
+id: CHMO:0002901
+name: angle of optical rotation in dimethyl sulfoxide
+def: "Angle of optical rotation of a substance that has been obtained with it dissolved in dimethyl sulfoxide." [RSC:cb]
+is_a: CHMO:0002818 ! angle of optical rotation
+intersection_of: CHMO:0002818 ! angle of optical rotation
+intersection_of: OBI:0000312 CHMO:0002899 ! is_specified_output_of polarimetry of sample dissolved in dimethyl sulfoxide
+relationship: OBI:0000312 CHMO:0002899 ! is_specified_output_of polarimetry of sample dissolved in dimethyl sulfoxide
+
+[Term]
+id: CHMO:0010000
+name: risk management planning process
+is_a: CHMO:0002828 ! experimental planning process
+
+[Term]
+id: CHMO:0010001
+name: protective equipment
+def: "Equipment that is used in a laboratory context to prevent or mitigate adverse laboratory events." [RSC:cb]
+is_a: CHMO:0000993 ! portion of material
+relationship: CHMO:0010016 CHMO:0010009 ! prevents adverse laboratory event
+relationship: CHMO:0010017 CHMO:0010009 ! mitigates adverse laboratory event
+
+[Term]
+id: CHMO:0010002
+name: material handling technique
+is_a: OBI:0000011 ! planned process
+
+[Term]
+id: CHMO:0010003
+name: protective clothing
+is_a: CHMO:0010011 ! personal protective equipment
+
+[Term]
+id: CHMO:0010004
+name: emergency response equipment
+def: "Equipment that is used in a laboratory context to mitigate adverse laboratory events." [RSC:cb]
+is_a: CHMO:0000993 ! portion of material
+relationship: CHMO:0010017 CHMO:0010009 ! mitigates adverse laboratory event
+
+[Term]
+id: CHMO:0010005
+name: eye wash station
+is_a: CHMO:0010004 ! emergency response equipment
+
+[Term]
+id: CHMO:0010006
+name: emergency shower
+is_a: CHMO:0010004 ! emergency response equipment
+
+[Term]
+id: CHMO:0010007
+name: fire blanket
+is_a: CHMO:0010004 ! emergency response equipment
+
+[Term]
+id: CHMO:0010008
+name: fire extinguisher
+is_a: CHMO:0010004 ! emergency response equipment
+
+[Term]
+id: CHMO:0010009
+name: adverse laboratory event
+def: "An event that takes place in a laboratory that may unintentionally harm an organism or piece of apparatus." [RSC:cb]
+is_a: BFO:0000015 ! process
+
+[Term]
+id: CHMO:0010010
+name: laboratory uncontrolled explosion
+def: "An explosion that takes place in a laboratory and is not controlled by the experimenter." [RSC:cb]
+comment: A controlled explosion might be, for example, in a bomb calorimeter.
+is_a: CHMO:0010009 ! adverse laboratory event
+
+[Term]
+id: CHMO:0010011
+name: personal protective equipment
+def: "Laboratory safety equipment that prevents or mitigates adverse laboratory events happening to an experimenter." [RSC:cb]
+is_a: CHMO:0010001 ! protective equipment
+
+[Term]
+id: CHMO:0010012
+name: nitrile gloves
+def: "Gloves consisting of a nitrile polymer." [RSC:cb]
+is_a: CHMO:0010003 ! protective clothing
+
+[Term]
+id: CHMO:0010013
+name: penetration of personal protective equipment
+def: "An event where a poisonous substance penetrates personal protective equipment, endangering the experimenter." [RSC:cb]
+is_a: CHMO:0010009 ! adverse laboratory event
+relationship: BFO:0000057 CHMO:0010011 ! has participant personal protective equipment
+
+[Term]
+id: CHMO:0010014
+name: laboratory safety function
+def: "The function ascribed to laboratory equipment to prevent or mitigate adverse laboratory events." [RSC:cb]
+is_a: BFO:0000034 ! function
+
+[Term]
+id: CHMO:0010015
+name: blast screen
+def: "A screen that blocks debris from an explosion." [RSC:cb]
+is_a: CHMO:0010001 ! protective equipment
+
+[Term]
+id: CHMO:0010018
+name: inhalation of poisonous fumes
+def: "An adverse laboratory event where an experimenter inhales poisonous fumes." [RSC:cb]
+is_a: CHMO:0010009 ! adverse laboratory event
+
+[Term]
+id: CHMO:0010019
+name: evolution of poisonous fumes
+def: "An adverse laboratory event where a reacting species gives off a gas poisonous to the experimenter." [RSC:cb]
+is_a: CHMO:0010009 ! adverse laboratory event
+
+[Term]
+id: CHMO:0010020
+name: fume hood
+def: "A hood in which to conduct experiments that give off poisonous fumes that vents them to a non-enclosed environment." [RSC:cb]
+is_a: CHMO:0010001 ! protective equipment
+relationship: CHMO:0010016 CHMO:0010018 ! prevents inhalation of poisonous fumes
+relationship: CHMO:0010017 CHMO:0010019 ! mitigates evolution of poisonous fumes
+
+[Term]
+id: CHMO:0010022
+name: injury by flying debris
+def: "An adverse laboratory event in which an organism comes into contact with the debris from an explosion at high speed." [RSC:cb]
+is_a: CHMO:0010009 ! adverse laboratory event
+relationship: CHMO:0010021 CHMO:0010010 ! caused by laboratory uncontrolled explosion
+
+[Term]
+id: CHMO:0010023
+name: hazard analysis
+is_a: CHMO:0010000 ! risk management planning process
+
+[Term]
+id: CHMO:0010024
+name: risk assessment
+is_a: CHMO:0010000 ! risk management planning process
+
+[Term]
+id: CHMO:0010025
+name: control banding
+is_a: CHMO:0010000 ! risk management planning process
+
+[Term]
 id: IAO:0000005
 name: objective specification
 is_a: IAO:0000033 ! directive information entity
@@ -29729,6 +29954,10 @@ def: "A material processing in which components of an input material become segr
 is_a: OBI:0000094 ! material processing
 
 [Typedef]
+id: BFO:0000052
+name: inheres_in
+
+[Typedef]
 id: BFO:0000054
 name: realized in
 
@@ -29797,6 +30026,27 @@ comment: p has_participant e o e has_role matrix_role. Don't know how to do this
 domain: BFO:0000015 ! process
 range: BFO:0000040 ! material entity
 is_a: BFO:0000057 ! has participant
+
+[Typedef]
+id: CHMO:0010016
+name: prevents
+comment: the range of 'prevents' is an adverse laboratory event (process). The object that prevents the ALE blocks a disposition that is manifested as the ALE. Example: water blocks flammability. From a safety officer pov, this is about planning.
+domain: CHMO:0000993 ! portion of material
+range: CHMO:0010009 ! adverse laboratory event
+
+[Typedef]
+id: CHMO:0010017
+name: mitigates
+comment: the range of 'mitigates' is an adverse laboratory event (process). The object that mitigates the ALE has the capability (disposition) to take part in the process and prevent downstream adverse events. From a safety officer pov, this is about responding.
+domain: CHMO:0000993 ! portion of material
+range: CHMO:0010009 ! adverse laboratory event
+
+[Typedef]
+id: CHMO:0010021
+name: caused by
+comment: this is a placeholder. Not sure why this isn't covered by BFO or RO tbh.
+domain: BFO:0000015 ! process
+range: BFO:0000015 ! process
 
 [Typedef]
 id: IAO:0000136
