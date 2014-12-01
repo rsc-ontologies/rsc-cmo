@@ -1,9 +1,13 @@
 format-version: 1.2
-data-version: releases/2014-11-10
+data-version: releases/2014-11-20
 saved-by: batchelorc
 synonymtypedef: non-mining_synonym "Non-mining synonym" EXACT
 ontology: chmo
 property_value: has_format-version "1.2"
+
+[Term]
+id: BFO:0000002
+name: continuant
 
 [Term]
 id: BFO:0000015
@@ -27,6 +31,7 @@ is_a: BFO:0000020 ! specifically dependent continuant
 [Term]
 id: BFO:0000020
 name: specifically dependent continuant
+is_a: BFO:0000002 ! continuant
 
 [Term]
 id: BFO:0000023
@@ -36,6 +41,7 @@ is_a: BFO:0000017 ! realizable_entity
 [Term]
 id: BFO:0000031
 name: generically dependent continuant
+is_a: BFO:0000002 ! continuant
 
 [Term]
 id: BFO:0000034
@@ -45,6 +51,7 @@ is_a: BFO:0000017 ! realizable_entity
 [Term]
 id: BFO:0000040
 name: material entity
+is_a: BFO:0000002 ! continuant
 
 [Term]
 id: BFO:0000140
@@ -77,6 +84,11 @@ is_a: CHEBI:23367 ! molecular entity
 [Term]
 id: CHEBI:33418
 name: graphite
+is_a: CHEBI:23367 ! molecular entity
+
+[Term]
+id: CHEBI:33819
+name: oxygen-17 atom
 is_a: CHEBI:23367 ! molecular entity
 
 [Term]
@@ -117,6 +129,16 @@ is_a: CHEBI:50803 ! nanoparticle
 [Term]
 id: CHEBI:52455
 name: lead-207
+is_a: CHEBI:23367 ! molecular entity
+
+[Term]
+id: CHEBI:52456
+name: vanadium-51 atom
+is_a: CHEBI:23367 ! molecular entity
+
+[Term]
+id: CHEBI:52458
+name: lithium-7 atom
 is_a: CHEBI:23367 ! molecular entity
 
 [Term]
@@ -776,7 +798,7 @@ is_a: CHMO:0000068 ! electron microscopy
 id: CHMO:0000073
 name: scanning electron microscopy
 alt_id: FIX:0000124
-def: "Microscopy where a finely focused (<10 nm diameter) electron beam with an acceleration voltage 50--150 kV is scanned across the specimen under vacuum and the interaction of the electrons with the specimen is determined." [AU:S05484]
+def: "Microscopy where a finely focused (<10 nm diameter) electron beam with an acceleration voltage 50-150 kV is scanned across the specimen under vacuum and the interaction of the electrons with the specimen is determined." [AU:S05484]
 synonym: "scanning electronic microscopy" EXACT []
 synonym: "SEM" EXACT []
 is_a: CHMO:0000068 ! electron microscopy
@@ -784,7 +806,7 @@ is_a: CHMO:0000068 ! electron microscopy
 [Term]
 id: CHMO:0000074
 name: field-emission scanning electron microscopy
-def: "Microscopy where a finely focused (<10 nm diameter) electron beam produced by thermionic emission heating (field emission) and with an acceleration voltage 50--150 kV is scanned across the specimen under vacuum and the interaction of the electrons with the specimen is determined." [DOI:10.1039/b818058j]
+def: "Microscopy where a finely focused (<10 nm diameter) electron beam produced by thermionic emission heating (field emission) and with an acceleration voltage 50-150 kV is scanned across the specimen under vacuum and the interaction of the electrons with the specimen is determined." [DOI:10.1039/b818058j]
 synonym: "FE SEM" EXACT []
 synonym: "FE-SEM" EXACT []
 synonym: "FE/SEM" EXACT []
@@ -1287,7 +1309,7 @@ is_a: CHMO:0000120 ! scanning near-field optical microscopy
 [Term]
 id: CHMO:0000123
 name: microwave scanning near-field microscopy
-def: "Microscopy where a probe consisting of a microwave radiation source transmitted through a tapered optical fibre is positioned very close to (<10 nm from) the surface of the specimen. The tip is coated with metal (to prevent light from escaping from the sides) and near-field (or evanescent field) microwave radiation is emitted through a small opening or 'aperture' (50--100 nm in diameter) at the apex of the probe. An image is produced by scanning the probe over the specimen and detecting the disturbance of the microwave near-field as a function of position. A force feedback loop is used to maintain a fixed relationship between the probe and surface during scanning." [rsc:hjb]
+def: "Microscopy where a probe consisting of a microwave radiation source transmitted through a tapered optical fibre is positioned very close to (<10 nm from) the surface of the specimen. The tip is coated with metal (to prevent light from escaping from the sides) and near-field (or evanescent field) microwave radiation is emitted through a small opening or 'aperture' (50-100 nm in diameter) at the apex of the probe. An image is produced by scanning the probe over the specimen and detecting the disturbance of the microwave near-field as a function of position. A force feedback loop is used to maintain a fixed relationship between the probe and surface during scanning." [rsc:hjb]
 synonym: "microwave near-field scanning microscopy" EXACT []
 synonym: "near-field scanning microwave microscopy" EXACT []
 synonym: "NSMM" EXACT []
@@ -3455,7 +3477,8 @@ is_a: CHMO:0000743 ! electron magnetic resonance spectroscopy
 [Term]
 id: CHMO:0000329
 name: continuous-wave electron spin resonance spectroscopy
-def: "Spectroscopy where the response of an atom with an unpaired electron to a perturbing magnetic field is measured as a function of the frequency of a periodic perturbation." [FIX:0000033, ISBN:0-13-721762-5]
+alt_id: FIX:0000033
+def: "Spectroscopy where the response of an atom with an unpaired electron to a perturbing magnetic field is measured as a function of the frequency of a periodic perturbation." [ISBN:9780137217625]
 synonym: "c.w. EPR" EXACT []
 synonym: "c.w. ESR" EXACT []
 synonym: "continuous wave electron paramagnetic resonance spectroscopy" EXACT []
@@ -3470,7 +3493,8 @@ is_a: CHMO:0000328 ! electron spin resonance spectroscopy
 [Term]
 id: CHMO:0000330
 name: pulsed electron spin resonance spectroscopy
-def: "Spectroscopy where the response of an atom with an unpaired electron to short (ns) pulses of microwave radiation in a magnetic field is measured." [FIX:0000034, rsc:hjb]
+alt_id: FIX:0000034
+def: "Spectroscopy where the response of an atom with an unpaired electron to short (ns) pulses of microwave radiation in a magnetic field is measured." [rsc:hjb]
 synonym: "pulse electron paramagnetic resonance spectroscopy" EXACT []
 synonym: "pulse electron spin resonance spectrometry" EXACT []
 synonym: "pulse EPR" EXACT []
@@ -3727,7 +3751,7 @@ is_a: CHMO:0000339 ! Auger electron spectroscopy
 [Term]
 id: CHMO:0000354
 name: continuous X-ray-induced Auger electron spectroscopy
-def: "Spectroscopy where the bombardment of a sample with a continuous X-ray source (X-rays generated when electrons---or other high energy charged particles such as protons or alpha-particles---lose energy whilst passing through the Coulomb field of a nucleus) results in the ionisation of core electrons and the emission of so-called 'Auger' electrons, which are detected." [ISBN:0824706005]
+def: "Spectroscopy where the bombardment of a sample with a continuous X-ray source (X-rays generated when electrons, or other high energy charged particles such as protons or alpha-particles, lose energy whilst passing through the Coulomb field of a nucleus) results in the ionisation of core electrons and the emission of so-called 'Auger' electrons, which are detected." [ISBN:0824706005]
 synonym: "bremsstrahlung Auger electron spectrometry" EXACT []
 synonym: "bremsstrahlung Auger electron spectroscopy" EXACT []
 synonym: "bremsstrahlung Auger spectrometry" EXACT []
@@ -4374,7 +4398,7 @@ is_a: CHMO:0000331 ! electron spectroscopy
 [Term]
 id: CHMO:0000413
 name: spin-polarised secondary electron spectroscopy
-def: "Spectroscopy where primary electrons interact with a sample and the electrons emitted as a result of the interaction (secondary electrons) are detected. A manget is used to align all electron spins parallel to the surface of the sample." [DOI:10.1016/0039-6028(83)90701-X]
+def: "Spectroscopy where primary electrons interact with a sample and the electrons emitted as a result of the interaction (secondary electrons) are detected. A magnet is used to align all electron spins parallel to the surface of the sample." [DOI:10.1016/0039-6028(83)90701-X]
 synonym: "polarised secondary electron spectrometry" EXACT []
 synonym: "polarized secondary electron spectrometry" EXACT []
 synonym: "polarized secondary electron spectroscopy" EXACT []
@@ -5110,7 +5134,7 @@ is_a: CHMO:0000480 ! electron ionisation mass spectrometry
 id: CHMO:0000482
 name: electrospray ionisation mass spectrometry
 alt_id: FIX:0000079
-def: "Spectrometry where the sample is ionised by forcing a solution (usually in an organic solvent) of the sample through a small heated capillary (at a flow rate of 1-10 L min-1) into an electric field to produce a very fine mist of charged droplets. The ions are then characterised by their mass-to-charge ratio and relative abundance." [ISBN:9780470516348]
+def: "Spectrometry where the sample is ionised by electrospray ionization. The ions are then characterised by their mass-to-charge ratio and relative abundance." [ISBN:9780470516348]
 synonym: "electrospray ionisation mass spectroscopy" EXACT []
 synonym: "electrospray ionization mass spectrometry" EXACT []
 synonym: "electrospray ionization mass spectroscopy" EXACT []
@@ -5123,11 +5147,14 @@ synonym: "ESIMS" EXACT []
 synonym: "ESMS" EXACT []
 synonym: "MS (EI)" EXACT []
 is_a: CHMO:0000470 ! mass spectrometry
+intersection_of: CHMO:0000470 ! mass spectrometry
+intersection_of: BFO:0000118 MS:1000073 ! has proper occurrent part electrospray ionization
+relationship: BFO:0000118 MS:1000073 ! has proper occurrent part electrospray ionization
 
 [Term]
 id: CHMO:0000483
 name: cold-spray ionisation mass spectrometry
-def: "Mass spectrometry where the sample is ionised by forcing a solution (usually in an organic solvent) of the sample through a small cold (10--80 C) capillary (at a flow rate of 1--10 L min1) into an electric field to produce a very fine mist of charged droplets." [rsc:hjb]
+def: "Electrospray ionisation mass spectrometry where the sample is ionised by forcing a solution (usually in an organic solvent) of the sample through a small cold (10-80 C) capillary (at a flow rate of 1-10 L min1)." [rsc:hjb]
 synonym: "cold-spray ionisation mass spectroscopy" EXACT []
 synonym: "cold-spray ionization mass spectrometry" EXACT []
 synonym: "cold-spray ionization mass spectroscopy" EXACT []
@@ -5643,6 +5670,7 @@ synonym: "matrix-assisted laser desorption ionization (MALDI) MS" EXACT []
 synonym: "matrix-assisted laser desorption-ionisation mass spectroscopy" EXACT []
 synonym: "matrix-assisted laser desorption-ionization mass spectroscopy" EXACT []
 is_a: CHMO:0000515 ! laser desorption-ionisation mass spectrometry
+relationship: BFO:0000057 CHMO:0002202 ! has participant matrix assisted laser desorption-ionisation mass spectrometer
 
 [Term]
 id: CHMO:0000520
@@ -5680,7 +5708,7 @@ is_a: CHMO:0000519 ! matrix-assisted laser desorption-ionisation mass spectromet
 
 [Term]
 id: CHMO:0000522
-name: surface-enhanced laser desorption--ionisation mass spectrometry
+name: surface-enhanced laser desorption-ionisation mass spectrometry
 def: "Mass spectrometry where the sample (usually a large organic molecule or biomolecule) is vaporised and ionised using a high-energy pulsed laser. The sample is mixed with a matrix compound (such as crystallised dihydrobenzoic acid) and deposited on a surface, with some chemical functionality, to protect it from direct laser illumination and to separate the sample molecules." [rsc:hjb]
 synonym: "SALDI MS" EXACT []
 synonym: "SELDI MS" EXACT []
@@ -5689,9 +5717,9 @@ synonym: "surface-assisted laser desorption-ionisation mass spectrometry" EXACT 
 synonym: "surface-assisted laser desorption-ionisation mass spectroscopy" EXACT []
 synonym: "surface-assisted laser desorption-ionization mass spectrometry" EXACT []
 synonym: "surface-assisted laser desorption-ionization mass spectroscopy" EXACT []
-synonym: "surface-enhanced laser desorption--ionization mass spectrometry" EXACT []
 synonym: "surface-enhanced laser desorption-ionisation mass spectrometry" EXACT []
 synonym: "surface-enhanced laser desorption-ionisation mass spectroscopy" EXACT []
+synonym: "surface-enhanced laser desorption-ionization mass spectrometry" EXACT []
 synonym: "surface-enhanced laser desorption-ionization mass spectroscopy" EXACT []
 is_a: CHMO:0000519 ! matrix-assisted laser desorption-ionisation mass spectrometry
 
@@ -5837,7 +5865,7 @@ is_a: CHMO:0000470 ! mass spectrometry
 [Term]
 id: CHMO:0000534
 name: plasma mass spectrometry
-def: "Mass spectrometry where the sample is ionised in a plasma (a partially ionised gas---such as Ar---containing free electrons)." [rsc:hjb]
+def: "Mass spectrometry where the sample is ionised in a plasma (a partially ionised gas, such as Ar, containing free electrons)." [rsc:hjb]
 synonym: "plasma source mass spectroscopy" EXACT []
 synonym: "PS-MS" EXACT []
 is_a: CHMO:0000470 ! mass spectrometry
@@ -5845,7 +5873,7 @@ is_a: CHMO:0000470 ! mass spectrometry
 [Term]
 id: CHMO:0000535
 name: capacitively coupled plasma mass spectrometry
-def: "Mass spectrometry where the sample is ionised in a plasma (a partially ionised gas---such as Ar---containing free electrons) which has been generated by a potential difference between two electrodes, one of which is grounded and one of which is live." [rsc:hjb]
+def: "Plasma mass spectrometry where the plasma has been generated by a potential difference between two electrodes, one of which is grounded and one of which is live." [rsc:hjb]
 synonym: "capacitively coupled plasma mass spectroscopy" EXACT []
 synonym: "CCP MS" EXACT []
 is_a: CHMO:0000534 ! plasma mass spectrometry
@@ -5853,7 +5881,7 @@ is_a: CHMO:0000534 ! plasma mass spectrometry
 [Term]
 id: CHMO:0000536
 name: electron cyclotron resonance mass spectrometry
-def: "Mass spectrometry where the sample is ionised in a plasma (a partially ionised gas---such as Ar---containing free electrons) which has been generated by superimposing a static magnetic field and a high-frequency electromagnetic field at the electron cyclotron resonance frequency (the frequency at which an electron precesses in a magnetic field)." [rsc:hjb]
+def: "Plasma mass spectrometry where the plasma has been generated by superimposing a static magnetic field and a high-frequency electromagnetic field at the electron cyclotron resonance frequency (the frequency at which an electron precesses in a magnetic field)." [rsc:hjb]
 synonym: "ECR-MS" EXACT []
 synonym: "ECR/MS" EXACT []
 synonym: "electron cyclotron resonance mass spectroscopy" EXACT []
@@ -5862,7 +5890,7 @@ is_a: CHMO:0000534 ! plasma mass spectrometry
 [Term]
 id: CHMO:0000537
 name: glow-discharge mass spectrometry
-def: "Spectrometry where the sample is ionised in a plasma (a partially ionised gas---such as Ar---containing free electrons) which has been generated by passing an electrical discharge between two electrodes under reduced pressure. The ions are then characterised by their mass-to-charge ratio and relative abundance." [rsc:hjb]
+def: "Plasma mass spectrometry where the plasma has been generated by passing an electrical discharge between two electrodes under reduced pressure. The ions are then characterised by their mass-to-charge ratio and relative abundance." [rsc:hjb]
 synonym: "GD-MS" EXACT []
 synonym: "GD/MS" EXACT []
 synonym: "glow discharge ionisation mass spectrometry" EXACT []
@@ -5878,7 +5906,8 @@ relationship: BFO:0000057 CHMO:0001130 ! has participant glow discharge ion sour
 [Term]
 id: CHMO:0000538
 name: inductively coupled plasma mass spectrometry
-def: "Mass spectrometry where the sample is ionised in a plasma (a partially ionised gas---such as Ar---containing free electrons) which has been generated by electromagnetic induction." [FIX:0000863, rsc:hjb]
+alt_id: FIX:0000863
+def: "Plasma mass spectrometry where the plasma has been generated by electromagnetic induction." [rsc:hjb]
 synonym: "ICP-MS" EXACT []
 synonym: "ICPMS" EXACT []
 synonym: "inductively coupled plasma-mass spectrometry" EXACT []
@@ -5888,7 +5917,8 @@ is_a: CHMO:0000534 ! plasma mass spectrometry
 [Term]
 id: CHMO:0000539
 name: electrothermal vaporisation inductively coupled plasma mass spectrometry
-def: "Mass spectrometry where the sample is vaporised by depositing it on a probe which is rapidly heated (to >1000 deg. C) by passing a current through it. The vaporised sample is ionised in a plasma (a partially ionised gas---such as Ar---containing free electrons) which has been generated by electromagnetic induction." [FIX:0000864, ISBN:978-0-470-51634-8]
+alt_id: FIX:0000864
+def: "Plasma mass spectrometry where the sample is vaporised by depositing it on a probe which is rapidly heated (to >1000 deg C) by passing a current through it." [ISBN:978-0-470-51634-8]
 synonym: "electrothermal vaporisation inductively coupled plasma mass spectroscopy" EXACT []
 synonym: "electrothermal vaporization inductively coupled plasma mass spectrometry" EXACT []
 synonym: "electrothermal vaporization inductively coupled plasma mass spectroscopy" EXACT []
@@ -6740,9 +6770,9 @@ is_a: CHMO:0000613 ! pulsed nuclear magnetic resonance spectroscopy
 
 [Term]
 id: CHMO:0000615
-name: magic angle spinning
+name: magic angle spinning nuclear magnetic resonance spectroscopy
 alt_id: FIX:0000471
-def: "A type of NMR spectroscopy using a solid sample. Anisotropic interactions between nuclei, which are usually averaged by Brownian motion in liquid samples, cause significant line broadening in solid state NMR, but can be averaged to zero by spinning the sample very rapidly at the magic angle (54.74 deg. with respect to the direction of the magnetic field)." [ISBN:0-19-280031-0]
+def: "NMR spectroscopy using a solid sample and involving magic angle spinning." [RSC:cb]
 synonym: "magic angle spinning nuclear magnetic resonance spectrometry" EXACT []
 synonym: "magic-angle spinning" EXACT []
 synonym: "MAS NMR" EXACT []
@@ -6752,7 +6782,9 @@ synonym: "solid-state magic-angle-spinning NMR" EXACT []
 synonym: "SS-MAS NMR" EXACT []
 synonym: "ss-MAS-NMR" EXACT []
 is_a: CHMO:0000614 ! solid-state nuclear magnetic resonance spectroscopy
-relationship: OBI:0000417 CHMO:0002884 ! achieves_planned_objective anisotropic nucleus-nucleus interaction line broadening minimization objective
+intersection_of: CHMO:0000614 ! solid-state nuclear magnetic resonance spectroscopy
+intersection_of: BFO:0000118 CHMO:0002911 ! has proper occurrent part magic angle spinning
+relationship: BFO:0000118 CHMO:0002911 ! has proper occurrent part magic angle spinning
 
 [Term]
 id: CHMO:0000616
@@ -6760,7 +6792,7 @@ name: combined rotation and multiple pulse spectroscopy
 def: "A type of NMR spectroscopy using a solid sample. Anisotropic interactions between nuclei, which are usually averaged by Brownian motion in liquid samples, cause significant line broadening in solid state NMR, but can be averaged to zero by spinning the sample very rapidly at the magic angle (54.74 deg. with respect to the direction of the magnetic field).The combination of multiple-pulse NMR experiments and magic angle spinning. Each experiment consists of a sequence of radio frequency pulses with delay periods in between them." [ISBN:0824783328]
 synonym: "combined rotation and multiple pulse spectrometry" EXACT []
 synonym: "CRAMPS" EXACT []
-is_a: CHMO:0000615 ! magic angle spinning
+is_a: CHMO:0000615 ! magic angle spinning nuclear magnetic resonance spectroscopy
 
 [Term]
 id: CHMO:0000617
@@ -6780,7 +6812,7 @@ synonym: "cross polarization magic angle spinning nuclear magnetic resonance spe
 synonym: "cross-polarisation magic angle spinning nuclear magnetic resonance spectroscopy" EXACT []
 synonym: "cross-polarization magic angle spinning" EXACT []
 synonym: "cross-polarization magic angle spinning nuclear magnetic resonance spectroscopy" EXACT []
-is_a: CHMO:0000615 ! magic angle spinning
+is_a: CHMO:0000615 ! magic angle spinning nuclear magnetic resonance spectroscopy
 
 [Term]
 id: CHMO:0000618
@@ -6793,7 +6825,7 @@ synonym: "HR-MAS NMR spectroscopy" EXACT []
 synonym: "HR/MAS" EXACT []
 synonym: "HRMAS" EXACT []
 synonym: "HRMAS NMR spectroscopy" EXACT []
-is_a: CHMO:0000615 ! magic angle spinning
+is_a: CHMO:0000615 ! magic angle spinning nuclear magnetic resonance spectroscopy
 
 [Term]
 id: CHMO:0000619
@@ -8655,8 +8687,8 @@ id: CHMO:0000793
 name: assay output
 def: "An information content entity that is output by an assay." [rsc:cb, rsc:hjb]
 synonym: "experimental data" EXACT []
-is_a: IAO:0000030 ! information content entity
-intersection_of: IAO:0000030 ! information content entity
+is_a: IAO:0000027 ! data item
+intersection_of: IAO:0000027 ! data item
 intersection_of: OBI:0000312 OBI:0000070 ! is_specified_output_of assay
 relationship: OBI:0000312 OBI:0000070 ! is_specified_output_of assay
 
@@ -8957,7 +8989,7 @@ synonym: "13C MAS NMR" EXACT []
 synonym: "13C MAS-NMR" EXACT []
 synonym: "13C-MAS-NMR" EXACT []
 is_a: CHMO:0000595 ! 13C nuclear magnetic resonance spectroscopy
-is_a: CHMO:0000615 ! magic angle spinning
+is_a: CHMO:0000615 ! magic angle spinning nuclear magnetic resonance spectroscopy
 is_a: CHMO:0001080 ! 13C solid-state nuclear magnetic resonance spectroscopy
 
 [Term]
@@ -9015,9 +9047,8 @@ is_a: CHMO:0000800 ! spectrum
 
 [Term]
 id: CHMO:0000834
-name: excitation--emission spectrum
+name: excitation-emission spectrum
 def: "A three-dimensional spectrum generated by scanning the emission spectrum at incremental steps of excitation wavelength." [AU:E02249]
-synonym: "excitation--emission spectra" EXACT []
 synonym: "excitation-emission spectra" EXACT []
 synonym: "excitation-emission spectrum" EXACT []
 is_a: CHMO:0000800 ! spectrum
@@ -9256,7 +9287,7 @@ def: "Spectroscopy where the energy states of 31P nuclei placed in a static magn
 synonym: "31P MAS NMR" EXACT []
 synonym: "31P MAS-NMR" EXACT []
 synonym: "31P-MAS-NMR" EXACT []
-is_a: CHMO:0000615 ! magic angle spinning
+is_a: CHMO:0000615 ! magic angle spinning nuclear magnetic resonance spectroscopy
 is_a: CHMO:0000739 ! 31P nuclear magnetic resonance spectroscopy
 
 [Term]
@@ -9407,7 +9438,7 @@ synonym: "surface enhanced laser desorption ionisation time-of-flight mass spect
 synonym: "surface-assisted laser desorption-ionisation time-of-flight mass spectrometry" EXACT []
 synonym: "surface-enhanced laser desorption-ionisation time-of-flight mass spectrometry" EXACT []
 synonym: "surface-enhanced laser desorption-ionisation time-of-flight mass spectroscopy" EXACT []
-is_a: CHMO:0000522 ! surface-enhanced laser desorption--ionisation mass spectrometry
+is_a: CHMO:0000522 ! surface-enhanced laser desorption-ionisation mass spectrometry
 
 [Term]
 id: CHMO:0000870
@@ -9683,7 +9714,7 @@ def: "A magic angle spinning NMR experiment in which the evolution of dipolar co
 synonym: "REDOR" EXACT []
 synonym: "rotational echo double resonance spectroscopy" EXACT []
 synonym: "rotational echo double-resonance (REDOR) spectroscopy" EXACT []
-is_a: CHMO:0000615 ! magic angle spinning
+is_a: CHMO:0000615 ! magic angle spinning nuclear magnetic resonance spectroscopy
 
 [Term]
 id: CHMO:0000897
@@ -9794,7 +9825,7 @@ synonym: "dipolar recoupling distance experiment" EXACT []
 synonym: "dipolar recoupling experiment" EXACT []
 synonym: "PISEMA" EXACT []
 synonym: "polarization inversion and spin exchange at the magic angle" EXACT []
-is_a: CHMO:0000615 ! magic angle spinning
+is_a: CHMO:0000615 ! magic angle spinning nuclear magnetic resonance spectroscopy
 
 [Term]
 id: CHMO:0000910
@@ -10112,7 +10143,7 @@ id: CHMO:0000945
 name: dynamic reaction cell
 def: "A piece of apparatus that contains a reagent gas that reacts preferentially with certain species in order to allow only the analyte ions into the mass-to-charge analyser and the detector." [http://rock.esc.cam.ac.uk/icpms/drc.html]
 synonym: "DRC" EXACT []
-is_a: CHMO:0000998 ! piece of apparatus
+is_a: OBI:0000968 ! device
 relationship: BFO:0000175 CHMO:0000955 ! proper part of continuant at some time inductively coupled plasma mass spectrometer
 
 [Term]
@@ -10122,7 +10153,7 @@ def: "A piece of apparatus, consisting of a laser, an optical microscope, a cond
 synonym: "optical trap" EXACT []
 synonym: "optical tweezer" EXACT []
 synonym: "single-beam gradient force optical trap" EXACT []
-is_a: CHMO:0000998 ! piece of apparatus
+is_a: OBI:0000968 ! device
 
 [Term]
 id: CHMO:0000947
@@ -10138,7 +10169,7 @@ def: "A piece of apparatus, based on a semiconductor chip, which converts the in
 synonym: "CCD" EXACT []
 synonym: "CCD array" EXACT []
 synonym: "charge coupled device" EXACT []
-is_a: CHMO:0000998 ! piece of apparatus
+is_a: OBI:0000968 ! device
 relationship: BFO:0000175 CHMO:0002181 ! proper part of continuant at some time charge-coupled-device camera
 
 [Term]
@@ -10164,7 +10195,7 @@ def: "A sharp spike which is mounted on the end of a cantilever and used to scan
 synonym: "AFM tip" EXACT []
 synonym: "atomic force microscope (AFM) tip" EXACT []
 synonym: "atomic force microscope tip" EXACT []
-is_a: CHMO:0000998 ! piece of apparatus
+is_a: OBI:0000968 ! device
 
 [Term]
 id: CHMO:0000952
@@ -10173,13 +10204,13 @@ def: "A cantilever used in atomic force microscopy to transmit force from the ti
 synonym: "AFM cantilever" EXACT []
 synonym: "AFM lever" EXACT []
 synonym: "atomic force microscope cantilever" EXACT []
-is_a: CHMO:0000998 ! piece of apparatus
+is_a: OBI:0000968 ! device
 
 [Term]
 id: CHMO:0000953
 name: microscope
 def: "A piece of apparatus which is used to generate an image of the surface of a specimen, whether by focusing reflected light onto where it can be collected or by scanning a given area of the surface." [rsc:cb]
-is_a: CHMO:0000998 ! piece of apparatus
+is_a: OBI:0000968 ! device
 
 [Term]
 id: CHMO:0000954
@@ -10241,7 +10272,7 @@ is_a: CHMO:0000960 ! ion source
 id: CHMO:0000960
 name: ion source
 def: "A piece of apparatus that takes an analyte and generates ions which are passed to the rest of a mass spectrometer for analysis." [ISBN:9780470516348]
-is_a: CHMO:0000998 ! piece of apparatus
+is_a: OBI:0000968 ! device
 
 [Term]
 id: CHMO:0000961
@@ -10278,7 +10309,7 @@ relationship: BFO:0000174 CHMO:0000966 ! has proper continuant part at some time
 id: CHMO:0000964
 name: ion cyclotron resonance cell
 def: "A piece of apparatus consisting of paired trapping plates, receiver plates and transmitter plates which provides a magnetic field that coherently excites ions according to their cyclotron frequencies which depend on their mass-to-charge ratio." [ISBN:9780470516348]
-is_a: CHMO:0000998 ! piece of apparatus
+is_a: OBI:0000968 ! device
 
 [Term]
 id: CHMO:0000965
@@ -10396,13 +10427,13 @@ relationship: BFO:0000174 CHMO:0000980 ! has proper continuant part at some time
 id: CHMO:0000978
 name: mass-to-charge analyser
 def: "A piece of apparatus which separates ions according to their mass-to-charge ratio." [rsc:cb]
-is_a: CHMO:0000998 ! piece of apparatus
+is_a: OBI:0000968 ! device
 
 [Term]
 id: CHMO:0000979
 name: reflectron
 def: "A piece of apparatus which produces an electric field that accelerates ions in a mass-to-charge analyser in a direction opposite to their direction of travel, acting as an ion mirror to separate ions of the same mass-to-charge ratio that have different kinetic energy." [ISBN:9780470516348]
-is_a: CHMO:0000998 ! piece of apparatus
+is_a: OBI:0000968 ! device
 
 [Term]
 id: CHMO:0000980
@@ -10431,7 +10462,7 @@ is_a: CHMO:0001234 ! spectrometer
 id: CHMO:0000983
 name: separation capillary
 def: "A piece of apparatus that has the form of a tube with an internal diameter of 20--100 micrometres and hosts the separation medium in capillary electrophoresis." [rsc:cb]
-is_a: CHMO:0000998 ! piece of apparatus
+is_a: OBI:0000968 ! device
 
 [Term]
 id: CHMO:0000984
@@ -10455,7 +10486,7 @@ is_a: CHMO:0000994 ! chromatographic phase
 id: CHMO:0000987
 name: capillary column
 def: "A piece of apparatus that has the form of a tube with a diameter of less than a millimetre and hosts the stationary bed in chromatography." [rsc:cb]
-is_a: CHMO:0000998 ! piece of apparatus
+is_a: OBI:0000968 ! device
 
 [Term]
 id: CHMO:0000988
@@ -10474,7 +10505,7 @@ is_a: CHMO:0000990 ! open chromatographic bed
 id: CHMO:0000990
 name: open chromatographic bed
 def: "A piece of apparatus that is planar and is or hosts the stationary bed in chromatography." [rsc:cb]
-is_a: CHMO:0000998 ! piece of apparatus
+is_a: OBI:0000968 ! device
 
 [Term]
 id: CHMO:0000991
@@ -10521,13 +10552,7 @@ is_a: CHMO:0000995 ! mobile phase
 id: CHMO:0000997
 name: chromatography column
 def: "A piece of apparatus that has the form of a tube with a diameter between 5 to 50 mm and hosts the stationary bed in chromatography." [rsc:cb]
-is_a: CHMO:0000998 ! piece of apparatus
-
-[Term]
-id: CHMO:0000998
-name: piece of apparatus
-def: "An object that experimenters use in successive experiments of the same kind." [rsc:cb]
-is_a: CHMO:0000993 ! portion of material
+is_a: OBI:0000968 ! device
 
 [Term]
 id: CHMO:0000999
@@ -11006,13 +11031,13 @@ relationship: BFO:0000174 CHMO:0001053 ! has proper continuant part at some time
 id: CHMO:0001053
 name: magnetic sector
 def: "A piece of apparatus consisting of a magnet which is used to separate an ion beam into discrete ion beams according to the mass-to-charge ratio of the ions." [ISBN:9780470516348]
-is_a: CHMO:0000998 ! piece of apparatus
+is_a: OBI:0000968 ! device
 
 [Term]
 id: CHMO:0001054
 name: electric sector
 def: "A piece of apparatus which applies an electric field in order to select ions that have the same kinetic energy from an ion beam." [ISBN:9780470516348]
-is_a: CHMO:0000998 ! piece of apparatus
+is_a: OBI:0000968 ! device
 
 [Term]
 id: CHMO:0001055
@@ -11059,7 +11084,7 @@ is_a: CHMO:0002244 ! detector
 id: CHMO:0001060
 name: electron multiplier
 def: "A piece of apparatus that on contact with a charged particle of sufficient energy emits a greater number electrons." [rsc:cb]
-is_a: CHMO:0000998 ! piece of apparatus
+is_a: OBI:0000968 ! device
 
 [Term]
 id: CHMO:0001061
@@ -11098,11 +11123,12 @@ name: atomic force microscopy probe
 def: "A sharp spike mounted on the end of a cantilever which is used to scan the surface of a specimen in atomic force microscopy." [rsc:hjb]
 synonym: "AFM probe" EXACT []
 synonym: "atomic force microscope probe" EXACT []
-is_a: CHMO:0000998 ! piece of apparatus
+is_a: OBI:0000968 ! device
 
 [Term]
 id: CHMO:0001066
 name: incident photon conversion efficiency spectrum
+alt_id: CHMO:0002621
 def: "A plot of incident photon-to-current conversion efficiency (IPCE) vs. wavelength obtained from a solar or photovoltaic cell." [rsc:hjb]
 synonym: "incident photon conversion efficiency spectra" EXACT []
 synonym: "incident photon to collected electron (IPCE) spectra" EXACT []
@@ -11113,7 +11139,7 @@ synonym: "incident photon-to-electron conversion efficiency spectrum" EXACT []
 synonym: "incident-photon-to-current conversion efficiency (IPCE) spectrum" EXACT []
 synonym: "incident-photon-to-current conversion efficiency spectrum" EXACT []
 synonym: "IPCE spectrum" EXACT []
-is_a: CHMO:0000800 ! spectrum
+is_a: CHMO:0000831 ! action spectrum
 
 [Term]
 id: CHMO:0001067
@@ -11133,7 +11159,7 @@ synonym: "PDLF with R-type recoupling" EXACT []
 synonym: "proton-deteced separated local field spectroscopy with R-type recoupling" EXACT []
 synonym: "R-PDLF" EXACT []
 synonym: "R-type recoupling proton detected local field spectroscopy" EXACT []
-is_a: CHMO:0000615 ! magic angle spinning
+is_a: CHMO:0000615 ! magic angle spinning nuclear magnetic resonance spectroscopy
 is_a: CHMO:0001067 ! proton detected separated local field spectroscopy
 
 [Term]
@@ -11221,7 +11247,7 @@ id: CHMO:0001077
 name: quartz crystal microbalance
 def: "A piece of apparatus used to measure the mass per unit area (1 \\mug per cm2) by measuring the change in frequency of a quartz crystal resonator (a quartz crystal sandwiched between a pair of electrodes) as a function of mass change." [rsc:hjb]
 synonym: "QCM" EXACT []
-is_a: CHMO:0000998 ! piece of apparatus
+is_a: OBI:0000968 ! device
 
 [Term]
 id: CHMO:0001078
@@ -11388,13 +11414,13 @@ is_a: CHMO:0001095 ! fluorescence microscope
 id: CHMO:0001097
 name: thermocouple
 def: "A piece of apparatus that generates electrical current when it experiences a thermal gradient." [rsc:cb]
-is_a: CHMO:0000998 ! piece of apparatus
+is_a: OBI:0000968 ! device
 
 [Term]
 id: CHMO:0001098
 name: Wollaston wire
 def: "A composite wire consisting of a fine platinum core with a silver coating." [rsc:cb]
-is_a: CHMO:0000998 ! piece of apparatus
+is_a: OBI:0000968 ! device
 
 [Term]
 id: CHMO:0001099
@@ -11773,7 +11799,7 @@ synonym: "207Pb magic angle spinning (MAS) NMR" EXACT []
 synonym: "207Pb MAS NMR" EXACT []
 synonym: "207Pb MAS-NMR" EXACT []
 synonym: "207Pb-MAS-NMR" EXACT []
-is_a: CHMO:0000615 ! magic angle spinning
+is_a: CHMO:0000615 ! magic angle spinning nuclear magnetic resonance spectroscopy
 is_a: CHMO:0001141 ! 207Pb nuclear magnetic resonance spectroscopy
 created_by: burchh
 creation_date: 2009-03-11T04:52:53Z
@@ -11787,7 +11813,7 @@ synonym: "1H MAS NMR" EXACT []
 synonym: "1H MAS-NMR" EXACT []
 synonym: "1H-MAS-NMR" EXACT []
 synonym: "proton MAS NMR" EXACT []
-is_a: CHMO:0000615 ! magic angle spinning
+is_a: CHMO:0000615 ! magic angle spinning nuclear magnetic resonance spectroscopy
 created_by: burchh
 creation_date: 2009-03-11T04:56:17Z
 
@@ -11909,7 +11935,7 @@ synonym: "29Si magic angle spinning (MAS) NMR" EXACT []
 synonym: "29Si MAS NMR" EXACT []
 synonym: "29Si MAS-NMR" EXACT []
 synonym: "29Si-MAS-NMR" EXACT []
-is_a: CHMO:0000615 ! magic angle spinning
+is_a: CHMO:0000615 ! magic angle spinning nuclear magnetic resonance spectroscopy
 created_by: burchh
 creation_date: 2009-03-12T11:13:23Z
 
@@ -12058,7 +12084,7 @@ creation_date: 2009-03-13T01:24:23Z
 
 [Term]
 id: CHMO:0001167
-name: sorption--desorption measurement
+name: sorption-desorption measurement
 def: "A method for determining surface area by measuring the amount of an inert gaseous or liquid substance (the 'sorbent', usually H2 or N2) which adsorbs onto the surface of interest (the 'sorbate'), and the subsequent amount that desorbs at a constant temperature. Regression analysis is then applied to the data, resulting in an isotherm." [rsc:hjb]
 synonym: "adsorption-desorption" EXACT []
 synonym: "adsorption/desorption " EXACT []
@@ -12071,11 +12097,11 @@ creation_date: 2009-03-13T01:27:03Z
 [Term]
 id: CHMO:0001168
 name: sorption measurement
-def: "A method for determining surface area by measuring the amount of an inert gasesous or liquid substance (the 'sorbent', usually H2 or N2) which adsorbs onto the surface of interest (the 'sorbate'). Regression analysis is then applied to the data, resulting in an isotherm." [rsc:hjb]
+def: "A method for determining surface area by measuring the amount of an inert gaseous or liquid substance (the 'sorbent', usually H2 or N2) which adsorbs onto the surface of interest (the 'sorbate'). Regression analysis is then applied to the data, resulting in an isotherm." [rsc:hjb]
 synonym: "adsorption measurements" EXACT []
 synonym: "adsorptions" EXACT []
 synonym: "sorptions" EXACT []
-is_a: CHMO:0001167 ! sorption--desorption measurement
+is_a: CHMO:0001167 ! sorption-desorption measurement
 created_by: burchh
 creation_date: 2009-03-13T03:27:07Z
 
@@ -12176,7 +12202,7 @@ synonym: "27Al magic angle spinning (MAS) NMR" EXACT []
 synonym: "27Al MAS NMR" EXACT []
 synonym: "27Al MAS-NMR" EXACT []
 synonym: "27Al-MAS-NMR" EXACT []
-is_a: CHMO:0000615 ! magic angle spinning
+is_a: CHMO:0000615 ! magic angle spinning nuclear magnetic resonance spectroscopy
 created_by: burchh
 creation_date: 2009-03-19T09:56:51Z
 
@@ -12216,7 +12242,7 @@ creation_date: 2009-03-19T10:17:08Z
 [Term]
 id: CHMO:0001180
 name: only para-hydrogen spectroscopy correlation spectroscopy
-def: "A type of homonuclear NMR spectroscopy where a second frequency dimension is employed to disperse the signals and reveal correlations between nuclei which are J-coupled (usually \\leq 3 bonds apart). Thermal signals in the resulting spectra are then removed, whilst keeping the signals from para-hydrogen-derived protons intact." [doi:10.1039/b616307f, rsc:pr]
+def: "A type of homonuclear NMR spectroscopy where a second frequency dimension is employed to disperse the signals and reveal correlations between nuclei which are J-coupled (usually <= 3 bonds apart). Thermal signals in the resulting spectra are then removed, whilst keeping the signals from para-hydrogen-derived protons intact." [doi:10.1039/b616307f, rsc:pr]
 synonym: "OPSY-COSY" EXACT []
 is_a: CHMO:0001178 ! only para-hydrogen spectroscopy
 created_by: burchh
@@ -12224,8 +12250,8 @@ creation_date: 2009-03-19T10:21:58Z
 
 [Term]
 id: CHMO:0001181
-name: 1H--1H only para-hydrogen spectroscopy correlation spectroscopy
-def: "A type of homonuclear NMR spectroscopy where a second frequency dimension is employed to disperse the signals and reveal correlations between nuclei which are J-coupled (usually \\leq 3 bonds apart). Thermal signals in the resulting 1H spectra are then removed, whilst keeping the signals from para-hydrogen-derived protons intact." [doi:10.1039/b616307f, rsc:pr]
+name: 1H-1H only para-hydrogen spectroscopy correlation spectroscopy
+def: "A type of homonuclear NMR spectroscopy where a second frequency dimension is employed to disperse the signals and reveal correlations between nuclei which are J-coupled (usually <= 3 bonds apart). Thermal signals in the resulting 1H spectra are then removed, whilst keeping the signals from para-hydrogen-derived protons intact." [doi:10.1039/b616307f, rsc:pr]
 synonym: "1H-1H OPSY-COSY" EXACT []
 is_a: CHMO:0001180 ! only para-hydrogen spectroscopy correlation spectroscopy
 created_by: burchh
@@ -12243,7 +12269,7 @@ creation_date: 2009-03-19T11:35:53Z
 
 [Term]
 id: CHMO:0001183
-name: matrix assisted laser desorption--ionisation time-of-flight mass spectrum
+name: matrix assisted laser desorption-ionisation time-of-flight mass spectrum
 def: "A plot of relative abundance (%) vs. mass-to-charge ratio obtained from a mass spectrometry experiment where the mass-to-charge ratio is determined from the time they take to reach a detector. The sample (usually a large organic molecule or biomolecule) is vaporised and ionised using a high-energy pulsed laser whilst being held in a matrix (such as dihydrobenzoic acid) to protect it from direct laser illumination and to separate the sample molecules." [rsc:hjb]
 synonym: "MALDI-TOF mass spectra" EXACT []
 synonym: "MALDI-TOF mass spectrum" EXACT []
@@ -12266,7 +12292,7 @@ creation_date: 2009-03-19T11:48:29Z
 [Term]
 id: CHMO:0001185
 name: electrospray ionisation gas-phase electrophoretic mobility molecular analysis
-def: "A separation method where singly-charged complexes move at different speeds according to their electrophoretic mobilities in air under the influence of an electric field. The sample is ionised by forcing a solution (usually in an organic solvent) of the sample through a small heated capillary (at a flow rate of 1--10 L min-1) into an electric field to produce a very fine mist of charged droplets." [rsc:hjb]
+def: "A separation method where singly-charged complexes move at different speeds according to their electrophoretic mobilities in air under the influence of an electric field. The sample is ionised by forcing a solution (usually in an organic solvent) of the sample through a small heated capillary (at a flow rate of 1-10 L min-1) into an electric field to produce a very fine mist of charged droplets." [rsc:hjb]
 synonym: "ESI-GEMMA" EXACT []
 is_a: CHMO:0001184 ! gas-phase electrophoretic mobility molecular analysis
 created_by: burchh
@@ -12295,7 +12321,7 @@ creation_date: 2009-03-19T11:59:01Z
 [Term]
 id: CHMO:0001188
 name: electrospray ionisation gas-phase electrophoretic mobility molecular analysis spectrum
-def: "A plot of electrophoretic mobility diameter vs. particle count generated by separating singly-charged complexes in air under the influence of an electric field. The complexes are charged by forcing a solution (usually in an organic solvent) of the sample through a small heated capillary (at a flow rate of 1--10 L min-1) into an electric field to produce a very fine mist of charged droplets." [DOI:10.1039/b822799c]
+def: "A plot of electrophoretic mobility diameter vs. particle count generated by separating singly-charged complexes in air under the influence of an electric field. The complexes are charged by forcing a solution (usually in an organic solvent) of the sample through a small heated capillary (at a flow rate of 1-10 L min-1) into an electric field to produce a very fine mist of charged droplets." [DOI:10.1039/b822799c]
 synonym: "ESI-GEMMA spectra" EXACT []
 synonym: "ESI-GEMMA spectrum" EXACT []
 is_a: CHMO:0001187 ! gas-phase electrophoretic mobility molecular analysis spectrum
@@ -12305,7 +12331,8 @@ creation_date: 2009-03-19T12:49:47Z
 [Term]
 id: CHMO:0001189
 name: 17O nuclear magnetic resonance spectroscopy
-def: "Spectroscopy where the energy states of 17O nuclei placed in a static magnetic field are interrogated by inducing transitions between the states via radio frequency irradiation. Each experiment consists of a sequence of radio frequency pulses with delay periods in between them." [CHEBI:33819, FIX:0000597, rsc:pr]
+alt_id: FIX:0000597
+def: "Nuclear magnetic resonance spectroscopy that probes oxygen-17 nuclei." [rsc:pr]
 synonym: "17O NMR" EXACT []
 synonym: "17O NMR spectrometry" EXACT []
 synonym: "17O NMR spectroscopy" EXACT []
@@ -12313,37 +12340,48 @@ synonym: "17O nuclear magnetic resonance spectrometry" EXACT []
 synonym: "17O-NMR" EXACT []
 synonym: "oxygen-17 magnetic resonance spectroscopy" EXACT []
 is_a: CHMO:0000613 ! pulsed nuclear magnetic resonance spectroscopy
+intersection_of: CHMO:0000613 ! pulsed nuclear magnetic resonance spectroscopy
+intersection_of: CHMO:0002922 CHEBI:33819 ! probes_atom oxygen-17 atom
+relationship: CHMO:0002922 CHEBI:33819 ! probes_atom oxygen-17 atom
 created_by: burchh
 creation_date: 2009-03-19T12:56:26Z
 
 [Term]
 id: CHMO:0001190
 name: 17O magic angle spinning nuclear magnetic resonance spectroscopy
-def: "Spectroscopy where the energy states of 17O nuclei placed in a static magnetic field are interrogated by inducing transitions between the states via radio frequency irradiation. Each experiment consists of a sequence of radio frequency pulses with delay periods between them. Anisotropic interactions between nuclei, which are usually averaged by Brownian motion in liquid samples, cause significant line broadening in solid-state NMR, but can be averaged to zero by spinning the sample very rapidly at the magic angle (54.74 deg. with respect to the direction of the magnetic field)." [rsc:pr]
+def: "Magic angle spinning nuclear magnetic resonance spectroscopy that probes oxygen-17 nuclei." [rsc:pr]
 synonym: "17O magic angle spinning (MAS) NMR" EXACT []
 synonym: "17O MAS NMR" EXACT []
 synonym: "17O MAS-NMR" EXACT []
 synonym: "17O-MAS-NMR" EXACT []
-is_a: CHMO:0000615 ! magic angle spinning
+is_a: CHMO:0000615 ! magic angle spinning nuclear magnetic resonance spectroscopy
+is_a: CHMO:0001189 ! 17O nuclear magnetic resonance spectroscopy
+intersection_of: CHMO:0000615 ! magic angle spinning nuclear magnetic resonance spectroscopy
+intersection_of: CHMO:0002922 CHEBI:33819 ! probes_atom oxygen-17 atom
+relationship: CHMO:0002922 CHEBI:33819 ! probes_atom oxygen-17 atom
 created_by: burchh
 creation_date: 2009-03-19T12:58:14Z
 
 [Term]
 id: CHMO:0001191
 name: 51V magic angle spinning nuclear magnetic resonance spectroscopy
-def: "Spectroscopy where the energy states of 51V nuclei placed in a static magnetic field are interrogated by inducing transitions between the states via radio frequency irradiation. Each experiment consists of a sequence of radio frequency pulses with delay periods between them. Anisotropic interactions between nuclei, which are usually averaged by Brownian motion in liquid samples, cause significant line broadening in solid-state NMR, but can be averaged to zero by spinning the sample very rapidly at the magic angle (54.74 deg. with respect to the direction of the magnetic field)." [rsc:pr]
+def: "Magic angle spinning nuclear magnetic resonance spectroscopy that probes vanadium-51 nuclei." [rsc:pr]
 synonym: "51V magic angle spinning (MAS) NMR" EXACT []
 synonym: "51V MAS NMR" EXACT []
 synonym: "51V MAS-NMR" EXACT []
 synonym: "51V-MAS-NMR" EXACT []
-is_a: CHMO:0000615 ! magic angle spinning
+is_a: CHMO:0000615 ! magic angle spinning nuclear magnetic resonance spectroscopy
+intersection_of: CHMO:0000615 ! magic angle spinning nuclear magnetic resonance spectroscopy
+intersection_of: CHMO:0002922 CHEBI:52456 ! probes_atom vanadium-51 atom
+relationship: CHMO:0002922 CHEBI:52456 ! probes_atom vanadium-51 atom
 created_by: burchh
 creation_date: 2009-03-19T12:59:57Z
 
 [Term]
 id: CHMO:0001192
 name: 7Li nuclear magnetic resonance spectroscopy
-def: "Spectroscopy where the energy states of 7Li nuclei placed in a static magnetic field are interrogated by inducing transitions between the states via radio frequency irradiation. Each experiment consists of a sequence of radio frequency pulses with delay periods in between them." [CHEBI:52458, FIX:0001081, rsc:pr]
+alt_id: FIX:0001081
+def: "Nuclear magnetic resonance spectroscopy that probes 7Li nuclei." [rsc:pr]
 synonym: "7Li NMR" EXACT []
 synonym: "7Li NMR spectrometry" EXACT []
 synonym: "7Li NMR spectroscopy" EXACT []
@@ -12352,6 +12390,9 @@ synonym: "7Li-NMR" EXACT []
 synonym: "lithium-7 NMR" EXACT []
 synonym: "lithium-7 nuclear magnetic resonance spectroscopy" EXACT []
 is_a: CHMO:0000613 ! pulsed nuclear magnetic resonance spectroscopy
+intersection_of: CHMO:0000613 ! pulsed nuclear magnetic resonance spectroscopy
+intersection_of: CHMO:0002922 CHEBI:52458 ! probes_atom lithium-7 atom
+relationship: CHMO:0002922 CHEBI:52458 ! probes_atom lithium-7 atom
 created_by: burchh
 creation_date: 2009-03-19T05:26:33Z
 
@@ -12363,7 +12404,7 @@ synonym: "14N magic angle spinning (MAS) NMR" EXACT []
 synonym: "14N MAS NMR" EXACT []
 synonym: "14N MAS-NMR" EXACT []
 synonym: "14N-MAS-NMR" EXACT []
-is_a: CHMO:0000615 ! magic angle spinning
+is_a: CHMO:0000615 ! magic angle spinning nuclear magnetic resonance spectroscopy
 created_by: burchh
 creation_date: 2009-03-19T05:28:56Z
 
@@ -12453,7 +12494,7 @@ synonym: "MQMAS" EXACT []
 synonym: "MQMAS NMR" EXACT []
 synonym: "multiple-quantum excitation in combination with magic-angle spinning" EXACT []
 synonym: "multiple-quantum MAS" EXACT []
-is_a: CHMO:0000615 ! magic angle spinning
+is_a: CHMO:0000615 ! magic angle spinning nuclear magnetic resonance spectroscopy
 created_by: burchh
 creation_date: 2009-03-23T01:19:47Z
 
@@ -12465,7 +12506,7 @@ synonym: "satellite-transition magic angle spinning" EXACT []
 synonym: "satellite-transition magic-angle spinning" EXACT []
 synonym: "satellite-transition MAS" EXACT []
 synonym: "STMAS" EXACT []
-is_a: CHMO:0000615 ! magic angle spinning
+is_a: CHMO:0000615 ! magic angle spinning nuclear magnetic resonance spectroscopy
 created_by: burchh
 creation_date: 2009-03-23T01:21:32Z
 
@@ -12499,7 +12540,7 @@ def: "An NMR experiment where the selective excitation of central transitions du
 synonym: "central-transition magic-angle spinning" EXACT []
 synonym: "CTMAS" EXACT []
 synonym: "CTMAS NMR" EXACT []
-is_a: CHMO:0000615 ! magic angle spinning
+is_a: CHMO:0000615 ! magic angle spinning nuclear magnetic resonance spectroscopy
 created_by: burchh
 creation_date: 2009-03-23T02:02:11Z
 
@@ -13552,7 +13593,7 @@ synonym: "23Na magic angle spinning (MAS) NMR" EXACT []
 synonym: "23Na MAS NMR" EXACT []
 synonym: "23Na MAS-NMR" EXACT []
 synonym: "23Na-MAS-NMR" EXACT []
-is_a: CHMO:0000615 ! magic angle spinning
+is_a: CHMO:0000615 ! magic angle spinning nuclear magnetic resonance spectroscopy
 is_a: CHMO:0001296 ! 23Na solid-state nuclear magnetic resonance spectroscopy
 created_by: burchh
 creation_date: 2009-05-14T12:38:04Z
@@ -14451,7 +14492,7 @@ is_a: CHMO:0001388 ! lithography
 [Term]
 id: CHMO:0001390
 name: microlithography
-alt_id: CHMO:001412
+alt_id: CHMO:0001412
 def: "Any synthesis technique involving the transfer of a microsized pattern to a material (a 'resist') by selective exposure to a radiation source (e.g. light or X-rays) or to a beam of charged particles. Upon irradiation, the material experiences a change in its physical properties which changes its response to a developer solution (making it either soluble or insoluble). The desired pattern is then obtained by removing any excess resist with the developer. " [rsc:hjb]
 is_a: CHMO:0001388 ! lithography
 
@@ -15904,7 +15945,6 @@ synonym: "solid phase microextraction" EXACT []
 synonym: "solid-phase microextraction" EXACT []
 synonym: "SPME" EXACT []
 is_a: CHMO:0001583 ! liquid-solid extraction
-is_a: CHMO:0002803 ! method specification datum
 
 [Term]
 id: CHMO:0001587
@@ -17987,7 +18027,7 @@ id: CHMO:0001810
 name: synchrotron
 def: "A large-scale particle accelerator in which a magnetic field is used to create the particle orbits. Synchrotrons produce X-ray, vacuum ultraviolet and broadband infrared radiation." [ISBN:0306474530]
 synonym: "synchrotrons" EXACT []
-is_a: CHMO:0000998 ! piece of apparatus
+is_a: OBI:0000968 ! device
 created_by: burchh
 creation_date: 2009-05-26T10:20:04Z
 
@@ -19195,7 +19235,7 @@ synonym: "FPA" EXACT []
 synonym: "staring array" EXACT []
 synonym: "staring plane array" EXACT []
 synonym: "staring-plane array" EXACT []
-is_a: CHMO:0000998 ! piece of apparatus
+is_a: OBI:0000968 ! device
 created_by: burchh
 creation_date: 2009-06-03T10:26:20Z
 
@@ -19836,7 +19876,7 @@ creation_date: 2009-06-11T02:15:58Z
 id: CHMO:0001957
 name: flow cytometer
 def: "A piece of apparatus, consisting of a flow cell, a laser and a detector, which detects the fluorescence and light scattering of individual particles (e.g. cells)." [rsc:hjb]
-is_a: CHMO:0000998 ! piece of apparatus
+is_a: OBI:0000968 ! device
 created_by: burchh
 creation_date: 2009-06-11T02:20:37Z
 
@@ -20284,17 +20324,18 @@ creation_date: 2009-06-18T02:22:15Z
 
 [Term]
 id: CHMO:0001992
-name: adsorption--desorption isotherm
+name: adsorption-desorption isotherm
 def: "A plot of relative pressure vs. volume adsorbed obtained by measuring the amount of an inert gasesous or liquid substance (the 'sorbent', usually H2 or N2) which adsorbs onto the surface of interest (the 'sorbate'), and the subsequent amount that desorbs at a constant temperature." [rsc:hjb]
 synonym: "adsorption-desorption isotherm" EXACT []
 synonym: "adsorption/desorption isotherm" EXACT []
 is_a: CHMO:0000800 ! spectrum
+relationship: OBI:0000312 CHMO:0001167 ! is_specified_output_of sorption-desorption measurement
 created_by: burchh
 creation_date: 2009-06-18T02:10:30Z
 
 [Term]
 id: CHMO:0001993
-name: nitrogen adsorption--desorption isotherm
+name: nitrogen adsorption-desorption isotherm
 def: "A plot of relative pressure vs. volume adsorbed obtained by measuring the amount of N2 gas that adsorbs onto the surface of interest (the 'sorbate'), and the subsequent amount that desorbs at a constant temperature." [rsc:hjb]
 synonym: "N2 adsorption and desorption isotherm" EXACT []
 synonym: "N2 adsorption-desorption isotherm" EXACT []
@@ -20302,7 +20343,8 @@ synonym: "N2 adsorption-desorption isotherms" EXACT []
 synonym: "N2 adsorption/desorption isotherm" EXACT []
 synonym: "nitrogen adsorption-desorption isotherm" EXACT []
 synonym: "nitrogen adsorption-desorption isotherms" EXACT []
-is_a: CHMO:0001992 ! adsorption--desorption isotherm
+is_a: CHMO:0001992 ! adsorption-desorption isotherm
+relationship: OBI:0000312 CHMO:0002583 ! is_specified_output_of nitrogen sorption-desorption measurements
 created_by: burchh
 creation_date: 2009-06-18T02:14:05Z
 
@@ -20312,7 +20354,7 @@ name: profilometer
 def: "A piece of apparatus that measures surface profiles by dragging a (diamond) stylus across the sample surface. A feedback loop is used to maintain a fixed relationship between the stylus and surface during scanning." [rsc:hjb]
 synonym: "stylus profilometer" EXACT []
 synonym: "surface profilometer" EXACT []
-is_a: CHMO:0000998 ! piece of apparatus
+is_a: OBI:0000968 ! device
 created_by: burchh
 creation_date: 2009-06-18T03:13:06Z
 
@@ -20426,7 +20468,7 @@ creation_date: 2009-06-19T11:52:32Z
 [Term]
 id: CHMO:0002006
 name: tandem dual-column high-performance liquid chromatography inductively coupled plasma mass spectrometry
-def: "A method where the sample is first subjected to column chromatography where the mobile phase is a liquid, the stationary phase consists of very small particles and the inlet pressure is relatively high. The sample passes through two columns (anion and cation exchange) in series. The eluent is then subjected to mass spectrometry where it is ionised in a plasma (a partially ionised gas---such as Ar---containing free electrons) which has been generated by electromagnetic induction." [ISBN:0471213861]
+def: "A method where the sample is first subjected to column chromatography where the mobile phase is a liquid, the stationary phase consists of very small particles and the inlet pressure is relatively high. The sample passes through two columns (anion and cation exchange) in series. The eluent is then subjected to mass spectrometry where it is ionised in a plasma which has been generated by electromagnetic induction." [ISBN:0471213861]
 synonym: "tandem dual-column HPLC-ICP-MS" EXACT []
 is_a: CHMO:0002008 ! two-dimensional high-performance liquid chromatography-mass spectrometry
 created_by: burchh
@@ -21034,7 +21076,7 @@ creation_date: 2009-07-01T02:42:13Z
 [Term]
 id: CHMO:0002067
 name: variable-angle polarised absorption spectroscopy
-def: "Spectroscopy where the absorption of linearly (p-) polarised UV--vis light by a poled thin film sample, as it is rotated about the vertical axis, is recorded at incremental angles of incidence." [DOI:10.1063/1.356142]
+def: "Spectroscopy where the absorption of linearly (p-) polarised UV-vis light by a poled thin film sample, as it is rotated about the vertical axis, is recorded at incremental angles of incidence." [DOI:10.1063/1.356142]
 synonym: "VAPAS" EXACT []
 synonym: "variable angle polarised absorption spectroscopy" EXACT []
 synonym: "variable angle polarized absorption spectroscopy" EXACT []
@@ -21045,7 +21087,7 @@ creation_date: 2009-07-01T02:56:43Z
 [Term]
 id: CHMO:0002068
 name: ratio variable-angle polarised absorption spectroscopy
-def: "Spectroscopy where the absorption of linearly (p-) polarised UV--vis light by the sample, as it is rotated about the vertical axis, is recorded at incremental angles of incidence. The angle-independent s-polarisation of the light is also measured as a reference." [DOI:10.1063/1.345121, http://depts.washington.edu/eooptic/NSF/RVAPAS.pdf]
+def: "Variable-angle polarised absorption spectroscopy where the angle-independent s-polarisation of the light is also measured as a reference." [DOI:10.1063/1.345121, http://depts.washington.edu/eooptic/NSF/RVAPAS.pdf]
 synonym: " RVAPAS" EXACT []
 synonym: "ratio variable angle polarised absorption spectroscopy " EXACT []
 synonym: "ratio variable angle polarized absorption spectroscopy " EXACT []
@@ -21089,7 +21131,7 @@ creation_date: 2009-07-01T04:51:37Z
 [Term]
 id: CHMO:0002071
 name: isothermal titration calorimetry curve
-def: "A plot of energy (\\mucal) vs. time obtained from the measurement of the heat evolved during a chemical or biochemical reaction (such as protein--receptor binding)." [DOI:10.1021/jp057554e, rsc:hjb]
+def: "A plot of energy against time obtained from the measurement of the heat evolved during a chemical or biochemical reaction (such as protein-receptor binding)." [DOI:10.1021/jp057554e, rsc:hjb]
 synonym: "isothermal titration calorimetric curve" EXACT []
 synonym: "ITC curve" EXACT []
 synonym: "ITC curves" EXACT []
@@ -21100,8 +21142,8 @@ creation_date: 2009-07-01T06:40:49Z
 
 [Term]
 id: CHMO:0002072
-name: ultraviolet--visible--near infrared spectrometer
-def: "A piece of apparatus that consists of: a light source; a holder for the sample; a diffraction grating or monochromator to separate the different wavelengths of light; a detector, and is used to measure spectra in the range ultraviolet to near-infrared (190--2000 nm) resulting in electronic transitions within the sample." [rsc:hjb]
+name: ultraviolet-visible-near infrared spectrometer
+def: "A piece of apparatus that consists of: a light source; a holder for the sample; a diffraction grating or monochromator to separate the different wavelengths of light; a detector, and is used to measure spectra in the range ultraviolet to near-infrared (190-2000 nm) resulting in electronic transitions within the sample." [rsc:hjb]
 synonym: "ultraviolet-visible-near infrared absorption spectrometer" EXACT []
 synonym: "ultraviolet-visible-near infrared spectrometer" EXACT []
 synonym: "UV-Vis-NIR absorption spectrometer" EXACT []
@@ -21319,7 +21361,7 @@ creation_date: 2009-07-03T09:02:54Z
 [Term]
 id: CHMO:0002091
 name: pressure perturbation calorimetry
-def: "The measurement of thermodynamic parameters (e.g. enthalpy) during a chemical or biochemical reaction by the known variation (step-wise or linear) of the temperature, whilst the pressure (10--100 atm) is kept constant." [DOI:10.1039/b901695c]
+def: "The measurement of thermodynamic parameters (e.g. enthalpy) during a chemical or biochemical reaction by the known variation (step-wise or linear) of the temperature, whilst the pressure (10-100 atm) is kept constant." [DOI:10.1039/b901695c]
 synonym: "PPC" EXACT []
 synonym: "pressure-perturbation calorimetry" EXACT []
 is_a: CHMO:0002080 ! temperature-controlled scanning calorimetry
@@ -21478,7 +21520,7 @@ creation_date: 2009-07-06T11:06:28Z
 [Term]
 id: CHMO:0002107
 name: enzyme oximetry
-def: "A technique used to determine the extent of oxygenation of an enzyme, based on the absorption of light by the oxygenated and deoxygenated forms." [rsc:hjb]
+def: "Oximetry used to determine the extent of oxygenation of an enzyme, based on the absorption of light by the oxygenated and deoxygenated forms." [rsc:hjb]
 is_a: CHMO:0002108 ! oximetry
 created_by: burchh
 creation_date: 2009-07-06T11:22:43Z
@@ -21486,7 +21528,7 @@ creation_date: 2009-07-06T11:22:43Z
 [Term]
 id: CHMO:0002108
 name: oximetry
-def: "Any technique used to measure the levels of oxygen in a sample." [rsc:hjb]
+def: "A technique used to measure the levels of oxygen in a sample." [rsc:hjb]
 is_a: CHMO:0002739 ! quantitative determination method
 created_by: burchh
 creation_date: 2009-07-06T12:47:53Z
@@ -21494,7 +21536,7 @@ creation_date: 2009-07-06T12:47:53Z
 [Term]
 id: CHMO:0002109
 name: pulse oximetry
-def: "A technique used to determine the extent of oxygenation of haemoglobin based on the red (600--750 nm) and infrared (800-1000 nm) light absorption characteristics of the oxygenated and deoxygenated forms." [rsc:hjb]
+def: "Oximetry used to determine the extent of oxygenation of haemoglobin based on the red (600-750 nm) and infrared (800-1000 nm) light absorption characteristics of the oxygenated and deoxygenated forms." [rsc:hjb]
 is_a: CHMO:0002108 ! oximetry
 created_by: burchh
 creation_date: 2009-07-06T12:48:35Z
@@ -21606,7 +21648,7 @@ creation_date: 2009-07-08T09:57:28Z
 id: CHMO:0002120
 name: monochromator
 def: "A piece of apparatus that transmits a narrow band of wavelengths of light or other radiation (e.g. X-rays) chosen from a wider range of wavelengths available at the input." [rsc:hjb]
-is_a: CHMO:0000998 ! piece of apparatus
+is_a: OBI:0000968 ! device
 created_by: burchh
 creation_date: 2009-07-08T10:17:24Z
 
@@ -21629,7 +21671,7 @@ creation_date: 2009-07-08T10:19:18Z
 id: CHMO:0002122
 name: sputter coater
 def: "A piece of apparatus, consisting of an anode (the specimen) a cathode (the source of sputter atoms or 'target') and a magnet, all held inside a vacuum chamber, which is used to coat specimens with a thin layer of atoms (e.g. Au) prior to microscopy." [rsc:hjb]
-is_a: CHMO:0000998 ! piece of apparatus
+is_a: OBI:0000968 ! device
 created_by: burchh
 creation_date: 2009-07-08T10:37:10Z
 
@@ -21679,7 +21721,7 @@ creation_date: 2009-07-08T04:08:57Z
 id: CHMO:0002126
 name: amplifier
 def: "A piece of apparatus that can increase the power of a signal." [rsc:hjb]
-is_a: CHMO:0000998 ! piece of apparatus
+is_a: OBI:0000968 ! device
 created_by: burchh
 creation_date: 2009-07-08T04:13:06Z
 
@@ -21710,11 +21752,12 @@ creation_date: 2009-07-08T04:21:33Z
 [Term]
 id: CHMO:0002129
 name: quadrupole Carr-Purcell-Meiboom-Gill using magic-angle spinning
-def: "An NMR experiment used to enhance the sensitivity of low gyromagnetic ratio nuclei by collapsing the intensity of the 'full' spectrum into discrete 'spikelets'/peaks. The intensities of the peaks vary according to the spin--spin relaxation rate (T2) and the envelope described by these peaks represents the full, static spectrum. The solid sample is spun rapidly at the magic angle (54.74 deg. with respect to the direction of the magnetic field) to reduce line broadening." [rsc:pr]
+def: "An NMR experiment used to enhance the sensitivity of low gyromagnetic ratio nuclei by collapsing the intensity of the 'full' spectrum into discrete 'spikelets'/peaks. The intensities of the peaks vary according to the spin-spin relaxation rate (T2) and the envelope described by these peaks represents the full, static spectrum. The solid sample is spun rapidly at the magic angle (54.74 deg. with respect to the direction of the magnetic field) to reduce line broadening." [rsc:pr]
 synonym: "MAS QCPMG" EXACT []
 synonym: "MAS-QCPMG" EXACT []
 synonym: "QCPMG MAS" EXACT []
 synonym: "QCPMG-MAS" EXACT []
+is_a: CHMO:0000615 ! magic angle spinning nuclear magnetic resonance spectroscopy
 is_a: CHMO:0002137 ! quadrupole Carr-Purcell-Meiboom-Gill experiment
 created_by: burchh
 creation_date: 2009-07-09T09:45:38Z
@@ -21722,7 +21765,7 @@ creation_date: 2009-07-09T09:45:38Z
 [Term]
 id: CHMO:0002130
 name: 73Ge quadrupole Carr-Purcell-Meiboom-Gill using magic-angle spinning
-def: "An NMR experiment for 73Ge nuclei where spin--spin (T2) relaxation times are measured whilst the solid sample is spun rapidly at the magic angle (54.74 deg. with respect to the direction of the magnetic field) to reduce line broadening." [rsc:hjb]
+def: "An NMR experiment for 73Ge nuclei where spin-spin (T2) relaxation times are measured whilst the solid sample is spun rapidly at the magic angle (54.74 deg. with respect to the direction of the magnetic field) to reduce line broadening." [rsc:hjb]
 synonym: "73Ge MAS QCPMG" EXACT []
 synonym: "73Ge MAS-QCPMG" EXACT []
 synonym: "73Ge QCPMG MAS" EXACT []
@@ -21739,7 +21782,7 @@ def: "Spectroscopy where the energy states of 73Ge nuclei placed in a static mag
 synonym: "73Ge MAS NMR" EXACT []
 synonym: "73Ge MAS-NMR" EXACT []
 synonym: "73Ge-MAS-NMR" EXACT []
-is_a: CHMO:0000615 ! magic angle spinning
+is_a: CHMO:0000615 ! magic angle spinning nuclear magnetic resonance spectroscopy
 is_a: CHMO:0002128 ! 73Ge nuclear magnetic resonance spectroscopy
 created_by: burchh
 creation_date: 2009-07-09T09:55:04Z
@@ -21812,7 +21855,7 @@ creation_date: 2009-07-09T10:17:20Z
 [Term]
 id: CHMO:0002137
 name: quadrupole Carr-Purcell-Meiboom-Gill experiment
-def: "An NMR experiment used to measure spin--spin (T2) relaxation times of quadropolar nucei by acquiring multiple spin echos with the intensity decay of the echos proportional to T2. In the solid state, this is also used to enhance sensitivity of low gyromagnetic ratio nuclei by collapsing the intensity of the 'full' spectrum into discrete 'spikelets'/peaks. The intensities of the peaks vary according to T2 and the envelope described by these peaks represents the full, static spectrum." [rsc:pr]
+def: "An NMR experiment used to measure spin-spin (T2) relaxation times of quadropolar nucei by acquiring multiple spin echos with the intensity decay of the echos proportional to T2. In the solid state, this is also used to enhance sensitivity of low gyromagnetic ratio nuclei by collapsing the intensity of the 'full' spectrum into discrete 'spikelets'/peaks. The intensities of the peaks vary according to T2 and the envelope described by these peaks represents the full, static spectrum." [rsc:pr]
 synonym: "QCPMG experiment" EXACT []
 is_a: CHMO:0001806 ! nuclear magnetic resonance method
 created_by: burchh
@@ -22037,7 +22080,7 @@ creation_date: 2009-07-13T01:35:58Z
 [Term]
 id: CHMO:0002159
 name: Verneuil process
-def: "A method for preparing synthetic gemstones. A finely powdered sample is melted in an hydrogen--oxygen flame (2000 deg. C) and crystallising the melted droplets on a boule (a single crystal)." [rsc:hjb]
+def: "A method for preparing synthetic gemstones. A finely powdered sample is melted in an hydrogen-oxygen flame (2000 deg. C) and crystallising the melted droplets on a boule (a single crystal)." [rsc:hjb]
 synonym: "flame fusion" EXACT []
 is_a: CHMO:0002224 ! crystal growth method
 created_by: burchh
@@ -22048,7 +22091,6 @@ id: CHMO:0002160
 name: Bridgeman technique
 def: "A method of growing a single crystal 'ingot' or 'boule'. The polycrystalline sample is heated in a container above its melting point and slowly cooled from one end where a seed crystal is located. Single crystal material is then progressively formed along the length of the container." [rsc:hjb]
 synonym: "Bridgman technique" EXACT []
-synonym: "Bridgman--Stockbarger technique" EXACT []
 synonym: "Bridgman-Stockbarger technique" EXACT []
 is_a: CHMO:0002224 ! crystal growth method
 created_by: burchh
@@ -22110,7 +22152,7 @@ creation_date: 2009-07-14T10:12:49Z
 id: CHMO:0002166
 name: autoclave
 def: "A thick-walled steel vessel used during synthesis methods that require both high pressures and high temperatures." [rsc:hjb]
-is_a: CHMO:0000998 ! piece of apparatus
+is_a: OBI:0000968 ! device
 created_by: burchh
 creation_date: 2009-07-15T01:19:11Z
 
@@ -22125,7 +22167,7 @@ creation_date: 2009-07-15T01:40:35Z
 
 [Term]
 id: CHMO:0002168
-name: microwave--polyol method
+name: microwave-polyol method
 def: "The synthesis of metal-containing compounds in poly(ethylene glycol)s heated by microwave irradiation. The ethylene glycols act as both the solvent and reducing agent." [DOI:10.1246/cl.2009.478]
 synonym: "microwave-assisted polyol method" EXACT []
 synonym: "microwave-polyol method" EXACT []
@@ -22297,7 +22339,7 @@ synonym: "CCD camera" EXACT []
 synonym: "charge coupled device (CCD) camera" EXACT []
 synonym: "charge coupled device camera" EXACT []
 synonym: "charge-coupled device (CCD) digital camera" EXACT []
-is_a: CHMO:0000998 ! piece of apparatus
+is_a: OBI:0000968 ! device
 created_by: burchh
 creation_date: 2009-07-17T04:14:40Z
 
@@ -22392,7 +22434,7 @@ creation_date: 2009-07-17T05:42:41Z
 [Term]
 id: CHMO:0002190
 name: small-angle powder X-ray diffraction data
-def: "Data which is obtained from an X-ray diffraction experiment where the specimen is a powder and the X-rays are incident on the sample at small angles (0--10 degrees)." [rsc:hjb]
+def: "Data which is obtained from an X-ray diffraction experiment where the specimen is a powder and the X-rays are incident on the sample at small angles (0-10 degrees)." [rsc:hjb]
 synonym: "low-angle powder X-ray diffraction data" EXACT []
 synonym: "low-angle powder X-ray diffraction pattern" EXACT []
 synonym: "small-angle powder X-ray diffraction pattern" EXACT []
@@ -22489,7 +22531,7 @@ name: rotary evaporator
 def: "A piece of apparatus consisting of a motor unit that rotates the evaporation flask, a vacuum system, a heated water bath and a condenser, which is used to remove solvents from samples under reduced pressure." [rsc:hjb]
 synonym: "rotavap" EXACT []
 synonym: "Rotavapor" EXACT []
-is_a: CHMO:0000998 ! piece of apparatus
+is_a: OBI:0000968 ! device
 created_by: burchh
 creation_date: 2009-07-22T09:35:05Z
 
@@ -22503,36 +22545,36 @@ creation_date: 2009-07-23T10:05:13Z
 
 [Term]
 id: CHMO:0002201
-name: matrix assisted laser desorption--ionisation mass spectrum
+name: matrix assisted laser desorption-ionisation mass spectrum
 def: "A plot of relative abundance (%) vs. mass-to-charge ratio obtained from a mass spectrometry experiment where the sample (usually a large organic molecule or biomolecule) is vaporised and ionised using a high-energy pulsed laser whilst being held in a matrix (such as crystallised dihydrobenzoic acid) to protect it from direct laser illumination and to separate the sample molecules." [rsc:hjb]
 synonym: "MALDI mass spectra" EXACT []
 synonym: "MALDI mass spectrum" EXACT []
 synonym: "MALDI spectra" EXACT []
 synonym: "MALDI spectrum" EXACT []
-synonym: "matrix assisted laser desorption--ionisation mass spectra" EXACT []
 synonym: "matrix assisted laser desorption-ionisation mass spectra" EXACT []
 synonym: "matrix assisted laser desorption-ionisation mass spectrum" EXACT []
 is_a: CHMO:0001289 ! laser desorption--ionisation mass spectrum
+relationship: OBI:0000312 CHMO:0000519 ! is_specified_output_of matrix-assisted laser desorption-ionisation mass spectrometry
 created_by: burchh
 creation_date: 2009-07-23T03:39:09Z
 
 [Term]
 id: CHMO:0002202
-name: matrix assisted laser desorption--ionisation mass spectrometer
+name: matrix assisted laser desorption-ionisation mass spectrometer
 def: "A mass spectrometer that uses a plate to hold the sample in a matrix (such as crystallised dihydrobenzoic acid) whilst it is vaporised and ionised using a high-energy pulsed laser." [rsc:hjb]
 synonym: "MALDI mass spectrometer" EXACT []
 synonym: "matrix assisted laser desorption-ionisation mass spectrometer" EXACT []
 is_a: CHMO:0000982 ! mass spectrometer
-relationship: BFO:0000174 CHMO:0002203 ! has proper continuant part at some time matrix assisted laser desorption--ionisation plate
+relationship: BFO:0000057 CHMO:0002203 ! has participant matrix assisted laser desorption-ionisation plate
 created_by: burchh
 creation_date: 2009-07-23T03:47:52Z
 
 [Term]
 id: CHMO:0002203
-name: matrix assisted laser desorption--ionisation plate
+name: matrix assisted laser desorption-ionisation plate
 def: "A extremely flat surface that holds the sample during a mass spectrometry experiment where the sample is vaporised and ionised using a high-energy pulsed laser whilst being held in a matrix to protect it from direct laser illumination and to separate the sample molecules. The surface of the plate may be chemically functionalised for a specific sample." [rsc:hjb]
 synonym: "MALDI plate" EXACT []
-is_a: CHMO:0000998 ! piece of apparatus
+is_a: OBI:0000968 ! device
 created_by: burchh
 creation_date: 2009-07-23T03:48:32Z
 
@@ -22547,7 +22589,7 @@ creation_date: 2009-07-24T01:41:25Z
 [Term]
 id: CHMO:0002205
 name: solvent casting and particulate leaching
-def: "A process for forming thermoplastic polymer samples by dipping a mould into a solution of the polymer and particles of known dimension, and drawing off the solvent to leave a composite polymer--particle film adhering to the mould." [rsc:hjb]
+def: "A process for forming thermoplastic polymer samples by dipping a mould into a solution of the polymer and particles of known dimension, and drawing off the solvent to leave a composite polymer-particle film adhering to the mould." [rsc:hjb]
 synonym: "SCPL" EXACT []
 is_a: CHMO:0002204 ! solvent casting
 created_by: burchh
@@ -22706,7 +22748,7 @@ creation_date: 2009-07-28T03:23:35Z
 [Term]
 id: CHMO:0002221
 name: Lely method
-def: "A method for crystal growth where polycrystalline SiC lumps are carefully packed between two concentric graphite tubes. The inner tube is then withdrawn leaving a porous SiC layer inside the outer tube. The outer tube is then heated (~2500 deg. C) in Ar, causing the SiC powder to sublime and nucleate on a cooler surface." [ISBN:3540003673]
+def: "A method for crystal growth where polycrystalline SiC lumps are carefully packed between two concentric graphite tubes. The inner tube is then withdrawn leaving a porous SiC layer inside the outer tube. The outer tube is then heated (~2500 degC) in Ar, causing the SiC powder to sublime and nucleate on a cooler surface." [ISBN:3540003673]
 synonym: "Lely technique" EXACT []
 is_a: CHMO:0002224 ! crystal growth method
 created_by: burchh
@@ -22715,7 +22757,7 @@ creation_date: 2009-07-28T04:03:12Z
 [Term]
 id: CHMO:0002222
 name: seeded sublimation
-def: "A technique for growing crystals of SiC by heating a source (polycrystalline SiC or powder) at high temperature (1800--2600 deg. C) and low pressure in an Ar atmosphere causing it to sublime. The vapours then condense on a single crystal of SiC (the 'seed')." [ISBN:0815514530]
+def: "A technique for growing crystals of SiC by heating a source (polycrystalline SiC or powder) at high temperature (1800-2600 degC) and low pressure in an Ar atmosphere causing it to sublime. The vapours then condense on a single crystal of SiC (the 'seed')." [ISBN:0815514530]
 synonym: "modified Lely method" EXACT []
 synonym: "seed sublimation" EXACT []
 synonym: "seeded sublimation method" EXACT []
@@ -22730,7 +22772,7 @@ creation_date: 2009-07-28T03:25:09Z
 [Term]
 id: CHMO:0002223
 name: sandwich sublimation
-def: "A technique for growing thick (\\mum) epitaxial layers of SiC by heating a source (polycrystalline SiC or powder) at high temperature (1800--2600 deg. C) and low pressure in an Ar atmosphere causing it to sublime. The vapours then condense on a single crystal of SiC (the 'seed') placed a few mm away." [rsc:hjb]
+def: "A technique for growing thick (micrometre) epitaxial layers of SiC by heating a source (polycrystalline SiC or powder) at high temperature (1800-2600 degC) and low pressure in an Ar atmosphere causing it to sublime. The vapours then condense on a single crystal of SiC (the 'seed') placed a few mm away." [rsc:hjb]
 synonym: "close space sublimation" EXACT []
 synonym: "close-space sublimation" EXACT []
 synonym: "sandwich sublimation method" EXACT []
@@ -22857,7 +22899,7 @@ creation_date: 2009-07-31T10:58:46Z
 [Term]
 id: CHMO:0002235
 name: abberration-corrected high-angular annular dark-field scanning transmission electron microscopy
-def: "Microscopy where a finely focused (<10 nm diameter) electron beam with an acceleration voltage 50--150 kV is scanned across an electron-transparent specimen under vacuum. The beam of electrons is scattered or diffracted at high angles before reaching the specimen, and the image results from a weakening of the beam by its interaction with the sample. An annular aperture is used to select electrons that have passed through given symmetric zones within the objective lens of the microscope. The electron beam is focused using a set of magnetic lenses which removes spherical aberration (an effect where the electron beam is deflected too strongly, resulting in a blurred image)." [DOI:10.1002/adma.200502201]
+def: "Microscopy where a finely focused (<10 nm diameter) electron beam with an acceleration voltage 50-150 kV is scanned across an electron-transparent specimen under vacuum. The beam of electrons is scattered or diffracted at high angles before reaching the specimen, and the image results from a weakening of the beam by its interaction with the sample. An annular aperture is used to select electrons that have passed through given symmetric zones within the objective lens of the microscope. The electron beam is focused using a set of magnetic lenses which removes spherical aberration (an effect where the electron beam is deflected too strongly, resulting in a blurred image)." [DOI:10.1002/adma.200502201]
 synonym: "abberration corrected high angular annular dark field scanning transmission electron microscopy" EXACT []
 synonym: "abberration-corrected high-angle annular dark-field scanning transmission electron microscopy" EXACT []
 synonym: "AC-HAADF-STEM" EXACT []
@@ -22880,7 +22922,7 @@ creation_date: 2009-07-31T01:56:03Z
 [Term]
 id: CHMO:0002237
 name: transmission electron microscope with an energy dispersive X-ray analyser
-def: "A piece of apparatus which is used to produce an enlarged image of an electron- transparent specimen using a finely focused (<10 nm diameter) electron beam with an acceleration voltage of 50--150 kV under vacuum. X-rays emerging from the sample (as a result of electron bombardment) pass through a slit, then a grating disperses them by diffraction according to their wavelength. Finally, X-ray energy (which is characteristic of atomic number) is converted to voltage pulses or 'counts' by a detector." [rsc:hjb]
+def: "A piece of apparatus which is used to produce an enlarged image of an electron- transparent specimen using a finely focused (<10 nm diameter) electron beam with an acceleration voltage of 50-150 kV under vacuum. X-rays emerging from the sample (as a result of electron bombardment) pass through a slit, then a grating disperses them by diffraction according to their wavelength. Finally, X-ray energy (which is characteristic of atomic number) is converted to voltage pulses or 'counts' by a detector." [rsc:hjb]
 synonym: "TEM/EDX" EXACT []
 synonym: "transmission electron microscope equipped with an energy dispersive X-ray analyzer" EXACT []
 synonym: "transmission electron microscope with an energy dispersive X-ray analyzer" EXACT []
@@ -22891,7 +22933,7 @@ creation_date: 2009-07-31T04:13:12Z
 [Term]
 id: CHMO:0002238
 name: transmission electron microscopy energy-dispersive X-ray spectroscopy
-def: "Microscopy where the specimen is bombarded with a finely focused (<10 nm diameter) electron beam with an acceleration voltage 50--150 kV under vacuum. The interaction of electrons with the specimen produces X-rays (with energies characteristic of atomic number) which are detected as a function of wavelength." [rsc:hjb]
+def: "Microscopy where the specimen is bombarded with a finely focused (<10 nm diameter) electron beam with an acceleration voltage 50-150 kV under vacuum. The interaction of electrons with the specimen produces X-rays (with energies characteristic of atomic number) which are detected as a function of wavelength." [rsc:hjb]
 synonym: "TEM-EDS" EXACT []
 synonym: "TEM-EDX" EXACT []
 synonym: "TEM/EDS" EXACT []
@@ -22960,7 +23002,7 @@ synonym: "EFISHG spectroscopy" EXACT []
 synonym: "electric field induced second harmonic generation" EXACT []
 synonym: "electric field induced second harmonic generation spectroscopy" EXACT []
 synonym: "electric-field-induced second harmonic generation" EXACT []
-synonym: "electric-field-induced second-harmonic- (EFISH) generation" EXACT []
+synonym: "electric-field-induced second-harmonic (EFISH) generation" EXACT []
 synonym: "electric-field-induced SHG" EXACT []
 synonym: "electric-field-induced SHG spectroscopy" EXACT []
 is_a: CHMO:0000445 ! indirect laser absorption spectroscopy
@@ -22971,7 +23013,7 @@ creation_date: 2009-08-05T11:24:17Z
 id: CHMO:0002244
 name: detector
 def: "Any piece of apparatus used to detect an analyte." [rsc:hjb]
-is_a: CHMO:0000998 ! piece of apparatus
+is_a: OBI:0000968 ! device
 created_by: burchh
 creation_date: 2009-08-05T11:58:48Z
 
@@ -23091,7 +23133,7 @@ creation_date: 2009-08-06T04:53:32Z
 [Term]
 id: CHMO:0002255
 name: immobilized metal affinity chromatography
-def: "A chromatography method where the separation is caused by differing analyte--ligand interactions. Proteins containing amino acids with a specific affinity for metal ions (e.g. His which has an affinity for Co and Zn ions) are retained by the column." [rsc:hjb]
+def: "Affinity chromatography where proteins containing amino acids with a specific affinity for metal ions (e.g. His which has an affinity for Co and Zn ions) are retained by the column." [rsc:hjb]
 synonym: "IMAC" EXACT []
 synonym: "immobilised metal affinity chromatography" EXACT []
 is_a: CHMO:0001006 ! affinity chromatography
@@ -23101,7 +23143,7 @@ creation_date: 2009-08-06T04:59:26Z
 [Term]
 id: CHMO:0002256
 name: metal oxide affinity chromatography
-def: "A chromatography method where the separation is caused by differing analyte--ligand interactions. Phosphorylated proteins and peptides are retained by metal oxide particles because of their affinity for the phosphate group." [DOI:10.1002/pmic.200402049]
+def: "A chromatography method where the separation is caused by differing analyte-ligand interactions. Phosphorylated proteins and peptides are retained by metal oxide particles because of their affinity for the phosphate group." [DOI:10.1002/pmic.200402049]
 synonym: "metal oxide chromatography" EXACT []
 synonym: "metal oxides chromatography" EXACT []
 synonym: "metal-oxide chromatography" EXACT []
@@ -24081,7 +24123,7 @@ creation_date: 2009-09-04T04:27:29Z
 id: CHMO:0002344
 name: electrode
 def: "An electrically-conducting piece of apparatus that exchanges electrons with an electrolyte as part of an electrical circuit." [RSC:cb]
-is_a: CHMO:0000998 ! piece of apparatus
+is_a: OBI:0000968 ! device
 created_by: batchelorc
 creation_date: 2009-09-11T10:48:45Z
 
@@ -24145,7 +24187,7 @@ creation_date: 2009-09-11T11:16:35Z
 id: CHMO:0002351
 name: electrochemical cell
 def: "A piece of apparatus in which a current causes chemical reactions or chemical reactions cause a current to flow." [rsc:crb]
-is_a: CHMO:0000998 ! piece of apparatus
+is_a: OBI:0000968 ! device
 created_by: batchelorc
 creation_date: 2009-09-11T11:22:34Z
 
@@ -24675,7 +24717,7 @@ id: CHMO:0002396
 name: electrostatic detection apparatus
 def: "A piece of apparatus which is used to detect footwear marks and indented impressions of handwriting in paper. The sample sheet of paper is placed on a sintered copper plate, a vacuum is applied and a thin mylar plastic film is rolled over the sample. An electrostatic charge is then applied to the plastic by means of a corona discharge and the subsequent pattern of charging is then visualised using photocopier toner. The toner adheres to those areas corresponding to indentations." [ISBN:0-85404-539-2]
 synonym: "ESDA" EXACT []
-is_a: CHMO:0000998 ! piece of apparatus
+is_a: OBI:0000968 ! device
 created_by: burchh
 creation_date: 2009-09-16T11:14:24Z
 
@@ -24994,7 +25036,7 @@ id: CHMO:0002426
 name: galvanostat
 def: "A piece of apparatus that maintains the current through an electrochemical cell at a preset value." [rsc:hjb]
 synonym: "amperostat" EXACT []
-is_a: CHMO:0000998 ! piece of apparatus
+is_a: OBI:0000968 ! device
 created_by: burchh
 creation_date: 2009-09-21T04:28:28Z
 
@@ -25002,7 +25044,7 @@ creation_date: 2009-09-21T04:28:28Z
 id: CHMO:0002427
 name: potentiostat
 def: "A piece of apparatus that maintains the potential through an electrochemical cell at a preset value." [rsc:hjb]
-is_a: CHMO:0000998 ! piece of apparatus
+is_a: OBI:0000968 ! device
 created_by: burchh
 creation_date: 2009-09-21T04:31:40Z
 
@@ -25159,17 +25201,16 @@ creation_date: 2009-09-23T02:33:29Z
 id: CHMO:0002444
 name: microwave oven
 def: "A piece of apparatus, consisting of a high- voltage transformer, a cavity magnetron, a waveguide and a sample chamber, that is used to heat samples by irradiation with microwave (2 GHz) radiation." [rsc:hjb]
-is_a: CHMO:0000998 ! piece of apparatus
+is_a: OBI:0000968 ! device
 created_by: burchh
 creation_date: 2009-09-23T02:43:52Z
 
 [Term]
 id: CHMO:0002445
-name: pump--probe spectroscopy
+name: pump-probe spectroscopy
 def: "Spectroscopy where the sample is illuminated with an initial laser pulse (the 'pump') followed by a second laser pulse (the 'probe') after a short delay. The pump pulse creates excitations in the sample, which are sensed by the probe pulse." [DOI:10.1016/S0006-3495(94)80683-6, rsc:hjb]
 synonym: "PP spectroscopy" EXACT []
 synonym: "pump probe spectroscopy" EXACT []
-synonym: "pump--probe (PP) spectroscopy" EXACT []
 synonym: "pump-probe (PP) spectroscopy" EXACT []
 synonym: "pump-probe spectroscopy" EXACT []
 is_a: CHMO:0000435 ! laser spectroscopy
@@ -25190,7 +25231,7 @@ synonym: "ultra-fast pump-probe spectroscopy" EXACT []
 synonym: "ultrafast pump probe spectroscopy" EXACT []
 synonym: "ultrafast pump--probe spectroscopy" EXACT []
 synonym: "ultrafast pump-probe spectroscopy" NARROW []
-is_a: CHMO:0002445 ! pump--probe spectroscopy
+is_a: CHMO:0002445 ! pump-probe spectroscopy
 created_by: burchh
 creation_date: 2009-09-23T03:12:40Z
 
@@ -25214,7 +25255,7 @@ synonym: "pump-repump-probe spectroscopy" EXACT []
 synonym: "two pump and probe spectroscopy" EXACT []
 synonym: "two pump--probe spectroscopy" EXACT []
 synonym: "two pump-probe spectroscopy" EXACT []
-is_a: CHMO:0002445 ! pump--probe spectroscopy
+is_a: CHMO:0002445 ! pump-probe spectroscopy
 created_by: burchh
 creation_date: 2009-09-23T03:18:09Z
 
@@ -25226,7 +25267,7 @@ synonym: "PDP spectroscopy" EXACT []
 synonym: "pump--dump--probe (PDP) spectroscopy" EXACT []
 synonym: "pump-dump-probe (PDP) spectroscopy" EXACT []
 synonym: "pump-dump-probe spectroscopy" EXACT []
-is_a: CHMO:0002445 ! pump--probe spectroscopy
+is_a: CHMO:0002445 ! pump-probe spectroscopy
 created_by: burchh
 creation_date: 2009-09-23T03:18:56Z
 
@@ -25478,7 +25519,7 @@ creation_date: 2009-09-29T06:34:10Z
 id: CHMO:0002473
 name: Knudsen cell
 def: "A piece of apparatus, consisting of a crucible (made of pyrolytic boron nitride, quartz, tungsten or graphite), heating filaments, a water cooling system, which is used to measure very low vapor pressures by measuring the mass of vapor which escapes when the vessel contains a liquid in equilibrium with its vapor. It is also used as a source evaporator during crystal growth e.g. during molecular-beam epitaxy." [rsc:hjb]
-is_a: CHMO:0000998 ! piece of apparatus
+is_a: OBI:0000968 ! device
 created_by: burchh
 creation_date: 2009-09-29T06:39:36Z
 
@@ -25486,7 +25527,7 @@ creation_date: 2009-09-29T06:39:36Z
 id: CHMO:0002474
 name: magnetic tweezers
 def: "A piece of apparatus, consisting of an electromagnet containing a paramagnetic core material with a tip-shaped end, that is used to trap and manipulate magnetic particles." [DOI:10.1016/S0006-3495(02)75672-5]
-is_a: CHMO:0000998 ! piece of apparatus
+is_a: OBI:0000968 ! device
 created_by: burchh
 creation_date: 2009-09-29T06:44:09Z
 
@@ -25911,7 +25952,7 @@ id: CHMO:0002509
 name: flash photolysis
 def: "A technique in which a sample is first excited by a strong pulse (the 'pump' pulse) of light from a laser or flash lamp. This first pulse starts a chemical reaction or leads to an increased population of energy levels other than the ground state within the sample. The absorption of light by the sample is recorded within a short time intervals (by a 'test' or 'probe' pulse) to monitor relaxation or reaction processes initiated by the pump pulse." [FIX:0000370, rsc:hjb]
 synonym: "FP" EXACT []
-is_a: CHMO:0002445 ! pump--probe spectroscopy
+is_a: CHMO:0002445 ! pump-probe spectroscopy
 created_by: burchh
 creation_date: 2009-10-09T11:23:44Z
 
@@ -26078,7 +26119,7 @@ synonym: "excitation--emission fluorescence spectra" EXACT []
 synonym: "excitation-emission fluorescence spectra" EXACT []
 synonym: "excitation-emission fluorescence spectrum" EXACT []
 is_a: CHMO:0000815 ! fluorescence spectrum
-is_a: CHMO:0000834 ! excitation--emission spectrum
+is_a: CHMO:0000834 ! excitation-emission spectrum
 created_by: burchh
 creation_date: 2009-10-13T11:34:46Z
 
@@ -26597,7 +26638,7 @@ def: "A piece of apparatus, consisting of a gas manifold with a series of tubes 
 synonym: "Sieverts apparatus" EXACT []
 synonym: "Sieverts' apparatus" EXACT []
 synonym: "volumetric hydrogen storage capacity apparatus" EXACT []
-is_a: CHMO:0000998 ! piece of apparatus
+is_a: OBI:0000968 ! device
 created_by: burchh
 creation_date: 2009-10-27T09:19:33Z
 
@@ -26616,7 +26657,7 @@ id: CHMO:0002572
 name: Schlenk tube
 def: "A piece of apparatus used as a reaction vessel in air-sensitive chemistry. It is made of glass and has a side arm fitted with a PTFE or ground glass stopcock which allows the vessel to be evacuated or filled with gas (e.g. nitrogen or argon)." [rsc:hjb]
 synonym: "Schlenk flask" EXACT []
-is_a: CHMO:0000998 ! piece of apparatus
+is_a: OBI:0000968 ! device
 created_by: burchh
 creation_date: 2009-10-28T09:17:43Z
 
@@ -26689,7 +26730,7 @@ creation_date: 2009-11-03T05:26:56Z
 id: CHMO:0002579
 name: autosampler
 def: "A piece of apparatus, consisting of a rotating circular tray containing a number of sealed vials, that is used for the automatic injection of samples during a mass spectrometry experiment." [rsc:hjb]
-is_a: CHMO:0000998 ! piece of apparatus
+is_a: OBI:0000968 ! device
 created_by: burchh
 creation_date: 2009-11-03T05:37:59Z
 
@@ -26728,7 +26769,7 @@ name: nitrogen sorption-desorption measurements
 def: "A method for determining surface area by measuring the amount of an N2 which adsorbs onto the surface of interest (the 'sorbate'), and the subsequent amount that desorbs at a constant temperature. Regression analysis is then applied to the data, resulting in an isotherm." [rsc:hjb]
 synonym: "N2 sorption-desorption experiments" EXACT []
 synonym: "N2 sorption-desorption measurements" EXACT []
-is_a: CHMO:0001167 ! sorption--desorption measurement
+is_a: CHMO:0001167 ! sorption-desorption measurement
 created_by: burchh
 creation_date: 2009-11-04T04:52:09Z
 
@@ -26811,7 +26852,7 @@ id: CHMO:0002591
 name: scanning mobility particle sizer
 def: "A piece of apparatus that measures the size distribution of particles in an aerosol by neutralising the particles, passing them through a differential mobility analyser in order to control the size of the particles and then counting the particles of that size with a condensation particle counter." [http://cloudbase.phy.umist.ac.uk/field/instruments/smps.htm]
 synonym: "SMPS" EXACT []
-is_a: CHMO:0000998 ! piece of apparatus
+is_a: OBI:0000968 ! device
 created_by: batchelorc
 creation_date: 2009-11-10T12:09:23Z
 
@@ -26975,7 +27016,7 @@ creation_date: 2009-11-18T09:13:41Z
 id: CHMO:0002607
 name: micromanipulator
 def: "A piece of apparatus which is used to physically interact with a sample under a microscope." [rsc:hjb]
-is_a: CHMO:0000998 ! piece of apparatus
+is_a: OBI:0000968 ! device
 created_by: burchh
 creation_date: 2009-11-19T02:01:02Z
 
@@ -27007,7 +27048,7 @@ def: "A thin film of micrometre thickness which is used as a support for specime
 synonym: "TEM micro-grid" EXACT []
 synonym: "TEM microgrid" EXACT []
 synonym: "transmission electron microscope microgrid" EXACT []
-is_a: CHMO:0000998 ! piece of apparatus
+is_a: OBI:0000968 ! device
 created_by: burchh
 creation_date: 2009-11-19T02:12:30Z
 
@@ -27141,16 +27182,6 @@ synonym: "high-resolution SEM micrographs" EXACT []
 is_a: CHMO:0001801 ! scanning electron micrograph
 created_by: burchh
 creation_date: 2009-11-24T04:07:51Z
-
-[Term]
-id: CHMO:0002621
-name: photocurrent action spectrum
-def: "A plot of incident photon-to-current efficiency (IPCE) vs. photon wavelength." [rsc:hjb]
-synonym: "action spectrum of the photocurrent " EXACT []
-synonym: "photocurrent action spectra" EXACT []
-is_a: CHMO:0000831 ! action spectrum
-created_by: burchh
-creation_date: 2009-11-25T10:02:16Z
 
 [Term]
 id: CHMO:0002622
@@ -27307,7 +27338,7 @@ creation_date: 2009-12-07T05:40:30Z
 id: CHMO:0002635
 name: magnetometer
 def: "A piece of apparatus used to measure the strength and/or direction of a magnetic field." [rsc:hjb]
-is_a: CHMO:0000998 ! piece of apparatus
+is_a: OBI:0000968 ! device
 created_by: burchh
 creation_date: 2009-12-07T06:13:43Z
 
@@ -27757,7 +27788,7 @@ creation_date: 2010-01-13T10:20:06Z
 id: CHMO:0002672
 name: desorption measurements
 def: "A method for determining surface area by measuring the amount of an inert gasesous or liquid substance (the 'sorbent', usually H2 or N2) which desorbs from the surface of interest (the 'sorbate'). Regression analysis is then applied to the data, resulting in an isotherm." [rsc:hjb]
-is_a: CHMO:0001167 ! sorption--desorption measurement
+is_a: CHMO:0001167 ! sorption-desorption measurement
 created_by: burchh
 creation_date: 2010-01-13T10:26:50Z
 
@@ -27785,7 +27816,7 @@ synonym: "temperature-programmed desorption profile" EXACT []
 synonym: "thermal desorption spectra" EXACT []
 synonym: "TPD (temperature-programmed desorption) profile" EXACT []
 synonym: "TPD profile" EXACT []
-is_a: CHMO:0001992 ! adsorption--desorption isotherm
+is_a: CHMO:0001992 ! adsorption-desorption isotherm
 created_by: burchh
 creation_date: 2010-01-13T11:28:27Z
 
@@ -28770,7 +28801,7 @@ is_a: CHMO:0000976 ! high-performance liquid chromatography column
 id: CHMO:0002768
 name: gas chromatograph-mass spectrometer transfer line
 def: "A piece of apparatus connecting a gas chromatograph to a mass spectrometer." [RSC:cb]
-is_a: CHMO:0000998 ! piece of apparatus
+is_a: OBI:0000968 ! device
 
 [Term]
 id: CHMO:0002769
@@ -28822,7 +28853,7 @@ is_a: CHMO:0002774 ! stirring
 [Term]
 id: CHMO:0002776
 name: stir bar
-is_a: CHMO:0000998 ! piece of apparatus
+is_a: OBI:0000968 ! device
 relationship: BFO:0000056 CHMO:0002774 ! participates in at some time stirring
 
 [Term]
@@ -28830,7 +28861,7 @@ id: CHMO:0002777
 name: Kugelrohr condenser
 def: "A short-path vacuum distillation apparatus consisting of an electric heater and two or more glass bulbs. The compound to be distilled is placed in the last bulb." [http://en.wikipedia.org/wiki/Kugelrohr]
 synonym: "Kugelrohr apparatus" EXACT []
-is_a: CHMO:0000998 ! piece of apparatus
+is_a: OBI:0000968 ! device
 relationship: BFO:0000056 CHMO:0001540 ! participates in at some time vacuum distillation
 
 [Term]
@@ -28894,7 +28925,7 @@ relationship: BFO:0000068 CHMO:0001640 ! begins to exist during filtration
 id: CHMO:0002787
 name: syringe pump
 def: "A syringe which has the function of pumping material into an experiment." [RSC:cb]
-is_a: CHMO:0000998 ! piece of apparatus
+is_a: OBI:0000968 ! device
 relationship: BFO:0000085 OBI:0001042 ! has function at some time pump function
 
 [Term]
@@ -28908,7 +28939,7 @@ id: CHMO:0002789
 name: hydrogenator
 def: "A piece of apparatus for carrying out hydrogenation reactions, usually under high pressure." [RSC:cb]
 comment: See for example http://www.parrinst.com/products/hydrogenation/3926-hydrogenator/
-is_a: CHMO:0000998 ! piece of apparatus
+is_a: OBI:0000968 ! device
 relationship: BFO:0000178 CHMO:0002788 ! has continuant part at some time hydrogen atmosphere
 
 [Term]
@@ -28933,7 +28964,7 @@ is_a: IAO:0000140 ! setting datum
 id: CHMO:0002793
 name: sensor
 def: "A piece of apparatus that is used to measure a physical quantity." [RSC:cb]
-is_a: CHMO:0000998 ! piece of apparatus
+is_a: OBI:0000968 ! device
 
 [Term]
 id: CHMO:0002794
@@ -28978,27 +29009,28 @@ id: CHMO:0002800
 name: muffle furnace
 def: "A device for heating substances to high temperatures where the material is kept separate from the fuel." [http://en.wikipedia.org/wiki/Muffle_furnace]
 synonym: "retort furnace" EXACT []
-is_a: CHMO:0000998 ! piece of apparatus
+is_a: OBI:0000968 ! device
 
 [Term]
 id: CHMO:0002801
 name: limit of detection
 def: "The smallest measure that can be detected with reasonable certainty for a given analytical procedure." [doi:10.1351/goldbook.L03540]
 comment: xL = <x> + ks where <x> is the mean of the blank measures, s is the standard deviation and k is a numerical factor chosen according to the desired confidence level.
-is_a: CHMO:0002803 ! method specification datum
+is_a: CHMO:0002803 ! figure of merit
 
 [Term]
 id: CHMO:0002802
 name: limit of quantification
 def: "The smallest measure that can be quantified with reasonable certainty for a given analytical procedure." [doi:10.1021/ac50064a004]
-is_a: CHMO:0002803 ! method specification datum
+is_a: CHMO:0002803 ! figure of merit
 
 [Term]
 id: CHMO:0002803
-name: method specification datum
+name: figure of merit
 def: "A data item that describes a non-adjustable specification of a method." [RSC:cb]
 comment: Example: limit of detection of a technique.
-is_a: IAO:0000027 ! data item
+synonym: "method specification datum" EXACT []
+is_a: CHMO:0000793 ! assay output
 
 [Term]
 id: CHMO:0002804
@@ -29010,7 +29042,7 @@ is_a: CHMO:0002751 ! carrier gas flow rate
 id: CHMO:0002805
 name: working range
 def: "The range of measures which can be quantified with reasonable certainty for a given analytical procedure." [RSC:cb]
-is_a: CHMO:0002803 ! method specification datum
+is_a: CHMO:0002803 ! figure of merit
 
 [Term]
 id: CHMO:0002806
@@ -29035,7 +29067,7 @@ is_a: CHMO:0002809 ! piece of heating apparatus
 id: CHMO:0002809
 name: piece of heating apparatus
 def: "A piece of apparatus that is used to raise the temperature of a sample." [RSC:cb]
-is_a: CHMO:0000998 ! piece of apparatus
+is_a: OBI:0000968 ! device
 
 [Term]
 id: CHMO:0002810
@@ -29044,7 +29076,7 @@ def: "A piece of apparatus that consists of an oven, and apparatus to mix carrie
 synonym: "FID" EXACT non-mining_synonym []
 synonym: "FID detector" EXACT []
 synonym: "flame ionization detector" EXACT []
-is_a: CHMO:0000998 ! piece of apparatus
+is_a: OBI:0000968 ! device
 
 [Term]
 id: CHMO:0002811
@@ -29165,7 +29197,7 @@ id: CHMO:0002826
 name: Dean-Stark apparatus
 synonym: "Dean-Stark condenser" EXACT []
 synonym: "Dean-Stark trap" EXACT []
-is_a: CHMO:0000998 ! piece of apparatus
+is_a: OBI:0000968 ! device
 
 [Term]
 id: CHMO:0002827
@@ -29307,7 +29339,7 @@ relationship: BFO:0000057 CHMO:0002166 ! has participant autoclave
 id: CHMO:0002847
 name: limit of linearity
 def: "The largest measure at which the sensitivity of the detector is constant to within a specified variation." [http://iupac.org/publications/analytical_compendium/Cha09sec245.pdf]
-is_a: CHMO:0002803 ! method specification datum
+is_a: CHMO:0002803 ! figure of merit
 
 [Term]
 id: CHMO:0002848
@@ -29321,14 +29353,14 @@ id: CHMO:0002849
 name: repeatability standard deviation
 def: "The standard deviation of independent measurements obtained with the same method on identical test material under the same conditions." [http://iupac.org/publications/analytical_compendium/Cha02sec2.pdf]
 comment: Same operator, same apparatus, same laboratory, after short intervals of time.
-is_a: CHMO:0002803 ! method specification datum
+is_a: CHMO:0002803 ! figure of merit
 
 [Term]
 id: CHMO:0002850
 name: reproducibility standard deviation
 def: "The standard deviation of independent measurements obtained with the same method on identical test material under different conditions." [http://iupac.org/publications/analytical_compendium/Cha02sec2.pdf]
 comment: different operator, different apparatus, different laboratory, and/or after different intervals of time.
-is_a: CHMO:0002803 ! method specification datum
+is_a: CHMO:0002803 ! figure of merit
 
 [Term]
 id: CHMO:0002851
@@ -29354,7 +29386,7 @@ is_a: CHMO:0000793 ! assay output
 id: CHMO:0002854
 name: sample throughput
 def: "The quantity of gas, in pressure-volume units, at a specified temperature, flowing per unit time across a specified open cross section." [http://iupac.org/publications/analytical_compendium/Cha12sec44.pdf]
-is_a: CHMO:0002803 ! method specification datum
+is_a: CHMO:0002803 ! figure of merit
 
 [Term]
 id: CHMO:0002855
@@ -29464,7 +29496,7 @@ is_a: CHMO:0002871 ! dispersive liquid-phase microextraction
 [Term]
 id: CHMO:0002873
 name: plasma microtorch
-is_a: CHMO:0000998 ! piece of apparatus
+is_a: CHMO:0000956 ! inductively coupled plasma torch
 
 [Term]
 id: CHMO:0002874
@@ -29496,7 +29528,9 @@ is_a: CHMO:0002742 ! elution
 [Term]
 id: CHMO:0002879
 name: certified reference material
-is_a: CHMO:0000993 ! portion of material
+def: "A reference material that has been certified by an appropriate authority." [RSC:cb]
+comment: For example NIST in the USA or the Community Bureau of Reference.
+is_a: CHMO:0002913 ! reference material
 
 [Term]
 id: CHMO:0002880
@@ -29528,7 +29562,7 @@ name: slotted disc
 def: "A disc with a slot in it." [RSC:cb]
 comment: This is used in photoacoustic spectroscopy to break a continuous laser beam into a pulsed one.
 synonym: "slotted disk" EXACT []
-is_a: CHMO:0000998 ! piece of apparatus
+is_a: OBI:0000968 ! device
 
 [Term]
 id: CHMO:0002886
@@ -29596,13 +29630,13 @@ relationship: BFO:0000085 CHMO:0002893 ! has function at some time probe laser f
 id: CHMO:0002896
 name: magnetron
 def: "A device that uses electrical and magnetic fields to generate heat." [RSC:hjb]
-is_a: CHMO:0000998 ! piece of apparatus
+is_a: OBI:0000968 ! device
 
 [Term]
 id: CHMO:0002897
 name: polarimeter
 def: "A device that measures the angle of optical rotation of a sample." [RSC:cb]
-is_a: CHMO:0000998 ! piece of apparatus
+is_a: OBI:0000968 ! device
 
 [Term]
 id: CHMO:0002898
@@ -29635,6 +29669,97 @@ is_a: CHMO:0002818 ! angle of optical rotation
 intersection_of: CHMO:0002818 ! angle of optical rotation
 intersection_of: OBI:0000312 CHMO:0002899 ! is_specified_output_of polarimetry of sample dissolved in dimethyl sulfoxide
 relationship: OBI:0000312 CHMO:0002899 ! is_specified_output_of polarimetry of sample dissolved in dimethyl sulfoxide
+
+[Term]
+id: CHMO:0002902
+name: Faraday efficiency
+def: "A measure of the efficiency by which charge is transferred in a chemical reaction." [RSC:cb]
+synonym: "coulombic efficiency" EXACT []
+synonym: "current efficiency" EXACT []
+synonym: "faradaic efficiency" EXACT []
+synonym: "faradaic yield" EXACT []
+xref: http://en.wikipedia.org/wiki/Faraday_efficiency
+is_a: CHMO:0000793 ! assay output
+relationship: OBI:0000312 CHMO:0001247 ! is_specified_output_of charge transport measurement method
+
+[Term]
+id: CHMO:0002903
+name: cycling stability
+def: "A measure of how the discharge capacity of a battery is maintained over a given number of cycles." [RSC:cb]
+is_a: CHMO:0000793 ! assay output
+
+[Term]
+id: CHMO:0002904
+name: specific discharge capacity
+synonym: "charge capacity" EXACT []
+synonym: "discharge capacity" EXACT []
+synonym: "specific capacity" EXACT []
+is_a: CHMO:0000793 ! assay output
+
+[Term]
+id: CHMO:0002905
+name: CTAB-assisted hydrothermal synthesis
+def: "Hydrothermal synthesis that uses cetyltrimethylammonium bromide to guide the morphology of the product." [doi:10.1016/j.ceramint.2011.04.134, RSC:cb]
+comment: For example for making ZnO nanorods.
+synonym: "cetyltrimethylammonium bromide-assisted hydrothermal synthesis" EXACT []
+synonym: "CTAB assisted hydrothermal synthesis" EXACT []
+is_a: CHMO:0001377 ! hydrothermal synthesis
+
+[Term]
+id: CHMO:0002906
+name: microwave-assisted hydrothermal synthesis
+def: "Hydrothermal synthesis that makes use of microwave radiation to affect the course of reaction." [RSC:cb]
+is_a: CHMO:0001377 ! hydrothermal synthesis
+relationship: BFO:0000057 OBI:0001061 ! has participant microwave synthesis system
+
+[Term]
+id: CHMO:0002907
+name: temperature-programmed oxidation
+def: "Thermal analysis of a system where the consumption of dioxygen in moles per second per gram of material is measured against temperature." [doi:10.1039/b105466j]
+is_a: CHMO:0000681 ! thermal analysis
+
+[Term]
+id: CHMO:0002908
+name: temperature-programmed reduction
+def: "Thermal analysis of a system where the consumption of reducing agent in moles per second per gram of material is measured against temperature." [doi:10.1039/b105466j]
+is_a: CHMO:0000681 ! thermal analysis
+
+[Term]
+id: CHMO:0002909
+name: temperature-programmed oxidation profile
+def: "A plot of the consumption of dioxygen in moles per second per gram of material against temperature obtained from a temperature-programmed oxidation experiment." [doi:10.1039/b105466j]
+synonym: "TPO profile" EXACT []
+is_a: CHMO:0000800 ! spectrum
+relationship: OBI:0000312 CHMO:0002907 ! is_specified_output_of temperature-programmed oxidation
+
+[Term]
+id: CHMO:0002910
+name: temperature-programmed reduction profile
+def: "A plot of the consumption of a reducing agent in moles per second per gram of material against temperature obtained from a temperature-programmed reduction experiment." [doi:10.1039/b105466j]
+synonym: "TPR profile" EXACT []
+is_a: CHMO:0000800 ! spectrum
+relationship: OBI:0000312 CHMO:0002908 ! is_specified_output_of temperature-programmed reduction
+
+[Term]
+id: CHMO:0002911
+name: magic angle spinning
+def: "Spinning a sample very rapidly at the magic angle (54.74 deg with respect to the direction of the magnetic field) in order to average anisotropic interactions between nuclei, which are usually averaged by Brownian motion in liquid samples, to zero." [ISBN:9780192800310]
+is_a: OBI:0000011 ! planned process
+relationship: OBI:0000417 CHMO:0002884 ! achieves_planned_objective anisotropic nucleus-nucleus interaction line broadening minimization objective
+
+[Term]
+id: CHMO:0002912
+name: figure-of-merit determination
+def: "An assay that determines a figure of merit for a given technique, analyte and matrix. This will consist of multiple assays of a reference material." [RSC:cb]
+is_a: OBI:0000070 ! assay
+relationship: BFO:0000057 CHMO:0002913 ! has participant reference material
+relationship: OBI:0000299 CHMO:0002803 ! has_specified_output figure of merit
+
+[Term]
+id: CHMO:0002913
+name: reference material
+def: "A substance or mixture of substances, the composition of which is known within specified limits, and one or more of the properties of which is sufficiently well established to be used for the calibration of an apparatus, the assessment of a measuring method or for assigning values to materials." [http://dx.doi.org/10.1351/goldbook.R05230]
+is_a: CHMO:0000993 ! portion of material
 
 [Term]
 id: CHMO:0010000
@@ -29795,7 +29920,7 @@ is_a: IAO:0000030 ! information content entity
 [Term]
 id: IAO:0000104
 name: plan specification
-is_a: IAO:0000030 ! information content entity
+is_a: IAO:0000033 ! directive information entity
 
 [Term]
 id: IAO:0000140
@@ -29803,16 +29928,24 @@ name: setting datum
 is_a: IAO:0000027 ! data item
 
 [Term]
+id: MS:1000073
+name: electrospray ionization
+def: "A process in which ionized species in the gas phase are produced from an analyte-containing solution via highly charged fine droplets, by means of spraying the solution from a narrow-bore needle tip at atmospheric pressure in the presence of a high electric field. When a pressurized gas is used to aid in the formation of a stable spray, the term pneumatically assisted electrospray ionization is used. The term ion spray is not recommended." [PSI:MS]
+synonym: "electrospray ionisation" EXACT []
+synonym: "ESI" EXACT []
+is_a: OBI:0000011 ! planned process
+
+[Term]
 id: OBCS:0000058
 name: sensitivity
 def: "A data item that measures the proportion of actual positives which are correctly identified as such (e.g. the percentage of sick people who are correctly identified as having the condition)." [OBCS:YQH]
-is_a: IAO:0000027 ! data item
+is_a: CHMO:0002803 ! figure of merit
 
 [Term]
 id: OBCS:0000059
 name: specificity
 def: "A data item that refers to the proportion of negatives in a binary classification test which are correctly identified." [OBCS:YQH]
-is_a: IAO:0000027 ! data item
+is_a: CHMO:0002803 ! figure of merit
 
 [Term]
 id: OBI:0000011
@@ -29869,7 +30002,7 @@ is_a: OBI:0000443 ! analyte assay
 id: OBI:0000796
 name: purification objective
 def: " The objective to separate a material entity into different compositions of which one or more have are purified fractions that contain higher concentration of a desired component, while others contain impurities and are not of interest." [obi:bp]
-is_a: IAO:0000030 ! information content entity
+is_a: IAO:0000005 ! objective specification
 
 [Term]
 id: OBI:0000838
@@ -29878,10 +30011,17 @@ def: "A process with that achieves the objective to maintain some or all of the 
 is_a: OBI:0000011 ! planned process
 
 [Term]
+id: OBI:0000968
+name: device
+alt_id: CHMO:0000998
+def: "A material entity that is designed to perform a function in a scientific investigation, but is not a reagent." [obi:obi]
+is_a: CHMO:0000993 ! portion of material
+
+[Term]
 id: OBI:0001032
 name: light emission device
 def: "A device which has a function to emit light." [obi:hp]
-is_a: CHMO:0000998 ! piece of apparatus
+is_a: OBI:0000968 ! device
 
 [Term]
 id: OBI:0001042
@@ -29890,12 +30030,19 @@ def: "A transfer function where the transfer requires work to move the entity, o
 is_a: BFO:0000034 ! function
 
 [Term]
+id: OBI:0001061
+name: microwave synthesis system
+def: "A device that is used to apply microwave irradiation to chemical reactions." [obi:es]
+is_a: OBI:0000968 ! device
+relationship: BFO:0000110 CHMO:0002444 ! has continuant part at all times microwave oven
+
+[Term]
 id: OBI:0001138
 name: X-ray source
 alt_id: CHMO:0000944
 def: "A device that is used to generate X-rays." [obi:es]
 synonym: "X-ray generator" EXACT []
-is_a: CHMO:0000998 ! piece of apparatus
+is_a: OBI:0000968 ! device
 
 [Term]
 id: OBI:0200051
@@ -30026,6 +30173,12 @@ comment: p has_participant e o e has_role matrix_role. Don't know how to do this
 domain: BFO:0000015 ! process
 range: BFO:0000040 ! material entity
 is_a: BFO:0000057 ! has participant
+
+[Typedef]
+id: CHMO:0002922
+name: probes_atom
+def: "A process p probes_atom n if it has_participant n and its objective o is to determine the energy levels of n." [RSC:cb]
+comment: should really be probes_nucleus but ChEBI doesn't have the nuclei. Will use atoms for now.
 
 [Typedef]
 id: CHMO:0010016
