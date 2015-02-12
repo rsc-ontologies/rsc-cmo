@@ -29762,6 +29762,20 @@ def: "A substance or mixture of substances, the composition of which is known wi
 is_a: CHMO:0000993 ! portion of material
 
 [Term]
+id: CHMO:0002914
+name: absorption of material
+alt_id: REX:0000188
+def: "The process of one material (absorbate) being retained by another (absorption)." [http://dx.doi.org/10.1351/goldbook.A00036]
+comment: Gold Book, somewhat modified. It goes on "The process of one material (absorbate) being retained by another (absorbent); this may be the physical solution of a gas, liquid, or solid in a liquid, attachment of molecules of a gas, vapour, liquid, or dissolved substance to a solid surface by physical forces, etc."
+is_a: BFO:0000015 ! process
+
+[Term]
+id: CHMO:0002915
+name: absorption of radiation
+def: "A phenomenon in which radiation transfers to matter which it traverses some or all of its energy." [http://dx.doi.org/10.1351/goldbook.A00036]
+is_a: BFO:0000015 ! process
+
+[Term]
 id: CHMO:0010000
 name: risk management planning process
 is_a: CHMO:0002828 ! experimental planning process
