@@ -7,3 +7,5 @@ The Chemical Methods Ontology contains more than 3000 classes and describes meth
 It also describes the instruments used in these experiments, such as mass spectrometers and chromatography columns and their outputs.
 
 The OWL file is generated from the OBO file, but both can be edited in Protege (http://protege.stanford.edu/).
+
+You can browse the ontology here: http://www.ebi.ac.uk/ols/ontologies/chmo
