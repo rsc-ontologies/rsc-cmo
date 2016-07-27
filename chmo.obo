@@ -1,5 +1,4 @@
 format-version: 1.2
-data-version: releases/2014-11-20
 saved-by: batchelorc
 synonymtypedef: non-mining_synonym "Non-mining synonym" EXACT
 ontology: chmo
@@ -16415,7 +16414,7 @@ is_a: CHMO:0001638 ! plasma protein fractionation
 id: CHMO:0001640
 name: filtration
 def: "The process of segregation of phases; the separation of suspended solids from a liquid or gas, usually by forcing a carrier gas or liquid through a porous medium." [AU:F02388]
-is_a: OBI:0000094 ! material processing
+is_a: CHMO:0002231 ! purification
 
 [Term]
 id: CHMO:0001641
@@ -22864,7 +22863,8 @@ creation_date: 2009-07-29T09:59:13Z
 id: CHMO:0002231
 name: purification
 def: "Any technique used to physically separate an analyte from byproducts, reagents or contaminating substances." [rsc:hjb]
-is_a: OBI:0000094 ! material processing
+is_a: CHMO:0000999 ! separation method
+relationship: OBI:0000417 OBI:0000796 ! achieves_planned_objective purification objective
 created_by: burchh
 creation_date: 2009-07-29T03:59:53Z
 
@@ -30238,4 +30238,3 @@ is_a: BFO:0000056 ! participates in at some time
 id: OBI:0000417
 name: achieves_planned_objective
 def: "This relation obtains between a planned process and a objective specification when the criteria specified in the objective specification are met at the end of the planned process." [obi:ar, obi:bp]
-
