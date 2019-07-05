@@ -2,7 +2,6 @@ format-version: 1.2
 saved-by: batchelorc
 synonymtypedef: non-mining_synonym "Non-mining synonym" EXACT
 ontology: chmo
-property_value: has_format-version "1.2"
 
 [Term]
 id: BFO:0000002
@@ -1692,9 +1691,9 @@ def: "A method for determining structure by measuring the change in direction or
 synonym: "light scattering spectrometry" EXACT []
 synonym: "light scattering spectroscopy" EXACT []
 synonym: "LiSSP" EXACT []
-synonym: "LS" non-mining_synonym EXACT []
 synonym: "LSS" EXACT []
 is_a: CHMO:0000160 ! scattering method
+property_value: non-mining_synonym "LS" xsd:string {has_synonym_type="EXACT"}
 
 [Term]
 id: CHMO:0000167
@@ -30238,3 +30237,4 @@ is_a: BFO:0000056 ! participates in at some time
 id: OBI:0000417
 name: achieves_planned_objective
 def: "This relation obtains between a planned process and a objective specification when the criteria specified in the objective specification are met at the end of the planned process." [obi:ar, obi:bp]
+
