@@ -6505,7 +6505,7 @@ is_a: CHMO:0000613 ! pulsed nuclear magnetic resonance spectroscopy
 [Term]
 id: CHMO:0000593
 name: 1H nuclear magnetic resonance spectroscopy
-def: "Spectroscopy where the energy states of 1H nuclei placed in a static magnetic field are interrogated by inducing transitions between the states via radio frequency irradiation. Each experiment consists of a sequence of radio frequency pulses with delay periods in between them." [CHEBI:36940, FIX:0000134, rsc:pr]
+def: "Spectroscopy where the energy states of 1H nuclei placed in a static magnetic field are interrogated by inducing transitions between the states via radio frequency irradiation. Each experiment consists of a sequence of radio frequency pulses with delay periods in between them." [rsc:pr]
 synonym: "1H NMR" EXACT []
 synonym: "1H NMR spectroscopy" EXACT []
 synonym: "1H nuclear magnetic resonance spectrometry" EXACT []
@@ -6515,6 +6515,12 @@ synonym: "1H-NMR spectroscopy" EXACT []
 synonym: "proton NMR" EXACT []
 synonym: "proton nuclear magnetic resonance spectroscopy" EXACT []
 is_a: CHMO:0000613 ! pulsed nuclear magnetic resonance spectroscopy
+xref: FIX:0000134
+
+[Term]
+id: CHEBI:36940
+name: fluorine-19 atom
+is_a: CHEBI:23367
 
 [Term]
 id: CHMO:0000594
@@ -6530,7 +6536,7 @@ is_a: CHMO:0000613 ! pulsed nuclear magnetic resonance spectroscopy
 [Term]
 id: CHMO:0000595
 name: 13C nuclear magnetic resonance spectroscopy
-def: "Spectroscopy where the energy states of 13C nuclei placed in a static magnetic field are interrogated by inducing transitions between the states via radio frequency irradiation. Each experiment consists of a sequence of radio frequency pulses with delay periods in between them." [CHEBI:36928, FIX:0000135, rsc:pr]
+def: "Spectroscopy where the energy states of 13C nuclei placed in a static magnetic field are interrogated by inducing transitions between the states via radio frequency irradiation. Each experiment consists of a sequence of radio frequency pulses with delay periods in between them." [rsc:pr]
 synonym: "13C NMR" EXACT []
 synonym: "13C NMR spectroscopy" EXACT []
 synonym: "13C nuclear magnetic resonance spectrometry" EXACT []
@@ -6539,6 +6545,10 @@ synonym: "13C-NMR spectroscopy" EXACT []
 synonym: "C-NMR" EXACT []
 synonym: "carbon NMR" EXACT []
 is_a: CHMO:0000613 ! pulsed nuclear magnetic resonance spectroscopy
+relationship: CHMO:0002922 CHEBI:36928
+intersection_of: CHMO:0000613 ! pulsed nuclear magnetic resonance spectroscopy
+intersection_of: CHMO:0002922 CHEBI:36928
+xref: FIX:0000135
 
 [Term]
 id: CHMO:0000596
@@ -6555,13 +6565,17 @@ is_a: CHMO:0000595 ! 13C nuclear magnetic resonance spectroscopy
 [Term]
 id: CHMO:0000597
 name: 19F nuclear magnetic resonance spectroscopy
-def: "Spectroscopy where the energy states of 19F nuclei placed in a static magnetic field are interrogated by inducing transitions between the states via radio frequency irradiation. Each experiment consists of a sequence of radio frequency pulses with delay periods in between them." [CHEBI:36940, FIX:0000137, rsc:pr]
+def: "Spectroscopy where the energy states of 19F nuclei placed in a static magnetic field are interrogated by inducing transitions between the states via radio frequency irradiation. Each experiment consists of a sequence of radio frequency pulses with delay periods in between them." [rsc:pr]
 synonym: "19F NMR" EXACT []
 synonym: "19F NMR spectrometry" EXACT []
 synonym: "19F NMR spectroscopy" EXACT []
 synonym: "19F nuclear magnetic resonance spectrometry" EXACT []
 synonym: "19F-NMR" EXACT []
 is_a: CHMO:0000613 ! pulsed nuclear magnetic resonance spectroscopy
+relationship: CHMO:0002922 CHEBI:36940
+intersection_of: CHMO:0000613 ! pulsed nuclear magnetic resonance spectroscopy
+intersection_of: CHMO:0002922 CHEBI:36940
+xref: FIX:0000137
 
 [Term]
 id: CHMO:0000598
@@ -8039,7 +8053,7 @@ is_a: CHMO:0000612 ! insensitive nuclei enhancement by polarisation transfer
 [Term]
 id: CHMO:0000729
 name: annular dark-field scanning transmission electron microscopy
-def: "Microscopy where a finely focused (<10 nm diameter) electron beam with an acceleration voltage 50–150 kV is scanned across an electron-transparent specimen under vacuum. The beam of electrons is scattered or diffracted before reaching the specimen, and the image results from a weakening of the beam by its interaction with the sample. An annular aperture is used to select electrons that have passed\nthrough given symmetric zones within the objective lens of the microscope." [https://doi.org/10.1002/adma.200502201]
+def: "Microscopy where a finely focused (<10 nm diameter) electron beam with an acceleration voltage 50–150 kV is scanned across an electron-transparent specimen under vacuum. The beam of electrons is scattered or diffracted before reaching the specimen, and the image results from a weakening of the beam by its interaction with the sample. An annular aperture is used to select electrons that have passed through given symmetric zones within the objective lens of the microscope." [https://doi.org/10.1002/adma.200502201]
 synonym: "ADF-STEM" EXACT []
 is_a: CHMO:0002472 ! dark-field scanning transmission electron microscopy
 
@@ -8624,6 +8638,11 @@ synonym: "ORD" EXACT []
 is_a: CHMO:0000228 ! spectroscopy
 
 [Term]
+id: CHEBI:36928
+name: carbon-13 atom
+is_a: CHEBI:23367
+
+[Term]
 id: CHMO:0000786
 name: 129Xe nuclear magnetic resonance spectroscopy
 def: "Spectroscopy where the energy states of 129Xe nuclei placed in a static magnetic field are interrogated by inducing transitions between the states via radio frequency irradiation. Each experiment consists of a sequence of radio frequency pulses with delay periods in between them." [CHEBI:52453, FIX:0000139, rsc:pr]
@@ -8647,12 +8666,16 @@ is_a: CHMO:0000613 ! pulsed nuclear magnetic resonance spectroscopy
 [Term]
 id: CHMO:0000788
 name: 119Sn nuclear magnetic resonance spectroscopy
-def: "Spectroscopy where the energy states of 119Sn nuclei placed in a static magnetic field are interrogated by inducing transitions between the states via radio frequency irradiation. Each experiment consists of a sequence of radio frequency pulses with delay periods in between them." [CHEBI:52230, FIX:0000741, rsc:pr]
+def: "Spectroscopy where the energy states of 119Sn nuclei placed in a static magnetic field are interrogated by inducing transitions between the states via radio frequency irradiation. Each experiment consists of a sequence of radio frequency pulses with delay periods in between them." [rsc:pr]
 synonym: "119Sn NMR" EXACT []
 synonym: "119Sn NMR spectroscopy" EXACT []
 synonym: "119Sn nuclear magnetic resonance spectrometry" EXACT []
 synonym: "119Sn-NMR" EXACT []
 is_a: CHMO:0000613 ! pulsed nuclear magnetic resonance spectroscopy
+relationship: CHMO:0002922 CHEBI:52230
+intersection_of: CHMO:0000613 ! pulsed nuclear magnetic resonance spectroscopy
+intersection_of: CHMO:0002922 CHEBI:52230
+xref: FIX:0000741
 
 [Term]
 id: CHMO:0000789
@@ -11756,7 +11779,6 @@ id: CHMO:0001134
 name: obsolete: sample preparation method-measurement method
 alt_id: CHMO:0002037
 def: "A method in which a sample preparation method is coupled to a measurement method." [https://orcid.org/0000-0001-5985-7429]
-is_a: OBI:0000070 ! assay
 is_obsolete: true
 created_by: batchelorc
 creation_date: 2009-03-06T05:31:37Z
@@ -13037,14 +13059,22 @@ creation_date: 2009-03-27T03:28:25Z
 [Term]
 id: CHMO:0001252
 name: 183W nuclear magnetic resonance spectroscopy
-def: "Spectroscopy where the energy states of 183W nuclei placed in a static magnetic field are interrogated by inducing transitions between the states via radio frequency irradiation. Each experiment consists of a sequence of radio frequency pulses with delay periods in between them." [CHEBI:52452, rsc:pr]
+def: "Spectroscopy where the energy states of 183W nuclei placed in a static magnetic field are interrogated by inducing transitions between the states via radio frequency irradiation. Each experiment consists of a sequence of radio frequency pulses with delay periods in between them." [rsc:pr]
 synonym: "183W NMR" EXACT []
 synonym: "183W NMR spectrometry" EXACT []
 synonym: "183W NMR spectroscopy" EXACT []
 synonym: "183W nuclear magnetic resonance spectrometry" EXACT []
 synonym: "183W-NMR" EXACT []
 is_a: CHMO:0000613 ! pulsed nuclear magnetic resonance spectroscopy
+relationship: CHMO:0002922 CHEBI:52462
+intersection_of: CHMO:0000613
+intersection_of: CHMO:0002922 CHEBI:52462
 creation_date: 2009-04-02T04:47:07Z
+
+[Term]
+id: CHEBI:52462
+name: tungsten-183
+is_a: CHEBI:23367
 
 [Term]
 id: CHMO:0001253
@@ -17051,7 +17081,6 @@ name: obsolete: fluorescence detection for separation methods
 def: "A detection method which is sensitive to naturally fluorescent or tagged compounds. As the sample passes through a small cell it is excited by ultraviolet light and any fluorescence is detected." [ISBN:0824728041]
 synonym: "FD" EXACT []
 synonym: "fluorescence detection" EXACT []
-is_a: CHMO:0001709 ! detection method
 is_obsolete: true
 
 [Term]
@@ -17501,6 +17530,11 @@ created_by: https://orcid.org/0000-0001-5985-7429
 creation_date: 2009-05-18T03:49:29Z
 
 [Term]
+id: CHEBI:52230
+name: tin-119 atom
+is_a: CHEBI:23367
+
+[Term]
 id: CHMO:0001766
 name: transmission Raman spectroscopy
 def: "Spectroscopy where the Raman scattering of monochromatic light, usually from a laser, by a sample is detected. The light is collected from the non-illuminated side of the sample." [https://orcid.org/0000-0002-0640-0422]
@@ -17795,7 +17829,6 @@ creation_date: 2009-05-20T02:37:17Z
 id: CHMO:0001792
 name: obsolete: sample transformation method-detection method
 def: "A method consisting of a sample transformation method coupled to a detection method." [https://orcid.org/0000-0002-0640-0422]
-is_a: OBI:0000070 ! assay
 is_obsolete: true
 created_by: https://orcid.org/0000-0001-5985-7429
 creation_date: 2009-05-20T02:47:37Z
@@ -17804,7 +17837,6 @@ creation_date: 2009-05-20T02:47:37Z
 id: CHMO:0001793
 name: obsolete: sample transformation method-measurement method
 def: "A method consisting of a sample transformation method coupled to a measurement method." [https://orcid.org/0000-0002-0640-0422]
-is_a: OBI:0000070 ! assay
 is_obsolete: true
 created_by: https://orcid.org/0000-0001-5985-7429
 creation_date: 2009-05-20T02:49:30Z
@@ -20716,16 +20748,16 @@ creation_date: 2009-06-22T04:09:32Z
 id: CHMO:0002028
 name: 129Xe Mossbauer spectroscopy
 def: "Spectroscopy where the intensity of a gamma-rays beam transmitted through a solid sample containing 129Xe nuclei is detected." [CHEBI:52453, FIX:0000750, https://orcid.org/0000-0002-0640-0422]
-synonym: "129Xe M\ö\\ssbauer spectrometry" EXACT []
-synonym: "129Xe M\ö\\ssbauer spectroscopy" EXACT []
-synonym: "129Xe M\össbauer spectrometry" EXACT []
-synonym: "129Xe M\össbauer spectroscopy" EXACT []
+synonym: "129Xe Mößbauer spectrometry" EXACT []
+synonym: "129Xe Mößbauer spectroscopy" EXACT []
+synonym: "129Xe Mössbauer spectrometry" EXACT []
+synonym: "129Xe Mössbauer spectroscopy" EXACT []
 synonym: "129Xe Moessbauer spectrometry" EXACT []
 synonym: "129Xe Moessbauer spectroscopy" EXACT []
 synonym: "129Xe Mossbauer spectrometry" EXACT []
 synonym: "129Xe Mossbauer spectroscopy" EXACT []
 synonym: "129Xe recoil-free gamma-ray resonance absorption spectroscopy" EXACT []
-synonym: "xenon-129 M\ö\\ssbauer spectroscopy" EXACT []
+synonym: "xenon-129 Mößbauer spectroscopy" EXACT []
 synonym: "xenon-129 Moessbauer spectroscopy" EXACT []
 is_a: CHMO:0000417 ! Mossbauer spectroscopy
 created_by: https://orcid.org/0000-0001-5985-7429
@@ -20735,12 +20767,12 @@ creation_date: 2009-06-22T04:27:35Z
 id: CHMO:0002029
 name: 127I Mossbauer spectroscopy
 def: "Spectroscopy where the intensity of a gamma-rays beam transmitted through a solid sample containing 127I nuclei is detected." [CHEBI:52631, FIX:0000737, https://orcid.org/0000-0002-0640-0422]
-synonym: "127I M\ö\\ssbauer spectroscopy" EXACT []
-synonym: "127I M\össbauer spectroscopy" EXACT []
+synonym: "127I Mößbauer spectroscopy" EXACT []
+synonym: "127I Mössbauer spectroscopy" EXACT []
 synonym: "127I Moessbauer spectroscopy" EXACT []
 synonym: "127I Mossbauer spectroscopy" EXACT []
 synonym: "127I recoil-free gamma-ray resonance absorption spectroscopy" EXACT []
-synonym: "iodine-127 M\ö\\ssbauer spectroscopy" EXACT []
+synonym: "iodine-127 Mößbauer spectroscopy" EXACT []
 synonym: "iodine-127 Moessbauer spectroscopy" EXACT []
 is_a: CHMO:0000417 ! Mossbauer spectroscopy
 created_by: https://orcid.org/0000-0001-5985-7429
@@ -20750,12 +20782,12 @@ creation_date: 2009-06-22T04:30:39Z
 id: CHMO:0002030
 name: 57Fe Mossbauer spectroscopy
 def: "Spectroscopy where the intensity of a gamma-rays beam transmitted through a solid sample containing 57Fe nuclei is detected." [CHEBI:52623, FIX:0000732, https://orcid.org/0000-0002-0640-0422]
-synonym: "57Fe M\ö\\ssbauer spectroscopy" EXACT []
-synonym: "57Fe M\össbauer spectroscopy" EXACT []
+synonym: "57Fe Mößbauer spectroscopy" EXACT []
+synonym: "57Fe Mössbauer spectroscopy" EXACT []
 synonym: "57Fe Moessbauer spectroscopy" EXACT []
 synonym: "57Fe Mossbauer spectroscopy" EXACT []
 synonym: "57Fe recoil-free gamma-ray resonance absorption spectroscopy" EXACT []
-synonym: "iron-57 M\ö\\ssbauer spectroscopy" EXACT []
+synonym: "iron-57 Mößbauer spectroscopy" EXACT []
 synonym: "iron-57 Moessbauer spectroscopy" EXACT []
 is_a: CHMO:0000417 ! Mossbauer spectroscopy
 created_by: https://orcid.org/0000-0001-5985-7429
@@ -20765,14 +20797,15 @@ creation_date: 2009-06-22T04:33:40Z
 id: CHMO:0002031
 name: 119Sn Mossbauer spectroscopy
 def: "Spectroscopy where the intensity of a gamma-rays beam transmitted through a solid sample containing 119Sn nuclei is detected." [CHEBI:52230, FIX:0000733, https://orcid.org/0000-0002-0640-0422]
-synonym: "119Sn M\ö\\ssbauer spectroscopy" EXACT []
-synonym: "119Sn M\össbauer spectroscopy" EXACT []
+synonym: "119Sn Mößbauer spectroscopy" EXACT []
+synonym: "119Sn Mössbauer spectroscopy" EXACT []
 synonym: "119Sn Moessbauer spectroscopy" EXACT []
 synonym: "119Sn Mossbauer spectroscopy" EXACT []
 synonym: "119Sn recoil-free gamma-ray resonance absorption spectroscopy" EXACT []
-synonym: "tin-119 M\\o\\ssbauer spectroscopy" EXACT []
+synonym: "tin-119 Mößbauer spectroscopy" EXACT []
 synonym: "tin-119 Moessbauer spectroscopy" EXACT []
 is_a: CHMO:0000417 ! Mossbauer spectroscopy
+relationship: CHMO:0002922 CHEBI:52230
 created_by: https://orcid.org/0000-0001-5985-7429
 creation_date: 2009-06-22T04:35:04Z
 
@@ -25161,7 +25194,7 @@ creation_date: 2009-09-22T05:11:39Z
 [Term]
 id: CHMO:0002437
 name: reflection interference contrast microscopy
-def: "Microscopy that determines the specimen's shape and distance away\nfrom a nearby, usually flat, reflective surface from the interference pattern\nproduced by light reflecting from both the object and the surface. A microscope objective focusses a laser on the fluorescent specimen, and the same objective collects fluorescence. The interference between the fluorescence directly emitted by the specimen and the fluorescence reflected by the surface is observed by measuring the intensity of fluorescence passing through a confocal pinhole." [https://doi.org/10.1039/b9nr00156e]
+def: "Microscopy that determines the specimen's shape and distance away from a nearby, usually flat, reflective surface from the interference pattern produced by light reflecting from both the object and the surface. A microscope objective focusses a laser on the fluorescent specimen, and the same objective collects fluorescence. The interference between the fluorescence directly emitted by the specimen and the fluorescence reflected by the surface is observed by measuring the intensity of fluorescence passing through a confocal pinhole." [https://doi.org/10.1039/b9nr00156e]
 synonym: "reflection interference contrast (RIC) microscopy" EXACT []
 synonym: "reflection interference contrast (RIC-) microscopy" EXACT []
 synonym: "RIC microscopy" EXACT []
@@ -25193,13 +25226,14 @@ creation_date: 2009-09-23T01:06:22Z
 
 [Term]
 id: CHMO:0002441
-name: tungsten-187 nuclear magnetic resonance spectrum
-def: "A plot of chemical shift vs. intensity for tungsten-187 nuclei obtained by measuring the effect of the absorption of radio frequency radiation on nuclear spin-state transitions in the presence of a magnetic field." [rsc:pr]
-synonym: "187W NMR spectra" EXACT []
-synonym: "187W NMR spectrum" EXACT []
-synonym: "tungsten-187 NMR spectra" EXACT []
-synonym: "tungsten-187 NMR spectrum" EXACT []
+name: tungsten-183 nuclear magnetic resonance spectrum
+def: "A plot of chemical shift vs. intensity for tungsten-183 nuclei obtained by measuring the effect of the absorption of radio frequency radiation on nuclear spin-state transitions in the presence of a magnetic field." [rsc:pr]
+synonym: "183W NMR spectra" EXACT []
+synonym: "183W NMR spectrum" EXACT []
+synonym: "tungsten-183 NMR spectra" EXACT []
+synonym: "tungsten-183 NMR spectrum" EXACT []
 is_a: CHMO:0000835 ! nuclear magnetic resonance spectrum
+relationship: OBI:0000312 CHMO:0001252
 created_by: https://orcid.org/0000-0001-5985-7429
 creation_date: 2009-09-23T02:29:08Z
 
@@ -25408,7 +25442,7 @@ creation_date: 2009-09-23T06:01:55Z
 [Term]
 id: CHMO:0002458
 name: Kelvin probe method
-def: "A measurement method for determining the contact potential difference or difference in work functions between the sample and a reference electrode. In this method, the probe, which is made of\na material with a known work function (commonly tungsten or platinum), is arranged close to the sample surface as a parallel-plate capacitor with a small spacing. The probe is vibrated, causing a change in the capacitance between the electrodes, resulting in a small ac current. The work function difference is measured by applying an opposing external bias voltage such that the ac current is zero." [https://doi.org/10.1007/s003390051144, ISBN:0127521496]
+def: "A measurement method for determining the contact potential difference or difference in work functions between the sample and a reference electrode. In this method, the probe, which is made of a material with a known work function (commonly tungsten or platinum), is arranged close to the sample surface as a parallel-plate capacitor with a small spacing. The probe is vibrated, causing a change in the capacitance between the electrodes, resulting in a small ac current. The work function difference is measured by applying an opposing external bias voltage such that the ac current is zero." [https://doi.org/10.1007/s003390051144, ISBN:0127521496]
 synonym: "Kelvin method" EXACT []
 synonym: "vibrating capacitor method" EXACT []
 is_a: CHMO:0001247 ! charge transport measurement method
@@ -26099,7 +26133,7 @@ creation_date: 2009-10-12T10:17:43Z
 [Term]
 id: CHMO:0002522
 name: excitation–emission matrix fluorescence spectroscopy
-def: "A type of fluorescence spectroscopy where a two-dimensional total fluorescence spectrum is recorded at various excitation\nwavelengths." [https://doi.org/10.1039/b609875d]
+def: "A type of fluorescence spectroscopy where a two-dimensional total fluorescence spectrum is recorded at various excitation wavelengths." [https://doi.org/10.1039/b609875d]
 synonym: "EEM" EXACT []
 synonym: "excitation emission matrix (EEM) fluorescence" EXACT []
 synonym: "excitation–emission matrix fluorescence" EXACT []
