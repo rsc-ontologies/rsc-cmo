@@ -29296,7 +29296,7 @@ is_a: OBI:0000011 ! planned process
 [Term]
 id: CHMO:0002832
 name: material disposal
-def: "A planned process in which materials for an experiment are removed permanently from the laboratory." [https://orcid.org/0000-0001-5985-7429]
+def: "A planned process in which materials are removed permanently from the laboratory or repository." [https://orcid.org/0000-0001-5985-7429, https://orcid.org/0000-0001-5029-1158]
 comment: makes no judgement about whether this is a good way to do it, or a bad way such as tipping down the sink.
 is_a: CHMO:0002845 ! waste management
 
