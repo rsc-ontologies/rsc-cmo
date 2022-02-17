@@ -3731,7 +3731,7 @@ id: CHMO:0000352
 name: spin-polarised angle-resolved Auger electron spectroscopy
 def: "Spectroscopy where the bombardment of a sample with high-energy photons results in the ionisation of core electrons and the emission of so-called 'Auger' electrons. The energies of these Auger electrons are detected as a function of emission angle and a magnet is used to align all electron spins parallel to the emitting surface." [https://orcid.org/0000-0002-0640-0422]
 synonym: "SPARPES" EXACT []
-synonym: "spin-polarized angle-resolved Auger electron spectometry" EXACT []
+synonym: "spin-polarized angle-resolved Auger electron spectrometry" EXACT []
 is_a: CHMO:0000351 ! spin-polarised Auger electron spectroscopy
 
 [Term]
@@ -5443,6 +5443,7 @@ synonym: "ICR-FT-MS" EXACT []
 synonym: "in-beam Fourier-transform ion cyclotron resonance" EXACT []
 synonym: "ion cyclotron resonance Fourier transform mass spectrometry" EXACT []
 is_a: CHMO:0000501 ! ion cyclotron resonance mass spectrometry
+is_a: CHMO:0002925 ! Fourier transform mass spectrometry
 
 [Term]
 id: CHMO:0000503
@@ -10370,8 +10371,8 @@ def: "A mass spectrometer that uses an ion cyclotron resonance cell (a piece of 
 synonym: "FT-ICR MS" RELATED []
 synonym: "FTICR MS" RELATED []
 synonym: "FTICR spectrometer" EXACT []
-is_a: CHMO:0000982 ! mass spectrometer
-intersection_of: CHMO:0000982 ! mass spectrometer
+is_a: CHMO:0002657 ! ion trap mass spectrometer
+intersection_of: CHMO:0002657 ! ion trap mass spectrometer
 intersection_of: BFO:0000174 CHMO:0000964 ! has proper continuant part at some time ion cyclotron resonance cell
 relationship: BFO:0000174 CHMO:0000964 ! has proper continuant part at some time ion cyclotron resonance cell
 
@@ -10396,7 +10397,7 @@ is_a: CHMO:0000966 ! quadrupole mass-to-charge analyser
 
 [Term]
 id: CHMO:0000968
-name: orbitrap
+name: Orbitrap
 def: "A mass-to-charge analyser that consists of two coaxial axially symmetric electrodes, the outer one in the shape of a barrel, the inner one in the shape of a spindle, that traps ions in oscillating trajectories along the z-axis according to their mass-to-charge ratio." [ISBN:9780470516348]
 is_a: CHMO:0000966 ! quadrupole mass-to-charge analyser
 
@@ -29455,7 +29456,7 @@ is_a: CHMO:0000793 ! assay output
 id: CHMO:0002856
 name: enantiomer excess
 def: "The absolute value of the mole fraction for one enantiomer in a mixture minus the mole fraction for the other enantiomer." [https://doi.org/10.1359/goldbook.E02070]
-comment: most people quote percentage enantiomer excess, CHMO:2857
+comment: most people quote percentage enantiomer excess, CHMO:0002857
 is_a: CHMO:0000793 ! assay output
 
 [Term]
@@ -29843,6 +29844,73 @@ id: CHMO:0002917
 name: sample quenching
 def: "Material processing in which a sample is cooled by immersion in a fluid." [https://www.britannica.com/technology/quenching-materials-processing]
 is_a: OBI:0000094 ! material processing
+
+[Term]
+id: CHMO:0002918
+name: Smith degradation
+def: "Selective degradation of polysaccharides by periodate oxidation." [https://orcid.org/0000-0002-5865-8994]
+is_a: OBI:0000094 ! material processing
+
+[Term]
+id: CHMO:0002919
+name: hydrazine treatment
+def: "Treatment of a sample with hydrazine. This can be used to prepare samples for glycomics." [https://orcid.org/0000-0002-5865-8994]
+synonym: "hydrazinolysis" EXACT []
+is_a: OBI:0000094 ! material processing
+
+[Term]
+id: CHMO:0002920
+name: PNGase A digestion
+def: "An enzymatic removal of N-linked glycans from a peptide or protein using the enzyme PNGase A (N-glycosidase A), including those with core α1-3 fucosylation." [https://orcid.org/0000-0002-5865-8994]
+synonym: "PNGase A treatment" EXACT []
+synonym: "PNGase A glycan release" EXACT []
+synonym: "PNGase A glycan cleavage" EXACT []
+is_a: CHMO:0001494 ! enzyme digestion
+
+[Term]
+id: CHMO:0002921
+name: PNGase F digestion
+def: "An enzymatic removal of N-linked glycans from a peptide or protein using the enzyme PNGase F (N-glycosidase F)." [https://orcid.org/0000-0002-5865-8994]
+synonym: "PNGase F treatment" EXACT []
+synonym: "PNGase F glycan release" EXACT []
+synonym: "PNGase F glycan cleavage" EXACT []
+is_a: CHMO:0001494 ! enzyme digestion
+
+[Term]
+id: CHMO:0002923
+name: high-performance anion-exchange chromatography
+def: "A high-performance liquid chromatography method where the components are distributed between two phases, one of which is stationary and retains anions by positively charged functional groups." [https://orcid.org/0000-0002-5865-8994]
+synonym: "HPAEC" EXACT []
+synonym: "high-performance AEC" EXACT []
+is_a: CHMO:0001009 ! high-performance liquid chromatography
+is_a: CHMO:0001209 ! anion-exchange chromatography
+
+[Term]
+id: CHMO:0002924
+name: graphitized carbon liquid chromatography
+def: "A separation method where the components are distributed between two phases, one of which is stationary and made from graphitized carbon and the other moves in a definite direction." [https://orcid.org/0000-0002-5865-8994]
+synonym: "porous graphitic carbon chromatography" EXACT []
+synonym: "PGC chromatography" EXACT []
+synonym: "graphitized carbon HPLC" EXACT []
+synonym: "graphitized carbon liquid chromatography" EXACT []
+synonym: "graphitised carbon HPLC" EXACT []
+is_a: CHMO:0001000 ! chromatography
+
+[Term]
+id: CHMO:0002925
+name: Fourier transform mass spectrometry
+def: "Mass spectrometry where the mass-to-charge ratio of the sample ions is determined by Fourier transform of a recorded time-domain transient." [https://orcid.org/0000-0002-5865-8994]
+synonym: "FTMS" EXACT []
+synonym: "FT-MS" EXACT []
+is_a: CHMO:0000500 ! ion trap mass spectrometry
+
+[Term]
+id: CHMO:0002926
+name: Orbitrap mass spectrometry
+def: "Mass spectrometry where the mass-to-charge ratio of the sample ions is measured by their oscillations along the centre electrode in an Orbitrap mass analyzer." [https://orcid.org/0000-0002-5865-8994]
+synonym: "Orbitrap-mass spectroscopy" EXACT []
+synonym: "Orbitrap-MS" EXACT []
+is_a: CHMO:0002925 ! Fourier transform mass spectrometry
 
 [Term]
 id: CHMO:0010000
