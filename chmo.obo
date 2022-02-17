@@ -1,4 +1,5 @@
 format-version: 1.2
+data-version: releases/2022-02-17
 saved-by: batchelorc
 synonymtypedef: non-mining_synonym "Non-mining synonym" EXACT
 ontology: chmo
