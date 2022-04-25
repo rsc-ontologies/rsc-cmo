@@ -1,5 +1,5 @@
 format-version: 1.2
-data-version: releases/2022-02-17
+data-version: releases/2022-04-19
 saved-by: batchelorc
 synonymtypedef: non-mining_synonym "Non-mining synonym" EXACT
 ontology: chmo
@@ -10,6 +10,34 @@ property_value: http://purl.org/dc/terms/license http://creativecommons.org/lice
 [Term]
 id: BFO:0000002
 name: continuant
+
+[Term]
+id: BFO:0000004
+name: independent continuant
+def: "b is an independent continuant = Def. b is a continuant which is such that there is no c and no t such that b s-depends_on c at t. (axiom label in BFO2 Reference: [017-002])" []
+is_a: BFO:0000002 ! continuant
+property_value: BFO:0000179 "ic" xsd:string
+property_value: BFO:0000180 "IndependentContinuant" xsd:string
+property_value: IAO:0000112 "a chair" xsd:string
+property_value: IAO:0000112 "a heart" xsd:string
+property_value: IAO:0000112 "a leg" xsd:string
+property_value: IAO:0000112 "a molecule" xsd:string
+property_value: IAO:0000112 "a spatial region" xsd:string
+property_value: IAO:0000112 "an atom" xsd:string
+property_value: IAO:0000112 "an orchestra." xsd:string
+property_value: IAO:0000112 "an organism" xsd:string
+property_value: IAO:0000112 "the bottom right portion of a human torso" xsd:string
+property_value: IAO:0000112 "the interior of your mouth" xsd:string
+property_value: IAO:0000412 http://purl.obolibrary.org/obo/bfo/2019-08-26/bfo.owl xsd:string
+property_value: IAO:0000601 "For any independent continuant b and any time t there is some spatial region r such that b is located_in r at t. (axiom label in BFO2 Reference: [134-001])" xsd:string
+property_value: IAO:0000601 "For every independent continuant b and time t during the region of time spanned by its life, there are entities which s-depends_on b during t. (axiom label in BFO2 Reference: [018-002])" xsd:string
+property_value: IAO:0000602 "(forall (x t) (if (and (IndependentContinuant x) (existsAt x t)) (exists (y) (and (Entity y) (specificallyDependsOnAt y x t))))) // axiom label in BFO2 CLIF: [018-002] " xsd:string
+property_value: IAO:0000602 "(forall (x t) (if (IndependentContinuant x) (exists (r) (and (SpatialRegion r) (locatedInAt x r t))))) // axiom label in BFO2 CLIF: [134-001] " xsd:string
+property_value: IAO:0000602 "(iff (IndependentContinuant a) (and (Continuant a) (not (exists (b t) (specificallyDependsOnAt a b t))))) // axiom label in BFO2 CLIF: [017-002] " xsd:string
+property_value: IAO:0010000 http://purl.obolibrary.org/obo/bfo/axiom/017-002
+property_value: IAO:0010000 http://purl.obolibrary.org/obo/bfo/axiom/018-002
+property_value: IAO:0010000 http://purl.obolibrary.org/obo/bfo/axiom/134-001
+property_value: isDefinedBy http://purl.obolibrary.org/obo/bfo.owl
 
 [Term]
 id: BFO:0000015
@@ -53,7 +81,7 @@ is_a: BFO:0000017 ! realizable_entity
 [Term]
 id: BFO:0000040
 name: material entity
-is_a: BFO:0000002 ! continuant
+is_a: BFO:0000004 ! independent continuant
 
 [Term]
 id: BFO:0000140
@@ -99,6 +127,16 @@ name: chloroform
 is_a: CHEBI:23367 ! molecular entity
 
 [Term]
+id: CHEBI:36928
+name: carbon-13 atom
+is_a: CHEBI:23367 ! molecular entity
+
+[Term]
+id: CHEBI:36940
+name: fluorine-19 atom
+is_a: CHEBI:23367 ! molecular entity
+
+[Term]
 id: CHEBI:46729
 name: vitreous silica
 is_a: CHEBI:23367 ! molecular entity
@@ -129,6 +167,11 @@ name: gold nanoparticle
 is_a: CHEBI:50803 ! nanoparticle
 
 [Term]
+id: CHEBI:52230
+name: tin-119 atom
+is_a: CHEBI:23367 ! molecular entity
+
+[Term]
 id: CHEBI:52455
 name: lead-207
 is_a: CHEBI:23367 ! molecular entity
@@ -141,6 +184,11 @@ is_a: CHEBI:23367 ! molecular entity
 [Term]
 id: CHEBI:52458
 name: lithium-7 atom
+is_a: CHEBI:23367 ! molecular entity
+
+[Term]
+id: CHEBI:52462
+name: tungsten-183
 is_a: CHEBI:23367 ! molecular entity
 
 [Term]
@@ -352,7 +400,7 @@ is_a: CHMO:0000024 ! voltammetry
 [Term]
 id: CHMO:0000026
 name: fast-scan cyclic voltammetry
-def: "An electrochemical technique where the cell current is measured as a function of time and as a function of the potential between the indicator and reference electrodes. The potential is varied linearly and inverts at the end point resulting in a cycle which repeats approximately every 100 ms." [https://doi.org/10.1373/49.10.1763, FIX:0000761]
+def: "An electrochemical technique where the cell current is measured as a function of time and as a function of the potential between the indicator and reference electrodes. The potential is varied linearly and inverts at the end point resulting in a cycle which repeats approximately every 100 ms." [FIX:0000761, https://doi.org/10.1373/49.10.1763]
 synonym: "fast cyclic voltammetry" EXACT []
 synonym: "fast scan cyclic voltammetry" EXACT []
 synonym: "FCV" EXACT []
@@ -1002,8 +1050,8 @@ def: "Microscopy where the specimen can be made to fluoresce (emit energy as vis
 synonym: "MPLSM" EXACT []
 synonym: "multi photon laser scanning microscopy" EXACT []
 synonym: "multiphoton laser scanning microscopy" EXACT []
-is_a: CHMO:0000088 ! fluorescence laser scanning microscopy
 xref: FIX:0000383
+is_a: CHMO:0000088 ! fluorescence laser scanning microscopy
 
 [Term]
 id: CHMO:0000091
@@ -1687,7 +1735,7 @@ is_a: CHMO:0000164 ! electron scattering
 [Term]
 id: CHMO:0000166
 name: light scattering
-def: "A method for determining structure by measuring the change in direction or energy of scattered visible light. Light is scattered by the electrons surrounding the atomic nuclei in the sample." [https://doi.org/10.1351/goldbook.L03525, FIX:0000402]
+def: "A method for determining structure by measuring the change in direction or energy of scattered visible light. Light is scattered by the electrons surrounding the atomic nuclei in the sample." [FIX:0000402, https://doi.org/10.1351/goldbook.L03525]
 synonym: "light scattering spectrometry" EXACT []
 synonym: "light scattering spectroscopy" EXACT []
 synonym: "LiSSP" EXACT []
@@ -1736,7 +1784,7 @@ is_a: CHMO:0000166 ! light scattering
 [Term]
 id: CHMO:0000169
 name: Rayleigh scattering spectroscopy
-def: "A method for determining structure by measuring the change in direction or energy of Rayleigh scattered visible light." [https://doi.org/10.1007/978-3-540-72865-8, FIX:0000059]
+def: "A method for determining structure by measuring the change in direction or energy of Rayleigh scattered visible light." [FIX:0000059, https://doi.org/10.1007/978-3-540-72865-8]
 synonym: "elastic light scattering" EXACT []
 synonym: "laser Rayleigh scattering" EXACT []
 synonym: "laser Rayleigh scattering spectrometry" EXACT []
@@ -1947,7 +1995,7 @@ is_a: CHMO:0000184 ! small-angle neutron scattering
 [Term]
 id: CHMO:0000187
 name: wide angle neutron scattering
-def: "A method for determining structure by measuring the change in direction or energy of scattered neutrons at wide angles (corresponding to Q >1 inverse degrees)." [https://doi.org/10.1002/pol.1982.180200207, FIX:0001130]
+def: "A method for determining structure by measuring the change in direction or energy of scattered neutrons at wide angles (corresponding to Q >1 inverse degrees)." [FIX:0001130, https://doi.org/10.1002/pol.1982.180200207]
 synonym: "WANS" EXACT []
 synonym: "wide angle neutron scattering" EXACT []
 is_a: CHMO:0000181 ! neutron scattering
@@ -2334,7 +2382,7 @@ name: spectroscopy
 def: "The study of the interaction of a sample with radiation or particles for measurement or detection." [https://doi.org/10.1351/goldbook.S05848]
 synonym: "spectrometry" EXACT []
 is_a: OBI:0000070 ! assay
-relationship: OBI:0000299 CHMO:0000800
+relationship: OBI:0000299 CHMO:0000800 ! has_specified_output spectrum
 
 [Term]
 id: CHMO:0000229
@@ -2342,7 +2390,7 @@ name: acoustic emission spectrometry
 def: "Spectrometry where the noise generated by the movement of bubbles or particles is detected." [ISBN:3527605029]
 synonym: "acoustic emission spectroscopy" EXACT []
 is_a: CHMO:0000228 ! spectroscopy
-relationship: OBI:0000299 CHMO:0000802
+relationship: OBI:0000299 CHMO:0000802 ! has_specified_output acoustic emission spectrum
 
 [Term]
 id: CHMO:0000230
@@ -2351,7 +2399,7 @@ def: "Spectrometry where the alpha-particles (or 4He nuclei) spontaneously emitt
 synonym: "alpha spectroscopy" EXACT []
 synonym: "alpha-particle spectrometry" EXACT []
 is_a: CHMO:0000228 ! spectroscopy
-relationship: OBI:0000299 CHMO:0000803
+relationship: OBI:0000299 CHMO:0000803 ! has_specified_output alpha-particle spectrum
 
 [Term]
 id: CHMO:0000232
@@ -2359,7 +2407,7 @@ name: electronic spectroscopy
 alt_id: FIX:0000032
 def: "Any spectroscopic method which probes the electronic degrees of freedom of an atom or molecule." [https://orcid.org/0000-0001-5985-7429]
 is_a: CHMO:0000228 ! spectroscopy
-relationship: OBI:0000299 CHMO:0000811
+relationship: OBI:0000299 CHMO:0000811 ! has_specified_output electronic spectrum
 
 [Term]
 id: CHMO:0000233
@@ -2368,7 +2416,7 @@ alt_id: FIX:0000054
 def: "Any spectroscopic technique which is based upon the ability of atoms to absorb or emit electromagnetic radiation. In atomic spectroscopy the sample is vaporised and then atomised." [https://orcid.org/0000-0002-0640-0422]
 synonym: "atomic spectrometry" EXACT []
 is_a: CHMO:0000232 ! electronic spectroscopy
-relationship: OBI:0000299 CHMO:0000804
+relationship: OBI:0000299 CHMO:0000804 ! has_specified_output atomic spectrum
 
 [Term]
 id: CHMO:0000234
@@ -2587,7 +2635,7 @@ is_a: CHMO:0000253 ! graphite furnace atomic emission spectrometry
 [Term]
 id: CHMO:0000255
 name: flame atomic emission spectroscopy
-def: "A type of atomic emission spectrometry where the sample is excited using an N2/oxide–acetylene flame." [https://doi.org/10.1039/ja9870200573, FIX:0000928, FIX:0000935]
+def: "A type of atomic emission spectrometry where the sample is excited using an N2/oxide–acetylene flame." [FIX:0000928, FIX:0000935, https://doi.org/10.1039/ja9870200573]
 synonym: "F-AES" EXACT []
 synonym: "FAES" EXACT []
 synonym: "flame atomic emission spectroscopy" EXACT []
@@ -2932,12 +2980,12 @@ synonym: "spectrofluorimetry" EXACT []
 synonym: "spectrofluorometry" EXACT []
 is_a: CHMO:0000060 ! fluorescence detection
 is_a: CHMO:0002415 ! luminescence spectroscopy
-relationship: OBI:0000299 CHMO:0000815
+relationship: OBI:0000299 CHMO:0000815 ! has_specified_output fluorescence spectrum
 
 [Term]
 id: CHMO:0000288
 name: fluorescence correlation spectroscopy
-def: "Spectroscopy where the spontaneous fluorescence intensity fluctuations of a sample are measured and correlated within a very small detection volume. Ultraviolet light is used to stimulate fluorescence." [https://doi.org/10.1039/b718132a, FIX:0000352]
+def: "Spectroscopy where the spontaneous fluorescence intensity fluctuations of a sample are measured and correlated within a very small detection volume. Ultraviolet light is used to stimulate fluorescence." [FIX:0000352, https://doi.org/10.1039/b718132a]
 synonym: "FCS" EXACT []
 synonym: "fluroescence correlation spectrometry" EXACT []
 is_a: CHMO:0000287 ! fluorescence spectroscopy
@@ -3032,9 +3080,9 @@ is_a: CHMO:0000292 ! ultraviolet-visible spectrophotometry
 id: CHMO:0000294
 name: reflectance ultraviolet-visible spectrophotometry
 def: "Ultraviolet–visible spectroscopy where the reflection or scattering of radiation from the sample surface is detected." [https://orcid.org/0000-0002-0640-0422]
-synonym: "reflectance ultra-violet–visible spectrophotometry" EXACT []
 synonym: "reflectance ultra-violet-visible spectrometry" EXACT []
 synonym: "reflectance ultra-violet-visible spectroscopy" EXACT []
+synonym: "reflectance ultra-violet–visible spectrophotometry" EXACT []
 synonym: "reflectance ultraviolet-visible spectroscopy" EXACT []
 synonym: "reflectance UV-VIS spectrometry" EXACT []
 synonym: "reflectance UV-VIS spectroscopy" EXACT []
@@ -3075,7 +3123,7 @@ is_a: CHMO:0001253 ! ultraviolet spectrophotometry
 [Term]
 id: CHMO:0000297
 name: X-ray spectroscopy
-def: "Spectroscopy where the absorption or emission of X-rays is detected." [https://doi.org/10.1351/goldbook.X06718, FIX:0000019]
+def: "Spectroscopy where the absorption or emission of X-rays is detected." [FIX:0000019, https://doi.org/10.1351/goldbook.X06718]
 synonym: "X-ray spectrometry" EXACT []
 is_a: CHMO:0000228 ! spectroscopy
 
@@ -3400,7 +3448,7 @@ synonym: "beta spectrometry" EXACT []
 synonym: "beta spectroscopy" EXACT []
 synonym: "beta-particle spectrometry" EXACT []
 is_a: CHMO:0000228 ! spectroscopy
-relationship: OBI:0000299 CHMO:0000805
+relationship: OBI:0000299 CHMO:0000805 ! has_specified_output beta-particle spectrum
 
 [Term]
 id: CHMO:0000322
@@ -3417,7 +3465,7 @@ synonym: "CD spectroscopy" EXACT []
 synonym: "circular dichrosim spectrometry" EXACT []
 synonym: "direct transmittance circular dichroism" EXACT []
 is_a: CHMO:0000775 ! dichroism spectroscopy
-relationship: OBI:0000299 CHMO:0000808
+relationship: OBI:0000299 CHMO:0000808 ! has_specified_output circular dichroism spectrum
 
 [Term]
 id: CHMO:0000324
@@ -3865,7 +3913,7 @@ is_a: CHMO:0000355 ! electron coincidence spectroscopy
 [Term]
 id: CHMO:0000366
 name: electron energy loss spectroscopy
-def: "Spectroscopy where a beam of electrons with a known, narrow range of kinetic energies (50–200 eV) interacts with a surface and the energy loss (0.005–100 eV) the electrons suffer as a result of the interaction is measured." [https://doi.org/10.1351/goldbook.R05236, FIX:0000663, FIX:0000664, ISBN:0-19-280031-0]
+def: "Spectroscopy where a beam of electrons with a known, narrow range of kinetic energies (50–200 eV) interacts with a surface and the energy loss (0.005–100 eV) the electrons suffer as a result of the interaction is measured." [FIX:0000663, FIX:0000664, https://doi.org/10.1351/goldbook.R05236, ISBN:0-19-280031-0]
 synonym: "EELS" EXACT []
 synonym: "EIS" RELATED []
 synonym: "electron energy loss spectrometry" EXACT []
@@ -3878,7 +3926,7 @@ synonym: "REELS" EXACT []
 synonym: "reflection electron energy loss spectrometry" EXACT []
 synonym: "reflection electron energy loss spectroscopy" EXACT []
 is_a: CHMO:0000331 ! electron spectroscopy
-relationship: OBI:0000299 CHMO:0000810
+relationship: OBI:0000299 CHMO:0000810 ! has_specified_output electron energy-loss spectrum
 
 [Term]
 id: CHMO:0000367
@@ -3917,7 +3965,7 @@ is_a: CHMO:0000368 ! extended electron energy loss fine structure spectroscopy
 [Term]
 id: CHMO:0000370
 name: high-resolution energy loss spectroscopy
-def: "Spectroscopy where a beam of electrons with a known, narrow range of kinetic energies is reflected by a surface and the small energy loss (0.02–1 eV) the electrons suffer upon reflection is measured." [https://doi.org/10.1351/goldbook.H02826, FIX:0000646]
+def: "Spectroscopy where a beam of electrons with a known, narrow range of kinetic energies is reflected by a surface and the small energy loss (0.02–1 eV) the electrons suffer upon reflection is measured." [FIX:0000646, https://doi.org/10.1351/goldbook.H02826]
 synonym: "HEELS" EXACT []
 synonym: "high resolution energy loss spectrometry" EXACT []
 synonym: "high resolution energy loss spectroscopy" EXACT []
@@ -4031,8 +4079,8 @@ name: momentum-resolved bremsstrahlung spectroscopy
 def: "Spectroscopy where the sample is bombarded with electrons which decay in unoccupied states emitting bremsstrahlung radiation which is detected as a function of photon momentum." [OrangeBook:17.2.2.2]
 synonym: "BS" EXACT []
 synonym: "momentum-resolved bremsstrahlung spectrometry" EXACT []
-is_a: CHMO:0000378 ! bremsstrahlung isochromat spectroscopy
 xref: FIX:0000688
+is_a: CHMO:0000378 ! bremsstrahlung isochromat spectroscopy
 
 [Term]
 id: CHMO:0000381
@@ -4102,7 +4150,7 @@ is_a: CHMO:0000385 ! metastable de-excitation spectroscopy
 [Term]
 id: CHMO:0000387
 name: photoelectron spectroscopy
-def: "Spectroscopy where the sample is illuminated with photons causing ionisation and the emission of photoelectrons, the energies of which are measured. The energy of the incident photons is usually greater than the ionisation energy of the sample and the photoelectrons are emitted with the excess in the form of kinetic energy." [https://doi.org/10.1351/goldbook.P04609, FIX:0000040]
+def: "Spectroscopy where the sample is illuminated with photons causing ionisation and the emission of photoelectrons, the energies of which are measured. The energy of the incident photons is usually greater than the ionisation energy of the sample and the photoelectrons are emitted with the excess in the form of kinetic energy." [FIX:0000040, https://doi.org/10.1351/goldbook.P04609]
 synonym: "PES" EXACT []
 synonym: "photo emission spectrometry" EXACT []
 synonym: "photo emission spectroscopy" EXACT []
@@ -4245,7 +4293,7 @@ is_a: CHMO:0000394 ! synchrotron radiation photoelectron spectroscopy
 [Term]
 id: CHMO:0000401
 name: ultraviolet photoelectron spectroscopy
-def: "Spectroscopy where the sample is illuminated with ultraviolet (10–400 nm) photons causing ionisation and the emission of photoelectrons, the energies of which are measured." [https://doi.org/10.1351/goldbook.U06583, FIX:0000042]
+def: "Spectroscopy where the sample is illuminated with ultraviolet (10–400 nm) photons causing ionisation and the emission of photoelectrons, the energies of which are measured." [FIX:0000042, https://doi.org/10.1351/goldbook.U06583]
 synonym: "ultra-violet photoelectron spectrometry" EXACT []
 synonym: "ultra-violet photoelectron spectroscopy" EXACT []
 synonym: "ultra-violet photoemission spectroscopy ultra-violet photoemission spectrometry" EXACT []
@@ -4419,9 +4467,9 @@ synonym: "gamma spectroscopy" EXACT []
 synonym: "gamma-ray emission spectroscopy" EXACT []
 synonym: "gamma-ray spectrometry" EXACT []
 synonym: "gamma-ray spectroscopy" EXACT []
-is_a: CHMO:0000228 ! spectroscopy
-relationship: OBI:0000299 CHMO:0000816
 xref: FIX:0000049
+is_a: CHMO:0000228 ! spectroscopy
+relationship: OBI:0000299 CHMO:0000816 ! has_specified_output gamma-ray spectrum
 
 [Term]
 id: CHMO:0000415
@@ -4447,13 +4495,13 @@ is_a: CHMO:0000414 ! gamma-ray spectroscopy
 id: CHMO:0000417
 name: Mossbauer spectroscopy
 def: "Spectroscopy where the intensity of a gamma-rays beam transmitted through a solid sample is detected." [https://orcid.org/0000-0002-0640-0422]
-synonym: "Mößbauer spectroscopy" EXACT []
-synonym: "Mössbauer spectroscopy" EXACT []
 synonym: "Moessbauer spectroscopy" EXACT []
 synonym: "Mossbauer spectroscopy" EXACT []
+synonym: "Mössbauer spectroscopy" EXACT []
+synonym: "Mößbauer spectroscopy" EXACT []
 synonym: "recoil-free gamma-ray resonance absorption spectroscopy" EXACT []
-is_a: CHMO:0000414 ! gamma-ray spectroscopy
 xref: FIX:0000050
+is_a: CHMO:0000414 ! gamma-ray spectroscopy
 
 [Term]
 id: CHMO:0000418
@@ -4461,27 +4509,27 @@ name: depth-selective Mossbauer spectroscopy
 def: "Spectroscopy where gamma-rays are absorbed by a sample resulting in the ejection of conversion electrons, the energy distribution of which is measured." [https://orcid.org/0000-0002-0640-0422]
 synonym: "DC EMS" EXACT []
 synonym: "DCEMS" EXACT []
-synonym: "depth-selective conversion electron Mößbauer spectrometry" EXACT []
-synonym: "depth-selective conversion electron Mößbauer spectroscopy" EXACT []
-synonym: "depth-selective conversion electron Mössbauer spectrometry" EXACT []
-synonym: "depth-selective conversion electron Mössbauer spectroscopy" EXACT []
+synonym: "depth-selective conversion electron Mossbauer spectrometry" EXACT []
 synonym: "depth-selective conversion electron Moßbauer spectrometry" EXACT []
 synonym: "depth-selective conversion electron Moßbauer spectroscopy" EXACT []
-synonym: "depth-selective conversion electron Mossbauer spectrometry" EXACT []
-synonym: "depth-selective electron Mößbauer spectrometry" EXACT []
-synonym: "depth-selective electron Mößbauer spectroscopy" EXACT []
-synonym: "depth-selective electron Mössbauer spectrometry" EXACT []
-synonym: "depth-selective electron Mössbauer spectroscopy" EXACT []
-synonym: "depth-selective electron Moßbauer spectrometry" EXACT []
-synonym: "depth-selective electron Moßbauer spectroscopy" EXACT []
+synonym: "depth-selective conversion electron Mössbauer spectrometry" EXACT []
+synonym: "depth-selective conversion electron Mössbauer spectroscopy" EXACT []
+synonym: "depth-selective conversion electron Mößbauer spectrometry" EXACT []
+synonym: "depth-selective conversion electron Mößbauer spectroscopy" EXACT []
 synonym: "depth-selective electron Mossbauer spectrometry" EXACT []
 synonym: "depth-selective electron Mossbauer spectroscopy" EXACT []
-synonym: "depth-selective Mößbauer spectrometry" EXACT []
-synonym: "depth-selective Mößbauer spectroscopy" EXACT []
-synonym: "depth-selective Mössbauer spectrometry" EXACT []
+synonym: "depth-selective electron Moßbauer spectrometry" EXACT []
+synonym: "depth-selective electron Moßbauer spectroscopy" EXACT []
+synonym: "depth-selective electron Mössbauer spectrometry" EXACT []
+synonym: "depth-selective electron Mössbauer spectroscopy" EXACT []
+synonym: "depth-selective electron Mößbauer spectrometry" EXACT []
+synonym: "depth-selective electron Mößbauer spectroscopy" EXACT []
+synonym: "depth-selective Mossbauer spectrometry" EXACT []
 synonym: "depth-selective Moßbauer spectrometry" EXACT []
 synonym: "depth-selective Moßbauer spectroscopy" EXACT []
-synonym: "depth-selective Mossbauer spectrometry" EXACT []
+synonym: "depth-selective Mössbauer spectrometry" EXACT []
+synonym: "depth-selective Mößbauer spectrometry" EXACT []
+synonym: "depth-selective Mößbauer spectroscopy" EXACT []
 synonym: "DS EMS" EXACT []
 synonym: "DS MS" EXACT []
 synonym: "DSEMS" EXACT []
@@ -4999,11 +5047,11 @@ is_a: CHMO:0000228 ! spectroscopy
 [Term]
 id: CHMO:0000470
 name: mass spectrometry
-def: "Spectrometry where the sample is converted into gaseous ions which are characterised by their mass-to-charge ratio and relative abundance." [https://doi.org/10.1351/goldbook.M03746, FIX:0000047]
+def: "Spectrometry where the sample is converted into gaseous ions which are characterised by their mass-to-charge ratio and relative abundance." [FIX:0000047, https://doi.org/10.1351/goldbook.M03746]
 synonym: "mass spectroscopy" EXACT []
 synonym: "MS" EXACT []
 is_a: CHMO:0000228 ! spectroscopy
-relationship: OBI:0000299 CHMO:0000806
+relationship: OBI:0000299 CHMO:0000806 ! has_specified_output mass spectrum
 
 [Term]
 id: CHMO:0000471
@@ -5018,7 +5066,7 @@ is_a: CHMO:0000470 ! mass spectrometry
 [Term]
 id: CHMO:0000472
 name: chemical ionisation mass spectrometry
-def: "Mass spectrometry where the sample is ionised by interaction (electron or proton transfer) with reagent (N2, O2, H2O) gaseous ions at low pressure. Reagent ions are produced by electron ionisation." [https://doi.org/10.1351/goldbook.C01026, FIX:0000088]
+def: "Mass spectrometry where the sample is ionised by interaction (electron or proton transfer) with reagent (N2, O2, H2O) gaseous ions at low pressure. Reagent ions are produced by electron ionisation." [FIX:0000088, https://doi.org/10.1351/goldbook.C01026]
 synonym: "chemical ionisation mass spectroscopy" EXACT []
 synonym: "chemical ionization mass spectrometry" EXACT []
 synonym: "chemical ionization mass spectroscopy" EXACT []
@@ -5031,7 +5079,7 @@ synonym: "low pressure chemical ionization mass spectroscopy" EXACT []
 synonym: "LP-CI-MS" EXACT []
 synonym: "LPCI-MS" EXACT []
 is_a: CHMO:0000470 ! mass spectrometry
-relationship: OBI:0000299 CHMO:0000807
+relationship: OBI:0000299 CHMO:0000807 ! has_specified_output chemical ionisation mass spectrum
 
 [Term]
 id: CHMO:0000473
@@ -5151,7 +5199,7 @@ is_a: CHMO:0000470 ! mass spectrometry
 intersection_of: CHMO:0000470 ! mass spectrometry
 intersection_of: BFO:0000118 MS:1000073 ! has proper occurrent part electrospray ionization
 relationship: BFO:0000118 MS:1000073 ! has proper occurrent part electrospray ionization
-relationship: OBI:0000299 CHMO:0000812
+relationship: OBI:0000299 CHMO:0000812 ! has_specified_output electrospray ionisation mass spectrum
 
 [Term]
 id: CHMO:0000483
@@ -5268,7 +5316,7 @@ is_a: CHMO:0000470 ! mass spectrometry
 [Term]
 id: CHMO:0000492
 name: field desorption mass spectrometry
-def: "Mass spectrometry where the sample is deposited on a solid surface known as an 'emitter' and ionised by interaction with a high electric field." [https://doi.org/10.1351/goldbook.F02357, FIX:0000087]
+def: "Mass spectrometry where the sample is deposited on a solid surface known as an 'emitter' and ionised by interaction with a high electric field." [FIX:0000087, https://doi.org/10.1351/goldbook.F02357]
 synonym: "FD mass spectrometry" EXACT []
 synonym: "FD-MS" EXACT []
 synonym: "FDMS" EXACT []
@@ -5426,7 +5474,7 @@ is_a: CHMO:0000500 ! ion trap mass spectrometry
 [Term]
 id: CHMO:0000502
 name: Fourier transform ion cyclotron resonance mass spectrometry
-def: "Mass spectrometry where the mass-to-charge ratio of the sample ions is determined by measuring their cyclotron frequency (the frequency at which they precesses in a fixed magnetic field) and subjecting it to a Fourier transform." [https://doi.org/10.1351/goldbook.F02492, FIX:0000083]
+def: "Mass spectrometry where the mass-to-charge ratio of the sample ions is determined by measuring their cyclotron frequency (the frequency at which they precesses in a fixed magnetic field) and subjecting it to a Fourier transform." [FIX:0000083, https://doi.org/10.1351/goldbook.F02492]
 synonym: "Fourier transform ion cyclotron resonance mass spectroscopy" EXACT []
 synonym: "Fourier transform mass spectrometry" EXACT []
 synonym: "Fourier transform mass spectroscopy" EXACT []
@@ -5462,7 +5510,7 @@ is_a: CHMO:0000502 ! Fourier transform ion cyclotron resonance mass spectrometry
 [Term]
 id: CHMO:0000504
 name: quadrupole mass spectrometry
-def: "Mass spectrometry where the mass-to-charge ratio of the sample ions is measured whilst the ions are held in a stable orbit by an electric field generated by four parallel electrodes." [https://doi.org/10.1016/0168-1176(90)85042-Z, FIX:0000094, FIX:0000095]
+def: "Mass spectrometry where the mass-to-charge ratio of the sample ions is measured whilst the ions are held in a stable orbit by an electric field generated by four parallel electrodes." [FIX:0000094, FIX:0000095, https://doi.org/10.1016/0168-1176(90)85042-Z]
 synonym: "QMS" EXACT []
 synonym: "quadrapole mass spectrometry" EXACT []
 synonym: "quadrupolar mass spectrometry" EXACT []
@@ -6226,8 +6274,8 @@ synonym: "liquid secondary ion mass spectroscopy" EXACT []
 synonym: "LSI-MS" EXACT []
 synonym: "LSIMS" EXACT []
 synonym: "MS (FAB)" EXACT []
-is_a: CHMO:0000560 ! secondary ion mass spectrometry
 xref: FIX:0000086
+is_a: CHMO:0000560 ! secondary ion mass spectrometry
 
 [Term]
 id: CHMO:0000564
@@ -6323,7 +6371,7 @@ is_a: CHMO:0000571 ! selective ion monitoring
 [Term]
 id: CHMO:0000574
 name: spark source mass spectrometry
-def: "Mass spectrometry where the sample is ionised by a vacuum spark discharge, which is generated by a pulsed high (25–100 kV) potential difference between two electrodes." [https://doi.org/10.1007/BF00488596, FIX:0000903]
+def: "Mass spectrometry where the sample is ionised by a vacuum spark discharge, which is generated by a pulsed high (25–100 kV) potential difference between two electrodes." [FIX:0000903, https://doi.org/10.1007/BF00488596]
 synonym: "spark ionisation mass spectrometry" EXACT []
 synonym: "spark ionization mass spectrometry" EXACT []
 synonym: "spark source mass spectroscopy" EXACT []
@@ -6398,7 +6446,7 @@ is_a: CHMO:0000575 ! tandem mass spectrometry
 [Term]
 id: CHMO:0000580
 name: time-of-flight mass spectrometry
-def: "Mass spectrometry where sample ions with different masses are accelerated to the same (known) kinetic energy and the time taken for each ion to reach a detector at a known distance is measured. This time is dependent on the mass-to-charge ratio of the ion." [https://doi.org/10.1351/goldbook.T06382, FIX:0000082]
+def: "Mass spectrometry where sample ions with different masses are accelerated to the same (known) kinetic energy and the time taken for each ion to reach a detector at a known distance is measured. This time is dependent on the mass-to-charge ratio of the ion." [FIX:0000082, https://doi.org/10.1351/goldbook.T06382]
 synonym: "time-of-flight mass spectroscopy" EXACT []
 synonym: "TOF-MS" EXACT []
 synonym: "ToF-MS" EXACT []
@@ -6487,13 +6535,13 @@ synonym: "NMR spectrometry" NARROW []
 synonym: "NMR spectroscopy" NARROW []
 synonym: "nuclear magnetic resonance (NMR) spectroscopy" NARROW []
 synonym: "nuclear magnetic resonance spectrometry" NARROW []
-is_a: CHMO:0001806 ! nuclear magnetic resonance method
 xref: FIX:0000022
+is_a: CHMO:0001806 ! nuclear magnetic resonance method
 
 [Term]
 id: CHMO:0000592
 name: one-dimensional nuclear magnetic resonance spectroscopy
-def: "Spectroscopy where the energy states of spin-active nuclei placed in a static magnetic field are interrogated by inducing transitions between the states via radio frequency irradiation. Each experiment consists of a sequence of radio frequency pulses with delay periods in between them, and the spectrum is obtained by plotting chemical shift vs. frequency." [https://doi.org/10.1039/b808986h, FIX:0000055]
+def: "Spectroscopy where the energy states of spin-active nuclei placed in a static magnetic field are interrogated by inducing transitions between the states via radio frequency irradiation. Each experiment consists of a sequence of radio frequency pulses with delay periods in between them, and the spectrum is obtained by plotting chemical shift vs. frequency." [FIX:0000055, https://doi.org/10.1039/b808986h]
 synonym: "1-D NMR" EXACT []
 synonym: "1D NMR" EXACT []
 synonym: "1D NMR spectrometry" EXACT []
@@ -6516,13 +6564,8 @@ synonym: "1H-NMR spectrometry" EXACT []
 synonym: "1H-NMR spectroscopy" EXACT []
 synonym: "proton NMR" EXACT []
 synonym: "proton nuclear magnetic resonance spectroscopy" EXACT []
-is_a: CHMO:0000613 ! pulsed nuclear magnetic resonance spectroscopy
 xref: FIX:0000134
-
-[Term]
-id: CHEBI:36940
-name: fluorine-19 atom
-is_a: CHEBI:23367
+is_a: CHMO:0000613 ! pulsed nuclear magnetic resonance spectroscopy
 
 [Term]
 id: CHMO:0000594
@@ -6546,11 +6589,11 @@ synonym: "13C-NMR spectrometry" EXACT []
 synonym: "13C-NMR spectroscopy" EXACT []
 synonym: "C-NMR" EXACT []
 synonym: "carbon NMR" EXACT []
-is_a: CHMO:0000613 ! pulsed nuclear magnetic resonance spectroscopy
-relationship: CHMO:0002922 CHEBI:36928
-intersection_of: CHMO:0000613 ! pulsed nuclear magnetic resonance spectroscopy
-intersection_of: CHMO:0002922 CHEBI:36928
 xref: FIX:0000135
+is_a: CHMO:0000613 ! pulsed nuclear magnetic resonance spectroscopy
+intersection_of: CHMO:0000613 ! pulsed nuclear magnetic resonance spectroscopy
+intersection_of: CHMO:0002922 CHEBI:36928 ! probes_atom carbon-13 atom
+relationship: CHMO:0002922 CHEBI:36928 ! probes_atom carbon-13 atom
 
 [Term]
 id: CHMO:0000596
@@ -6573,11 +6616,11 @@ synonym: "19F NMR spectrometry" EXACT []
 synonym: "19F NMR spectroscopy" EXACT []
 synonym: "19F nuclear magnetic resonance spectrometry" EXACT []
 synonym: "19F-NMR" EXACT []
-is_a: CHMO:0000613 ! pulsed nuclear magnetic resonance spectroscopy
-relationship: CHMO:0002922 CHEBI:36940
-intersection_of: CHMO:0000613 ! pulsed nuclear magnetic resonance spectroscopy
-intersection_of: CHMO:0002922 CHEBI:36940
 xref: FIX:0000137
+is_a: CHMO:0000613 ! pulsed nuclear magnetic resonance spectroscopy
+intersection_of: CHMO:0000613 ! pulsed nuclear magnetic resonance spectroscopy
+intersection_of: CHMO:0002922 CHEBI:36940 ! probes_atom fluorine-19 atom
+relationship: CHMO:0002922 CHEBI:36940 ! probes_atom fluorine-19 atom
 
 [Term]
 id: CHMO:0000598
@@ -6644,16 +6687,16 @@ name: heteronuclear multiple quantum coherence
 def: "A type of heteronuclear NMR spectroscopy where a second frequency dimension is employed to disperse the signals and reveal correlations between protons and the nuclei to which they are covalently bound. In HMQC the magnetisation of both nuclei is allowed to evolve over time." [rsc:pr]
 synonym: "HMQC" EXACT []
 synonym: "HMQC NMR" EXACT []
-is_a: CHMO:0000931 ! heteronuclear two-dimensional nuclear magnetic resonance spectroscopy
 xref: FIX:0000149
+is_a: CHMO:0000931 ! heteronuclear two-dimensional nuclear magnetic resonance spectroscopy
 
 [Term]
 id: CHMO:0000604
 name: heteronuclear single quantum coherence
 def: "A type of heteronuclear NMR spectroscopy where a second frequency dimension is employed to disperse the signals and reveal correlations between protons and the nuclei to which they are covalently bound. In HSQC only the magnetisation of one nucleus is allowed to evolve over time." [rsc:pr]
 synonym: "HSQC" EXACT []
-is_a: CHMO:0000931 ! heteronuclear two-dimensional nuclear magnetic resonance spectroscopy
 xref: FIX:0000148
+is_a: CHMO:0000931 ! heteronuclear two-dimensional nuclear magnetic resonance spectroscopy
 
 [Term]
 id: CHMO:0000605
@@ -6667,9 +6710,9 @@ synonym: "homonuclear Hartmann-Hahn spectroscopy" EXACT []
 synonym: "TOCSY" EXACT []
 synonym: "total correlated spectroscopy" EXACT []
 synonym: "total correlation spectrometry" EXACT []
-is_a: CHMO:0000613 ! pulsed nuclear magnetic resonance spectroscopy
 xref: FIX:0000133
 xref: FIX:0000556
+is_a: CHMO:0000613 ! pulsed nuclear magnetic resonance spectroscopy
 
 [Term]
 id: CHMO:0000606
@@ -6708,8 +6751,8 @@ synonym: "NOESY NMR" EXACT []
 synonym: "nuclear Overhauser effect spectrometry" EXACT []
 synonym: "nuclear Overhauser effect spectroscopy" EXACT []
 synonym: "nuclear Overhauser enhancement spectrometry" EXACT []
-is_a: CHMO:0000613 ! pulsed nuclear magnetic resonance spectroscopy
 xref: FIX:0000143
+is_a: CHMO:0000613 ! pulsed nuclear magnetic resonance spectroscopy
 
 [Term]
 id: CHMO:0000608
@@ -6720,8 +6763,8 @@ synonym: "heteronuclear Overhauser effect spectroscopy" EXACT []
 synonym: "heteronuclear Overhauser enhancement spectrometry" EXACT []
 synonym: "HOESY" EXACT []
 synonym: "HOESY NMR" EXACT []
-is_a: CHMO:0000725 ! two-dimensional nuclear Overhauser enhancement spectroscopy
 xref: FIX:0001085
+is_a: CHMO:0000725 ! two-dimensional nuclear Overhauser enhancement spectroscopy
 
 [Term]
 id: CHMO:0000609
@@ -6748,8 +6791,8 @@ synonym: "rotating frame Overhauser effect spectrometry" EXACT []
 synonym: "rotating frame Overhauser enhancement spectrometry" EXACT []
 synonym: "rotating frame Overhauser enhancement spectroscopy" EXACT []
 synonym: "rotational Overhauser effect spectroscopy" EXACT []
-is_a: CHMO:0000725 ! two-dimensional nuclear Overhauser enhancement spectroscopy
 xref: FIX:0000150
+is_a: CHMO:0000725 ! two-dimensional nuclear Overhauser enhancement spectroscopy
 
 [Term]
 id: CHMO:0000611
@@ -7268,8 +7311,8 @@ synonym: "IRS" RELATED []
 synonym: "MIRS" EXACT []
 synonym: "multiple internal reflection spectrometry" EXACT []
 synonym: "multiple internal reflection spectroscopy" EXACT []
-is_a: CHMO:0000643 ! infrared reflectance spectroscopy
 xref: FIX:0000653
+is_a: CHMO:0000643 ! infrared reflectance spectroscopy
 
 [Term]
 id: CHMO:0000649
@@ -7432,8 +7475,8 @@ name: Fourier transform Raman spectroscopy
 def: "Spectroscopy where the Raman scattering of light (produced by a single laser pulse) by a sample is detected and the spectrum is subject to a Fourier transform." [https://orcid.org/0000-0002-0640-0422]
 synonym: "Fourier transform Raman spectrometry" EXACT []
 synonym: "FT-Raman" EXACT []
-is_a: CHMO:0002515 ! laser Raman spectroscopy
 xref: FIX:0000384
+is_a: CHMO:0002515 ! laser Raman spectroscopy
 
 [Term]
 id: CHMO:0000666
@@ -7467,8 +7510,8 @@ synonym: "resonant Raman spectroscopy" EXACT []
 synonym: "RR spectrometry" EXACT []
 synonym: "RR spectroscopy" EXACT []
 synonym: "RRS" RELATED []
-is_a: CHMO:0002515 ! laser Raman spectroscopy
 xref: FIX:0000060
+is_a: CHMO:0002515 ! laser Raman spectroscopy
 
 [Term]
 id: CHMO:0000669
@@ -7485,9 +7528,9 @@ synonym: "SERRS" EXACT []
 synonym: "surface enhanced resonance Raman scattering spectrometry" EXACT []
 synonym: "surface enhanced resonance Raman scattering spectroscopy" EXACT []
 synonym: "surface enhanced resonance Raman spectrometry" EXACT []
+xref: FIX:0000077
 is_a: CHMO:0000668 ! resonance Raman spectroscopy
 is_a: CHMO:0000677 ! surface-enhanced Raman spectroscopy
-xref: FIX:0000077
 
 [Term]
 id: CHMO:0000671
@@ -7988,8 +8031,8 @@ synonym: "77Se NMR" EXACT []
 synonym: "77Se NMR spectrometry" EXACT []
 synonym: "77Se NMR spectroscopy" EXACT []
 synonym: "77Se-NMR" EXACT []
-is_a: CHMO:0000613 ! pulsed nuclear magnetic resonance spectroscopy
 xref: FIX:0000701
+is_a: CHMO:0000613 ! pulsed nuclear magnetic resonance spectroscopy
 
 [Term]
 id: CHMO:0000723
@@ -8236,8 +8279,8 @@ synonym: "pulsed electron double resonance" EXACT []
 synonym: "pulsed electron double resonance spectroscopy" EXACT []
 synonym: "pulsed electron-electron double resonance" EXACT []
 synonym: "pulsed electron-electron double resonance spectroscopy" EXACT []
-is_a: CHMO:0000744 ! electron–electron double resonance spectroscopy
 xref: FIX:0000172
+is_a: CHMO:0000744 ! electron–electron double resonance spectroscopy
 
 [Term]
 id: CHMO:0000746
@@ -8397,7 +8440,7 @@ is_a: CHMO:0000057 ! luminescence detection
 [Term]
 id: CHMO:0000761
 name: confocal fluorescence correlation spectroscopy
-def: "Spectroscopy where the spontaneous fluorescence intensity fluctuations of a sample are measured and correlated within a very small detection volume. The light emitted during fluorescence is collected and guided through a pinhole before it is detected, reducing background interference." [https://doi.org/10.1039/b718132a, FIX:0000379]
+def: "Spectroscopy where the spontaneous fluorescence intensity fluctuations of a sample are measured and correlated within a very small detection volume. The light emitted during fluorescence is collected and guided through a pinhole before it is detected, reducing background interference." [FIX:0000379, https://doi.org/10.1039/b718132a]
 synonym: "confocal FCS" EXACT []
 is_a: CHMO:0000288 ! fluorescence correlation spectroscopy
 
@@ -8536,8 +8579,8 @@ def: "A type of NMR experiment employed for protein samples in which relaxation 
 synonym: "transverse relaxation optimized spectroscopy" EXACT []
 synonym: "TROSY" EXACT []
 synonym: "TROSY NMR" EXACT []
-is_a: CHMO:0000613 ! pulsed nuclear magnetic resonance spectroscopy
 xref: FIX:0000565
+is_a: CHMO:0000613 ! pulsed nuclear magnetic resonance spectroscopy
 
 [Term]
 id: CHMO:0000775
@@ -8640,11 +8683,6 @@ synonym: "ORD" EXACT []
 is_a: CHMO:0000228 ! spectroscopy
 
 [Term]
-id: CHEBI:36928
-name: carbon-13 atom
-is_a: CHEBI:23367
-
-[Term]
 id: CHMO:0000786
 name: 129Xe nuclear magnetic resonance spectroscopy
 def: "Spectroscopy where the energy states of 129Xe nuclei placed in a static magnetic field are interrogated by inducing transitions between the states via radio frequency irradiation. Each experiment consists of a sequence of radio frequency pulses with delay periods in between them." [CHEBI:52453, FIX:0000139, rsc:pr]
@@ -8673,11 +8711,11 @@ synonym: "119Sn NMR" EXACT []
 synonym: "119Sn NMR spectroscopy" EXACT []
 synonym: "119Sn nuclear magnetic resonance spectrometry" EXACT []
 synonym: "119Sn-NMR" EXACT []
-is_a: CHMO:0000613 ! pulsed nuclear magnetic resonance spectroscopy
-relationship: CHMO:0002922 CHEBI:52230
-intersection_of: CHMO:0000613 ! pulsed nuclear magnetic resonance spectroscopy
-intersection_of: CHMO:0002922 CHEBI:52230
 xref: FIX:0000741
+is_a: CHMO:0000613 ! pulsed nuclear magnetic resonance spectroscopy
+intersection_of: CHMO:0000613 ! pulsed nuclear magnetic resonance spectroscopy
+intersection_of: CHMO:0002922 CHEBI:52230 ! probes_atom tin-119 atom
+relationship: CHMO:0002922 CHEBI:52230 ! probes_atom tin-119 atom
 
 [Term]
 id: CHMO:0000789
@@ -8800,7 +8838,7 @@ def: "A plot of a measured quantity against some experimental parameter." [https
 synonym: "spectra" EXACT []
 synonym: "spectrum plot" EXACT []
 is_a: CHMO:0000793 ! assay output
-relationship: OBI:0000312 CHMO:0000228
+relationship: OBI:0000312 CHMO:0000228 ! is_specified_output_of spectroscopy
 
 [Term]
 id: CHMO:0000801
@@ -8817,19 +8855,19 @@ name: acoustic emission spectrum
 def: "A plot of decibels  vs. frequency obtained by measuring the amount of noise generated by a sample as a function of frequency of incident radiation." [https://doi.org/10.1021/ja067960r]
 synonym: "acoustic emission spectra" EXACT []
 is_a: CHMO:0000800 ! spectrum
-relationship: OBI:0000312 CHMO:0000229
+relationship: OBI:0000312 CHMO:0000229 ! is_specified_output_of acoustic emission spectrometry
 
 [Term]
 id: CHMO:0000803
 name: alpha-particle spectrum
 def: "A plot of alpha-particle count vs. energy obtained by measuring the number and kinetic energies of alpha-particles emitted by a sample." [https://orcid.org/0000-0001-5985-7429]
-synonym: "α-particle spectra" EXACT []
-synonym: "α-particle spectrum" EXACT []
 synonym: "alpha particle spectra" EXACT []
 synonym: "alpha particle spectrum" EXACT []
 synonym: "alpha-particle spectra" EXACT []
+synonym: "α-particle spectra" EXACT []
+synonym: "α-particle spectrum" EXACT []
 is_a: CHMO:0000800 ! spectrum
-relationship: OBI:0000312 CHMO:0000230
+relationship: OBI:0000312 CHMO:0000230 ! is_specified_output_of alpha-particle spectroscopy
 
 [Term]
 id: CHMO:0000804
@@ -8837,7 +8875,7 @@ name: atomic spectrum
 def: "A plot of absorption or emission radiation vs. frequency that reflects the internal degrees of freedom of an atom, obtained in an experiment where the sample is vaporised and then atomised." [https://orcid.org/0000-0001-5985-7429]
 synonym: "atomic spectra" EXACT []
 is_a: CHMO:0000800 ! spectrum
-relationship: OBI:0000312 CHMO:0000223
+relationship: OBI:0000312 CHMO:0000223 ! is_specified_output_of ellipsometry
 
 [Term]
 id: CHMO:0000805
@@ -8847,7 +8885,7 @@ synonym: "beta particle spectra" EXACT []
 synonym: "beta particle spectrum" EXACT []
 synonym: "beta-particle spectra" EXACT []
 is_a: CHMO:0000800 ! spectrum
-relationship: OBI:0000312 CHMO:0000321
+relationship: OBI:0000312 CHMO:0000321 ! is_specified_output_of beta-particle spectroscopy
 
 [Term]
 id: CHMO:0000806
@@ -8855,7 +8893,7 @@ name: mass spectrum
 def: "A plot of relative abundance (%) vs. mass-to-charge ratio obtained from a mass spectrometry experiment." [https://orcid.org/0000-0001-5985-7429]
 synonym: "mass spectra" EXACT []
 is_a: CHMO:0000800 ! spectrum
-relationship: OBI:0000312 CHMO:0000470
+relationship: OBI:0000312 CHMO:0000470 ! is_specified_output_of mass spectrometry
 
 [Term]
 id: CHMO:0000807
@@ -8865,7 +8903,7 @@ synonym: "chemical ionisation mass spectra" EXACT []
 synonym: "chemical ionization mass spectra" EXACT []
 synonym: "chemical ionization mass spectrum" EXACT []
 is_a: CHMO:0000806 ! mass spectrum
-relationship: OBI:0000312 CHMO:0000472
+relationship: OBI:0000312 CHMO:0000472 ! is_specified_output_of chemical ionisation mass spectrometry
 
 [Term]
 id: CHMO:0000808
@@ -8878,7 +8916,7 @@ synonym: "circular dichroic spectrum" EXACT []
 synonym: "circular dichroism (CD) spectra" EXACT []
 synonym: "circular dichroism spectra" EXACT []
 is_a: CHMO:0000800 ! spectrum
-relationship: OBI:0000312 CHMO:0000323
+relationship: OBI:0000312 CHMO:0000323 ! is_specified_output_of circular dichroism spectroscopy
 
 [Term]
 id: CHMO:0000809
@@ -8901,7 +8939,7 @@ synonym: "electron energy loss spectroscopy (EELS) spectra" EXACT []
 synonym: "electron energy loss spectroscopy (EELS) spectrum" EXACT []
 synonym: "electron energy-loss spectra" EXACT []
 is_a: CHMO:0000800 ! spectrum
-relationship: OBI:0000312 CHMO:0000366
+relationship: OBI:0000312 CHMO:0000366 ! is_specified_output_of electron energy loss spectroscopy
 
 [Term]
 id: CHMO:0000811
@@ -8909,7 +8947,7 @@ name: electronic spectrum
 def: "A spectrum that reflects the electronic degrees of freedom of an atom or molecule." [https://orcid.org/0000-0001-5985-7429]
 synonym: "electronic spectra" EXACT []
 is_a: CHMO:0000800 ! spectrum
-relationship: OBI:0000312 CHMO:0000232
+relationship: OBI:0000312 CHMO:0000232 ! is_specified_output_of electronic spectroscopy
 
 [Term]
 id: CHMO:0000812
@@ -8923,7 +8961,7 @@ synonym: "ESI mass spectrum" EXACT []
 synonym: "ESI-MS spectra" EXACT []
 synonym: "ESI-MS spectrum" EXACT []
 is_a: CHMO:0000806 ! mass spectrum
-relationship: OBI:0000312 CHMO:0000482
+relationship: OBI:0000312 CHMO:0000482 ! is_specified_output_of electrospray ionisation mass spectrometry
 
 [Term]
 id: CHMO:0000813
@@ -8947,19 +8985,19 @@ synonym: "fluorescence emission spectra" EXACT []
 synonym: "fluorescence emission spectrum" EXACT []
 synonym: "fluorescence spectra" EXACT []
 is_a: CHMO:0000865 ! photoluminescence spectrum
-relationship: OBI:0000312 CHMO:0000287
+relationship: OBI:0000312 CHMO:0000287 ! is_specified_output_of fluorescence spectroscopy
 
 [Term]
 id: CHMO:0000816
 name: gamma-ray spectrum
 def: "A plot of gamma-ray count vs. energy spectrum obtained by measuring the number and energy of gamma-rays emitted or absorbed by a sample." [https://orcid.org/0000-0001-5985-7429]
-synonym: "γ-ray spectra" EXACT []
-synonym: "γ-ray spectrum" EXACT []
 synonym: "gamma ray spectra" EXACT []
 synonym: "gamma ray spectrum" EXACT []
 synonym: "gamma-ray spectra" EXACT []
+synonym: "γ-ray spectra" EXACT []
+synonym: "γ-ray spectrum" EXACT []
 is_a: CHMO:0000800 ! spectrum
-relationship: OBI:0000312 CHMO:0000414
+relationship: OBI:0000312 CHMO:0000414 ! is_specified_output_of gamma-ray spectroscopy
 
 [Term]
 id: CHMO:0000817
@@ -9165,11 +9203,11 @@ is_a: CHMO:0000835 ! nuclear magnetic resonance spectrum
 id: CHMO:0000840
 name: Mossbauer spectrum
 def: "A plot of intensity vs. velocity obtained by measuring the intensity and kinetic energy of a beam of gamma-rays transmitted through a solid sample." [https://doi.org/10.1039/DT9920000073]
-synonym: "Mössbauer spectra" EXACT []
-synonym: "Mössbauer spectrum" EXACT []
 synonym: "Moessbauer spectra" EXACT []
 synonym: "Moessbauer spectrum" EXACT []
 synonym: "Mossbauer spectra" EXACT []
+synonym: "Mössbauer spectra" EXACT []
+synonym: "Mössbauer spectrum" EXACT []
 is_a: CHMO:0000800 ! spectrum
 
 [Term]
@@ -9184,9 +9222,9 @@ id: CHMO:0000842
 name: ultraviolet–visible spectrum
 def: "A plot of absorbance vs. wavelength obtained by measuring the amount of radiation absorbed by a sample as a function of the wavelength of incident radiation in the ultraviolet to visible (190–800 nm) range." [https://orcid.org/0000-0001-5985-7429]
 synonym: "spectrophotometric data" EXACT []
-synonym: "ultraviolet–visible spectra" EXACT []
 synonym: "ultraviolet-visible spectra" EXACT []
 synonym: "ultraviolet-visible spectrum" EXACT []
+synonym: "ultraviolet–visible spectra" EXACT []
 synonym: "UV&#x2013;VIS absorption spectra" EXACT []
 synonym: "UV&#x2013;VIS spectra" EXACT []
 synonym: "UV-VIS absorption spectra" EXACT []
@@ -9794,13 +9832,13 @@ is_a: CHMO:0000897 ! saturation transfer difference nuclear magnetic resonance s
 id: CHMO:0000899
 name: diffuse reflectance ultraviolet–visible spectrophotometry
 def: "Spectroscopy where the diffuse reflection of radiation in the range ultraviolet to visible (190–800 nm) by a sample is measured." [https://orcid.org/0000-0002-0640-0422]
-synonym: "diffuse reflectance UV–vis spectroscopy" EXACT []
 synonym: "diffuse reflectance UV-vis spectroscopy" EXACT []
 synonym: "diffuse reflectance UV-visible" EXACT []
-synonym: "UV–vis–DRS" EXACT []
-synonym: "UV–vis-diffuse reflectance spectroscopy" EXACT []
+synonym: "diffuse reflectance UV–vis spectroscopy" EXACT []
 synonym: "UV-vis-diffuse reflectance spectroscopy" EXACT []
 synonym: "UV-vis-DRS" EXACT []
+synonym: "UV–vis-diffuse reflectance spectroscopy" EXACT []
+synonym: "UV–vis–DRS" EXACT []
 is_a: CHMO:0000292 ! ultraviolet-visible spectrophotometry
 
 [Term]
@@ -10630,7 +10668,7 @@ is_a: CHMO:0000999 ! separation method
 id: CHMO:0001001
 name: column chromatography
 alt_id: CHMO:0002118
-def: "A chromatography method where the stationary bed is within a tube (of standard length 25 cm). The particles of the solid stationary phase or support coated with a liquid stationary phase may fill the whole inside volume of the tube (packed column) or be concentrated on or along the inside tube wall leaving an open, unrestricted path for the mobile phase in the middle part of the tube (open-tubular column)." [https://doi.org/10.1351/goldbook.C01182, https://doi.org/10.1021/ac971247q]
+def: "A chromatography method where the stationary bed is within a tube (of standard length 25 cm). The particles of the solid stationary phase or support coated with a liquid stationary phase may fill the whole inside volume of the tube (packed column) or be concentrated on or along the inside tube wall leaving an open, unrestricted path for the mobile phase in the middle part of the tube (open-tubular column)." [https://doi.org/10.1021/ac971247q, https://doi.org/10.1351/goldbook.C01182]
 synonym: "preparative column chromatography" NARROW []
 is_a: CHMO:0001000 ! chromatography
 intersection_of: CHMO:0001000 ! chromatography
@@ -10855,7 +10893,7 @@ is_a: CHMO:0001019 ! electrophoresis
 [Term]
 id: CHMO:0001026
 name: isoelectric focusing
-def: "An electrophoresis method for the separation of amphoteric analytes according to their isoelectric points by the application of an electric field along a pH gradient." [https://doi.org/10.1351/pac200476020443, FIX:0000625]
+def: "An electrophoresis method for the separation of amphoteric analytes according to their isoelectric points by the application of an electric field along a pH gradient." [FIX:0000625, https://doi.org/10.1351/pac200476020443]
 synonym: "IEF" EXACT []
 synonym: "IEF focusing" EXACT []
 synonym: "IEF focussing" EXACT []
@@ -11064,7 +11102,7 @@ synonym: "reversed phase liquid chromatography" EXACT []
 synonym: "reversed-phase liquid chromatography" EXACT []
 synonym: "RPLC" EXACT []
 is_a: CHMO:0001004 ! liquid chromatography
-is_a: CHMO:0002302
+is_a: CHMO:0002302 ! reversed-phase chromatography
 
 [Term]
 id: CHMO:0001051
@@ -11644,7 +11682,7 @@ is_a: CHMO:0000613 ! pulsed nuclear magnetic resonance spectroscopy
 [Term]
 id: CHMO:0001118
 name: pulsed field-gradient spin echo nuclear magnetic resonance spectroscopy
-def: "An NMR experiment in which pulsed field gradients are applied to a spin echo sequence to cleanly and precisely excite particular resonances. Additionally, attenuation of signals occurs related to molecular diffusion allowing this technique to be used to determine self-diffusion coefficients." [https://doi.org/10.106/j.jmr.2004.06.004, FIX:0001088, rsc:pr]
+def: "An NMR experiment in which pulsed field gradients are applied to a spin echo sequence to cleanly and precisely excite particular resonances. Additionally, attenuation of signals occurs related to molecular diffusion allowing this technique to be used to determine self-diffusion coefficients." [FIX:0001088, https://doi.org/10.106/j.jmr.2004.06.004, rsc:pr]
 synonym: "PFG-SE NMR" EXACT []
 synonym: "PFGSE" EXACT []
 synonym: "PFGSE-NMR" EXACT []
@@ -11742,7 +11780,7 @@ is_a: CHMO:0001125 ! confocal microscope
 [Term]
 id: CHMO:0001128
 name: adsorption chromatography
-def: "Chromatography in which separation is based mainly on differences between the adsorption affinities of the sample components for the surface of an active solid." [https://doi.org/10.1351/goldbook.A00157, FIX:0000611]
+def: "Chromatography in which separation is based mainly on differences between the adsorption affinities of the sample components for the surface of an active solid." [FIX:0000611, https://doi.org/10.1351/goldbook.A00157]
 is_a: CHMO:0001000 ! chromatography
 created_by: batchelorc
 creation_date: 2009-03-06T04:48:25Z
@@ -11917,10 +11955,10 @@ name: 1H–13C heteronuclear multiple bond coherence
 def: "A type of heteronuclear NMR spectroscopy where a second frequency dimension is employed to disperse the signals and reveal correlations between protons and 13C nuclei which are 2 to 3 bonds removed." [rsc:pr]
 synonym: "13C-1H HMBC" EXACT []
 synonym: "1H-13C HMBC" EXACT []
+xref: FIX:0001024
 is_a: CHMO:0000601 ! heteronuclear multiple bond coherence
 created_by: https://orcid.org/0000-0001-5985-7429
 creation_date: 2009-03-11T05:06:51Z
-xref: FIX:0001024
 
 [Term]
 id: CHMO:0001149
@@ -11928,18 +11966,18 @@ name: 1H–15N heteronuclear multiple bond coherence
 def: "A type of heteronuclear NMR spectroscopy where a second frequency dimension is employed to disperse the signals and reveal correlations between protons and 15N nuclei which are 2 to 3 bonds removed." [rsc:pr]
 synonym: "15N-1H HMBC" EXACT []
 synonym: "1H-15N HMBC" EXACT []
+xref: FIX:0001023
 is_a: CHMO:0000601 ! heteronuclear multiple bond coherence
 created_by: https://orcid.org/0000-0001-5985-7429
 creation_date: 2009-03-11T05:08:24Z
-xref: FIX:0001023
 
 [Term]
 id: CHMO:0001150
 name: 1H–1H correlation spectroscopy
 def: "A type of homonuclear NMR spectroscopy where a second frequency dimension is employed to disperse the signals and reveal correlations between protons which are J-coupled (usually ≤3 bonds apart)." [FIX:0000189, rsc:pr]
-synonym: "1H–1H COSY" EXACT []
 synonym: "1H-1H correlated spectroscopy" EXACT []
 synonym: "1H-1H COSY" EXACT []
+synonym: "1H–1H COSY" EXACT []
 is_a: CHMO:0000599 ! correlation spectroscopy
 created_by: https://orcid.org/0000-0001-5985-7429
 creation_date: 2009-03-11T05:11:37Z
@@ -12198,10 +12236,10 @@ creation_date: 2009-03-16T03:44:18Z
 id: CHMO:0001172
 name: 1H two-dimensional nuclear Overhauser enhancement spectrum
 def: "A two-dimensional spectrum which plots the resonance frequency of protons approximately 6 \\AA apart which are correlated by the nuclear Overhauser enhancement effect. The resonance frequencies are plotted with intensities proportional to the populations of nuclei." [rsc:pr]
-synonym: "1H–1H NOESY spectra" EXACT []
-synonym: "1H–1H NOESY spectrum" EXACT []
 synonym: "1H-1H NOESY spectra" EXACT []
 synonym: "1H-1H NOESY spectrum" EXACT []
+synonym: "1H–1H NOESY spectra" EXACT []
+synonym: "1H–1H NOESY spectrum" EXACT []
 synonym: "2D 1H-NOESY spectra" EXACT []
 synonym: "2D 1H-NOESY spectrum" EXACT []
 synonym: "2D 1H-NOESY-NMR spectra" EXACT []
@@ -13066,15 +13104,10 @@ synonym: "183W NMR spectroscopy" EXACT []
 synonym: "183W nuclear magnetic resonance spectrometry" EXACT []
 synonym: "183W-NMR" EXACT []
 is_a: CHMO:0000613 ! pulsed nuclear magnetic resonance spectroscopy
-relationship: CHMO:0002922 CHEBI:52462
-intersection_of: CHMO:0000613
-intersection_of: CHMO:0002922 CHEBI:52462
+intersection_of: CHMO:0000613 ! pulsed nuclear magnetic resonance spectroscopy
+intersection_of: CHMO:0002922 CHEBI:52462 ! probes_atom tungsten-183
+relationship: CHMO:0002922 CHEBI:52462 ! probes_atom tungsten-183
 creation_date: 2009-04-02T04:47:07Z
-
-[Term]
-id: CHEBI:52462
-name: tungsten-183
-is_a: CHEBI:23367
 
 [Term]
 id: CHMO:0001253
@@ -13272,7 +13305,7 @@ creation_date: 2009-04-16T04:01:41Z
 [Term]
 id: CHMO:0001269
 name: short-column chromatography
-def: "A chromatography method where the stationary bed is within a tube (of less than the standard length of 25 cm). The particles of the solid stationary phase or support coated with a liquid stationary phase may fill the whole inside volume of the tube (packed column) or be concentrated on or along the inside tube wall leaving an open, unrestricted path for the mobile phase in the middle part of the tube (open-tubular column)." [https://doi.org/10.1351/goldbook.C01182, https://doi.org/10.1021/ac971247q]
+def: "A chromatography method where the stationary bed is within a tube (of less than the standard length of 25 cm). The particles of the solid stationary phase or support coated with a liquid stationary phase may fill the whole inside volume of the tube (packed column) or be concentrated on or along the inside tube wall leaving an open, unrestricted path for the mobile phase in the middle part of the tube (open-tubular column)." [https://doi.org/10.1021/ac971247q, https://doi.org/10.1351/goldbook.C01182]
 synonym: "short column chromatography" EXACT []
 is_a: CHMO:0001001 ! column chromatography
 created_by: https://orcid.org/0000-0001-5985-7429
@@ -13482,7 +13515,6 @@ synonym: "reversed-phase nanoflow HPLC-ICP-MS" EXACT []
 synonym: "reversed-phase nanoflow HPLC-ICPMS" EXACT []
 synonym: "reversed-phase nanoflow HPLC/ICP-MS" EXACT []
 synonym: "reversed-phase nanoHPLC-ICPMS" EXACT []
-synonym: "reversed-phase nanoHPLC-ICPMS" EXACT []
 synonym: "reversed-phase nHPLC-ICPMS" EXACT []
 is_a: CHMO:0001281 ! nanoflow high-performance liquid chromatography-inductively coupled plasma mass spectrometry
 relationship: BFO:0000118 CHMO:0000538 ! has proper occurrent part inductively coupled plasma mass spectrometry
@@ -13567,7 +13599,7 @@ creation_date: 2009-05-08T11:53:32Z
 [Term]
 id: CHMO:0001290
 name: time-resolved microwave conductivity
-def: "A technique allowing the quantitative and qualitative detection of radiation-induced charge separation by time-resolved measurement of the changes in microwave absorption resulting from the production and decay of charged and dipolar molecular entities. In a typical TRMC experiment, separated charge carriers, which are generated by a laser pulse, lead to a perturbation of the initial microwave absorbance. The temporal decay of the conductivity signal (i.e. microwave absorbance) reflects the lifetime of the photogenerated carriers." [https://doi.org/10.1351/goldbook.T06384, https://doi.org/10.1039/FT9949003315]
+def: "A technique allowing the quantitative and qualitative detection of radiation-induced charge separation by time-resolved measurement of the changes in microwave absorption resulting from the production and decay of charged and dipolar molecular entities. In a typical TRMC experiment, separated charge carriers, which are generated by a laser pulse, lead to a perturbation of the initial microwave absorbance. The temporal decay of the conductivity signal (i.e. microwave absorbance) reflects the lifetime of the photogenerated carriers." [https://doi.org/10.1039/FT9949003315, https://doi.org/10.1351/goldbook.T06384]
 synonym: "time resolved microwave conductivity" EXACT []
 synonym: "TRMC" EXACT []
 is_a: CHMO:0001247 ! charge transport measurement method
@@ -13577,7 +13609,7 @@ creation_date: 2009-05-11T09:43:39Z
 [Term]
 id: CHMO:0001291
 name: pulse radiolysis time-resolved microwave conductivity
-def: "A technique allowing the quantitative and qualitative detection of radiation-induced charge separation by time-resolved measurement of the changes in microwave absorption resulting from the production and decay of charged and dipolar molecular entities. In a typical pulse-radiolysis TRMC experiment, separated charge carriers, which are generated by a nanosecond pulse of 3-MeV electrons, lead to a perturbation of the initial microwave absorbance. The temporal decay of the conductivity signal (i.e. microwave absorbance) reflects the lifetime of the electrogenerated carriers." [https://doi.org/10.1351/goldbook.T06384, https://doi.org/10.1021/j100140a051]
+def: "A technique allowing the quantitative and qualitative detection of radiation-induced charge separation by time-resolved measurement of the changes in microwave absorption resulting from the production and decay of charged and dipolar molecular entities. In a typical pulse-radiolysis TRMC experiment, separated charge carriers, which are generated by a nanosecond pulse of 3-MeV electrons, lead to a perturbation of the initial microwave absorbance. The temporal decay of the conductivity signal (i.e. microwave absorbance) reflects the lifetime of the electrogenerated carriers." [https://doi.org/10.1021/j100140a051, https://doi.org/10.1351/goldbook.T06384]
 synonym: "pulse radiolysis time resolved microwave conductivity" EXACT []
 synonym: "pulse radiolysis TRMC" EXACT []
 synonym: "pulse-radiolysis time-resolved microwave conductivity" EXACT []
@@ -13674,8 +13706,8 @@ creation_date: 2009-05-14T12:42:01Z
 id: CHMO:0001299
 name: solid-state nuclear magnetic resonance spectrum
 def: "A plot of the resonance frequency of nuclei in the same magnetic environment on a scale relative to their resonance frequency and with intensities proportional to the populations of nuclei in those environments for solid samples." [rsc:pr]
-synonym: "solid-state nuclear magnetic resonance spectra" EXACT []
 synonym: "solid-state NMR spectra" EXACT []
+synonym: "solid-state nuclear magnetic resonance spectra" EXACT []
 is_a: CHMO:0000835 ! nuclear magnetic resonance spectrum
 created_by: https://orcid.org/0000-0001-5985-7429
 creation_date: 2009-05-14T12:45:06Z
@@ -13806,13 +13838,13 @@ name: sol–gel method
 def: "The process of the settling of (nm sized) particles from a colloidal suspension onto a pre-existing surface, resulting in ceramic materials. The desired solid particles (e.g. metal alkoxides) are suspended in a liquid, forming the 'sol', which is deposited on a substrate by spinning, dipping or coating, or transferred to a mould. The particles in the sol are polymerised by partial evaporation of the solvent, or addition of an initiator, forming the 'gel', which is then heated at high temperature to give the final solid product." [https://orcid.org/0000-0002-0640-0422]
 synonym: "colloid process" EXACT []
 synonym: "colloidal processing" EXACT []
-synonym: "sol–gel processing" EXACT []
 synonym: "sol-gel method" EXACT []
 synonym: "sol-gel process" EXACT []
 synonym: "sol-gel processing" EXACT []
 synonym: "solgel method" EXACT []
 synonym: "solgel process" EXACT []
 synonym: "solgel processing" EXACT []
+synonym: "sol–gel processing" EXACT []
 is_a: CHMO:0002063 ! colloid method
 
 [Term]
@@ -14682,9 +14714,9 @@ name: electron-beam projection lithography
 def: "A synthesis technique that uses electrons to transfer a pattern to a substrate. The substrate is coated with a film (or 'resist) and a beam of electrons (100 keV) is scanned across a patterned mask. The electrons induce chemical reactions in the resist and the desired pattern is obtained by selectively removing either exposed or non-exposed regions of the resist ('developing'). The electron beam can be focused using either electric or magnetic fields." [https://orcid.org/0000-0002-0640-0422]
 synonym: "e-beam projection lithography" EXACT []
 synonym: "ebeam projection lithography" EXACT []
-synonym: "EPL" EXACT []
-synonym: "electron-projection lithography" EXACT []
 synonym: "electron projection lithography" EXACT []
+synonym: "electron-projection lithography" EXACT []
+synonym: "EPL" EXACT []
 is_a: CHMO:0001401 ! electron-beam lithography
 
 [Term]
@@ -15124,7 +15156,7 @@ creation_date: 2009-05-18T09:45:58Z
 [Term]
 id: CHMO:0001462
 name: buffer solution
-def: "A solution that contains a conjugate acid–base pair in equilibria and hence resists changes to its pH near the pK value of the acid." [ISBN:0716719207, https://orcid.org/0000-0001-5985-7429]
+def: "A solution that contains a conjugate acid–base pair in equilibria and hence resists changes to its pH near the pK value of the acid." [https://orcid.org/0000-0001-5985-7429, ISBN:0716719207]
 is_a: CHMO:0000993 ! portion of material
 created_by: batchelorc
 creation_date: 2009-05-18T02:57:14Z
@@ -15236,9 +15268,9 @@ is_a: CHMO:0001474 ! sample cooling
 [Term]
 id: CHMO:0001477
 name: crystallisation
-def: "The formation of a crystalline solid from a solution, melt vapour, or a different solid phase, generally by lowering the temperature or by evaporation of a solvent." [https://doi.org/10.1351/goldbook.C01434, FIX:0000214]
+def: "The formation of a crystalline solid from a solution, melt vapour, or a different solid phase, generally by lowering the temperature or by evaporation of a solvent." [FIX:0000214, https://doi.org/10.1351/goldbook.C01434]
 synonym: "crystallization" EXACT []
-is_a: CHMO:0002916
+is_a: CHMO:0002916 ! sample solidification
 
 [Term]
 id: CHMO:0001478
@@ -16625,10 +16657,10 @@ id: CHMO:0001661
 name: laser desorption electrospray ionisation
 def: "An ionisation method where neutral molecules are desorbed from the sample (usually biological) using a nitrogen laser and then ionised by collision with charged solvent droplets which are formed by forcing the solvent through a small heated capillary (at a flow rate of 1–10 L min-1) into an electric field." [https://doi.org/10.1002/rcm.2243]
 synonym: "ELDI" EXACT []
-synonym: "electrospray-assisted laser desorption–ionisation" EXACT []
-synonym: "electrospray-assisted laser desorption–ionization" EXACT []
 synonym: "electrospray-assisted laser desorption-ionisation" EXACT []
 synonym: "electrospray-assisted laser desorption-ionization" EXACT []
+synonym: "electrospray-assisted laser desorption–ionisation" EXACT []
+synonym: "electrospray-assisted laser desorption–ionization" EXACT []
 synonym: "laser desorption electrospray ionisation" EXACT []
 synonym: "laser desorption electrospray ionization" EXACT []
 is_a: CHMO:0001659 ! electrospray ionisation
@@ -16842,7 +16874,7 @@ is_a: OBI:0000094 ! material processing
 id: CHMO:0001688
 name: precipitation
 def: "The sedimentation of a solid material (a 'precipitate') from a liquid solution in which the material is present in amounts greater than its solubility in the liquid." [https://doi.org/10.1351/goldbook.P04795]
-is_a: CHMO:0002916
+is_a: CHMO:0002916 ! sample solidification
 
 [Term]
 id: CHMO:0001689
@@ -17530,11 +17562,6 @@ created_by: https://orcid.org/0000-0001-5985-7429
 creation_date: 2009-05-18T03:49:29Z
 
 [Term]
-id: CHEBI:52230
-name: tin-119 atom
-is_a: CHEBI:23367
-
-[Term]
 id: CHMO:0001766
 name: transmission Raman spectroscopy
 def: "Spectroscopy where the Raman scattering of monochromatic light, usually from a laser, by a sample is detected. The light is collected from the non-illuminated side of the sample." [https://orcid.org/0000-0002-0640-0422]
@@ -17978,7 +18005,6 @@ synonym: "transmission electron microscope (TEM) image" EXACT []
 synonym: "transmission electron microscope image" EXACT []
 synonym: "transmission electron microscope images" EXACT []
 synonym: "transmission electron microscopic (TEM) images" EXACT []
-synonym: "transmission electron microscopic (TEM) images" EXACT []
 synonym: "transmission electron microscopy (TEM) image" EXACT []
 is_a: CHMO:0001800 ! electron micrograph
 created_by: https://orcid.org/0000-0001-5985-7429
@@ -17992,11 +18018,9 @@ synonym: "absorption spectrophotometer" EXACT []
 synonym: "electronic absorption spectrometer" EXACT []
 synonym: "molecular electronic absorption spectrometer" EXACT []
 synonym: "ultra-violet-visible spectrometer" EXACT []
-synonym: "ultraviolet–visible spectrophotometer" EXACT []
 synonym: "ultraviolet-visible spectrometer" EXACT []
 synonym: "ultraviolet-visible spectrophotometer" EXACT []
-synonym: "UV–vis spectrometer" EXACT []
-synonym: "UV–visible spectrometer" EXACT []
+synonym: "ultraviolet–visible spectrophotometer" EXACT []
 synonym: "UV-vis absorption spectrometer" EXACT []
 synonym: "UV-VIS absorption spectrophotometer" EXACT []
 synonym: "UV-vis absorption spectrophotometer" EXACT []
@@ -18013,6 +18037,8 @@ synonym: "UV/VIS spectrometer" EXACT []
 synonym: "UV/Vis spectrometer" EXACT []
 synonym: "UV/VIS spectrophotometer" EXACT []
 synonym: "UV/Vis spectrophotometer" EXACT []
+synonym: "UV–vis spectrometer" EXACT []
+synonym: "UV–visible spectrometer" EXACT []
 is_a: CHMO:0002232 ! spectrophotometer
 created_by: https://orcid.org/0000-0001-5985-7429
 creation_date: 2009-05-21T02:46:45Z
@@ -18350,8 +18376,8 @@ creation_date: 2009-05-29T11:18:03Z
 id: CHMO:0001831
 name: confocal infrared microscopy
 def: "The collection of spatially resolved infrared spectra of a sample during optical microscopy. An aperture is used to discriminate between infrared signal coming from the laser spot and that coming from the out-of-focus region of the sample." [https://orcid.org/0000-0002-0640-0422]
-synonym: "confocal infra-red chemical imaging spectroscopy" EXACT []
 synonym: "confocal infra-red chemical imaging spectrometry" EXACT []
+synonym: "confocal infra-red chemical imaging spectroscopy" EXACT []
 synonym: "confocal infra-red microscopy" EXACT []
 synonym: "confocal infrared chemical imaging spectrometry" EXACT []
 synonym: "confocal infrared chemical imaging spectroscopy" EXACT []
@@ -18967,10 +18993,10 @@ synonym: "gradient-selected NMR" EXACT []
 synonym: "gs-NMR" EXACT []
 synonym: "PFG" EXACT []
 synonym: "pulsed-field gradient" EXACT []
+xref: FIX:0000463
 is_a: CHMO:0001806 ! nuclear magnetic resonance method
 created_by: https://orcid.org/0000-0001-5985-7429
 creation_date: 2009-05-29T12:00:00Z
-xref: FIX:0000463
 
 [Term]
 id: CHMO:0001884
@@ -19139,7 +19165,7 @@ creation_date: 2009-06-02T10:58:31Z
 [Term]
 id: CHMO:0001898
 name: non-contact mode atomic force microscopy
-def: "Microscopy which uses a sharp spike (known as a 'tip') mounted on the end of a cantilever to scan the surface of the specimen. The tip oscillates in the 'attractive' force region, i.e. avoiding sample contact. An image of the surface is obtained by mechanically moving the probe in a raster scan of the specimen, line by line, and recording the force experienced by the tip as a function of position. A feedback loop is used to maintain a fixed relationship between the tip and surface during scanning." [https://doi.org/10.1016/j.eurpolymj.2008.05.019, https://doi.org/10.1039/b817510a, FIX:0000117]
+def: "Microscopy which uses a sharp spike (known as a 'tip') mounted on the end of a cantilever to scan the surface of the specimen. The tip oscillates in the 'attractive' force region, i.e. avoiding sample contact. An image of the surface is obtained by mechanically moving the probe in a raster scan of the specimen, line by line, and recording the force experienced by the tip as a function of position. A feedback loop is used to maintain a fixed relationship between the tip and surface during scanning." [FIX:0000117, https://doi.org/10.1016/j.eurpolymj.2008.05.019, https://doi.org/10.1039/b817510a]
 synonym: "attractive dynamic scanning force microscopy" EXACT []
 synonym: "DFM-AR" EXACT []
 synonym: "DFMAR" EXACT []
@@ -20748,17 +20774,17 @@ creation_date: 2009-06-22T04:09:32Z
 id: CHMO:0002028
 name: 129Xe Mossbauer spectroscopy
 def: "Spectroscopy where the intensity of a gamma-rays beam transmitted through a solid sample containing 129Xe nuclei is detected." [CHEBI:52453, FIX:0000750, https://orcid.org/0000-0002-0640-0422]
-synonym: "129Xe Mößbauer spectrometry" EXACT []
-synonym: "129Xe Mößbauer spectroscopy" EXACT []
-synonym: "129Xe Mössbauer spectrometry" EXACT []
-synonym: "129Xe Mössbauer spectroscopy" EXACT []
 synonym: "129Xe Moessbauer spectrometry" EXACT []
 synonym: "129Xe Moessbauer spectroscopy" EXACT []
 synonym: "129Xe Mossbauer spectrometry" EXACT []
 synonym: "129Xe Mossbauer spectroscopy" EXACT []
+synonym: "129Xe Mössbauer spectrometry" EXACT []
+synonym: "129Xe Mössbauer spectroscopy" EXACT []
+synonym: "129Xe Mößbauer spectrometry" EXACT []
+synonym: "129Xe Mößbauer spectroscopy" EXACT []
 synonym: "129Xe recoil-free gamma-ray resonance absorption spectroscopy" EXACT []
-synonym: "xenon-129 Mößbauer spectroscopy" EXACT []
 synonym: "xenon-129 Moessbauer spectroscopy" EXACT []
+synonym: "xenon-129 Mößbauer spectroscopy" EXACT []
 is_a: CHMO:0000417 ! Mossbauer spectroscopy
 created_by: https://orcid.org/0000-0001-5985-7429
 creation_date: 2009-06-22T04:27:35Z
@@ -20767,13 +20793,13 @@ creation_date: 2009-06-22T04:27:35Z
 id: CHMO:0002029
 name: 127I Mossbauer spectroscopy
 def: "Spectroscopy where the intensity of a gamma-rays beam transmitted through a solid sample containing 127I nuclei is detected." [CHEBI:52631, FIX:0000737, https://orcid.org/0000-0002-0640-0422]
-synonym: "127I Mößbauer spectroscopy" EXACT []
-synonym: "127I Mössbauer spectroscopy" EXACT []
 synonym: "127I Moessbauer spectroscopy" EXACT []
 synonym: "127I Mossbauer spectroscopy" EXACT []
+synonym: "127I Mössbauer spectroscopy" EXACT []
+synonym: "127I Mößbauer spectroscopy" EXACT []
 synonym: "127I recoil-free gamma-ray resonance absorption spectroscopy" EXACT []
-synonym: "iodine-127 Mößbauer spectroscopy" EXACT []
 synonym: "iodine-127 Moessbauer spectroscopy" EXACT []
+synonym: "iodine-127 Mößbauer spectroscopy" EXACT []
 is_a: CHMO:0000417 ! Mossbauer spectroscopy
 created_by: https://orcid.org/0000-0001-5985-7429
 creation_date: 2009-06-22T04:30:39Z
@@ -20782,13 +20808,13 @@ creation_date: 2009-06-22T04:30:39Z
 id: CHMO:0002030
 name: 57Fe Mossbauer spectroscopy
 def: "Spectroscopy where the intensity of a gamma-rays beam transmitted through a solid sample containing 57Fe nuclei is detected." [CHEBI:52623, FIX:0000732, https://orcid.org/0000-0002-0640-0422]
-synonym: "57Fe Mößbauer spectroscopy" EXACT []
-synonym: "57Fe Mössbauer spectroscopy" EXACT []
 synonym: "57Fe Moessbauer spectroscopy" EXACT []
 synonym: "57Fe Mossbauer spectroscopy" EXACT []
+synonym: "57Fe Mössbauer spectroscopy" EXACT []
+synonym: "57Fe Mößbauer spectroscopy" EXACT []
 synonym: "57Fe recoil-free gamma-ray resonance absorption spectroscopy" EXACT []
-synonym: "iron-57 Mößbauer spectroscopy" EXACT []
 synonym: "iron-57 Moessbauer spectroscopy" EXACT []
+synonym: "iron-57 Mößbauer spectroscopy" EXACT []
 is_a: CHMO:0000417 ! Mossbauer spectroscopy
 created_by: https://orcid.org/0000-0001-5985-7429
 creation_date: 2009-06-22T04:33:40Z
@@ -20797,15 +20823,15 @@ creation_date: 2009-06-22T04:33:40Z
 id: CHMO:0002031
 name: 119Sn Mossbauer spectroscopy
 def: "Spectroscopy where the intensity of a gamma-rays beam transmitted through a solid sample containing 119Sn nuclei is detected." [CHEBI:52230, FIX:0000733, https://orcid.org/0000-0002-0640-0422]
-synonym: "119Sn Mößbauer spectroscopy" EXACT []
-synonym: "119Sn Mössbauer spectroscopy" EXACT []
 synonym: "119Sn Moessbauer spectroscopy" EXACT []
 synonym: "119Sn Mossbauer spectroscopy" EXACT []
+synonym: "119Sn Mössbauer spectroscopy" EXACT []
+synonym: "119Sn Mößbauer spectroscopy" EXACT []
 synonym: "119Sn recoil-free gamma-ray resonance absorption spectroscopy" EXACT []
-synonym: "tin-119 Mößbauer spectroscopy" EXACT []
 synonym: "tin-119 Moessbauer spectroscopy" EXACT []
+synonym: "tin-119 Mößbauer spectroscopy" EXACT []
 is_a: CHMO:0000417 ! Mossbauer spectroscopy
-relationship: CHMO:0002922 CHEBI:52230
+relationship: CHMO:0002922 CHEBI:52230 ! probes_atom tin-119 atom
 created_by: https://orcid.org/0000-0001-5985-7429
 creation_date: 2009-06-22T04:35:04Z
 
@@ -21146,11 +21172,11 @@ creation_date: 2009-07-01T02:56:43Z
 [Term]
 id: CHMO:0002068
 name: ratio variable-angle polarised absorption spectroscopy
-def: "Variable-angle polarised absorption spectroscopy where the angle-independent s-polarisation of the light is also measured as a reference." [https://doi.org/10.1063/1.345121, http://depts.washington.edu/eooptic/NSF/RVAPAS.pdf]
-synonym: "RVAPAS" EXACT []
+def: "Variable-angle polarised absorption spectroscopy where the angle-independent s-polarisation of the light is also measured as a reference." [http://depts.washington.edu/eooptic/NSF/RVAPAS.pdf, https://doi.org/10.1063/1.345121]
 synonym: "ratio variable angle polarised absorption spectroscopy" EXACT []
 synonym: "ratio variable angle polarized absorption spectroscopy" EXACT []
 synonym: "ratio variable-angle polarized absorption spectroscopy" EXACT []
+synonym: "RVAPAS" EXACT []
 synonym: "VAPRAS" EXACT []
 synonym: "variable angle polarised-referenced absorption spectroscopy" EXACT []
 synonym: "variable angle polarization referenced absorbtion spectroscopy" EXACT []
@@ -21572,8 +21598,8 @@ creation_date: 2009-07-06T10:55:54Z
 id: CHMO:0002106
 name: physical blending
 def: "The process of making a polymer blend by mechanically mixing different polymers together in the melt." [ISBN:1569902372]
-is_a: CHMO:0001685 ! mixing
 synonym: "mechanical mixing" EXACT []
+is_a: CHMO:0001685 ! mixing
 created_by: https://orcid.org/0000-0001-5985-7429
 creation_date: 2009-07-06T11:06:28Z
 
@@ -21968,7 +21994,7 @@ creation_date: 2009-07-09T10:50:20Z
 [Term]
 id: CHMO:0002141
 name: high-pressure fluorescence correlation spectroscopy
-def: "Spectroscopy where the spontaneous fluorescence intensity fluctuations of a sample are measured and correlated within a very small detection volume. Ultraviolet light is used to stimulate fluorescence and the sample is held inside a single fused silica microcapillary under high pressure (up to 300 MPa)." [https://doi.org/10.1016/S0006-3495(03)74694-3, FIX:000760]
+def: "Spectroscopy where the spontaneous fluorescence intensity fluctuations of a sample are measured and correlated within a very small detection volume. Ultraviolet light is used to stimulate fluorescence and the sample is held inside a single fused silica microcapillary under high pressure (up to 300 MPa)." [FIX:000760, https://doi.org/10.1016/S0006-3495(03)74694-3]
 synonym: "high pressure FCS" EXACT []
 synonym: "high pressure fluorescence correlation spectroscopy" EXACT []
 synonym: "high-pressure FCS" EXACT []
@@ -21979,7 +22005,7 @@ creation_date: 2009-07-09T06:24:34Z
 [Term]
 id: CHMO:0002142
 name: continuous-scan cyclic voltammetry
-def: "An electrochemical technique where the cell current is measured as a function of time and as a function of the potential between the indicator and reference electrodes. The potential is varied as a continuous sine wave and inverts at the end point resulting in a cycle." [https://doi.org/10.1016/0165-0270(92)90020-E, FIX:000762]
+def: "An electrochemical technique where the cell current is measured as a function of time and as a function of the potential between the indicator and reference electrodes. The potential is varied as a continuous sine wave and inverts at the end point resulting in a cycle." [FIX:000762, https://doi.org/10.1016/0165-0270(92)90020-E]
 synonym: "continuous scan CV" EXACT []
 synonym: "continuous scan cyclic voltammetry" EXACT []
 synonym: "continuous-scan CV" EXACT []
@@ -21999,7 +22025,7 @@ creation_date: 2009-07-09T06:37:39Z
 [Term]
 id: CHMO:0002144
 name: high-frequency conductometric titration
-def: "The process of determining the quantity of a sample by adding measured increments of a titrant until the end-point is reached. The titration is monitored by measuring the conductance of the solution, the current is provided by a high-frequency source." [https://doi.org/10.1021/ac60125a033, FIX:000774]
+def: "The process of determining the quantity of a sample by adding measured increments of a titrant until the end-point is reached. The titration is monitored by measuring the conductance of the solution, the current is provided by a high-frequency source." [FIX:000774, https://doi.org/10.1021/ac60125a033]
 synonym: "high frequency conductometric titration" EXACT []
 is_a: CHMO:0002143 ! conductometric titration
 created_by: https://orcid.org/0000-0001-5985-7429
@@ -23447,10 +23473,10 @@ creation_date: 2009-08-19T11:46:47Z
 id: CHMO:0002279
 name: native–native two-dimensional polyacrylamide gel electrophoresis
 def: "A two-dimensional separation method where the separation processes are both native polyacrylamide gel electrophoresis. In native polyacrylamide gel electrophoresis protein molecules move at different speeds, in non-denaturing conditions, according to their charge and frictional forces in a separation medium consisting of polyacrylamide gel, across which an electric field is applied." [https://orcid.org/0000-0002-0640-0422]
-synonym: "native–native 2D PAGE" EXACT []
-synonym: "native–native 2D-PAGE" EXACT []
 synonym: "native-native 2D PAGE" EXACT []
 synonym: "native-native 2D-PAGE" EXACT []
+synonym: "native–native 2D PAGE" EXACT []
+synonym: "native–native 2D-PAGE" EXACT []
 is_a: CHMO:0001106 ! two-dimensional polyacrylamide gel electrophoresis
 created_by: https://orcid.org/0000-0001-5985-7429
 creation_date: 2009-08-19T12:32:41Z
@@ -23590,7 +23616,7 @@ creation_date: 2009-08-24T12:55:24Z
 [Term]
 id: CHMO:0002289
 name: fast Fourier transform infrared spectroscopy
-def: "Spectroscopy where the sample absorbs a single pulse of radiation from the infrared region (0.78–1000 μm) and the spectrum obtained is subject to a fast Fourier transform." [https://doi.org/10.1021/ie960134e, FIX:0000647]
+def: "Spectroscopy where the sample absorbs a single pulse of radiation from the infrared region (0.78–1000 μm) and the spectrum obtained is subject to a fast Fourier transform." [FIX:0000647, https://doi.org/10.1021/ie960134e]
 synonym: "FFT-FTIR" EXACT []
 synonym: "FFT/FTIR" EXACT []
 is_a: CHMO:0000636 ! Fourier transform infrared spectroscopy
@@ -23759,12 +23785,12 @@ creation_date: 2009-08-26T04:45:35Z
 id: CHMO:0002307
 name: Tris–tricine buffer
 def: "A buffer where the pH is maintained by Tris–Htris, where Tris = tris(hydroxymethyl)aminomethane, and N-tris(hydroxymethyl)methyl-2-aminoethanesulfonic acid–N-tris(hydroxymethyl)methyl-2-ammonioethanesulfonate equilibria." [https://orcid.org/0000-0001-5985-7429]
-synonym: "TRIS–tricine buffer" EXACT []
-synonym: "tris–tricine buffer" EXACT []
 synonym: "TRIS-TRICINE buffer" EXACT []
 synonym: "TRIS-tricine buffer" EXACT []
 synonym: "Tris-tricine buffer" EXACT []
 synonym: "tris-tricine buffer" EXACT []
+synonym: "TRIS–tricine buffer" EXACT []
+synonym: "tris–tricine buffer" EXACT []
 is_a: CHMO:0001462 ! buffer solution
 created_by: https://orcid.org/0000-0001-5985-7429
 creation_date: 2009-08-26T04:47:09Z
@@ -24065,9 +24091,9 @@ id: CHMO:0002334
 name: matrix-assisted laser desorption–ionisation
 def: "An ionisation method where the sample (usually a large organic molecule or biomolecule) is vaporised and ionised using a high-energy pulsed laser. The sample is held in a matrix (such as crystallised dihydrobenzoic acid) to protect it from direct laser illumination and to separate the sample molecules." [ISBN:978-0-470-51634-8]
 synonym: "MALDI" EXACT []
-synonym: "matrix-assisted laser desorption–ionization" EXACT []
 synonym: "matrix-assisted laser desorption-ionisation" EXACT []
 synonym: "matrix-assisted laser desorption-ionization" EXACT []
+synonym: "matrix-assisted laser desorption–ionization" EXACT []
 is_a: CHMO:0002335 ! laser desorption ionisation
 created_by: https://orcid.org/0000-0001-5985-7429
 creation_date: 2009-09-03T11:16:33Z
@@ -24087,9 +24113,9 @@ id: CHMO:0002336
 name: surface-enhanced laser desorption–ionisation
 def: "An ionisation method where the sample (usually a large organic molecule or biomolecule) is vaporised and ionised using a high-energy pulsed laser. The sample is mixed with a matrix compound (such as crystallised dihydrobenzoic acid) and deposited on a surface, with some chemical functionality, to protect it from direct laser illumination and to separate the sample molecules." [ISBN:978-0-470-51634-8]
 synonym: "SELDI" EXACT []
-synonym: "surface-enhanced laser desorption–ionization" EXACT []
 synonym: "surface-enhanced laser desorption-ionisation" EXACT []
 synonym: "surface-enhanced laser desorption-ionization" EXACT []
+synonym: "surface-enhanced laser desorption–ionization" EXACT []
 is_a: CHMO:0002335 ! laser desorption ionisation
 created_by: https://orcid.org/0000-0001-5985-7429
 creation_date: 2009-09-03T11:19:42Z
@@ -24524,9 +24550,9 @@ creation_date: 2009-09-15T05:21:53Z
 id: CHMO:0002376
 name: 1H–109Ag heteronuclear multiple quantum coherence
 def: "A type of heteronuclear NMR spectroscopy where a second frequency dimension is employed to disperse the signals and reveal correlations between protons and the 109Ag nuclei to which they are covalently bound." [FIX:0001017, rsc:pr]
-synonym: "1H–109Ag HMQC" EXACT []
 synonym: "1H-109Ag heteronuclear multiple quantum coherence" EXACT []
 synonym: "1H-109Ag HMQC" EXACT []
+synonym: "1H–109Ag HMQC" EXACT []
 is_a: CHMO:0000603 ! heteronuclear multiple quantum coherence
 created_by: https://orcid.org/0000-0001-5985-7429
 creation_date: 2009-09-15T05:24:56Z
@@ -24535,9 +24561,9 @@ creation_date: 2009-09-15T05:24:56Z
 id: CHMO:0002377
 name: 1H–113Cd heteronuclear multiple quantum coherence
 def: "A type of heteronuclear NMR spectroscopy where a second frequency dimension is employed to disperse the signals and reveal correlations between protons and the 113Cd nuclei to which they are covalently bound." [FIX:0001021, rsc:pr]
-synonym: "1H–113Cd HMQC" EXACT []
 synonym: "1H-113Cd heteronuclear multiple quantum coherence" EXACT []
 synonym: "1H-113Cd HMQC" EXACT []
+synonym: "1H–113Cd HMQC" EXACT []
 is_a: CHMO:0000603 ! heteronuclear multiple quantum coherence
 created_by: https://orcid.org/0000-0001-5985-7429
 creation_date: 2009-09-15T05:28:45Z
@@ -24546,9 +24572,9 @@ creation_date: 2009-09-15T05:28:45Z
 id: CHMO:0002378
 name: 113Cd–113Cd correlation spectroscopy
 def: "A type of homonuclear NMR spectroscopy where a second frequency dimension is employed to disperse the signals and reveal correlations between 113Cd nuclei that are J-coupled (usually <=3 bonds apart)." [FIX:0001020, rsc:pr]
-synonym: "113Cd–113Cd COSY" EXACT []
 synonym: "113Cd-113Cd correlated spectroscopy" EXACT []
 synonym: "113Cd-113Cd COSY" EXACT []
+synonym: "113Cd–113Cd COSY" EXACT []
 is_a: CHMO:0000599 ! correlation spectroscopy
 created_by: https://orcid.org/0000-0001-5985-7429
 creation_date: 2009-09-15T05:31:03Z
@@ -24557,16 +24583,16 @@ creation_date: 2009-09-15T05:31:03Z
 id: CHMO:0002379
 name: 1H–113Cd heteronuclear correlation spectroscopy
 def: "A type of NMR spectroscopy where a second frequency dimension is employed to disperse the signals and reveal correlations between protons and 113Cd nuclei." [FIX:0001019, rsc:pr]
-synonym: "1H–113Cd COSY" EXACT []
-synonym: "1H–113Cd HETCOR" EXACT []
-synonym: "1H–113Cd HETCORR" EXACT []
-synonym: "1H–113Cd HETCOSY" EXACT []
-synonym: "1H–113Cd HETEROCOR" EXACT []
 synonym: "1H-113Cd COSY" EXACT []
 synonym: "1H-113Cd HETCOR" EXACT []
 synonym: "1H-113Cd HETCORR" EXACT []
 synonym: "1H-113Cd HETCOSY" EXACT []
 synonym: "1H-113Cd HETEROCOR" EXACT []
+synonym: "1H–113Cd COSY" EXACT []
+synonym: "1H–113Cd HETCOR" EXACT []
+synonym: "1H–113Cd HETCORR" EXACT []
+synonym: "1H–113Cd HETCOSY" EXACT []
+synonym: "1H–113Cd HETEROCOR" EXACT []
 synonym: "heteronuclear 113Cd-1H COSY" EXACT []
 is_a: CHMO:0000600 ! heteronuclear correlation spectroscopy
 created_by: https://orcid.org/0000-0001-5985-7429
@@ -24576,16 +24602,16 @@ creation_date: 2009-09-15T05:35:51Z
 id: CHMO:0002380
 name: 1H–13C heteronuclear correlation spectroscopy
 def: "A type of NMR spectroscopy where a second frequency dimension is employed to disperse the signals and reveal correlations between protons and 13C nuclei." [FIX:0001026, rsc:pr]
-synonym: "1H–13C COSY" EXACT []
-synonym: "1H–13C HETCOR" EXACT []
-synonym: "1H–13C HETCORR" EXACT []
-synonym: "1H–13C HETCOSY" EXACT []
-synonym: "1H–13C HETEROCOR" EXACT []
 synonym: "1H-13C COSY" EXACT []
 synonym: "1H-13C HETCOR" EXACT []
 synonym: "1H-13C HETCORR" EXACT []
 synonym: "1H-13C HETCOSY" EXACT []
 synonym: "1H-13C HETEROCOR" EXACT []
+synonym: "1H–13C COSY" EXACT []
+synonym: "1H–13C HETCOR" EXACT []
+synonym: "1H–13C HETCORR" EXACT []
+synonym: "1H–13C HETCOSY" EXACT []
+synonym: "1H–13C HETEROCOR" EXACT []
 synonym: "heteronuclear 13C-1H COSY" EXACT []
 is_a: CHMO:0000600 ! heteronuclear correlation spectroscopy
 created_by: https://orcid.org/0000-0001-5985-7429
@@ -24595,16 +24621,16 @@ creation_date: 2009-09-15T05:40:49Z
 id: CHMO:0002381
 name: 1H–31P heteronuclear correlation spectroscopy
 def: "A type of NMR spectroscopy where a second frequency dimension is employed to disperse the signals and reveal correlations between protons and 31P nuclei." [FIX:0001028, rsc:pr]
-synonym: "1H–31P COSY" EXACT []
-synonym: "1H–31P HETCOR" EXACT []
-synonym: "1H–31P HETCORR" EXACT []
-synonym: "1H–31P HETCOSY" EXACT []
-synonym: "1H–31P HETEROCOR" EXACT []
 synonym: "1H-31P COSY" EXACT []
 synonym: "1H-31P HETCOR" EXACT []
 synonym: "1H-31P HETCORR" EXACT []
 synonym: "1H-31P HETCOSY" EXACT []
 synonym: "1H-31P HETEROCOR" EXACT []
+synonym: "1H–31P COSY" EXACT []
+synonym: "1H–31P HETCOR" EXACT []
+synonym: "1H–31P HETCORR" EXACT []
+synonym: "1H–31P HETCOSY" EXACT []
+synonym: "1H–31P HETEROCOR" EXACT []
 synonym: "heteronuclear 31P-1H COSY" EXACT []
 is_a: CHMO:0000600 ! heteronuclear correlation spectroscopy
 created_by: https://orcid.org/0000-0001-5985-7429
@@ -24626,8 +24652,8 @@ creation_date: 2009-09-15T05:47:13Z
 id: CHMO:0002383
 name: 113Cd–113Cd double-quantum-filtered correlation spectroscopy
 def: "A type of homonuclear NMR spectroscopy where a second frequency dimension is employed to disperse the signals and reveal correlations between 113Cd nuclei which are J-coupled (usually <=3 bonds apart). The response is edited by selecting only two-spin coupled systems, usually achieved by appropriate cycling of the phase (direction of application) of the pulses in the experiment." [FIX:0001022]
-synonym: "113Cd–113Cd DQF-COSY" EXACT []
 synonym: "113Cd-113Cd DQF-COSY" EXACT []
+synonym: "113Cd–113Cd DQF-COSY" EXACT []
 is_a: CHMO:0002382 ! double-quantum-filtered correlation spectroscopy
 created_by: https://orcid.org/0000-0001-5985-7429
 creation_date: 2009-09-15T05:50:14Z
@@ -24782,50 +24808,50 @@ name: solution-state nuclear magnetic resonance spectroscopy
 def: "Spectroscopy where the response of nuclei with non-zero spin, in a sample dissolved in a deuterated solvent, to a perturbing magnetic field is detected. Each experiment consists of a sequence of radio frequency pulses with delay periods in between them." [https://orcid.org/0000-0002-0640-0422]
 synonym: "solution NMR" EXACT []
 synonym: "solution-state NMR" EXACT []
+xref: FIX:0000470
 is_a: CHMO:0000613 ! pulsed nuclear magnetic resonance spectroscopy
 created_by: https://orcid.org/0000-0001-5985-7429
 creation_date: 2009-09-16T11:23:29Z
-xref: FIX:0000470
 
 [Term]
 id: CHMO:0002398
 name: 1H–15N heteronuclear multiple quantum coherence
 def: "A type of heteronuclear NMR spectroscopy where a second frequency dimension is employed to disperse the signals and reveal correlations between protons and the 15N nuclei to which they are covalently bound." [rsc:pr]
-synonym: "15N–1H HMQC" EXACT []
 synonym: "15N-1H HMQC" EXACT []
-synonym: "1H–15N HMQC" EXACT []
+synonym: "15N–1H HMQC" EXACT []
 synonym: "1H-15N heteronuclear multiple quantum coherence" EXACT []
 synonym: "1H-15N HMQC" EXACT []
+synonym: "1H–15N HMQC" EXACT []
+xref: FIX:0000474
 is_a: CHMO:0000603 ! heteronuclear multiple quantum coherence
 created_by: https://orcid.org/0000-0001-5985-7429
 creation_date: 2009-09-16T11:25:56Z
-xref: FIX:0000474
 
 [Term]
 id: CHMO:0002399
 name: 1H–13C heteronuclear multiple quantum coherence
 def: "A type of heteronuclear NMR spectroscopy where a second frequency dimension is employed to disperse the signals and reveal correlations between protons and the 13C nuclei to which they are covalently bound. The magnetisation of both the proton and the 13C nucleus is allowed to evolve over time." [rsc:pr]
-synonym: "13C–1H HMQC" EXACT []
 synonym: "13C-1H HMQC" EXACT []
-synonym: "1H–13C HMQC" EXACT []
+synonym: "13C–1H HMQC" EXACT []
 synonym: "1H-13C heteronuclear multiple quantum coherence" EXACT []
 synonym: "1H-13C HMQC" EXACT []
+synonym: "1H–13C HMQC" EXACT []
+xref: FIX:0000475
 is_a: CHMO:0000603 ! heteronuclear multiple quantum coherence
 created_by: https://orcid.org/0000-0001-5985-7429
 creation_date: 2009-09-16T11:27:48Z
-xref: FIX:0000475
 
 [Term]
 id: CHMO:0002400
 name: 15N–15N correlation spectroscopy
 def: "A type of homonuclear NMR spectroscopy where a second frequency dimension is employed to disperse the signals and reveal correlations between 15N nuclei which are J-coupled (usually ⩽3 bonds apart)." [rsc:pr]
-synonym: "15N–15N COSY" EXACT []
 synonym: "15N-15N correlated spectroscopy" EXACT []
 synonym: "15N-15N COSY" EXACT []
+synonym: "15N–15N COSY" EXACT []
+xref: FIX:0000544
 is_a: CHMO:0000599 ! correlation spectroscopy
 created_by: https://orcid.org/0000-0001-5985-7429
 creation_date: 2009-09-16T11:29:08Z
-xref: FIX:0000544
 
 [Term]
 id: CHMO:0002401
@@ -24848,7 +24874,7 @@ creation_date: 2009-09-16T11:54:28Z
 [Term]
 id: CHMO:0002403
 name: partition chromatography
-def: "Chromatography in which separation is based mainly on differences between the solubility of the sample components in the stationary phase (gas chromatography), or on differences between the solubilities of the components in the mobile and stationary phases (liquid chromatography)" [https://doi.org/10.1351/goldbook.P04436, FIX:0000612]
+def: "Chromatography in which separation is based mainly on differences between the solubility of the sample components in the stationary phase (gas chromatography), or on differences between the solubilities of the components in the mobile and stationary phases (liquid chromatography)" [FIX:0000612, https://doi.org/10.1351/goldbook.P04436]
 is_a: CHMO:0001000 ! chromatography
 created_by: https://orcid.org/0000-0001-5985-7429
 creation_date: 2009-09-16T11:59:04Z
@@ -24885,12 +24911,12 @@ creation_date: 2009-09-16T02:59:19Z
 id: CHMO:0002407
 name: citrate–phosphate buffer
 def: "A phosphate buffer, containing citric acid and sodium phosphate, where the pH is maintained by citrate–citric acid and phosphate–hydrogen phosphate equilibria." [https://orcid.org/0000-0002-0640-0422]
-synonym: "C–P buffer" EXACT []
 synonym: "C-P buffer" EXACT []
-synonym: "citrate–phosphate (CP) buffer" EXACT []
 synonym: "citrate-phosphate (CP) buffer" EXACT []
 synonym: "citrate-phosphate buffer" EXACT []
+synonym: "citrate–phosphate (CP) buffer" EXACT []
 synonym: "CP buffer" EXACT []
+synonym: "C–P buffer" EXACT []
 is_a: CHMO:0001734 ! phosphate buffer
 created_by: https://orcid.org/0000-0001-5985-7429
 creation_date: 2009-09-16T03:04:43Z
@@ -24950,7 +24976,7 @@ creation_date: 2009-09-17T03:57:55Z
 [Term]
 id: CHMO:0002413
 name: cryogenic electron microscopy
-def: "Microscopy where the specimen, which is cooled in liquid ethane to 180 °C, is bombarded with a finely focused (<10 nm diameter) electron beam with an acceleration voltage 50–150 kV under vacuum and the interaction of the electrons with the specimen produces transmitted, secondary, backscattered and diffracted electrons and characteristic X-rays which are detected." [https://doi.org/10.1021/jp013639d, FIX:0000052]
+def: "Microscopy where the specimen, which is cooled in liquid ethane to 180 °C, is bombarded with a finely focused (<10 nm diameter) electron beam with an acceleration voltage 50–150 kV under vacuum and the interaction of the electrons with the specimen produces transmitted, secondary, backscattered and diffracted electrons and characteristic X-rays which are detected." [FIX:0000052, https://doi.org/10.1021/jp013639d]
 synonym: "cryo EM" EXACT []
 synonym: "cryo-electron microscopy" EXACT []
 synonym: "cryo-EM" EXACT []
@@ -24991,7 +25017,7 @@ creation_date: 2009-09-17T04:16:25Z
 [Term]
 id: CHMO:0002417
 name: radio frequency spectroscopy
-def: "Spectroscopy using short pulses of radiation from the radio frequency (MHz) range. Radio frequency spectroscopy is used to probe cold gas atoms and single ions." [https://doi.org/10.1103/PhysRevLett.88.143002, FIX:0000017]
+def: "Spectroscopy using short pulses of radiation from the radio frequency (MHz) range. Radio frequency spectroscopy is used to probe cold gas atoms and single ions." [FIX:0000017, https://doi.org/10.1103/PhysRevLett.88.143002]
 synonym: "radio frequency (RF) spectroscopy" EXACT []
 synonym: "radiofrequency (RF) spectroscopy" EXACT []
 synonym: "radiofrequency spectroscopy" EXACT []
@@ -25026,10 +25052,10 @@ creation_date: 2009-09-21T02:52:40Z
 id: CHMO:0002420
 name: two-dimensional 1H–1H nuclear magnetic resonance spectrum
 def: "A two-dimensional plot of chemical shift vs. intensity for hydrogen-1 nuclei obtained by measuring the effect of the absorption of radio frequency radiation on nuclear spin-state transitions in the presence of a magnetic field. Signals are defined in terms of two frequencies; by the chemical shift of a particular nucleus in one dimension and, in the other, by the chemical shift of a correlated nucleus." [rsc:pr]
-synonym: "2D 1H–1H NMR spectra" EXACT []
-synonym: "2D 1H–1H NMR spectrum" EXACT []
 synonym: "2D 1H-1H NMR spectra" EXACT []
 synonym: "2D 1H-1H NMR spectrum" EXACT []
+synonym: "2D 1H–1H NMR spectra" EXACT []
+synonym: "2D 1H–1H NMR spectrum" EXACT []
 is_a: CHMO:0000932 ! two-dimensional nuclear magnetic resonance spectrum
 created_by: https://orcid.org/0000-0001-5985-7429
 creation_date: 2009-09-21T02:57:03Z
@@ -25038,10 +25064,10 @@ creation_date: 2009-09-21T02:57:03Z
 id: CHMO:0002421
 name: three-dimensional 1H–1H nuclear magnetic resonance spectrum
 def: "A three-dimensional plot of chemical shift vs. intensity for hydrogen-1 nuclei obtained by measuring the effect of the absorption of radio frequency radiation on nuclear spin-state transitions in the presence of a magnetic field. Signals are defined in terms of three frequencies; by the chemical shift of a particular nucleus in one dimension and, in the other two, by the chemical shifts of correlated nuclei." [rsc:pr]
-synonym: "3D 1H–1H NMR spectra" EXACT []
-synonym: "3D 1H–1H NMR spectrum" EXACT []
 synonym: "3D 1H-1H NMR spectra" EXACT []
 synonym: "3D 1H-1H NMR spectrum" EXACT []
+synonym: "3D 1H–1H NMR spectra" EXACT []
+synonym: "3D 1H–1H NMR spectrum" EXACT []
 is_a: CHMO:0001929 ! three-dimensional nuclear magnetic resonance spectrum
 created_by: https://orcid.org/0000-0001-5985-7429
 creation_date: 2009-09-21T03:32:59Z
@@ -25081,11 +25107,11 @@ creation_date: 2009-09-21T03:49:59Z
 id: CHMO:0002425
 name: sol–gel template synthesis
 def: "The process of the settling of (nm sized) particles from a colloidal suspension onto a pre-existing surface, resulting in a ceramic thin film. The desired solid particles (e.g. metal alkoxides) are suspended in a liquid, forming the 'sol', which is deposited on a membrane template or mould by spinning, dipping or coating, The particles in the sol are polymerised by partial evaporation of the solvent, or addition of an initiator, forming the 'gel', which is then heated at high temperature to give the final solid product." [https://doi.org/10.1039/b515421a]
-synonym: "sol–gel template synthesis method" EXACT []
-synonym: "sol–gel templating" EXACT []
 synonym: "sol-gel template synthesis" EXACT []
 synonym: "sol-gel template synthesis method" EXACT []
 synonym: "sol-gel templating" EXACT []
+synonym: "sol–gel template synthesis method" EXACT []
+synonym: "sol–gel templating" EXACT []
 is_a: CHMO:0001313 ! sol–gel method
 created_by: https://orcid.org/0000-0001-5985-7429
 creation_date: 2009-09-21T04:03:01Z
@@ -25233,7 +25259,7 @@ synonym: "183W NMR spectrum" EXACT []
 synonym: "tungsten-183 NMR spectra" EXACT []
 synonym: "tungsten-183 NMR spectrum" EXACT []
 is_a: CHMO:0000835 ! nuclear magnetic resonance spectrum
-relationship: OBI:0000312 CHMO:0001252
+relationship: OBI:0000312 CHMO:0001252 ! is_specified_output_of 183W nuclear magnetic resonance spectroscopy
 created_by: https://orcid.org/0000-0001-5985-7429
 creation_date: 2009-09-23T02:29:08Z
 
@@ -25284,13 +25310,13 @@ def: "Spectroscopy where the sample is illuminated with an initial laser pulse (
 synonym: "femtosecond pump-probe spectroscopy" EXACT []
 synonym: "fs PP spectroscopy" EXACT []
 synonym: "fs pump probe spectroscopy" EXACT []
-synonym: "fs pump–probe spectroscopy" EXACT []
 synonym: "fs pump-probe spectroscopy" EXACT []
-synonym: "ultra-fast pump–probe spectroscopy" EXACT []
+synonym: "fs pump–probe spectroscopy" EXACT []
 synonym: "ultra-fast pump-probe spectroscopy" EXACT []
+synonym: "ultra-fast pump–probe spectroscopy" EXACT []
 synonym: "ultrafast pump probe spectroscopy" EXACT []
-synonym: "ultrafast pump–probe spectroscopy" EXACT []
 synonym: "ultrafast pump-probe spectroscopy" NARROW []
+synonym: "ultrafast pump–probe spectroscopy" EXACT []
 is_a: CHMO:0002445 ! pump-probe spectroscopy
 created_by: https://orcid.org/0000-0001-5985-7429
 creation_date: 2009-09-23T03:12:40Z
@@ -25299,22 +25325,22 @@ creation_date: 2009-09-23T03:12:40Z
 id: CHMO:0002447
 name: pump–repump–probe spectroscopy
 def: "Spectroscopy where the sample is illuminated with an initial laser pulse (the 'pump') followed by a second pump laser pulse, and finally a third laser pulse (the 'probe') after a short delay. The two pump pulses create excitations in the sample, which are sensed by the probe pulse." [ISBN:3540680373]
-synonym: "double-pump pump–probe spectroscopy" EXACT []
 synonym: "double-pump pump-probe spectroscopy" EXACT []
+synonym: "double-pump pump–probe spectroscopy" EXACT []
 synonym: "PREP spectroscopy" EXACT []
 synonym: "PrPP spectroscopy" EXACT []
 synonym: "pump re-pump probe spectroscopy" EXACT []
 synonym: "pump repump probe spectroscopy" EXACT []
-synonym: "pump–pump–probe spectroscopy" EXACT []
-synonym: "pump–repump–probe (PREP) spectroscopy" EXACT []
-synonym: "pump–repump–probe (PrPP) spectroscopy" EXACT []
 synonym: "pump-pump-probe spectroscopy" EXACT []
 synonym: "pump-repump-probe (PREP) spectroscopy" EXACT []
 synonym: "pump-repump-probe (PrPP) spectroscopy" EXACT []
 synonym: "pump-repump-probe spectroscopy" EXACT []
+synonym: "pump–pump–probe spectroscopy" EXACT []
+synonym: "pump–repump–probe (PREP) spectroscopy" EXACT []
+synonym: "pump–repump–probe (PrPP) spectroscopy" EXACT []
 synonym: "two pump and probe spectroscopy" EXACT []
-synonym: "two pump–probe spectroscopy" EXACT []
 synonym: "two pump-probe spectroscopy" EXACT []
+synonym: "two pump–probe spectroscopy" EXACT []
 is_a: CHMO:0002445 ! pump-probe spectroscopy
 created_by: https://orcid.org/0000-0001-5985-7429
 creation_date: 2009-09-23T03:18:09Z
@@ -25324,9 +25350,9 @@ id: CHMO:0002448
 name: pump–dump–probe spectroscopy
 def: "Spectroscopy where the sample is illuminated with an initial laser pulse (the 'pump') which causes excitations within the sample. This is followed by a second laser pulse which is tuned to the correct frequency to excite transitions resonantly back down to the lower electronic state (the 'dump'). After a short delay a third laser pulse (the 'probe') is used to sense changes in the sample." [ISBN:0521817374]
 synonym: "PDP spectroscopy" EXACT []
-synonym: "pump–dump–probe (PDP) spectroscopy" EXACT []
 synonym: "pump-dump-probe (PDP) spectroscopy" EXACT []
 synonym: "pump-dump-probe spectroscopy" EXACT []
+synonym: "pump–dump–probe (PDP) spectroscopy" EXACT []
 is_a: CHMO:0002445 ! pump-probe spectroscopy
 created_by: https://orcid.org/0000-0001-5985-7429
 creation_date: 2009-09-23T03:18:56Z
@@ -25394,8 +25420,8 @@ name: cold-field-emission scanning electron microscope
 def: "A piece of apparatus which is used to produce an enlarged image of a specimen by scanning a finely focused (<10 nm diameter) electron beam produced  by applying a high voltage to a tungsten crystal (cold-field emission) with an acceleration voltage of 50–150 kV across the specimen under vacuum and measuring interaction of the electrons with the specimen." [https://orcid.org/0000-0002-0640-0422]
 synonym: "CFE-SEM" RELATED []
 synonym: "CFG-SEM" RELATED []
-synonym: "cold field emission scanning electron microscope" EXACT []
 synonym: "cold field emission RELATED" EXACT []
+synonym: "cold field emission scanning electron microscope" EXACT []
 synonym: "cold-field-emission RELATED" EXACT []
 synonym: "cold-field-gun scanning electron microscope" EXACT []
 is_a: CHMO:0000941 ! scanning electron microscope
@@ -25682,10 +25708,10 @@ creation_date: 2009-09-30T01:03:49Z
 id: CHMO:0002483
 name: 6Li–1H heteronuclear Overhauser enhancement spectroscopy
 def: "A type of heteronuclear NMR spectroscopy where a second frequency dimension is employed, based on the nuclear Overhauser enhancement effect in which correlations are seen between 6Li and 1H nuclei that are spatially proximate within a molecule (<=6 \\AA apart)." [FIX:0001086, rsc:pr]
-synonym: "6Li–1H HOESY" EXACT []
-synonym: "6Li–1H HOESY NMR" EXACT []
 synonym: "6Li-1H HOESY" EXACT []
 synonym: "6Li-1H HOESY NMR" EXACT []
+synonym: "6Li–1H HOESY" EXACT []
+synonym: "6Li–1H HOESY NMR" EXACT []
 is_a: CHMO:0000608 ! heteronuclear Overhauser enhancement spectroscopy
 created_by: https://orcid.org/0000-0001-5985-7429
 creation_date: 2009-09-30T01:05:51Z
@@ -25694,10 +25720,10 @@ creation_date: 2009-09-30T01:05:51Z
 id: CHMO:0002484
 name: 19F–1H heteronuclear Overhauser enhancement spectroscopy
 def: "A type of heteronuclear NMR spectroscopy where a second frequency dimension is employed, based on the nuclear Overhauser enhancement effect in which correlations are seen between 19F and 1H nuclei that are spatially proximate within a molecule (<=6 \\AA apart)." [FIX:0001087, rsc:pr]
-synonym: "19F–1H HOESY" EXACT []
-synonym: "19F–1H HOESY NMR" EXACT []
 synonym: "19F-1H HOESY" EXACT []
 synonym: "19F-1H HOESY NMR" EXACT []
+synonym: "19F–1H HOESY" EXACT []
+synonym: "19F–1H HOESY NMR" EXACT []
 is_a: CHMO:0000608 ! heteronuclear Overhauser enhancement spectroscopy
 created_by: https://orcid.org/0000-0001-5985-7429
 creation_date: 2009-09-30T01:08:59Z
@@ -25808,14 +25834,14 @@ creation_date: 2009-09-30T01:20:11Z
 id: CHMO:0002491
 name: 19F–29Si rotational-echo double-resonance spectroscopy
 def: "A magic angle spinning NMR experiment in which the evolution of dipolar couplings between 19F and 29Si nuclei is controlled by applying pulses at appropriate points in the rotational period, allowing the determination of the size of the coupling and, thus, yielding distance information." [FIX:0001097, rsc:pr]
-synonym: "19F–29Si REDOR" EXACT []
-synonym: "19F–29Si REDOR NMR" EXACT []
-synonym: "19F–29Si-REDOR" EXACT []
-synonym: "19F–29Si-REDOR NMR" EXACT []
 synonym: "19F-29Si REDOR" EXACT []
 synonym: "19F-29Si REDOR NMR" EXACT []
 synonym: "19F-29Si-REDOR" EXACT []
 synonym: "19F-29Si-REDOR NMR" EXACT []
+synonym: "19F–29Si REDOR" EXACT []
+synonym: "19F–29Si REDOR NMR" EXACT []
+synonym: "19F–29Si-REDOR" EXACT []
+synonym: "19F–29Si-REDOR NMR" EXACT []
 is_a: CHMO:0000896 ! rotational-echo double-resonance spectroscopy
 created_by: https://orcid.org/0000-0001-5985-7429
 creation_date: 2009-09-30T01:21:22Z
@@ -26136,9 +26162,9 @@ name: excitation–emission matrix fluorescence spectroscopy
 def: "A type of fluorescence spectroscopy where a two-dimensional total fluorescence spectrum is recorded at various excitation wavelengths." [https://doi.org/10.1039/b609875d]
 synonym: "EEM" EXACT []
 synonym: "excitation emission matrix (EEM) fluorescence" EXACT []
-synonym: "excitation–emission matrix fluorescence" EXACT []
 synonym: "excitation-emission matrix fluorescence" EXACT []
 synonym: "excitation-emission matrix fluorescence spectroscopy" EXACT []
+synonym: "excitation–emission matrix fluorescence" EXACT []
 synonym: "fluorescence EEM" EXACT []
 is_a: CHMO:0000287 ! fluorescence spectroscopy
 created_by: https://orcid.org/0000-0001-5985-7429
@@ -26173,9 +26199,9 @@ creation_date: 2009-10-13T11:10:28Z
 id: CHMO:0002525
 name: excitation–emission fluorescence spectrum
 def: "A 3D plot of excitation wavelength vs. emission wavelength vs. intensity obtained from a fluorescence spectroscopy experiment." [https://doi.org/10.1039/b9ay00048h]
-synonym: "excitation–emission fluorescence spectra" EXACT []
 synonym: "excitation-emission fluorescence spectra" EXACT []
 synonym: "excitation-emission fluorescence spectrum" EXACT []
+synonym: "excitation–emission fluorescence spectra" EXACT []
 is_a: CHMO:0000815 ! fluorescence spectrum
 is_a: CHMO:0000834 ! excitation-emission spectrum
 created_by: https://orcid.org/0000-0001-5985-7429
@@ -26576,8 +26602,8 @@ creation_date: 2009-10-25T08:11:11Z
 id: CHMO:0002559
 name: three-dimensional nuclear Overhauser spectroscopy-heteronuclear single quantum coherence
 def: "A 3D NMR experiment in which the chemical shifts of protons are correlated with the chemical shifts of spatially proximate protons (<6\\\\A) and with the shifts of the heteronuclei bound to these proximate protons." [FIX:0000151, rsc:pr]
-synonym: "3D NOESY–HSQC" EXACT []
 synonym: "3D NOESY-HSQC" EXACT []
+synonym: "3D NOESY–HSQC" EXACT []
 is_a: CHMO:0001072 ! heteronuclear three-dimensional nuclear magnetic resonance spectroscopy
 created_by: Hils
 creation_date: 2009-10-25T08:21:06Z
@@ -26595,8 +26621,8 @@ creation_date: 2009-10-25T09:22:46Z
 id: CHMO:0002561
 name: heteronuclear single quantum coherence-nuclear Overhauser spectroscopy
 def: "A 3D NMR experiment in which the chemical shifts of protons are correlated with the chemical shifts their covalently-bound heteronuclei and with the shifts of spatially proximate protons (<6\\\\A)." [https://orcid.org/0000-0002-0640-0422]
-synonym: "3D HSQC–NOESY" EXACT []
 synonym: "3D HSQC-NOESY" EXACT []
+synonym: "3D HSQC–NOESY" EXACT []
 is_a: CHMO:0001072 ! heteronuclear three-dimensional nuclear magnetic resonance spectroscopy
 created_by: Hils
 creation_date: 2009-10-25T08:59:02Z
@@ -26649,8 +26675,8 @@ creation_date: 2009-10-25T09:25:50Z
 id: CHMO:0002566
 name: four-dimensional HCCH-total correlation spectroscopy
 def: "A 4D triple-resonance NMR experiment used to determine the chemical shifts of nuclei in a (isotopically enriched) protein. The chemical shifts of the protons of a sidechain are correlated with their covalently bound 13C nuclei and with the other protons of the side-chain." [FIX:0000449, rsc:pr]
-synonym: "4D HCCH–TOCSY" EXACT []
 synonym: "4D HCCH-TOCSY" EXACT []
+synonym: "4D HCCH–TOCSY" EXACT []
 is_a: CHMO:0002555 ! triple-resonance spectroscopy
 created_by: Hils
 creation_date: 2009-10-25T09:27:11Z
@@ -26659,10 +26685,10 @@ creation_date: 2009-10-25T09:27:11Z
 id: CHMO:0002567
 name: gradient 13C–13C 1H–1H nuclear Overhauser spectroscopy
 def: "A 4D NMR experiment which correlates the chemical shifts of carbon-bound protons with those of their bonded 13C nuclei and with the chemical shifts of spatially proximate carbon-bound protons (<6\\\\A) and their associated 13C nuclei. Pulsed field gradients are employed to improve the appearance of the spectrum." [FIX:0000450, rsc:pr]
-synonym: "gradient 13C–13C 1H–1H NOESY" EXACT []
 synonym: "gradient 13C-13C 1H-1H NOESY" EXACT []
-synonym: "gradient 13C/13C 1H–1H NOESY" EXACT []
 synonym: "gradient 13C/13C 1H-1H NOESY" EXACT []
+synonym: "gradient 13C/13C 1H–1H NOESY" EXACT []
+synonym: "gradient 13C–13C 1H–1H NOESY" EXACT []
 is_a: CHMO:0002055 ! four-dimensional nuclear magnetic resonance spectroscopy
 created_by: Hils
 creation_date: 2009-10-25T09:30:25Z
@@ -26671,10 +26697,10 @@ creation_date: 2009-10-25T09:30:25Z
 id: CHMO:0002568
 name: 13C–13C edited 1H–1H nuclear Overhauser enhancement spectroscopy
 def: "A 4D NMR experiment which correlates the chemical shifts of carbon-bound protons with those of their bonded 13C nuclei and with the chemical shifts of spatially proximate carbon-bound protons (<6\\\\A) and their associated 13C nuclei." [FIX:0000447, rsc:pr]
-synonym: "13C–13C 1H–1H NOESY" EXACT []
 synonym: "13C-13C 1H-1H NOESY" EXACT []
 synonym: "13C/13C 1H-1H NOESY" EXACT []
 synonym: "13C/13C edited 1H-1H NOESY" EXACT []
+synonym: "13C–13C 1H–1H NOESY" EXACT []
 is_a: CHMO:0002055 ! four-dimensional nuclear magnetic resonance spectroscopy
 created_by: Hils
 creation_date: 2009-10-25T09:33:24Z
@@ -26870,11 +26896,11 @@ creation_date: 2009-11-06T04:09:48Z
 id: CHMO:0002588
 name: saturated mercury sulfate electrode
 def: "A reference electrode where the electrochemical reaction is between mercury metal and mercury(II) sulfate." [ISBN:0871706768]
-synonym: "MSE" EXACT []
 synonym: "Hg/Hg2SO4 electrode" EXACT []
 synonym: "Hg/Hg2SO4 reference electrode" EXACT []
-synonym: "mercury–mercurous sulfate reference electrode" EXACT []
 synonym: "mercury-mercurous sulfate reference electrode" EXACT []
+synonym: "mercury–mercurous sulfate reference electrode" EXACT []
+synonym: "MSE" EXACT []
 is_a: CHMO:0002345 ! reference electrode
 created_by: https://orcid.org/0000-0001-5985-7429
 creation_date: 2009-11-06T04:43:50Z
@@ -27428,7 +27454,7 @@ creation_date: 2009-12-09T10:57:54Z
 [Term]
 id: CHMO:0002638
 name: electrostatic force microscopy
-def: "Microscopy which uses a sharp spike (known as a 'tip') mounted on the end of a cantilever to scan the surface of the specimen. A bias voltage is applied between the tip and sample, forming a capacitor with the sample surface, over which it is scanned laterally at a constant separation. The electrostatic force (measured as the change in resonant frequency of the cantilever) is probed as a function of position by changing the applied voltage." [https://doi.org/10.1039/b9nr00256a, FIX:0000119]
+def: "Microscopy which uses a sharp spike (known as a 'tip') mounted on the end of a cantilever to scan the surface of the specimen. A bias voltage is applied between the tip and sample, forming a capacitor with the sample surface, over which it is scanned laterally at a constant separation. The electrostatic force (measured as the change in resonant frequency of the cantilever) is probed as a function of position by changing the applied voltage." [FIX:0000119, https://doi.org/10.1039/b9nr00256a]
 synonym: "EFM" EXACT []
 synonym: "electric force microscopy" EXACT []
 is_a: CHMO:0001898 ! non-contact mode atomic force microscopy
@@ -27950,8 +27976,8 @@ def: "The process of determining trace amounts of water in a sample by the titra
 synonym: "Karl Fischer volumetric titration" EXACT []
 synonym: "Karl-Fischer volumetric titration" EXACT []
 synonym: "volumetric Karl Fischer titration" EXACT []
-synonym: "volumetric Karl–Fischer titration" EXACT []
 synonym: "volumetric Karl-Fischer titration" EXACT []
+synonym: "volumetric Karl–Fischer titration" EXACT []
 is_a: CHMO:0002535 ! Karl–Fischer titration
 created_by: https://orcid.org/0000-0001-5985-7429
 creation_date: 2010-01-16T03:11:23Z
@@ -28136,13 +28162,13 @@ creation_date: 2010-05-13T01:20:25Z
 id: CHMO:0002699
 name: 1H–13C heteronuclear multiple bond coherence spectrum
 def: "A heteronuclear NMR spectrum where a second frequency dimension is employed to disperse the signals and reveal correlations between 1H and 13C nuclei which are 2–3 bonds removed." [rsc:pr]
-synonym: "1H–13C heteronuclear multiple bond coherence spectra" EXACT []
-synonym: "1H–13C HMBC spectra" EXACT []
-synonym: "1H–13C HMBC spectrum" EXACT []
 synonym: "1H/13C heteronuclear multiple bond coherence spectra" EXACT []
 synonym: "1H/13C heteronuclear multiple bond coherence spectrum" EXACT []
 synonym: "1H/13C HMBC spectra" EXACT []
 synonym: "1H/13C HMBC spectrum" EXACT []
+synonym: "1H–13C heteronuclear multiple bond coherence spectra" EXACT []
+synonym: "1H–13C HMBC spectra" EXACT []
+synonym: "1H–13C HMBC spectrum" EXACT []
 is_a: CHMO:0000935 ! heteronuclear multiple bond coherence spectrum
 created_by: https://orcid.org/0000-0001-5985-7429
 creation_date: 2010-05-24T06:15:53Z
@@ -28151,13 +28177,13 @@ creation_date: 2010-05-24T06:15:53Z
 id: CHMO:0002700
 name: 1H–15N heteronuclear multiple bond coherence spectrum
 def: "A heteronuclear NMR spectrum where a second frequency dimension is employed to disperse the signals and reveal correlations between 1H and 15N nuclei which are 2–3 bonds removed." [rsc:pr]
-synonym: "1H–15N heteronuclear multiple bond coherence spectra" EXACT []
-synonym: "1H–15N HMBC spectra" EXACT []
-synonym: "1H–15N HMBC spectrum" EXACT []
 synonym: "1H/15N heteronuclear multiple bond coherence spectra" EXACT []
 synonym: "1H/15N heteronuclear multiple bond coherence spectrum" EXACT []
 synonym: "1H/15N HMBC spectra" EXACT []
 synonym: "1H/15N HMBC spectrum" EXACT []
+synonym: "1H–15N heteronuclear multiple bond coherence spectra" EXACT []
+synonym: "1H–15N HMBC spectra" EXACT []
+synonym: "1H–15N HMBC spectrum" EXACT []
 is_a: CHMO:0000935 ! heteronuclear multiple bond coherence spectrum
 created_by: https://orcid.org/0000-0001-5985-7429
 creation_date: 2010-05-24T06:18:10Z
@@ -28302,14 +28328,14 @@ creation_date: 2010-07-24T11:15:46Z
 id: CHMO:0002711
 name: 13C–15N rotational-echo double-resonance spectroscopy
 def: "A magic angle spinning NMR experiment in which the evolution of dipolar couplings between 13C and 15N nuclei is controlled by applying pulses at appropriate points in the rotational period, allowing the determination of the size of the coupling and, thus, yielding distance information." [FIX:0000974, rsc:pr]
-synonym: "13C–15N REDOR" EXACT []
-synonym: "13C–15N REDOR NMR" EXACT []
-synonym: "13C–15N-REDOR" EXACT []
-synonym: "13C–15N-REDOR NMR" EXACT []
 synonym: "13C-15N REDOR" EXACT []
 synonym: "13C-15N REDOR NMR" EXACT []
 synonym: "13C-15N-REDOR" EXACT []
 synonym: "13C-15N-REDOR NMR" EXACT []
+synonym: "13C–15N REDOR" EXACT []
+synonym: "13C–15N REDOR NMR" EXACT []
+synonym: "13C–15N-REDOR" EXACT []
+synonym: "13C–15N-REDOR NMR" EXACT []
 is_a: CHMO:0000896 ! rotational-echo double-resonance spectroscopy
 created_by: Hils
 creation_date: 2010-07-24T11:29:29Z
@@ -28355,12 +28381,12 @@ creation_date: 2010-07-25T05:00:57Z
 id: CHMO:0002715
 name: 31P–13C rotational-echo double-resonance spectroscopy
 def: "A magic angle spinning NMR experiment in which the evolution of dipolar couplings between 31P and 13C nuclei is controlled by applying pulses at appropriate points in the rotational period, allowing the determination of the size of the coupling and, thus, yielding distance information." [FIX:0000978, rsc:pr]
+synonym: "31P-13C-REDOR" EXACT []
+synonym: "31P-13C-REDOR NMR" EXACT []
 synonym: "31P–13C REDOR" EXACT []
 synonym: "31P–13C REDOR NMR" EXACT []
 synonym: "31P–13C-REDOR" EXACT []
 synonym: "31P–13C-REDOR NMR" EXACT []
-synonym: "31P-13C-REDOR" EXACT []
-synonym: "31P-13C-REDOR NMR" EXACT []
 is_a: CHMO:0000896 ! rotational-echo double-resonance spectroscopy
 created_by: Hils
 creation_date: 2010-07-25T05:07:19Z
@@ -28369,12 +28395,12 @@ creation_date: 2010-07-25T05:07:19Z
 id: CHMO:0002716
 name: 31P–15N rotational-echo double-resonance spectroscopy
 def: "A magic angle spinning NMR experiment in which the evolution of dipolar couplings between 31P and 15N nuclei is controlled by applying pulses at appropriate points in the rotational period, allowing the determination of the size of the coupling and, thus, yielding distance information." [FIX:0000979, rsc:pr]
+synonym: "31P-15N-REDOR" EXACT []
+synonym: "31P-15N-REDOR NMR" EXACT []
 synonym: "31P–15N REDOR" EXACT []
 synonym: "31P–15N REDOR NMR" EXACT []
 synonym: "31P–15N-REDOR" EXACT []
 synonym: "31P–15N-REDOR NMR" EXACT []
-synonym: "31P-15N-REDOR" EXACT []
-synonym: "31P-15N-REDOR NMR" EXACT []
 is_a: CHMO:0000896 ! rotational-echo double-resonance spectroscopy
 created_by: Hils
 creation_date: 2010-07-25T05:10:44Z
@@ -28383,12 +28409,12 @@ creation_date: 2010-07-25T05:10:44Z
 id: CHMO:0002717
 name: 31P–19F rotational-echo double-resonance spectroscopy
 def: "A magic angle spinning NMR experiment in which the evolution of dipolar couplings between 31P and 19F nuclei is controlled by applying pulses at appropriate points in the rotational period, allowing the determination of the size of the coupling and, thus, yielding distance information." [FIX:0000980, rsc:pr]
+synonym: "31P-19F-REDOR" EXACT []
+synonym: "31P-19F-REDOR NMR" EXACT []
 synonym: "31P–19F REDOR" EXACT []
 synonym: "31P–19F REDOR NMR" EXACT []
 synonym: "31P–19F-REDOR" EXACT []
 synonym: "31P–19F-REDOR NMR" EXACT []
-synonym: "31P-19F-REDOR" EXACT []
-synonym: "31P-19F-REDOR NMR" EXACT []
 is_a: CHMO:0000896 ! rotational-echo double-resonance spectroscopy
 created_by: Hils
 creation_date: 2010-07-25T05:12:16Z
@@ -28400,12 +28426,12 @@ def: "A method where the sample mixture is first separated by size-exclusion chr
 synonym: "SEC-FAAS" EXACT []
 synonym: "size-exclusion chromatography flame atomic absorption spectrometry" EXACT []
 synonym: "size-exclusion chromatography flame atomic absorption spectroscopy" EXACT []
+xref: FIX:0000975
 is_a: CHMO:0000271 ! liquid chromatography-inductively coupled plasma atomic emission spectroscopy
 relationship: BFO:0000118 CHMO:0000267 ! has proper occurrent part inductively-coupled plasma atomic emission spectroscopy
 relationship: BFO:0000118 CHMO:0001004 ! has proper occurrent part liquid chromatography
 created_by: Hils
 creation_date: 2010-07-25T05:15:13Z
-xref: FIX:0000975
 
 [Term]
 id: CHMO:0002719
@@ -28415,13 +28441,13 @@ synonym: "Q-TOF MS" EXACT []
 synonym: "Q-TOF-MS" EXACT []
 synonym: "QTOF MS" EXACT []
 synonym: "QTOF-MS" EXACT []
+xref: FIX:0000958
 is_a: CHMO:0000504 ! quadrupole mass spectrometry
 relationship: BFO:0000057 CHMO:0000961 ! has participant orthogonal-acceleration ion source
 relationship: BFO:0000057 CHMO:0000962 ! has participant orthogonal-acceleration time-of-flight mass spectrometer
 relationship: BFO:0000057 CHMO:0000963 ! has participant quadrupole mass spectrometer
 created_by: Hils
 creation_date: 2010-07-25T05:22:22Z
-xref: FIX:0000958
 
 [Term]
 id: CHMO:0002720
@@ -28430,10 +28456,10 @@ def: "A detection method that is sensitive to individual elements. The sample is
 synonym: "microwave-induced plasma atomic emission detection" EXACT []
 synonym: "MIP-AED" EXACT []
 synonym: "MIP/AED" EXACT []
+xref: FIX:0000925
 is_a: CHMO:0001711 ! atomic emission detection
 created_by: Hils
 creation_date: 2010-07-25T05:39:50Z
-xref: FIX:0000925
 
 [Term]
 id: CHMO:0002721
@@ -28504,20 +28530,20 @@ id: CHMO:0002727
 name: multiple isomorphous replacement with anomalous scattering
 def: "A method for providing phasing necessary for X-ray crystallography information by growing a number of crystals of the sample substituted with different heavy metal atoms and analysing the X-ray data for each crystal. When the absorption edge of an atom in the crystals is close to the wavelength of the incident radiation the atom becomes an anomalous scatterer. Anomalous scattering can be used for phase determination and also for determining the absolute configuration." [https://doi.org/10.1107/97809553602060000557]
 synonym: "MIRAS" EXACT []
+xref: FIX:0000247
 is_a: CHMO:0002726 ! multiple isomorphous replacement
 created_by: Hils
 creation_date: 2010-07-26T11:12:12Z
-xref: FIX:0000247
 
 [Term]
 id: CHMO:0002728
 name: single isomorphous replacement with anomalous scattering
 def: "A method for providing phasing necessary for X-ray crystallography information by growing a crystal of the sample substituted with heavy metal atoms and analysing the X-ray data for both the original crystal and the isomorph. When the absorption edge of an atom in the crystals is close to the wavelength of the incident radiation the atom becomes an anomalous scatterer. Anomalous scattering can be used for phase determination and also for determining the absolute configuration." [https://doi.org/10.1107/97809553602060000557, ISBN:9781402002182]
 synonym: "SIRAS" EXACT []
+xref: FIX:0000248
 is_a: CHMO:0002725 ! single isomorphous replacement
 created_by: Hils
 creation_date: 2010-07-26T11:15:02Z
-xref: FIX:0000248
 
 [Term]
 id: CHMO:0002729
@@ -28528,8 +28554,8 @@ synonym: "paper spray MS" EXACT []
 synonym: "paper-spray mass spectrometry" EXACT []
 synonym: "paper-spray mass spectroscopy" EXACT []
 synonym: "paper-spray MS" EXACT []
-synonym: "PS–MS" RELATED []
 synonym: "PS/MS" RELATED []
+synonym: "PS–MS" RELATED []
 is_a: CHMO:0000482 ! electrospray ionisation mass spectrometry
 created_by: https://orcid.org/0000-0001-5985-7429
 creation_date: 2010-07-27T01:08:19Z
@@ -28557,7 +28583,7 @@ creation_date: 2010-07-27T04:10:41Z
 [Term]
 id: CHMO:0002732
 name: electron paramagnetic resonance monitored oxidation–reduction titration
-def: "The process of determining the quantity of a sample by monitoring a redox process until the endpoint, at which essentially all of the sample has reacted, is reached. The titration is followed by monitoring the amplitude of an EPR signal (the response of an atom with an unpaired electron to a perturbing magnetic field) from one of the reactants." [https://doi.org/10.1021/bi002554k, FIX:0000241]
+def: "The process of determining the quantity of a sample by monitoring a redox process until the endpoint, at which essentially all of the sample has reacted, is reached. The titration is followed by monitoring the amplitude of an EPR signal (the response of an atom with an unpaired electron to a perturbing magnetic field) from one of the reactants." [FIX:0000241, https://doi.org/10.1021/bi002554k]
 synonym: "electron paramagnetic resonance monitored redox titration" EXACT []
 synonym: "electron spin resonance monitored oxidation–reduction titration" EXACT []
 synonym: "electron spin resonance monitored redox titration" EXACT []
@@ -28572,7 +28598,7 @@ creation_date: 2010-07-27T04:21:12Z
 [Term]
 id: CHMO:0002733
 name: paramagnetic signals enhancement
-def: "A method for NMR spectra acquisition of paramagnetic proteins, based on the use of homonuclear broadband decoupling of the diamagnetic region." [https://doi.org/10.1006/jmre.1998.1523, FIX:0000194]
+def: "A method for NMR spectra acquisition of paramagnetic proteins, based on the use of homonuclear broadband decoupling of the diamagnetic region." [FIX:0000194, https://doi.org/10.1006/jmre.1998.1523]
 synonym: "paramagnetic signals enhancement NMR" EXACT []
 synonym: "PAramagneticSignalsEnhancement" EXACT []
 synonym: "paramagneticsignalsenhancement" EXACT []
@@ -28586,12 +28612,12 @@ creation_date: 2010-07-27T09:05:10Z
 id: CHMO:0002734
 name: nuclear Overhauser enhancement spectroscopy-correlation spectroscopy
 def: "A type of homonuclear three-dimensional NMR experiment in which correlations are seen between nuclei that are spatially proximate within a molecule (\\leq 6 \\AA apart). These signals are then correlated with those protons to which they are J-coupled (usually \\leq 3 bonds apart)." [FIX:0000191, https://orcid.org/0000-0002-0640-0422]
-synonym: "3D NOESY–COSY" EXACT []
 synonym: "3D NOESY-COSY" EXACT []
-synonym: "3D-NOESY–COSY" EXACT []
+synonym: "3D NOESY–COSY" EXACT []
 synonym: "3D-NOESY-COSY" EXACT []
-synonym: "NOESY–COSY" EXACT []
+synonym: "3D-NOESY–COSY" EXACT []
 synonym: "NOESY-COSY" EXACT []
+synonym: "NOESY–COSY" EXACT []
 is_a: CHMO:0001073 ! homonuclear three-dimensional nuclear magnetic resonance spectroscopy
 created_by: Hils
 creation_date: 2010-07-27T09:22:17Z
@@ -28600,12 +28626,12 @@ creation_date: 2010-07-27T09:22:17Z
 id: CHMO:0002735
 name: correlation spectroscopy-nuclear Overhauser enhancement spectroscopy
 def: "A type of homonuclear three-dimensional NMR experiment in which a second frequency dimension is employed to disperse the signals and reveal correlations between nuclei which are J-coupled (usually \\leq 3 bonds apart). These signals are then correlated to nuclei that are spatially proximate within the molecule (\\leq 6 \\AA apart)." [FIX:0000190, https://orcid.org/0000-0002-0640-0422]
-synonym: "3D COSY–NOESY" EXACT []
 synonym: "3D COSY-NOESY" EXACT []
-synonym: "3D-COSY–NOESY" EXACT []
+synonym: "3D COSY–NOESY" EXACT []
 synonym: "3D-COSY-NOESY" EXACT []
-synonym: "COSY–NOESY" EXACT []
+synonym: "3D-COSY–NOESY" EXACT []
 synonym: "COSY-NOESY" EXACT []
+synonym: "COSY–NOESY" EXACT []
 is_a: CHMO:0001073 ! homonuclear three-dimensional nuclear magnetic resonance spectroscopy
 created_by: Hils
 creation_date: 2010-07-27T09:37:52Z
@@ -28614,12 +28640,12 @@ creation_date: 2010-07-27T09:37:52Z
 id: CHMO:0002736
 name: total correlation spectroscopy-nuclear Overhauser enhancement spectroscopy
 def: "A type of homonuclear three-dimensional NMR experiment spectroscopy which reveals correlations between all nuclei of a spin-system. These signals are then correlated to nuclei that are spatially proximate within the molecule (\\leq 6 \\AA apart)." [FIX:0000193, https://orcid.org/0000-0002-0640-0422]
-synonym: "3D TOCSY–NOESY" EXACT []
 synonym: "3D TOCSY-NOESY" EXACT []
-synonym: "3D-TOCSY–NOESY" EXACT []
+synonym: "3D TOCSY–NOESY" EXACT []
 synonym: "3D-TOCSY-NOESY" EXACT []
-synonym: "TOCSY–NOESY" EXACT []
+synonym: "3D-TOCSY–NOESY" EXACT []
 synonym: "TOCSY-NOESY" EXACT []
+synonym: "TOCSY–NOESY" EXACT []
 is_a: CHMO:0001073 ! homonuclear three-dimensional nuclear magnetic resonance spectroscopy
 created_by: Hils
 creation_date: 2010-07-27T09:43:33Z
@@ -28628,11 +28654,11 @@ creation_date: 2010-07-27T09:43:33Z
 id: CHMO:0002737
 name: nuclear Overhauser enhancement spectroscopy-total correlation spectroscopy
 def: "A type of homonuclear NMR spectroscopy which reveal correlations between all nuclei of a spin-system. These signals are then correlated to nuclei that are spatially proximate within the molecule (\\leq 6 \\AA apart)." [FIX:0000192, https://orcid.org/0000-0002-0640-0422]
-synonym: "3D NOESY–TOCSY" EXACT []
 synonym: "3D NOESY-TOCSY" EXACT []
+synonym: "3D NOESY–TOCSY" EXACT []
 synonym: "3D-NOESY-TOCSY" EXACT []
-synonym: "NOESY–TOCSY" EXACT []
 synonym: "NOESY-TOCSY" EXACT []
+synonym: "NOESY–TOCSY" EXACT []
 is_a: CHMO:0001073 ! homonuclear three-dimensional nuclear magnetic resonance spectroscopy
 created_by: Hils
 creation_date: 2010-07-27T09:45:36Z
@@ -29296,7 +29322,7 @@ is_a: OBI:0000011 ! planned process
 [Term]
 id: CHMO:0002832
 name: material disposal
-def: "A planned process in which materials are removed permanently from the laboratory or repository." [https://orcid.org/0000-0001-5985-7429, https://orcid.org/0000-0001-5029-1158]
+def: "A planned process in which materials are removed permanently from the laboratory or repository." [https://orcid.org/0000-0001-5029-1158, https://orcid.org/0000-0001-5985-7429]
 comment: makes no judgement about whether this is a good way to do it, or a bad way such as tipping down the sink.
 is_a: CHMO:0002845 ! waste management
 
@@ -29863,26 +29889,26 @@ is_a: OBI:0000094 ! material processing
 id: CHMO:0002920
 name: PNGase A digestion
 def: "An enzymatic removal of N-linked glycans from a peptide or protein using the enzyme PNGase A (N-glycosidase A), including those with core α1-3 fucosylation." [https://orcid.org/0000-0002-5865-8994]
-synonym: "PNGase A treatment" EXACT []
-synonym: "PNGase A glycan release" EXACT []
 synonym: "PNGase A glycan cleavage" EXACT []
+synonym: "PNGase A glycan release" EXACT []
+synonym: "PNGase A treatment" EXACT []
 is_a: CHMO:0001494 ! enzyme digestion
 
 [Term]
 id: CHMO:0002921
 name: PNGase F digestion
 def: "An enzymatic removal of N-linked glycans from a peptide or protein using the enzyme PNGase F (N-glycosidase F)." [https://orcid.org/0000-0002-5865-8994]
-synonym: "PNGase F treatment" EXACT []
-synonym: "PNGase F glycan release" EXACT []
 synonym: "PNGase F glycan cleavage" EXACT []
+synonym: "PNGase F glycan release" EXACT []
+synonym: "PNGase F treatment" EXACT []
 is_a: CHMO:0001494 ! enzyme digestion
 
 [Term]
 id: CHMO:0002923
 name: high-performance anion-exchange chromatography
 def: "A high-performance liquid chromatography method where the components are distributed between two phases, one of which is stationary and retains anions by positively charged functional groups." [https://orcid.org/0000-0002-5865-8994]
-synonym: "HPAEC" EXACT []
 synonym: "high-performance AEC" EXACT []
+synonym: "HPAEC" EXACT []
 is_a: CHMO:0001009 ! high-performance liquid chromatography
 is_a: CHMO:0001209 ! anion-exchange chromatography
 
@@ -29890,19 +29916,19 @@ is_a: CHMO:0001209 ! anion-exchange chromatography
 id: CHMO:0002924
 name: graphitized carbon liquid chromatography
 def: "A separation method where the components are distributed between two phases, one of which is stationary and made from graphitized carbon and the other moves in a definite direction." [https://orcid.org/0000-0002-5865-8994]
-synonym: "porous graphitic carbon chromatography" EXACT []
-synonym: "PGC chromatography" EXACT []
+synonym: "graphitised carbon HPLC" EXACT []
 synonym: "graphitized carbon HPLC" EXACT []
 synonym: "graphitized carbon liquid chromatography" EXACT []
-synonym: "graphitised carbon HPLC" EXACT []
+synonym: "PGC chromatography" EXACT []
+synonym: "porous graphitic carbon chromatography" EXACT []
 is_a: CHMO:0001000 ! chromatography
 
 [Term]
 id: CHMO:0002925
 name: Fourier transform mass spectrometry
 def: "Mass spectrometry where the mass-to-charge ratio of the sample ions is determined by Fourier transform of a recorded time-domain transient." [https://orcid.org/0000-0002-5865-8994]
-synonym: "FTMS" EXACT []
 synonym: "FT-MS" EXACT []
+synonym: "FTMS" EXACT []
 is_a: CHMO:0000500 ! ion trap mass spectrometry
 
 [Term]
@@ -30347,18 +30373,6 @@ domain: CHMO:0000993 ! portion of material
 range: CHMO:0010009 ! adverse laboratory event
 
 [Typedef]
-id: RO:0002411
-name: causally upstream of
-def: "p is causally upstream of q if and only if p precedes q and p and q are linked in a causal chain" []
-subset: http://purl.obolibrary.org/obo/valid_for_go_annotation_extension
-subset: http://purl.obolibrary.org/obo/valid_for_gocam
-property_value: IAO:0000114 IAO:0000428
-property_value: IAO:0000117 "Chris Mungall" xsd:string
-is_transitive: true
-is_a: BFO:0000063 ! precedes
-is_a: RO:0002418 ! causally upstream of or within
-
-[Typedef]
 id: IAO:0000136
 name: is_about
 
@@ -30381,4 +30395,16 @@ is_a: BFO:0000056 ! participates in at some time
 id: OBI:0000417
 name: achieves_planned_objective
 def: "This relation obtains between a planned process and a objective specification when the criteria specified in the objective specification are met at the end of the planned process." [obi:ar, obi:bp]
+
+[Typedef]
+id: RO:0002411
+name: causally upstream of
+def: "p is causally upstream of q if and only if p precedes q and p and q are linked in a causal chain" []
+subset: http://purl.obolibrary.org/obo/valid_for_go_annotation_extension
+subset: http://purl.obolibrary.org/obo/valid_for_gocam
+property_value: IAO:0000114 IAO:0000428
+property_value: IAO:0000117 "Chris Mungall" xsd:string
+is_transitive: true
+is_a: BFO:0000063
+is_a: RO:0002418
 
