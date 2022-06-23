@@ -24512,7 +24512,7 @@ creation_date: 2009-09-15T05:14:57Z
 [Term]
 id: CHMO:0002374
 name: 109Ag nuclear magnetic resonance spectroscopy
-def: "Spectroscopy where the energy states of 109Ag nuclei placed in a static magnetic field are interrogated by inducing transitions between the states via radio frequency irradiation. Each experiment consists of a sequence of radio frequency pulses with delay periods in between them." [CHEBI:, FIX:0001015, rsc:pr]
+def: "Spectroscopy where the energy states of 109Ag nuclei placed in a static magnetic field are interrogated by inducing transitions between the states via radio frequency irradiation. Each experiment consists of a sequence of radio frequency pulses with delay periods in between them." [FIX:0001015, rsc:pr]
 synonym: "109Ag NMR" EXACT []
 synonym: "109Ag NMR spectrometry" EXACT []
 synonym: "109Ag NMR spectroscopy" EXACT []
