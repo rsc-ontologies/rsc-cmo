@@ -21994,7 +21994,7 @@ creation_date: 2009-07-09T10:50:20Z
 [Term]
 id: CHMO:0002141
 name: high-pressure fluorescence correlation spectroscopy
-def: "Spectroscopy where the spontaneous fluorescence intensity fluctuations of a sample are measured and correlated within a very small detection volume. Ultraviolet light is used to stimulate fluorescence and the sample is held inside a single fused silica microcapillary under high pressure (up to 300 MPa)." [FIX:000760, https://doi.org/10.1016/S0006-3495(03)74694-3]
+def: "Spectroscopy where the spontaneous fluorescence intensity fluctuations of a sample are measured and correlated within a very small detection volume. Ultraviolet light is used to stimulate fluorescence and the sample is held inside a single fused silica microcapillary under high pressure (up to 300 MPa)." [FIX:0000760, https://doi.org/10.1016/S0006-3495(03)74694-3]
 synonym: "high pressure FCS" EXACT []
 synonym: "high pressure fluorescence correlation spectroscopy" EXACT []
 synonym: "high-pressure FCS" EXACT []
@@ -22005,7 +22005,7 @@ creation_date: 2009-07-09T06:24:34Z
 [Term]
 id: CHMO:0002142
 name: continuous-scan cyclic voltammetry
-def: "An electrochemical technique where the cell current is measured as a function of time and as a function of the potential between the indicator and reference electrodes. The potential is varied as a continuous sine wave and inverts at the end point resulting in a cycle." [FIX:000762, https://doi.org/10.1016/0165-0270(92)90020-E]
+def: "An electrochemical technique where the cell current is measured as a function of time and as a function of the potential between the indicator and reference electrodes. The potential is varied as a continuous sine wave and inverts at the end point resulting in a cycle." [FIX:0000762, https://doi.org/10.1016/0165-0270(92)90020-E]
 synonym: "continuous scan CV" EXACT []
 synonym: "continuous scan cyclic voltammetry" EXACT []
 synonym: "continuous-scan CV" EXACT []
@@ -22017,7 +22017,7 @@ creation_date: 2009-07-09T06:30:20Z
 [Term]
 id: CHMO:0002143
 name: conductometric titration
-def: "The process of determining the quantity of a sample by adding measured increments of a titrant until the end-point is reached. The titration is monitored by measuring the conductance of the solution." [FIX:000771, https://orcid.org/0000-0002-0640-0422]
+def: "The process of determining the quantity of a sample by adding measured increments of a titrant until the end-point is reached. The titration is monitored by measuring the conductance of the solution." [FIX:0000771, https://orcid.org/0000-0002-0640-0422]
 is_a: CHMO:0001211 ! titration
 created_by: https://orcid.org/0000-0001-5985-7429
 creation_date: 2009-07-09T06:37:39Z
@@ -22025,7 +22025,7 @@ creation_date: 2009-07-09T06:37:39Z
 [Term]
 id: CHMO:0002144
 name: high-frequency conductometric titration
-def: "The process of determining the quantity of a sample by adding measured increments of a titrant until the end-point is reached. The titration is monitored by measuring the conductance of the solution, the current is provided by a high-frequency source." [FIX:000774, https://doi.org/10.1021/ac60125a033]
+def: "The process of determining the quantity of a sample by adding measured increments of a titrant until the end-point is reached. The titration is monitored by measuring the conductance of the solution, the current is provided by a high-frequency source." [FIX:0000774, https://doi.org/10.1021/ac60125a033]
 synonym: "high frequency conductometric titration" EXACT []
 is_a: CHMO:0002143 ! conductometric titration
 created_by: https://orcid.org/0000-0001-5985-7429
@@ -24512,7 +24512,7 @@ creation_date: 2009-09-15T05:14:57Z
 [Term]
 id: CHMO:0002374
 name: 109Ag nuclear magnetic resonance spectroscopy
-def: "Spectroscopy where the energy states of 109Ag nuclei placed in a static magnetic field are interrogated by inducing transitions between the states via radio frequency irradiation. Each experiment consists of a sequence of radio frequency pulses with delay periods in between them." [CHEBI:, FIX:0001015, rsc:pr]
+def: "Spectroscopy where the energy states of 109Ag nuclei placed in a static magnetic field are interrogated by inducing transitions between the states via radio frequency irradiation. Each experiment consists of a sequence of radio frequency pulses with delay periods in between them." [FIX:0001015, rsc:pr]
 synonym: "109Ag NMR" EXACT []
 synonym: "109Ag NMR spectrometry" EXACT []
 synonym: "109Ag NMR spectroscopy" EXACT []
@@ -28285,7 +28285,7 @@ creation_date: 2010-07-24T11:06:32Z
 [Term]
 id: CHMO:0002708
 name: liquid chromatography nuclear magnetic resonance spectroscopy
-def: "A method where a sample mixture is first separated by liquid chromatography before the energy states of spin-active nuclei in the sample, placed in a static magnetic field, are interrogated by inducing transitions between the states via radio frequency irradiation." [FIX:00001158]
+def: "A method where a sample mixture is first separated by liquid chromatography before the energy states of spin-active nuclei in the sample, placed in a static magnetic field, are interrogated by inducing transitions between the states via radio frequency irradiation." [FIX:0001158]
 synonym: "LC-NMR" EXACT []
 synonym: "liquid chromatography nuclear magnetic resonance spectroscopy" EXACT []
 is_a: CHMO:0000613 ! pulsed nuclear magnetic resonance spectroscopy
@@ -28298,7 +28298,7 @@ creation_date: 2010-07-24T11:09:14Z
 [Term]
 id: CHMO:0002709
 name: liquid chromatography-nuclear magnetic resonance-mass spectrometry
-def: "A method where a sample mixture is first separated by liquid chromatography before the energy states of spin-active nuclei in the sample, placed in a static magnetic field, are interrogated by inducing transitions between the states via radio frequency irradiation. The sample is then converted into ions which are characterised by their mass-to-charge ratio and relative abundance." [FIX:00001157]
+def: "A method where a sample mixture is first separated by liquid chromatography before the energy states of spin-active nuclei in the sample, placed in a static magnetic field, are interrogated by inducing transitions between the states via radio frequency irradiation. The sample is then converted into ions which are characterised by their mass-to-charge ratio and relative abundance." [FIX:0001157]
 synonym: "LC-NMR-MS" EXACT []
 synonym: "LC/NMR/MS" EXACT []
 synonym: "liquid chromatography nuclear magnetic resonance mass spectrometry" EXACT []
@@ -28356,7 +28356,7 @@ creation_date: 2010-07-25T04:28:54Z
 [Term]
 id: CHMO:0002713
 name: magnetic resonance force microscopy
-def: "Microscopy which uses a cantilever tipped with a ferromagnetic (iron cobalt) particle to directly detect a modulated spin gradient force between sample spins and the tip to scan the surface of a magnetic specimen. As the ferromagnetic tip moves close to the sample, the nuclear spins become attracted to it and generate a small force on the cantilever. The spins are then repeatedly flipped, causing the cantilever to gently sway back and forth in a synchronous motion. That displacement is measured with an interferometer to create a series of 2D images of the sample." [FIX:000125]
+def: "Microscopy which uses a cantilever tipped with a ferromagnetic (iron cobalt) particle to directly detect a modulated spin gradient force between sample spins and the tip to scan the surface of a magnetic specimen. As the ferromagnetic tip moves close to the sample, the nuclear spins become attracted to it and generate a small force on the cantilever. The spins are then repeatedly flipped, causing the cantilever to gently sway back and forth in a synchronous motion. That displacement is measured with an interferometer to create a series of 2D images of the sample." [FIX:0000125]
 synonym: "MRFM" EXACT []
 is_a: CHMO:0000115 ! magnetic force microscopy
 created_by: Hils
