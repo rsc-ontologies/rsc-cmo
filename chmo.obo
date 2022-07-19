@@ -29940,6 +29940,14 @@ synonym: "Orbitrap-MS" EXACT []
 is_a: CHMO:0002925 ! Fourier transform mass spectrometry
 
 [Term]
+id: CHMO:0002927
+name: NMR sample preparation
+def: "A sample preparation for assay process that includes a series of operations applied to a starting material to prepare an NMR sample for an NMR assay." []
+is_a: OBI:0000073 ! sample preparation for assay
+created_by: http://orcid.org/0000-0002-4378-6061
+creation_date: 2022-07-19T08:57:50Z
+
+[Term]
 id: CHMO:0010000
 name: risk management planning process
 is_a: CHMO:0002828 ! experimental planning process
@@ -30139,6 +30147,18 @@ alt_id: CHMO:0001133
 def: "A planned process with the objective to produce information about the material entity that is the evaluant, by physically examining it or its proxies." [obi:pppb]
 synonym: "measurement method" EXACT []
 is_a: OBI:0000011 ! planned process
+
+[Term]
+id: OBI:0000073
+name: sample preparation for assay
+def: "A sample_preparation_for_assay is a protocol_application including material_enrollments and biomaterial_transformations. definition_source: OBI." []
+is_a: OBI:0000094 ! material processing
+property_value: IAO:0000111 "sample preparation for assay" xsd:string
+property_value: IAO:0000114 IAO:0000125
+property_value: IAO:0000117 "PlanAndPlannedProcess Branch" xsd:string
+property_value: IAO:0000118 "study" xsd:string
+property_value: IAO:0000119 "OBI branch derived" xsd:string
+property_value: IAO:0000412 http://purl.obolibrary.org/obo/obi/2022-07-11/obi.owl xsd:string
 
 [Term]
 id: OBI:0000094
