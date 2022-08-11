@@ -29948,6 +29948,16 @@ created_by: http://orcid.org/0000-0002-4378-6061
 creation_date: 2022-07-19T08:57:50Z
 
 [Term]
+id: CHMO:0002928
+name: temperature-programmed surface reaction spectroscopy
+def: "Spectroscopy that uses thermal analysis to probe the surface chemistry of heterogeneous catalysts." []
+synonym: "temperature programmed surface reaction spectroscopy" EXACT []
+synonym: "TPSR" EXACT []
+is_a: CHMO:0000228 ! spectroscopy
+is_a: CHMO:0000681 ! thermal analysis
+created_by: http://orcid.org/0000-0002-4166-7093
+
+[Term]
 id: CHMO:0010000
 name: risk management planning process
 is_a: CHMO:0002828 ! experimental planning process
