@@ -29958,6 +29958,18 @@ is_a: CHMO:0000681 ! thermal analysis
 created_by: http://orcid.org/0000-0002-4166-7093
 
 [Term]
+id: CHMO:0002929
+name: divided electrochemical cell
+def: "An electrochemical cell where the anode and cathode are placed in different vessels requiring the use of a salt bridge, frit or membrane to complete the circuit." [https://orcid.org/0000-0002-8786-1756]
+is_a: CHMO:0002351 ! electrochemical cell
+
+[Term]
+id: CHMO:0002930
+name: undivided electrochemical cell
+def: "An electrochemical cell where the anode and cathode are placed in the same vessel." [https://orcid.org/0000-0002-8786-1756]
+is_a: CHMO:0002351 ! electrochemical cell
+
+[Term]
 id: CHMO:0010000
 name: risk management planning process
 is_a: CHMO:0002828 ! experimental planning process
