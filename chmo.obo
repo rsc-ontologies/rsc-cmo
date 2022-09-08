@@ -29970,6 +29970,18 @@ def: "An electrochemical cell where the anode and cathode are placed in the same
 is_a: CHMO:0002351 ! electrochemical cell
 
 [Term]
+id: CHMO:0002931
+name: anode
+def: "Electrode at which reduction takes place." [https://doi.org/10.1351/goldbook.C00905]
+is_a: CHMO_0002344
+
+[Term]
+id: CHMO:0002932
+name: cathode
+def: "Electrode at which oxidation takes place." [https://doi.org/10.1351/goldbook.A00370]
+is_a: CHMO_0002344
+
+[Term]
 id: CHMO:0010000
 name: risk management planning process
 is_a: CHMO:0002828 ! experimental planning process
