@@ -16891,38 +16891,38 @@ is_a: CHMO:0001688 ! precipitation
 
 [Term]
 id: CHMO:0001691
-name: imμnoprecipitation
+name: immunoprecipitation
 def: "The sedimentation of a solid material (a 'precipitate'), consisting of an antigen–specific antibody complex, from solution." [https://orcid.org/0000-0002-0640-0422]
 synonym: "IP" EXACT []
 is_a: CHMO:0001688 ! precipitation
 
 [Term]
 id: CHMO:0001692
-name: individual protein imμnoprecipitation
+name: individual protein immunoprecipitation
 def: "The sedimentation of a solid material (a 'precipitate'), consisting of a specific protein–antibody complex, from a solution containing many different proteins." [https://orcid.org/0000-0002-0640-0422]
 synonym: "Co-IP" EXACT []
-is_a: CHMO:0001691 ! imμnoprecipitation
+is_a: CHMO:0001691 ! immunoprecipitation
 
 [Term]
 id: CHMO:0001693
-name: protein complex imμnoprecipitation
+name: protein complex immunoprecipitation
 def: "The sedimentation of a solid material (a 'precipitate') consisting of a protein–specific antibody complex (where the protein is attached to a arger protein complex) from solution." [https://orcid.org/0000-0002-0640-0422]
-is_a: CHMO:0001691 ! imμnoprecipitation
+is_a: CHMO:0001691 ! immunoprecipitation
 
 [Term]
 id: CHMO:0001694
-name: chromatin imμnoprecipitation
+name: chromatin immunoprecipitation
 def: "The sedimentation of a solid material (a 'precipitate') consisting of a protein–specific antibody complex (where the protein is attached to a protein–DNA complex) from solution. This method is used to determine the location of DNA binding sites on the genome for particular proteins of interest." [https://orcid.org/0000-0002-0640-0422]
 synonym: "ChIP" EXACT []
-is_a: CHMO:0001691 ! imμnoprecipitation
+is_a: CHMO:0001691 ! immunoprecipitation
 
 [Term]
 id: CHMO:0001695
-name: ribonucleic acid imμnoprecipitation
+name: ribonucleic acid immunoprecipitation
 def: "The sedimentation of a solid material (a 'precipitate') consisting of a protein–specific antibody complex (where the protein is part of a protein–RNA complex) from solution. This method is used to determine the location of RNA binding sites for particular proteins of interest." [https://orcid.org/0000-0002-0640-0422]
 synonym: "RIP" EXACT []
-synonym: "RNA imμnoprecipitation" EXACT []
-is_a: CHMO:0001691 ! imμnoprecipitation
+synonym: "RNA immunoprecipitation" EXACT []
+is_a: CHMO:0001691 ! immunoprecipitation
 
 [Term]
 id: CHMO:0001696
