@@ -22,7 +22,7 @@ These are the current imports in CHMO
 | iao | http://purl.obolibrary.org/obo/iao.owl | None |
 | obi | http://purl.obolibrary.org/obo/obi.owl | None |
 | obcs | http://purl.obolibrary.org/obo/obcs.owl | None |
-| ms | http://purl.obolibrary.org/obo/ms.owl | None |
+| ms | http://purl.obolibrary.org/obo/ms.owl | slme |
 | chebi | http://purl.obolibrary.org/obo/chebi.owl | None |
 | pato | http://purl.obolibrary.org/obo/pato.owl | None |
 

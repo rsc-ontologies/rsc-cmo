@@ -36073,5 +36073,9 @@ AnnotationAssertion(oboInOwl:id obo:CHMO_0010025 "CHMO:0010025")
 AnnotationAssertion(rdfs:label obo:CHMO_0010025 "control banding")
 SubClassOf(obo:CHMO_0010025 obo:CHMO_0010000)
 
+# Class: obo:MS_1000073 (electrospray ionization)
+
+SubClassOf(obo:MS_1000073 obo:OBI_0000011)
+
 
 )
