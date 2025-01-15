@@ -59,3 +59,4 @@ import_group:
       # Using ROBOT filter in chmo.Makefile because the default ODK ROBOT extract method pulls in too much from CHEBI.
       module_type: custom
     - id: pato
+      use_base: true
