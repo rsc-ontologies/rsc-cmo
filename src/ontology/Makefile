@@ -10,7 +10,7 @@
 # More information: https://github.com/INCATools/ontology-development-kit/
 
 # Fingerprint of the configuration file when this Makefile was last generated
-CONFIG_HASH=                0bac8ff5d481ccee74e561fa2869a3f044f08ea382c85edd5855d17730813089
+CONFIG_HASH=                d55887fa78768c0f5ae219f0d009d73a2260995f46b97028d571294669e40275
 
 
 # ----------------------------------------
@@ -460,7 +460,7 @@ mirror-obi: | $(TMPDIR)
 .PRECIOUS: $(MIRRORDIR)/obcs.owl
 mirror-obcs: | $(TMPDIR)
 	curl -L $(OBOBASE)/obcs.owl --create-dirs -o $(TMPDIR)/obcs-download.owl --retry 4 --max-time 200 && \
-	$(ROBOT) convert -i $(TMPDIR)/obcs-download.owl -o $(TMPDIR)/$@.owl
+	$(ROBOT) remove -i $(TMPDIR)/obcs-download.owl --base-iri $(OBOBASE)/OBCS --axioms external --preserve-structure false --trim false -o $(TMPDIR)/$@.owl
 
 
 ## ONTOLOGY: ms

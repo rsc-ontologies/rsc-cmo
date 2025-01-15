@@ -1,0 +1,2 @@
+http://purl.obolibrary.org/obo/OBCS_0000058 # sensitivity
+http://purl.obolibrary.org/obo/OBCS_0000059 # specificity

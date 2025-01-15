@@ -47,6 +47,7 @@ import_group:
         # So since CHMO is an extension of OBI we build the import module like this.
       #make_base: true
     - id: obcs
+      make_base: true
     - id: ms
     - id: chebi
       is_large: true
