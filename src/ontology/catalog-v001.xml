@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<catalog prefer="public" xmlns="urn:oasis:names:tc:entity:xmlns:xml:catalog">
+<group id="Folder Repository, directory=, recursive=false, Auto-Update=false, version=2" prefer="public" xml:base="">
+  
+  <uri name="http://purl.obolibrary.org/obo/chmo/imports/bfo_import.owl" uri="imports/bfo_import.owl"/>
+  <uri name="http://purl.obolibrary.org/obo/chmo/imports/chebi_import.owl" uri="imports/chebi_import.owl"/>
+  <uri name="http://purl.obolibrary.org/obo/chmo/imports/iao_import.owl" uri="imports/iao_import.owl"/>
+  <uri name="http://purl.obolibrary.org/obo/chmo/imports/ms_import.owl" uri="imports/ms_import.owl"/>
+  <uri name="http://purl.obolibrary.org/obo/chmo/imports/obcs_import.owl" uri="imports/obcs_import.owl"/>
+  <uri name="http://purl.obolibrary.org/obo/chmo/imports/obi_import.owl" uri="imports/obi_import.owl"/>
+  <uri name="http://purl.obolibrary.org/obo/chmo/imports/omo_import.owl" uri="imports/omo_import.owl"/>
+  <uri name="http://purl.obolibrary.org/obo/chmo/imports/pato_import.owl" uri="imports/pato_import.owl"/>
+  <uri name="http://purl.obolibrary.org/obo/chmo/imports/ro_import.owl" uri="imports/ro_import.owl"/>
+  
+</group>
+</catalog>
