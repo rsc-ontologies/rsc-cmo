@@ -1,0 +1,30 @@
+# CHEBI terms used indirectly by CHMO
+
+http://purl.obolibrary.org/obo/CHEBI_59999  # chemical substance
+http://purl.obolibrary.org/obo/CHEBI_33250  # atom
+http://purl.obolibrary.org/obo/CHEBI_23367  # molecular entity
+http://purl.obolibrary.org/obo/BFO_0000051  # has part
+
+# CHEBI terms used directly by CHMO
+
+http://purl.obolibrary.org/obo/CHEBI_23377  # copper molecular entity -> used to define  'determination of copper'
+http://purl.obolibrary.org/obo/CHEBI_28694 # copper atom -> needed for def of 'copper molecular entity'
+http://purl.obolibrary.org/obo/CHEBI_28262  # dimethyl sulfoxide -> used to define 'storage in dimethyl sulfoxide' & polarimetry of sample dissolved in dimethyl sulfoxide
+http://purl.obolibrary.org/obo/CHEBI_33418  # graphite -> used to define 'graphitisation'
+http://purl.obolibrary.org/obo/CHEBI_33819  # oxygen-17 atom -> used to define ' 17O magic angle spinning nuclear magnetic resonance spectroscopy' & '17O nuclear magnetic resonance spectroscopy'
+http://purl.obolibrary.org/obo/CHEBI_35255  # chloroform -> used to define 'polarimetry of sample dissolved in chloroform'
+http://purl.obolibrary.org/obo/CHEBI_36928  # carbon-13 atom -> used to define '13C nuclear magnetic resonance spectroscopy'
+http://purl.obolibrary.org/obo/CHEBI_36940  # fluorine-19 atom -> used to define '19F nuclear magnetic resonance spectroscopy'
+http://purl.obolibrary.org/obo/CHEBI_46729  # vitreous silica -> used to define 'silica gel'
+http://purl.obolibrary.org/obo/CHEBI_50594  # carbon nanotube -> used to define 'carbon nanotube synthesis method'
+http://purl.obolibrary.org/obo/CHEBI_50795  # nanostructure -> used to define 'nanostructure synthesis'
+http://purl.obolibrary.org/obo/CHEBI_50803  # nanoparticle -> used to define 'nanoparticle synthesis', 'Bonnemann method' & 'wire electrical explosion method'
+http://purl.obolibrary.org/obo/CHEBI_50825  # gold nanoparticle -> used to define 'Brust method'
+http://purl.obolibrary.org/obo/CHEBI_52230  # tin-119 atom -> used to define '119Sn Mossbauer spectroscopy' & '119Sn nuclear magnetic resonance spectroscopy'
+http://purl.obolibrary.org/obo/CHEBI_52455  # lead-207 -> used to define '207Pb nuclear magnetic resonance spectroscopy'
+http://purl.obolibrary.org/obo/CHEBI_52456  # vandium-51 atom -> used to define '51V magic angle spinning nuclear magnetic resonance spectroscopy'
+http://purl.obolibrary.org/obo/CHEBI_52458  # lithium-7 atom -> used to define '7Li nuclear magnetic resonance spectroscopy'
+http://purl.obolibrary.org/obo/CHEBI_52462  # tungsten-183 -> used to define '183W nuclear magnetic resonance spectroscopy'
+http://purl.obolibrary.org/obo/CHEBI_60004  # mixture -> used to define 'concentration'
+http://purl.obolibrary.org/obo/CHEBI_60027  # polymer -> used to define 'polymer preparation method'
+http://purl.obolibrary.org/obo/CHEBI_33839  # macromolecule -> needed by polymer
