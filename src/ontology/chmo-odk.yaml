@@ -40,6 +40,12 @@ import_group:
     - id: iao
       make_base: true
     - id: obi
+        # As yet, there is no reasoned base release (see: https://github.com/obi-ontology/obi/issues/1815). We currently 
+        # refrain from using 'make_base: true' as it would cause alot of indirect dependencies 
+        # (e.g. CL, GO, ... classes) be dangling on the root level under owl:Thing, and we'd also lose OBIs alignment
+        # decisions, such as CL:cell or CHEBI:'molecular entity' being subsumed under BFO:'material entity'. 
+        # So since CHMO is an extension of OBI we build the import module like this.
+      #make_base: true
     - id: obcs
     - id: ms
     - id: chebi

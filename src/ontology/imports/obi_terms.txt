@@ -1,0 +1,34 @@
+# OBI terms used directly by CHMO
+OBI:0000011  # planned process
+OBI:0000070  # assay
+OBI:0000073  # sample preparation for assay
+OBI:0000094  # material processing
+OBI:0000185  # imaging assay
+OBI:0000443  # analyte assay
+OBI:0200051  # principal components analysis dimensionality reduction
+OBI:0302886  # centrifugation
+OBI:0302888  # washing
+OBI:0302893  # storage
+OBI:0302912  # electroporation
+OBI:0000661  # enzyme-linked immunosorbent assay
+OBI:0000796  # purification objective
+OBI:0000838  # material maintenance
+OBI:0000968  # device
+OBI:0001032  # light emission device
+OBI:0001042  # pump function
+OBI:0001061  # microwave synthesis system
+OBI:0001138  # X-ray source
+OBI:0400064  # laser
+OBI:0400065  # light source
+OBI:0600014  # material component separation
+OBI:0003097 # liquid chromatography mass spectrometry assay --> uses as def source CHMO:0000524
+
+# terms needed as dependency for OBCS import module
+OBI:0000071 # quantitative confidence value
+OBI:0200078 # descriptive statistical calculation objective
+
+# terms also living in OBI, as they were "adopted" from CHMO
+CHMO:0000102 # light microscopy assay
+CHMO:0000087 # fluorescence microscopy assay
+CHMO:0000701 # liquid chromatography-tandem mass spectrometry
+CHMO:0000089 # confocal fluorescence microscopy assay
