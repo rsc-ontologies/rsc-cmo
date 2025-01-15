@@ -33,6 +33,8 @@ import_group:
     - id: bfo
       module_type: mirror
     - id: ro
+      use_base: true
+      slme_individuals: exclude
     - id: omo
       module_type: mirror
     - id: iao
