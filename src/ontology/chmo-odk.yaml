@@ -38,6 +38,7 @@ import_group:
     - id: omo
       module_type: mirror
     - id: iao
+      make_base: true
     - id: obi
     - id: obcs
     - id: ms
