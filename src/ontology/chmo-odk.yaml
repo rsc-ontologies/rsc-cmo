@@ -48,8 +48,6 @@ import_group:
       #make_base: true
     - id: obcs
       make_base: true
-      module_type: slme
-      module_type_slme: STAR
     - id: ms
       make_base: true
       module_type: slme
