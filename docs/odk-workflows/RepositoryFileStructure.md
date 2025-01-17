@@ -20,7 +20,7 @@ These are the current imports in CHMO
 | ro | http://purl.obolibrary.org/obo/ro.owl | None |
 | omo | http://purl.obolibrary.org/obo/omo.owl | mirror |
 | iao | http://purl.obolibrary.org/obo/iao.owl | None |
-| obi | http://purl.obolibrary.org/obo/obi.owl | None |
+| obi | http://purl.obolibrary.org/obo/obi.owl | custom |
 | obcs | http://purl.obolibrary.org/obo/obcs.owl | None |
 | ms | http://purl.obolibrary.org/obo/ms.owl | slme |
 | chebi | http://purl.obolibrary.org/obo/chebi.owl | custom |

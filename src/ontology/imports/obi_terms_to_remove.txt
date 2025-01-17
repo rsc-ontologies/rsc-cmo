@@ -1,0 +1,48 @@
+# The following terms were in the OBI module, due to the SLME method's "broad" specificity 
+
+# biology related terms considered out of scope for CHMO
+SO:0000001 #  region
+OBI:0001000 # questionnaire
+OBI:0002314 # clinical tumor stage group according to AJCC 7th edition
+OBI:0002205 # histologic grade according to AJCC 7th edition
+OBI:0002210 # histologic grade according to the Fuhrman Nuclear Grading System
+OBI:0002215 # histologic grade for ovarian tumor
+OBI:0002219 # histologic grade for ovarian tumor according to the World Health Organization
+OBI:0002216 # histologic grade for ovarian tumor according to a two-tier grading system
+OBI:0003600 # hypertension grade
+OBI:0002326 # International Federation of Gynecology and Obstetrics cervical cancer stage value specification
+OBI:0002341 # International Federation of Gynecology and Obstetrics ovarian cancer stage value specification
+OBI:0002290 # pathologic distant metastases stage for colon according to AJCC 7th edition
+OBI:0002306 # pathologic distant metastases stage for kidney according to AJCC 7th edition
+OBI:0002298 # pathologic distant metastases stage for lung according to AJCC 7th edition
+OBI:0002310 # pathologic distant metastases stage for ovary according to AJCC 7th edition
+OBI:0002270 # pathologic lymph node stage for colon and rectum according to AJCC 7th edition
+OBI:0002284 # pathologic lymph node stage for kidney according to AJCC 7th edition
+OBI:0002279 # pathologic lymph node stage for lung according to AJCC 7th edition
+OBI:0002287 # pathologic lymph node stage for ovary according to AJCC 7th edition
+OBI:0002224 # pathologic primary tumor stage for colon and rectum according to AJCC 7th edition
+OBI:0002243 # pathologic primary tumor stage for kidney according to AJCC 7th edition
+OBI:0002232 # pathologic primary tumor stage for lung according to AJCC 7th edition
+OBI:0002256 # pathologic primary tumor stage for ovary according to AJCC 7th edition
+OBI:0002356 # performance status value specification
+OBI:0002357 # Eastern Cooperative Oncology Group score value specification
+OBI:0002363 # Karnofsky score vaue specification
+GO:0003674 # molecular_function
+OBI:0001977 # 'cytometry assay'
+
+# filtered out for now to have a slimmer diff in the ODK migration PR, but might be useful to have in the future
+OBI:0200042 # 'hierarchical clustering'
+OBI:0200041 # 'k-means clustering'
+OBI:0000727 # 'k-nearest neighbors'
+OBI:0000726 # 'peak matching'
+OBI:0200171 # 'partitioning data transformation'
+OBI:0000792 # 'statistical model validation'
+OBI:0200033 # 'leave one out cross validation method'
+OBI:0000663 # 'class prediction data transformation'
+OBI:0200179 # 'class prediction objective'
+OBI:0000023 # 'classified data set'
+OBI:0000700 # 'support vector machine'
+OBI:0000707 # 'decision tree building data transformation'
+OBI:0000704 # 'decision tree induction objective'
+OBI:0000749 # CART
+OBI:0200172 # 'partitioning objective'

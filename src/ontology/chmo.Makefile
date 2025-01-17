@@ -37,3 +37,17 @@ $(IMPORTDIR)/chebi_import.owl: $(MIRRORDIR)/chebi.owl $(IMPORTDIR)/chebi_terms_c
 		query --update ../sparql/inject-subset-declaration.ru --update ../sparql/inject-synonymtype-declaration.ru \
 		    --update ../sparql/postprocess-module.ru \
 		$(ANNOTATE_CONVERT_FILE); fi
+		
+		
+## Module for ontology: obi
+## We need to use the ODK default ROBOT 'extract' method plus 'filter' in here to remove out-of-scope terms that 
+## get also pulled in. And we remove the NCBITaxon intermediates between OBI:organism and NCBITaxon:Homo Sapiens.
+
+$(IMPORTDIR)/obi_import.owl: $(MIRRORDIR)/obi.owl $(IMPORTDIR)/obi_terms_combined.txt
+	if [ $(IMP) = true ]; then $(ROBOT) query -i $< --update ../sparql/preprocess-module.ru \
+		extract -T $(IMPORTDIR)/obi_terms_combined.txt --copy-ontology-annotations true --force true \
+		    --individuals include --method BOT \
+		remove --term OBI:0100026 --select "descendants" --exclude-term NCBITaxon:9606 \
+		remove -T $(IMPORTDIR)/obi_terms_to_remove.txt --select "self instances descendants" \
+		query --update ../sparql/inject-subset-declaration.ru --update ../sparql/inject-synonymtype-declaration.ru --update ../sparql/postprocess-module.ru \
+		$(ANNOTATE_CONVERT_FILE); fi

@@ -46,6 +46,8 @@ import_group:
         # decisions, such as CL:cell or CHEBI:'molecular entity' being subsumed under BFO:'material entity'. 
         # So since CHMO is an extension of OBI we build the import module like this.
       #make_base: true
+      # using ODK default extract method plus ROBOT filter in chmo.Makefile to remove out-of-scope terms also pulled in 
+      module_type: custom
     - id: obcs
       make_base: true
     - id: ms

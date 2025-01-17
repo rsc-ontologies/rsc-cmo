@@ -5,7 +5,7 @@ OBI:0000073  # sample preparation for assay
 OBI:0000094  # material processing
 OBI:0000185  # imaging assay
 OBI:0000443  # analyte assay
-OBI:0200051  # principal components analysis dimensionality reduction
+#OBI:0200051  # principal components analysis dimensionality reduction
 OBI:0302886  # centrifugation
 OBI:0302888  # washing
 OBI:0302893  # storage
@@ -32,3 +32,7 @@ CHMO:0000102 # light microscopy assay
 CHMO:0000087 # fluorescence microscopy assay
 CHMO:0000701 # liquid chromatography-tandem mass spectrometry
 CHMO:0000089 # confocal fluorescence microscopy assay
+
+# annotation properties
+OBI:0001847 # ISA alternative term
+OBI:9991118 # IEDB alternative term

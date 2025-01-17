@@ -10,7 +10,7 @@
 # More information: https://github.com/INCATools/ontology-development-kit/
 
 # Fingerprint of the configuration file when this Makefile was last generated
-CONFIG_HASH=                126be1493747d938868a7453d84f6be93a075ba3b78850d46670f238d4b83929
+CONFIG_HASH=                167a11ba76a86332b99e4b05bd8101c54f9c973e9cdbe2fe892ecc0219f7ef9d
 
 
 # ----------------------------------------
@@ -376,6 +376,10 @@ $(IMPORTDIR)/omo_import.owl: $(MIRRORDIR)/omo.owl $(IMPORTDIR)/omo_terms_combine
 	if [ $(IMP) = true ]; then $(ROBOT) merge -i $< query --update ../sparql/preprocess-module.ru --update ../sparql/inject-subset-declaration.ru --update ../sparql/inject-synonymtype-declaration.ru --update ../sparql/postprocess-module.ru  \
     $(ANNOTATE_CONVERT_FILE); fi
 
+## Module for ontology: obi
+
+$(IMPORTDIR)/obi_import.owl: $(MIRRORDIR)/obi.owl
+	echo "ERROR: You have configured your default module type to be custom; this behavior needs to be overwritten in chmo.Makefile!" && false
 ## Module for ontology: ms
 
 $(IMPORTDIR)/ms_import.owl: $(MIRRORDIR)/ms.owl $(IMPORTDIR)/ms_terms_combined.txt
