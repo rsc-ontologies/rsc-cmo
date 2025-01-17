@@ -10,7 +10,7 @@
 # More information: https://github.com/INCATools/ontology-development-kit/
 
 # Fingerprint of the configuration file when this Makefile was last generated
-CONFIG_HASH=                126be1493747d938868a7453d84f6be93a075ba3b78850d46670f238d4b83929
+CONFIG_HASH=                8ec79db76eb21d904bb888ff749ed45cd7b215b77de6e7360ee28359a484d48c
 
 
 # ----------------------------------------
@@ -375,6 +375,14 @@ $(IMPORTDIR)/bfo_import.owl: $(MIRRORDIR)/bfo.owl $(IMPORTDIR)/bfo_terms_combine
 $(IMPORTDIR)/omo_import.owl: $(MIRRORDIR)/omo.owl $(IMPORTDIR)/omo_terms_combined.txt
 	if [ $(IMP) = true ]; then $(ROBOT) merge -i $< query --update ../sparql/preprocess-module.ru --update ../sparql/inject-subset-declaration.ru --update ../sparql/inject-synonymtype-declaration.ru --update ../sparql/postprocess-module.ru  \
     $(ANNOTATE_CONVERT_FILE); fi
+
+## Module for ontology: obcs
+
+$(IMPORTDIR)/obcs_import.owl: $(MIRRORDIR)/obcs.owl $(IMPORTDIR)/obcs_terms_combined.txt
+	if [ $(IMP) = true ]; then $(ROBOT) query -i $< --update ../sparql/preprocess-module.ru \
+		extract -T $(IMPORTDIR)/obcs_terms_combined.txt --copy-ontology-annotations true --force true --individuals include --method STAR \
+		query --update ../sparql/inject-subset-declaration.ru --update ../sparql/inject-synonymtype-declaration.ru --update ../sparql/postprocess-module.ru \
+		$(ANNOTATE_CONVERT_FILE); fi
 
 ## Module for ontology: ms
 

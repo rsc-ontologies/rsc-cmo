@@ -7,9 +7,9 @@ Prefix(rdfs:=<http://www.w3.org/2000/01/rdf-schema#>)
 
 
 Ontology(<http://purl.obolibrary.org/obo/chmo/imports/obcs_import.owl>
-<http://purl.obolibrary.org/obo/chmo/releases/2025-01-15/imports/obcs_import.owl>
+<http://purl.obolibrary.org/obo/chmo/releases/2025-01-17/imports/obcs_import.owl>
 Annotation(<http://purl.org/dc/elements/1.1/source> <http://purl.obolibrary.org/obo/obcs/2023-12-08/obcs.owl>)
-Annotation(owl:versionInfo "2025-01-15")
+Annotation(owl:versionInfo "2025-01-17")
 
 Declaration(Class(<http://purl.obolibrary.org/obo/BFO_0000015>))
 Declaration(Class(<http://purl.obolibrary.org/obo/BFO_0000016>))
@@ -20,7 +20,6 @@ Declaration(Class(<http://purl.obolibrary.org/obo/IAO_0000104>))
 Declaration(Class(<http://purl.obolibrary.org/obo/OBCS_0000001>))
 Declaration(Class(<http://purl.obolibrary.org/obo/OBCS_0000058>))
 Declaration(Class(<http://purl.obolibrary.org/obo/OBCS_0000059>))
-Declaration(Class(<http://purl.obolibrary.org/obo/OBCS_0000070>))
 Declaration(Class(<http://purl.obolibrary.org/obo/OBCS_0000120>))
 Declaration(Class(<http://purl.obolibrary.org/obo/OBCS_0000121>))
 Declaration(Class(<http://purl.obolibrary.org/obo/OBCS_0000122>))
@@ -31,10 +30,8 @@ Declaration(Class(<http://purl.obolibrary.org/obo/OBCS_0000218>))
 Declaration(Class(<http://purl.obolibrary.org/obo/OBCS_0000220>))
 Declaration(Class(<http://purl.obolibrary.org/obo/OBCS_0000233>))
 Declaration(Class(<http://purl.obolibrary.org/obo/OBI_0000011>))
-Declaration(Class(<http://purl.obolibrary.org/obo/OBI_0000071>))
 Declaration(Class(<http://purl.obolibrary.org/obo/OBI_0200000>))
 Declaration(Class(<http://purl.obolibrary.org/obo/OBI_0200078>))
-Declaration(Class(<http://purl.obolibrary.org/obo/OBI_0200166>))
 Declaration(ObjectProperty(<http://purl.obolibrary.org/obo/BFO_0000054>))
 Declaration(ObjectProperty(<http://purl.obolibrary.org/obo/IAO_0000136>))
 Declaration(ObjectProperty(<http://purl.obolibrary.org/obo/OBI_0000293>))
@@ -42,7 +39,6 @@ Declaration(ObjectProperty(<http://purl.obolibrary.org/obo/OBI_0000299>))
 Declaration(ObjectProperty(<http://purl.obolibrary.org/obo/OBI_0000312>))
 Declaration(ObjectProperty(<http://purl.obolibrary.org/obo/OBI_0000417>))
 Declaration(ObjectProperty(<http://purl.obolibrary.org/obo/RO_0002351>))
-Declaration(NamedIndividual(<http://purl.obolibrary.org/obo/OBCS_0000228>))
 Declaration(AnnotationProperty(<http://purl.obolibrary.org/obo/IAO_0000115>))
 Declaration(AnnotationProperty(<http://purl.obolibrary.org/obo/IAO_0000117>))
 Declaration(AnnotationProperty(<http://purl.obolibrary.org/obo/IAO_0000118>))
@@ -96,14 +92,6 @@ AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/OBCS_0000059> "sp
 SubClassOf(<http://purl.obolibrary.org/obo/OBCS_0000059> <http://purl.obolibrary.org/obo/OBCS_0000220>)
 SubClassOf(<http://purl.obolibrary.org/obo/OBCS_0000059> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/OBI_0000312> <http://purl.obolibrary.org/obo/OBCS_0000121>))
 
-# Class: <http://purl.obolibrary.org/obo/OBCS_0000070> (confidence interval)
-
-AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/OBCS_0000070> "A quantitative confidence value that refers to an interval give values within which there is a high probability (95 percent by convention) that the true population value can be found. The calculation of a confidence interval considers the standard deviation of the data and the number of observations. Thus, a confidence interval narrows as the number of observations increases, or its variance (dispersion) decreases.")
-AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000117> <http://purl.obolibrary.org/obo/OBCS_0000070> "Yongqun He")
-AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000119> <http://purl.obolibrary.org/obo/OBCS_0000070> "WEB: http://www.uptodate.com/contents/glossary-of-common-biostatistical-and-epidemiological-terms")
-AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/OBCS_0000070> "confidence interval")
-SubClassOf(<http://purl.obolibrary.org/obo/OBCS_0000070> <http://purl.obolibrary.org/obo/OBI_0000071>)
-
 # Class: <http://purl.obolibrary.org/obo/OBCS_0000120> (data matrix)
 
 AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/OBCS_0000120> "A data item that is more specifically a rectangular array of numbers, symbols, or expressions, arranged in rows and columns.")
@@ -149,7 +137,6 @@ SubClassOf(<http://purl.obolibrary.org/obo/OBCS_0000123> ObjectSomeValuesFrom(<h
 AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/OBCS_0000124> "A statistical data analysis objective where the aim is to make inference using population sample data. ")
 AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000117> <http://purl.obolibrary.org/obo/OBCS_0000124> "Jie Zheng, Oliver He")
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/OBCS_0000124> "inferential statistical data analysis objective"@en)
-SubClassOf(<http://purl.obolibrary.org/obo/OBCS_0000124> <http://purl.obolibrary.org/obo/OBI_0200166>)
 
 # Class: <http://purl.obolibrary.org/obo/OBCS_0000214> (sensitivity disposition)
 
@@ -190,18 +177,6 @@ AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000117> <http://purl.ob
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/OBCS_0000233> "transformed data item"@en)
 EquivalentClasses(<http://purl.obolibrary.org/obo/OBCS_0000233> ObjectIntersectionOf(<http://purl.obolibrary.org/obo/IAO_0000027> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/OBI_0000312> <http://purl.obolibrary.org/obo/OBI_0200000>)))
 SubClassOf(<http://purl.obolibrary.org/obo/OBCS_0000233> <http://purl.obolibrary.org/obo/IAO_0000027>)
-
-
-############################
-#   Named Individuals
-############################
-
-# Individual: <http://purl.obolibrary.org/obo/OBCS_0000228> (95% confidence interval)
-
-AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/OBCS_0000228> "An confidence interval with 95 percent probability that the true population value can be found.")
-AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000117> <http://purl.obolibrary.org/obo/OBCS_0000228> "Jie Zheng")
-AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/OBCS_0000228> "95% confidence interval"@en)
-ClassAssertion(<http://purl.obolibrary.org/obo/OBCS_0000070> <http://purl.obolibrary.org/obo/OBCS_0000228>)
 
 
 )
