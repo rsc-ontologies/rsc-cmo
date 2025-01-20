@@ -18,6 +18,8 @@ http://purl.obolibrary.org/obo/chmo.owl
 
 Editors of this ontology should use the edit version, [src/ontology/chmo-edit.owl](src/ontology/chmo-edit.owl)
 
+To find out more on how to work with this repository, follow this tutorial: [ODK in 20 minutes: a complete walk through the core workflows]( https://oboacademy.github.io/obook/tutorial/odk-tutorial-2)
+
 ## Contact
 
 Please use this GitHub repository's [Issue tracker](https://github.com/rsc-ontologies/rsc-cmo/issues) to request new terms/classes or report errors or specific concerns related to the ontology.
