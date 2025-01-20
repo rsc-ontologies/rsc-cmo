@@ -7,9 +7,9 @@ Prefix(rdfs:=<http://www.w3.org/2000/01/rdf-schema#>)
 
 
 Ontology(<http://purl.obolibrary.org/obo/chmo/imports/obi_import.owl>
-<http://purl.obolibrary.org/obo/chmo/releases/2025-01-17/imports/obi_import.owl>
+<http://purl.obolibrary.org/obo/chmo/releases/2025-01-20/imports/obi_import.owl>
 Annotation(<http://purl.org/dc/elements/1.1/source> <http://purl.obolibrary.org/obo/obi/2024-12-05/obi.owl>)
-Annotation(owl:versionInfo "2025-01-17")
+Annotation(owl:versionInfo "2025-01-20")
 
 Declaration(Class(<http://purl.obolibrary.org/obo/BFO_0000001>))
 Declaration(Class(<http://purl.obolibrary.org/obo/BFO_0000002>))
@@ -73,7 +73,6 @@ Declaration(Class(<http://purl.obolibrary.org/obo/OBI_0000011>))
 Declaration(Class(<http://purl.obolibrary.org/obo/OBI_0000014>))
 Declaration(Class(<http://purl.obolibrary.org/obo/OBI_0000017>))
 Declaration(Class(<http://purl.obolibrary.org/obo/OBI_0000018>))
-Declaration(Class(<http://purl.obolibrary.org/obo/OBI_0000023>))
 Declaration(Class(<http://purl.obolibrary.org/obo/OBI_0000038>))
 Declaration(Class(<http://purl.obolibrary.org/obo/OBI_0000047>))
 Declaration(Class(<http://purl.obolibrary.org/obo/OBI_0000048>))
@@ -106,8 +105,6 @@ Declaration(Class(<http://purl.obolibrary.org/obo/OBI_0000391>))
 Declaration(Class(<http://purl.obolibrary.org/obo/OBI_0000397>))
 Declaration(Class(<http://purl.obolibrary.org/obo/OBI_0000398>))
 Declaration(Class(<http://purl.obolibrary.org/obo/OBI_0000401>))
-Declaration(Class(<http://purl.obolibrary.org/obo/OBI_0000419>))
-Declaration(Class(<http://purl.obolibrary.org/obo/OBI_0000427>))
 Declaration(Class(<http://purl.obolibrary.org/obo/OBI_0000437>))
 Declaration(Class(<http://purl.obolibrary.org/obo/OBI_0000441>))
 Declaration(Class(<http://purl.obolibrary.org/obo/OBI_0000443>))
@@ -130,7 +127,6 @@ Declaration(Class(<http://purl.obolibrary.org/obo/OBI_0000681>))
 Declaration(Class(<http://purl.obolibrary.org/obo/OBI_0000684>))
 Declaration(Class(<http://purl.obolibrary.org/obo/OBI_0000685>))
 Declaration(Class(<http://purl.obolibrary.org/obo/OBI_0000686>))
-Declaration(Class(<http://purl.obolibrary.org/obo/OBI_0000713>))
 Declaration(Class(<http://purl.obolibrary.org/obo/OBI_0000796>))
 Declaration(Class(<http://purl.obolibrary.org/obo/OBI_0000806>))
 Declaration(Class(<http://purl.obolibrary.org/obo/OBI_0000832>))
@@ -281,23 +277,13 @@ Declaration(NamedIndividual(<http://purl.obolibrary.org/obo/OBI_0000757>))
 Declaration(NamedIndividual(<http://purl.obolibrary.org/obo/OBI_0000758>))
 Declaration(NamedIndividual(<http://purl.obolibrary.org/obo/OBI_0000759>))
 Declaration(NamedIndividual(<http://purl.obolibrary.org/obo/OBI_0000760>))
-Declaration(NamedIndividual(<http://purl.obolibrary.org/obo/OBI_0000761>))
 Declaration(NamedIndividual(<http://purl.obolibrary.org/obo/OBI_0000765>))
-Declaration(NamedIndividual(<http://purl.obolibrary.org/obo/OBI_0000766>))
-Declaration(NamedIndividual(<http://purl.obolibrary.org/obo/OBI_0000768>))
 Declaration(NamedIndividual(<http://purl.obolibrary.org/obo/OBI_0000769>))
 Declaration(NamedIndividual(<http://purl.obolibrary.org/obo/OBI_0000770>))
-Declaration(NamedIndividual(<http://purl.obolibrary.org/obo/OBI_0000771>))
-Declaration(NamedIndividual(<http://purl.obolibrary.org/obo/OBI_0000772>))
-Declaration(NamedIndividual(<http://purl.obolibrary.org/obo/OBI_0000773>))
-Declaration(NamedIndividual(<http://purl.obolibrary.org/obo/OBI_0000774>))
 Declaration(NamedIndividual(<http://purl.obolibrary.org/obo/OBI_0000776>))
-Declaration(NamedIndividual(<http://purl.obolibrary.org/obo/OBI_0000777>))
 Declaration(NamedIndividual(<http://purl.obolibrary.org/obo/OBI_0000779>))
 Declaration(NamedIndividual(<http://purl.obolibrary.org/obo/OBI_0000780>))
 Declaration(NamedIndividual(<http://purl.obolibrary.org/obo/OBI_0000781>))
-Declaration(NamedIndividual(<http://purl.obolibrary.org/obo/OBI_0000782>))
-Declaration(NamedIndividual(<http://purl.obolibrary.org/obo/OBI_0000783>))
 Declaration(NamedIndividual(<http://purl.obolibrary.org/obo/OBI_0000829>))
 Declaration(NamedIndividual(<http://purl.obolibrary.org/obo/OBI_0000901>))
 Declaration(NamedIndividual(<http://purl.obolibrary.org/obo/OBI_0000958>))
@@ -518,6 +504,17 @@ AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.ob
 AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000117> <http://purl.obolibrary.org/obo/OBI_9991118> "PERSON:Randi Vita, Jason Greenbaum, Bjoern Peters")
 AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000119> <http://purl.obolibrary.org/obo/OBI_9991118> "IEDB")
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/OBI_9991118> "IEDB alternative term")
+
+# Annotation Property: <http://purl.org/dc/elements/1.1/creator> (Creator)
+
+AnnotationAssertion(<http://purl.org/dc/elements/1.1/description> <http://purl.org/dc/elements/1.1/creator> "Examples of a Creator include a person, an organisation,
+         or a service.  Typically, the name of a Creator should 
+         be used to indicate the entity."@en-us)
+AnnotationAssertion(rdfs:comment <http://purl.org/dc/elements/1.1/creator> "An entity primarily responsible for making the content 
+         of the resource."@en-us)
+AnnotationAssertion(rdfs:isDefinedBy <http://purl.org/dc/elements/1.1/creator> <http://purl.org/dc/elements/1.1/>)
+AnnotationAssertion(rdfs:label <http://purl.org/dc/elements/1.1/creator> "Creator"@en-us)
+AnnotationAssertion(rdfs:label <http://purl.org/dc/elements/1.1/creator> "Creator")
 
 # Annotation Property: <http://purl.org/dc/terms/license> (<http://purl.org/dc/terms/license>)
 
@@ -1652,17 +1649,6 @@ AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000118> <http://purl.ob
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/OBI_0000018> "material supplier role"@en)
 SubClassOf(<http://purl.obolibrary.org/obo/OBI_0000018> <http://purl.obolibrary.org/obo/OBI_0000947>)
 
-# Class: <http://purl.obolibrary.org/obo/OBI_0000023> (classified data set)
-
-AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000111> <http://purl.obolibrary.org/obo/OBI_0000023> "classified data set")
-AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000114> <http://purl.obolibrary.org/obo/OBI_0000023> <http://purl.obolibrary.org/obo/IAO_0000125>)
-AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/OBI_0000023> "A data set that is produced as the output of a class prediction data transformation and consists of a data set with assigned class labels."@en)
-AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000117> <http://purl.obolibrary.org/obo/OBI_0000023> "PERSON: James Malone")
-AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000117> <http://purl.obolibrary.org/obo/OBI_0000023> "PERSON: Monnie McGee")
-AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000118> <http://purl.obolibrary.org/obo/OBI_0000023> "data set with assigned class labels")
-AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/OBI_0000023> "classified data set"@en)
-SubClassOf(<http://purl.obolibrary.org/obo/OBI_0000023> <http://purl.obolibrary.org/obo/IAO_0000100>)
-
 # Class: <http://purl.obolibrary.org/obo/OBI_0000038> (chromatography column)
 
 AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000111> <http://purl.obolibrary.org/obo/OBI_0000038> "chromatography column")
@@ -2127,30 +2113,6 @@ AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000117> <http://purl.ob
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/OBI_0000401> "environment control function"@en)
 SubClassOf(<http://purl.obolibrary.org/obo/OBI_0000401> <http://purl.obolibrary.org/obo/BFO_0000034>)
 
-# Class: <http://purl.obolibrary.org/obo/OBI_0000419> (reverse transcriptase)
-
-AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000111> <http://purl.obolibrary.org/obo/OBI_0000419> "reverse transcriptase"@en)
-AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000114> <http://purl.obolibrary.org/obo/OBI_0000419> <http://purl.obolibrary.org/obo/IAO_0000125>)
-AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/OBI_0000419> "enzyme and has_function some GO:0003964 (RNA-directed DNA polymerase
-activity)"@en)
-AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000117> <http://purl.obolibrary.org/obo/OBI_0000419> "person:Melanie Courtot")
-AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000119> <http://purl.obolibrary.org/obo/OBI_0000419> "group:OBI")
-AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/OBI_0000419> "reverse transcriptase"@en)
-SubClassOf(<http://purl.obolibrary.org/obo/OBI_0000419> <http://purl.obolibrary.org/obo/OBI_0000427>)
-
-# Class: <http://purl.obolibrary.org/obo/OBI_0000427> (enzyme)
-
-AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000111> <http://purl.obolibrary.org/obo/OBI_0000427> "enzyme"@en)
-AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000114> <http://purl.obolibrary.org/obo/OBI_0000427> <http://purl.obolibrary.org/obo/IAO_0000125>)
-AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/OBI_0000427> "(protein or rna) or has_part (protein or rna) and
-has_function some GO:0003824 (catalytic activity)"@en)
-AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000116> <http://purl.obolibrary.org/obo/OBI_0000427> "MC: known issue: enzyme doesn't classify under material entity for now as it isn't stated that anything
-that has_part some material entity is a material entity. If we add as equivalent classes to material entity has_part some material entity and part_of some material entity  (each one in his own necessary and sufficient block) Pellet in P3 doesn't classify any more.")
-AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000117> <http://purl.obolibrary.org/obo/OBI_0000427> "person: Melanie Courtot")
-AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000119> <http://purl.obolibrary.org/obo/OBI_0000427> "GROUP:OBI")
-AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/OBI_0000427> "enzyme"@en)
-SubClassOf(<http://purl.obolibrary.org/obo/OBI_0000427> <http://purl.obolibrary.org/obo/BFO_0000040>)
-
 # Class: <http://purl.obolibrary.org/obo/OBI_0000437> (analyte measurement objective)
 
 AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000111> <http://purl.obolibrary.org/obo/OBI_0000437> "analyte measurement objective")
@@ -2452,17 +2414,6 @@ AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000117> <http://purl.ob
 AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000119> <http://purl.obolibrary.org/obo/OBI_0000686> "bp")
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/OBI_0000686> "material combination objective")
 SubClassOf(<http://purl.obolibrary.org/obo/OBI_0000686> <http://purl.obolibrary.org/obo/OBI_0000456>)
-
-# Class: <http://purl.obolibrary.org/obo/OBI_0000713> (GenePattern software)
-
-AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000111> <http://purl.obolibrary.org/obo/OBI_0000713> "GenePattern software")
-AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000114> <http://purl.obolibrary.org/obo/OBI_0000713> <http://purl.obolibrary.org/obo/IAO_0000120>)
-AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/OBI_0000713> "a software that provides access to more than 100 tools for gene expression analysis, proteomics, SNP analysis and common data processing tasks."@en)
-AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000117> <http://purl.obolibrary.org/obo/OBI_0000713> "James Malone")
-AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000117> <http://purl.obolibrary.org/obo/OBI_0000713> "Person:Helen Parkinson")
-AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000119> <http://purl.obolibrary.org/obo/OBI_0000713> "WEB: http://www.broadinstitute.org/cancer/software/genepattern/")
-AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/OBI_0000713> "GenePattern software")
-SubClassOf(<http://purl.obolibrary.org/obo/OBI_0000713> <http://purl.obolibrary.org/obo/IAO_0000010>)
 
 # Class: <http://purl.obolibrary.org/obo/OBI_0000796> (purification objective)
 
@@ -3816,16 +3767,6 @@ AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000114> <http://purl.ob
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/OBI_0000760> "GenePattern PCA")
 ClassAssertion(<http://purl.obolibrary.org/obo/OBI_0200051> <http://purl.obolibrary.org/obo/OBI_0000760>)
 
-# Individual: <http://purl.obolibrary.org/obo/OBI_0000761> (GenePattern module SVM)
-
-AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000111> <http://purl.obolibrary.org/obo/OBI_0000761> "GenePattern module SVM")
-AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000114> <http://purl.obolibrary.org/obo/OBI_0000761> <http://purl.obolibrary.org/obo/IAO_0000123>)
-AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/OBI_0000761> "GenePattern module SVM is a GenePattern software module which is used to run a support vector machine data transformation."@en)
-AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000117> <http://purl.obolibrary.org/obo/OBI_0000761> "James Malone")
-AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000117> <http://purl.obolibrary.org/obo/OBI_0000761> "Ryan Brinkman")
-AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/OBI_0000761> "GenePattern module SVM")
-ClassAssertion(<http://purl.obolibrary.org/obo/OBI_0000713> <http://purl.obolibrary.org/obo/OBI_0000761>)
-
 # Individual: <http://purl.obolibrary.org/obo/OBI_0000765> (Agilent)
 
 AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000111> <http://purl.obolibrary.org/obo/OBI_0000765> "Agilent")
@@ -3833,24 +3774,6 @@ AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000114> <http://purl.ob
 AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000117> <http://purl.obolibrary.org/obo/OBI_0000765> "Philippe Rocca-Serra")
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/OBI_0000765> "Agilent")
 ClassAssertion(<http://purl.obolibrary.org/obo/OBI_0000835> <http://purl.obolibrary.org/obo/OBI_0000765>)
-
-# Individual: <http://purl.obolibrary.org/obo/OBI_0000766> (GenePattern module KMeansClustering)
-
-AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000111> <http://purl.obolibrary.org/obo/OBI_0000766> "GenePattern module KMeansClustering")
-AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000114> <http://purl.obolibrary.org/obo/OBI_0000766> <http://purl.obolibrary.org/obo/IAO_0000120>)
-AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/OBI_0000766> "GenePattern module KMeansClustering is a GenePattern software module which is used to perform a k Means clustering data transformation."@en)
-AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000117> <http://purl.obolibrary.org/obo/OBI_0000766> "James Malone")
-AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000119> <http://purl.obolibrary.org/obo/OBI_0000766> "PERSON: James Malone")
-AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/OBI_0000766> "GenePattern module KMeansClustering")
-ClassAssertion(<http://purl.obolibrary.org/obo/OBI_0000713> <http://purl.obolibrary.org/obo/OBI_0000766>)
-
-# Individual: <http://purl.obolibrary.org/obo/OBI_0000768> (GenePattern module CARTXValidation)
-
-AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000111> <http://purl.obolibrary.org/obo/OBI_0000768> "GenePattern module CARTXValidation")
-AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000114> <http://purl.obolibrary.org/obo/OBI_0000768> <http://purl.obolibrary.org/obo/IAO_0000123>)
-AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/OBI_0000768> "GenePattern module CARTXValidation is a GenePattern software module which uses a CART decision tree induction with a leave one out cross validation data transformations."@en)
-AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/OBI_0000768> "GenePattern module CARTXValidation")
-ClassAssertion(<http://purl.obolibrary.org/obo/OBI_0000713> <http://purl.obolibrary.org/obo/OBI_0000768>)
 
 # Individual: <http://purl.obolibrary.org/obo/OBI_0000769> (Li-Cor)
 
@@ -3868,42 +3791,6 @@ AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000117> <http://purl.ob
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/OBI_0000770> "Bruker Corporation")
 ClassAssertion(<http://purl.obolibrary.org/obo/OBI_0000835> <http://purl.obolibrary.org/obo/OBI_0000770>)
 
-# Individual: <http://purl.obolibrary.org/obo/OBI_0000771> (GenePattern module KNNXValidation)
-
-AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000111> <http://purl.obolibrary.org/obo/OBI_0000771> "GenePattern module KNNXValidation")
-AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000114> <http://purl.obolibrary.org/obo/OBI_0000771> <http://purl.obolibrary.org/obo/IAO_0000120>)
-AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/OBI_0000771> "GenePattern module KNNXValidation is a GenePattern software module which uses a k-nearest neighbours clustering with a leave one out cross validation data transformations."@en)
-AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000117> <http://purl.obolibrary.org/obo/OBI_0000771> "James Malone")
-AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000119> <http://purl.obolibrary.org/obo/OBI_0000771> "PERSON: James Malone")
-AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/OBI_0000771> "GenePattern module KNNXValidation")
-ClassAssertion(<http://purl.obolibrary.org/obo/OBI_0000713> <http://purl.obolibrary.org/obo/OBI_0000771>)
-
-# Individual: <http://purl.obolibrary.org/obo/OBI_0000772> (GenePattern module PeakMatch)
-
-AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000111> <http://purl.obolibrary.org/obo/OBI_0000772> "GenePattern module PeakMatch")
-AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000114> <http://purl.obolibrary.org/obo/OBI_0000772> <http://purl.obolibrary.org/obo/IAO_0000123>)
-AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/OBI_0000772> "GenePattern module PeakMatch")
-ClassAssertion(<http://purl.obolibrary.org/obo/OBI_0000713> <http://purl.obolibrary.org/obo/OBI_0000772>)
-
-# Individual: <http://purl.obolibrary.org/obo/OBI_0000773> (GenePattern module KNN)
-
-AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000111> <http://purl.obolibrary.org/obo/OBI_0000773> "GenePattern module KNN")
-AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000114> <http://purl.obolibrary.org/obo/OBI_0000773> <http://purl.obolibrary.org/obo/IAO_0000123>)
-AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/OBI_0000773> "GenePattern module KNN is a GenePattern software module which perform a k-nearest neighbors data transformation."@en)
-AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000117> <http://purl.obolibrary.org/obo/OBI_0000773> "James Malone")
-AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/OBI_0000773> "GenePattern module KNN")
-ClassAssertion(<http://purl.obolibrary.org/obo/OBI_0000713> <http://purl.obolibrary.org/obo/OBI_0000773>)
-
-# Individual: <http://purl.obolibrary.org/obo/OBI_0000774> (GenePattern module HierarchicalClustering)
-
-AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000111> <http://purl.obolibrary.org/obo/OBI_0000774> "GenePattern module HierarchicalClustering")
-AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000114> <http://purl.obolibrary.org/obo/OBI_0000774> <http://purl.obolibrary.org/obo/IAO_0000123>)
-AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/OBI_0000774> "GenePattern module HierarchicalClustering is a GenePattern software module which is used to perform a hierarchical clustering data transformation."@en)
-AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000117> <http://purl.obolibrary.org/obo/OBI_0000774> "James Malone")
-AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000117> <http://purl.obolibrary.org/obo/OBI_0000774> "PERSON: James Malone")
-AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/OBI_0000774> "GenePattern module HierarchicalClustering")
-ClassAssertion(<http://purl.obolibrary.org/obo/OBI_0000713> <http://purl.obolibrary.org/obo/OBI_0000774>)
-
 # Individual: <http://purl.obolibrary.org/obo/OBI_0000776> (Applied Biosystems)
 
 AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000111> <http://purl.obolibrary.org/obo/OBI_0000776> "Applied Biosystems")
@@ -3911,17 +3798,6 @@ AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000114> <http://purl.ob
 AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000117> <http://purl.obolibrary.org/obo/OBI_0000776> "Philippe Rocca-Serra")
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/OBI_0000776> "Applied Biosystems")
 ClassAssertion(<http://purl.obolibrary.org/obo/OBI_0000835> <http://purl.obolibrary.org/obo/OBI_0000776>)
-
-# Individual: <http://purl.obolibrary.org/obo/OBI_0000777> (GenePattern module PCA)
-
-AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000111> <http://purl.obolibrary.org/obo/OBI_0000777> "GenePattern module PCA")
-AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000114> <http://purl.obolibrary.org/obo/OBI_0000777> <http://purl.obolibrary.org/obo/IAO_0000120>)
-AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/OBI_0000777> "GenePattern module PCA is a GenePattern software module which is used to perform a principal components analysis dimensionality reduction data transformation."@en)
-AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000117> <http://purl.obolibrary.org/obo/OBI_0000777> "James Malone")
-AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000119> <http://purl.obolibrary.org/obo/OBI_0000777> "PERSON: James Malone")
-AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/OBI_0000777> "GenePattern module PCA")
-ClassAssertion(<http://purl.obolibrary.org/obo/OBI_0000713> <http://purl.obolibrary.org/obo/OBI_0000777>)
-ObjectPropertyAssertion(<http://purl.obolibrary.org/obo/IAO_0000136> <http://purl.obolibrary.org/obo/OBI_0000777> <http://purl.obolibrary.org/obo/OBI_0000760>)
 
 # Individual: <http://purl.obolibrary.org/obo/OBI_0000779> (Bruker Daltonics)
 
@@ -3948,26 +3824,6 @@ AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.ob
 AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000117> <http://purl.obolibrary.org/obo/OBI_0000781> "James Malone")
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/OBI_0000781> "GenePattern HierarchicalClusteringViewer data visualization")
 ClassAssertion(<http://purl.obolibrary.org/obo/OBI_0200190> <http://purl.obolibrary.org/obo/OBI_0000781>)
-
-# Individual: <http://purl.obolibrary.org/obo/OBI_0000782> (GenePattern module HeatMapViewer)
-
-AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000111> <http://purl.obolibrary.org/obo/OBI_0000782> "GenePattern module HeatMapViewer")
-AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000114> <http://purl.obolibrary.org/obo/OBI_0000782> <http://purl.obolibrary.org/obo/IAO_0000123>)
-AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/OBI_0000782> "A GenePattern software module which is used to generate a heatmap view of data."@en)
-AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000117> <http://purl.obolibrary.org/obo/OBI_0000782> "James Malone")
-AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/OBI_0000782> "GenePattern module HeatMapViewer")
-ClassAssertion(<http://purl.obolibrary.org/obo/OBI_0000713> <http://purl.obolibrary.org/obo/OBI_0000782>)
-ObjectPropertyAssertion(<http://purl.obolibrary.org/obo/IAO_0000136> <http://purl.obolibrary.org/obo/OBI_0000782> <http://purl.obolibrary.org/obo/OBI_0000780>)
-
-# Individual: <http://purl.obolibrary.org/obo/OBI_0000783> (GenePattern module HierarchicalClusteringViewer)
-
-AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000111> <http://purl.obolibrary.org/obo/OBI_0000783> "GenePattern module HierarchicalClusteringViewer")
-AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000114> <http://purl.obolibrary.org/obo/OBI_0000783> <http://purl.obolibrary.org/obo/IAO_0000123>)
-AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/OBI_0000783> "A GenePattern software module which is used to generate a view of data that has been hierarchically clustered."@en)
-AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000117> <http://purl.obolibrary.org/obo/OBI_0000783> "James Malone")
-AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/OBI_0000783> "GenePattern module HierarchicalClusteringViewer")
-ClassAssertion(<http://purl.obolibrary.org/obo/OBI_0000713> <http://purl.obolibrary.org/obo/OBI_0000783>)
-ObjectPropertyAssertion(<http://purl.obolibrary.org/obo/IAO_0000136> <http://purl.obolibrary.org/obo/OBI_0000783> <http://purl.obolibrary.org/obo/OBI_0000781>)
 
 # Individual: <http://purl.obolibrary.org/obo/OBI_0000829> (Sysmex Corporation, Kobe, Japan)
 

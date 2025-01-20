@@ -29,6 +29,9 @@ OBI:0002357 # Eastern Cooperative Oncology Group score value specification
 OBI:0002363 # Karnofsky score vaue specification
 GO:0003674 # molecular_function
 OBI:0001977 # 'cytometry assay'
+OBI:0000427 # enzyme
+OBI:0000713 # 'GenePattern software'
+
 
 # filtered out for now to have a slimmer diff in the ODK migration PR, but might be useful to have in the future
 OBI:0200042 # 'hierarchical clustering'
