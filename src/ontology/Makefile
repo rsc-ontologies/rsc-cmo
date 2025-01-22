@@ -382,8 +382,6 @@ $(IMPORTDIR)/obi_import.owl: $(MIRRORDIR)/obi.owl
 	echo "ERROR: You have configured your default module type to be custom; this behavior needs to be overwritten in chmo.Makefile!" && false
 ## Module for ontology: ms
 
-$(IMPORTDIR)/ms_import.owl: $(MIRRORDIR)/ms.owl $(IMPORTDIR)/ms_terms_combined.txt
-	if [ $(IMP) = true ]; then $(ROBOT) query -i $< --update ../sparql/preprocess-module.ru \
 $(IMPORTDIR)/ms_import.owl: $(MIRRORDIR)/ms.owl
 	echo "ERROR: You have configured your default module type to be custom; this behavior needs to be overwritten in chmo.Makefile!" && false
 ## Module for ontology: chebi
