@@ -20,6 +20,7 @@ documentation:
 export_formats:
   - owl
   - obo
+  - json
 reasoner: ELK
 release_artefacts:
   - full
