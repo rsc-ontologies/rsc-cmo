@@ -52,9 +52,8 @@ import_group:
       make_base: true
     - id: ms
       make_base: true
-      module_type: slme
+      module_type: custom
       # Using ROBOT extract MIREOT in chmo.Makefile, as CHMO only reuses one class from MS
-      module_type_slme: custom
     - id: chebi
       is_large: true
       use_gzipped: true
