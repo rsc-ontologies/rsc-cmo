@@ -1,0 +1,207 @@
+Prefix(:=<http://purl.obolibrary.org/obo/chmo/imports/obcs_import.owl#>)
+Prefix(owl:=<http://www.w3.org/2002/07/owl#>)
+Prefix(rdf:=<http://www.w3.org/1999/02/22-rdf-syntax-ns#>)
+Prefix(xml:=<http://www.w3.org/XML/1998/namespace>)
+Prefix(xsd:=<http://www.w3.org/2001/XMLSchema#>)
+Prefix(rdfs:=<http://www.w3.org/2000/01/rdf-schema#>)
+
+
+Ontology(<http://purl.obolibrary.org/obo/chmo/imports/obcs_import.owl>
+<http://purl.obolibrary.org/obo/chmo/releases/2025-01-22/imports/obcs_import.owl>
+Annotation(<http://purl.org/dc/elements/1.1/source> <http://purl.obolibrary.org/obo/obcs/2023-12-08/obcs.owl>)
+Annotation(owl:versionInfo "2025-01-22")
+
+Declaration(Class(<http://purl.obolibrary.org/obo/BFO_0000015>))
+Declaration(Class(<http://purl.obolibrary.org/obo/BFO_0000016>))
+Declaration(Class(<http://purl.obolibrary.org/obo/IAO_0000005>))
+Declaration(Class(<http://purl.obolibrary.org/obo/IAO_0000027>))
+Declaration(Class(<http://purl.obolibrary.org/obo/IAO_0000100>))
+Declaration(Class(<http://purl.obolibrary.org/obo/IAO_0000104>))
+Declaration(Class(<http://purl.obolibrary.org/obo/OBCS_0000001>))
+Declaration(Class(<http://purl.obolibrary.org/obo/OBCS_0000058>))
+Declaration(Class(<http://purl.obolibrary.org/obo/OBCS_0000059>))
+Declaration(Class(<http://purl.obolibrary.org/obo/OBCS_0000070>))
+Declaration(Class(<http://purl.obolibrary.org/obo/OBCS_0000120>))
+Declaration(Class(<http://purl.obolibrary.org/obo/OBCS_0000121>))
+Declaration(Class(<http://purl.obolibrary.org/obo/OBCS_0000122>))
+Declaration(Class(<http://purl.obolibrary.org/obo/OBCS_0000123>))
+Declaration(Class(<http://purl.obolibrary.org/obo/OBCS_0000124>))
+Declaration(Class(<http://purl.obolibrary.org/obo/OBCS_0000214>))
+Declaration(Class(<http://purl.obolibrary.org/obo/OBCS_0000218>))
+Declaration(Class(<http://purl.obolibrary.org/obo/OBCS_0000220>))
+Declaration(Class(<http://purl.obolibrary.org/obo/OBCS_0000233>))
+Declaration(Class(<http://purl.obolibrary.org/obo/OBI_0000011>))
+Declaration(Class(<http://purl.obolibrary.org/obo/OBI_0000071>))
+Declaration(Class(<http://purl.obolibrary.org/obo/OBI_0200000>))
+Declaration(Class(<http://purl.obolibrary.org/obo/OBI_0200078>))
+Declaration(Class(<http://purl.obolibrary.org/obo/OBI_0200166>))
+Declaration(ObjectProperty(<http://purl.obolibrary.org/obo/BFO_0000054>))
+Declaration(ObjectProperty(<http://purl.obolibrary.org/obo/IAO_0000136>))
+Declaration(ObjectProperty(<http://purl.obolibrary.org/obo/OBI_0000293>))
+Declaration(ObjectProperty(<http://purl.obolibrary.org/obo/OBI_0000299>))
+Declaration(ObjectProperty(<http://purl.obolibrary.org/obo/OBI_0000312>))
+Declaration(ObjectProperty(<http://purl.obolibrary.org/obo/OBI_0000417>))
+Declaration(ObjectProperty(<http://purl.obolibrary.org/obo/RO_0002351>))
+Declaration(NamedIndividual(<http://purl.obolibrary.org/obo/OBCS_0000228>))
+Declaration(AnnotationProperty(<http://purl.obolibrary.org/obo/IAO_0000115>))
+Declaration(AnnotationProperty(<http://purl.obolibrary.org/obo/IAO_0000117>))
+Declaration(AnnotationProperty(<http://purl.obolibrary.org/obo/IAO_0000118>))
+Declaration(AnnotationProperty(<http://purl.obolibrary.org/obo/IAO_0000119>))
+Declaration(AnnotationProperty(<http://purl.org/dc/elements/1.1/contributor>))
+Declaration(AnnotationProperty(<http://purl.org/dc/elements/1.1/creator>))
+Declaration(AnnotationProperty(<http://purl.org/dc/elements/1.1/description>))
+Declaration(AnnotationProperty(<http://purl.org/dc/elements/1.1/format>))
+Declaration(AnnotationProperty(<http://purl.org/dc/elements/1.1/source>))
+Declaration(AnnotationProperty(<http://purl.org/dc/elements/1.1/subject>))
+Declaration(AnnotationProperty(<http://purl.org/dc/elements/1.1/title>))
+Declaration(AnnotationProperty(<http://purl.org/dc/terms/license>))
+Declaration(AnnotationProperty(<http://www.geneontology.org/formats/oboInOwl#hasDbXref>))
+
+
+
+############################
+#   Classes
+############################
+
+# Class: <http://purl.obolibrary.org/obo/OBCS_0000001> (statistical data analysis)
+
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/OBCS_0000001> "A data transformation that has input of mulitple data and report overall trend of the data.")
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000117> <http://purl.obolibrary.org/obo/OBCS_0000001> "Jie Zheng, Oliver He")
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000119> <http://purl.obolibrary.org/obo/OBCS_0000001> "WEB: https://en.wikipedia.org/wiki/Statistics")
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/OBCS_0000001> "statistical data analysis"@en)
+EquivalentClasses(<http://purl.obolibrary.org/obo/OBCS_0000001> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/OBI_0000417> ObjectUnionOf(<http://purl.obolibrary.org/obo/OBCS_0000124> <http://purl.obolibrary.org/obo/OBI_0200078>)))
+SubClassOf(<http://purl.obolibrary.org/obo/OBCS_0000001> <http://purl.obolibrary.org/obo/OBI_0200000>)
+
+# Class: <http://purl.obolibrary.org/obo/OBCS_0000058> (sensitivity)
+
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/OBCS_0000058> "A data item that measures the proportion of actual positives which are correctly identified as such (e.g. the percentage of sick people who are correctly identified as having the condition).")
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000117> <http://purl.obolibrary.org/obo/OBCS_0000058> "Yongqun He")
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000118> <http://purl.obolibrary.org/obo/OBCS_0000058> "sensitivity estimate")
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000118> <http://purl.obolibrary.org/obo/OBCS_0000058> "true positive rate, recall")
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000119> <http://purl.obolibrary.org/obo/OBCS_0000058> "WEB: http://en.wikipedia.org/wiki/Sensitivity_and_specificity")
+AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasDbXref> <http://purl.obolibrary.org/obo/OBCS_0000058> "STATO:0000233")
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/OBCS_0000058> "sensitivity")
+SubClassOf(<http://purl.obolibrary.org/obo/OBCS_0000058> <http://purl.obolibrary.org/obo/OBCS_0000220>)
+SubClassOf(<http://purl.obolibrary.org/obo/OBCS_0000058> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/IAO_0000136> <http://purl.obolibrary.org/obo/OBCS_0000214>))
+SubClassOf(<http://purl.obolibrary.org/obo/OBCS_0000058> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/OBI_0000312> <http://purl.obolibrary.org/obo/OBCS_0000121>))
+
+# Class: <http://purl.obolibrary.org/obo/OBCS_0000059> (specificity)
+
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/OBCS_0000059> "A data item that refers to the proportion of negatives in a binary classification test which are correctly identified")
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000117> <http://purl.obolibrary.org/obo/OBCS_0000059> "Yongqun He")
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000118> <http://purl.obolibrary.org/obo/OBCS_0000059> "true negative rate")
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000119> <http://purl.obolibrary.org/obo/OBCS_0000059> "WEB: http://en.wikipedia.org/wiki/Sensitivity_and_specificity")
+AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasDbXref> <http://purl.obolibrary.org/obo/OBCS_0000059> "STATO:0000134")
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/OBCS_0000059> "specificity")
+SubClassOf(<http://purl.obolibrary.org/obo/OBCS_0000059> <http://purl.obolibrary.org/obo/OBCS_0000220>)
+SubClassOf(<http://purl.obolibrary.org/obo/OBCS_0000059> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/OBI_0000312> <http://purl.obolibrary.org/obo/OBCS_0000121>))
+
+# Class: <http://purl.obolibrary.org/obo/OBCS_0000070> (confidence interval)
+
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/OBCS_0000070> "A quantitative confidence value that refers to an interval give values within which there is a high probability (95 percent by convention) that the true population value can be found. The calculation of a confidence interval considers the standard deviation of the data and the number of observations. Thus, a confidence interval narrows as the number of observations increases, or its variance (dispersion) decreases.")
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000117> <http://purl.obolibrary.org/obo/OBCS_0000070> "Yongqun He")
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000119> <http://purl.obolibrary.org/obo/OBCS_0000070> "WEB: http://www.uptodate.com/contents/glossary-of-common-biostatistical-and-epidemiological-terms")
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/OBCS_0000070> "confidence interval")
+SubClassOf(<http://purl.obolibrary.org/obo/OBCS_0000070> <http://purl.obolibrary.org/obo/OBI_0000071>)
+
+# Class: <http://purl.obolibrary.org/obo/OBCS_0000120> (data matrix)
+
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/OBCS_0000120> "A data item that is more specifically a rectangular array of numbers, symbols, or expressions, arranged in rows and columns.")
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000117> <http://purl.obolibrary.org/obo/OBCS_0000120> "Person: Oliver He, Jie Zheng")
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000118> <http://purl.obolibrary.org/obo/OBCS_0000120> "set of data sets"@en)
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000119> <http://purl.obolibrary.org/obo/OBCS_0000120> "WEB: https://en.wikipedia.org/wiki/Matrix_(mathematics)")
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/OBCS_0000120> "data matrix")
+EquivalentClasses(<http://purl.obolibrary.org/obo/OBCS_0000120> ObjectIntersectionOf(<http://purl.obolibrary.org/obo/IAO_0000027> ObjectAllValuesFrom(<http://purl.obolibrary.org/obo/RO_0002351> <http://purl.obolibrary.org/obo/IAO_0000100>) ObjectMinCardinality(2 <http://purl.obolibrary.org/obo/RO_0002351> <http://purl.obolibrary.org/obo/IAO_0000100>)))
+SubClassOf(<http://purl.obolibrary.org/obo/OBCS_0000120> <http://purl.obolibrary.org/obo/IAO_0000027>)
+
+# Class: <http://purl.obolibrary.org/obo/OBCS_0000121> (inferential statistical data analysis)
+
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/OBCS_0000121> "A statistical data analysis that uses patterns in the sample data to draw inferences about the population represented, accounting for randomness.")
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000117> <http://purl.obolibrary.org/obo/OBCS_0000121> "Jie Zheng, Oliver He")
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000118> <http://purl.obolibrary.org/obo/OBCS_0000121> "significantly statistical data analysis")
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000119> <http://purl.obolibrary.org/obo/OBCS_0000121> "WEB: http://en.wikipedia.org/wiki/Statistics")
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/OBCS_0000121> "inferential statistical data analysis"@en)
+EquivalentClasses(<http://purl.obolibrary.org/obo/OBCS_0000121> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/OBI_0000417> <http://purl.obolibrary.org/obo/OBCS_0000124>))
+SubClassOf(<http://purl.obolibrary.org/obo/OBCS_0000121> <http://purl.obolibrary.org/obo/OBCS_0000001>)
+SubClassOf(<http://purl.obolibrary.org/obo/OBCS_0000121> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/OBI_0000293> <http://purl.obolibrary.org/obo/IAO_0000100>))
+
+# Class: <http://purl.obolibrary.org/obo/OBCS_0000122> (transformed data matrix)
+
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/OBCS_0000122> "A data item that consists of two or more data sets that are produced as the output of a data transformation.")
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000117> <http://purl.obolibrary.org/obo/OBCS_0000122> "Person: Oliver He, Jie Zheng")
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000118> <http://purl.obolibrary.org/obo/OBCS_0000122> "set of transformed data sets"@en)
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/OBCS_0000122> "transformed data matrix")
+EquivalentClasses(<http://purl.obolibrary.org/obo/OBCS_0000122> ObjectIntersectionOf(<http://purl.obolibrary.org/obo/IAO_0000027> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0002351> <http://purl.obolibrary.org/obo/OBCS_0000123>) ObjectMinCardinality(2 <http://purl.obolibrary.org/obo/RO_0002351> <http://purl.obolibrary.org/obo/OBCS_0000123>)))
+SubClassOf(<http://purl.obolibrary.org/obo/OBCS_0000122> <http://purl.obolibrary.org/obo/IAO_0000027>)
+
+# Class: <http://purl.obolibrary.org/obo/OBCS_0000123> (transformed data set)
+
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/OBCS_0000123> "A data set that is produced as the output of a data transformation.")
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000117> <http://purl.obolibrary.org/obo/OBCS_0000123> "Person: Jie Zheng, Oliver He")
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/OBCS_0000123> "transformed data set"@en)
+EquivalentClasses(<http://purl.obolibrary.org/obo/OBCS_0000123> ObjectIntersectionOf(<http://purl.obolibrary.org/obo/IAO_0000100> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/OBI_0000312> <http://purl.obolibrary.org/obo/OBI_0200000>)))
+SubClassOf(<http://purl.obolibrary.org/obo/OBCS_0000123> <http://purl.obolibrary.org/obo/IAO_0000100>)
+SubClassOf(<http://purl.obolibrary.org/obo/OBCS_0000123> <http://purl.obolibrary.org/obo/OBCS_0000233>)
+SubClassOf(<http://purl.obolibrary.org/obo/OBCS_0000123> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0002351> <http://purl.obolibrary.org/obo/OBCS_0000233>))
+
+# Class: <http://purl.obolibrary.org/obo/OBCS_0000124> (inferential statistical data analysis objective)
+
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/OBCS_0000124> "A statistical data analysis objective where the aim is to make inference using population sample data. ")
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000117> <http://purl.obolibrary.org/obo/OBCS_0000124> "Jie Zheng, Oliver He")
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/OBCS_0000124> "inferential statistical data analysis objective"@en)
+SubClassOf(<http://purl.obolibrary.org/obo/OBCS_0000124> <http://purl.obolibrary.org/obo/OBI_0200166>)
+
+# Class: <http://purl.obolibrary.org/obo/OBCS_0000214> (sensitivity disposition)
+
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/OBCS_0000214> "A disposition that inheres in a population of continuant and is realized in a test process (e.g., disease diagnosis).")
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000119> <http://purl.obolibrary.org/obo/OBCS_0000214> "https://jbiomedsem.biomedcentral.com/articles/10.1186/s13326-016-0099-4")
+AnnotationAssertion(<http://purl.org/dc/elements/1.1/creator> <http://purl.obolibrary.org/obo/OBCS_0000214> "AB, JZ, JFE, YH")
+AnnotationAssertion(rdfs:comment <http://purl.obolibrary.org/obo/OBCS_0000214> "This term is generated in OBCS based on BIPO: https://github.com/OpenLHS/BIPO. See more from OBCS track issue: https://github.com/obcs/obcs/issues/9")
+AnnotationAssertion(rdfs:comment <http://purl.obolibrary.org/obo/OBCS_0000214> "Traditionally, sensitivity inheres in a population of material entity like human. However, it raises a concern in the existance of such sensitivity disposition in the context of machine learning using syntheti data generated with mathematical formula. In this case, the population of disposition bearer are not population of organisms or material entities. Here the bearer of the disposition is not independent continuant.")
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/OBCS_0000214> "sensitivity disposition"@en)
+SubClassOf(<http://purl.obolibrary.org/obo/OBCS_0000214> <http://purl.obolibrary.org/obo/BFO_0000016>)
+
+# Class: <http://purl.obolibrary.org/obo/OBCS_0000218> (derived data from statistical analysis)
+
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/OBCS_0000218> "A data item that is derived from a statistical data analysis.")
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000117> <http://purl.obolibrary.org/obo/OBCS_0000218> "Jie Zheng, Yongqun He, Marcy Harris, Asiyah Yu Lin")
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000118> <http://purl.obolibrary.org/obo/OBCS_0000218> "statistic")
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000119> <http://purl.obolibrary.org/obo/OBCS_0000218> "WEB: http://en.wikipedia.org/wiki/Statistic")
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000119> <http://purl.obolibrary.org/obo/OBCS_0000218> "WEB: http://www.ask.com/question/what-is-numerical-data")
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/OBCS_0000218> "derived data from statistical analysis"@en)
+EquivalentClasses(<http://purl.obolibrary.org/obo/OBCS_0000218> ObjectIntersectionOf(<http://purl.obolibrary.org/obo/IAO_0000027> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/OBI_0000312> <http://purl.obolibrary.org/obo/OBCS_0000001>)))
+SubClassOf(<http://purl.obolibrary.org/obo/OBCS_0000218> <http://purl.obolibrary.org/obo/OBCS_0000233>)
+
+# Class: <http://purl.obolibrary.org/obo/OBCS_0000220> (derived data from inferential statistical analysis)
+
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/OBCS_0000220> "A data item that is derived from an inferential statistical data analysis.")
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000117> <http://purl.obolibrary.org/obo/OBCS_0000220> "Jie Zheng, Yongqun He")
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000118> <http://purl.obolibrary.org/obo/OBCS_0000220> "inferential statistic")
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000119> <http://purl.obolibrary.org/obo/OBCS_0000220> "WEB: http://psc.dss.ucdavis.edu/sommerb/sommerdemo/stat_inf/intro.htm")
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000119> <http://purl.obolibrary.org/obo/OBCS_0000220> "WEB: http://www.ask.com/question/what-is-numerical-data")
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/OBCS_0000220> "derived data from inferential statistical analysis"@en)
+EquivalentClasses(<http://purl.obolibrary.org/obo/OBCS_0000220> ObjectIntersectionOf(<http://purl.obolibrary.org/obo/IAO_0000027> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/OBI_0000312> <http://purl.obolibrary.org/obo/OBCS_0000121>)))
+SubClassOf(<http://purl.obolibrary.org/obo/OBCS_0000220> <http://purl.obolibrary.org/obo/OBCS_0000218>)
+
+# Class: <http://purl.obolibrary.org/obo/OBCS_0000233> (transformed data item)
+
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/OBCS_0000233> "A data item that is produced as the output of a data transformation.")
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000117> <http://purl.obolibrary.org/obo/OBCS_0000233> "Person: Jie Zheng, Oliver He")
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/OBCS_0000233> "transformed data item"@en)
+EquivalentClasses(<http://purl.obolibrary.org/obo/OBCS_0000233> ObjectIntersectionOf(<http://purl.obolibrary.org/obo/IAO_0000027> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/OBI_0000312> <http://purl.obolibrary.org/obo/OBI_0200000>)))
+SubClassOf(<http://purl.obolibrary.org/obo/OBCS_0000233> <http://purl.obolibrary.org/obo/IAO_0000027>)
+
+
+############################
+#   Named Individuals
+############################
+
+# Individual: <http://purl.obolibrary.org/obo/OBCS_0000228> (95% confidence interval)
+
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/OBCS_0000228> "An confidence interval with 95 percent probability that the true population value can be found.")
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000117> <http://purl.obolibrary.org/obo/OBCS_0000228> "Jie Zheng")
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/OBCS_0000228> "95% confidence interval"@en)
+ClassAssertion(<http://purl.obolibrary.org/obo/OBCS_0000070> <http://purl.obolibrary.org/obo/OBCS_0000228>)
+
+
+)

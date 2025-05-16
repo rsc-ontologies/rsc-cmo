@@ -1,0 +1,45 @@
+Prefix(:=<http://purl.obolibrary.org/obo/chmo/imports/ms_import.owl#>)
+Prefix(owl:=<http://www.w3.org/2002/07/owl#>)
+Prefix(rdf:=<http://www.w3.org/1999/02/22-rdf-syntax-ns#>)
+Prefix(xml:=<http://www.w3.org/XML/1998/namespace>)
+Prefix(xsd:=<http://www.w3.org/2001/XMLSchema#>)
+Prefix(rdfs:=<http://www.w3.org/2000/01/rdf-schema#>)
+
+
+Ontology(<http://purl.obolibrary.org/obo/chmo/imports/ms_import.owl>
+<http://purl.obolibrary.org/obo/chmo/releases/2025-01-22/imports/ms_import.owl>
+Annotation(<http://purl.org/dc/elements/1.1/source> <http://purl.obolibrary.org/obo/ms/4.1.187/ms.owl>)
+Annotation(owl:versionInfo "2025-01-22")
+
+Declaration(Class(<http://purl.obolibrary.org/obo/MS_1000073>))
+Declaration(AnnotationProperty(<http://purl.obolibrary.org/obo/IAO_0000115>))
+Declaration(AnnotationProperty(<http://purl.obolibrary.org/obo/IAO_0100001>))
+Declaration(AnnotationProperty(<http://purl.org/dc/elements/1.1/source>))
+Declaration(AnnotationProperty(<http://www.geneontology.org/formats/oboInOwl#NamespaceIdRule>))
+Declaration(AnnotationProperty(<http://www.geneontology.org/formats/oboInOwl#date>))
+Declaration(AnnotationProperty(<http://www.geneontology.org/formats/oboInOwl#default-namespace>))
+Declaration(AnnotationProperty(<http://www.geneontology.org/formats/oboInOwl#hasDbXref>))
+Declaration(AnnotationProperty(<http://www.geneontology.org/formats/oboInOwl#hasExactSynonym>))
+Declaration(AnnotationProperty(<http://www.geneontology.org/formats/oboInOwl#hasNarrowSynonym>))
+Declaration(AnnotationProperty(<http://www.geneontology.org/formats/oboInOwl#hasOBOFormatVersion>))
+Declaration(AnnotationProperty(<http://www.geneontology.org/formats/oboInOwl#hasOBONamespace>))
+Declaration(AnnotationProperty(<http://www.geneontology.org/formats/oboInOwl#hasRelatedSynonym>))
+Declaration(AnnotationProperty(<http://www.geneontology.org/formats/oboInOwl#id>))
+Declaration(AnnotationProperty(<http://www.geneontology.org/formats/oboInOwl#saved-by>))
+Declaration(AnnotationProperty(rdfs:label))
+
+
+############################
+#   Classes
+############################
+
+# Class: <http://purl.obolibrary.org/obo/MS_1000073> (electrospray ionization)
+
+AnnotationAssertion(Annotation(<http://www.geneontology.org/formats/oboInOwl#hasDbXref> "PSI:MS") <http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/MS_1000073> "A process in which ionized species in the gas phase are produced from an analyte-containing solution via highly charged fine droplets, by means of spraying the solution from a narrow-bore needle tip at atmospheric pressure in the presence of a high electric field. When a pressurized gas is used to aid in the formation of a stable spray, the term pneumatically assisted electrospray ionization is used. The term ion spray is not recommended.")
+AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasExactSynonym> <http://purl.obolibrary.org/obo/MS_1000073> "ESI")
+AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasOBONamespace> <http://purl.obolibrary.org/obo/MS_1000073> "MS")
+AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#id> <http://purl.obolibrary.org/obo/MS_1000073> "MS:1000073")
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/MS_1000073> "electrospray ionization")
+
+
+)
