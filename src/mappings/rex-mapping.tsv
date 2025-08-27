@@ -1,0 +1,20 @@
+#curie_map:
+#  CHMO: http://purl.obolibrary.org/obo/CHMO_
+#  REX: http://purl.obolibrary.org/obo/REX_
+#mapping_set_id: https://github.com/NFDI4Chem/rsc-cmo/blob/Add-definition-sources-and-mappings/src/mappings/rex-mappings.tsv
+#mapping_set_version:	1.0
+#mapping_set_title: Mapping CHMO to REX
+#mapping_set_description: This file contains the mappings between the Chemical Methods Ontology (CHMO) and REX. These mappings were manually created/curated by Ambika Gupta and reviewed by Philip Strömert & Colin Batchelor. The intended use case of this mapping set is the data integration of RDF knowledge graphs (KGs) that use Wikidata and are to be transformed into RDF KGs that use CHMO or vice versa.
+#creator_id:
+#	- https://orcid.org/0009-0009-1663-1003
+#	- https://orcid.org/0000-0002-1595-3213
+#	- https://orcid.org/0000-0001-5985-7429
+#subject_source:	http://purl.obolibrary.org/obo/chmo.owl
+#subject_source_version:
+#object_source:	http://purl.obolibrary.org/obo/REX_
+#mapping_provider: http://purl.obolibrary.org/obo/chmo.owl
+#mapping_date: 05-2025
+#issue_tracker:
+#license: https://creativecommons.org/publicdomain/zero/1.0/
+subject_id	subject_label	predicate_id	object_id	object_label	mapping_justification	author_id	confidence	comment
+CHMO:0002914	absorption of material	skos:exactMatch	REX_0000188	absorption of material	semapv:ManualMappingCuration	https://orcid.org/0009-0009-1663-1003	0.8
