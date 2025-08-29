@@ -50,7 +50,7 @@ CHMO:0000975	packed column	skos:exactMatch	AFE:0000692	packed column	semapv:Manu
 CHMO:0001234	spectrometer	skos:exactMatch	AFE:0000857	spectrometer	semapv:ManualMappingCuration    	https://orcid.org/0009-0009-1663-1003	0.95
 CHMO:0000986	stationary phase	skos:exactMatch	AFRL:0000032	stationary phase	semapv:ManualMappingCuration    	https://orcid.org/0009-0009-1663-1003	0.95
 CHMO:0002162	titration curve	skos:exactMatch	AFR:0000490	titration curve	semapv:ManualMappingCuration    	https://orcid.org/0009-0009-1663-1003	0.95
-CHMO:0000995	mobile phase	skos:exactMatch	AFRL:0000011	mobile phase	semapv:ManualMappingCuration    semapv:ManualMappingCuration    	https://orcid.org/0009-0009-1663-1003	0.95
+CHMO:0000995	mobile phase	skos:exactMatch	AFRL:0000011	mobile phase	semapv:ManualMappingCuration	https://orcid.org/0009-0009-1663-1003	0.95
 CHMO:0000994	chromatographic phase	skos:exactMatch	AFRL:0000126	chromatographic phase	semapv:ManualMappingCuration    	https://orcid.org/0009-0009-1663-1003	0.95
 CHMO:0000991	liquid mobile phase	skos:exactMatch	AFRL:0000339	liquid mobile phase	semapv:ManualMappingCuration    	https://orcid.org/0009-0009-1663-1003	0.95
 CHMO:0000992	supercritical mobile phase	skos:exactMatch	AFRL:0000165	supercritical mobile phase	semapv:ManualMappingCuration    	https://orcid.org/0009-0009-1663-1003	0.95
