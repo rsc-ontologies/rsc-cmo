@@ -22,7 +22,7 @@
 #mapping_date: 08-2025
 #issue_tracker:
 #license: https://creativecommons.org/publicdomain/zero/1.0/
-subject_id	subject_label	predicate_id	object_id	object_label	mapping_justification	author_id	confidence	comment
+subject_id	subject_label	predicate_id	object_id	object_label	mapping_justification	author_id	confidence	comment	predicate_modifier
 CHMO:0000801	absorption spectrum	skos:exactMatch	AFR:0000222	absorption spectrum	semapv:ManualMappingCuration	https://orcid.org/  	0.95
 CHMO:0000831	action spectrum	skos:exactMatch	AFR:0000319	action spectrum 	semapv:ManualMappingCuration    	https://orcid.org/0009-0009-1663-1003   	0.95
 CHMO:0002822    	amount concentration    	skos:exactMatch 	AFR:0002006 	amount concentration    	semapv:ManualMappingCuration    	https://orcid.org/0009-0009-1663-1003   	0.95
