@@ -244,7 +244,7 @@ CHMO:0001707	sonication	skos:exactMatch	AFP:0002293	sonication	semapv:ManualMapp
 CHMO:0001465	annealing	skos:exactMatch	AFP:0000792	annealing	semapv:ManualMappingCuration	https://orcid.org/0009-0009-1663-1003	0.95
 CHMO:0002771	concentrating	skos:exactMatch	AFP:0002185	concentrating	semapv:ManualMappingCuration	https://orcid.org/0009-0009-1663-1003	0.95
 CHMO:0002772	degassing	skos:exactMatch	AFP:0000593	degassing	semapv:ManualMappingCuration	https://orcid.org/0009-0009-1663-1003	0.95
-CHMO:0000166	light scattering	skos:exactMatch	AFP:0003594	scattering	semapv:ManualMappingCuration	https://orcid.org/0009-0009-1663-1003	0.8
+CHMO:0000166	light scattering	skos:exactMatch	AFP:0001462	scattering spectroscopy	semapv:ManualMappingCuration	https://orcid.org/0009-0009-1663-1003	0.8
 CHMO:0000997	chromatography column	skos:exactMatch	AFE:0000217	chromatography column	semapv:ManualMappingCuration	https://orcid.org/0009-0009-1663-1003	0.95
 CHMO:0002740	analyte role	skos:exactMatch	AFRL:0000127	analyte role	semapv:ManualMappingCuration	https://orcid.org/0009-0009-1663-1003	0.8
 CHMO:0002423	melting curve	skos:exactMatch	AFR:0000297	melting curve	semapv:ManualMappingCuration	https://orcid.org/0009-0009-1663-1003	0.75
