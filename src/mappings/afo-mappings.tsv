@@ -89,59 +89,59 @@ CHMO:0001804	ultraviolet spectrometer	skos:exactMatch	AFE:0000554	ultraviolet sp
 CHMO:0002072	ultraviolet-visible-near infrared spectrometer	skos:exactMatch	AFE:0000800	ultraviolet-visible-near infrared spectrometer	semapv:ManualMappingCuration	https://orcid.org/0009-0009-1663-1003	0.95
 CHMO:0001287	calorimeter	skos:exactMatch	AFE:0000023	calorimeter	semapv:ManualMappingCuration	https://orcid.org/0009-0009-1663-1003	0.95
 CHMO:0002200	differential scanning calorimeter	skos:exactMatch	AFE:0000733	differential scanning calorimeter	semapv:ManualMappingCuration	https://orcid.org/0009-0009-1663-1003	0.95
-CHMO:0002478	gas chromatograph	skos:exactMatch	AFE:0000024	gas chromatograph	semapv:ManualMappingCuration	https://orcid.org/0009-0009-1663-1003	0.95
-CHMO:0002571	gel filtration chromatograph	skos:exactMatch	AFE:0000431	gel filtration chromatograph	semapv:ManualMappingCuration	https://orcid.org/0009-0009-1663-1003	0.95
-CHMO:0002677	coulometer	skos:exactMatch	AFE:0000855	coulometer	semapv:ManualMappingCuration	https://orcid.org/0009-0009-1663-1003	0.95
+CHMO:0002478	gas chromatograph	skos:exactMatch	AFE:0000024	gas chromatograph	semapv:ManualMappingCuration	https://orcid.org/0009-0009-1663-1003	1	CHMO definition was used & cited in AFO
+CHMO:0002571	gel filtration chromatograph	skos:exactMatch	AFE:0000431	gel filtration chromatograph	semapv:ManualMappingCuration	https://orcid.org/0009-0009-1663-1003	1	CHMO definition was used & cited in AFO
+CHMO:0002677	coulometer	skos:exactMatch	AFE:0000855	coulometer	semapv:ManualMappingCuration	https://orcid.org/0009-0009-1663-1003	1	CHMO definition was used & cited in AFO
 CHMO:0002680	electrochemical coulometer	skos:exactMatch	AFE:0000085	electrochemical coulometer	semapv:ManualMappingCuration	https://orcid.org/0009-0009-1663-1003	0.95
-CHMO:0002679	Karl–Fischer coulometer	skos:exactMatch	AFE:0000107	Karl–Fischer coulometer	semapv:ManualMappingCuration	https://orcid.org/0009-0009-1663-1003	0.95
-CHMO:0002740	analyte role	skos:exactMatch	AFRL:0000127	analyte role	semapv:ManualMappingCuration	https://orcid.org/0009-0009-1663-1003	0.95
+CHMO:0002679	Karl–Fischer coulometer	skos:exactMatch	AFE:0000107	Karl–Fischer coulometer	semapv:ManualMappingCuration	https://orcid.org/0009-0009-1663-1003	1	CHMO definition was used & cited in AFO
+CHMO:0002740	analyte role	skos:exactMatch	AFRL:0000127	analyte role	semapv:ManualMappingCuration	https://orcid.org/0009-0009-1663-1003	1	CHMO definition was used & cited in AFO
 CHMO:0002744	matrix role	skos:exactMatch	AFRL:0000547	matrix role	semapv:ManualMappingCuration	https://orcid.org/0009-0009-1663-1003	0.95
 CHMO:0000800	spectrum	skos:exactMatch	AFR:0000068	spectrum	semapv:ManualMappingCuration	https://orcid.org/0009-0009-1663-1003	0.95
-CHMO:0000799	electronic absorption spectrum	skos:exactMatch	AFR:0000514	electronic absorption spectrum	semapv:ManualMappingCuration	https://orcid.org/0009-0009-1663-1003	0.95
-CHMO:0000842	ultraviolet–visible spectrum	skos:exactMatch	AFR:0000360	ultraviolet–visible spectrum	semapv:ManualMappingCuration	https://orcid.org/0009-0009-1663-1003	0.95
-CHMO:0001124	ultraviolet–visible–near infrared spectrum	skos:exactMatch	AFR:0000066	ultraviolet–visible–near infrared spectrum	semapv:ManualMappingCuration	https://orcid.org/0009-0009-1663-1003	0.95
-CHMO:0001254	ultraviolet spectrum	skos:exactMatch	AFR:0000246	ultraviolet spectrum	semapv:ManualMappingCuration	https://orcid.org/0009-0009-1663-1003	0.95
-CHMO:0001959	visible spectrum	skos:exactMatch	AFR:0000317	visible spectrum	semapv:ManualMappingCuration	https://orcid.org/0009-0009-1663-1003	0.95
-CHMO:0000818	infrared spectrum	skos:exactMatch	AFR:0000251	infrared spectrum	semapv:ManualMappingCuration	https://orcid.org/0009-0009-1663-1003	0.95
-CHMO:0000803	alpha-particle spectrum	skos:exactMatch	AFR:0000057	alpha-particle spectrum	semapv:ManualMappingCuration	https://orcid.org/0009-0009-1663-1003	0.95
-CHMO:0000804	atomic spectrum	skos:exactMatch	AFR:0000289	atomic spectrum	semapv:ManualMappingCuration	https://orcid.org/0009-0009-1663-1003	0.95
-CHMO:0000805	beta-particle spectrum	skos:exactMatch	AFR:0000345	beta-particle spectrum	semapv:ManualMappingCuration	https://orcid.org/0009-0009-1663-1003	0.95
-CHMO:0000808	circular dichroism spectrum	skos:exactMatch	AFR:0000053	circular dichroism spectrum	semapv:ManualMappingCuration	https://orcid.org/0009-0009-1663-1003	0.95
-CHMO:0000810	electron energy-loss spectrum	skos:exactMatch	AFR:0000142	electron energy-loss spectrum	semapv:ManualMappingCuration	https://orcid.org/0009-0009-1663-1003	0.95
-CHMO:0000864	luminescence spectrum	skos:exactMatch	AFR:0000491	luminescence spectrum	semapv:ManualMappingCuration	https://orcid.org/0009-0009-1663-1003	0.95
-CHMO:0000815	fluorescence spectrum	skos:exactMatch	AFR:0000136	fluorescence emission spectrum	semapv:ManualMappingCuration	https://orcid.org/0009-0009-1663-1003	0.95
-CHMO:0000817	impedance spectrum	skos:exactMatch	AFR:0000369	impedance spectrum	semapv:ManualMappingCuration	https://orcid.org/0009-0009-1663-1003	0.95
-CHMO:0000820	microwave spectrum	skos:exactMatch	AFR:0000020	microwave spectrum	semapv:ManualMappingCuration	https://orcid.org/0009-0009-1663-1003	0.95
-CHMO:0000821	photoacoustic spectrum	skos:exactMatch	AFR:0000164	photoacoustic spectrum	semapv:ManualMappingCuration	https://orcid.org/0009-0009-1663-1003	0.95
-CHMO:0000822	photoelectron spectrum	skos:exactMatch	AFR:0000046	photoelectron spectrum	semapv:ManualMappingCuration	https://orcid.org/0009-0009-1663-1003	0.95
-CHMO:0000823	Raman spectrum	skos:exactMatch	AFR:0000519	Raman spectrum	semapv:ManualMappingCuration	https://orcid.org/0009-0009-1663-1003	0.95
-CHMO:0001066	incident photon conversion efficiency spectrum	skos:exactMatch	AFR:0000438	incident photon conversion efficiency spectrum	semapv:ManualMappingCuration	https://orcid.org/0009-0009-1663-1003	0.95
-CHMO:0000840	Mossbauer spectrum	skos:exactMatch	AFR:0000496	Mossbauer spectrum	semapv:ManualMappingCuration	https://orcid.org/0009-0009-1663-1003	0.95
-CHMO:0000854	Auger spectrum	skos:exactMatch	AFR:0000001	Auger spectrum	semapv:ManualMappingCuration	https://orcid.org/0009-0009-1663-1003	0.95
-CHMO:0000914	differential scanning calorimetry curve	skos:exactMatch	AFR:0000007	differential scanning calorimetry curve	semapv:ManualMappingCuration	https://orcid.org/0009-0009-1663-1003	0.95
-CHMO:0000918	flow curve	skos:exactMatch	AFR:0000336	flow curve	semapv:ManualMappingCuration	https://orcid.org/0009-0009-1663-1003	0.95
-CHMO:0000922	voltammogram	skos:exactMatch	AFR:0000070	voltammogram	semapv:ManualMappingCuration	https://orcid.org/0009-0009-1663-1003	0.95
+CHMO:0000799	electronic absorption spectrum	skos:exactMatch	AFR:0000514	electronic absorption spectrum	semapv:ManualMappingCuration	https://orcid.org/0009-0009-1663-1003	1	CHMO definition was used & cited in AFO
+CHMO:0000842	ultraviolet–visible spectrum	skos:exactMatch	AFR:0000360	ultraviolet–visible spectrum	semapv:ManualMappingCuration	https://orcid.org/0009-0009-1663-1003	1	CHMO definition was used & cited in AFO
+CHMO:0001124	ultraviolet–visible–near infrared spectrum	skos:exactMatch	AFR:0000066	ultraviolet–visible–near infrared spectrum	semapv:ManualMappingCuration	https://orcid.org/0009-0009-1663-1003	1	CHMO definition was used & cited in AFO
+CHMO:0001254	ultraviolet spectrum	skos:exactMatch	AFR:0000246	ultraviolet spectrum	semapv:ManualMappingCuration	https://orcid.org/0009-0009-1663-1003	1	CHMO definition was used & cited in AFO
+CHMO:0001959	visible spectrum	skos:exactMatch	AFR:0000317	visible spectrum	semapv:ManualMappingCuration	https://orcid.org/0009-0009-1663-1003	1	CHMO definition was used & cited in AFO
+CHMO:0000818	infrared spectrum	skos:exactMatch	AFR:0000251	infrared spectrum	semapv:ManualMappingCuration	https://orcid.org/0009-0009-1663-1003	1	CHMO definition was used & cited in AFO
+CHMO:0000803	alpha-particle spectrum	skos:exactMatch	AFR:0000057	alpha-particle spectrum	semapv:ManualMappingCuration	https://orcid.org/0009-0009-1663-1003	1	CHMO definition was used & cited in AFO
+CHMO:0000804	atomic spectrum	skos:exactMatch	AFR:0000289	atomic spectrum	semapv:ManualMappingCuration	https://orcid.org/0009-0009-1663-1003	1	CHMO definition was used & cited in AFO
+CHMO:0000805	beta-particle spectrum	skos:exactMatch	AFR:0000345	beta-particle spectrum	semapv:ManualMappingCuration	https://orcid.org/0009-0009-1663-1003	1	CHMO definition was used & cited in AFO
+CHMO:0000808	circular dichroism spectrum	skos:exactMatch	AFR:0000053	circular dichroism spectrum	semapv:ManualMappingCuration	https://orcid.org/0009-0009-1663-1003	1	CHMO definition was used & cited in AFO
+CHMO:0000810	electron energy-loss spectrum	skos:exactMatch	AFR:0000142	electron energy-loss spectrum	semapv:ManualMappingCuration	https://orcid.org/0009-0009-1663-1003	1	CHMO definition was used & cited in AFO
+CHMO:0000864	luminescence spectrum	skos:exactMatch	AFR:0000491	luminescence spectrum	semapv:ManualMappingCuration	https://orcid.org/0009-0009-1663-1003	1	CHMO definition was used & cited in AFO
+CHMO:0000815	fluorescence spectrum	skos:exactMatch	AFR:0000136	fluorescence emission spectrum	semapv:ManualMappingCuration	https://orcid.org/0009-0009-1663-1003	1	CHMO definition was used & cited in AFO
+CHMO:0000817	impedance spectrum	skos:exactMatch	AFR:0000369	impedance spectrum	semapv:ManualMappingCuration	https://orcid.org/0009-0009-1663-1003	1	CHMO definition was used & cited in AFO
+CHMO:0000820	microwave spectrum	skos:exactMatch	AFR:0000020	microwave spectrum	semapv:ManualMappingCuration	https://orcid.org/0009-0009-1663-1003	1	CHMO definition was used & cited in AFO
+CHMO:0000821	photoacoustic spectrum	skos:exactMatch	AFR:0000164	photoacoustic spectrum	semapv:ManualMappingCuration	https://orcid.org/0009-0009-1663-1003	1	CHMO definition was used & cited in AFO
+CHMO:0000822	photoelectron spectrum	skos:exactMatch	AFR:0000046	photoelectron spectrum	semapv:ManualMappingCuration	https://orcid.org/0009-0009-1663-1003	1	CHMO definition was used & cited in AFO
+CHMO:0000823	Raman spectrum	skos:exactMatch	AFR:0000519	Raman spectrum	semapv:ManualMappingCuration	https://orcid.org/0009-0009-1663-1003	1	CHMO definition was used & cited in AFO
+CHMO:0001066	incident photon conversion efficiency spectrum	skos:exactMatch	AFR:0000438	incident photon conversion efficiency spectrum	semapv:ManualMappingCuration	https://orcid.org/0009-0009-1663-1003	1	CHMO definition was used & cited in AFO
+CHMO:0000840	Mossbauer spectrum	skos:exactMatch	AFR:0000496	Mossbauer spectrum	semapv:ManualMappingCuration	https://orcid.org/0009-0009-1663-1003	1	CHMO definition was used & cited in AFO
+CHMO:0000854	Auger spectrum	skos:exactMatch	AFR:0000001	Auger spectrum	semapv:ManualMappingCuration	https://orcid.org/0009-0009-1663-1003	1	CHMO definition was used & cited in AFO
+CHMO:0000914	differential scanning calorimetry curve	skos:exactMatch	AFR:0000007	differential scanning calorimetry curve	semapv:ManualMappingCuration	https://orcid.org/0009-0009-1663-1003	1	CHMO definition was used & cited in AFO
+CHMO:0000918	flow curve	skos:exactMatch	AFR:0000336	flow curve	semapv:ManualMappingCuration	https://orcid.org/0009-0009-1663-1003	1	CHMO definition was used & cited in AFO
+CHMO:0000922	voltammogram	skos:exactMatch	AFR:0000070	voltammogram	semapv:ManualMappingCuration	https://orcid.org/0009-0009-1663-1003	1	CHMO definition was used & cited in AFO
 CHMO:0000937	reflectance spectrum	skos:exactMatch	AFR:0002281	reflectance spectrum	semapv:ManualMappingCuration	https://orcid.org/0009-0009-1663-1003	0.95
-CHMO:0001187	gas-phase electrophoretic mobility molecular analysis spectrum	skos:exactMatch	AFR:0000300	gas-phase electrophoretic mobility molecular analysis spectrum	semapv:ManualMappingCuration	https://orcid.org/0009-0009-1663-1003	0.95
-CHMO:0001992	adsorption-desorption isotherm	skos:exactMatch	AFR:0000166	adsorption-desorption isotherm	semapv:ManualMappingCuration	https://orcid.org/0009-0009-1663-1003	0.95
-CHMO:0002071	isothermal titration calorimetry curve	skos:exactMatch	AFR:0000091	isothermal titration calorimetry curve	semapv:ManualMappingCuration	https://orcid.org/0009-0009-1663-1003	0.95
-CHMO:0002115	oximetry spectrum	skos:exactMatch	AFR:0000323	oximetry spectrum	semapv:ManualMappingCuration	https://orcid.org/0009-0009-1663-1003	0.95
-CHMO:0002185	optical extinction spectrum	skos:exactMatch	AFR:0000284	optical extinction spectrum	semapv:ManualMappingCuration	https://orcid.org/0009-0009-1663-1003	0.95
-CHMO:0002331	inelastic tunnelling spectrum	skos:exactMatch	AFR:0000294	inelastic tunneling spectrum	semapv:ManualMappingCuration	https://orcid.org/0009-0009-1663-1003	0.95
+CHMO:0001187	gas-phase electrophoretic mobility molecular analysis spectrum	skos:exactMatch	AFR:0000300	gas-phase electrophoretic mobility molecular analysis spectrum	semapv:ManualMappingCuration	https://orcid.org/0009-0009-1663-1003	1	CHMO definition was used & cited in AFO
+CHMO:0001992	adsorption-desorption isotherm	skos:exactMatch	AFR:0000166	adsorption-desorption isotherm	semapv:ManualMappingCuration	https://orcid.org/0009-0009-1663-1003	1	CHMO definition was used & cited in AFO
+CHMO:0002071	isothermal titration calorimetry curve	skos:exactMatch	AFR:0000091	isothermal titration calorimetry curve	semapv:ManualMappingCuration	https://orcid.org/0009-0009-1663-1003	1	CHMO definition was used & cited in AFO
+CHMO:0002115	oximetry spectrum	skos:exactMatch	AFR:0000323	oximetry spectrum	semapv:ManualMappingCuration	https://orcid.org/0009-0009-1663-1003	1	CHMO definition was used & cited in AFO
+CHMO:0002185	optical extinction spectrum	skos:exactMatch	AFR:0000284	optical extinction spectrum	semapv:ManualMappingCuration	https://orcid.org/0009-0009-1663-1003	1	CHMO definition was used & cited in AFO
+CHMO:0002331	inelastic tunnelling spectrum	skos:exactMatch	AFR:0000294	inelastic tunneling spectrum	semapv:ManualMappingCuration	https://orcid.org/0009-0009-1663-1003	1	CHMO definition was used & cited in AFO
 CHMO:0002388	ion chromatogram	skos:exactMatch	AFR:0000443	ion chromatogram	semapv:ManualMappingCuration	https://orcid.org/0009-0009-1663-1003	0.95
-CHMO:0002391	selected ion chromatogram	skos:exactMatch	AFR:0000079	selected ion chromatogram	semapv:ManualMappingCuration	https://orcid.org/0009-0009-1663-1003	0.95
-CHMO:0002533	gel filtration chromatogram	skos:exactMatch	AFR:0000507	gel filtration chromatogram	semapv:ManualMappingCuration	https://orcid.org/0009-0009-1663-1003	0.95
-CHMO:0002573	size-exclusion chromatogram	skos:exactMatch	AFR:0000410	size-exclusion chromatogram	semapv:ManualMappingCuration	https://orcid.org/0009-0009-1663-1003	0.95
-CHMO:0002688	gas chromatogram	skos:exactMatch	AFR:0000132	gas chromatogram	semapv:ManualMappingCuration	https://orcid.org/0009-0009-1663-1003	0.95
-CHMO:0002502	Tauc plot	skos:exactMatch	AFR:0000373	Tauc plot	semapv:ManualMappingCuration	https://orcid.org/0009-0009-1663-1003	0.95
-CHMO:0001103	recorded image	skos:exactMatch	IAO:0000101	image	semapv:ManualMappingCuration	https://orcid.org/0009-0009-1663-1003	0.90
-CHMO:0001891	chemical map	skos:exactMatch	AFR:0000090	chemical map	semapv:ManualMappingCuration	https://orcid.org/0009-0009-1663-1003	0.95
-CHMO:0001910	structure data	skos:exactMatch	AFR:0000064	structure data	semapv:ManualMappingCuration	https://orcid.org/0009-0009-1663-1003	0.95
+CHMO:0002391	selected ion chromatogram	skos:exactMatch	AFR:0000079	selected ion chromatogram	semapv:ManualMappingCuration	https://orcid.org/0009-0009-1663-1003	1	CHMO definition was used & cited in AFO
+CHMO:0002533	gel filtration chromatogram	skos:exactMatch	AFR:0000507	gel filtration chromatogram	semapv:ManualMappingCuration	https://orcid.org/0009-0009-1663-1003	1	CHMO definition was used & cited in AFO
+CHMO:0002573	size-exclusion chromatogram	skos:exactMatch	AFR:0000410	size-exclusion chromatogram	semapv:ManualMappingCuration	https://orcid.org/0009-0009-1663-1003	1	CHMO definition was used & cited in AFO
+CHMO:0002688	gas chromatogram	skos:exactMatch	AFR:0000132	gas chromatogram	semapv:ManualMappingCuration	https://orcid.org/0009-0009-1663-1003	1	CHMO definition was used & cited in AFO
+CHMO:0002502	Tauc plot	skos:exactMatch	AFR:0000373	Tauc plot	semapv:ManualMappingCuration	https://orcid.org/0009-0009-1663-1003	1	CHMO definition was used & cited in AFO
+CHMO:0001103	recorded image	skos:narrowMatch	IAO:0000101	image	semapv:ManualMappingCuration	https://orcid.org/0009-0009-1663-1003	0.90
+CHMO:0001891	chemical map	skos:exactMatch	AFR:0000090	chemical map	semapv:ManualMappingCuration	https://orcid.org/0009-0009-1663-1003	1	CHMO definition was used & cited in AFO
+CHMO:0001910	structure data	skos:exactMatch	AFR:0000064	structure data	semapv:ManualMappingCuration	https://orcid.org/0009-0009-1663-1003	1	CHMO definition was used & cited in AFO
 CHMO:0002857	percentage enantiomer excess	skos:broadMatch	AFQ:0000220	enantiomeric excess	semapv:ManualMappingCuration	https://orcid.org/0009-0009-1663-1003	0.95
-CHMO:0000001	colorimetry	skos:exactMatch	AFP:0002309	colorimetry	semapv:ManualMappingCuration	https://orcid.org/0009-0009-1663-1003	0.95
-CHMO:0000010	conductometry	skos:exactMatch	AFP:0000525	conductometry	semapv:ManualMappingCuration	https://orcid.org/0009-0009-1663-1003	0.95
-CHMO:0000209	reflectometry	skos:exactMatch	AFP:0000229	reflectometry	semapv:ManualMappingCuration	https://orcid.org/0009-0009-1663-1003	0.95
 CHMO:0002860	diastereomeric excess	skos:exactMatch	AFQ:0000217	diastereomeric excess	semapv:ManualMappingCuration	https://orcid.org/0009-0009-1663-1003	1	This is not the same as in AFO it is a BFO:quality and in CHMO an IAO:data item	Not
+CHMO:0000001	colorimetry	skos:exactMatch	AFP:0002309	colorimetry	semapv:ManualMappingCuration	https://orcid.org/0009-0009-1663-1003	1	CHMO definition was used & cited in AFO
+CHMO:0000010	conductometry	skos:exactMatch	AFP:0000525	conductometry	semapv:ManualMappingCuration	https://orcid.org/0009-0009-1663-1003	1	CHMO definition was used & cited in AFO
+CHMO:0000209	reflectometry	skos:exactMatch	AFP:0000229	reflectometry	semapv:ManualMappingCuration	https://orcid.org/0009-0009-1663-1003	1	CHMO definition was used & cited in AFO
 CHMO:0000779	polarimetry	skos:exactMatch	AFP:0001134	polarimetry	semapv:ManualMappingCuration	https://orcid.org/0009-0009-1663-1003	0.95
 CHMO:0000232	electronic spectroscopy	skos:exactMatch	AFP:0001655	electronic spectroscopy	semapv:ManualMappingCuration	https://orcid.org/0009-0009-1663-1003	0.95
 CHMO:0000291	spectrophotometry	skos:exactMatch	AFP:0000266	spectrophotometry	semapv:ManualMappingCuration	https://orcid.org/0009-0009-1663-1003	0.95
