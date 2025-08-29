@@ -246,7 +246,6 @@ CHMO:0002771	concentrating	skos:exactMatch	AFP:0002185	concentrating	semapv:Manu
 CHMO:0002772	degassing	skos:exactMatch	AFP:0000593	degassing	semapv:ManualMappingCuration	https://orcid.org/0009-0009-1663-1003	0.95
 CHMO:0000166	light scattering	skos:exactMatch	AFP:0001462	scattering spectroscopy	semapv:ManualMappingCuration	https://orcid.org/0009-0009-1663-1003	0.8
 CHMO:0000997	chromatography column	skos:exactMatch	AFE:0000217	chromatography column	semapv:ManualMappingCuration	https://orcid.org/0009-0009-1663-1003	0.95
-CHMO:0002740	analyte role	skos:exactMatch	AFRL:0000127	analyte role	semapv:ManualMappingCuration	https://orcid.org/0009-0009-1663-1003	0.8
 CHMO:0002423	melting curve	skos:exactMatch	AFR:0000297	melting curve	semapv:ManualMappingCuration	https://orcid.org/0009-0009-1663-1003	0.75
 CHMO:0002752	chromatography column length	skos:exactMatch	AFR:0002029	chromatography column length	semapv:ManualMappingCuration	https://orcid.org/0009-0009-1663-1003	0.95
 CHMO:0001215	magnetic resonance method	skos:narrowMatch	AFP:0002211	magnetic resonance assay	semapv:ManualMappingCuration	https://orcid.org/0009-0009-1663-1003	0.8
@@ -259,7 +258,6 @@ CHMO:0000996	gaseous mobile phase	skos:exactMatch	AFRL:0000164	gaseous mobile ph
 CHMO:0002776	stir bar	skos:exactMatch	AFE:0000199	stir bar	semapv:ManualMappingCuration	https://orcid.org/0009-0009-1663-1003	0.8	semapv:LexicalMatching based on human lexical mapping
 CHMO:0002793	sensor	skos:exactMatch	AFE:0002184	sensor	semapv:ManualMappingCuration	https://orcid.org/0009-0009-1663-1003	0.9
 CHMO:0002232	spectrophotometer	skos:exactMatch	AFE:0000185	spectrophotometer	semapv:ManualMappingCuration	https://orcid.org/0009-0009-1663-1003	0.9
-CHMO:0002740	analyte role	skos:exactMatch	AFRL:0000127	analyte role	semapv:ManualMappingCuration	https://orcid.org/0009-0009-1663-1003	0.9
 CHMO:0001215	magnetic resonance method	skos:exactMatch	AFP:0002211	magnetic resonance method	semapv:ManualMappingCuration	https://orcid.org/0009-0009-1663-1003	0.9
 CHMO:0001247	charge transport measurement method	skos:exactMatch	AFP:0001227	charge transport measurement	semapv:ManualMappingCuration	https://orcid.org/0009-0009-1663-1003	0.9
 CHMO:0001718	evaporative light scattering detection	skos:exactMatch	AFP:0003837	evaporative light scattering detection	semapv:ManualMappingCuration	https://orcid.org/0009-0009-1663-1003	0.9
