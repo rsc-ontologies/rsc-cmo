@@ -254,7 +254,7 @@ CHMO:0001487	decomposition	skos:exactMatch	AFFN:0000185	to decompose	semapv:Manu
 CHMO:0002823	volume concentration	skos:exactMatch	AFR:0002110	volume concentration	semapv:ManualMappingCuration	https://orcid.org/0009-0009-1663-1003	0.9
 CHMO:0002824	number concentration	skos:exactMatch	AFR:0002935	number concentration	semapv:ManualMappingCuration	https://orcid.org/0009-0009-1663-1003	0.9
 CHMO:0000996	gaseous mobile phase	skos:exactMatch	AFRL:0000164	gaseous mobile phase	semapv:ManualMappingCuration	https://orcid.org/0009-0009-1663-1003	0.9
-CHMO:0002776	stir bar	skos:exactMatch	AFE:0000199	stir bar	semapv:ManualMappingCuration	https://orcid.org/0009-0009-1663-1003	0.8	semapv:LexicalMatching based on human lexical mapping
+CHMO:0002776	stir bar	skos:exactMatch	AFE:0000199	stir bar	semapv:ManualMappingCuration	https://orcid.org/0009-0009-1663-1003	0.8	 based on manual human semapv:LexicalMatching of the labels, as there is no definition in CHMO
 CHMO:0002793	sensor	skos:exactMatch	AFE:0002184	sensor	semapv:ManualMappingCuration	https://orcid.org/0009-0009-1663-1003	0.9
 CHMO:0002232	spectrophotometer	skos:exactMatch	AFE:0000185	spectrophotometer	semapv:ManualMappingCuration	https://orcid.org/0009-0009-1663-1003	0.9
 CHMO:0001215	magnetic resonance method	skos:exactMatch	AFP:0002211	magnetic resonance assay	semapv:ManualMappingCuration	https://orcid.org/0009-0009-1663-1003	0.9
