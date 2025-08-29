@@ -37,8 +37,8 @@ CHMO:0002820	concentration	skos:exactMatch	AFR:0002036	concentration	semapv:Manu
 CHMO:0000832	conversion spectrum	skos:exactMatch	AFR:0000044	conversion spectrum	semapv:ManualMappingCuration    	https://orcid.org/0009-0009-1663-1003   	1	CHMO definition was used & cited in AFO
 CHMO:0002858	diastereomeric ratio	skos:exactMatch	AFQ:0000218	diastereomeric ratio	semapv:ManualMappingCuration    	https://orcid.org/0009-0009-1663-1003     	1	This is not the same as in AFO it is a BFO:quality and in CHMO an IAO:data item	Not
 CHMO:0000684	differential scanning calorimetry	skos:exactMatch	AFP:0002124	differential scanning calorimetry	semapv:ManualMappingCuration    	https://orcid.org/0009-0009-1663-1003   	0.95
-CHMO:0002856	enantiomer excess	skos:exactMatch	AFQ:0000220	enantiomer excess	semapv:ManualMappingCuration    	https://orcid.org/0009-0009-1663-1003    	0.95
-CHMO:0002859	enantiomeric ratio	skos:exactMatch	AFQ:0000219	enantiomeric ratio	semapv:ManualMappingCuration    	https://orcid.org/0009-0009-1663-1003 	0.95
+CHMO:0002856	enantiomer excess	skos:exactMatch	AFQ:0000220	enantiomer excess	semapv:ManualMappingCuration    	https://orcid.org/0009-0009-1663-1003    	1	This is not the same as in AFO it is a BFO:quality and in CHMO an IAO:data item	Not
+CHMO:0002859	enantiomeric ratio	skos:exactMatch	AFQ:0000219	enantiomeric ratio	semapv:ManualMappingCuration    	https://orcid.org/0009-0009-1663-1003 	1	This is not the same as in AFO it is a BFO:quality and in CHMO an IAO:data item	Not
 CHMO:0000834	excitation-emission spectrum	skos:exactMatch	AFR:0000412	excitation-emission spectrum	semapv:ManualMappingCuration    	https://orcid.org/0009-0009-1663-1003 	0.95
 CHMO:0000960	ion source	skos:exactMatch	AFE:0000004	ion source	semapv:ManualMappingCuration    	https://orcid.org/0009-0009-1663-1003	0.95
 CHMO:0002821	mass concentration	skos:exactMatch	AFR:0001661	mass concentration	semapv:ManualMappingCuration    	https://orcid.org/0009-0009-1663-1003 	0.95
@@ -138,10 +138,10 @@ CHMO:0001103	recorded image	skos:exactMatch	IAO:0000101	image	semapv:ManualMappi
 CHMO:0001891	chemical map	skos:exactMatch	AFR:0000090	chemical map	semapv:ManualMappingCuration	https://orcid.org/0009-0009-1663-1003	0.95
 CHMO:0001910	structure data	skos:exactMatch	AFR:0000064	structure data	semapv:ManualMappingCuration	https://orcid.org/0009-0009-1663-1003	0.95
 CHMO:0002857	percentage enantiomer excess	skos:broadMatch	AFQ:0000220	enantiomeric excess	semapv:ManualMappingCuration	https://orcid.org/0009-0009-1663-1003	0.95
-CHMO:0002860	diastereomeric excess	skos:exactMatch	AFQ:0000217	diastereomeric excess	semapv:ManualMappingCuration	https://orcid.org/0009-0009-1663-1003	0.95
 CHMO:0000001	colorimetry	skos:exactMatch	AFP:0002309	colorimetry	semapv:ManualMappingCuration	https://orcid.org/0009-0009-1663-1003	0.95
 CHMO:0000010	conductometry	skos:exactMatch	AFP:0000525	conductometry	semapv:ManualMappingCuration	https://orcid.org/0009-0009-1663-1003	0.95
 CHMO:0000209	reflectometry	skos:exactMatch	AFP:0000229	reflectometry	semapv:ManualMappingCuration	https://orcid.org/0009-0009-1663-1003	0.95
+CHMO:0002860	diastereomeric excess	skos:exactMatch	AFQ:0000217	diastereomeric excess	semapv:ManualMappingCuration	https://orcid.org/0009-0009-1663-1003	1	This is not the same as in AFO it is a BFO:quality and in CHMO an IAO:data item	Not
 CHMO:0000779	polarimetry	skos:exactMatch	AFP:0001134	polarimetry	semapv:ManualMappingCuration	https://orcid.org/0009-0009-1663-1003	0.95
 CHMO:0000232	electronic spectroscopy	skos:exactMatch	AFP:0001655	electronic spectroscopy	semapv:ManualMappingCuration	https://orcid.org/0009-0009-1663-1003	0.95
 CHMO:0000291	spectrophotometry	skos:exactMatch	AFP:0000266	spectrophotometry	semapv:ManualMappingCuration	https://orcid.org/0009-0009-1663-1003	0.95
