@@ -34,8 +34,8 @@ CHMO:0002932	cathode	skos:exactMatch	AFE:0000532	cathode	semapv:ManualMappingCur
 CHMO:0002387	chromatogram	skos:exactMatch	AFR:0000236	chromatogram	semapv:ManualMappingCuration    	https://orcid.org/0009-0009-1663-1003   	0.95
 CHMO:0002477	chromatograph	skos:exactMatch	AFE:0000392	chromatograph	semapv:ManualMappingCuration    	https://orcid.org/0009-0009-1663-1003   	1	CHMO definition was used & cited in AFO
 CHMO:0002820	concentration	skos:exactMatch	AFR:0002036	concentration	semapv:ManualMappingCuration    	https://orcid.org/0009-0009-1663-1003   	0.95
-CHMO:0002858	diastereomeric ratio	skos:exactMatch	AFQ:0000218	diastereomeric ratio	semapv:ManualMappingCuration    	https://orcid.org/0009-0009-1663-1003     	0.95
 CHMO:0000832	conversion spectrum	skos:exactMatch	AFR:0000044	conversion spectrum	semapv:ManualMappingCuration    	https://orcid.org/0009-0009-1663-1003   	1	CHMO definition was used & cited in AFO
+CHMO:0002858	diastereomeric ratio	skos:exactMatch	AFQ:0000218	diastereomeric ratio	semapv:ManualMappingCuration    	https://orcid.org/0009-0009-1663-1003     	1	This is not the same as in AFO it is a BFO:quality and in CHMO an IAO:data item	Not
 CHMO:0000684	differential scanning calorimetry	skos:exactMatch	AFP:0002124	differential scanning calorimetry	semapv:ManualMappingCuration    	https://orcid.org/0009-0009-1663-1003   	0.95
 CHMO:0002856	enantiomer excess	skos:exactMatch	AFQ:0000220	enantiomer excess	semapv:ManualMappingCuration    	https://orcid.org/0009-0009-1663-1003    	0.95
 CHMO:0002859	enantiomeric ratio	skos:exactMatch	AFQ:0000219	enantiomeric ratio	semapv:ManualMappingCuration    	https://orcid.org/0009-0009-1663-1003 	0.95
