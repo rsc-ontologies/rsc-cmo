@@ -142,28 +142,28 @@ CHMO:0002860	diastereomeric excess	skos:exactMatch	AFQ:0000217	diastereomeric ex
 CHMO:0000001	colorimetry	skos:exactMatch	AFP:0002309	colorimetry	semapv:ManualMappingCuration	https://orcid.org/0009-0009-1663-1003	1	CHMO definition was used & cited in AFO
 CHMO:0000010	conductometry	skos:exactMatch	AFP:0000525	conductometry	semapv:ManualMappingCuration	https://orcid.org/0009-0009-1663-1003	1	CHMO definition was used & cited in AFO
 CHMO:0000209	reflectometry	skos:exactMatch	AFP:0000229	reflectometry	semapv:ManualMappingCuration	https://orcid.org/0009-0009-1663-1003	1	CHMO definition was used & cited in AFO
-CHMO:0000779	polarimetry	skos:exactMatch	AFP:0001134	polarimetry	semapv:ManualMappingCuration	https://orcid.org/0009-0009-1663-1003	0.95
-CHMO:0000232	electronic spectroscopy	skos:exactMatch	AFP:0001655	electronic spectroscopy	semapv:ManualMappingCuration	https://orcid.org/0009-0009-1663-1003	0.95
-CHMO:0000291	spectrophotometry	skos:exactMatch	AFP:0000266	spectrophotometry	semapv:ManualMappingCuration	https://orcid.org/0009-0009-1663-1003	0.95
-CHMO:0000292	ultraviolet-visible spectrophotometry	skos:exactMatch	AFP:0000955	ultraviolet-visible spectrophotometry	semapv:ManualMappingCuration	https://orcid.org/0009-0009-1663-1003	0.95
-CHMO:0000293	differential optical absorption spectrophotometry	skos:exactMatch	AFP:0000872	differential optical absorption spectrophotometry	semapv:ManualMappingCuration	https://orcid.org/0009-0009-1663-1003	0.95
-CHMO:0000899	diffuse reflectance ultraviolet–visible spectrophotometry	skos:exactMatch	AFP:0000391	diffuse reflectance ultraviolet–visible spectrophotometry	semapv:ManualMappingCuration	https://orcid.org/0009-0009-1663-1003	0.95
-CHMO:0000294	reflectance ultraviolet-visible spectrophotometry	skos:exactMatch	AFP:0001106	reflectance ultraviolet-visible spectrophotometry	semapv:ManualMappingCuration	https://orcid.org/0009-0009-1663-1003	0.95
-CHMO:0001253	ultraviolet spectrophotometry	skos:exactMatch	AFP:0000896	ultraviolet spectrophotometry	semapv:ManualMappingCuration	https://orcid.org/0009-0009-1663-1003	0.95
-CHMO:0002590	visible spectrophotometry	skos:exactMatch	AFP:0001760	visible spectrophotometry	semapv:ManualMappingCuration	https://orcid.org/0009-0009-1663-1003	0.95
-CHMO:0000295	equimolar spectrophotometry	skos:exactMatch	AFP:0000813	equimolar spectrophotometry	semapv:ManualMappingCuration	https://orcid.org/0009-0009-1663-1003	0.95
-CHMO:0000792	ultraviolet-visible-near infrared spectrophotometry	skos:exactMatch	AFP:0002228	ultraviolet-visible-near infrared spectrophotometry	semapv:ManualMappingCuration	https://orcid.org/0009-0009-1663-1003	0.95
+CHMO:0000779	polarimetry	skos:exactMatch	AFP:0001134	polarimetry	semapv:ManualMappingCuration	https://orcid.org/0009-0009-1663-1003	1	CHMO definition was used & cited in AFO
+CHMO:0000232	electronic spectroscopy	skos:exactMatch	AFP:0001655	electronic spectroscopy	semapv:ManualMappingCuration	https://orcid.org/0009-0009-1663-1003	1	CHMO definition was used & cited in AFO
+CHMO:0000291	spectrophotometry	skos:exactMatch	AFP:0000266	spectrophotometry	semapv:ManualMappingCuration	https://orcid.org/0009-0009-1663-1003	1	CHMO definition was used & cited in AFO
+CHMO:0000292	ultraviolet-visible spectrophotometry	skos:exactMatch	AFP:0000955	ultraviolet-visible spectrophotometry	semapv:ManualMappingCuration	https://orcid.org/0009-0009-1663-1003	1	CHMO definition was used & cited in AF
+CHMO:0000293	differential optical absorption spectrophotometry	skos:exactMatch	AFP:0000872	differential optical absorption spectrophotometry	semapv:ManualMappingCuration	https://orcid.org/0009-0009-1663-1003	1	CHMO definition was used & cited in AFO
+CHMO:0000899	diffuse reflectance ultraviolet–visible spectrophotometry	skos:exactMatch	AFP:0000391	diffuse reflectance ultraviolet–visible spectrophotometry	semapv:ManualMappingCuration	https://orcid.org/0009-0009-1663-1003	1	CHMO definition was used & cited in AFO
+CHMO:0000294	reflectance ultraviolet-visible spectrophotometry	skos:exactMatch	AFP:0001106	reflectance ultraviolet-visible spectrophotometry	semapv:ManualMappingCuration	https://orcid.org/0009-0009-1663-1003	1	CHMO definition was used & cited in AFO
+CHMO:0001253	ultraviolet spectrophotometry	skos:exactMatch	AFP:0000896	ultraviolet spectrophotometry	semapv:ManualMappingCuration	https://orcid.org/0009-0009-1663-1003	1	CHMO definition was used & cited in AFO
+CHMO:0002590	visible spectrophotometry	skos:exactMatch	AFP:0001760	visible spectrophotometry	semapv:ManualMappingCuration	https://orcid.org/0009-0009-1663-1003	1	CHMO definition was used & cited in AFO
+CHMO:0000295	equimolar spectrophotometry	skos:exactMatch	AFP:0000813	equimolar spectrophotometry	semapv:ManualMappingCuration	https://orcid.org/0009-0009-1663-1003	1	CHMO definition was used & cited in AFO
+CHMO:0000792	ultraviolet-visible-near infrared spectrophotometry	skos:exactMatch	AFP:0002228	ultraviolet-visible-near infrared spectrophotometry	semapv:ManualMappingCuration	https://orcid.org/0009-0009-1663-1003	1	CHMO definition was used & cited in AFO
 CHMO:0000504	quadrupole mass spectrometry	skos:exactMatch	AFP:0001109	quadrupole mass spectrometry	semapv:ManualMappingCuration	https://orcid.org/0009-0009-1663-1003	0.95
 CHMO:0000571	selective ion monitoring	skos:exactMatch	AFP:0002437	selected ion monitoring	semapv:ManualMappingCuration	https://orcid.org/0009-0009-1663-1003	0.95
-CHMO:0000628	vibrational spectroscopy	skos:exactMatch	AFP:0000780	vibrational spectroscopy	semapv:ManualMappingCuration	https://orcid.org/0009-0009-1663-1003	0.95
-CHMO:0000630	infrared absorption spectroscopy	skos:exactMatch	AFP:0002016	infrared absorption spectroscopy	semapv:ManualMappingCuration	https://orcid.org/0009-0009-1663-1003	0.95
-CHMO:0000638	near-infrared absorption spectroscopy	skos:exactMatch	AFP:0002421	near infrared absorption spectroscopy	semapv:ManualMappingCuration	https://orcid.org/0009-0009-1663-1003	0.95
-CHMO:0002290	infrared transmission spectroscopy	skos:exactMatch	AFP:0002276	infrared transmission spectroscopy	semapv:ManualMappingCuration	https://orcid.org/0009-0009-1663-1003	0.95
-CHMO:0002414	scattering spectroscopy	skos:exactMatch	AFP:0001462	scattering spectroscopy	semapv:ManualMappingCuration	https://orcid.org/0009-0009-1663-1003	0.95
-CHMO:0000656	Raman spectroscopy	skos:exactMatch	AFP:0000047	Raman spectroscopy	semapv:ManualMappingCuration	https://orcid.org/0009-0009-1663-1003	0.95
-CHMO:0000665	Fourier transform Raman spectroscopy	skos:exactMatch	AFP:0001062	Fourier transform Raman spectroscopy	semapv:ManualMappingCuration	https://orcid.org/0009-0009-1663-1003	0.95
-CHMO:0002078	scanning calorimetry	skos:exactMatch	AFP:0001936	scanning calorimetry	semapv:ManualMappingCuration	https://orcid.org/0009-0009-1663-1003	0.95
-CHMO:0000915	rheometry	skos:exactMatch	AFP:0000840	rheometry	semapv:ManualMappingCuration	https://orcid.org/0009-0009-1663-1003	0.95
+CHMO:0000628	vibrational spectroscopy	skos:exactMatch	AFP:0000780	vibrational spectroscopy	semapv:ManualMappingCuration	https://orcid.org/0009-0009-1663-1003	1	CHMO definition was used & cited in AFO
+CHMO:0000630	infrared absorption spectroscopy	skos:exactMatch	AFP:0002016	infrared absorption spectroscopy	semapv:ManualMappingCuration	https://orcid.org/0009-0009-1663-1003	1	CHMO definition was used & cited in AFO
+CHMO:0000638	near-infrared absorption spectroscopy	skos:exactMatch	AFP:0002421	near infrared absorption spectroscopy	semapv:ManualMappingCuration	https://orcid.org/0009-0009-1663-1003	1	CHMO definition was used & cited in AFO
+CHMO:0002290	infrared transmission spectroscopy	skos:exactMatch	AFP:0002276	infrared transmission spectroscopy	semapv:ManualMappingCuration	https://orcid.org/0009-0009-1663-1003	1	CHMO definition was used & cited in AFO
+CHMO:0002414	scattering spectroscopy	skos:exactMatch	AFP:0001462	scattering spectroscopy	semapv:ManualMappingCuration	https://orcid.org/0009-0009-1663-1003	1	CHMO definition was used & cited in AFO
+CHMO:0000656	Raman spectroscopy	skos:exactMatch	AFP:0000047	Raman spectroscopy	semapv:ManualMappingCuration	https://orcid.org/0009-0009-1663-1003	1	CHMO definition was used & cited in AFO
+CHMO:0000665	Fourier transform Raman spectroscopy	skos:exactMatch	AFP:0001062	Fourier transform Raman spectroscopy	semapv:ManualMappingCuration	https://orcid.org/0009-0009-1663-1003	1	CHMO definition was used & cited in AFO
+CHMO:0002078	scanning calorimetry	skos:exactMatch	AFP:0001936	scanning calorimetry	semapv:ManualMappingCuration	https://orcid.org/0009-0009-1663-1003	1	CHMO definition was used & cited in AFO
+CHMO:0000915	rheometry	skos:exactMatch	AFP:0000840	rheometry	semapv:ManualMappingCuration	https://orcid.org/0009-0009-1663-1003	1	CHMO definition was used & cited in AFO
 CHMO:0000924	magnetometry	skos:exactMatch	AFP:0001266	magnetometry	semapv:ManualMappingCuration	https://orcid.org/0009-0009-1663-1003	0.95
 CHMO:0000927	velocimetry	skos:exactMatch	AFP:0002434	velocimetry	semapv:ManualMappingCuration	https://orcid.org/0009-0009-1663-1003	0.95
 CHMO:0001082	osmometry	skos:exactMatch	AFP:0000620	osmometry	semapv:ManualMappingCuration	https://orcid.org/0009-0009-1663-1003	0.95
