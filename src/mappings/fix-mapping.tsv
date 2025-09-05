@@ -20,7 +20,7 @@ subject_id	subject_label	predicate_id	object_id	object_label	mapping_justificati
 CHMO:0000003	electrochemical analysis	skos:exactMatch	FIX:0000764	electroanalytical method	semapv:ManualMappingCuration	https://orcid.org/0009-0009-1663-1003	0.8
 CHMO:0000011	high-frequency conductometry	skos:exactMatch	FIX:0000773	high frequency conductometry	semapv:ManualMappingCuration	https://orcid.org/0009-0009-1663-1003	0.8
 CHMO:0000056	Raman microscopy	skos:exactMatch	FIX:0000697	Raman imaging	semapv:ManualMappingCuration	https://orcid.org/0009-0009-1663-1003	0.8
-CHMO:0000057	luminescence detection	skos:exactMatch	FIX:0000427	chemiluminescence method	semapv:ManualMappingCuration	https://orcid.org/0009-0009-1663-1003	0.8
+CHMO:0000057	luminescence detection	skos:broadMatch	FIX:0000427	chemiluminescence method	semapv:ManualMappingCuration	https://orcid.org/0009-0009-1663-1003	0.8
 CHMO:0000067	microscopy	skos:exactMatch	FIX:0000005	microscopy	semapv:ManualMappingCuration	https://orcid.org/0009-0009-1663-1003	0.8
 CHMO:0000068	electron microscopy	skos:exactMatch	FIX:0000051	electron microscopy	semapv:ManualMappingCuration	https://orcid.org/0009-0009-1663-1003	0.8
 CHMO:0000073	scanning electron microscopy	skos:exactMatch	FIX:0000124	scanning electron microscopy	semapv:ManualMappingCuration	https://orcid.org/0009-0009-1663-1003	0.8
@@ -100,11 +100,11 @@ CHMO:0000036	differential pulse polarography	skos:exactMatch	FIX:0000813	differe
 CHMO:0000037	normal pulse polarography	skos:exactMatch	FIX:0000812	normal pulse polarography	semapv:ManualMappingCuration	https://orcid.org/0009-0009-1663-1003	0.8
 CHMO:0001016	gas-liquid chromatography	skos:exactMatch	FIX:0000631	gas-liquid chromatography	semapv:ManualMappingCuration	https://orcid.org/0009-0009-1663-1003	0.8
 CHMO:0000039	tast polarography	skos:exactMatch	FIX:0000795	tast polarography	semapv:ManualMappingCuration	https://orcid.org/0009-0009-1663-1003	0.8
-CHMO:0000040	square-wave voltammetry	skos:exactMatch	FIX:0000816	square-wave polarography	semapv:ManualMappingCuration	https://orcid.org/0009-0009-1663-1003	0.8
+CHMO:0000040	square-wave voltammetry	skos:broadMatch	FIX:0000816	square-wave polarography	semapv:ManualMappingCuration	https://orcid.org/0009-0009-1663-1003	0.8
 CHMO:0000050	infrared microscopy	skos:exactMatch	FIX:0000583	infrared imaging	semapv:ManualMappingCuration	https://orcid.org/0009-0009-1663-1003	0.8
 CHMO:0000052	near-infrared microscopy	skos:exactMatch	FIX:0000699	near-infrared imaging	semapv:ManualMappingCuration	https://orcid.org/0009-0009-1663-1003	0.8
 CHMO:0000055	secondary ion mass spectrometry imaging	skos:exactMatch	FIX:0000960	SIMS microscopy	semapv:ManualMappingCuration	https://orcid.org/0009-0009-1663-1003	0.8
-CHMO:0000060	fluorescence detection	skos:exactMatch	FIX:0000812	fluorescence method	semapv:ManualMappingCuration	https://orcid.org/0009-0009-1663-1003	0.8
+CHMO:0000060	fluorescence detection	skos:exactMatch	FIX:0000421	fluorescence method	semapv:ManualMappingCuration	https://orcid.org/0009-0009-1663-1003	0.8
 CHMO:0000088	fluorescence laser scanning microscopy	skos:exactMatch	FIX:0000421	laser scanning fluorescence microscopy	semapv:ManualMappingCuration	https://orcid.org/0009-0009-1663-1003	0.8
 CHMO:0000090	multi-photon laser scanning microscopy	skos:exactMatch	FIX:0000383	multiphoton laser scanning microscopy	semapv:ManualMappingCuration	https://orcid.org/0009-0009-1663-1003	0.8
 CHMO:0000112	scanning probe microscopy	skos:exactMatch	FIX:0000121	scanning probe microscopy	semapv:ManualMappingCuration	https://orcid.org/0009-0009-1663-1003	0.8
@@ -221,12 +221,12 @@ CHMO:0000748	pulsed electron nuclear double resonance spectroscopy	skos:exactMat
 CHMO:0000749	continuous-wave electron nuclear double resonance spectroscopy	skos:exactMatch	FIX:0000039	continuous-wave ENDOR	semapv:ManualMappingCuration	https://orcid.org/0009-0009-1663-1003	0.8
 CHMO:0000761	confocal fluorescence correlation spectroscopy	skos:exactMatch	FIX:0000379	confocal fluorescence correlation spectroscopy	semapv:ManualMappingCuration	https://orcid.org/0009-0009-1663-1003	0.8
 CHMO:0000763	attenuated total reflectance Fourier transform infrared spectroscopy	skos:exactMatch	FIX:0000644	attenuated total reflectance Fourier transform infrared spectrometry	semapv:ManualMappingCuration	https://orcid.org/0009-0009-1663-1003	0.8
-CHMO:0000773	photoluminescence spectroscopy	skos:exactMatch	FIX:0000235	photoluminescencence spectroscopy	semapv:ManualMappingCuration	https://orcid.org/0009-0009-1663-1003	0.8
+CHMO:0000773	photoluminescence spectroscopy	skos:exactMatch	FIX:0000235	photoluminescence spectroscopy	semapv:ManualMappingCuration	https://orcid.org/0009-0009-1663-1003	0.8
 CHMO:0000774	transverse relaxation optimised spectroscopy	skos:exactMatch	FIX:0000565	transverse relaxation optimized spectroscopy	semapv:ManualMappingCuration	https://orcid.org/0009-0009-1663-1003	0.8
 CHMO:0000776	linear dichroism spectroscopy	skos:exactMatch	FIX:0000228	linear dichroism	semapv:ManualMappingCuration	https://orcid.org/0009-0009-1663-1003	0.8
 CHMO:0000785	optical rotatory dispersion	skos:exactMatch	FIX:0000045	optical rotatory dispersion spectroscopy	semapv:ManualMappingCuration	https://orcid.org/0009-0009-1663-1003	0.8
 CHMO:0000786	129Xe nuclear magnetic resonance spectroscopy	skos:exactMatch	FIX:0000139	xenon-129 magnetic resonance spectroscopy	semapv:ManualMappingCuration	https://orcid.org/0009-0009-1663-1003	0.8
-CHMO:0000787	197Au nuclear magnetic resonance spectroscopy	skos:exactMatch	FIX:0000749	gold-197 magnetic resonance spectroscopyy	semapv:ManualMappingCuration	https://orcid.org/0009-0009-1663-1003	0.8
+CHMO:0000787	197Au nuclear magnetic resonance spectroscopy	skos:exactMatch	FIX:0000749	gold-197 magnetic resonance spectroscopy	semapv:ManualMappingCuration	https://orcid.org/0009-0009-1663-1003	0.8
 CHMO:0000788	119Sn nuclear magnetic resonance spectroscopy	skos:exactMatch	FIX:0000741	tin-119 magnetic resonance spectroscopy	semapv:ManualMappingCuration	https://orcid.org/0009-0009-1663-1003	0.8
 CHMO:0000896	rotational-echo double-resonance spectroscopy	skos:exactMatch	FIX:0000973	rotational-echo double-resonance spectroscopy	semapv:ManualMappingCuration	https://orcid.org/0009-0009-1663-1003	0.8
 CHMO:0000909	polarisation inversion and spin exchange at the magic angle	skos:exactMatch	FIX:0001006	polarization inversion spin exchange at the magic angle	semapv:ManualMappingCuration	https://orcid.org/0009-0009-1663-1003	0.8
@@ -326,7 +326,6 @@ CHMO:0002295	electron-induced photoelectron spectroscopy	skos:exactMatch	FIX:000
 CHMO:0002297	electron-induced X-ray emission spectroscopy	skos:exactMatch	FIX:0000682	electron-induced X-ray emission spectroscopy	semapv:ManualMappingCuration	https://orcid.org/0009-0009-1663-1003	0.8
 CHMO:0002298	proton-induced X-ray emission spectroscopy	skos:exactMatch	FIX:0000102	proton-induced X-ray emission spectroscopy	semapv:ManualMappingCuration	https://orcid.org/0009-0009-1663-1003	0.8
 CHMO:0002299	phosphorescence detection	skos:exactMatch	FIX:0000426	phosphorescence method	semapv:ManualMappingCuration	https://orcid.org/0009-0009-1663-1003	0.8
-CHMO:0002300	thermoluminescence detection	skos:exactMatch		thermoluminescence method	semapv:ManualMappingCuration	https://orcid.org/0009-0009-1663-1003	0.8
 CHMO:0002300	thermoluminescence detection	skos:exactMatch	FIX:0000429	thermoluminescence method	semapv:ManualMappingCuration	https://orcid.org/0009-0009-1663-1003	0.8
 CHMO:0002301	13C–13C correlation spectroscopy	skos:exactMatch	FIX:0000438	13C–13C correlation spectroscopy	semapv:ManualMappingCuration	https://orcid.org/0009-0009-1663-1003	0.8
 CHMO:0002302	reversed-phase chromatography	skos:exactMatch	FIX:0000620	reversed-phase chromatography	semapv:ManualMappingCuration	https://orcid.org/0009-0009-1663-1003	0.8
@@ -391,7 +390,7 @@ CHMO:0002519	two-photon laser scanning microscopy	skos:exactMatch	FIX:0000382	tw
 CHMO:0002520	single-photon laser scanning microscopy	skos:exactMatch	FIX:0000381	single-photon laser scanning fluorescence microscopy	semapv:ManualMappingCuration	https://orcid.org/0009-0009-1663-1003	0.8
 CHMO:0002537	coulometric titration	skos:exactMatch	FIX:0000781	coulometric titration	semapv:ManualMappingCuration	https://orcid.org/0009-0009-1663-1003	0.8
 CHMO:0002555	triple-resonance spectroscopy	skos:exactMatch	FIX:0000153	triple resonance spectroscopy	semapv:ManualMappingCuration	https://orcid.org/0009-0009-1663-1003	0.8
-CHMO:0002556	HNCO	skos:exactMatch	FIX:0000154	FIX:0000154	semapv:ManualMappingCuration	https://orcid.org/0009-0009-1663-1003	0.8
+CHMO:0002556	HNCO	skos:exactMatch	FIX:0000154	HNCO experiment	semapv:ManualMappingCuration	https://orcid.org/0009-0009-1663-1003	0.8
 CHMO:0002557	HNCA	skos:exactMatch	FIX:0000155	HNCA experiment	semapv:ManualMappingCuration	https://orcid.org/0009-0009-1663-1003	0.8
 CHMO:0002558	HNCOCA	skos:exactMatch	FIX:0000156	HN(CO)CA experiment	semapv:ManualMappingCuration	https://orcid.org/0009-0009-1663-1003	0.8
 CHMO:0002559	three-dimensional nuclear Overhauser spectroscopy-heteronuclear single quantum coherence	skos:exactMatch	FIX:0000151	3D NOESY-HSQC	semapv:ManualMappingCuration	https://orcid.org/0009-0009-1663-1003	0.8
@@ -449,7 +448,7 @@ CHMO:0000313	electron probe X-ray microanalysis	skos:exactMatch	FIX:0000674	elec
 CHMO:0000255	flame atomic emission spectroscopy	skos:exactMatch	FIX:0000928	flame atomic emission spectroscopy	semapv:ManualMappingCuration	https://orcid.org/0009-0009-1663-1003	0.8
 CHMO:0000255	flame atomic emission spectroscopy	skos:broadMatch	FIX:0000935	spark method	semapv:ManualMappingCuration	https://orcid.org/0009-0009-1663-1003	0.8
 CHMO:0000291	spectrophotometry	skos:narrowtMatch	FIX:0000943	molecular electronic spectroscopy	semapv:ManualMappingCuration	https://orcid.org/0009-0009-1663-1003	0.8
-CHMO:0000291	spectrophotometry	skos:exactMatchskos:exactMatch	FIX:0000011	molecular electronic absorption spectroscopy	semapv:ManualMappingCuration	https://orcid.org/0009-0009-1663-1003	0.8
+CHMO:0000291	spectrophotometry	skos:exactMatch	FIX:0000011	molecular electronic absorption spectroscopy	semapv:ManualMappingCuration	https://orcid.org/0009-0009-1663-1003	0.8
 CHMO:0000307	X-ray emission spectroscopy	skos:exactMatch	FIX:0000100	X-ray emission spectroscopy	semapv:ManualMappingCuration	https://orcid.org/0009-0009-1663-1003	0.8
 CHMO:0000307	X-ray emission spectroscopy	skos:narrowtMatch	FIX:0000673	X-ray fluorescence spectroscopy	semapv:ManualMappingCuration	https://orcid.org/0009-0009-1663-1003	0.8
 CHMO:0000309	energy-dispersive X-ray emission spectroscopy	skos:exactMatch	FIX:0000104	energy-dispersive spectroscopy	semapv:ManualMappingCuration	https://orcid.org/0009-0009-1663-1003	0.8
