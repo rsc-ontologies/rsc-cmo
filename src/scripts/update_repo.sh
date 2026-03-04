@@ -1,4 +1,4 @@
-echo "This (experimental) update script will create a new repo according to your config file. It will:" 
+echo "This (experimental) update script will create a new repo according to your config file. It will:"
 echo "(1) overwrite your repositories Makefile, ODK sparql queries (your custom queries wont be touched) and docker wrapper (run.sh)."
 echo "(2) and add missing files, if any."
 
