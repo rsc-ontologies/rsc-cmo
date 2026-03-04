@@ -6,7 +6,7 @@
 ## Module for ontology: ms
 # Using ROBOT extract MIREOT here, as CHMO only reuses one class from MS
 
-$(IMPORTDIR)/ms_import.owl: $(MIRRORDIR)/ms.owl $(IMPORTDIR)/ms_terms.txt
+$(IMPORTDIR)/ms_import.owl: $(IMPORTDIR)/ms_terms.txt
 	if [ $(IMP) = true ]; then $(ROBOT) query -i $< --update ../sparql/preprocess-module.ru \
 		extract -T $(IMPORTDIR)/ms_terms.txt --copy-ontology-annotations true --force true \
 		--upper-terms $(IMPORTDIR)/ms_terms.txt --lower-terms $(IMPORTDIR)/ms_terms.txt \
@@ -29,7 +29,7 @@ $(IMPORTDIR)/ms_import.owl: $(MIRRORDIR)/ms.owl $(IMPORTDIR)/ms_terms.txt
 # and classes used in these, which is quite a time consuming task, but needed, as ROBOT extract pulls in too much 
 # and the CHEBI module would otherwise be too big to load. 
  
-$(IMPORTDIR)/chebi_import.owl: $(MIRRORDIR)/chebi.owl $(IMPORTDIR)/chebi_terms.txt
+$(IMPORTDIR)/chebi_import.owl: $(IMPORTDIR)/chebi_terms.txt
 	if [ $(IMP) = true ] && [ $(IMP_LARGE) = true ]; then $(ROBOT) \
 	    filter -i $< -T $(IMPORTDIR)/chebi_terms.txt --signature true --select "annotations self" \
 	        --exclude-term http://purl.obolibrary.org/obo/CHEBI_24431 \
@@ -43,7 +43,7 @@ $(IMPORTDIR)/chebi_import.owl: $(MIRRORDIR)/chebi.owl $(IMPORTDIR)/chebi_terms.t
 ## We need to use the ODK default ROBOT 'extract' method plus 'filter' in here to remove out-of-scope terms that 
 ## get also pulled in. And we remove the NCBITaxon intermediates between OBI:organism and NCBITaxon:Homo Sapiens.
 
-$(IMPORTDIR)/obi_import.owl: $(MIRRORDIR)/obi.owl $(IMPORTDIR)/obi_terms.txt
+$(IMPORTDIR)/obi_import.owl: $(IMPORTDIR)/obi_terms.txt
 	if [ $(IMP) = true ]; then $(ROBOT) query -i $< --update ../sparql/preprocess-module.ru \
 		extract -T $(IMPORTDIR)/obi_terms.txt --copy-ontology-annotations true --force true \
 		    --individuals include --method BOT \
