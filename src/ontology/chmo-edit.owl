@@ -35661,18 +35661,18 @@ AnnotationAssertion(oboInOwl:id obo:CHMO_0002887 "CHMO:0002887")
 AnnotationAssertion(rdfs:label obo:CHMO_0002887 "dispersive solid-phase microextraction")
 SubClassOf(obo:CHMO_0002887 obo:CHMO_0001586)
 
-# Class: obo:CHMO_0002888 (imunoaffinity microextraction)
+# Class: obo:CHMO_0002888 (immunoaffinity microextraction)
 
 AnnotationAssertion(Annotation(oboInOwl:hasDbXref "ISBN:9780080554259") obo:IAO_0000115 obo:CHMO_0002888 "Microextraction using an antibody where the specificity is related to the specificity of the antibody to the compound of interest.")
 AnnotationAssertion(oboInOwl:id obo:CHMO_0002888 "CHMO:0002888")
-AnnotationAssertion(rdfs:label obo:CHMO_0002888 "imunoaffinity microextraction")
+AnnotationAssertion(rdfs:label obo:CHMO_0002888 "immunoaffinity microextraction")
 SubClassOf(obo:CHMO_0002888 obo:CHMO_0002806)
 
-# Class: obo:CHMO_0002889 (imunoaffinity chromatography)
+# Class: obo:CHMO_0002889 (immunoaffinity chromatography)
 
 AnnotationAssertion(Annotation(oboInOwl:hasDbXref "https://orcid.org/0000-0001-5985-7429") obo:IAO_0000115 obo:CHMO_0002889 "Affinity chromatography where the separation is caused by differing antibody-ligand interactions.")
 AnnotationAssertion(oboInOwl:id obo:CHMO_0002889 "CHMO:0002889")
-AnnotationAssertion(rdfs:label obo:CHMO_0002889 "imunoaffinity chromatography")
+AnnotationAssertion(rdfs:label obo:CHMO_0002889 "immunoaffinity chromatography")
 SubClassOf(obo:CHMO_0002889 obo:CHMO_0001006)
 
 # Class: obo:CHMO_0002890 (sequential injection chromatography)
