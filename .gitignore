@@ -1,4 +1,6 @@
-/.idea
+# ODK-managed rules, do not modify
+# If you need to add your own ignore rules, you may do so below
+# the "End ODK-managed rules" marker at the end of this file.
 .DS_Store
 semantic.cache
 bin/
@@ -7,8 +9,24 @@ bin/
 *.tmp.obo
 *.tmp.owl
 *.tmp.json
+*-relation-graph.tsv.gz
+.template.db
 
 .github/token.txt
+
+/chmo.owl
+/chmo.obo
+/chmo.json
+/chmo.db
+/chmo-base.*
+/chmo-basic.*
+/chmo-full.*
+/chmo-simple.*
+/chmo-simple-non-classified.*
+/mappings/
+/patterns/
+/reports/
+/subsets/
 
 src/ontology/mirror
 src/ontology/mirror/*
@@ -17,6 +35,7 @@ src/ontology/reports/*
 src/ontology/chmo.owl
 src/ontology/chmo.obo
 src/ontology/chmo.json
+src/ontology/chmo.db
 src/ontology/chmo-base.*
 src/ontology/chmo-basic.*
 src/ontology/chmo-full.*
@@ -30,6 +49,7 @@ src/ontology/ontologyterms.txt
 src/ontology/simple_seed.txt
 src/ontology/patterns
 src/ontology/merged-chmo-edit.owl
+src/ontology/chmo-edit.properties
 
 src/ontology/target/
 src/ontology/tmp/*
@@ -45,3 +65,14 @@ src/patterns/data/**/*.ofn
 src/patterns/data/**/*.txt
 src/patterns/pattern_owl_seed.txt
 src/patterns/all_pattern_terms.txt
+
+# End of ODK-managed rules
+/.idea
+
+
+
+
+
+
+
+

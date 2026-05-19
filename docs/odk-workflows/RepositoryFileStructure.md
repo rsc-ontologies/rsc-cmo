@@ -17,20 +17,18 @@ These are the current imports in CHMO
 | Import | URL | Type |
 | ------ | --- | ---- |
 | bfo | http://purl.obolibrary.org/obo/bfo.owl | mirror |
-| ro | http://purl.obolibrary.org/obo/ro.owl | None |
+| ro | http://purl.obolibrary.org/obo/ro.owl | slme |
 | omo | http://purl.obolibrary.org/obo/omo.owl | mirror |
-| iao | http://purl.obolibrary.org/obo/iao.owl | None |
+| iao | http://purl.obolibrary.org/obo/iao.owl | slme |
 | obi | http://purl.obolibrary.org/obo/obi.owl | custom |
-| obcs | http://purl.obolibrary.org/obo/obcs.owl | None |
+| obcs | http://purl.obolibrary.org/obo/obcs.owl | slme |
 | ms | http://purl.obolibrary.org/obo/ms.owl | custom |
 | chebi | http://purl.obolibrary.org/obo/chebi.owl | custom |
-| pato | http://purl.obolibrary.org/obo/pato.owl | None |
-
+| pato | http://purl.obolibrary.org/obo/pato.owl | slme |
 ## Components
 Components, in contrast to imports, are considered full members of the ontology. This means that any axiom in a component is also included in the ontology base - which means it is considered _native_ to the ontology. While this sounds complicated, consider this: conceptually, no component should be part of more than one ontology. If that seems to be the case, we are most likely talking about an import. Components are often not needed for ontologies, but there are some use cases:
 
 1. There is an automated process that generates and re-generates a part of the ontology
 2. A part of the ontology is managed in ROBOT templates
 3. The expressivity of the component is higher than the format of the edit file. For example, people still choose to manage their ontology in OBO format (they should not) missing out on a lot of owl features. They may choose to manage logic that is beyond OBO in a specific OWL component.
-
 
