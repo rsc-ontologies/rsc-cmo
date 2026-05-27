@@ -7,8 +7,8 @@ Prefix(rdfs:=<http://www.w3.org/2000/01/rdf-schema#>)
 
 
 Ontology(<http://purl.obolibrary.org/obo/chmo/imports/chebi_import.owl>
-<http://purl.obolibrary.org/obo/chmo/releases/2025-10-21/imports/chebi_import.owl>
-Annotation(owl:versionInfo "2025-10-21")
+<http://purl.obolibrary.org/obo/chmo/releases/2026-05-27/imports/chebi_import.owl>
+Annotation(owl:versionInfo "2026-05-27")
 
 Declaration(Class(<http://purl.obolibrary.org/obo/CHEBI_23367>))
 Declaration(Class(<http://purl.obolibrary.org/obo/CHEBI_23377>))
@@ -36,14 +36,9 @@ Declaration(Class(<http://purl.obolibrary.org/obo/CHEBI_60004>))
 Declaration(Class(<http://purl.obolibrary.org/obo/CHEBI_60027>))
 Declaration(ObjectProperty(<http://purl.obolibrary.org/obo/BFO_0000051>))
 Declaration(AnnotationProperty(<http://purl.obolibrary.org/obo/IAO_0000115>))
-Declaration(AnnotationProperty(<http://purl.obolibrary.org/obo/IAO_0000231>))
-Declaration(AnnotationProperty(<http://purl.obolibrary.org/obo/IAO_0100001>))
 Declaration(AnnotationProperty(<http://purl.obolibrary.org/obo/chebi/INN>))
 Declaration(AnnotationProperty(<http://purl.obolibrary.org/obo/chebi/IUPAC_NAME>))
 Declaration(AnnotationProperty(<http://purl.obolibrary.org/obo/chebi/3_STAR>))
-Declaration(AnnotationProperty(<http://purl.org/dc/terms/description>))
-Declaration(AnnotationProperty(<http://purl.org/dc/terms/license>))
-Declaration(AnnotationProperty(<http://purl.org/dc/terms/title>))
 Declaration(AnnotationProperty(<http://www.geneontology.org/formats/oboInOwl#SubsetProperty>))
 Declaration(AnnotationProperty(<http://www.geneontology.org/formats/oboInOwl#SynonymTypeProperty>))
 Declaration(AnnotationProperty(<http://www.geneontology.org/formats/oboInOwl#hasAlternativeId>))
@@ -67,10 +62,6 @@ Declaration(AnnotationProperty(<https://w3id.org/chemrof/smiles_string>))
 #   Annotation Properties
 ############################
 
-# Annotation Property: <http://purl.obolibrary.org/obo/IAO_0000115> (definition)
-
-AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/IAO_0000115> "definition")
-
 # Annotation Property: <http://purl.obolibrary.org/obo/chebi/INN> (<http://purl.obolibrary.org/obo/chebi/INN>)
 
 SubAnnotationPropertyOf(<http://purl.obolibrary.org/obo/chebi/INN> <http://www.geneontology.org/formats/oboInOwl#SynonymTypeProperty>)
@@ -82,30 +73,6 @@ SubAnnotationPropertyOf(<http://purl.obolibrary.org/obo/chebi/IUPAC_NAME> <http:
 # Annotation Property: <http://purl.obolibrary.org/obo/chebi/3_STAR> (<http://purl.obolibrary.org/obo/chebi/3_STAR>)
 
 SubAnnotationPropertyOf(<http://purl.obolibrary.org/obo/chebi/3_STAR> <http://www.geneontology.org/formats/oboInOwl#SubsetProperty>)
-
-# Annotation Property: <http://www.geneontology.org/formats/oboInOwl#SynonymTypeProperty> (synonym_type_property)
-
-AnnotationAssertion(rdfs:label <http://www.geneontology.org/formats/oboInOwl#SynonymTypeProperty> "synonym_type_property")
-
-# Annotation Property: <http://www.geneontology.org/formats/oboInOwl#hasAlternativeId> (has_alternative_id)
-
-AnnotationAssertion(rdfs:label <http://www.geneontology.org/formats/oboInOwl#hasAlternativeId> "has_alternative_id")
-
-# Annotation Property: <http://www.geneontology.org/formats/oboInOwl#hasDbXref> (database_cross_reference)
-
-AnnotationAssertion(rdfs:label <http://www.geneontology.org/formats/oboInOwl#hasDbXref> "database_cross_reference")
-
-# Annotation Property: <http://www.geneontology.org/formats/oboInOwl#hasExactSynonym> (has_exact_synonym)
-
-AnnotationAssertion(rdfs:label <http://www.geneontology.org/formats/oboInOwl#hasExactSynonym> "has_exact_synonym")
-
-# Annotation Property: <http://www.geneontology.org/formats/oboInOwl#hasRelatedSynonym> (has_related_synonym)
-
-AnnotationAssertion(rdfs:label <http://www.geneontology.org/formats/oboInOwl#hasRelatedSynonym> "has_related_synonym")
-
-# Annotation Property: <http://www.geneontology.org/formats/oboInOwl#hasSynonymType> (has_synonym_type)
-
-AnnotationAssertion(rdfs:label <http://www.geneontology.org/formats/oboInOwl#hasSynonymType> "has_synonym_type")
 
 
 ############################
