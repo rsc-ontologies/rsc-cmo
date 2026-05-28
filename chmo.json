@@ -19,9 +19,9 @@
         "val" : "Chemical Methods Ontology"
       }, {
         "pred" : "http://www.w3.org/2002/07/owl#versionInfo",
-        "val" : "2026-05-27"
+        "val" : "2026-05-28"
       } ],
-      "version" : "http://purl.obolibrary.org/obo/chmo/releases/2026-05-27/chmo.json"
+      "version" : "http://purl.obolibrary.org/obo/chmo/releases/2026-05-28/chmo.json"
     },
     "nodes" : [ {
       "id" : "http://purl.obolibrary.org/obo/BFO_0000001",
