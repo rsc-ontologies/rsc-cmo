@@ -17,5 +17,5 @@
 #mapping_provider: http://purl.obolibrary.org/obo/chmo.owl
 #mapping_date: 2025-05-01
 #license: https://creativecommons.org/publicdomain/zero/1.0/
-subject_id	subject_label	predicate_id	object_id	object_label	mapping_justification	author_id	confidence	comment
+subject_id	subject_label	predicate_id	object_id	object_label	mapping_justification	author_id	confidence
 CHMO:0002914	absorption of material	skos:exactMatch	REX:0000188	absorption of material	semapv:ManualMappingCuration	orcid:0009-0009-1663-1003	0.8
