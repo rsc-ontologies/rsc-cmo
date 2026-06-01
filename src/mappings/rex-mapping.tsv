@@ -1,6 +1,9 @@
 #curie_map:
 #  CHMO: http://purl.obolibrary.org/obo/CHMO_
 #  REX: http://purl.obolibrary.org/obo/REX_
+#  orcid: https://orcid.org/
+#  semapv: https://w3id.org/semapv/vocab/
+#  skos: http://www.w3.org/2004/02/skos/core#
 #mapping_set_id: https://github.com/NFDI4Chem/rsc-cmo/blob/Add-definition-sources-and-mappings/src/mappings/rex-mappings.tsv
 #mapping_set_version: "1.0"
 #mapping_set_title: Mapping CHMO to REX

@@ -1,6 +1,9 @@
 #curie_map:
 #  CHMO: http://purl.obolibrary.org/obo/CHMO_
 #  WIKIDATA: https://www.wikidata.org/wiki/
+#  orcid: https://orcid.org/
+#  semapv: https://w3id.org/semapv/vocab/
+#  skos: http://www.w3.org/2004/02/skos/core#
 #mapping_set_id: https://github.com/NFDI4Chem/rsc-cmo/blob/Add-definition-sources-and-mappings/src/mappings/wikidata-mappings.tsv
 #mapping_set_version: "1.0"
 #mapping_set_title: Mapping CHMO to Wikidata
@@ -17,7 +20,7 @@
 subject_id	subject_label	predicate_id	object_id	object_label	mapping_justification	author_id	confidence	comment
 CHMO:0000801	CHMO:absorption spectrum	skos:exactMatch	Q865545	absorption spectrum	semapv:ManualMappingCuration	orcid:0009-0009-1663-1003	0.8
 CHMO:0000831	action spectrum	skos:exactMatch	Q4677424	action spectrum	semapv:ManualMappingCuration	orcid:0009-0009-1663-1003	0.8
-CHMO:0002822	amount concentration	skos:exactMatch	Q672821	"amount-of-substance concentration "	semapv:ManualMappingCuration	orcid:0009-0009-1663-1003	0.8
+CHMO:0002822	amount concentration	skos:exactMatch	Q672821	"amount-of-substance concentration"	semapv:ManualMappingCuration	orcid:0009-0009-1663-1003	0.8
 CHMO:0002467	analyte	skos:exactMatch	Q2282401	analyte	semapv:ManualMappingCuration	orcid:0009-0009-1663-1003	0.8
 CHMO:0002818	angle of optical rotation	skos:exactMatch	Q96323385	"angle of optical rotation"	semapv:ManualMappingCuration	orcid:0009-0009-1663-1003	0.8
 CHMO:0002931	anode	skos:exactMatch	Q181232	anode	semapv:ManualMappingCuration	orcid:0009-0009-1663-1003	0.8
@@ -44,7 +47,7 @@ CHMO:0000166	light scattering	skos:exactMatch	Q1004846	light scattering	semapv:M
 CHMO:0002801	limit of detection	skos:exactMatch	Q900165	detection limit	semapv:ManualMappingCuration	orcid:0009-0009-1663-1003	0.8
 CHMO:0002807	linear range	skos:exactMatch	Q6553497	linear range	semapv:ManualMappingCuration	orcid:0009-0009-1663-1003	0.8
 CHMO:0002350	liquid junction	skos:exactMatch	Q3820974	Liquid junction potential	semapv:ManualMappingCuration	orcid:0009-0009-1663-1003	0.8
-CHMO:0000147	low energy electron diffraction	skos:exactMatch	Q905977	"low-energy electron diffraction "	semapv:ManualMappingCuration	orcid:0009-0009-1663-1003	0.8
+CHMO:0000147	low energy electron diffraction	skos:exactMatch	Q905977	"low-energy electron diffraction"	semapv:ManualMappingCuration	orcid:0009-0009-1663-1003	0.8
 CHMO:0002821	mass concentration	skos:exactMatch	Q589446	"mass concentration"	semapv:ManualMappingCuration	orcid:0009-0009-1663-1003	0.8
 CHMO:0000982	mass spectrometer	skos:exactMatch	Q1327691	mass spectrometer	semapv:ManualMappingCuration	orcid:0009-0009-1663-1003	0.8
 CHMO:0000470	mass spectrometry	skos:exactMatch	Q180809	mass spectrometry	semapv:ManualMappingCuration	orcid:0009-0009-1663-1003	0.8
