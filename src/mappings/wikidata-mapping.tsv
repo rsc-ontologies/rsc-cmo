@@ -4,6 +4,7 @@
 #  orcid: https://orcid.org/
 #  semapv: https://w3id.org/semapv/vocab/
 #  skos: http://www.w3.org/2004/02/skos/core#
+#  obo: http://purl.obolibrary.org/obo/
 #mapping_set_id: https://github.com/NFDI4Chem/rsc-cmo/blob/Add-definition-sources-and-mappings/src/mappings/wikidata-mappings.tsv
 #mapping_set_version: "1.0"
 #mapping_set_title: Mapping CHMO to Wikidata

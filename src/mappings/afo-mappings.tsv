@@ -10,6 +10,7 @@
 #  orcid: https://orcid.org/
 #  semapv: https://w3id.org/semapv/vocab/
 #  skos: http://www.w3.org/2004/02/skos/core#
+#  obo: http://purl.obolibrary.org/obo/
 #mapping_set_id: https://github.com/rsc-ontologies/rsc-cmo/blob/master/src/mappings/afo-mappings.tsv
 #mapping_set_version: "1.0"
 #mapping_set_title: Mapping CHMO to the Allotrope Foundation Ontology Suite (AFO)
