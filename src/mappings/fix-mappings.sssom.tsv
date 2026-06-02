@@ -24,7 +24,6 @@
 #subject_source: obo:chmo
 subject_id	subject_label	predicate_id	object_id	object_label	mapping_justification	author_id	reviewer_id	confidence	comment
 CHMO:0000003	electrochemical analysis	skos:exactMatch	FIX:0000764	electroanalytical method	semapv:ManualMappingCuration	orcid:0009-0009-1663-1003	orcid:0000-0003-4423-4370	0.8	
-CHMO:0000003	electrochemical analysis	skos:exactMatch	FIX:0000764	electroanalytical method	semapv:ManualMappingCuration	orcid:0009-0009-1663-1003		0.8	
 CHMO:0000004	amperometry	skos:exactMatch	FIX:0000783	amperometry	semapv:ManualMappingCuration	orcid:0009-0009-1663-1003		0.8	
 CHMO:0000005	chrono-amperometry	skos:exactMatch	FIX:0000785	chronoamperometry	semapv:ManualMappingCuration	orcid:0009-0009-1663-1003		0.8	
 CHMO:0000011	high-frequency conductometry	skos:exactMatch	FIX:0000773	high frequency conductometry	semapv:ManualMappingCuration	orcid:0009-0009-1663-1003		0.8	
