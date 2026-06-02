@@ -23,608 +23,608 @@
 #mapping_set_version: '1.0'
 #object_source: bioregistry:wikidata
 #subject_source: obo:chmo
-subject_id	subject_label	predicate_id	object_id	object_label	mapping_justification	author_id	confidence	comment
-CHMO:0000001	colorimetry	skos:exactMatch	wikidata:Q2497892	colorimetry	semapv:ManualMappingCuration	orcid:0009-0009-1663-1003	0.8	
-CHMO:0000003	electrochemical analysis	skos:exactMatch	wikidata:Q1669557	electrochemical analysis	semapv:ManualMappingCuration	orcid:0009-0009-1663-1003	0.8	
-CHMO:0000004	amperometry	skos:exactMatch	wikidata:Q474536	amperometry	semapv:ManualMappingCuration	orcid:0009-0009-1663-1003	0.8	
-CHMO:0000010	conductometry	skos:exactMatch	wikidata:Q901180	conductometry	semapv:ManualMappingCuration	orcid:0009-0009-1663-1003	0.8	
-CHMO:0000012	coulometry	skos:exactMatch	wikidata:Q1136979	coulometry	semapv:ManualMappingCuration	orcid:0009-0009-1663-1003	0.8	
-CHMO:0000016	potentiometry	skos:exactMatch	wikidata:Q900632	potentiometry	semapv:ManualMappingCuration	orcid:0009-0009-1663-1003	0.8	
-CHMO:0000024	voltammetry	skos:exactMatch	wikidata:Q904093	voltammetry	semapv:ManualMappingCuration	orcid:0009-0009-1663-1003	0.8	
-CHMO:0000026	fast-scan cyclic voltammetry	skos:exactMatch	wikidata:Q17145186	fast-scan cyclic voltammetry	semapv:ManualMappingCuration	orcid:0009-0009-1663-1003	0.8	
-CHMO:0000027	hydrodynamic voltammetry	skos:exactMatch	wikidata:Q17028237	hydrodynamic voltammetry	semapv:ManualMappingCuration	orcid:0009-0009-1663-1003	0.8	
-CHMO:0000028	linear-sweep voltammetry	skos:exactMatch	wikidata:Q620700	linear sweep voltammetry	semapv:ManualMappingCuration	orcid:0009-0009-1663-1003	0.8	
-CHMO:0000030	differential pulse voltammetry	skos:exactMatch	wikidata:Q5275361	differential pulse voltammetry	semapv:ManualMappingCuration	orcid:0009-0009-1663-1003	0.8	
-CHMO:0000032	polarography	skos:exactMatch	wikidata:Q899397	polarography	semapv:ManualMappingCuration	orcid:0009-0009-1663-1003	0.8	
-CHMO:0000042	anodic stripping voltammetry	skos:exactMatch	wikidata:Q939328	anodic stripping voltammetry	semapv:ManualMappingCuration	orcid:0009-0009-1663-1003	0.8	
-CHMO:0000046	adsorptive stripping voltammetry	skos:exactMatch	wikidata:Q4685842	adsorptive stripping voltammetry	semapv:ManualMappingCuration	orcid:0009-0009-1663-1003	0.7	
-CHMO:0000047	cathodic stripping voltammetry	skos:exactMatch	wikidata:Q4016325	cathodic stripping voltammetry	semapv:ManualMappingCuration	orcid:0009-0009-1663-1003	0.8	
-CHMO:0000049	chemical imaging	skos:exactMatch	wikidata:Q509046	chemical imaging	semapv:ManualMappingCuration	orcid:0009-0009-1663-1003	0.8	
-CHMO:0000050	infrared microscopy	skos:exactMatch	wikidata:Q107616133	infrared microscopy	semapv:ManualMappingCuration	orcid:0009-0009-1663-1003	0.7	semapv:LexicalMatching
-CHMO:0000061	flow cytometry	skos:exactMatch	wikidata:Q1141429	flow cytometry	semapv:ManualMappingCuration	orcid:0009-0009-1663-1003	0.8	
-CHMO:0000062	Forster resonance energy transfer	skos:exactMatch	wikidata:Q367473	Förster resonance energy transfer	semapv:ManualMappingCuration	orcid:0009-0009-1663-1003	0.8	
-CHMO:0000063	bioluminescence resonance energy transfer	skos:exactMatch	wikidata:Q908291	bioluminescence resonance energy transfer	semapv:ManualMappingCuration	orcid:0009-0009-1663-1003	0.8	
-CHMO:0000065	fluorescence recovery after photobleaching	skos:exactMatch	wikidata:Q729923	fluorescence recovery after photobleaching	semapv:ManualMappingCuration	orcid:0009-0009-1663-1003	0.8	
-CHMO:0000067	microscopy	skos:exactMatch	wikidata:Q1074953	microscopy	semapv:ManualMappingCuration	orcid:0009-0009-1663-1003	0.8	
-CHMO:0000068	electron microscopy	skos:exactMatch	wikidata:Q68535882	electron microscopy	semapv:ManualMappingCuration	orcid:0009-0009-1663-1003	0.8	
-CHMO:0000073	scanning electron microscopy	skos:exactMatch	wikidata:Q115684492	scanning electron microscopy	semapv:ManualMappingCuration	orcid:0009-0009-1663-1003	0.8	
-CHMO:0000080	transmission electron microscopy	skos:exactMatch	wikidata:Q110779037	transmission electron microscopy	semapv:ManualMappingCuration	orcid:0009-0009-1663-1003	0.8	
-CHMO:0000082	energy-filtered transmission electron microscopy	skos:exactMatch	wikidata:Q907728	energy-filtered transmission electron microscopy	semapv:ManualMappingCuration	orcid:0009-0009-1663-1003	0.7	semapv:LexicalMatching
-CHMO:0000084	high-resolution transmission electron microscopy	skos:exactMatch	wikidata:Q874906	high-resolution transmission electron microscopy	semapv:ManualMappingCuration	orcid:0009-0009-1663-1003	0.8	
-CHMO:0000086	scanning transmission electron microscopy	skos:exactMatch	wikidata:Q874835	scanning transmission electron microscopy	semapv:ManualMappingCuration	orcid:0009-0009-1663-1003	0.8	
-CHMO:0000087	fluorescence microscopy	skos:exactMatch	wikidata:Q73490850	fluorescence microscopy	semapv:ManualMappingCuration	orcid:0009-0009-1663-1003	0.8	
-CHMO:0000089	confocal laser scanning microscopy	skos:exactMatch	wikidata:Q1118236	confocal laser scanning microscopy	semapv:ManualMappingCuration	orcid:0009-0009-1663-1003	0.8	
-CHMO:0000091	fluorescence lifetime imaging microscopy	skos:exactMatch	wikidata:Q1434196	fluorescence lifetime imaging microscopy	semapv:ManualMappingCuration	orcid:0009-0009-1663-1003	0.8	
-CHMO:0000102	optical microscopy	skos:exactMatch	wikidata:Q65788354	optical microscopy	semapv:ManualMappingCuration	orcid:0009-0009-1663-1003	0.8	
-CHMO:0000103	confocal microscopy	skos:exactMatch	wikidata:Q902045	confocal microscopy	semapv:ManualMappingCuration	orcid:0009-0009-1663-1003	0.8	
-CHMO:0000104	bright-field microscopy	skos:exactMatch	wikidata:Q905225	bright-field microscopy	semapv:ManualMappingCuration	orcid:0009-0009-1663-1003	0.7	semapv:LexicalMatching
-CHMO:0000107	differential interference contrast microscopy	skos:exactMatch	wikidata:Q899173	differential interference contrast microscopy	semapv:ManualMappingCuration	orcid:0009-0009-1663-1003	0.8	
-CHMO:0000110	phase contrast microscopy	skos:exactMatch	wikidata:Q898815	phase contrast microscopy	semapv:ManualMappingCuration	orcid:0009-0009-1663-1003	0.8	
-CHMO:0000112	scanning probe microscopy	skos:exactMatch	wikidata:Q907287	scanning probe microscopy	semapv:ManualMappingCuration	orcid:0009-0009-1663-1003	0.8	
-CHMO:0000113	atomic force microscopy	skos:exactMatch	wikidata:Q10329629	atomic force microscopy	semapv:ManualMappingCuration	orcid:0009-0009-1663-1003	0.8	
-CHMO:0000114	piezoresponse force microscopy	skos:exactMatch	wikidata:Q3312359	piezoresponse force microscopy	semapv:ManualMappingCuration	orcid:0009-0009-1663-1003	0.8	
-CHMO:0000115	magnetic force microscopy	skos:exactMatch	wikidata:Q2799395	magnetic force microscopy	semapv:ManualMappingCuration	orcid:0009-0009-1663-1003	0.8	
-CHMO:0000117	scanning capacitance microscopy	skos:exactMatch	wikidata:Q9337610	scanning capacitance microscopy	semapv:ManualMappingCuration	orcid:0009-0009-1663-1003	0.8	
-CHMO:0000120	scanning near-field optical microscopy	skos:exactMatch	wikidata:Q212656	scanning near-field optical microscopy	semapv:ManualMappingCuration	orcid:0009-0009-1663-1003	0.8	
-CHMO:0000127	scanning electrochemical microscopy	skos:exactMatch	wikidata:Q7430065	scanning electrochemical microscopy	semapv:ManualMappingCuration	orcid:0009-0009-1663-1003	0.8	
-CHMO:0000128	scanning ion conductance microscopy	skos:exactMatch	wikidata:Q7430068	scanning ion conductance microscopy	semapv:ManualMappingCuration	orcid:0009-0009-1663-1003	0.8	
-CHMO:0000131	scanning thermal microscopy	skos:exactMatch	wikidata:Q9357421	scanning thermal microscopy	semapv:ManualMappingCuration	orcid:0009-0009-1663-1003	0.7	semapv:LexicalMatching
-CHMO:0000132	scanning tunnelling microscopy	skos:exactMatch	wikidata:Q71251194	scanning tunnelling microscopy	semapv:ManualMappingCuration	orcid:0009-0009-1663-1003	0.7	semapv:LexicalMatching
-CHMO:0000135	profilometry	skos:exactMatch	wikidata:Q63919545	profilometry	semapv:ManualMappingCuration	orcid:0009-0009-1663-1003	0.8	
-CHMO:0000138	Fourier profilometry	skos:exactMatch	wikidata:Q5475797	Fourier profilometry	semapv:ManualMappingCuration	orcid:0009-0009-1663-1003	0.8	
-CHMO:0000142	electron diffraction	skos:exactMatch	wikidata:Q864822	electron diffraction	semapv:ManualMappingCuration	orcid:0009-0009-1663-1003	0.8	
-CHMO:0000143	electron backscatter diffraction	skos:exactMatch	wikidata:Q1326017	electron backscatter diffraction	semapv:ManualMappingCuration	orcid:0009-0009-1663-1003	0.8	
-CHMO:0000146	reflection high energy electron diffraction	skos:exactMatch	wikidata:Q455003	reflection high-energy electron diffraction	semapv:ManualMappingCuration	orcid:0009-0009-1663-1003	0.8	
-CHMO:0000147	low energy electron diffraction	skos:exactMatch	wikidata:Q905977	low-energy electron diffraction	semapv:ManualMappingCuration	orcid:0009-0009-1663-1003	0.8	
-CHMO:0000156	X-ray diffraction	skos:exactMatch	wikidata:Q12073245	X-ray diffraction	semapv:ManualMappingCuration	orcid:0009-0009-1663-1003	0.8	
-CHMO:0000159	single crystal X-ray diffraction	skos:exactMatch	wikidata:Q13575443	single crystal X-ray diffraction	semapv:ManualMappingCuration	orcid:0009-0009-1663-1003	0.8	
-CHMO:0000164	electron scattering	skos:exactMatch	wikidata:Q1327107	electron scattering	semapv:ManualMappingCuration	orcid:0009-0009-1663-1003	0.8	
-CHMO:0000166	light scattering	skos:exactMatch	wikidata:Q1004846	light scattering	semapv:ManualMappingCuration	orcid:0009-0009-1663-1003	0.8	
-CHMO:0000167	dynamic light scattering	skos:exactMatch	wikidata:Q896108	dynamic light scattering	semapv:ManualMappingCuration	orcid:0009-0009-1663-1003	0.8	
-CHMO:0000180	static light scattering	skos:exactMatch	wikidata:Q7604173	static light scattering	semapv:ManualMappingCuration	orcid:0009-0009-1663-1003	0.8	
-CHMO:0000181	neutron scattering	skos:exactMatch	wikidata:Q1451740	neutron scattering	semapv:ManualMappingCuration	orcid:0009-0009-1663-1003	0.8	
-CHMO:0000184	small-angle neutron scattering	skos:exactMatch	wikidata:Q4165337	small-angle neutron scattering	semapv:ManualMappingCuration	orcid:0009-0009-1663-1003	0.8	
-CHMO:0000193	neutron backscattering	skos:exactMatch	wikidata:Q12183998	neutron backscattering	semapv:ManualMappingCuration	orcid:0009-0009-1663-1003	0.8	
-CHMO:0000194	neutron time-of-flight scattering	skos:exactMatch	wikidata:Q7003121	neutron time-of-flight scattering	semapv:ManualMappingCuration	orcid:0009-0009-1663-1003	0.8	
-CHMO:0000195	triple-axis neutron scattering	skos:exactMatch	wikidata:Q7003127	triple-axis neutron scattering	semapv:ManualMappingCuration	orcid:0009-0009-1663-1003	0.7	semapv:LexicalMatching
-CHMO:0000197	spin-echo small angle neutron scattering	skos:exactMatch	wikidata:Q57341078	spin-echo small angle neutron scattering	semapv:ManualMappingCuration	orcid:0009-0009-1663-1003	0.7	semapv:LexicalMatching
-CHMO:0000202	resonant inelastic X-ray scattering	skos:exactMatch	wikidata:Q7315745	resonant inelastic X-ray scattering	semapv:ManualMappingCuration	orcid:0009-0009-1663-1003	0.7	semapv:LexicalMatching
-CHMO:0000204	small-angle X-ray scattering	skos:exactMatch	wikidata:Q3027679	small-angle X-ray scattering	semapv:ManualMappingCuration	orcid:0009-0009-1663-1003	0.7	semapv:LexicalMatching
-CHMO:0000207	wide-angle X-ray scattering	skos:exactMatch	wikidata:Q4165437	wide-angle X-ray scattering	semapv:ManualMappingCuration	orcid:0009-0009-1663-1003	0.8	
-CHMO:0000209	reflectometry	skos:exactMatch	wikidata:Q3454718	reflectometry	semapv:ManualMappingCuration	orcid:0009-0009-1663-1003	0.8	
-CHMO:0000210	neutron reflectometry	skos:exactMatch	wikidata:Q1981942	neutron reflectometry	semapv:ManualMappingCuration	orcid:0009-0009-1663-1003	0.7	semapv:LexicalMatching
-CHMO:0000223	ellipsometry	skos:exactMatch	wikidata:Q898774	ellipsometry	semapv:ManualMappingCuration	orcid:0009-0009-1663-1003	0.8	
-CHMO:0000228	spectroscopy	skos:exactMatch	wikidata:Q483666	spectroscopy	semapv:ManualMappingCuration	orcid:0009-0009-1663-1003	0.8	
-CHMO:0000230	alpha-particle spectroscopy	skos:exactMatch	wikidata:Q4118687	alpha-particle spectroscopy	semapv:ManualMappingCuration	orcid:0009-0009-1663-1003	0.8	
-CHMO:0000233	atomic spectroscopy	skos:exactMatch	wikidata:Q14068679	atomic spectroscopy	semapv:ManualMappingCuration	orcid:0009-0009-1663-1003	0.8	
-CHMO:0000234	atomic absorption spectroscopy	skos:exactMatch	wikidata:Q655346	atomic absorption spectroscopy	semapv:ManualMappingCuration	orcid:0009-0009-1663-1003	0.8	
-CHMO:0000239	graphite furnace atomic absorption spectrometry	skos:exactMatch	wikidata:Q2840139	graphite furnace atomic absorption spectrometry	semapv:ManualMappingCuration	orcid:0009-0009-1663-1003	0.7	semapv:LexicalMatching
-CHMO:0000251	atomic emission spectroscopy	skos:exactMatch	wikidata:Q186548	atomic emission spectroscopy	semapv:ManualMappingCuration	orcid:0009-0009-1663-1003	0.8	
-CHMO:0000258	laser-induced breakdown spectroscopy	skos:exactMatch	wikidata:Q2654990	laser-induced breakdown spectroscopy	semapv:ManualMappingCuration	orcid:0009-0009-1663-1003	0.7	semapv:LexicalMatching
-CHMO:0000267	inductively-coupled plasma atomic emission spectroscopy	skos:exactMatch	wikidata:Q261552	inductively-coupled plasma atomic emission spectroscopy	semapv:ManualMappingCuration	orcid:0009-0009-1663-1003	0.7	semapv:LexicalMatching
-CHMO:0000280	cold vapour atomic fluorescence spectroscopy	skos:exactMatch	wikidata:Q5142484	cold vapour atomic fluorescence spectroscopy	semapv:ManualMappingCuration	orcid:0009-0009-1663-1003	0.8	
-CHMO:0000287	fluorescence spectroscopy	skos:exactMatch	wikidata:Q1768467	fluorescence spectroscopy	semapv:ManualMappingCuration	orcid:0009-0009-1663-1003	0.8	
-CHMO:0000288	fluorescence correlation spectroscopy	skos:exactMatch	wikidata:Q902601	fluorescence correlation spectroscopy	semapv:ManualMappingCuration	orcid:0009-0009-1663-1003	0.8	
-CHMO:0000289	fluorescence cross-correlation spectroscopy	skos:exactMatch	wikidata:Q8564081	fluorescence cross-correlation spectroscopy	semapv:ManualMappingCuration	orcid:0009-0009-1663-1003	0.7	semapv:LexicalMatching
-CHMO:0000290	fluorescence anisotropy	skos:exactMatch	wikidata:Q903807	fluorescence anisotropy	semapv:ManualMappingCuration	orcid:0009-0009-1663-1003	0.8	
-CHMO:0000291	spectrophotometry	skos:exactMatch	wikidata:Q332084	spectrophotometry	semapv:ManualMappingCuration	orcid:0009-0009-1663-1003	0.8	
-CHMO:0000292	ultraviolet-visible spectrophotometry	skos:exactMatch	wikidata:Q898426	ultraviolet-visible spectrophotometry	semapv:ManualMappingCuration	orcid:0009-0009-1663-1003	0.8	
-CHMO:0000297	X-ray spectroscopy	skos:exactMatch	wikidata:Q901775	X-ray spectroscopy	semapv:ManualMappingCuration	orcid:0009-0009-1663-1003	0.8	
-CHMO:0000298	X-ray absorption spectroscopy	skos:exactMatch	wikidata:Q903103	X-ray absorption spectroscopy	semapv:ManualMappingCuration	orcid:0009-0009-1663-1003	0.7	semapv:LexicalMatching
-CHMO:0000300	extended X-ray absorption fine structure spectroscopy	skos:exactMatch	wikidata:Q908783	extended X-ray absorption fine structure spectroscopy	semapv:ManualMappingCuration	orcid:0009-0009-1663-1003	0.8	
-CHMO:0000307	X-ray emission spectroscopy	skos:exactMatch	wikidata:Q1532011	X-ray emission spectroscopy	semapv:ManualMappingCuration	orcid:0009-0009-1663-1003	0.8	
-CHMO:0000316	soft X-ray emission spectroscopy	skos:exactMatch	wikidata:Q7553963	soft X-ray emission spectroscopy	semapv:ManualMappingCuration	orcid:0009-0009-1663-1003	0.8	
-CHMO:0000322	liquid scintillation counting	skos:exactMatch	wikidata:Q4406785	liquid scintillation counting	semapv:ManualMappingCuration	orcid:0009-0009-1663-1003	0.8	
-CHMO:0000323	circular dichroism spectroscopy	skos:broadMatch	wikidata:Q110820905	circular dichroism spectroscopy	semapv:ManualMappingCuration	orcid:0009-0009-1663-1003	0.8	
-CHMO:0000328	electron spin resonance spectroscopy	skos:exactMatch	wikidata:Q73498072	electron spin resonance spectroscopy	semapv:ManualMappingCuration	orcid:0009-0009-1663-1003	0.8	
-CHMO:0000331	electron spectroscopy	skos:exactMatch	wikidata:Q905243	electron spectroscopy	semapv:ManualMappingCuration	orcid:0009-0009-1663-1003	0.8	
-CHMO:0000339	Auger electron spectroscopy	skos:exactMatch	wikidata:Q28087	Auger electron spectroscopy	semapv:ManualMappingCuration	orcid:0009-0009-1663-1003	0.8	
-CHMO:0000365	photoion-photoelectron coincidence spectroscopy	skos:exactMatch	wikidata:Q7187743	photoion photoelectron coincidence spectroscopy	semapv:ManualMappingCuration	orcid:0009-0009-1663-1003	0.8	
-CHMO:0000366	electron energy loss spectroscopy	skos:exactMatch	wikidata:Q902328	electron energy loss spectroscopy	semapv:ManualMappingCuration	orcid:0009-0009-1663-1003	0.8	
-CHMO:0000370	high-resolution energy loss spectroscopy	skos:exactMatch	wikidata:Q904960	High resolution electron energy loss spectroscopy	semapv:ManualMappingCuration	orcid:0009-0009-1663-1003	0.8	
-CHMO:0000387	photoelectron spectroscopy	skos:exactMatch	wikidata:Q1139350	photoemission spectroscopy	semapv:ManualMappingCuration	orcid:0009-0009-1663-1003	0.8	
-CHMO:0000401	ultraviolet photoelectron spectroscopy	skos:exactMatch	wikidata:Q602144	ultraviolet photoelectron spectroscopy	semapv:ManualMappingCuration	orcid:0009-0009-1663-1003	0.8	
-CHMO:0000414	gamma-ray spectroscopy	skos:exactMatch	wikidata:Q906816	gamma-ray spectroscopy	semapv:ManualMappingCuration	orcid:0009-0009-1663-1003	0.8	
-CHMO:0000415	particle-induced gamma-ray emission spectroscopy	skos:exactMatch	wikidata:Q28403415	particle-induced gamma-ray emission spectroscopy	semapv:ManualMappingCuration	orcid:0009-0009-1663-1003	0.8	
-CHMO:0000417	Mossbauer spectroscopy	skos:exactMatch	wikidata:Q899927	Mössbauer spectroscopy	semapv:ManualMappingCuration	orcid:0009-0009-1663-1003	0.8	
-CHMO:0000419	nuclear spectroscopy	skos:exactMatch	wikidata:Q85789979	nuclear spectroscopy	semapv:ManualMappingCuration	orcid:0009-0009-1663-1003	0.8	
-CHMO:0000421	impedance spectroscopy	skos:exactMatch	wikidata:Q20820484	impedance spectroscopy	semapv:ManualMappingCuration	orcid:0009-0009-1663-1003	0.7	semapv:LexicalMatching
-CHMO:0000430	ion mobility spectroscopy	skos:exactMatch	wikidata:Q102291040	ion mobility spectroscopy	semapv:ManualMappingCuration	orcid:0009-0009-1663-1003	0.7	semapv:LexicalMatching
-CHMO:0000433	ion scattering	skos:exactMatch	wikidata:Q28687673	ion scattering	semapv:ManualMappingCuration	orcid:0009-0009-1663-1003	0.7	semapv:LexicalMatching
-CHMO:0000435	laser spectroscopy	skos:exactMatch	wikidata:Q112339385	laser spectroscopy	semapv:ManualMappingCuration	orcid:0009-0009-1663-1003	0.7	semapv:LexicalMatching
-CHMO:0000442	tunable diode laser absorption spectroscopy	skos:exactMatch	wikidata:Q592333	tunable diode laser absorption spectroscopy	semapv:ManualMappingCuration	orcid:0009-0009-1663-1003	0.8	
-CHMO:0000450	cavity ring-down spectroscopy	skos:exactMatch	wikidata:Q1051896	cavity ring-down spectroscopy	semapv:ManualMappingCuration	orcid:0009-0009-1663-1003	0.8	
-CHMO:0000470	mass spectrometry	skos:exactMatch	wikidata:Q180809	mass spectrometry	semapv:ManualMappingCuration	orcid:0009-0009-1663-1003	0.8	
-CHMO:0000497	gas chromatography-mass spectrometry	skos:exactMatch	wikidata:Q873009	gas chromatography-mass spectrometry	semapv:ManualMappingCuration	orcid:0009-0009-1663-1003	0.8	
-CHMO:0000506	isotope ratio mass spectrometry	skos:exactMatch	wikidata:Q3966589	isotope ratio mass spectrometry	semapv:ManualMappingCuration	orcid:0009-0009-1663-1003	0.8	
-CHMO:0000524	liquid chromatography-mass spectrometry	skos:exactMatch	wikidata:Q873864	liquid chromatography-mass spectrometry	semapv:ManualMappingCuration	orcid:0009-0009-1663-1003	0.8	
-CHMO:0000532	thermal ionisation mass spectrometry	skos:exactMatch	wikidata:Q950059	thermal ionisation mass spectrometry	semapv:ManualMappingCuration	orcid:0009-0009-1663-1003	0.7	semapv:LexicalMatching
-CHMO:0000537	glow-discharge mass spectrometry	skos:exactMatch	CHMO:0000550	glow discharge mass spectrometry	semapv:ManualMappingCuration	orcid:0009-0009-1663-1003	0.8	
-CHMO:0000538	inductively coupled plasma mass spectrometry	skos:exactMatch	wikidata:Q900680	inductively coupled plasma mass spectrometry	semapv:ManualMappingCuration	orcid:0009-0009-1663-1003	0.8	
-CHMO:0000546	high-resolution inductively coupled plasma mass spectrometry	skos:exactMatch	wikidata:Q113124869	high-resolution inductively coupled plasma mass spectrometry	semapv:ManualMappingCuration	orcid:0009-0009-1663-1003	0.8	
-CHMO:0000550	laser ablation inductively coupled plasma mass spectrometry	skos:broadMatch	wikidata:Q108900669	laser ablation inductively coupled plasma mass spectrometry	semapv:ManualMappingCuration	orcid:0009-0009-1663-1003	0.8	
-CHMO:0000559	plasma desorption mass spectrometry	skos:exactMatch	wikidata:Q3705997	plasma desorption mass spectrometry	semapv:ManualMappingCuration	orcid:0009-0009-1663-1003	0.7	semapv:LexicalMatching
-CHMO:0000560	secondary ion mass spectrometry	skos:exactMatch	wikidata:Q556046	secondary ion mass spectrometry	semapv:ManualMappingCuration	orcid:0009-0009-1663-1003	0.8	
-CHMO:0000561	dynamic secondary ion mass spectrometry	skos:exactMatch	wikidata:Q3943649	dynamic secondary ion mass spectrometry	semapv:ManualMappingCuration	orcid:0009-0009-1663-1003	0.8	
-CHMO:0000563	fast-atom bombardment mass spectrometry	skos:exactMatch	wikidata:Q72369916	fast-atom bombardment mass spectrometry	semapv:ManualMappingCuration	orcid:0009-0009-1663-1003	0.7	semapv:LexicalMatching
-CHMO:0000565	time-of-flight secondary ion mass spectrometry	skos:exactMatch	wikidata:Q10689351	TOF-SIMS	semapv:ManualMappingCuration	orcid:0009-0009-1663-1003	0.7	semapv:LexicalMatching
-CHMO:0000569	selected ion flow tube mass spectrometry	skos:exactMatch	wikidata:Q7447678	Selected-ion flow-tube mass spectrometry	semapv:ManualMappingCuration	orcid:0009-0009-1663-1003	0.8	
-CHMO:0000570	proton transfer reaction mass spectrometry	skos:exactMatch	wikidata:Q7252053	Proton-transfer-reaction mass spectrometry	semapv:ManualMappingCuration	orcid:0009-0009-1663-1003	0.8	
-CHMO:0000574	spark source mass spectrometry	skos:exactMatch	wikidata:Q3966581	spark source mass spectrometry	semapv:ManualMappingCuration	orcid:0009-0009-1663-1003	0.7	semapv:LexicalMatching
-CHMO:0000575	tandem mass spectrometry	skos:exactMatch	wikidata:Q874296	tandem mass spectrometry	semapv:ManualMappingCuration	orcid:0009-0009-1663-1003	0.8	
-CHMO:0000581	microspectroscopy	skos:exactMatch	wikidata:Q48780694	microspectroscopy	semapv:ManualMappingCuration	orcid:0009-0009-1663-1003	0.7	semapv:LexicalMatching
-CHMO:0000585	rotational spectroscopy	skos:exactMatch	wikidata:Q904380	rotational spectroscopy	semapv:ManualMappingCuration	orcid:0009-0009-1663-1003	0.8	
-CHMO:0000586	microwave spectroscopy	skos:exactMatch	wikidata:Q48967832	microwave spectroscopy	semapv:ManualMappingCuration	orcid:0009-0009-1663-1003	0.8	
-CHMO:0000590	neutron spectroscopy	skos:exactMatch	wikidata:Q7003117	neutron spectroscopy	semapv:ManualMappingCuration	orcid:0009-0009-1663-1003	0.7	semapv:LexicalMatching
-CHMO:0000591	nuclear magnetic resonance spectroscopy	skos:exactMatch	wikidata:Q10359898	NMR spectroscopy	semapv:ManualMappingCuration	orcid:0009-0009-1663-1003	0.8	
-CHMO:0000598	two-dimensional nuclear magnetic resonance spectroscopy	skos:exactMatch	wikidata:Q11141463	two-dimensional nuclear magnetic resonance spectroscopy	semapv:ManualMappingCuration	orcid:0009-0009-1663-1003	0.8	
-CHMO:0000607	nuclear Overhauser enhancement spectroscopy	skos:exactMatch	wikidata:Q10593794	NOESY	semapv:ManualMappingCuration	orcid:0009-0009-1663-1003	0.8	
-CHMO:0000619	photoacoustic spectroscopy	skos:exactMatch	wikidata:Q900415	photoacoustic spectroscopy	semapv:ManualMappingCuration	orcid:0009-0009-1663-1003	0.8	
-CHMO:0000619	photoacoustic spectroscopy	skos:exactMatch	wikidata:Q900415	photoacoustic spectroscopy	semapv:ManualMappingCuration	orcid:0009-0009-1663-1003	0.7	semapv:LexicalMatching
-CHMO:0000622	photothermal spectroscopy	skos:exactMatch	wikidata:Q7187925	photothermal spectroscopy	semapv:ManualMappingCuration	orcid:0009-0009-1663-1003	0.8	
-CHMO:0000627	Terahertz time-domain spectroscopy	skos:exactMatch	wikidata:Q7701527	Terahertz time-domain spectroscopy	semapv:ManualMappingCuration	orcid:0009-0009-1663-1003	0.8	
-CHMO:0000636	Fourier transform infrared spectroscopy	skos:exactMatch	wikidata:Q901559	fourier-transform infrared spectroscopy	semapv:ManualMappingCuration	orcid:0009-0009-1663-1003	0.8	
-CHMO:0000645	diffuse reflectance infrared Fourier transform spectroscopy	skos:exactMatch	wikidata:Q5275423	diffuse reflectance infrared Fourier transform spectroscopy	semapv:ManualMappingCuration	orcid:0009-0009-1663-1003	0.8	
-CHMO:0000656	Raman spectroscopy	skos:exactMatch	wikidata:Q862228	Raman spectroscopy	semapv:ManualMappingCuration	orcid:0009-0009-1663-1003	0.8	
-CHMO:0000661	coherent anti-Stokes Raman spectroscopy	skos:exactMatch	wikidata:Q903528	coherent anti-Stokes Raman spectroscopy	semapv:ManualMappingCuration	orcid:0009-0009-1663-1003	0.8	
-CHMO:0000668	resonance Raman spectroscopy	skos:exactMatch	wikidata:Q7315737	resonance Raman spectroscopy	semapv:ManualMappingCuration	orcid:0009-0009-1663-1003	0.8	
-CHMO:0000674	spatially-offset Raman spectroscopy	skos:exactMatch	wikidata:Q7574090	spatially-offset Raman spectroscopy	semapv:ManualMappingCuration	orcid:0009-0009-1663-1003	0.8	
-CHMO:0000675	stimulated Raman spectroscopy	skos:exactMatch	wikidata:Q48835655	stimulated Raman spectroscopy	semapv:ManualMappingCuration	orcid:0009-0009-1663-1003	0.8	
-CHMO:0000677	surface-enhanced Raman spectroscopy	skos:exactMatch	wikidata:Q2736291	surface enhanced Raman spectroscopy	semapv:ManualMappingCuration	orcid:0009-0009-1663-1003	0.8	
-CHMO:0000681	thermal analysis	skos:exactMatch	wikidata:Q542419	thermal analysis	semapv:ManualMappingCuration	orcid:0009-0009-1663-1003	0.8	
-CHMO:0000682	calorimetry	skos:exactMatch	wikidata:Q634314	calorimetry	semapv:ManualMappingCuration	orcid:0009-0009-1663-1003	0.8	
-CHMO:0000683	isothermal titration calorimetry	skos:exactMatch	wikidata:Q643384	isothermal titration calorimetry	semapv:ManualMappingCuration	orcid:0009-0009-1663-1003	0.8	
-CHMO:0000684	differential scanning calorimetry	skos:exactMatch	wikidata:Q904893	differential scanning calorimetry	semapv:ManualMappingCuration	orcid:0009-0009-1663-1003	0.8	
-CHMO:0000687	differential thermal analysis	skos:exactMatch	wikidata:Q905301	differential thermal analysis	semapv:ManualMappingCuration	orcid:0009-0009-1663-1003	0.8	
-CHMO:0000690	thermogravimetry	skos:exactMatch	wikidata:Q7783187	thermogravimetry	semapv:ManualMappingCuration	orcid:0009-0009-1663-1003	0.8	
-CHMO:0000693	thermoluminescence	skos:exactMatch	wikidata:Q36194	thermoluminescence	semapv:ManualMappingCuration	orcid:0009-0009-1663-1003	0.8	
-CHMO:0000698	neutron diffraction	skos:exactMatch	wikidata:Q910499	neutron diffraction	semapv:ManualMappingCuration	orcid:0009-0009-1663-1003	0.8	
-CHMO:0000701	liquid chromatography-tandem mass spectrometry	skos:broadMatch	wikidata:Q117788892	liquid chromatography-tandem mass spectrometry	semapv:ManualMappingCuration	orcid:0009-0009-1663-1003	0.8	
-CHMO:0000771	multiphoton fluorescence microscopy	skos:exactMatch	wikidata:Q73040214	multiphoton fluorescence microscopy	semapv:ManualMappingCuration	orcid:0009-0009-1663-1003	0.8	
-CHMO:0000778	anomalous X-ray scattering	skos:exactMatch	wikidata:Q4769932	anomalous X-ray scattering	semapv:ManualMappingCuration	orcid:0009-0009-1663-1003	0.7	semapv:LexicalMatching
-CHMO:0000779	polarimetry	skos:exactMatch	wikidata:Q899381	polarimetry	semapv:ManualMappingCuration	orcid:0009-0009-1663-1003	0.8	
-CHMO:0000782	neutron activation analysis	skos:exactMatch	wikidata:Q2408111	neutron activation analysis	semapv:ManualMappingCuration	orcid:0009-0009-1663-1003	0.8	
-CHMO:0000785	optical rotatory dispersion	skos:exactMatch	wikidata:Q903526	optical rotatory dispersion	semapv:ManualMappingCuration	orcid:0009-0009-1663-1003	0.8	
-CHMO:0000795	ultra high performance liquid chromatography	skos:exactMatch	wikidata:Q675741	ultra high performance liquid chromatography	semapv:ManualMappingCuration	orcid:0009-0009-1663-1003	0.7	semapv:LexicalMatching
-CHMO:0000800	spectrum	skos:exactMatch	wikidata:Q654182	spectrum	semapv:ManualMappingCuration	orcid:0009-0009-1663-1003	0.8	
-CHMO:0000801	CHMO:absorption spectrum	skos:exactMatch	wikidata:Q865545	absorption spectrum	semapv:ManualMappingCuration	orcid:0009-0009-1663-1003	0.8	
-CHMO:0000804	atomic spectrum	skos:exactMatch	wikidata:Q10911238	atomic spectrum	semapv:ManualMappingCuration	orcid:0009-0009-1663-1003	0.7	semapv:LexicalMatching
-CHMO:0000806	mass spectrum	skos:exactMatch	wikidata:Q2360668	mass spectrum	semapv:ManualMappingCuration	orcid:0009-0009-1663-1003	0.8	
-CHMO:0000813	emission spectrum	skos:exactMatch	wikidata:Q216817	emission spectrum	semapv:ManualMappingCuration	orcid:0009-0009-1663-1003	0.8	
-CHMO:0000815	fluorescence spectrum	skos:exactMatch	wikidata:Q1434202	fluorescence spectrum	semapv:ManualMappingCuration	orcid:0009-0009-1663-1003	0.8	
-CHMO:0000831	action spectrum	skos:exactMatch	wikidata:Q4677424	action spectrum	semapv:ManualMappingCuration	orcid:0009-0009-1663-1003	0.8	
-CHMO:0000863	positron annihilation lifetime spectroscopy	skos:exactMatch	wikidata:Q3966593	positron annihilation spectroscopy	semapv:ManualMappingCuration	orcid:0009-0009-1663-1003	0.8	
-CHMO:0000874	conductive atomic force microscopy	skos:exactMatch	wikidata:Q5159384	conductive atomic force microscopy	semapv:ManualMappingCuration	orcid:0009-0009-1663-1003	0.8	
-CHMO:0000915	rheometry	skos:exactMatch	wikidata:Q7320412	rheometry	semapv:ManualMappingCuration	orcid:0009-0009-1663-1003	0.8	
-CHMO:0000918	flow curve	skos:exactMatch	wikidata:Q5691707	flow curve	semapv:ManualMappingCuration	orcid:0009-0009-1663-1003	0.7	semapv:LexicalMatching
-CHMO:0000924	magnetometry	skos:exactMatch	wikidata:Q3277336	magnetometry	semapv:ManualMappingCuration	orcid:0009-0009-1663-1003	0.8	
-CHMO:0000927	velocimetry	skos:exactMatch	wikidata:Q7919269	velocimetry	semapv:ManualMappingCuration	orcid:0009-0009-1663-1003	0.8	
-CHMO:0000928	particle-tracking velocimetry	skos:exactMatch	wikidata:Q7140505	particle-tracking velocimetry	semapv:ManualMappingCuration	orcid:0009-0009-1663-1003	0.8	
-CHMO:0000941	scanning electron microscope	skos:exactMatch	wikidata:Q321095	scanning electron microscope	semapv:ManualMappingCuration	orcid:0009-0009-1663-1003	0.8	
-CHMO:0000942	field-emission scanning electron microscope	skos:exactMatch	wikidata:Q96790721	Field emission scanning electron microscope	semapv:ManualMappingCuration	orcid:0009-0009-1663-1003	0.8	
-CHMO:0000943	scanning probe microscope	skos:exactMatch	wikidata:Q96782348	scanning probe microscope	semapv:ManualMappingCuration	orcid:0009-0009-1663-1003	0.7	semapv:LexicalMatching
-CHMO:0000946	optical tweezers	skos:exactMatch	wikidata:Q1066633	optical tweezers	semapv:ManualMappingCuration	orcid:0009-0009-1663-1003	0.8	
-CHMO:0000948	charge-coupled device	skos:exactMatch	wikidata:Q189880	charge-coupled device	semapv:ManualMappingCuration	orcid:0009-0009-1663-1003	0.8	
-CHMO:0000950	diffractometer	skos:exactMatch	wikidata:Q904573	diffractometer	semapv:ManualMappingCuration	orcid:0009-0009-1663-1003	0.8	
-CHMO:0000953	microscope	skos:exactMatch	wikidata:Q196538	microscope	semapv:ManualMappingCuration	orcid:0009-0009-1663-1003	0.8	
-CHMO:0000954	atomic force microscope	skos:exactMatch	wikidata:Q49295	atomic force microscope	semapv:ManualMappingCuration	orcid:0009-0009-1663-1003	0.8	
-CHMO:0000960	ion source	skos:exactMatch	wikidata:Q905291	ion source	semapv:ManualMappingCuration	orcid:0009-0009-1663-1003	0.8	
-CHMO:0000963	quadrupole mass spectrometer	skos:exactMatch	wikidata:Q874519	quadrupole mass spectrometer	semapv:ManualMappingCuration	orcid:0009-0009-1663-1003	0.8	
-CHMO:0000971	support-coated open-tubular column	skos:exactMatch	wikidata:Q111518735	support-coated open-tubular (SCOT) column	semapv:ManualMappingCuration	orcid:0009-0009-1663-1003	0.8	
-CHMO:0000973	wall-coated open-tubular column	skos:exactMatch	wikidata:Q111518736	wall-coated open-tubular (WCOT) column	semapv:ManualMappingCuration	orcid:0009-0009-1663-1003	0.8	
-CHMO:0000979	reflectron	skos:exactMatch	wikidata:Q1750503	reflectron	semapv:ManualMappingCuration	orcid:0009-0009-1663-1003	0.8	
-CHMO:0000981	time-of-flight mass spectrometer	skos:exactMatch	wikidata:Q104417696	time-of-flight mass spectrometer	semapv:ManualMappingCuration	orcid:0009-0009-1663-1003	0.8	
-CHMO:0000982	mass spectrometer	skos:exactMatch	wikidata:Q1327691	mass spectrometer	semapv:ManualMappingCuration	orcid:0009-0009-1663-1003	0.8	
-CHMO:0000997	chromatography column	skos:exactMatch	wikidata:Q16466654	chromatography column	semapv:ManualMappingCuration	orcid:0009-0009-1663-1003	0.8	
-CHMO:0000999	separation method	skos:exactMatch	wikidata:Q898987	separation process	semapv:ManualMappingCuration	orcid:0009-0009-1663-1003	0.8	
-CHMO:0001000	chromatography	skos:exactMatch	wikidata:Q170050	chromatography	semapv:ManualMappingCuration	orcid:0009-0009-1663-1003	0.8	
-CHMO:0001001	column chromatography	skos:exactMatch	wikidata:Q908955	column chromatography	semapv:ManualMappingCuration	orcid:0009-0009-1663-1003	0.8	
-CHMO:0001002	gas chromatography	skos:exactMatch	wikidata:Q677065	gas chromatography	semapv:ManualMappingCuration	orcid:0009-0009-1663-1003	0.8	
-CHMO:0001003	supercritical-fluid chromatography	skos:exactMatch	wikidata:Q332584	supercritical fluid chromatography	semapv:ManualMappingCuration	orcid:0009-0009-1663-1003	0.8	
-CHMO:0001004	liquid chromatography	skos:exactMatch	wikidata:Q901688	liquid chromatography	semapv:ManualMappingCuration	orcid:0009-0009-1663-1003	0.8	
-CHMO:0001006	affinity chromatography	skos:exactMatch	wikidata:Q382799	affinity chromatography	semapv:ManualMappingCuration	orcid:0009-0009-1663-1003	0.8	
-CHMO:0001007	thin-layer chromatography	skos:exactMatch	wikidata:Q746133	thin layer chromatography	semapv:ManualMappingCuration	orcid:0009-0009-1663-1003	0.8	
-CHMO:0001008	paper chromatography	skos:exactMatch	wikidata:Q898473	paper chromatography	semapv:ManualMappingCuration	orcid:0009-0009-1663-1003	0.8	
-CHMO:0001009	high-performance liquid chromatography	skos:exactMatch	wikidata:Q381233	high-performance liquid chromatography	semapv:ManualMappingCuration	orcid:0009-0009-1663-1003	0.8	
-CHMO:0001011	gel filtration chromatography	skos:exactMatch	wikidata:Q107050290	gel filtration chromatography	semapv:ManualMappingCuration	orcid:0009-0009-1663-1003	0.7	semapv:LexicalMatching
-CHMO:0001013	size-exclusion chromatography	skos:exactMatch	wikidata:Q1617865	size-exclusion chromatography	semapv:ManualMappingCuration	orcid:0009-0009-1663-1003	0.8	
-CHMO:0001014	ion-exchange chromatography	skos:exactMatch	wikidata:Q65281120	ion-exchange chromatography	semapv:ManualMappingCuration	orcid:0009-0009-1663-1003	0.7	semapv:LexicalMatching
-CHMO:0001016	gas-liquid chromatography	skos:exactMatch	wikidata:Q3698308	gas-liquid chromatography	semapv:ManualMappingCuration	orcid:0009-0009-1663-1003	0.7	semapv:LexicalMatching
-CHMO:0001018	two-dimensional chromatography	skos:exactMatch	wikidata:Q7858694	two-dimensional chromatography	semapv:ManualMappingCuration	orcid:0009-0009-1663-1003	0.8	
-CHMO:0001019	electrophoresis	skos:exactMatch	wikidata:Q185098	electrophoresis	semapv:ManualMappingCuration	orcid:0009-0009-1663-1003	0.8	
-CHMO:0001021	gel electrophoresis	skos:exactMatch	wikidata:Q903395	gel electrophoresis	semapv:ManualMappingCuration	orcid:0009-0009-1663-1003	0.8	
-CHMO:0001022	agarose gel electrophoresis	skos:exactMatch	wikidata:Q903395	agarose gel electrophoresis	semapv:ManualMappingCuration	orcid:0009-0009-1663-1003	0.8	
-CHMO:0001023	polyacrylamide gel electrophoresis	skos:exactMatch	wikidata:Q2102713	polyacrylamide gel electrophoresis	semapv:ManualMappingCuration	orcid:0009-0009-1663-1003	0.8	
-CHMO:0001024	capillary electrophoresis	skos:exactMatch	wikidata:Q747468	capillary electrophoresis	semapv:ManualMappingCuration	orcid:0009-0009-1663-1003	0.8	
-CHMO:0001025	isotachophoresis	skos:exactMatch	wikidata:Q238614	isotachophoresis	semapv:ManualMappingCuration	orcid:0009-0009-1663-1003	0.8	
-CHMO:0001026	isoelectric focusing	skos:exactMatch	wikidata:Q898861	isoelectric focusing	semapv:ManualMappingCuration	orcid:0009-0009-1663-1003	0.8	
-CHMO:0001028	difference gel electrophoresis	skos:exactMatch	wikidata:Q5275273	difference gel electrophoresis	semapv:ManualMappingCuration	orcid:0009-0009-1663-1003	0.7	semapv:LexicalMatching
-CHMO:0001029	two dimensional gel electrophoresis	skos:exactMatch	wikidata:Q4688061	two-dimensional gel electrophoresi	semapv:ManualMappingCuration	orcid:0009-0009-1663-1003	0.8	
-CHMO:0001033	capillary isoelectric focusing	skos:exactMatch	wikidata:Q116798976	capillary isoelectric focusing	semapv:ManualMappingCuration	orcid:0009-0009-1663-1003	0.8	
-CHMO:0001036	micellar electrokinetic chromatography	skos:exactMatch	wikidata:Q258224	micellar electrokinetic chromatography	semapv:ManualMappingCuration	orcid:0009-0009-1663-1003	0.8	
-CHMO:0001038	capillary electrochromatography	skos:exactMatch	wikidata:Q5035393	capillary electrochromatography	semapv:ManualMappingCuration	orcid:0009-0009-1663-1003	0.8	
-CHMO:0001040	affinity electrophoresis	skos:exactMatch	wikidata:Q4688978	affinity electrophoresis	semapv:ManualMappingCuration	orcid:0009-0009-1663-1003	0.7	semapv:LexicalMatching
-CHMO:0001042	denaturing gradient gel electrophoresis	skos:exactMatch	wikidata:Q857463	denaturing gradient gel electrophoresis	semapv:ManualMappingCuration	orcid:0009-0009-1663-1003	0.8	
-CHMO:0001044	dielectrophoresis	skos:exactMatch	wikidata:Q902890	dielectrophoresis	semapv:ManualMappingCuration	orcid:0009-0009-1663-1003	0.8	
-CHMO:0001045	free-flow electrophoresis	skos:exactMatch	wikidata:Q1304136	free-flow electrophoresis	semapv:ManualMappingCuration	orcid:0009-0009-1663-1003	0.7	semapv:LexicalMatching
-CHMO:0001051	normal-phase liquid chromatography	skos:exactMatch	wikidata:Q2038338	normal phase liquid chromatography	semapv:ManualMappingCuration	orcid:0009-0009-1663-1003	0.8	
-CHMO:0001055	double-focusing mass spectrometer	skos:exactMatch	wikidata:Q30934769	double-focusing mass spectrometer	semapv:ManualMappingCuration	orcid:0009-0009-1663-1003	0.7	semapv:LexicalMatching
-CHMO:0001058	Faraday cup	skos:exactMatch	wikidata:Q19410	Faraday cup	semapv:ManualMappingCuration	orcid:0009-0009-1663-1003	0.8	
-CHMO:0001059	ion detector	skos:exactMatch	wikidata:Q114910039	ion detector	semapv:ManualMappingCuration	orcid:0009-0009-1663-1003	0.8	
-CHMO:0001060	electron multiplier	skos:exactMatch	wikidata:Q902750	electron multiplier	semapv:ManualMappingCuration	orcid:0009-0009-1663-1003	0.8	
-CHMO:0001063	Daly detector	skos:exactMatch	wikidata:Q338539	Daly detector	semapv:ManualMappingCuration	orcid:0009-0009-1663-1003	0.8	
-CHMO:0001074	time-lapse microscopy	skos:exactMatch	wikidata:Q14943002	time-lapse microscopy	semapv:ManualMappingCuration	orcid:0009-0009-1663-1003	0.8	
-CHMO:0001075	elemental analysis	skos:exactMatch	wikidata:Q2533665	elemental analysis	semapv:ManualMappingCuration	orcid:0009-0009-1663-1003	0.8	
-CHMO:0001082	osmometry	skos:exactMatch	wikidata:Q2034413	osmometry	semapv:ManualMappingCuration	orcid:0009-0009-1663-1003	0.8	
-CHMO:0001085	fluorescence-activated cell sorting	skos:exactMatch	wikidata:Q105426874	fluorescence-activated cell sorting	semapv:ManualMappingCuration	orcid:0009-0009-1663-1003	0.8	
-CHMO:0001086	photoemission electron microscopy	skos:exactMatch	wikidata:Q1257398	photoemission electron microscopy	semapv:ManualMappingCuration	orcid:0009-0009-1663-1003	0.8	
-CHMO:0001088	electron microscope	skos:exactMatch	wikidata:Q132560	electron microscope	semapv:ManualMappingCuration	orcid:0009-0009-1663-1003	0.8	
-CHMO:0001092	electron spin resonance imaging	skos:exactMatch	wikidata:Q108990256	electron spin resonance imaging	semapv:ManualMappingCuration	orcid:0009-0009-1663-1003	0.7	semapv:LexicalMatching
-CHMO:0001092	electron spin resonance imaging	skos:exactMatch	wikidata:Q28068366	electron spin resonance imaging	semapv:ManualMappingCuration	orcid:0009-0009-1663-1003	0.7	semapv:LexicalMatching
-CHMO:0001095	fluorescence microscope	skos:exactMatch	wikidata:Q840211	fluorescence microscope	semapv:ManualMappingCuration	orcid:0009-0009-1663-1003	0.8	
-CHMO:0001097	thermocouple	skos:exactMatch	wikidata:Q190241	thermocouple	semapv:ManualMappingCuration	orcid:0009-0009-1663-1003	0.8	
-CHMO:0001098	Wollaston wire	skos:exactMatch	wikidata:Q1766019	Wollaston wire	semapv:ManualMappingCuration	orcid:0009-0009-1663-1003	0.8	
-CHMO:0001099	transmission electron microscope	skos:exactMatch	wikidata:Q744818	transmission electron microscope	semapv:ManualMappingCuration	orcid:0009-0009-1663-1003	0.8	
-CHMO:0001103	recorded image	skos:exactMatch	wikidata:Q478798	image	semapv:ManualMappingCuration	orcid:0009-0009-1663-1003	0.8	
-CHMO:0001110	particle-image velocimetry	skos:exactMatch	wikidata:Q1756248	particle-image velocimetry	semapv:ManualMappingCuration	orcid:0009-0009-1663-1003	0.8	
-CHMO:0001122	dynamic force spectroscopy	skos:exactMatch	wikidata:Q102290484	dynamic force spectroscopy	semapv:ManualMappingCuration	orcid:0009-0009-1663-1003	0.7	semapv:LexicalMatching
-CHMO:0001123	force spectroscopy	skos:exactMatch	wikidata:Q49298	force spectroscopy	semapv:ManualMappingCuration	orcid:0009-0009-1663-1003	0.8	
-CHMO:0001128	adsorption chromatography	skos:exactMatch	wikidata:Q378597	adsorption chromatography	semapv:ManualMappingCuration	orcid:0009-0009-1663-1003	0.8	
-CHMO:0001129	displacement chromatography	skos:exactMatch	wikidata:Q5282613	displacement chromatography	semapv:ManualMappingCuration	orcid:0009-0009-1663-1003	0.8	
-CHMO:0001132	laser ablation	skos:exactMatch	wikidata:Q1806547	laser ablation	semapv:ManualMappingCuration	orcid:0009-0009-1663-1003	0.8	
-CHMO:0001135	viscometry	skos:exactMatch	wikidata:Q2528362	viscometry	semapv:ManualMappingCuration	orcid:0009-0009-1663-1003	0.7	semapv:LexicalMatching
-CHMO:0001209	anion-exchange chromatography	skos:exactMatch	wikidata:Q17002191	anion-exchange chromatography	semapv:ManualMappingCuration	orcid:0009-0009-1663-1003	0.7	semapv:LexicalMatching
-CHMO:0001211	titration	skos:exactMatch	wikidata:Q191010	titration	semapv:ManualMappingCuration	orcid:0009-0009-1663-1003	0.8	
-CHMO:0001212	acid–base titration	skos:exactMatch	wikidata:Q133716	acid–base titration	semapv:ManualMappingCuration	orcid:0009-0009-1663-1003	0.8	
-CHMO:0001216	optically detected magnetic resonance	skos:broadMatch	wikidata:Q56276866	optically detected magnetic resonance	semapv:ManualMappingCuration	orcid:0009-0009-1663-1003	0.8	
-CHMO:0001224	activation analysis	skos:exactMatch	wikidata:Q73211166	activation analysis	semapv:ManualMappingCuration	orcid:0009-0009-1663-1003	0.8	
-CHMO:0001230	chelatometric titration	skos:exactMatch	wikidata:Q2493922	chelatometric titration	semapv:ManualMappingCuration	orcid:0009-0009-1663-1003	0.8	
-CHMO:0001234	spectrometer	skos:exactMatch	wikidata:Q188463	spectrometer	semapv:ManualMappingCuration	orcid:0009-0009-1663-1003	0.8	
-CHMO:0001235	Raman spectrometer	skos:exactMatch	wikidata:Q111486361	Raman spectrometer	semapv:ManualMappingCuration	orcid:0009-0009-1663-1003	0.8	
-CHMO:0001239	inversion recovery	skos:exactMatch	wikidata:Q111942411	inversion recovery	semapv:ManualMappingCuration	orcid:0009-0009-1663-1003	0.8	
-CHMO:0001259	reversed-phase high-performance liquid chromatography	skos:exactMatch	wikidata:Q117769063	reversed-phase high-performance liquid chromatography	semapv:ManualMappingCuration	orcid:0009-0009-1663-1003	0.8	
-CHMO:0001285	gravimetric analysis	skos:exactMatch	wikidata:Q192414	gravimetric analysis	semapv:ManualMappingCuration	orcid:0009-0009-1663-1003	0.8	
-CHMO:0001287	calorimeter	skos:exactMatch	wikidata:Q189783	calorimeter	semapv:ManualMappingCuration	orcid:0009-0009-1663-1003	0.8	
-CHMO:0001288	sum-frequency generation spectroscopy	skos:exactMatch	wikidata:Q1554233	sum frequency generation spectroscopy	semapv:ManualMappingCuration	orcid:0009-0009-1663-1003	0.8	
-CHMO:0001290	time-resolved microwave conductivity	skos:exactMatch	wikidata:Q108337235	time-resolved microwave conductivity	semapv:ManualMappingCuration	orcid:0009-0009-1663-1003	0.7	semapv:LexicalMatching
-CHMO:0001292	vacuum deposition	skos:exactMatch	wikidata:Q3044964	vacuum deposition	semapv:ManualMappingCuration	orcid:0009-0009-1663-1003	0.8	
-CHMO:0001305	self-assembly	skos:exactMatch	wikidata:Q910150	self-assembly	semapv:ManualMappingCuration	orcid:0009-0009-1663-1003	0.8	
-CHMO:0001307	molecular self-assambly	skos:exactMatch	wikidata:Q13365147	molecular self-assambly	semapv:ManualMappingCuration	orcid:0009-0009-1663-1003	0.8	
-CHMO:0001311	atomic layer deposition	skos:exactMatch	wikidata:Q757625	atomic layer deposition	semapv:ManualMappingCuration	orcid:0009-0009-1663-1003	0.8	
-CHMO:0001314	chemical vapour deposition	skos:exactMatch	wikidata:Q505668	chemical vapour deposition	semapv:ManualMappingCuration	orcid:0009-0009-1663-1003	0.8	
-CHMO:0001325	plasma-assisted chemical vapour deposition	skos:exactMatch	wikidata:Q905958	plasma-assisted chemical vapour deposition	semapv:ManualMappingCuration	orcid:0009-0009-1663-1003	0.8	
-CHMO:0001329	dry deposition	skos:exactMatch	wikidata:Q11873185	dry deposition	semapv:ManualMappingCuration	orcid:0009-0009-1663-1003	0.8	
-CHMO:0001330	electrophoretic deposition	skos:exactMatch	wikidata:Q925358	electrophoretic deposition	semapv:ManualMappingCuration	orcid:0009-0009-1663-1003	0.8	
-CHMO:0001331	electrochemical deposition	skos:exactMatch	wikidata:Q59628857	electrochemical deposition	semapv:ManualMappingCuration	orcid:0009-0009-1663-1003	0.7	semapv:LexicalMatching
-CHMO:0001336	epitaxy	skos:exactMatch	wikidata:Q1135540	epitaxy	semapv:ManualMappingCuration	orcid:0009-0009-1663-1003	0.8	
-CHMO:0001337	atomic layer epitaxy	skos:exactMatch	wikidata:Q4817336	atomic layer epitaxy	semapv:ManualMappingCuration	orcid:0009-0009-1663-1003	0.7	semapv:LexicalMatching
-CHMO:0001341	molecular beam epitaxy	skos:exactMatch	wikidata:Q898542	molecular beam epitaxy	semapv:ManualMappingCuration	orcid:0009-0009-1663-1003	0.8	
-CHMO:0001347	hydride vapour-phase epitaxy	skos:exactMatch	wikidata:Q1640174	hydride vapour-phase epitaxy	semapv:ManualMappingCuration	orcid:0009-0009-1663-1003	0.7	semapv:LexicalMatching
-CHMO:0001356	physical vapour deposition	skos:exactMatch	wikidata:Q900134	physical vapour deposition	semapv:ManualMappingCuration	orcid:0009-0009-1663-1003	0.8	
-CHMO:0001357	cathodic arc deposition	skos:exactMatch	wikidata:Q900966	cathodic arc deposition	semapv:ManualMappingCuration	orcid:0009-0009-1663-1003	0.8	
-CHMO:0001358	electron-beam-induced deposition	skos:exactMatch	wikidata:Q5358152	electron beam-induced deposition	semapv:ManualMappingCuration	orcid:0009-0009-1663-1003	0.8	
-CHMO:0001363	pulsed laser deposition	skos:exactMatch	wikidata:Q901321	pulsed laser deposition	semapv:ManualMappingCuration	orcid:0009-0009-1663-1003	0.8	
-CHMO:0001364	sputter deposition	skos:exactMatch	wikidata:Q847609	sputter deposition	semapv:ManualMappingCuration	orcid:0009-0009-1663-1003	0.8	
-CHMO:0001376	thin-film deposition	skos:exactMatch	wikidata:Q1758673	thin-film deposition	semapv:ManualMappingCuration	orcid:0009-0009-1663-1003	0.8	
-CHMO:0001377	hydrothermal synthesis	skos:exactMatch	wikidata:Q10861356	hydrothermal synthesismethod	semapv:ManualMappingCuration	orcid:0009-0009-1663-1003	0.8	
-CHMO:0001379	chemical vapour infiltration	skos:exactMatch	wikidata:Q1069426	chemical vapour infiltration	semapv:ManualMappingCuration	orcid:0009-0009-1663-1003	0.8	
-CHMO:0001388	lithography	skos:exactMatch	wikidata:Q133036	lithography	semapv:ManualMappingCuration	orcid:0009-0009-1663-1003	0.8	
-CHMO:0001390	microlithography	skos:exactMatch	wikidata:Q109875360	microlithography	semapv:ManualMappingCuration	orcid:0009-0009-1663-1003	0.8	
-CHMO:0001391	nanolithography	skos:exactMatch	wikidata:Q1106386	nanolithography	semapv:ManualMappingCuration	orcid:0009-0009-1663-1003	0.8	
-CHMO:0001392	nanoimprint lithography	skos:exactMatch	wikidata:Q1540138	nanoimprint lithography	semapv:ManualMappingCuration	orcid:0009-0009-1663-1003	0.8	
-CHMO:0001401	electron-beam lithography	skos:exactMatch	wikidata:Q256845	electron-beam lithography	semapv:ManualMappingCuration	orcid:0009-0009-1663-1003	0.8	
-CHMO:0001407	ion-beam lithography	skos:exactMatch	wikidata:Q1672059	ion beam lithography	semapv:ManualMappingCuration	orcid:0009-0009-1663-1003	0.8	
-CHMO:0001410	photolithography	skos:exactMatch	wikidata:Q622938	photolithography	semapv:ManualMappingCuration	orcid:0009-0009-1663-1003	0.8	
-CHMO:0001414	interference lithography	skos:exactMatch	wikidata:Q6046394	interference lithography	semapv:ManualMappingCuration	orcid:0009-0009-1663-1003	0.8	
-CHMO:0001417	ultraviolet lithography	skos:exactMatch	wikidata:Q4474979	ultraviolet lithography	semapv:ManualMappingCuration	orcid:0009-0009-1663-1003	0.8	
-CHMO:0001418	contact lithography	skos:exactMatch	wikidata:Q5164834	contact lithography	semapv:ManualMappingCuration	orcid:0009-0009-1663-1003	0.8	
-CHMO:0001421	deep-ultraviolet lithography	skos:exactMatch	wikidata:Q112921067	deep-ultraviolet lithography	semapv:ManualMappingCuration	orcid:0009-0009-1663-1003	0.7	semapv:LexicalMatching
-CHMO:0001422	extreme ultraviolet lithography	skos:exactMatch	wikidata:Q371965	extreme ultraviolet lithography	semapv:ManualMappingCuration	orcid:0009-0009-1663-1003	0.8	
-CHMO:0001425	soft lithography	skos:exactMatch	wikidata:Q7554001	soft lithography	semapv:ManualMappingCuration	orcid:0009-0009-1663-1003	0.8	
-CHMO:0001427	moulding	skos:exactMatch	wikidata:Q1055732	molding	semapv:ManualMappingCuration	orcid:0009-0009-1663-1003	0.8	
-CHMO:0001428	blow moulding	skos:exactMatch	wikidata:Q881884	blow molding	semapv:ManualMappingCuration	orcid:0009-0009-1663-1003	0.8	
-CHMO:0001430	injection moulding	skos:exactMatch	wikidata:Q260606	injection molding	semapv:ManualMappingCuration	orcid:0009-0009-1663-1003	0.8	
-CHMO:0001435	rotational moulding	skos:exactMatch	wikidata:Q685905	rotational molding	semapv:ManualMappingCuration	orcid:0009-0009-1663-1003	0.8	
-CHMO:0001436	transfer moulding	skos:exactMatch	wikidata:Q382824	transfer molding	semapv:ManualMappingCuration	orcid:0009-0009-1663-1003	0.8	
-CHMO:0001441	patterning by etching at the nanoscale	skos:exactMatch	wikidata:Q7148395	patterning by etching at the nanoscale	semapv:ManualMappingCuration	orcid:0009-0009-1663-1003	0.7	semapv:LexicalMatching
-CHMO:0001442	X-ray lithography	skos:exactMatch	wikidata:Q1408939	X-ray lithography	semapv:ManualMappingCuration	orcid:0009-0009-1663-1003	0.8	
-CHMO:0001443	mechanosynthesis	skos:exactMatch	wikidata:Q1764619	mechanosynthesis	semapv:ManualMappingCuration	orcid:0009-0009-1663-1003	0.7	semapv:LexicalMatching
-CHMO:0001450	steam reforming	skos:exactMatch	wikidata:Q556466	steam reforming	semapv:ManualMappingCuration	orcid:0009-0009-1663-1003	0.8	
-CHMO:0001456	scanning probe lithography	skos:exactMatch	wikidata:Q7430072	scanning probe lithography	semapv:ManualMappingCuration	orcid:0009-0009-1663-1003	0.8	
-CHMO:0001457	dip-pen nanolithography	skos:exactMatch	wikidata:Q5279666	dip-pen nanolithography	semapv:ManualMappingCuration	orcid:0009-0009-1663-1003	0.8	
-CHMO:0001460	peptisation	skos:exactMatch	wikidata:Q902564	peptization	semapv:ManualMappingCuration	orcid:0009-0009-1663-1003	0.8	
-CHMO:0001462	buffer solution	skos:exactMatch	wikidata:Q208465	buffer solution	semapv:ManualMappingCuration	orcid:0009-0009-1663-1003	0.8	
-CHMO:0001464	ageing	skos:exactMatch	wikidata:Q439078	ageing	semapv:ManualMappingCuration	orcid:0009-0009-1663-1003	0.8	
-CHMO:0001465	annealing	skos:exactMatch	wikidata:Q187360	annealing	semapv:ManualMappingCuration	orcid:0009-0009-1663-1003	0.8	
-CHMO:0001467	calcination	skos:exactMatch	wikidata:Q105991955	calcination	semapv:ManualMappingCuration	orcid:0009-0009-1663-1003	0.8	
-CHMO:0001471	dip coating	skos:exactMatch	wikidata:Q1069196	dip coating	semapv:ManualMappingCuration	orcid:0009-0009-1663-1003	0.8	
-CHMO:0001472	spin coating	skos:exactMatch	wikidata:Q1305254	spin coating	semapv:ManualMappingCuration	orcid:0009-0009-1663-1003	0.8	
-CHMO:0001473	combustion	skos:exactMatch	wikidata:Q133235	combustion	semapv:ManualMappingCuration	orcid:0009-0009-1663-1003	0.8	
-CHMO:0001475	laser cooling	skos:exactMatch	wikidata:Q163117	laser cooling	semapv:ManualMappingCuration	orcid:0009-0009-1663-1003	0.8	
-CHMO:0001477	crystallisation	skos:exactMatch	wikidata:Q284256	crystallization	semapv:ManualMappingCuration	orcid:0009-0009-1663-1003	0.8	
-CHMO:0001479	fractional crystallisation	skos:exactMatch	wikidata:Q15045177	fractional crystallisation	semapv:ManualMappingCuration	orcid:0009-0009-1663-1003	0.8	
-CHMO:0001480	curing	skos:exactMatch	wikidata:Q2991861	curing	semapv:ManualMappingCuration	orcid:0009-0009-1663-1003	0.8	
-CHMO:0001482	photochemical curing	skos:exactMatch	wikidata:Q22227068	photocuring	semapv:ManualMappingCuration	orcid:0009-0009-1663-1003	0.7	semapv:LexicalMatching
-CHMO:0001485	derivatisation	skos:exactMatch	wikidata:Q2294884	derivatization	semapv:ManualMappingCuration	orcid:0009-0009-1663-1003	0.8	
-CHMO:0001488	chemical decomposition	skos:exactMatch	wikidata:Q192036	chemical decomposition	semapv:ManualMappingCuration	orcid:0009-0009-1663-1003	0.8	
-CHMO:0001496	microwave digestion	skos:exactMatch	wikidata:Q6840497	microwave digestion	semapv:ManualMappingCuration	orcid:0009-0009-1663-1003	0.7	semapv:LexicalMatching
-CHMO:0001499	spinodal decomposition	skos:exactMatch	wikidata:Q2666979	spinodal decomposition	semapv:ManualMappingCuration	orcid:0009-0009-1663-1003	0.8	
-CHMO:0001500	thermal decomposition	skos:exactMatch	wikidata:Q2611095	thermal decomposition	semapv:ManualMappingCuration	orcid:0009-0009-1663-1003	0.8	
-CHMO:0001501	gasification	skos:exactMatch	wikidata:Q646882	gasification	semapv:ManualMappingCuration	orcid:0009-0009-1663-1003	0.8	
-CHMO:0001502	pyrolysis	skos:exactMatch	wikidata:Q176848	pyrolysis	semapv:ManualMappingCuration	orcid:0009-0009-1663-1003	0.8	
-CHMO:0001516	spray pyrolysis	skos:exactMatch	wikidata:Q44588770	spray pyrolysis	semapv:ManualMappingCuration	orcid:0009-0009-1663-1003	0.7	semapv:LexicalMatching
-CHMO:0001520	thermolysis	skos:exactMatch	wikidata:Q2611095	thermal decomposition	semapv:ManualMappingCuration	orcid:0009-0009-1663-1003	0.8	
-CHMO:0001521	flash vacuum thermolysis	skos:exactMatch	wikidata:Q1427190	flash vacuum pyrolysis	semapv:ManualMappingCuration	orcid:0009-0009-1663-1003	0.8	
-CHMO:0001523	electrodialysis	skos:exactMatch	wikidata:Q2290646	electrodialysis	semapv:ManualMappingCuration	orcid:0009-0009-1663-1003	0.8	
-CHMO:0001524	micro-dialysis	skos:exactMatch	wikidata:Q3856966	microdialysis	semapv:ManualMappingCuration	orcid:0009-0009-1663-1003	0.8	
-CHMO:0001526	colloidal dispersion	skos:exactMatch	wikidata:Q113594664	colloidal dispersion	semapv:ManualMappingCuration	orcid:0009-0009-1663-1003	0.7	semapv:LexicalMatching
-CHMO:0001532	distillation	skos:exactMatch	wikidata:Q101017	distillation	semapv:ManualMappingCuration	orcid:0009-0009-1663-1003	0.8	
-CHMO:0001533	batch distillation	skos:exactMatch	wikidata:Q4118095	batch distillation	semapv:ManualMappingCuration	orcid:0009-0009-1663-1003	0.7	semapv:LexicalMatching
-CHMO:0001534	continuous distillation	skos:exactMatch	wikidata:Q1863368	continuous distillation	semapv:ManualMappingCuration	orcid:0009-0009-1663-1003	0.8	
-CHMO:0001535	extractive distillation	skos:exactMatch	wikidata:Q1385210	extractive distillation	semapv:ManualMappingCuration	orcid:0009-0009-1663-1003	0.8	
-CHMO:0001536	fractional distillation	skos:exactMatch	wikidata:Q840492	fractional distillation	semapv:ManualMappingCuration	orcid:0009-0009-1663-1003	0.8	
-CHMO:0001537	reactive distillation	skos:exactMatch	wikidata:Q3079309	reactive distillation	semapv:ManualMappingCuration	orcid:0009-0009-1663-1003	0.7	semapv:LexicalMatching
-CHMO:0001538	simple distillation	skos:exactMatch	wikidata:Q30334249	simple distillation	semapv:ManualMappingCuration	orcid:0009-0009-1663-1003	0.8	
-CHMO:0001539	steam distillation	skos:exactMatch	wikidata:Q1164392	steam distillation	semapv:ManualMappingCuration	orcid:0009-0009-1663-1003	0.8	
-CHMO:0001540	vacuum distillation	skos:exactMatch	wikidata:Q1648382	vacuum distillation	semapv:ManualMappingCuration	orcid:0009-0009-1663-1003	0.8	
-CHMO:0001542	molecular distillation	skos:exactMatch	wikidata:Q9206474	molecular distillation	semapv:ManualMappingCuration	orcid:0009-0009-1663-1003	0.8	
-CHMO:0001543	short-path distillation	skos:exactMatch	wikidata:Q23645139	short path distillation	semapv:ManualMappingCuration	orcid:0009-0009-1663-1003	0.8	
-CHMO:0001552	drum drying	skos:exactMatch	wikidata:Q5309085	drum drying	semapv:ManualMappingCuration	orcid:0009-0009-1663-1003	0.8	
-CHMO:0001553	freeze drying	skos:exactMatch	wikidata:Q723912	freeze drying	semapv:ManualMappingCuration	orcid:0009-0009-1663-1003	0.8	
-CHMO:0001554	oven drying	skos:exactMatch	wikidata:Q63385598	microwave drying	semapv:ManualMappingCuration	orcid:0009-0009-1663-1003	0.7	semapv:LexicalMatching
-CHMO:0001555	spray drying	skos:exactMatch	wikidata:Q1066303	spray drying	semapv:ManualMappingCuration	orcid:0009-0009-1663-1003	0.8	
-CHMO:0001556	supercritical drying	skos:exactMatch	wikidata:Q332585	supercritical drying	semapv:ManualMappingCuration	orcid:0009-0009-1663-1003	0.8	
-CHMO:0001557	vacuum drying	skos:exactMatch	wikidata:Q25305160	vacuum drying	semapv:ManualMappingCuration	orcid:0009-0009-1663-1003	0.8	
-CHMO:0001558	etching	skos:exactMatch	wikidata:Q2368605	etching	semapv:ManualMappingCuration	orcid:0009-0009-1663-1003	0.8	
-CHMO:0001559	dry etching	skos:exactMatch	wikidata:Q1191918	dry etching	semapv:ManualMappingCuration	orcid:0009-0009-1663-1003	0.8	
-CHMO:0001560	plasma etching	skos:exactMatch	wikidata:Q2392011	plasma etching	semapv:ManualMappingCuration	orcid:0009-0009-1663-1003	0.8	
-CHMO:0001561	deep reactive-ion etching	skos:exactMatch	wikidata:Q486936	deep reactive-ion etching	semapv:ManualMappingCuration	orcid:0009-0009-1663-1003	0.8	
-CHMO:0001562	advanced silicon etching	skos:exactMatch	wikidata:Q4686274	advanced silicon etching	semapv:ManualMappingCuration	orcid:0009-0009-1663-1003	0.8	
-CHMO:0001574	evaporation	skos:exactMatch	wikidata:Q132814	evaporation	semapv:ManualMappingCuration	orcid:0009-0009-1663-1003	0.8	
-CHMO:0001577	extraction	skos:exactMatch	wikidata:Q844704	extraction	semapv:ManualMappingCuration	orcid:0009-0009-1663-1003	0.8	
-CHMO:0001583	liquid-solid extraction	skos:exactMatch	wikidata:Q25383999	liquid-solid extraction	semapv:ManualMappingCuration	orcid:0009-0009-1663-1003	0.8	
-CHMO:0001586	solid-phase micro-extraction	skos:exactMatch	wikidata:Q903970	solid-phase micro-extraction	semapv:ManualMappingCuration	orcid:0009-0009-1663-1003	0.8	
-CHMO:0001589	headspace solid-phase micro-extraction	skos:exactMatch	wikidata:Q67825881	headspace solid-phase micro-extraction	semapv:ManualMappingCuration	orcid:0009-0009-1663-1003	0.7	semapv:LexicalMatching
-CHMO:0001598	solvent extraction	skos:exactMatch	wikidata:Q780219	liquid–liquid extraction	semapv:ManualMappingCuration	orcid:0009-0009-1663-1003	0.8	
-CHMO:0001600	liquid–liquid extraction	skos:exactMatch	wikidata:Q780219	liquid–liquid extraction	semapv:ManualMappingCuration	orcid:0009-0009-1663-1003	0.8	
-CHMO:0001607	solid–liquid extraction	skos:exactMatch	wikidata:Q25383999	solid–liquid extraction	semapv:ManualMappingCuration	orcid:0009-0009-1663-1003	0.8	
-CHMO:0001609	Soxhlet extraction	skos:exactMatch	wikidata:Q29509005	Soxhlet extraction	semapv:ManualMappingCuration	orcid:0009-0009-1663-1003	0.8	
-CHMO:0001610	supercritical fluid extraction	skos:exactMatch	wikidata:Q4410204	supercritical fluid extraction	semapv:ManualMappingCuration	orcid:0009-0009-1663-1003	0.8	
-CHMO:0001613	extrusion	skos:exactMatch	wikidata:Q139143	extrusion	semapv:ManualMappingCuration	orcid:0009-0009-1663-1003	0.8	
-CHMO:0001618	spinning	skos:exactMatch	wikidata:Q453762	spinning	semapv:ManualMappingCuration	orcid:0009-0009-1663-1003	0.8	
-CHMO:0001619	dry spinning	skos:exactMatch	wikidata:Q2454790	dry spinning	semapv:ManualMappingCuration	orcid:0009-0009-1663-1003	0.8	
-CHMO:0001620	electrospinning	skos:exactMatch	wikidata:Q1533542	electrospinning	semapv:ManualMappingCuration	orcid:0009-0009-1663-1003	0.8	
-CHMO:0001621	gel spinning	skos:exactMatch	wikidata:Q12018116	gel spinning	semapv:ManualMappingCuration	orcid:0009-0009-1663-1003	0.8	
-CHMO:0001622	melt spinning	skos:exactMatch	wikidata:Q1428318	melt spinning	semapv:ManualMappingCuration	orcid:0009-0009-1663-1003	0.8	
-CHMO:0001623	wet spinning	skos:exactMatch	wikidata:Q1275966	wet spinning	semapv:ManualMappingCuration	orcid:0009-0009-1663-1003	0.8	
-CHMO:0001624	fermentation	skos:exactMatch	wikidata:Q41760	fermentation	semapv:ManualMappingCuration	orcid:0009-0009-1663-1003	0.8	
-CHMO:0001625	fractionation	skos:exactMatch	wikidata:Q15305109	fractionation	semapv:ManualMappingCuration	orcid:0009-0009-1663-1003	0.8	
-CHMO:0001626	field-flow fractionation	skos:exactMatch	wikidata:Q782281	field-flow fractionation	semapv:ManualMappingCuration	orcid:0009-0009-1663-1003	0.8	
-CHMO:0001636	foam fractionation	skos:exactMatch	wikidata:Q3080286	foam fractionation	semapv:ManualMappingCuration	orcid:0009-0009-1663-1003	0.7	semapv:LexicalMatching
-CHMO:0001637	freeze distillation	skos:exactMatch	wikidata:Q3489476	fractional freezing	semapv:ManualMappingCuration	orcid:0009-0009-1663-1003	0.8	
-CHMO:0001639	Cohn process	skos:exactMatch	wikidata:Q5141378	Cohn process	semapv:ManualMappingCuration	orcid:0009-0009-1663-1003	0.8	
-CHMO:0001640	filtration	skos:exactMatch	wikidata:Q244772	filtration	semapv:ManualMappingCuration	orcid:0009-0009-1663-1003	0.8	
-CHMO:0001643	reverse osmosis	skos:exactMatch	wikidata:Q272175	reverse osmosis	semapv:ManualMappingCuration	orcid:0009-0009-1663-1003	0.8	
-CHMO:0001644	suction filtration	skos:exactMatch	wikidata:Q3072255	suction filtration	semapv:ManualMappingCuration	orcid:0009-0009-1663-1003	0.8	
-CHMO:0001646	gelation	skos:exactMatch	wikidata:Q48995704	gelation	semapv:ManualMappingCuration	orcid:0009-0009-1663-1003	0.8	
-CHMO:0001659	electrospray ionisation	skos:exactMatch	wikidata:Q902061	electrospray ionisation	semapv:ManualMappingCuration	orcid:0009-0009-1663-1003	0.8	
-CHMO:0001672	direct analysis in real time	skos:exactMatch	wikidata:Q3614983	direct analysis in real time	semapv:ManualMappingCuration	orcid:0009-0009-1663-1003	0.8	
-CHMO:0001674	hot isostatic pressing	skos:exactMatch	wikidata:Q1601582	hot isostatic pressing	semapv:ManualMappingCuration	orcid:0009-0009-1663-1003	0.8	
-CHMO:0001675	labelling	skos:exactMatch	wikidata:Q380709	labelling	semapv:ManualMappingCuration	orcid:0009-0009-1663-1003	0.8	
-CHMO:0001677	isotopic labelling	skos:exactMatch	wikidata:Q370228	isotopic labelling	semapv:ManualMappingCuration	orcid:0009-0009-1663-1003	0.8	
-CHMO:0001681	leaching	skos:exactMatch	wikidata:Q1483184	leaching	semapv:ManualMappingCuration	orcid:0009-0009-1663-1003	0.8	
-CHMO:0001685	mixing	skos:exactMatch	wikidata:Q379697	mixing	semapv:ManualMappingCuration	orcid:0009-0009-1663-1003	0.8	
-CHMO:0001686	Ostwald ripening	skos:exactMatch	wikidata:Q903984	Ostwald ripening	semapv:ManualMappingCuration	orcid:0009-0009-1663-1003	0.8	
-CHMO:0001687	photodegradation	skos:exactMatch	wikidata:Q1902073	photodegradation	semapv:ManualMappingCuration	orcid:0009-0009-1663-1003	0.8	
-CHMO:0001688	precipitation	skos:exactMatch	wikidata:Q113796	precipitation	semapv:ManualMappingCuration	orcid:0009-0009-1663-1003	0.8	
-CHMO:0001690	co-precipitation	skos:exactMatch	wikidata:Q131910403	coprecipitation	semapv:ManualMappingCuration	orcid:0009-0009-1663-1003	0.8	
-CHMO:0001691	immunoprecipitation	skos:exactMatch	wikidata:Q901305	immunoprecipitation	semapv:ManualMappingCuration	orcid:0009-0009-1663-1003	0.8	
-CHMO:0001694	chromatin immunoprecipitation	skos:exactMatch	wikidata:Q901026	chromatin immunoprecipitation	semapv:ManualMappingCuration	orcid:0009-0009-1663-1003	0.8	
-CHMO:0001698	radiolysis	skos:exactMatch	wikidata:Q788463	radiolysis	semapv:ManualMappingCuration	orcid:0009-0009-1663-1003	0.8	
-CHMO:0001700	pulse radiolysis	skos:exactMatch	wikidata:Q73225763	pulse radiolysis	semapv:ManualMappingCuration	orcid:0009-0009-1663-1003	0.8	
-CHMO:0001701	sintering	skos:exactMatch	wikidata:Q844613	sintering	semapv:ManualMappingCuration	orcid:0009-0009-1663-1003	0.8	
-CHMO:0001705	selective laser sintering	skos:exactMatch	wikidata:Q428412	selective laser sintering	semapv:ManualMappingCuration	orcid:0009-0009-1663-1003	0.8	
-CHMO:0001706	spark plasma sintering	skos:exactMatch	wikidata:Q2307265	spark plasma sintering	semapv:ManualMappingCuration	orcid:0009-0009-1663-1003	0.8	
-CHMO:0001707	sonication	skos:exactMatch	wikidata:Q3964828	sonication	semapv:ManualMappingCuration	orcid:0009-0009-1663-1003	0.8	
-CHMO:0001713	electrochemical detection	skos:broadMatch	wikidata:Q117822152	electrochemical detection	semapv:ManualMappingCuration	orcid:0009-0009-1663-1003	0.8	
-CHMO:0001748	acetate buffer	skos:exactMatch	wikidata:Q682228	acetic acid/acetate buffer	semapv:ManualMappingCuration	orcid:0009-0009-1663-1003	0.8	
-CHMO:0001753	ACES buffer	skos:exactMatch	wikidata:Q10859796	N-(carbamoylmethyl)taurine	semapv:ManualMappingCuration	orcid:0009-0009-1663-1003	0.8	
-CHMO:0001755	Tris-HCl buffer	skos:exactMatch	wikidata:Q413961	tromethamine	semapv:ManualMappingCuration	orcid:0009-0009-1663-1003	0.8	
-CHMO:0001756	ADA buffer	skos:exactMatch	wikidata:Q27093765	N-(2-acetamido)iminodiacetic acid	semapv:ManualMappingCuration	orcid:0009-0009-1663-1003	0.8	
-CHMO:0001760	MES buffer	skos:exactMatch	wikidata:Q209294	2-(N-morpholino)ethanesulfonic acid	semapv:ManualMappingCuration	orcid:0009-0009-1663-1003	0.8	
-CHMO:0001766	transmission Raman spectroscopy	skos:exactMatch	wikidata:Q7834626	transmission Raman spectroscopy	semapv:ManualMappingCuration	orcid:0009-0009-1663-1003	0.8	
-CHMO:0001784	pervaporation	skos:exactMatch	wikidata:Q2072760	pervaporation	semapv:ManualMappingCuration	orcid:0009-0009-1663-1003	0.8	
-CHMO:0001800	electron micrograph	skos:exactMatch	wikidata:Q124816503	electron micrograph	semapv:ManualMappingCuration	orcid:0009-0009-1663-1003	0.8	
-CHMO:0001801	scanning electron micrograph	skos:exactMatch	wikidata:Q124816510	scanning electron micrograph	semapv:ManualMappingCuration	orcid:0009-0009-1663-1003	0.8	
-CHMO:0001802	transmission electron micrograph	skos:exactMatch	wikidata:Q124816511	transmission electron micrograph	semapv:ManualMappingCuration	orcid:0009-0009-1663-1003	0.8	
-CHMO:0001810	synchrotron	skos:exactMatch	wikidata:Q689863	synchrotron	semapv:ManualMappingCuration	orcid:0009-0009-1663-1003	0.8	
-CHMO:0001814	Raman microscope	skos:exactMatch	wikidata:Q7288894	Raman microscope	semapv:ManualMappingCuration	orcid:0009-0009-1663-1003	0.8	
-CHMO:0001814	Raman microscope	skos:exactMatch	wikidata:Q7288894	Raman microscope	semapv:ManualMappingCuration	orcid:0009-0009-1663-1003	0.8	
-CHMO:0001824	micrograph	skos:exactMatch	wikidata:Q124816516	micrograph	semapv:ManualMappingCuration	orcid:0009-0009-1663-1003	0.8	
-CHMO:0001826	electrophoretic light scattering	skos:exactMatch	wikidata:Q5358524	electrophoretic light scattering	semapv:ManualMappingCuration	orcid:0009-0009-1663-1003	0.8	
-CHMO:0001883	pulsed field gradient	skos:exactMatch	wikidata:Q7259694	pulsed field gradient	semapv:ManualMappingCuration	orcid:0009-0009-1663-1003	0.7	semapv:LexicalMatching
-CHMO:0001894	thermography	skos:exactMatch	wikidata:Q28068366	thermography	semapv:ManualMappingCuration	orcid:0009-0009-1663-1003	0.8	
-CHMO:0001898	non-contact mode atomic force microscopy	skos:exactMatch	wikidata:Q16029538	non-contact mode atomic force microscopy	semapv:ManualMappingCuration	orcid:0009-0009-1663-1003	0.8	
-CHMO:0001909	focal-plane array	skos:exactMatch	wikidata:Q5463830	focal plane array	semapv:ManualMappingCuration	orcid:0009-0009-1663-1003	0.8	
-CHMO:0001924	diffusing wave spectroscopy	skos:exactMatch	wikidata:Q5275431	diffusing wave spectroscopy	semapv:ManualMappingCuration	orcid:0009-0009-1663-1003	0.8	
-CHMO:0001925	total internal reflection microscopy	skos:exactMatch	wikidata:Q18353600	total internal reflection microscopy	semapv:ManualMappingCuration	orcid:0009-0009-1663-1003	0.7	semapv:LexicalMatching
-CHMO:0001938	collision-induced dissociation	skos:exactMatch	wikidata:Q3710336	collision-induced dissociation	semapv:ManualMappingCuration	orcid:0009-0009-1663-1003	0.8	
-CHMO:0001957	flow cytometer	skos:exactMatch	wikidata:Q67126484	flow cytometer	semapv:ManualMappingCuration	orcid:0009-0009-1663-1003	0.8	
-CHMO:0001959	visible spectrum	skos:exactMatch	wikidata:Q76299	visible spectrum	semapv:ManualMappingCuration	orcid:0009-0009-1663-1003	0.8	
-CHMO:0001992	adsorption-desorption isotherm	skos:exactMatch	wikidata:Q29073802	adsorption isotherm	semapv:ManualMappingCuration	orcid:0009-0009-1663-1003	0.8	
-CHMO:0001994	profilometer	skos:exactMatch	wikidata:Q443756	profilometer	semapv:ManualMappingCuration	orcid:0009-0009-1663-1003	0.8	
-CHMO:0002016	ultracentrifugation	skos:exactMatch	wikidata:Q21403009	ultracentrifugation	semapv:ManualMappingCuration	orcid:0009-0009-1663-1003	0.8	
-CHMO:0002018	isopycnic centrifugation	skos:exactMatch	wikidata:Q11602725	isopycnic centrifugation	semapv:ManualMappingCuration	orcid:0009-0009-1663-1003	0.8	
-CHMO:0002019	rate-zonal centrifugation	skos:exactMatch	wikidata:Q19605688	rate-zonal centrifugation	semapv:ManualMappingCuration	orcid:0009-0009-1663-1003	0.8	
-CHMO:0002020	homogenisation	skos:exactMatch	wikidata:Q1165158	homogenisation	semapv:ManualMappingCuration	orcid:0009-0009-1663-1003	0.8	
-CHMO:0002021	triple quadrupole mass spectrometer	skos:exactMatch	wikidata:Q7843529	triple quadrupole mass spectrometer	semapv:ManualMappingCuration	orcid:0009-0009-1663-1003	0.8	
-CHMO:0002043	laser Doppler velocimetry	skos:exactMatch	wikidata:Q1420475	laser Doppler velocimetry	semapv:ManualMappingCuration	orcid:0009-0009-1663-1003	0.8	
-CHMO:0002066	trituration	skos:exactMatch	wikidata:Q961231	trituration	semapv:ManualMappingCuration	orcid:0009-0009-1663-1003	0.8	
-CHMO:0002069	TE buffer	skos:exactMatch	wikidata:Q7670071	TE buffer	semapv:ManualMappingCuration	orcid:0009-0009-1663-1003	0.8	
-CHMO:0002087	thermophoresis	skos:exactMatch	wikidata:Q610090	thermophoresis	semapv:ManualMappingCuration	orcid:0009-0009-1663-1003	0.8	
-CHMO:0002091	pressure perturbation calorimetry	skos:exactMatch	wikidata:Q17105362	pressure perturbation calorimetry	semapv:ManualMappingCuration	orcid:0009-0009-1663-1003	0.8	
-CHMO:0002099	holography	skos:exactMatch	wikidata:Q527628	holography	semapv:ManualMappingCuration	orcid:0009-0009-1663-1003	0.8	
-CHMO:0002109	pulse oximetry	skos:exactMatch	wikidata:Q1140495	pulse oximetry	semapv:ManualMappingCuration	orcid:0009-0009-1663-1003	0.8	
-CHMO:0002119	granulometry	skos:exactMatch	wikidata:Q5596841	granulometry	semapv:ManualMappingCuration	orcid:0009-0009-1663-1003	0.8	
-CHMO:0002120	monochromator	skos:exactMatch	wikidata:Q898306	monochromator	semapv:ManualMappingCuration	orcid:0009-0009-1663-1003	0.8	
-CHMO:0002126	amplifier	skos:exactMatch	wikidata:Q211554	electronic amplifier	semapv:ManualMappingCuration	orcid:0009-0009-1663-1003	0.8	
-CHMO:0002143	conductometric titration	skos:exactMatch	wikidata:Q11778221	conductometric titration	semapv:ManualMappingCuration	orcid:0009-0009-1663-1003	0.8	
-CHMO:0002151	passivation	skos:exactMatch	wikidata:Q917260Q567502	passivation	semapv:ManualMappingCuration	orcid:0009-0009-1663-1003	0.8	
-CHMO:0002152	anodisation	skos:exactMatch	wikidata:Q567502	anodisation	semapv:ManualMappingCuration	orcid:0009-0009-1663-1003	0.8	
-CHMO:0002156	silanisation	skos:exactMatch	wikidata:Q2285655	silanisation	semapv:ManualMappingCuration	orcid:0009-0009-1663-1003	0.8	
-CHMO:0002158	Czochralski process	skos:exactMatch	wikidata:Q594666	Czochralski process	semapv:ManualMappingCuration	orcid:0009-0009-1663-1003	0.8	
-CHMO:0002159	Verneuil process	skos:exactMatch	wikidata:Q898662	Verneuil process	semapv:ManualMappingCuration	orcid:0009-0009-1663-1003	0.8	
-CHMO:0002160	Bridgeman technique	skos:exactMatch	wikidata:Q902938	Bridgman–Stockbarger technique	semapv:ManualMappingCuration	orcid:0009-0009-1663-1003	0.8	
-CHMO:0002162	titration curve	skos:exactMatch	wikidata:Q3699705	titration curve	semapv:ManualMappingCuration	orcid:0009-0009-1663-1003	0.8	
-CHMO:0002166	autoclave	skos:exactMatch	wikidata:Q16692122	autoclave (industrial)	semapv:ManualMappingCuration	orcid:0009-0009-1663-1003	0.8	
-CHMO:0002177	dark-field microscopy	skos:exactMatch	wikidata:Q899540	dark-field microscopy	semapv:ManualMappingCuration	orcid:0009-0009-1663-1003	0.8	
-CHMO:0002180	inverted microscope	skos:exactMatch	wikidata:Q1463415	inverted microscope	semapv:ManualMappingCuration	orcid:0009-0009-1663-1003	0.8	
-CHMO:0002182	electron-multiplying charge-coupled device	skos:exactMatch	wikidata:Q1326007	Electron multiplying charge-coupled device	semapv:ManualMappingCuration	orcid:0009-0009-1663-1003	0.8	
-CHMO:0002191	nanosphere lithography	skos:exactMatch	wikidata:Q17043033	nanosphere lithography	semapv:ManualMappingCuration	orcid:0009-0009-1663-1003	0.8	
-CHMO:0002196	activation	skos:exactMatch	wikidata:Q4661718	activation	semapv:ManualMappingCuration	orcid:0009-0009-1663-1003	0.8	
-CHMO:0002197	plasma activation	skos:exactMatch	wikidata:Q4364308	plasma activation	semapv:ManualMappingCuration	orcid:0009-0009-1663-1003	0.7	semapv:LexicalMatching
-CHMO:0002199	rotary evaporator	skos:exactMatch	wikidata:Q899083	rotary evaporator	semapv:ManualMappingCuration	orcid:0009-0009-1663-1003	0.8	
-CHMO:0002217	sample sublimation	skos:exactMatch	wikidata:Q105582961	sublimation	semapv:ManualMappingCuration	orcid:0009-0009-1663-1003	0.8	
-CHMO:0002218	fractional sublimation	skos:exactMatch	wikidata:Q1440584	fractional sublimation	semapv:ManualMappingCuration	orcid:0009-0009-1663-1003	0.8	
-CHMO:0002221	Lely method	skos:exactMatch	wikidata:Q16999446	Lely method	semapv:ManualMappingCuration	orcid:0009-0009-1663-1003	0.7	semapv:LexicalMatching
-CHMO:0002223	sandwich sublimation	skos:exactMatch	wikidata:Q17083574	sublimation sandwich method	semapv:ManualMappingCuration	orcid:0009-0009-1663-1003	0.7	semapv:LexicalMatching
-CHMO:0002231	purification	skos:exactMatch	wikidata:Q682483	refining	semapv:ManualMappingCuration	orcid:0009-0009-1663-1003	0.8	
-CHMO:0002232	spectrophotometer	skos:exactMatch	wikidata:Q3492906	spectrophotometer	semapv:ManualMappingCuration	orcid:0009-0009-1663-1003	0.8	
-CHMO:0002244	detector	skos:exactMatch	wikidata:Q2066909	detector	semapv:ManualMappingCuration	orcid:0009-0009-1663-1003	0.8	
-CHMO:0002249	porosimetry	skos:exactMatch	wikidata:Q2122541	porosimetry	semapv:ManualMappingCuration	orcid:0009-0009-1663-1003	0.8	
-CHMO:0002251	solvent vapour annealing	skos:exactMatch	wikidata:Q85801975	solvent vapour annealing	semapv:ManualMappingCuration	orcid:0009-0009-1663-1003	0.8	
-CHMO:0002262	hydrophilic interaction chromatography	skos:exactMatch	wikidata:Q5955221	hydrophilic interaction chromatography	semapv:ManualMappingCuration	orcid:0009-0009-1663-1003	0.8	
-CHMO:0002271	laser ablation synthesis in solution	skos:exactMatch	wikidata:Q6493029	laser ablation synthesis in solution	semapv:ManualMappingCuration	orcid:0009-0009-1663-1003	0.7	semapv:LexicalMatching
-CHMO:0002275	native polyacrylamide gel electrophoresis	skos:exactMatch	wikidata:Q15836380	native polyacrylamide gel electrophoresis	semapv:ManualMappingCuration	orcid:0009-0009-1663-1003	0.8	
-CHMO:0002276	blue native polyacrylamide gel electrophoresis	skos:exactMatch	wikidata:Q117745371	BN-PAGE	semapv:ManualMappingCuration	orcid:0009-0009-1663-1003	0.8	
-CHMO:0002278	quantitative preparative native continuous polyacrylamide gel electrophoresis	skos:exactMatch	wikidata:Q592853	wikidata:QPNC-PAGE	semapv:ManualMappingCuration	orcid:0009-0009-1663-1003	0.8	
-CHMO:0002302	reversed-phase chromatography	skos:exactMatch	wikidata:Q645497	reversed-phase chromatography	semapv:ManualMappingCuration	orcid:0009-0009-1663-1003	0.8	
-CHMO:0002308	spectropolarimeter	skos:exactMatch	wikidata:Q111145848	spectropolarimeter	semapv:ManualMappingCuration	orcid:0009-0009-1663-1003	0.8	semapv:LexicalMatching
-CHMO:0002314	scanning transmission X-ray microscopy	skos:exactMatch	wikidata:Q25303746	scanning transmission X-ray microscopy	semapv:ManualMappingCuration	orcid:0009-0009-1663-1003	0.7	semapv:LexicalMatching
-CHMO:0002316	pulsed-field gel electrophoresis	skos:exactMatch	wikidata:Q855275	pulsed field gel electrophoresis	semapv:ManualMappingCuration	orcid:0009-0009-1663-1003	0.8	
-CHMO:0002340	lock-in amplifier	skos:exactMatch	wikidata:Q1752933	lock-in amplifier	semapv:ManualMappingCuration	orcid:0009-0009-1663-1003	0.8	
-CHMO:0002343	relaxometry	skos:exactMatch	wikidata:Q7310885	relaxometry	semapv:ManualMappingCuration	orcid:0009-0009-1663-1003	0.8	
-CHMO:0002344	electrode	skos:exactMatch	wikidata:Q176140	electrode	semapv:ManualMappingCuration	orcid:0009-0009-1663-1003	0.8	
-CHMO:0002345	reference electrode	skos:exactMatch	wikidata:Q653954	reference electrode	semapv:ManualMappingCuration	orcid:0009-0009-1663-1003	0.8	
-CHMO:0002346	indicator electrode	skos:exactMatch	wikidata:Q120907462	indicator electrode	semapv:ManualMappingCuration	orcid:0009-0009-1663-1003	0.8	
-CHMO:0002350	liquid junction	skos:exactMatch	wikidata:Q3820974	Liquid junction potential	semapv:ManualMappingCuration	orcid:0009-0009-1663-1003	0.8	
-CHMO:0002351	electrochemical cell	skos:exactMatch	wikidata:Q80097	electrochemical cell	semapv:ManualMappingCuration	orcid:0009-0009-1663-1003	0.8	
-CHMO:0002356	silver/silver chloride reference electrode	skos:exactMatch	wikidata:Q900939	silver chloride electrode	semapv:ManualMappingCuration	orcid:0009-0009-1663-1003	0.8	
-CHMO:0002357	saturated calomel electrode	skos:exactMatch	wikidata:Q898591	saturated calomel electrode	semapv:ManualMappingCuration	orcid:0009-0009-1663-1003	0.8	
-CHMO:0002358	auxiliary electrode	skos:exactMatch	wikidata:Q1768785	auxiliary electrode	semapv:ManualMappingCuration	orcid:0009-0009-1663-1003	0.8	
-CHMO:0002371	potentiometric titration	skos:exactMatch	wikidata:Q1813495	potentiometric titration	semapv:ManualMappingCuration	orcid:0009-0009-1663-1003	0.8	
-CHMO:0002372	electronic tongue	skos:exactMatch	wikidata:Q1327254	electronic tongue	semapv:ManualMappingCuration	orcid:0009-0009-1663-1003	0.8	
-CHMO:0002387	chromatogram	skos:exactMatch	wikidata:Q3192054	chromatogram	semapv:ManualMappingCuration	orcid:0009-0009-1663-1003	0.8	
-CHMO:0002389	total ion chromatogram	skos:exactMatch	wikidata:Q107392164	total ion chromatogram	semapv:ManualMappingCuration	orcid:0009-0009-1663-1003	0.7	semapv:LexicalMatching
-CHMO:0002393	ion-selective electrode	skos:exactMatch	wikidata:Q2477607	ion selective electrode	semapv:ManualMappingCuration	orcid:0009-0009-1663-1003	0.8	
-CHMO:0002394	dropping mercury electrode	skos:exactMatch	wikidata:Q962292	dropping mercury electrode	semapv:ManualMappingCuration	orcid:0009-0009-1663-1003	0.8	
-CHMO:0002395	hanging mercury drop electrode	skos:exactMatch	wikidata:Q568031	hanging mercury drop electrode	semapv:ManualMappingCuration	orcid:0009-0009-1663-1003	0.7	semapv:LexicalMatching
-CHMO:0002403	partition chromatography	skos:exactMatch	wikidata:Q907154	partition chromatography	semapv:ManualMappingCuration	orcid:0009-0009-1663-1003	0.8	
-CHMO:0002413	cryogenic electron microscopy	skos:exactMatch	wikidata:Q5190506	cryogenic electron microscopy	semapv:ManualMappingCuration	orcid:0009-0009-1663-1003	0.8	
-CHMO:0002415	luminescence spectroscopy	skos:exactMatch	wikidata:Q97007357	luminescence spectroscopy	semapv:ManualMappingCuration	orcid:0009-0009-1663-1003	0.8	
-CHMO:0002427	potentiostat	skos:exactMatch	wikidata:Q629290	potentiostat	semapv:ManualMappingCuration	orcid:0009-0009-1663-1003	0.8	
-CHMO:0002433	interferometry	skos:exactMatch	wikidata:Q850283	interferometry	semapv:ManualMappingCuration	orcid:0009-0009-1663-1003	0.8	
-CHMO:0002436	optical heterodyne detection	skos:broadMatch	wikidata:Q7098859	optical heterodyne detection	semapv:ManualMappingCuration	orcid:0009-0009-1663-1003	0.8	
-CHMO:0002444	microwave oven	skos:exactMatch	wikidata:Q127956	microwave oven	semapv:ManualMappingCuration	orcid:0009-0009-1663-1003	0.8	
-CHMO:0002445	pump-probe spectroscopy	skos:exactMatch	wikidata:Q24886151	pump-probe spectroscopy	semapv:ManualMappingCuration	orcid:0009-0009-1663-1003	0.8	
-CHMO:0002457	Kelvin probe force microscopy	skos:exactMatch	wikidata:Q1324110	Kelvin probe force microscopy	semapv:ManualMappingCuration	orcid:0009-0009-1663-1003	0.8	
-CHMO:0002466	protein precipitation	skos:exactMatch	wikidata:Q7251495	protein precipitation	semapv:ManualMappingCuration	orcid:0009-0009-1663-1003	0.8	
-CHMO:0002467	analyte	skos:exactMatch	wikidata:Q2282401	analyte	semapv:ManualMappingCuration	orcid:0009-0009-1663-1003	0.8	
-CHMO:0002473	Knudsen cell	skos:exactMatch	wikidata:Q6423816	Knudsen cell	semapv:ManualMappingCuration	orcid:0009-0009-1663-1003	0.8	
-CHMO:0002474	magnetic tweezers	skos:exactMatch	wikidata:Q6731630	magnetic tweezers	semapv:ManualMappingCuration	orcid:0009-0009-1663-1003	0.8	
-CHMO:0002477	chromatograph	skos:exactMatch	wikidata:Q107049539	chromatograph	semapv:ManualMappingCuration	orcid:0009-0009-1663-1003	0.8	
-CHMO:0002478	gas chromatograph	skos:exactMatch	wikidata:Q67145730	gas chromatograph	semapv:ManualMappingCuration	orcid:0009-0009-1663-1003	0.8	
-CHMO:0002497	ultraviolet curing	skos:exactMatch	wikidata:Q18355911	ultraviolet curing	semapv:ManualMappingCuration	orcid:0009-0009-1663-1003	0.8	
-CHMO:0002502	Tauc plot	skos:exactMatch	wikidata:Q7688655	Tauc plot	semapv:ManualMappingCuration	orcid:0009-0009-1663-1003	0.8	
-CHMO:0002503	diode array detector	skos:broadMatch	wikidata:Q111527216	diode array detector	semapv:ManualMappingCuration	orcid:0009-0009-1663-1003	0.8	
-CHMO:0002509	flash photolysis	skos:exactMatch	wikidata:Q5457567	flash photolysis	semapv:ManualMappingCuration	orcid:0009-0009-1663-1003	0.8	
-CHMO:0002521	atomic absorption spectrometer	skos:exactMatch	wikidata:Q123855004	atomic absorption spectrometer	semapv:ManualMappingCuration	orcid:0009-0009-1663-1003	0.7	semapv:LexicalMatching
-CHMO:0002532	Everhart-Thornley detector	skos:exactMatch	wikidata:Q908159	Everhart-Thornley detector	semapv:ManualMappingCuration	orcid:0009-0009-1663-1003	0.8	
-CHMO:0002532	Everhart–Thornley detector	skos:exactMatch	wikidata:Q908159	Everhart–Thornley detector	semapv:ManualMappingCuration	orcid:0009-0009-1663-1003	0.7	semapv:LexicalMatching
-CHMO:0002535	Karl–Fischer titration	skos:exactMatch	wikidata:Q899728	Karl Fischer titration	semapv:ManualMappingCuration	orcid:0009-0009-1663-1003	0.8	
-CHMO:0002550	emulsion polymerisation	skos:exactMatch	wikidata:Q910678	emulsion polymerisation	semapv:ManualMappingCuration	orcid:0009-0009-1663-1003	0.8	
-CHMO:0002557	HNCA	skos:exactMatch	wikidata:Q5635300	HNCA experiment	semapv:ManualMappingCuration	orcid:0009-0009-1663-1003	0.8	
-CHMO:0002558	HNCOCA	skos:exactMatch	wikidata:Q5635301	HNCOCA experiment	semapv:ManualMappingCuration	orcid:0009-0009-1663-1003	0.8	
-CHMO:0002579	autosampler	skos:exactMatch	wikidata:Q1807610	autosampler	semapv:ManualMappingCuration	orcid:0009-0009-1663-1003	0.8	
-CHMO:0002580	colorimetric test	skos:exactMatch	wikidata:Q106527425	colorimetric test	semapv:ManualMappingCuration	orcid:0009-0009-1663-1003	0.8	
-CHMO:0002585	refractive index detector	skos:exactMatch	wikidata:Q904306	differential refractometer	semapv:ManualMappingCuration	orcid:0009-0009-1663-1003	0.8	
-CHMO:0002591	scanning mobility particle sizer	skos:exactMatch	wikidata:Q7430071	Scanning mobility particle sizer	semapv:ManualMappingCuration	orcid:0009-0009-1663-1003	0.8	
-CHMO:0002592	carbon electrode	skos:exactMatch	wikidata:Q11376187	graphite/black carbon electrode	semapv:ManualMappingCuration	orcid:0009-0009-1663-1003	0.8	
-CHMO:0002606	suspension polymerisation	skos:exactMatch	wikidata:Q901073	suspension polymerisation	semapv:ManualMappingCuration	orcid:0009-0009-1663-1003	0.8	
-CHMO:0002607	micromanipulator	skos:exactMatch	wikidata:Q1933900	micromanipulator	semapv:ManualMappingCuration	orcid:0009-0009-1663-1003	0.8	
-CHMO:0002609	graphitisation	skos:exactMatch	wikidata:Q123182971	graphitization	semapv:ManualMappingCuration	orcid:0009-0009-1663-1003	0.8	
-CHMO:0002613	aberration-corrected transmission electron microscopy	skos:exactMatch	wikidata:Q131160647	aberration-corrected transmission electron microscopy	semapv:ManualMappingCuration	orcid:0009-0009-1663-1003	0.7	semapv:LexicalMatching
-CHMO:0002614	weak-beam dark-field electron microscopy	skos:exactMatch	wikidata:Q118906141	weak-beam dark-field electron microscopy	semapv:ManualMappingCuration	orcid:0009-0009-1663-1003	0.8	
-CHMO:0002617	X-ray photon correlation spectroscopy	skos:exactMatch	wikidata:Q56291589	X-ray photon correlation spectroscopy	semapv:ManualMappingCuration	orcid:0009-0009-1663-1003	0.7	semapv:LexicalMatching
-CHMO:0002632	rotating-disk electrode	skos:exactMatch	wikidata:Q3587619	rotating disk electrode	semapv:ManualMappingCuration	orcid:0009-0009-1663-1003	0.8	
-CHMO:0002634	azeotropic distillation	skos:exactMatch	wikidata:Q593181	azeotropic distillation	semapv:ManualMappingCuration	orcid:0009-0009-1663-1003	0.8	
-CHMO:0002635	magnetometer	skos:exactMatch	wikidata:Q333921	magnetometer	semapv:ManualMappingCuration	orcid:0009-0009-1663-1003	0.8	
-CHMO:0002636	superconducting quantum interference device	skos:exactMatch	wikidata:Q746502	SQUID	semapv:ManualMappingCuration	orcid:0009-0009-1663-1003	0.8	
-CHMO:0002638	electrostatic force microscopy	skos:exactMatch	wikidata:Q5358564	electrostatic force microscopy	semapv:ManualMappingCuration	orcid:0009-0009-1663-1003	0.8	
-CHMO:0002643	Ragone plot	skos:exactMatch	wikidata:Q2127342	Ragone chart	semapv:ManualMappingCuration	orcid:0009-0009-1663-1003	0.8	
-CHMO:0002647	X-ray spectrometer	skos:exactMatch	wikidata:Q110162001	X-ray spectrometer	semapv:ManualMappingCuration	orcid:0009-0009-1663-1003	0.8	
-CHMO:0002656	environmental scanning electron microscope	skos:exactMatch	wikidata:Q268401	Environmental scanning electron microscope	semapv:ManualMappingCuration	orcid:0009-0009-1663-1003	0.8	
-CHMO:0002657	ion trap mass spectrometer	skos:exactMatch	wikidata:Q1482871	ion trap mass spectrometer	semapv:ManualMappingCuration	orcid:0009-0009-1663-1003	0.8	
-CHMO:0002657	ion trap mass spectrometer	skos:exactMatch	wikidata:Q1482871	ion trap mass spectrometer	semapv:ManualMappingCuration	orcid:0009-0009-1663-1003	0.7	semapv:LexicalMatching
-CHMO:0002660	chemical force microscopy	skos:exactMatch	wikidata:Q5090460	chemical force microscopy	semapv:ManualMappingCuration	orcid:0009-0009-1663-1003	0.7	semapv:LexicalMatching
-CHMO:0002661	atomic force infrared microscopy	skos:exactMatch	wikidata:Q18746443	AFM-IR	semapv:ManualMappingCuration	orcid:0009-0009-1663-1003	0.8	
-CHMO:0002671	inverse gas chromatography	skos:exactMatch	wikidata:Q6060383	inverse gas chromatography	semapv:ManualMappingCuration	orcid:0009-0009-1663-1003	0.8	
-CHMO:0002673	thermal desorption spectroscopy	skos:exactMatch	wikidata:Q2402805	thermal desorption spectroscopy	semapv:ManualMappingCuration	orcid:0009-0009-1663-1003	0.8	
-CHMO:0002677	coulometer	skos:exactMatch	wikidata:Q905539	voltameter	semapv:ManualMappingCuration	orcid:0009-0009-1663-1003	0.8	
-CHMO:0002682	ellipsometer	skos:exactMatch	wikidata:Q114047914	ellipsometer	semapv:ManualMappingCuration	orcid:0009-0009-1663-1003	0.7	semapv:LexicalMatching
-CHMO:0002689	Nyquist plot	skos:exactMatch	wikidata:Q1333343	Nyquist plot	semapv:ManualMappingCuration	orcid:0009-0009-1663-1003	0.8	
-CHMO:0002710	two-dimensional infrared spectroscopy	skos:exactMatch	wikidata:Q7858699	two-dimensional infrared spectroscopy	semapv:ManualMappingCuration	orcid:0009-0009-1663-1003	0.8	
-CHMO:0002712	scanning vibrating electrode technique	skos:exactMatch	wikidata:Q65086599	scanning vibrating electrode technique	semapv:ManualMappingCuration	orcid:0009-0009-1663-1003	0.7	semapv:LexicalMatching
-CHMO:0002713	magnetic resonance force microscopy	skos:exactMatch	wikidata:Q3312363	magnetic resonance force microscopy	semapv:ManualMappingCuration	orcid:0009-0009-1663-1003	0.8	
-CHMO:0002742	elution	skos:exactMatch	wikidata:Q684907	elution	semapv:ManualMappingCuration	orcid:0009-0009-1663-1003	0.8	
-CHMO:0002772	degassing	skos:exactMatch	wikidata:Q3633878	degassing	semapv:ManualMappingCuration	orcid:0009-0009-1663-1003	0.8	
-CHMO:0002773	dissolving	skos:exactMatch	wikidata:Q3133701	dissolution	semapv:ManualMappingCuration	orcid:0009-0009-1663-1003	0.8	
-CHMO:0002774	stirring	skos:exactMatch	wikidata:Q2826873	stirring	semapv:ManualMappingCuration	orcid:0009-0009-1663-1003	0.8	
-CHMO:0002782	silica gel	skos:exactMatch	wikidata:Q308976	silica gel	semapv:ManualMappingCuration	orcid:0009-0009-1663-1003	0.8	
-CHMO:0002786	filter cake	skos:exactMatch	wikidata:Q266564	filter cake	semapv:ManualMappingCuration	orcid:0009-0009-1663-1003	0.8	
-CHMO:0002787	syringe pump	skos:exactMatch	wikidata:Q63930625	syringe pump	semapv:ManualMappingCuration	orcid:0009-0009-1663-1003	0.8	semapv:LexicalMatching
-CHMO:0002793	sensor	skos:exactMatch	wikidata:Q167676	sensor	semapv:ManualMappingCuration	orcid:0009-0009-1663-1003	0.8	
-CHMO:0002794	chemosensor	skos:exactMatch	wikidata:Q114047884	chemosensor	semapv:ManualMappingCuration	orcid:0009-0009-1663-1003	0.7	semapv:LexicalMatching
-CHMO:0002795	biosensor	skos:exactMatch	wikidata:Q669391	biosensor	semapv:ManualMappingCuration	orcid:0009-0009-1663-1003	0.8	
-CHMO:0002796	dosimetry	skos:exactMatch	wikidata:Q2291081	dosimetry	semapv:ManualMappingCuration	orcid:0009-0009-1663-1003	0.8	
-CHMO:0002797	dosimeter	skos:exactMatch	wikidata:Q303665	dosimeter	semapv:ManualMappingCuration	orcid:0009-0009-1663-1003	0.8	
-CHMO:0002800	muffle furnace	skos:exactMatch	wikidata:Q1064870	muffle furnace	semapv:ManualMappingCuration	orcid:0009-0009-1663-1003	0.8	
-CHMO:0002801	limit of detection	skos:exactMatch	wikidata:Q900165	detection limit	semapv:ManualMappingCuration	orcid:0009-0009-1663-1003	0.8	
-CHMO:0002803	figure of merit	skos:exactMatch	wikidata:Q3676605	figure of merit	semapv:ManualMappingCuration	orcid:0009-0009-1663-1003	0.8	
-CHMO:0002804	blank value	skos:exactMatch	wikidata:Q884378	blank value	semapv:ManualMappingCuration	orcid:0009-0009-1663-1003	0.8	
-CHMO:0002805	working range	skos:exactMatch	wikidata:Q8034982	working range	semapv:ManualMappingCuration	orcid:0009-0009-1663-1003	0.7	semapv:LexicalMatching
-CHMO:0002807	linear range	skos:exactMatch	wikidata:Q6553497	linear range	semapv:ManualMappingCuration	orcid:0009-0009-1663-1003	0.8	
-CHMO:0002815	solubility	skos:exactMatch	wikidata:Q170731	solubility	semapv:ManualMappingCuration	orcid:0009-0009-1663-1003	0.8	
-CHMO:0002818	angle of optical rotation	skos:exactMatch	wikidata:Q96323385	angle of optical rotation	semapv:ManualMappingCuration	orcid:0009-0009-1663-1003	0.8	
-CHMO:0002820	concentration	skos:exactMatch	wikidata:Q3686031	concentration	semapv:ManualMappingCuration	orcid:0009-0009-1663-1003	0.8	
-CHMO:0002821	mass concentration	skos:exactMatch	wikidata:Q589446	mass concentration	semapv:ManualMappingCuration	orcid:0009-0009-1663-1003	0.8	
-CHMO:0002822	amount concentration	skos:exactMatch	wikidata:Q672821	amount-of-substance concentration	semapv:ManualMappingCuration	orcid:0009-0009-1663-1003	0.8	
-CHMO:0002823	volume concentration	skos:exactMatch	wikidata:Q907948	volume concentration	semapv:ManualMappingCuration	orcid:0009-0009-1663-1003	0.8	
-CHMO:0002826	Dean-Stark apparatus	skos:exactMatch	wikidata:Q902057	Dean-Stark apparatus	semapv:ManualMappingCuration	orcid:0009-0009-1663-1003	0.7	semapv:LexicalMatching
-CHMO:0002827	weighing	skos:exactMatch	wikidata:Q12779002	weighing	semapv:ManualMappingCuration	orcid:0009-0009-1663-1003	0.8	
-CHMO:0002836	Stöber process	skos:broadMatch	wikidata:Q7630115	Stöber process	semapv:ManualMappingCuration	orcid:0009-0009-1663-1003	0.8	
-CHMO:0002845	waste management	skos:exactMatch	wikidata:Q180388	waste management	semapv:ManualMappingCuration	orcid:0009-0009-1663-1003	0.8	
-CHMO:0002849	repeatability standard deviation	skos:exactMatch	wikidata:Q114345272	repeatability standard deviation	semapv:ManualMappingCuration	orcid:0009-0009-1663-1003	0.8	
-CHMO:0002850	reproducibility standard deviation	skos:exactMatch	wikidata:Q114315969	reproducibility standard deviation	semapv:ManualMappingCuration	orcid:0009-0009-1663-1003	0.8	
-CHMO:0002860	diastereomeric excess	skos:exactMatch	wikidata:Q1209198	diastereomeric excess	semapv:ManualMappingCuration	orcid:0009-0009-1663-1003	0.7	semapv:LexicalMatching
-CHMO:0002864	wikidata:QuEChERS	skos:exactMatch	wikidata:Q7269895	quechers	semapv:ManualMappingCuration	orcid:0009-0009-1663-1003	0.7	semapv:LexicalMatching
-CHMO:0002879	certified reference material	skos:exactMatch	wikidata:Q906323	certified reference material	semapv:ManualMappingCuration	orcid:0009-0009-1663-1003	0.8	
-CHMO:0002897	polarimeter	skos:exactMatch	wikidata:Q693545	polarimeter	semapv:ManualMappingCuration	orcid:0009-0009-1663-1003	0.8	
-CHMO:0002902	Faraday efficiency	skos:exactMatch	wikidata:Q4129894	Faraday efficiency	semapv:ManualMappingCuration	orcid:0009-0009-1663-1003	0.8	
-CHMO:0002908	temperature-programmed reduction	skos:exactMatch	wikidata:Q904349	temperature-programmed reduction	semapv:ManualMappingCuration	orcid:0009-0009-1663-1003	0.8	
-CHMO:0002911	magic angle spinning	skos:exactMatch	wikidata:Q1884060	magic angle spinning	semapv:ManualMappingCuration	orcid:0009-0009-1663-1003	0.8	
-CHMO:0002913	reference material	skos:exactMatch	wikidata:Q25509247	reference material	semapv:ManualMappingCuration	orcid:0009-0009-1663-1003	0.8	
-CHMO:0002916	sample solidification	skos:exactMatch	wikidata:Q123785888	solidification	semapv:ManualMappingCuration	orcid:0009-0009-1663-1003	0.7	semapv:LexicalMatching
-CHMO:0002931	anode	skos:exactMatch	wikidata:Q181232	anode	semapv:ManualMappingCuration	orcid:0009-0009-1663-1003	0.8	
-CHMO:0002932	cathode	skos:exactMatch	wikidata:Q175233	cathode	semapv:ManualMappingCuration	orcid:0009-0009-1663-1003	0.8	
-CHMO:0010001	protective equipment	skos:exactMatch	wikidata:Q3030569	protective device	semapv:ManualMappingCuration	orcid:0009-0009-1663-1003	0.8	
-CHMO:0010003	protective clothing	skos:exactMatch	wikidata:Q14524031	protective clothing	semapv:ManualMappingCuration	orcid:0009-0009-1663-1003	0.7	semapv:LexicalMatching
-CHMO:0010006	emergency shower	skos:exactMatch	wikidata:Q3037859	emergency shower	semapv:ManualMappingCuration	orcid:0009-0009-1663-1003	0.8	
-CHMO:0010006	emergency shower	skos:exactMatch	wikidata:Q3037859	emergency shower	semapv:ManualMappingCuration	orcid:0009-0009-1663-1003	0.7	semapv:LexicalMatching
-CHMO:0010007	fire blanket	skos:exactMatch	wikidata:Q1409603	fire blanket	semapv:ManualMappingCuration	orcid:0009-0009-1663-1003	0.7	semapv:LexicalMatching
-CHMO:0010008	fire extinguisher	skos:exactMatch	wikidata:Q190672	fire extinguisher	semapv:ManualMappingCuration	orcid:0009-0009-1663-1003	0.7	semapv:LexicalMatching
-CHMO:0010011	personal protective equipment	skos:exactMatch	wikidata:Q1333024	personal protective equipment	semapv:ManualMappingCuration	orcid:0009-0009-1663-1003	0.8	
-CHMO:0010020	fume hood	skos:exactMatch	wikidata:Q336727	fume hood	semapv:ManualMappingCuration	orcid:0009-0009-1663-1003	0.8	
-CHMO:0010023	hazard analysis	skos:exactMatch	wikidata:Q3614972	hazard analysis	semapv:ManualMappingCuration	orcid:0009-0009-1663-1003	0.7	semapv:LexicalMatching
-CHMO:0010024	risk assessment	skos:exactMatch	wikidata:Q1058438	risk assessment	semapv:ManualMappingCuration	orcid:0009-0009-1663-1003	0.7	semapv:LexicalMatching
-CHMO:0010025	control banding	skos:exactMatch	wikidata:Q2676051	control banding	semapv:ManualMappingCuration	orcid:0009-0009-1663-1003	0.7	semapv:LexicalMatching
+subject_id	subject_label	predicate_id	object_id	object_label	mapping_justification	author_id	reviewer_id	confidence	comment
+CHMO:0000001	colorimetry	skos:exactMatch	wikidata:Q2497892	colorimetry	semapv:ManualMappingCuration	orcid:0009-0009-1663-1003	orcid:0000-0003-4423-4370	0.8	
+CHMO:0000003	electrochemical analysis	skos:exactMatch	wikidata:Q1669557	electrochemical analysis	semapv:ManualMappingCuration	orcid:0009-0009-1663-1003		0.8	
+CHMO:0000004	amperometry	skos:exactMatch	wikidata:Q474536	amperometry	semapv:ManualMappingCuration	orcid:0009-0009-1663-1003		0.8	
+CHMO:0000010	conductometry	skos:exactMatch	wikidata:Q901180	conductometry	semapv:ManualMappingCuration	orcid:0009-0009-1663-1003		0.8	
+CHMO:0000012	coulometry	skos:exactMatch	wikidata:Q1136979	coulometry	semapv:ManualMappingCuration	orcid:0009-0009-1663-1003		0.8	
+CHMO:0000016	potentiometry	skos:exactMatch	wikidata:Q900632	potentiometry	semapv:ManualMappingCuration	orcid:0009-0009-1663-1003		0.8	
+CHMO:0000024	voltammetry	skos:exactMatch	wikidata:Q904093	voltammetry	semapv:ManualMappingCuration	orcid:0009-0009-1663-1003		0.8	
+CHMO:0000026	fast-scan cyclic voltammetry	skos:exactMatch	wikidata:Q17145186	fast-scan cyclic voltammetry	semapv:ManualMappingCuration	orcid:0009-0009-1663-1003		0.8	
+CHMO:0000027	hydrodynamic voltammetry	skos:exactMatch	wikidata:Q17028237	hydrodynamic voltammetry	semapv:ManualMappingCuration	orcid:0009-0009-1663-1003		0.8	
+CHMO:0000028	linear-sweep voltammetry	skos:exactMatch	wikidata:Q620700	linear sweep voltammetry	semapv:ManualMappingCuration	orcid:0009-0009-1663-1003		0.8	
+CHMO:0000030	differential pulse voltammetry	skos:exactMatch	wikidata:Q5275361	differential pulse voltammetry	semapv:ManualMappingCuration	orcid:0009-0009-1663-1003		0.8	
+CHMO:0000032	polarography	skos:exactMatch	wikidata:Q899397	polarography	semapv:ManualMappingCuration	orcid:0009-0009-1663-1003		0.8	
+CHMO:0000042	anodic stripping voltammetry	skos:exactMatch	wikidata:Q939328	anodic stripping voltammetry	semapv:ManualMappingCuration	orcid:0009-0009-1663-1003		0.8	
+CHMO:0000046	adsorptive stripping voltammetry	skos:exactMatch	wikidata:Q4685842	adsorptive stripping voltammetry	semapv:ManualMappingCuration	orcid:0009-0009-1663-1003		0.7	
+CHMO:0000047	cathodic stripping voltammetry	skos:exactMatch	wikidata:Q4016325	cathodic stripping voltammetry	semapv:ManualMappingCuration	orcid:0009-0009-1663-1003		0.8	
+CHMO:0000049	chemical imaging	skos:exactMatch	wikidata:Q509046	chemical imaging	semapv:ManualMappingCuration	orcid:0009-0009-1663-1003		0.8	
+CHMO:0000050	infrared microscopy	skos:exactMatch	wikidata:Q107616133	infrared microscopy	semapv:ManualMappingCuration	orcid:0009-0009-1663-1003		0.7	semapv:LexicalMatching
+CHMO:0000061	flow cytometry	skos:exactMatch	wikidata:Q1141429	flow cytometry	semapv:ManualMappingCuration	orcid:0009-0009-1663-1003		0.8	
+CHMO:0000062	Forster resonance energy transfer	skos:exactMatch	wikidata:Q367473	Förster resonance energy transfer	semapv:ManualMappingCuration	orcid:0009-0009-1663-1003		0.8	
+CHMO:0000063	bioluminescence resonance energy transfer	skos:exactMatch	wikidata:Q908291	bioluminescence resonance energy transfer	semapv:ManualMappingCuration	orcid:0009-0009-1663-1003		0.8	
+CHMO:0000065	fluorescence recovery after photobleaching	skos:exactMatch	wikidata:Q729923	fluorescence recovery after photobleaching	semapv:ManualMappingCuration	orcid:0009-0009-1663-1003		0.8	
+CHMO:0000067	microscopy	skos:exactMatch	wikidata:Q1074953	microscopy	semapv:ManualMappingCuration	orcid:0009-0009-1663-1003		0.8	
+CHMO:0000068	electron microscopy	skos:exactMatch	wikidata:Q68535882	electron microscopy	semapv:ManualMappingCuration	orcid:0009-0009-1663-1003		0.8	
+CHMO:0000073	scanning electron microscopy	skos:exactMatch	wikidata:Q115684492	scanning electron microscopy	semapv:ManualMappingCuration	orcid:0009-0009-1663-1003		0.8	
+CHMO:0000080	transmission electron microscopy	skos:exactMatch	wikidata:Q110779037	transmission electron microscopy	semapv:ManualMappingCuration	orcid:0009-0009-1663-1003		0.8	
+CHMO:0000082	energy-filtered transmission electron microscopy	skos:exactMatch	wikidata:Q907728	energy-filtered transmission electron microscopy	semapv:ManualMappingCuration	orcid:0009-0009-1663-1003		0.7	semapv:LexicalMatching
+CHMO:0000084	high-resolution transmission electron microscopy	skos:exactMatch	wikidata:Q874906	high-resolution transmission electron microscopy	semapv:ManualMappingCuration	orcid:0009-0009-1663-1003		0.8	
+CHMO:0000086	scanning transmission electron microscopy	skos:exactMatch	wikidata:Q874835	scanning transmission electron microscopy	semapv:ManualMappingCuration	orcid:0009-0009-1663-1003		0.8	
+CHMO:0000087	fluorescence microscopy	skos:exactMatch	wikidata:Q73490850	fluorescence microscopy	semapv:ManualMappingCuration	orcid:0009-0009-1663-1003		0.8	
+CHMO:0000089	confocal laser scanning microscopy	skos:exactMatch	wikidata:Q1118236	confocal laser scanning microscopy	semapv:ManualMappingCuration	orcid:0009-0009-1663-1003		0.8	
+CHMO:0000091	fluorescence lifetime imaging microscopy	skos:exactMatch	wikidata:Q1434196	fluorescence lifetime imaging microscopy	semapv:ManualMappingCuration	orcid:0009-0009-1663-1003		0.8	
+CHMO:0000102	optical microscopy	skos:exactMatch	wikidata:Q65788354	optical microscopy	semapv:ManualMappingCuration	orcid:0009-0009-1663-1003		0.8	
+CHMO:0000103	confocal microscopy	skos:exactMatch	wikidata:Q902045	confocal microscopy	semapv:ManualMappingCuration	orcid:0009-0009-1663-1003		0.8	
+CHMO:0000104	bright-field microscopy	skos:exactMatch	wikidata:Q905225	bright-field microscopy	semapv:ManualMappingCuration	orcid:0009-0009-1663-1003		0.7	semapv:LexicalMatching
+CHMO:0000107	differential interference contrast microscopy	skos:exactMatch	wikidata:Q899173	differential interference contrast microscopy	semapv:ManualMappingCuration	orcid:0009-0009-1663-1003		0.8	
+CHMO:0000110	phase contrast microscopy	skos:exactMatch	wikidata:Q898815	phase contrast microscopy	semapv:ManualMappingCuration	orcid:0009-0009-1663-1003		0.8	
+CHMO:0000112	scanning probe microscopy	skos:exactMatch	wikidata:Q907287	scanning probe microscopy	semapv:ManualMappingCuration	orcid:0009-0009-1663-1003		0.8	
+CHMO:0000113	atomic force microscopy	skos:exactMatch	wikidata:Q10329629	atomic force microscopy	semapv:ManualMappingCuration	orcid:0009-0009-1663-1003		0.8	
+CHMO:0000114	piezoresponse force microscopy	skos:exactMatch	wikidata:Q3312359	piezoresponse force microscopy	semapv:ManualMappingCuration	orcid:0009-0009-1663-1003		0.8	
+CHMO:0000115	magnetic force microscopy	skos:exactMatch	wikidata:Q2799395	magnetic force microscopy	semapv:ManualMappingCuration	orcid:0009-0009-1663-1003		0.8	
+CHMO:0000117	scanning capacitance microscopy	skos:exactMatch	wikidata:Q9337610	scanning capacitance microscopy	semapv:ManualMappingCuration	orcid:0009-0009-1663-1003		0.8	
+CHMO:0000120	scanning near-field optical microscopy	skos:exactMatch	wikidata:Q212656	scanning near-field optical microscopy	semapv:ManualMappingCuration	orcid:0009-0009-1663-1003		0.8	
+CHMO:0000127	scanning electrochemical microscopy	skos:exactMatch	wikidata:Q7430065	scanning electrochemical microscopy	semapv:ManualMappingCuration	orcid:0009-0009-1663-1003		0.8	
+CHMO:0000128	scanning ion conductance microscopy	skos:exactMatch	wikidata:Q7430068	scanning ion conductance microscopy	semapv:ManualMappingCuration	orcid:0009-0009-1663-1003		0.8	
+CHMO:0000131	scanning thermal microscopy	skos:exactMatch	wikidata:Q9357421	scanning thermal microscopy	semapv:ManualMappingCuration	orcid:0009-0009-1663-1003		0.7	semapv:LexicalMatching
+CHMO:0000132	scanning tunnelling microscopy	skos:exactMatch	wikidata:Q71251194	scanning tunnelling microscopy	semapv:ManualMappingCuration	orcid:0009-0009-1663-1003		0.7	semapv:LexicalMatching
+CHMO:0000135	profilometry	skos:exactMatch	wikidata:Q63919545	profilometry	semapv:ManualMappingCuration	orcid:0009-0009-1663-1003		0.8	
+CHMO:0000138	Fourier profilometry	skos:exactMatch	wikidata:Q5475797	Fourier profilometry	semapv:ManualMappingCuration	orcid:0009-0009-1663-1003		0.8	
+CHMO:0000142	electron diffraction	skos:exactMatch	wikidata:Q864822	electron diffraction	semapv:ManualMappingCuration	orcid:0009-0009-1663-1003		0.8	
+CHMO:0000143	electron backscatter diffraction	skos:exactMatch	wikidata:Q1326017	electron backscatter diffraction	semapv:ManualMappingCuration	orcid:0009-0009-1663-1003		0.8	
+CHMO:0000146	reflection high energy electron diffraction	skos:exactMatch	wikidata:Q455003	reflection high-energy electron diffraction	semapv:ManualMappingCuration	orcid:0009-0009-1663-1003		0.8	
+CHMO:0000147	low energy electron diffraction	skos:exactMatch	wikidata:Q905977	low-energy electron diffraction	semapv:ManualMappingCuration	orcid:0009-0009-1663-1003		0.8	
+CHMO:0000156	X-ray diffraction	skos:exactMatch	wikidata:Q12073245	X-ray diffraction	semapv:ManualMappingCuration	orcid:0009-0009-1663-1003		0.8	
+CHMO:0000159	single crystal X-ray diffraction	skos:exactMatch	wikidata:Q13575443	single crystal X-ray diffraction	semapv:ManualMappingCuration	orcid:0009-0009-1663-1003		0.8	
+CHMO:0000164	electron scattering	skos:exactMatch	wikidata:Q1327107	electron scattering	semapv:ManualMappingCuration	orcid:0009-0009-1663-1003		0.8	
+CHMO:0000166	light scattering	skos:exactMatch	wikidata:Q1004846	light scattering	semapv:ManualMappingCuration	orcid:0009-0009-1663-1003		0.8	
+CHMO:0000167	dynamic light scattering	skos:exactMatch	wikidata:Q896108	dynamic light scattering	semapv:ManualMappingCuration	orcid:0009-0009-1663-1003		0.8	
+CHMO:0000180	static light scattering	skos:exactMatch	wikidata:Q7604173	static light scattering	semapv:ManualMappingCuration	orcid:0009-0009-1663-1003		0.8	
+CHMO:0000181	neutron scattering	skos:exactMatch	wikidata:Q1451740	neutron scattering	semapv:ManualMappingCuration	orcid:0009-0009-1663-1003		0.8	
+CHMO:0000184	small-angle neutron scattering	skos:exactMatch	wikidata:Q4165337	small-angle neutron scattering	semapv:ManualMappingCuration	orcid:0009-0009-1663-1003		0.8	
+CHMO:0000193	neutron backscattering	skos:exactMatch	wikidata:Q12183998	neutron backscattering	semapv:ManualMappingCuration	orcid:0009-0009-1663-1003		0.8	
+CHMO:0000194	neutron time-of-flight scattering	skos:exactMatch	wikidata:Q7003121	neutron time-of-flight scattering	semapv:ManualMappingCuration	orcid:0009-0009-1663-1003		0.8	
+CHMO:0000195	triple-axis neutron scattering	skos:exactMatch	wikidata:Q7003127	triple-axis neutron scattering	semapv:ManualMappingCuration	orcid:0009-0009-1663-1003		0.7	semapv:LexicalMatching
+CHMO:0000197	spin-echo small angle neutron scattering	skos:exactMatch	wikidata:Q57341078	spin-echo small angle neutron scattering	semapv:ManualMappingCuration	orcid:0009-0009-1663-1003		0.7	semapv:LexicalMatching
+CHMO:0000202	resonant inelastic X-ray scattering	skos:exactMatch	wikidata:Q7315745	resonant inelastic X-ray scattering	semapv:ManualMappingCuration	orcid:0009-0009-1663-1003		0.7	semapv:LexicalMatching
+CHMO:0000204	small-angle X-ray scattering	skos:exactMatch	wikidata:Q3027679	small-angle X-ray scattering	semapv:ManualMappingCuration	orcid:0009-0009-1663-1003		0.7	semapv:LexicalMatching
+CHMO:0000207	wide-angle X-ray scattering	skos:exactMatch	wikidata:Q4165437	wide-angle X-ray scattering	semapv:ManualMappingCuration	orcid:0009-0009-1663-1003		0.8	
+CHMO:0000209	reflectometry	skos:exactMatch	wikidata:Q3454718	reflectometry	semapv:ManualMappingCuration	orcid:0009-0009-1663-1003		0.8	
+CHMO:0000210	neutron reflectometry	skos:exactMatch	wikidata:Q1981942	neutron reflectometry	semapv:ManualMappingCuration	orcid:0009-0009-1663-1003		0.7	semapv:LexicalMatching
+CHMO:0000223	ellipsometry	skos:exactMatch	wikidata:Q898774	ellipsometry	semapv:ManualMappingCuration	orcid:0009-0009-1663-1003		0.8	
+CHMO:0000228	spectroscopy	skos:exactMatch	wikidata:Q483666	spectroscopy	semapv:ManualMappingCuration	orcid:0009-0009-1663-1003		0.8	
+CHMO:0000230	alpha-particle spectroscopy	skos:exactMatch	wikidata:Q4118687	alpha-particle spectroscopy	semapv:ManualMappingCuration	orcid:0009-0009-1663-1003		0.8	
+CHMO:0000233	atomic spectroscopy	skos:exactMatch	wikidata:Q14068679	atomic spectroscopy	semapv:ManualMappingCuration	orcid:0009-0009-1663-1003		0.8	
+CHMO:0000234	atomic absorption spectroscopy	skos:exactMatch	wikidata:Q655346	atomic absorption spectroscopy	semapv:ManualMappingCuration	orcid:0009-0009-1663-1003		0.8	
+CHMO:0000239	graphite furnace atomic absorption spectrometry	skos:exactMatch	wikidata:Q2840139	graphite furnace atomic absorption spectrometry	semapv:ManualMappingCuration	orcid:0009-0009-1663-1003		0.7	semapv:LexicalMatching
+CHMO:0000251	atomic emission spectroscopy	skos:exactMatch	wikidata:Q186548	atomic emission spectroscopy	semapv:ManualMappingCuration	orcid:0009-0009-1663-1003		0.8	
+CHMO:0000258	laser-induced breakdown spectroscopy	skos:exactMatch	wikidata:Q2654990	laser-induced breakdown spectroscopy	semapv:ManualMappingCuration	orcid:0009-0009-1663-1003		0.7	semapv:LexicalMatching
+CHMO:0000267	inductively-coupled plasma atomic emission spectroscopy	skos:exactMatch	wikidata:Q261552	inductively-coupled plasma atomic emission spectroscopy	semapv:ManualMappingCuration	orcid:0009-0009-1663-1003		0.7	semapv:LexicalMatching
+CHMO:0000280	cold vapour atomic fluorescence spectroscopy	skos:exactMatch	wikidata:Q5142484	cold vapour atomic fluorescence spectroscopy	semapv:ManualMappingCuration	orcid:0009-0009-1663-1003		0.8	
+CHMO:0000287	fluorescence spectroscopy	skos:exactMatch	wikidata:Q1768467	fluorescence spectroscopy	semapv:ManualMappingCuration	orcid:0009-0009-1663-1003		0.8	
+CHMO:0000288	fluorescence correlation spectroscopy	skos:exactMatch	wikidata:Q902601	fluorescence correlation spectroscopy	semapv:ManualMappingCuration	orcid:0009-0009-1663-1003		0.8	
+CHMO:0000289	fluorescence cross-correlation spectroscopy	skos:exactMatch	wikidata:Q8564081	fluorescence cross-correlation spectroscopy	semapv:ManualMappingCuration	orcid:0009-0009-1663-1003		0.7	semapv:LexicalMatching
+CHMO:0000290	fluorescence anisotropy	skos:exactMatch	wikidata:Q903807	fluorescence anisotropy	semapv:ManualMappingCuration	orcid:0009-0009-1663-1003		0.8	
+CHMO:0000291	spectrophotometry	skos:exactMatch	wikidata:Q332084	spectrophotometry	semapv:ManualMappingCuration	orcid:0009-0009-1663-1003		0.8	
+CHMO:0000292	ultraviolet-visible spectrophotometry	skos:exactMatch	wikidata:Q898426	ultraviolet-visible spectrophotometry	semapv:ManualMappingCuration	orcid:0009-0009-1663-1003		0.8	
+CHMO:0000297	X-ray spectroscopy	skos:exactMatch	wikidata:Q901775	X-ray spectroscopy	semapv:ManualMappingCuration	orcid:0009-0009-1663-1003		0.8	
+CHMO:0000298	X-ray absorption spectroscopy	skos:exactMatch	wikidata:Q903103	X-ray absorption spectroscopy	semapv:ManualMappingCuration	orcid:0009-0009-1663-1003		0.7	semapv:LexicalMatching
+CHMO:0000300	extended X-ray absorption fine structure spectroscopy	skos:exactMatch	wikidata:Q908783	extended X-ray absorption fine structure spectroscopy	semapv:ManualMappingCuration	orcid:0009-0009-1663-1003		0.8	
+CHMO:0000307	X-ray emission spectroscopy	skos:exactMatch	wikidata:Q1532011	X-ray emission spectroscopy	semapv:ManualMappingCuration	orcid:0009-0009-1663-1003		0.8	
+CHMO:0000316	soft X-ray emission spectroscopy	skos:exactMatch	wikidata:Q7553963	soft X-ray emission spectroscopy	semapv:ManualMappingCuration	orcid:0009-0009-1663-1003		0.8	
+CHMO:0000322	liquid scintillation counting	skos:exactMatch	wikidata:Q4406785	liquid scintillation counting	semapv:ManualMappingCuration	orcid:0009-0009-1663-1003		0.8	
+CHMO:0000323	circular dichroism spectroscopy	skos:broadMatch	wikidata:Q110820905	circular dichroism spectroscopy	semapv:ManualMappingCuration	orcid:0009-0009-1663-1003		0.8	
+CHMO:0000328	electron spin resonance spectroscopy	skos:exactMatch	wikidata:Q73498072	electron spin resonance spectroscopy	semapv:ManualMappingCuration	orcid:0009-0009-1663-1003		0.8	
+CHMO:0000331	electron spectroscopy	skos:exactMatch	wikidata:Q905243	electron spectroscopy	semapv:ManualMappingCuration	orcid:0009-0009-1663-1003		0.8	
+CHMO:0000339	Auger electron spectroscopy	skos:exactMatch	wikidata:Q28087	Auger electron spectroscopy	semapv:ManualMappingCuration	orcid:0009-0009-1663-1003		0.8	
+CHMO:0000365	photoion-photoelectron coincidence spectroscopy	skos:exactMatch	wikidata:Q7187743	photoion photoelectron coincidence spectroscopy	semapv:ManualMappingCuration	orcid:0009-0009-1663-1003		0.8	
+CHMO:0000366	electron energy loss spectroscopy	skos:exactMatch	wikidata:Q902328	electron energy loss spectroscopy	semapv:ManualMappingCuration	orcid:0009-0009-1663-1003		0.8	
+CHMO:0000370	high-resolution energy loss spectroscopy	skos:exactMatch	wikidata:Q904960	High resolution electron energy loss spectroscopy	semapv:ManualMappingCuration	orcid:0009-0009-1663-1003		0.8	
+CHMO:0000387	photoelectron spectroscopy	skos:exactMatch	wikidata:Q1139350	photoemission spectroscopy	semapv:ManualMappingCuration	orcid:0009-0009-1663-1003		0.8	
+CHMO:0000401	ultraviolet photoelectron spectroscopy	skos:exactMatch	wikidata:Q602144	ultraviolet photoelectron spectroscopy	semapv:ManualMappingCuration	orcid:0009-0009-1663-1003		0.8	
+CHMO:0000414	gamma-ray spectroscopy	skos:exactMatch	wikidata:Q906816	gamma-ray spectroscopy	semapv:ManualMappingCuration	orcid:0009-0009-1663-1003		0.8	
+CHMO:0000415	particle-induced gamma-ray emission spectroscopy	skos:exactMatch	wikidata:Q28403415	particle-induced gamma-ray emission spectroscopy	semapv:ManualMappingCuration	orcid:0009-0009-1663-1003		0.8	
+CHMO:0000417	Mossbauer spectroscopy	skos:exactMatch	wikidata:Q899927	Mössbauer spectroscopy	semapv:ManualMappingCuration	orcid:0009-0009-1663-1003		0.8	
+CHMO:0000419	nuclear spectroscopy	skos:exactMatch	wikidata:Q85789979	nuclear spectroscopy	semapv:ManualMappingCuration	orcid:0009-0009-1663-1003		0.8	
+CHMO:0000421	impedance spectroscopy	skos:exactMatch	wikidata:Q20820484	impedance spectroscopy	semapv:ManualMappingCuration	orcid:0009-0009-1663-1003		0.7	semapv:LexicalMatching
+CHMO:0000430	ion mobility spectroscopy	skos:exactMatch	wikidata:Q102291040	ion mobility spectroscopy	semapv:ManualMappingCuration	orcid:0009-0009-1663-1003		0.7	semapv:LexicalMatching
+CHMO:0000433	ion scattering	skos:exactMatch	wikidata:Q28687673	ion scattering	semapv:ManualMappingCuration	orcid:0009-0009-1663-1003		0.7	semapv:LexicalMatching
+CHMO:0000435	laser spectroscopy	skos:exactMatch	wikidata:Q112339385	laser spectroscopy	semapv:ManualMappingCuration	orcid:0009-0009-1663-1003		0.7	semapv:LexicalMatching
+CHMO:0000442	tunable diode laser absorption spectroscopy	skos:exactMatch	wikidata:Q592333	tunable diode laser absorption spectroscopy	semapv:ManualMappingCuration	orcid:0009-0009-1663-1003		0.8	
+CHMO:0000450	cavity ring-down spectroscopy	skos:exactMatch	wikidata:Q1051896	cavity ring-down spectroscopy	semapv:ManualMappingCuration	orcid:0009-0009-1663-1003		0.8	
+CHMO:0000470	mass spectrometry	skos:exactMatch	wikidata:Q180809	mass spectrometry	semapv:ManualMappingCuration	orcid:0009-0009-1663-1003		0.8	
+CHMO:0000497	gas chromatography-mass spectrometry	skos:exactMatch	wikidata:Q873009	gas chromatography-mass spectrometry	semapv:ManualMappingCuration	orcid:0009-0009-1663-1003		0.8	
+CHMO:0000506	isotope ratio mass spectrometry	skos:exactMatch	wikidata:Q3966589	isotope ratio mass spectrometry	semapv:ManualMappingCuration	orcid:0009-0009-1663-1003		0.8	
+CHMO:0000524	liquid chromatography-mass spectrometry	skos:exactMatch	wikidata:Q873864	liquid chromatography-mass spectrometry	semapv:ManualMappingCuration	orcid:0009-0009-1663-1003		0.8	
+CHMO:0000532	thermal ionisation mass spectrometry	skos:exactMatch	wikidata:Q950059	thermal ionisation mass spectrometry	semapv:ManualMappingCuration	orcid:0009-0009-1663-1003		0.7	semapv:LexicalMatching
+CHMO:0000537	glow-discharge mass spectrometry	skos:exactMatch	CHMO:0000550	glow discharge mass spectrometry	semapv:ManualMappingCuration	orcid:0009-0009-1663-1003		0.8	
+CHMO:0000538	inductively coupled plasma mass spectrometry	skos:exactMatch	wikidata:Q900680	inductively coupled plasma mass spectrometry	semapv:ManualMappingCuration	orcid:0009-0009-1663-1003		0.8	
+CHMO:0000546	high-resolution inductively coupled plasma mass spectrometry	skos:exactMatch	wikidata:Q113124869	high-resolution inductively coupled plasma mass spectrometry	semapv:ManualMappingCuration	orcid:0009-0009-1663-1003		0.8	
+CHMO:0000550	laser ablation inductively coupled plasma mass spectrometry	skos:broadMatch	wikidata:Q108900669	laser ablation inductively coupled plasma mass spectrometry	semapv:ManualMappingCuration	orcid:0009-0009-1663-1003		0.8	
+CHMO:0000559	plasma desorption mass spectrometry	skos:exactMatch	wikidata:Q3705997	plasma desorption mass spectrometry	semapv:ManualMappingCuration	orcid:0009-0009-1663-1003		0.7	semapv:LexicalMatching
+CHMO:0000560	secondary ion mass spectrometry	skos:exactMatch	wikidata:Q556046	secondary ion mass spectrometry	semapv:ManualMappingCuration	orcid:0009-0009-1663-1003		0.8	
+CHMO:0000561	dynamic secondary ion mass spectrometry	skos:exactMatch	wikidata:Q3943649	dynamic secondary ion mass spectrometry	semapv:ManualMappingCuration	orcid:0009-0009-1663-1003		0.8	
+CHMO:0000563	fast-atom bombardment mass spectrometry	skos:exactMatch	wikidata:Q72369916	fast-atom bombardment mass spectrometry	semapv:ManualMappingCuration	orcid:0009-0009-1663-1003		0.7	semapv:LexicalMatching
+CHMO:0000565	time-of-flight secondary ion mass spectrometry	skos:exactMatch	wikidata:Q10689351	TOF-SIMS	semapv:ManualMappingCuration	orcid:0009-0009-1663-1003		0.7	semapv:LexicalMatching
+CHMO:0000569	selected ion flow tube mass spectrometry	skos:exactMatch	wikidata:Q7447678	Selected-ion flow-tube mass spectrometry	semapv:ManualMappingCuration	orcid:0009-0009-1663-1003		0.8	
+CHMO:0000570	proton transfer reaction mass spectrometry	skos:exactMatch	wikidata:Q7252053	Proton-transfer-reaction mass spectrometry	semapv:ManualMappingCuration	orcid:0009-0009-1663-1003		0.8	
+CHMO:0000574	spark source mass spectrometry	skos:exactMatch	wikidata:Q3966581	spark source mass spectrometry	semapv:ManualMappingCuration	orcid:0009-0009-1663-1003		0.7	semapv:LexicalMatching
+CHMO:0000575	tandem mass spectrometry	skos:exactMatch	wikidata:Q874296	tandem mass spectrometry	semapv:ManualMappingCuration	orcid:0009-0009-1663-1003		0.8	
+CHMO:0000581	microspectroscopy	skos:exactMatch	wikidata:Q48780694	microspectroscopy	semapv:ManualMappingCuration	orcid:0009-0009-1663-1003		0.7	semapv:LexicalMatching
+CHMO:0000585	rotational spectroscopy	skos:exactMatch	wikidata:Q904380	rotational spectroscopy	semapv:ManualMappingCuration	orcid:0009-0009-1663-1003		0.8	
+CHMO:0000586	microwave spectroscopy	skos:exactMatch	wikidata:Q48967832	microwave spectroscopy	semapv:ManualMappingCuration	orcid:0009-0009-1663-1003		0.8	
+CHMO:0000590	neutron spectroscopy	skos:exactMatch	wikidata:Q7003117	neutron spectroscopy	semapv:ManualMappingCuration	orcid:0009-0009-1663-1003		0.7	semapv:LexicalMatching
+CHMO:0000591	nuclear magnetic resonance spectroscopy	skos:exactMatch	wikidata:Q10359898	NMR spectroscopy	semapv:ManualMappingCuration	orcid:0009-0009-1663-1003		0.8	
+CHMO:0000598	two-dimensional nuclear magnetic resonance spectroscopy	skos:exactMatch	wikidata:Q11141463	two-dimensional nuclear magnetic resonance spectroscopy	semapv:ManualMappingCuration	orcid:0009-0009-1663-1003		0.8	
+CHMO:0000607	nuclear Overhauser enhancement spectroscopy	skos:exactMatch	wikidata:Q10593794	NOESY	semapv:ManualMappingCuration	orcid:0009-0009-1663-1003		0.8	
+CHMO:0000619	photoacoustic spectroscopy	skos:exactMatch	wikidata:Q900415	photoacoustic spectroscopy	semapv:ManualMappingCuration	orcid:0009-0009-1663-1003		0.8	
+CHMO:0000619	photoacoustic spectroscopy	skos:exactMatch	wikidata:Q900415	photoacoustic spectroscopy	semapv:ManualMappingCuration	orcid:0009-0009-1663-1003		0.7	semapv:LexicalMatching
+CHMO:0000622	photothermal spectroscopy	skos:exactMatch	wikidata:Q7187925	photothermal spectroscopy	semapv:ManualMappingCuration	orcid:0009-0009-1663-1003		0.8	
+CHMO:0000627	Terahertz time-domain spectroscopy	skos:exactMatch	wikidata:Q7701527	Terahertz time-domain spectroscopy	semapv:ManualMappingCuration	orcid:0009-0009-1663-1003		0.8	
+CHMO:0000636	Fourier transform infrared spectroscopy	skos:exactMatch	wikidata:Q901559	fourier-transform infrared spectroscopy	semapv:ManualMappingCuration	orcid:0009-0009-1663-1003		0.8	
+CHMO:0000645	diffuse reflectance infrared Fourier transform spectroscopy	skos:exactMatch	wikidata:Q5275423	diffuse reflectance infrared Fourier transform spectroscopy	semapv:ManualMappingCuration	orcid:0009-0009-1663-1003		0.8	
+CHMO:0000656	Raman spectroscopy	skos:exactMatch	wikidata:Q862228	Raman spectroscopy	semapv:ManualMappingCuration	orcid:0009-0009-1663-1003		0.8	
+CHMO:0000661	coherent anti-Stokes Raman spectroscopy	skos:exactMatch	wikidata:Q903528	coherent anti-Stokes Raman spectroscopy	semapv:ManualMappingCuration	orcid:0009-0009-1663-1003		0.8	
+CHMO:0000668	resonance Raman spectroscopy	skos:exactMatch	wikidata:Q7315737	resonance Raman spectroscopy	semapv:ManualMappingCuration	orcid:0009-0009-1663-1003		0.8	
+CHMO:0000674	spatially-offset Raman spectroscopy	skos:exactMatch	wikidata:Q7574090	spatially-offset Raman spectroscopy	semapv:ManualMappingCuration	orcid:0009-0009-1663-1003		0.8	
+CHMO:0000675	stimulated Raman spectroscopy	skos:exactMatch	wikidata:Q48835655	stimulated Raman spectroscopy	semapv:ManualMappingCuration	orcid:0009-0009-1663-1003		0.8	
+CHMO:0000677	surface-enhanced Raman spectroscopy	skos:exactMatch	wikidata:Q2736291	surface enhanced Raman spectroscopy	semapv:ManualMappingCuration	orcid:0009-0009-1663-1003		0.8	
+CHMO:0000681	thermal analysis	skos:exactMatch	wikidata:Q542419	thermal analysis	semapv:ManualMappingCuration	orcid:0009-0009-1663-1003		0.8	
+CHMO:0000682	calorimetry	skos:exactMatch	wikidata:Q634314	calorimetry	semapv:ManualMappingCuration	orcid:0009-0009-1663-1003		0.8	
+CHMO:0000683	isothermal titration calorimetry	skos:exactMatch	wikidata:Q643384	isothermal titration calorimetry	semapv:ManualMappingCuration	orcid:0009-0009-1663-1003		0.8	
+CHMO:0000684	differential scanning calorimetry	skos:exactMatch	wikidata:Q904893	differential scanning calorimetry	semapv:ManualMappingCuration	orcid:0009-0009-1663-1003		0.8	
+CHMO:0000687	differential thermal analysis	skos:exactMatch	wikidata:Q905301	differential thermal analysis	semapv:ManualMappingCuration	orcid:0009-0009-1663-1003		0.8	
+CHMO:0000690	thermogravimetry	skos:exactMatch	wikidata:Q7783187	thermogravimetry	semapv:ManualMappingCuration	orcid:0009-0009-1663-1003		0.8	
+CHMO:0000693	thermoluminescence	skos:exactMatch	wikidata:Q36194	thermoluminescence	semapv:ManualMappingCuration	orcid:0009-0009-1663-1003		0.8	
+CHMO:0000698	neutron diffraction	skos:exactMatch	wikidata:Q910499	neutron diffraction	semapv:ManualMappingCuration	orcid:0009-0009-1663-1003		0.8	
+CHMO:0000701	liquid chromatography-tandem mass spectrometry	skos:broadMatch	wikidata:Q117788892	liquid chromatography-tandem mass spectrometry	semapv:ManualMappingCuration	orcid:0009-0009-1663-1003		0.8	
+CHMO:0000771	multiphoton fluorescence microscopy	skos:exactMatch	wikidata:Q73040214	multiphoton fluorescence microscopy	semapv:ManualMappingCuration	orcid:0009-0009-1663-1003		0.8	
+CHMO:0000778	anomalous X-ray scattering	skos:exactMatch	wikidata:Q4769932	anomalous X-ray scattering	semapv:ManualMappingCuration	orcid:0009-0009-1663-1003		0.7	semapv:LexicalMatching
+CHMO:0000779	polarimetry	skos:exactMatch	wikidata:Q899381	polarimetry	semapv:ManualMappingCuration	orcid:0009-0009-1663-1003		0.8	
+CHMO:0000782	neutron activation analysis	skos:exactMatch	wikidata:Q2408111	neutron activation analysis	semapv:ManualMappingCuration	orcid:0009-0009-1663-1003		0.8	
+CHMO:0000785	optical rotatory dispersion	skos:exactMatch	wikidata:Q903526	optical rotatory dispersion	semapv:ManualMappingCuration	orcid:0009-0009-1663-1003		0.8	
+CHMO:0000795	ultra high performance liquid chromatography	skos:exactMatch	wikidata:Q675741	ultra high performance liquid chromatography	semapv:ManualMappingCuration	orcid:0009-0009-1663-1003		0.7	semapv:LexicalMatching
+CHMO:0000800	spectrum	skos:exactMatch	wikidata:Q654182	spectrum	semapv:ManualMappingCuration	orcid:0009-0009-1663-1003		0.8	
+CHMO:0000801	CHMO:absorption spectrum	skos:exactMatch	wikidata:Q865545	absorption spectrum	semapv:ManualMappingCuration	orcid:0009-0009-1663-1003		0.8	
+CHMO:0000804	atomic spectrum	skos:exactMatch	wikidata:Q10911238	atomic spectrum	semapv:ManualMappingCuration	orcid:0009-0009-1663-1003		0.7	semapv:LexicalMatching
+CHMO:0000806	mass spectrum	skos:exactMatch	wikidata:Q2360668	mass spectrum	semapv:ManualMappingCuration	orcid:0009-0009-1663-1003		0.8	
+CHMO:0000813	emission spectrum	skos:exactMatch	wikidata:Q216817	emission spectrum	semapv:ManualMappingCuration	orcid:0009-0009-1663-1003		0.8	
+CHMO:0000815	fluorescence spectrum	skos:exactMatch	wikidata:Q1434202	fluorescence spectrum	semapv:ManualMappingCuration	orcid:0009-0009-1663-1003		0.8	
+CHMO:0000831	action spectrum	skos:exactMatch	wikidata:Q4677424	action spectrum	semapv:ManualMappingCuration	orcid:0009-0009-1663-1003		0.8	
+CHMO:0000863	positron annihilation lifetime spectroscopy	skos:exactMatch	wikidata:Q3966593	positron annihilation spectroscopy	semapv:ManualMappingCuration	orcid:0009-0009-1663-1003		0.8	
+CHMO:0000874	conductive atomic force microscopy	skos:exactMatch	wikidata:Q5159384	conductive atomic force microscopy	semapv:ManualMappingCuration	orcid:0009-0009-1663-1003		0.8	
+CHMO:0000915	rheometry	skos:exactMatch	wikidata:Q7320412	rheometry	semapv:ManualMappingCuration	orcid:0009-0009-1663-1003		0.8	
+CHMO:0000918	flow curve	skos:exactMatch	wikidata:Q5691707	flow curve	semapv:ManualMappingCuration	orcid:0009-0009-1663-1003		0.7	semapv:LexicalMatching
+CHMO:0000924	magnetometry	skos:exactMatch	wikidata:Q3277336	magnetometry	semapv:ManualMappingCuration	orcid:0009-0009-1663-1003		0.8	
+CHMO:0000927	velocimetry	skos:exactMatch	wikidata:Q7919269	velocimetry	semapv:ManualMappingCuration	orcid:0009-0009-1663-1003		0.8	
+CHMO:0000928	particle-tracking velocimetry	skos:exactMatch	wikidata:Q7140505	particle-tracking velocimetry	semapv:ManualMappingCuration	orcid:0009-0009-1663-1003		0.8	
+CHMO:0000941	scanning electron microscope	skos:exactMatch	wikidata:Q321095	scanning electron microscope	semapv:ManualMappingCuration	orcid:0009-0009-1663-1003		0.8	
+CHMO:0000942	field-emission scanning electron microscope	skos:exactMatch	wikidata:Q96790721	Field emission scanning electron microscope	semapv:ManualMappingCuration	orcid:0009-0009-1663-1003		0.8	
+CHMO:0000943	scanning probe microscope	skos:exactMatch	wikidata:Q96782348	scanning probe microscope	semapv:ManualMappingCuration	orcid:0009-0009-1663-1003		0.7	semapv:LexicalMatching
+CHMO:0000946	optical tweezers	skos:exactMatch	wikidata:Q1066633	optical tweezers	semapv:ManualMappingCuration	orcid:0009-0009-1663-1003		0.8	
+CHMO:0000948	charge-coupled device	skos:exactMatch	wikidata:Q189880	charge-coupled device	semapv:ManualMappingCuration	orcid:0009-0009-1663-1003		0.8	
+CHMO:0000950	diffractometer	skos:exactMatch	wikidata:Q904573	diffractometer	semapv:ManualMappingCuration	orcid:0009-0009-1663-1003		0.8	
+CHMO:0000953	microscope	skos:exactMatch	wikidata:Q196538	microscope	semapv:ManualMappingCuration	orcid:0009-0009-1663-1003		0.8	
+CHMO:0000954	atomic force microscope	skos:exactMatch	wikidata:Q49295	atomic force microscope	semapv:ManualMappingCuration	orcid:0009-0009-1663-1003		0.8	
+CHMO:0000960	ion source	skos:exactMatch	wikidata:Q905291	ion source	semapv:ManualMappingCuration	orcid:0009-0009-1663-1003		0.8	
+CHMO:0000963	quadrupole mass spectrometer	skos:exactMatch	wikidata:Q874519	quadrupole mass spectrometer	semapv:ManualMappingCuration	orcid:0009-0009-1663-1003		0.8	
+CHMO:0000971	support-coated open-tubular column	skos:exactMatch	wikidata:Q111518735	support-coated open-tubular (SCOT) column	semapv:ManualMappingCuration	orcid:0009-0009-1663-1003		0.8	
+CHMO:0000973	wall-coated open-tubular column	skos:exactMatch	wikidata:Q111518736	wall-coated open-tubular (WCOT) column	semapv:ManualMappingCuration	orcid:0009-0009-1663-1003		0.8	
+CHMO:0000979	reflectron	skos:exactMatch	wikidata:Q1750503	reflectron	semapv:ManualMappingCuration	orcid:0009-0009-1663-1003		0.8	
+CHMO:0000981	time-of-flight mass spectrometer	skos:exactMatch	wikidata:Q104417696	time-of-flight mass spectrometer	semapv:ManualMappingCuration	orcid:0009-0009-1663-1003		0.8	
+CHMO:0000982	mass spectrometer	skos:exactMatch	wikidata:Q1327691	mass spectrometer	semapv:ManualMappingCuration	orcid:0009-0009-1663-1003		0.8	
+CHMO:0000997	chromatography column	skos:exactMatch	wikidata:Q16466654	chromatography column	semapv:ManualMappingCuration	orcid:0009-0009-1663-1003		0.8	
+CHMO:0000999	separation method	skos:exactMatch	wikidata:Q898987	separation process	semapv:ManualMappingCuration	orcid:0009-0009-1663-1003		0.8	
+CHMO:0001000	chromatography	skos:exactMatch	wikidata:Q170050	chromatography	semapv:ManualMappingCuration	orcid:0009-0009-1663-1003		0.8	
+CHMO:0001001	column chromatography	skos:exactMatch	wikidata:Q908955	column chromatography	semapv:ManualMappingCuration	orcid:0009-0009-1663-1003		0.8	
+CHMO:0001002	gas chromatography	skos:exactMatch	wikidata:Q677065	gas chromatography	semapv:ManualMappingCuration	orcid:0009-0009-1663-1003		0.8	
+CHMO:0001003	supercritical-fluid chromatography	skos:exactMatch	wikidata:Q332584	supercritical fluid chromatography	semapv:ManualMappingCuration	orcid:0009-0009-1663-1003		0.8	
+CHMO:0001004	liquid chromatography	skos:exactMatch	wikidata:Q901688	liquid chromatography	semapv:ManualMappingCuration	orcid:0009-0009-1663-1003		0.8	
+CHMO:0001006	affinity chromatography	skos:exactMatch	wikidata:Q382799	affinity chromatography	semapv:ManualMappingCuration	orcid:0009-0009-1663-1003		0.8	
+CHMO:0001007	thin-layer chromatography	skos:exactMatch	wikidata:Q746133	thin layer chromatography	semapv:ManualMappingCuration	orcid:0009-0009-1663-1003		0.8	
+CHMO:0001008	paper chromatography	skos:exactMatch	wikidata:Q898473	paper chromatography	semapv:ManualMappingCuration	orcid:0009-0009-1663-1003		0.8	
+CHMO:0001009	high-performance liquid chromatography	skos:exactMatch	wikidata:Q381233	high-performance liquid chromatography	semapv:ManualMappingCuration	orcid:0009-0009-1663-1003		0.8	
+CHMO:0001011	gel filtration chromatography	skos:exactMatch	wikidata:Q107050290	gel filtration chromatography	semapv:ManualMappingCuration	orcid:0009-0009-1663-1003		0.7	semapv:LexicalMatching
+CHMO:0001013	size-exclusion chromatography	skos:exactMatch	wikidata:Q1617865	size-exclusion chromatography	semapv:ManualMappingCuration	orcid:0009-0009-1663-1003		0.8	
+CHMO:0001014	ion-exchange chromatography	skos:exactMatch	wikidata:Q65281120	ion-exchange chromatography	semapv:ManualMappingCuration	orcid:0009-0009-1663-1003		0.7	semapv:LexicalMatching
+CHMO:0001016	gas-liquid chromatography	skos:exactMatch	wikidata:Q3698308	gas-liquid chromatography	semapv:ManualMappingCuration	orcid:0009-0009-1663-1003		0.7	semapv:LexicalMatching
+CHMO:0001018	two-dimensional chromatography	skos:exactMatch	wikidata:Q7858694	two-dimensional chromatography	semapv:ManualMappingCuration	orcid:0009-0009-1663-1003		0.8	
+CHMO:0001019	electrophoresis	skos:exactMatch	wikidata:Q185098	electrophoresis	semapv:ManualMappingCuration	orcid:0009-0009-1663-1003		0.8	
+CHMO:0001021	gel electrophoresis	skos:exactMatch	wikidata:Q903395	gel electrophoresis	semapv:ManualMappingCuration	orcid:0009-0009-1663-1003		0.8	
+CHMO:0001022	agarose gel electrophoresis	skos:exactMatch	wikidata:Q903395	agarose gel electrophoresis	semapv:ManualMappingCuration	orcid:0009-0009-1663-1003		0.8	
+CHMO:0001023	polyacrylamide gel electrophoresis	skos:exactMatch	wikidata:Q2102713	polyacrylamide gel electrophoresis	semapv:ManualMappingCuration	orcid:0009-0009-1663-1003		0.8	
+CHMO:0001024	capillary electrophoresis	skos:exactMatch	wikidata:Q747468	capillary electrophoresis	semapv:ManualMappingCuration	orcid:0009-0009-1663-1003		0.8	
+CHMO:0001025	isotachophoresis	skos:exactMatch	wikidata:Q238614	isotachophoresis	semapv:ManualMappingCuration	orcid:0009-0009-1663-1003		0.8	
+CHMO:0001026	isoelectric focusing	skos:exactMatch	wikidata:Q898861	isoelectric focusing	semapv:ManualMappingCuration	orcid:0009-0009-1663-1003		0.8	
+CHMO:0001028	difference gel electrophoresis	skos:exactMatch	wikidata:Q5275273	difference gel electrophoresis	semapv:ManualMappingCuration	orcid:0009-0009-1663-1003		0.7	semapv:LexicalMatching
+CHMO:0001029	two dimensional gel electrophoresis	skos:exactMatch	wikidata:Q4688061	two-dimensional gel electrophoresi	semapv:ManualMappingCuration	orcid:0009-0009-1663-1003		0.8	
+CHMO:0001033	capillary isoelectric focusing	skos:exactMatch	wikidata:Q116798976	capillary isoelectric focusing	semapv:ManualMappingCuration	orcid:0009-0009-1663-1003		0.8	
+CHMO:0001036	micellar electrokinetic chromatography	skos:exactMatch	wikidata:Q258224	micellar electrokinetic chromatography	semapv:ManualMappingCuration	orcid:0009-0009-1663-1003		0.8	
+CHMO:0001038	capillary electrochromatography	skos:exactMatch	wikidata:Q5035393	capillary electrochromatography	semapv:ManualMappingCuration	orcid:0009-0009-1663-1003		0.8	
+CHMO:0001040	affinity electrophoresis	skos:exactMatch	wikidata:Q4688978	affinity electrophoresis	semapv:ManualMappingCuration	orcid:0009-0009-1663-1003		0.7	semapv:LexicalMatching
+CHMO:0001042	denaturing gradient gel electrophoresis	skos:exactMatch	wikidata:Q857463	denaturing gradient gel electrophoresis	semapv:ManualMappingCuration	orcid:0009-0009-1663-1003		0.8	
+CHMO:0001044	dielectrophoresis	skos:exactMatch	wikidata:Q902890	dielectrophoresis	semapv:ManualMappingCuration	orcid:0009-0009-1663-1003		0.8	
+CHMO:0001045	free-flow electrophoresis	skos:exactMatch	wikidata:Q1304136	free-flow electrophoresis	semapv:ManualMappingCuration	orcid:0009-0009-1663-1003		0.7	semapv:LexicalMatching
+CHMO:0001051	normal-phase liquid chromatography	skos:exactMatch	wikidata:Q2038338	normal phase liquid chromatography	semapv:ManualMappingCuration	orcid:0009-0009-1663-1003		0.8	
+CHMO:0001055	double-focusing mass spectrometer	skos:exactMatch	wikidata:Q30934769	double-focusing mass spectrometer	semapv:ManualMappingCuration	orcid:0009-0009-1663-1003		0.7	semapv:LexicalMatching
+CHMO:0001058	Faraday cup	skos:exactMatch	wikidata:Q19410	Faraday cup	semapv:ManualMappingCuration	orcid:0009-0009-1663-1003		0.8	
+CHMO:0001059	ion detector	skos:exactMatch	wikidata:Q114910039	ion detector	semapv:ManualMappingCuration	orcid:0009-0009-1663-1003		0.8	
+CHMO:0001060	electron multiplier	skos:exactMatch	wikidata:Q902750	electron multiplier	semapv:ManualMappingCuration	orcid:0009-0009-1663-1003		0.8	
+CHMO:0001063	Daly detector	skos:exactMatch	wikidata:Q338539	Daly detector	semapv:ManualMappingCuration	orcid:0009-0009-1663-1003		0.8	
+CHMO:0001074	time-lapse microscopy	skos:exactMatch	wikidata:Q14943002	time-lapse microscopy	semapv:ManualMappingCuration	orcid:0009-0009-1663-1003		0.8	
+CHMO:0001075	elemental analysis	skos:exactMatch	wikidata:Q2533665	elemental analysis	semapv:ManualMappingCuration	orcid:0009-0009-1663-1003		0.8	
+CHMO:0001082	osmometry	skos:exactMatch	wikidata:Q2034413	osmometry	semapv:ManualMappingCuration	orcid:0009-0009-1663-1003		0.8	
+CHMO:0001085	fluorescence-activated cell sorting	skos:exactMatch	wikidata:Q105426874	fluorescence-activated cell sorting	semapv:ManualMappingCuration	orcid:0009-0009-1663-1003		0.8	
+CHMO:0001086	photoemission electron microscopy	skos:exactMatch	wikidata:Q1257398	photoemission electron microscopy	semapv:ManualMappingCuration	orcid:0009-0009-1663-1003		0.8	
+CHMO:0001088	electron microscope	skos:exactMatch	wikidata:Q132560	electron microscope	semapv:ManualMappingCuration	orcid:0009-0009-1663-1003		0.8	
+CHMO:0001092	electron spin resonance imaging	skos:exactMatch	wikidata:Q108990256	electron spin resonance imaging	semapv:ManualMappingCuration	orcid:0009-0009-1663-1003		0.7	semapv:LexicalMatching
+CHMO:0001092	electron spin resonance imaging	skos:exactMatch	wikidata:Q28068366	electron spin resonance imaging	semapv:ManualMappingCuration	orcid:0009-0009-1663-1003		0.7	semapv:LexicalMatching
+CHMO:0001095	fluorescence microscope	skos:exactMatch	wikidata:Q840211	fluorescence microscope	semapv:ManualMappingCuration	orcid:0009-0009-1663-1003		0.8	
+CHMO:0001097	thermocouple	skos:exactMatch	wikidata:Q190241	thermocouple	semapv:ManualMappingCuration	orcid:0009-0009-1663-1003		0.8	
+CHMO:0001098	Wollaston wire	skos:exactMatch	wikidata:Q1766019	Wollaston wire	semapv:ManualMappingCuration	orcid:0009-0009-1663-1003		0.8	
+CHMO:0001099	transmission electron microscope	skos:exactMatch	wikidata:Q744818	transmission electron microscope	semapv:ManualMappingCuration	orcid:0009-0009-1663-1003		0.8	
+CHMO:0001103	recorded image	skos:exactMatch	wikidata:Q478798	image	semapv:ManualMappingCuration	orcid:0009-0009-1663-1003		0.8	
+CHMO:0001110	particle-image velocimetry	skos:exactMatch	wikidata:Q1756248	particle-image velocimetry	semapv:ManualMappingCuration	orcid:0009-0009-1663-1003		0.8	
+CHMO:0001122	dynamic force spectroscopy	skos:exactMatch	wikidata:Q102290484	dynamic force spectroscopy	semapv:ManualMappingCuration	orcid:0009-0009-1663-1003		0.7	semapv:LexicalMatching
+CHMO:0001123	force spectroscopy	skos:exactMatch	wikidata:Q49298	force spectroscopy	semapv:ManualMappingCuration	orcid:0009-0009-1663-1003		0.8	
+CHMO:0001128	adsorption chromatography	skos:exactMatch	wikidata:Q378597	adsorption chromatography	semapv:ManualMappingCuration	orcid:0009-0009-1663-1003		0.8	
+CHMO:0001129	displacement chromatography	skos:exactMatch	wikidata:Q5282613	displacement chromatography	semapv:ManualMappingCuration	orcid:0009-0009-1663-1003		0.8	
+CHMO:0001132	laser ablation	skos:exactMatch	wikidata:Q1806547	laser ablation	semapv:ManualMappingCuration	orcid:0009-0009-1663-1003		0.8	
+CHMO:0001135	viscometry	skos:exactMatch	wikidata:Q2528362	viscometry	semapv:ManualMappingCuration	orcid:0009-0009-1663-1003		0.7	semapv:LexicalMatching
+CHMO:0001209	anion-exchange chromatography	skos:exactMatch	wikidata:Q17002191	anion-exchange chromatography	semapv:ManualMappingCuration	orcid:0009-0009-1663-1003		0.7	semapv:LexicalMatching
+CHMO:0001211	titration	skos:exactMatch	wikidata:Q191010	titration	semapv:ManualMappingCuration	orcid:0009-0009-1663-1003		0.8	
+CHMO:0001212	acid–base titration	skos:exactMatch	wikidata:Q133716	acid–base titration	semapv:ManualMappingCuration	orcid:0009-0009-1663-1003		0.8	
+CHMO:0001216	optically detected magnetic resonance	skos:broadMatch	wikidata:Q56276866	optically detected magnetic resonance	semapv:ManualMappingCuration	orcid:0009-0009-1663-1003		0.8	
+CHMO:0001224	activation analysis	skos:exactMatch	wikidata:Q73211166	activation analysis	semapv:ManualMappingCuration	orcid:0009-0009-1663-1003		0.8	
+CHMO:0001230	chelatometric titration	skos:exactMatch	wikidata:Q2493922	chelatometric titration	semapv:ManualMappingCuration	orcid:0009-0009-1663-1003		0.8	
+CHMO:0001234	spectrometer	skos:exactMatch	wikidata:Q188463	spectrometer	semapv:ManualMappingCuration	orcid:0009-0009-1663-1003		0.8	
+CHMO:0001235	Raman spectrometer	skos:exactMatch	wikidata:Q111486361	Raman spectrometer	semapv:ManualMappingCuration	orcid:0009-0009-1663-1003		0.8	
+CHMO:0001239	inversion recovery	skos:exactMatch	wikidata:Q111942411	inversion recovery	semapv:ManualMappingCuration	orcid:0009-0009-1663-1003		0.8	
+CHMO:0001259	reversed-phase high-performance liquid chromatography	skos:exactMatch	wikidata:Q117769063	reversed-phase high-performance liquid chromatography	semapv:ManualMappingCuration	orcid:0009-0009-1663-1003		0.8	
+CHMO:0001285	gravimetric analysis	skos:exactMatch	wikidata:Q192414	gravimetric analysis	semapv:ManualMappingCuration	orcid:0009-0009-1663-1003		0.8	
+CHMO:0001287	calorimeter	skos:exactMatch	wikidata:Q189783	calorimeter	semapv:ManualMappingCuration	orcid:0009-0009-1663-1003		0.8	
+CHMO:0001288	sum-frequency generation spectroscopy	skos:exactMatch	wikidata:Q1554233	sum frequency generation spectroscopy	semapv:ManualMappingCuration	orcid:0009-0009-1663-1003		0.8	
+CHMO:0001290	time-resolved microwave conductivity	skos:exactMatch	wikidata:Q108337235	time-resolved microwave conductivity	semapv:ManualMappingCuration	orcid:0009-0009-1663-1003		0.7	semapv:LexicalMatching
+CHMO:0001292	vacuum deposition	skos:exactMatch	wikidata:Q3044964	vacuum deposition	semapv:ManualMappingCuration	orcid:0009-0009-1663-1003		0.8	
+CHMO:0001305	self-assembly	skos:exactMatch	wikidata:Q910150	self-assembly	semapv:ManualMappingCuration	orcid:0009-0009-1663-1003		0.8	
+CHMO:0001307	molecular self-assambly	skos:exactMatch	wikidata:Q13365147	molecular self-assambly	semapv:ManualMappingCuration	orcid:0009-0009-1663-1003		0.8	
+CHMO:0001311	atomic layer deposition	skos:exactMatch	wikidata:Q757625	atomic layer deposition	semapv:ManualMappingCuration	orcid:0009-0009-1663-1003		0.8	
+CHMO:0001314	chemical vapour deposition	skos:exactMatch	wikidata:Q505668	chemical vapour deposition	semapv:ManualMappingCuration	orcid:0009-0009-1663-1003		0.8	
+CHMO:0001325	plasma-assisted chemical vapour deposition	skos:exactMatch	wikidata:Q905958	plasma-assisted chemical vapour deposition	semapv:ManualMappingCuration	orcid:0009-0009-1663-1003		0.8	
+CHMO:0001329	dry deposition	skos:exactMatch	wikidata:Q11873185	dry deposition	semapv:ManualMappingCuration	orcid:0009-0009-1663-1003		0.8	
+CHMO:0001330	electrophoretic deposition	skos:exactMatch	wikidata:Q925358	electrophoretic deposition	semapv:ManualMappingCuration	orcid:0009-0009-1663-1003		0.8	
+CHMO:0001331	electrochemical deposition	skos:exactMatch	wikidata:Q59628857	electrochemical deposition	semapv:ManualMappingCuration	orcid:0009-0009-1663-1003		0.7	semapv:LexicalMatching
+CHMO:0001336	epitaxy	skos:exactMatch	wikidata:Q1135540	epitaxy	semapv:ManualMappingCuration	orcid:0009-0009-1663-1003		0.8	
+CHMO:0001337	atomic layer epitaxy	skos:exactMatch	wikidata:Q4817336	atomic layer epitaxy	semapv:ManualMappingCuration	orcid:0009-0009-1663-1003		0.7	semapv:LexicalMatching
+CHMO:0001341	molecular beam epitaxy	skos:exactMatch	wikidata:Q898542	molecular beam epitaxy	semapv:ManualMappingCuration	orcid:0009-0009-1663-1003		0.8	
+CHMO:0001347	hydride vapour-phase epitaxy	skos:exactMatch	wikidata:Q1640174	hydride vapour-phase epitaxy	semapv:ManualMappingCuration	orcid:0009-0009-1663-1003		0.7	semapv:LexicalMatching
+CHMO:0001356	physical vapour deposition	skos:exactMatch	wikidata:Q900134	physical vapour deposition	semapv:ManualMappingCuration	orcid:0009-0009-1663-1003		0.8	
+CHMO:0001357	cathodic arc deposition	skos:exactMatch	wikidata:Q900966	cathodic arc deposition	semapv:ManualMappingCuration	orcid:0009-0009-1663-1003		0.8	
+CHMO:0001358	electron-beam-induced deposition	skos:exactMatch	wikidata:Q5358152	electron beam-induced deposition	semapv:ManualMappingCuration	orcid:0009-0009-1663-1003		0.8	
+CHMO:0001363	pulsed laser deposition	skos:exactMatch	wikidata:Q901321	pulsed laser deposition	semapv:ManualMappingCuration	orcid:0009-0009-1663-1003		0.8	
+CHMO:0001364	sputter deposition	skos:exactMatch	wikidata:Q847609	sputter deposition	semapv:ManualMappingCuration	orcid:0009-0009-1663-1003		0.8	
+CHMO:0001376	thin-film deposition	skos:exactMatch	wikidata:Q1758673	thin-film deposition	semapv:ManualMappingCuration	orcid:0009-0009-1663-1003		0.8	
+CHMO:0001377	hydrothermal synthesis	skos:exactMatch	wikidata:Q10861356	hydrothermal synthesismethod	semapv:ManualMappingCuration	orcid:0009-0009-1663-1003		0.8	
+CHMO:0001379	chemical vapour infiltration	skos:exactMatch	wikidata:Q1069426	chemical vapour infiltration	semapv:ManualMappingCuration	orcid:0009-0009-1663-1003		0.8	
+CHMO:0001388	lithography	skos:exactMatch	wikidata:Q133036	lithography	semapv:ManualMappingCuration	orcid:0009-0009-1663-1003		0.8	
+CHMO:0001390	microlithography	skos:exactMatch	wikidata:Q109875360	microlithography	semapv:ManualMappingCuration	orcid:0009-0009-1663-1003		0.8	
+CHMO:0001391	nanolithography	skos:exactMatch	wikidata:Q1106386	nanolithography	semapv:ManualMappingCuration	orcid:0009-0009-1663-1003		0.8	
+CHMO:0001392	nanoimprint lithography	skos:exactMatch	wikidata:Q1540138	nanoimprint lithography	semapv:ManualMappingCuration	orcid:0009-0009-1663-1003		0.8	
+CHMO:0001401	electron-beam lithography	skos:exactMatch	wikidata:Q256845	electron-beam lithography	semapv:ManualMappingCuration	orcid:0009-0009-1663-1003		0.8	
+CHMO:0001407	ion-beam lithography	skos:exactMatch	wikidata:Q1672059	ion beam lithography	semapv:ManualMappingCuration	orcid:0009-0009-1663-1003		0.8	
+CHMO:0001410	photolithography	skos:exactMatch	wikidata:Q622938	photolithography	semapv:ManualMappingCuration	orcid:0009-0009-1663-1003		0.8	
+CHMO:0001414	interference lithography	skos:exactMatch	wikidata:Q6046394	interference lithography	semapv:ManualMappingCuration	orcid:0009-0009-1663-1003		0.8	
+CHMO:0001417	ultraviolet lithography	skos:exactMatch	wikidata:Q4474979	ultraviolet lithography	semapv:ManualMappingCuration	orcid:0009-0009-1663-1003		0.8	
+CHMO:0001418	contact lithography	skos:exactMatch	wikidata:Q5164834	contact lithography	semapv:ManualMappingCuration	orcid:0009-0009-1663-1003		0.8	
+CHMO:0001421	deep-ultraviolet lithography	skos:exactMatch	wikidata:Q112921067	deep-ultraviolet lithography	semapv:ManualMappingCuration	orcid:0009-0009-1663-1003		0.7	semapv:LexicalMatching
+CHMO:0001422	extreme ultraviolet lithography	skos:exactMatch	wikidata:Q371965	extreme ultraviolet lithography	semapv:ManualMappingCuration	orcid:0009-0009-1663-1003		0.8	
+CHMO:0001425	soft lithography	skos:exactMatch	wikidata:Q7554001	soft lithography	semapv:ManualMappingCuration	orcid:0009-0009-1663-1003		0.8	
+CHMO:0001427	moulding	skos:exactMatch	wikidata:Q1055732	molding	semapv:ManualMappingCuration	orcid:0009-0009-1663-1003		0.8	
+CHMO:0001428	blow moulding	skos:exactMatch	wikidata:Q881884	blow molding	semapv:ManualMappingCuration	orcid:0009-0009-1663-1003		0.8	
+CHMO:0001430	injection moulding	skos:exactMatch	wikidata:Q260606	injection molding	semapv:ManualMappingCuration	orcid:0009-0009-1663-1003		0.8	
+CHMO:0001435	rotational moulding	skos:exactMatch	wikidata:Q685905	rotational molding	semapv:ManualMappingCuration	orcid:0009-0009-1663-1003		0.8	
+CHMO:0001436	transfer moulding	skos:exactMatch	wikidata:Q382824	transfer molding	semapv:ManualMappingCuration	orcid:0009-0009-1663-1003		0.8	
+CHMO:0001441	patterning by etching at the nanoscale	skos:exactMatch	wikidata:Q7148395	patterning by etching at the nanoscale	semapv:ManualMappingCuration	orcid:0009-0009-1663-1003		0.7	semapv:LexicalMatching
+CHMO:0001442	X-ray lithography	skos:exactMatch	wikidata:Q1408939	X-ray lithography	semapv:ManualMappingCuration	orcid:0009-0009-1663-1003		0.8	
+CHMO:0001443	mechanosynthesis	skos:exactMatch	wikidata:Q1764619	mechanosynthesis	semapv:ManualMappingCuration	orcid:0009-0009-1663-1003		0.7	semapv:LexicalMatching
+CHMO:0001450	steam reforming	skos:exactMatch	wikidata:Q556466	steam reforming	semapv:ManualMappingCuration	orcid:0009-0009-1663-1003		0.8	
+CHMO:0001456	scanning probe lithography	skos:exactMatch	wikidata:Q7430072	scanning probe lithography	semapv:ManualMappingCuration	orcid:0009-0009-1663-1003		0.8	
+CHMO:0001457	dip-pen nanolithography	skos:exactMatch	wikidata:Q5279666	dip-pen nanolithography	semapv:ManualMappingCuration	orcid:0009-0009-1663-1003		0.8	
+CHMO:0001460	peptisation	skos:exactMatch	wikidata:Q902564	peptization	semapv:ManualMappingCuration	orcid:0009-0009-1663-1003		0.8	
+CHMO:0001462	buffer solution	skos:exactMatch	wikidata:Q208465	buffer solution	semapv:ManualMappingCuration	orcid:0009-0009-1663-1003		0.8	
+CHMO:0001464	ageing	skos:exactMatch	wikidata:Q439078	ageing	semapv:ManualMappingCuration	orcid:0009-0009-1663-1003		0.8	
+CHMO:0001465	annealing	skos:exactMatch	wikidata:Q187360	annealing	semapv:ManualMappingCuration	orcid:0009-0009-1663-1003		0.8	
+CHMO:0001467	calcination	skos:exactMatch	wikidata:Q105991955	calcination	semapv:ManualMappingCuration	orcid:0009-0009-1663-1003		0.8	
+CHMO:0001471	dip coating	skos:exactMatch	wikidata:Q1069196	dip coating	semapv:ManualMappingCuration	orcid:0009-0009-1663-1003		0.8	
+CHMO:0001472	spin coating	skos:exactMatch	wikidata:Q1305254	spin coating	semapv:ManualMappingCuration	orcid:0009-0009-1663-1003		0.8	
+CHMO:0001473	combustion	skos:exactMatch	wikidata:Q133235	combustion	semapv:ManualMappingCuration	orcid:0009-0009-1663-1003		0.8	
+CHMO:0001475	laser cooling	skos:exactMatch	wikidata:Q163117	laser cooling	semapv:ManualMappingCuration	orcid:0009-0009-1663-1003		0.8	
+CHMO:0001477	crystallisation	skos:exactMatch	wikidata:Q284256	crystallization	semapv:ManualMappingCuration	orcid:0009-0009-1663-1003		0.8	
+CHMO:0001479	fractional crystallisation	skos:exactMatch	wikidata:Q15045177	fractional crystallisation	semapv:ManualMappingCuration	orcid:0009-0009-1663-1003		0.8	
+CHMO:0001480	curing	skos:exactMatch	wikidata:Q2991861	curing	semapv:ManualMappingCuration	orcid:0009-0009-1663-1003		0.8	
+CHMO:0001482	photochemical curing	skos:exactMatch	wikidata:Q22227068	photocuring	semapv:ManualMappingCuration	orcid:0009-0009-1663-1003		0.7	semapv:LexicalMatching
+CHMO:0001485	derivatisation	skos:exactMatch	wikidata:Q2294884	derivatization	semapv:ManualMappingCuration	orcid:0009-0009-1663-1003		0.8	
+CHMO:0001488	chemical decomposition	skos:exactMatch	wikidata:Q192036	chemical decomposition	semapv:ManualMappingCuration	orcid:0009-0009-1663-1003		0.8	
+CHMO:0001496	microwave digestion	skos:exactMatch	wikidata:Q6840497	microwave digestion	semapv:ManualMappingCuration	orcid:0009-0009-1663-1003		0.7	semapv:LexicalMatching
+CHMO:0001499	spinodal decomposition	skos:exactMatch	wikidata:Q2666979	spinodal decomposition	semapv:ManualMappingCuration	orcid:0009-0009-1663-1003		0.8	
+CHMO:0001500	thermal decomposition	skos:exactMatch	wikidata:Q2611095	thermal decomposition	semapv:ManualMappingCuration	orcid:0009-0009-1663-1003		0.8	
+CHMO:0001501	gasification	skos:exactMatch	wikidata:Q646882	gasification	semapv:ManualMappingCuration	orcid:0009-0009-1663-1003		0.8	
+CHMO:0001502	pyrolysis	skos:exactMatch	wikidata:Q176848	pyrolysis	semapv:ManualMappingCuration	orcid:0009-0009-1663-1003		0.8	
+CHMO:0001516	spray pyrolysis	skos:exactMatch	wikidata:Q44588770	spray pyrolysis	semapv:ManualMappingCuration	orcid:0009-0009-1663-1003		0.7	semapv:LexicalMatching
+CHMO:0001520	thermolysis	skos:exactMatch	wikidata:Q2611095	thermal decomposition	semapv:ManualMappingCuration	orcid:0009-0009-1663-1003		0.8	
+CHMO:0001521	flash vacuum thermolysis	skos:exactMatch	wikidata:Q1427190	flash vacuum pyrolysis	semapv:ManualMappingCuration	orcid:0009-0009-1663-1003		0.8	
+CHMO:0001523	electrodialysis	skos:exactMatch	wikidata:Q2290646	electrodialysis	semapv:ManualMappingCuration	orcid:0009-0009-1663-1003		0.8	
+CHMO:0001524	micro-dialysis	skos:exactMatch	wikidata:Q3856966	microdialysis	semapv:ManualMappingCuration	orcid:0009-0009-1663-1003		0.8	
+CHMO:0001526	colloidal dispersion	skos:exactMatch	wikidata:Q113594664	colloidal dispersion	semapv:ManualMappingCuration	orcid:0009-0009-1663-1003		0.7	semapv:LexicalMatching
+CHMO:0001532	distillation	skos:exactMatch	wikidata:Q101017	distillation	semapv:ManualMappingCuration	orcid:0009-0009-1663-1003		0.8	
+CHMO:0001533	batch distillation	skos:exactMatch	wikidata:Q4118095	batch distillation	semapv:ManualMappingCuration	orcid:0009-0009-1663-1003		0.7	semapv:LexicalMatching
+CHMO:0001534	continuous distillation	skos:exactMatch	wikidata:Q1863368	continuous distillation	semapv:ManualMappingCuration	orcid:0009-0009-1663-1003		0.8	
+CHMO:0001535	extractive distillation	skos:exactMatch	wikidata:Q1385210	extractive distillation	semapv:ManualMappingCuration	orcid:0009-0009-1663-1003		0.8	
+CHMO:0001536	fractional distillation	skos:exactMatch	wikidata:Q840492	fractional distillation	semapv:ManualMappingCuration	orcid:0009-0009-1663-1003		0.8	
+CHMO:0001537	reactive distillation	skos:exactMatch	wikidata:Q3079309	reactive distillation	semapv:ManualMappingCuration	orcid:0009-0009-1663-1003		0.7	semapv:LexicalMatching
+CHMO:0001538	simple distillation	skos:exactMatch	wikidata:Q30334249	simple distillation	semapv:ManualMappingCuration	orcid:0009-0009-1663-1003		0.8	
+CHMO:0001539	steam distillation	skos:exactMatch	wikidata:Q1164392	steam distillation	semapv:ManualMappingCuration	orcid:0009-0009-1663-1003		0.8	
+CHMO:0001540	vacuum distillation	skos:exactMatch	wikidata:Q1648382	vacuum distillation	semapv:ManualMappingCuration	orcid:0009-0009-1663-1003		0.8	
+CHMO:0001542	molecular distillation	skos:exactMatch	wikidata:Q9206474	molecular distillation	semapv:ManualMappingCuration	orcid:0009-0009-1663-1003		0.8	
+CHMO:0001543	short-path distillation	skos:exactMatch	wikidata:Q23645139	short path distillation	semapv:ManualMappingCuration	orcid:0009-0009-1663-1003		0.8	
+CHMO:0001552	drum drying	skos:exactMatch	wikidata:Q5309085	drum drying	semapv:ManualMappingCuration	orcid:0009-0009-1663-1003		0.8	
+CHMO:0001553	freeze drying	skos:exactMatch	wikidata:Q723912	freeze drying	semapv:ManualMappingCuration	orcid:0009-0009-1663-1003		0.8	
+CHMO:0001554	oven drying	skos:exactMatch	wikidata:Q63385598	microwave drying	semapv:ManualMappingCuration	orcid:0009-0009-1663-1003		0.7	semapv:LexicalMatching
+CHMO:0001555	spray drying	skos:exactMatch	wikidata:Q1066303	spray drying	semapv:ManualMappingCuration	orcid:0009-0009-1663-1003		0.8	
+CHMO:0001556	supercritical drying	skos:exactMatch	wikidata:Q332585	supercritical drying	semapv:ManualMappingCuration	orcid:0009-0009-1663-1003		0.8	
+CHMO:0001557	vacuum drying	skos:exactMatch	wikidata:Q25305160	vacuum drying	semapv:ManualMappingCuration	orcid:0009-0009-1663-1003		0.8	
+CHMO:0001558	etching	skos:exactMatch	wikidata:Q2368605	etching	semapv:ManualMappingCuration	orcid:0009-0009-1663-1003		0.8	
+CHMO:0001559	dry etching	skos:exactMatch	wikidata:Q1191918	dry etching	semapv:ManualMappingCuration	orcid:0009-0009-1663-1003		0.8	
+CHMO:0001560	plasma etching	skos:exactMatch	wikidata:Q2392011	plasma etching	semapv:ManualMappingCuration	orcid:0009-0009-1663-1003		0.8	
+CHMO:0001561	deep reactive-ion etching	skos:exactMatch	wikidata:Q486936	deep reactive-ion etching	semapv:ManualMappingCuration	orcid:0009-0009-1663-1003		0.8	
+CHMO:0001562	advanced silicon etching	skos:exactMatch	wikidata:Q4686274	advanced silicon etching	semapv:ManualMappingCuration	orcid:0009-0009-1663-1003		0.8	
+CHMO:0001574	evaporation	skos:exactMatch	wikidata:Q132814	evaporation	semapv:ManualMappingCuration	orcid:0009-0009-1663-1003		0.8	
+CHMO:0001577	extraction	skos:exactMatch	wikidata:Q844704	extraction	semapv:ManualMappingCuration	orcid:0009-0009-1663-1003		0.8	
+CHMO:0001583	liquid-solid extraction	skos:exactMatch	wikidata:Q25383999	liquid-solid extraction	semapv:ManualMappingCuration	orcid:0009-0009-1663-1003		0.8	
+CHMO:0001586	solid-phase micro-extraction	skos:exactMatch	wikidata:Q903970	solid-phase micro-extraction	semapv:ManualMappingCuration	orcid:0009-0009-1663-1003		0.8	
+CHMO:0001589	headspace solid-phase micro-extraction	skos:exactMatch	wikidata:Q67825881	headspace solid-phase micro-extraction	semapv:ManualMappingCuration	orcid:0009-0009-1663-1003		0.7	semapv:LexicalMatching
+CHMO:0001598	solvent extraction	skos:exactMatch	wikidata:Q780219	liquid–liquid extraction	semapv:ManualMappingCuration	orcid:0009-0009-1663-1003		0.8	
+CHMO:0001600	liquid–liquid extraction	skos:exactMatch	wikidata:Q780219	liquid–liquid extraction	semapv:ManualMappingCuration	orcid:0009-0009-1663-1003		0.8	
+CHMO:0001607	solid–liquid extraction	skos:exactMatch	wikidata:Q25383999	solid–liquid extraction	semapv:ManualMappingCuration	orcid:0009-0009-1663-1003		0.8	
+CHMO:0001609	Soxhlet extraction	skos:exactMatch	wikidata:Q29509005	Soxhlet extraction	semapv:ManualMappingCuration	orcid:0009-0009-1663-1003		0.8	
+CHMO:0001610	supercritical fluid extraction	skos:exactMatch	wikidata:Q4410204	supercritical fluid extraction	semapv:ManualMappingCuration	orcid:0009-0009-1663-1003		0.8	
+CHMO:0001613	extrusion	skos:exactMatch	wikidata:Q139143	extrusion	semapv:ManualMappingCuration	orcid:0009-0009-1663-1003		0.8	
+CHMO:0001618	spinning	skos:exactMatch	wikidata:Q453762	spinning	semapv:ManualMappingCuration	orcid:0009-0009-1663-1003		0.8	
+CHMO:0001619	dry spinning	skos:exactMatch	wikidata:Q2454790	dry spinning	semapv:ManualMappingCuration	orcid:0009-0009-1663-1003		0.8	
+CHMO:0001620	electrospinning	skos:exactMatch	wikidata:Q1533542	electrospinning	semapv:ManualMappingCuration	orcid:0009-0009-1663-1003		0.8	
+CHMO:0001621	gel spinning	skos:exactMatch	wikidata:Q12018116	gel spinning	semapv:ManualMappingCuration	orcid:0009-0009-1663-1003		0.8	
+CHMO:0001622	melt spinning	skos:exactMatch	wikidata:Q1428318	melt spinning	semapv:ManualMappingCuration	orcid:0009-0009-1663-1003		0.8	
+CHMO:0001623	wet spinning	skos:exactMatch	wikidata:Q1275966	wet spinning	semapv:ManualMappingCuration	orcid:0009-0009-1663-1003		0.8	
+CHMO:0001624	fermentation	skos:exactMatch	wikidata:Q41760	fermentation	semapv:ManualMappingCuration	orcid:0009-0009-1663-1003		0.8	
+CHMO:0001625	fractionation	skos:exactMatch	wikidata:Q15305109	fractionation	semapv:ManualMappingCuration	orcid:0009-0009-1663-1003		0.8	
+CHMO:0001626	field-flow fractionation	skos:exactMatch	wikidata:Q782281	field-flow fractionation	semapv:ManualMappingCuration	orcid:0009-0009-1663-1003		0.8	
+CHMO:0001636	foam fractionation	skos:exactMatch	wikidata:Q3080286	foam fractionation	semapv:ManualMappingCuration	orcid:0009-0009-1663-1003		0.7	semapv:LexicalMatching
+CHMO:0001637	freeze distillation	skos:exactMatch	wikidata:Q3489476	fractional freezing	semapv:ManualMappingCuration	orcid:0009-0009-1663-1003		0.8	
+CHMO:0001639	Cohn process	skos:exactMatch	wikidata:Q5141378	Cohn process	semapv:ManualMappingCuration	orcid:0009-0009-1663-1003		0.8	
+CHMO:0001640	filtration	skos:exactMatch	wikidata:Q244772	filtration	semapv:ManualMappingCuration	orcid:0009-0009-1663-1003		0.8	
+CHMO:0001643	reverse osmosis	skos:exactMatch	wikidata:Q272175	reverse osmosis	semapv:ManualMappingCuration	orcid:0009-0009-1663-1003		0.8	
+CHMO:0001644	suction filtration	skos:exactMatch	wikidata:Q3072255	suction filtration	semapv:ManualMappingCuration	orcid:0009-0009-1663-1003		0.8	
+CHMO:0001646	gelation	skos:exactMatch	wikidata:Q48995704	gelation	semapv:ManualMappingCuration	orcid:0009-0009-1663-1003		0.8	
+CHMO:0001659	electrospray ionisation	skos:exactMatch	wikidata:Q902061	electrospray ionisation	semapv:ManualMappingCuration	orcid:0009-0009-1663-1003		0.8	
+CHMO:0001672	direct analysis in real time	skos:exactMatch	wikidata:Q3614983	direct analysis in real time	semapv:ManualMappingCuration	orcid:0009-0009-1663-1003		0.8	
+CHMO:0001674	hot isostatic pressing	skos:exactMatch	wikidata:Q1601582	hot isostatic pressing	semapv:ManualMappingCuration	orcid:0009-0009-1663-1003		0.8	
+CHMO:0001675	labelling	skos:exactMatch	wikidata:Q380709	labelling	semapv:ManualMappingCuration	orcid:0009-0009-1663-1003		0.8	
+CHMO:0001677	isotopic labelling	skos:exactMatch	wikidata:Q370228	isotopic labelling	semapv:ManualMappingCuration	orcid:0009-0009-1663-1003		0.8	
+CHMO:0001681	leaching	skos:exactMatch	wikidata:Q1483184	leaching	semapv:ManualMappingCuration	orcid:0009-0009-1663-1003		0.8	
+CHMO:0001685	mixing	skos:exactMatch	wikidata:Q379697	mixing	semapv:ManualMappingCuration	orcid:0009-0009-1663-1003		0.8	
+CHMO:0001686	Ostwald ripening	skos:exactMatch	wikidata:Q903984	Ostwald ripening	semapv:ManualMappingCuration	orcid:0009-0009-1663-1003		0.8	
+CHMO:0001687	photodegradation	skos:exactMatch	wikidata:Q1902073	photodegradation	semapv:ManualMappingCuration	orcid:0009-0009-1663-1003		0.8	
+CHMO:0001688	precipitation	skos:exactMatch	wikidata:Q113796	precipitation	semapv:ManualMappingCuration	orcid:0009-0009-1663-1003		0.8	
+CHMO:0001690	co-precipitation	skos:exactMatch	wikidata:Q131910403	coprecipitation	semapv:ManualMappingCuration	orcid:0009-0009-1663-1003		0.8	
+CHMO:0001691	immunoprecipitation	skos:exactMatch	wikidata:Q901305	immunoprecipitation	semapv:ManualMappingCuration	orcid:0009-0009-1663-1003		0.8	
+CHMO:0001694	chromatin immunoprecipitation	skos:exactMatch	wikidata:Q901026	chromatin immunoprecipitation	semapv:ManualMappingCuration	orcid:0009-0009-1663-1003		0.8	
+CHMO:0001698	radiolysis	skos:exactMatch	wikidata:Q788463	radiolysis	semapv:ManualMappingCuration	orcid:0009-0009-1663-1003		0.8	
+CHMO:0001700	pulse radiolysis	skos:exactMatch	wikidata:Q73225763	pulse radiolysis	semapv:ManualMappingCuration	orcid:0009-0009-1663-1003		0.8	
+CHMO:0001701	sintering	skos:exactMatch	wikidata:Q844613	sintering	semapv:ManualMappingCuration	orcid:0009-0009-1663-1003		0.8	
+CHMO:0001705	selective laser sintering	skos:exactMatch	wikidata:Q428412	selective laser sintering	semapv:ManualMappingCuration	orcid:0009-0009-1663-1003		0.8	
+CHMO:0001706	spark plasma sintering	skos:exactMatch	wikidata:Q2307265	spark plasma sintering	semapv:ManualMappingCuration	orcid:0009-0009-1663-1003		0.8	
+CHMO:0001707	sonication	skos:exactMatch	wikidata:Q3964828	sonication	semapv:ManualMappingCuration	orcid:0009-0009-1663-1003		0.8	
+CHMO:0001713	electrochemical detection	skos:broadMatch	wikidata:Q117822152	electrochemical detection	semapv:ManualMappingCuration	orcid:0009-0009-1663-1003		0.8	
+CHMO:0001748	acetate buffer	skos:exactMatch	wikidata:Q682228	acetic acid/acetate buffer	semapv:ManualMappingCuration	orcid:0009-0009-1663-1003		0.8	
+CHMO:0001753	ACES buffer	skos:exactMatch	wikidata:Q10859796	N-(carbamoylmethyl)taurine	semapv:ManualMappingCuration	orcid:0009-0009-1663-1003		0.8	
+CHMO:0001755	Tris-HCl buffer	skos:exactMatch	wikidata:Q413961	tromethamine	semapv:ManualMappingCuration	orcid:0009-0009-1663-1003		0.8	
+CHMO:0001756	ADA buffer	skos:exactMatch	wikidata:Q27093765	N-(2-acetamido)iminodiacetic acid	semapv:ManualMappingCuration	orcid:0009-0009-1663-1003		0.8	
+CHMO:0001760	MES buffer	skos:exactMatch	wikidata:Q209294	2-(N-morpholino)ethanesulfonic acid	semapv:ManualMappingCuration	orcid:0009-0009-1663-1003		0.8	
+CHMO:0001766	transmission Raman spectroscopy	skos:exactMatch	wikidata:Q7834626	transmission Raman spectroscopy	semapv:ManualMappingCuration	orcid:0009-0009-1663-1003		0.8	
+CHMO:0001784	pervaporation	skos:exactMatch	wikidata:Q2072760	pervaporation	semapv:ManualMappingCuration	orcid:0009-0009-1663-1003		0.8	
+CHMO:0001800	electron micrograph	skos:exactMatch	wikidata:Q124816503	electron micrograph	semapv:ManualMappingCuration	orcid:0009-0009-1663-1003		0.8	
+CHMO:0001801	scanning electron micrograph	skos:exactMatch	wikidata:Q124816510	scanning electron micrograph	semapv:ManualMappingCuration	orcid:0009-0009-1663-1003		0.8	
+CHMO:0001802	transmission electron micrograph	skos:exactMatch	wikidata:Q124816511	transmission electron micrograph	semapv:ManualMappingCuration	orcid:0009-0009-1663-1003		0.8	
+CHMO:0001810	synchrotron	skos:exactMatch	wikidata:Q689863	synchrotron	semapv:ManualMappingCuration	orcid:0009-0009-1663-1003		0.8	
+CHMO:0001814	Raman microscope	skos:exactMatch	wikidata:Q7288894	Raman microscope	semapv:ManualMappingCuration	orcid:0009-0009-1663-1003		0.8	
+CHMO:0001814	Raman microscope	skos:exactMatch	wikidata:Q7288894	Raman microscope	semapv:ManualMappingCuration	orcid:0009-0009-1663-1003		0.8	
+CHMO:0001824	micrograph	skos:exactMatch	wikidata:Q124816516	micrograph	semapv:ManualMappingCuration	orcid:0009-0009-1663-1003		0.8	
+CHMO:0001826	electrophoretic light scattering	skos:exactMatch	wikidata:Q5358524	electrophoretic light scattering	semapv:ManualMappingCuration	orcid:0009-0009-1663-1003		0.8	
+CHMO:0001883	pulsed field gradient	skos:exactMatch	wikidata:Q7259694	pulsed field gradient	semapv:ManualMappingCuration	orcid:0009-0009-1663-1003		0.7	semapv:LexicalMatching
+CHMO:0001894	thermography	skos:exactMatch	wikidata:Q28068366	thermography	semapv:ManualMappingCuration	orcid:0009-0009-1663-1003		0.8	
+CHMO:0001898	non-contact mode atomic force microscopy	skos:exactMatch	wikidata:Q16029538	non-contact mode atomic force microscopy	semapv:ManualMappingCuration	orcid:0009-0009-1663-1003		0.8	
+CHMO:0001909	focal-plane array	skos:exactMatch	wikidata:Q5463830	focal plane array	semapv:ManualMappingCuration	orcid:0009-0009-1663-1003		0.8	
+CHMO:0001924	diffusing wave spectroscopy	skos:exactMatch	wikidata:Q5275431	diffusing wave spectroscopy	semapv:ManualMappingCuration	orcid:0009-0009-1663-1003		0.8	
+CHMO:0001925	total internal reflection microscopy	skos:exactMatch	wikidata:Q18353600	total internal reflection microscopy	semapv:ManualMappingCuration	orcid:0009-0009-1663-1003		0.7	semapv:LexicalMatching
+CHMO:0001938	collision-induced dissociation	skos:exactMatch	wikidata:Q3710336	collision-induced dissociation	semapv:ManualMappingCuration	orcid:0009-0009-1663-1003		0.8	
+CHMO:0001957	flow cytometer	skos:exactMatch	wikidata:Q67126484	flow cytometer	semapv:ManualMappingCuration	orcid:0009-0009-1663-1003		0.8	
+CHMO:0001959	visible spectrum	skos:exactMatch	wikidata:Q76299	visible spectrum	semapv:ManualMappingCuration	orcid:0009-0009-1663-1003		0.8	
+CHMO:0001992	adsorption-desorption isotherm	skos:exactMatch	wikidata:Q29073802	adsorption isotherm	semapv:ManualMappingCuration	orcid:0009-0009-1663-1003		0.8	
+CHMO:0001994	profilometer	skos:exactMatch	wikidata:Q443756	profilometer	semapv:ManualMappingCuration	orcid:0009-0009-1663-1003		0.8	
+CHMO:0002016	ultracentrifugation	skos:exactMatch	wikidata:Q21403009	ultracentrifugation	semapv:ManualMappingCuration	orcid:0009-0009-1663-1003		0.8	
+CHMO:0002018	isopycnic centrifugation	skos:exactMatch	wikidata:Q11602725	isopycnic centrifugation	semapv:ManualMappingCuration	orcid:0009-0009-1663-1003		0.8	
+CHMO:0002019	rate-zonal centrifugation	skos:exactMatch	wikidata:Q19605688	rate-zonal centrifugation	semapv:ManualMappingCuration	orcid:0009-0009-1663-1003		0.8	
+CHMO:0002020	homogenisation	skos:exactMatch	wikidata:Q1165158	homogenisation	semapv:ManualMappingCuration	orcid:0009-0009-1663-1003		0.8	
+CHMO:0002021	triple quadrupole mass spectrometer	skos:exactMatch	wikidata:Q7843529	triple quadrupole mass spectrometer	semapv:ManualMappingCuration	orcid:0009-0009-1663-1003		0.8	
+CHMO:0002043	laser Doppler velocimetry	skos:exactMatch	wikidata:Q1420475	laser Doppler velocimetry	semapv:ManualMappingCuration	orcid:0009-0009-1663-1003		0.8	
+CHMO:0002066	trituration	skos:exactMatch	wikidata:Q961231	trituration	semapv:ManualMappingCuration	orcid:0009-0009-1663-1003		0.8	
+CHMO:0002069	TE buffer	skos:exactMatch	wikidata:Q7670071	TE buffer	semapv:ManualMappingCuration	orcid:0009-0009-1663-1003		0.8	
+CHMO:0002087	thermophoresis	skos:exactMatch	wikidata:Q610090	thermophoresis	semapv:ManualMappingCuration	orcid:0009-0009-1663-1003		0.8	
+CHMO:0002091	pressure perturbation calorimetry	skos:exactMatch	wikidata:Q17105362	pressure perturbation calorimetry	semapv:ManualMappingCuration	orcid:0009-0009-1663-1003		0.8	
+CHMO:0002099	holography	skos:exactMatch	wikidata:Q527628	holography	semapv:ManualMappingCuration	orcid:0009-0009-1663-1003		0.8	
+CHMO:0002109	pulse oximetry	skos:exactMatch	wikidata:Q1140495	pulse oximetry	semapv:ManualMappingCuration	orcid:0009-0009-1663-1003		0.8	
+CHMO:0002119	granulometry	skos:exactMatch	wikidata:Q5596841	granulometry	semapv:ManualMappingCuration	orcid:0009-0009-1663-1003		0.8	
+CHMO:0002120	monochromator	skos:exactMatch	wikidata:Q898306	monochromator	semapv:ManualMappingCuration	orcid:0009-0009-1663-1003		0.8	
+CHMO:0002126	amplifier	skos:exactMatch	wikidata:Q211554	electronic amplifier	semapv:ManualMappingCuration	orcid:0009-0009-1663-1003		0.8	
+CHMO:0002143	conductometric titration	skos:exactMatch	wikidata:Q11778221	conductometric titration	semapv:ManualMappingCuration	orcid:0009-0009-1663-1003		0.8	
+CHMO:0002151	passivation	skos:exactMatch	wikidata:Q917260Q567502	passivation	semapv:ManualMappingCuration	orcid:0009-0009-1663-1003		0.8	
+CHMO:0002152	anodisation	skos:exactMatch	wikidata:Q567502	anodisation	semapv:ManualMappingCuration	orcid:0009-0009-1663-1003		0.8	
+CHMO:0002156	silanisation	skos:exactMatch	wikidata:Q2285655	silanisation	semapv:ManualMappingCuration	orcid:0009-0009-1663-1003		0.8	
+CHMO:0002158	Czochralski process	skos:exactMatch	wikidata:Q594666	Czochralski process	semapv:ManualMappingCuration	orcid:0009-0009-1663-1003		0.8	
+CHMO:0002159	Verneuil process	skos:exactMatch	wikidata:Q898662	Verneuil process	semapv:ManualMappingCuration	orcid:0009-0009-1663-1003		0.8	
+CHMO:0002160	Bridgeman technique	skos:exactMatch	wikidata:Q902938	Bridgman–Stockbarger technique	semapv:ManualMappingCuration	orcid:0009-0009-1663-1003		0.8	
+CHMO:0002162	titration curve	skos:exactMatch	wikidata:Q3699705	titration curve	semapv:ManualMappingCuration	orcid:0009-0009-1663-1003		0.8	
+CHMO:0002166	autoclave	skos:exactMatch	wikidata:Q16692122	autoclave (industrial)	semapv:ManualMappingCuration	orcid:0009-0009-1663-1003		0.8	
+CHMO:0002177	dark-field microscopy	skos:exactMatch	wikidata:Q899540	dark-field microscopy	semapv:ManualMappingCuration	orcid:0009-0009-1663-1003		0.8	
+CHMO:0002180	inverted microscope	skos:exactMatch	wikidata:Q1463415	inverted microscope	semapv:ManualMappingCuration	orcid:0009-0009-1663-1003		0.8	
+CHMO:0002182	electron-multiplying charge-coupled device	skos:exactMatch	wikidata:Q1326007	Electron multiplying charge-coupled device	semapv:ManualMappingCuration	orcid:0009-0009-1663-1003		0.8	
+CHMO:0002191	nanosphere lithography	skos:exactMatch	wikidata:Q17043033	nanosphere lithography	semapv:ManualMappingCuration	orcid:0009-0009-1663-1003		0.8	
+CHMO:0002196	activation	skos:exactMatch	wikidata:Q4661718	activation	semapv:ManualMappingCuration	orcid:0009-0009-1663-1003		0.8	
+CHMO:0002197	plasma activation	skos:exactMatch	wikidata:Q4364308	plasma activation	semapv:ManualMappingCuration	orcid:0009-0009-1663-1003		0.7	semapv:LexicalMatching
+CHMO:0002199	rotary evaporator	skos:exactMatch	wikidata:Q899083	rotary evaporator	semapv:ManualMappingCuration	orcid:0009-0009-1663-1003		0.8	
+CHMO:0002217	sample sublimation	skos:exactMatch	wikidata:Q105582961	sublimation	semapv:ManualMappingCuration	orcid:0009-0009-1663-1003		0.8	
+CHMO:0002218	fractional sublimation	skos:exactMatch	wikidata:Q1440584	fractional sublimation	semapv:ManualMappingCuration	orcid:0009-0009-1663-1003		0.8	
+CHMO:0002221	Lely method	skos:exactMatch	wikidata:Q16999446	Lely method	semapv:ManualMappingCuration	orcid:0009-0009-1663-1003		0.7	semapv:LexicalMatching
+CHMO:0002223	sandwich sublimation	skos:exactMatch	wikidata:Q17083574	sublimation sandwich method	semapv:ManualMappingCuration	orcid:0009-0009-1663-1003		0.7	semapv:LexicalMatching
+CHMO:0002231	purification	skos:exactMatch	wikidata:Q682483	refining	semapv:ManualMappingCuration	orcid:0009-0009-1663-1003		0.8	
+CHMO:0002232	spectrophotometer	skos:exactMatch	wikidata:Q3492906	spectrophotometer	semapv:ManualMappingCuration	orcid:0009-0009-1663-1003		0.8	
+CHMO:0002244	detector	skos:exactMatch	wikidata:Q2066909	detector	semapv:ManualMappingCuration	orcid:0009-0009-1663-1003		0.8	
+CHMO:0002249	porosimetry	skos:exactMatch	wikidata:Q2122541	porosimetry	semapv:ManualMappingCuration	orcid:0009-0009-1663-1003		0.8	
+CHMO:0002251	solvent vapour annealing	skos:exactMatch	wikidata:Q85801975	solvent vapour annealing	semapv:ManualMappingCuration	orcid:0009-0009-1663-1003		0.8	
+CHMO:0002262	hydrophilic interaction chromatography	skos:exactMatch	wikidata:Q5955221	hydrophilic interaction chromatography	semapv:ManualMappingCuration	orcid:0009-0009-1663-1003		0.8	
+CHMO:0002271	laser ablation synthesis in solution	skos:exactMatch	wikidata:Q6493029	laser ablation synthesis in solution	semapv:ManualMappingCuration	orcid:0009-0009-1663-1003		0.7	semapv:LexicalMatching
+CHMO:0002275	native polyacrylamide gel electrophoresis	skos:exactMatch	wikidata:Q15836380	native polyacrylamide gel electrophoresis	semapv:ManualMappingCuration	orcid:0009-0009-1663-1003		0.8	
+CHMO:0002276	blue native polyacrylamide gel electrophoresis	skos:exactMatch	wikidata:Q117745371	BN-PAGE	semapv:ManualMappingCuration	orcid:0009-0009-1663-1003		0.8	
+CHMO:0002278	quantitative preparative native continuous polyacrylamide gel electrophoresis	skos:exactMatch	wikidata:Q592853	wikidata:QPNC-PAGE	semapv:ManualMappingCuration	orcid:0009-0009-1663-1003		0.8	
+CHMO:0002302	reversed-phase chromatography	skos:exactMatch	wikidata:Q645497	reversed-phase chromatography	semapv:ManualMappingCuration	orcid:0009-0009-1663-1003		0.8	
+CHMO:0002308	spectropolarimeter	skos:exactMatch	wikidata:Q111145848	spectropolarimeter	semapv:ManualMappingCuration	orcid:0009-0009-1663-1003		0.8	semapv:LexicalMatching
+CHMO:0002314	scanning transmission X-ray microscopy	skos:exactMatch	wikidata:Q25303746	scanning transmission X-ray microscopy	semapv:ManualMappingCuration	orcid:0009-0009-1663-1003		0.7	semapv:LexicalMatching
+CHMO:0002316	pulsed-field gel electrophoresis	skos:exactMatch	wikidata:Q855275	pulsed field gel electrophoresis	semapv:ManualMappingCuration	orcid:0009-0009-1663-1003		0.8	
+CHMO:0002340	lock-in amplifier	skos:exactMatch	wikidata:Q1752933	lock-in amplifier	semapv:ManualMappingCuration	orcid:0009-0009-1663-1003		0.8	
+CHMO:0002343	relaxometry	skos:exactMatch	wikidata:Q7310885	relaxometry	semapv:ManualMappingCuration	orcid:0009-0009-1663-1003		0.8	
+CHMO:0002344	electrode	skos:exactMatch	wikidata:Q176140	electrode	semapv:ManualMappingCuration	orcid:0009-0009-1663-1003		0.8	
+CHMO:0002345	reference electrode	skos:exactMatch	wikidata:Q653954	reference electrode	semapv:ManualMappingCuration	orcid:0009-0009-1663-1003		0.8	
+CHMO:0002346	indicator electrode	skos:exactMatch	wikidata:Q120907462	indicator electrode	semapv:ManualMappingCuration	orcid:0009-0009-1663-1003		0.8	
+CHMO:0002350	liquid junction	skos:exactMatch	wikidata:Q3820974	Liquid junction potential	semapv:ManualMappingCuration	orcid:0009-0009-1663-1003		0.8	
+CHMO:0002351	electrochemical cell	skos:exactMatch	wikidata:Q80097	electrochemical cell	semapv:ManualMappingCuration	orcid:0009-0009-1663-1003		0.8	
+CHMO:0002356	silver/silver chloride reference electrode	skos:exactMatch	wikidata:Q900939	silver chloride electrode	semapv:ManualMappingCuration	orcid:0009-0009-1663-1003		0.8	
+CHMO:0002357	saturated calomel electrode	skos:exactMatch	wikidata:Q898591	saturated calomel electrode	semapv:ManualMappingCuration	orcid:0009-0009-1663-1003		0.8	
+CHMO:0002358	auxiliary electrode	skos:exactMatch	wikidata:Q1768785	auxiliary electrode	semapv:ManualMappingCuration	orcid:0009-0009-1663-1003		0.8	
+CHMO:0002371	potentiometric titration	skos:exactMatch	wikidata:Q1813495	potentiometric titration	semapv:ManualMappingCuration	orcid:0009-0009-1663-1003		0.8	
+CHMO:0002372	electronic tongue	skos:exactMatch	wikidata:Q1327254	electronic tongue	semapv:ManualMappingCuration	orcid:0009-0009-1663-1003		0.8	
+CHMO:0002387	chromatogram	skos:exactMatch	wikidata:Q3192054	chromatogram	semapv:ManualMappingCuration	orcid:0009-0009-1663-1003		0.8	
+CHMO:0002389	total ion chromatogram	skos:exactMatch	wikidata:Q107392164	total ion chromatogram	semapv:ManualMappingCuration	orcid:0009-0009-1663-1003		0.7	semapv:LexicalMatching
+CHMO:0002393	ion-selective electrode	skos:exactMatch	wikidata:Q2477607	ion selective electrode	semapv:ManualMappingCuration	orcid:0009-0009-1663-1003		0.8	
+CHMO:0002394	dropping mercury electrode	skos:exactMatch	wikidata:Q962292	dropping mercury electrode	semapv:ManualMappingCuration	orcid:0009-0009-1663-1003		0.8	
+CHMO:0002395	hanging mercury drop electrode	skos:exactMatch	wikidata:Q568031	hanging mercury drop electrode	semapv:ManualMappingCuration	orcid:0009-0009-1663-1003		0.7	semapv:LexicalMatching
+CHMO:0002403	partition chromatography	skos:exactMatch	wikidata:Q907154	partition chromatography	semapv:ManualMappingCuration	orcid:0009-0009-1663-1003		0.8	
+CHMO:0002413	cryogenic electron microscopy	skos:exactMatch	wikidata:Q5190506	cryogenic electron microscopy	semapv:ManualMappingCuration	orcid:0009-0009-1663-1003		0.8	
+CHMO:0002415	luminescence spectroscopy	skos:exactMatch	wikidata:Q97007357	luminescence spectroscopy	semapv:ManualMappingCuration	orcid:0009-0009-1663-1003		0.8	
+CHMO:0002427	potentiostat	skos:exactMatch	wikidata:Q629290	potentiostat	semapv:ManualMappingCuration	orcid:0009-0009-1663-1003		0.8	
+CHMO:0002433	interferometry	skos:exactMatch	wikidata:Q850283	interferometry	semapv:ManualMappingCuration	orcid:0009-0009-1663-1003		0.8	
+CHMO:0002436	optical heterodyne detection	skos:broadMatch	wikidata:Q7098859	optical heterodyne detection	semapv:ManualMappingCuration	orcid:0009-0009-1663-1003		0.8	
+CHMO:0002444	microwave oven	skos:exactMatch	wikidata:Q127956	microwave oven	semapv:ManualMappingCuration	orcid:0009-0009-1663-1003		0.8	
+CHMO:0002445	pump-probe spectroscopy	skos:exactMatch	wikidata:Q24886151	pump-probe spectroscopy	semapv:ManualMappingCuration	orcid:0009-0009-1663-1003		0.8	
+CHMO:0002457	Kelvin probe force microscopy	skos:exactMatch	wikidata:Q1324110	Kelvin probe force microscopy	semapv:ManualMappingCuration	orcid:0009-0009-1663-1003		0.8	
+CHMO:0002466	protein precipitation	skos:exactMatch	wikidata:Q7251495	protein precipitation	semapv:ManualMappingCuration	orcid:0009-0009-1663-1003		0.8	
+CHMO:0002467	analyte	skos:exactMatch	wikidata:Q2282401	analyte	semapv:ManualMappingCuration	orcid:0009-0009-1663-1003		0.8	
+CHMO:0002473	Knudsen cell	skos:exactMatch	wikidata:Q6423816	Knudsen cell	semapv:ManualMappingCuration	orcid:0009-0009-1663-1003		0.8	
+CHMO:0002474	magnetic tweezers	skos:exactMatch	wikidata:Q6731630	magnetic tweezers	semapv:ManualMappingCuration	orcid:0009-0009-1663-1003		0.8	
+CHMO:0002477	chromatograph	skos:exactMatch	wikidata:Q107049539	chromatograph	semapv:ManualMappingCuration	orcid:0009-0009-1663-1003		0.8	
+CHMO:0002478	gas chromatograph	skos:exactMatch	wikidata:Q67145730	gas chromatograph	semapv:ManualMappingCuration	orcid:0009-0009-1663-1003		0.8	
+CHMO:0002497	ultraviolet curing	skos:exactMatch	wikidata:Q18355911	ultraviolet curing	semapv:ManualMappingCuration	orcid:0009-0009-1663-1003		0.8	
+CHMO:0002502	Tauc plot	skos:exactMatch	wikidata:Q7688655	Tauc plot	semapv:ManualMappingCuration	orcid:0009-0009-1663-1003		0.8	
+CHMO:0002503	diode array detector	skos:broadMatch	wikidata:Q111527216	diode array detector	semapv:ManualMappingCuration	orcid:0009-0009-1663-1003		0.8	
+CHMO:0002509	flash photolysis	skos:exactMatch	wikidata:Q5457567	flash photolysis	semapv:ManualMappingCuration	orcid:0009-0009-1663-1003		0.8	
+CHMO:0002521	atomic absorption spectrometer	skos:exactMatch	wikidata:Q123855004	atomic absorption spectrometer	semapv:ManualMappingCuration	orcid:0009-0009-1663-1003		0.7	semapv:LexicalMatching
+CHMO:0002532	Everhart-Thornley detector	skos:exactMatch	wikidata:Q908159	Everhart-Thornley detector	semapv:ManualMappingCuration	orcid:0009-0009-1663-1003		0.8	
+CHMO:0002532	Everhart–Thornley detector	skos:exactMatch	wikidata:Q908159	Everhart–Thornley detector	semapv:ManualMappingCuration	orcid:0009-0009-1663-1003		0.7	semapv:LexicalMatching
+CHMO:0002535	Karl–Fischer titration	skos:exactMatch	wikidata:Q899728	Karl Fischer titration	semapv:ManualMappingCuration	orcid:0009-0009-1663-1003		0.8	
+CHMO:0002550	emulsion polymerisation	skos:exactMatch	wikidata:Q910678	emulsion polymerisation	semapv:ManualMappingCuration	orcid:0009-0009-1663-1003		0.8	
+CHMO:0002557	HNCA	skos:exactMatch	wikidata:Q5635300	HNCA experiment	semapv:ManualMappingCuration	orcid:0009-0009-1663-1003		0.8	
+CHMO:0002558	HNCOCA	skos:exactMatch	wikidata:Q5635301	HNCOCA experiment	semapv:ManualMappingCuration	orcid:0009-0009-1663-1003		0.8	
+CHMO:0002579	autosampler	skos:exactMatch	wikidata:Q1807610	autosampler	semapv:ManualMappingCuration	orcid:0009-0009-1663-1003		0.8	
+CHMO:0002580	colorimetric test	skos:exactMatch	wikidata:Q106527425	colorimetric test	semapv:ManualMappingCuration	orcid:0009-0009-1663-1003		0.8	
+CHMO:0002585	refractive index detector	skos:exactMatch	wikidata:Q904306	differential refractometer	semapv:ManualMappingCuration	orcid:0009-0009-1663-1003		0.8	
+CHMO:0002591	scanning mobility particle sizer	skos:exactMatch	wikidata:Q7430071	Scanning mobility particle sizer	semapv:ManualMappingCuration	orcid:0009-0009-1663-1003		0.8	
+CHMO:0002592	carbon electrode	skos:exactMatch	wikidata:Q11376187	graphite/black carbon electrode	semapv:ManualMappingCuration	orcid:0009-0009-1663-1003		0.8	
+CHMO:0002606	suspension polymerisation	skos:exactMatch	wikidata:Q901073	suspension polymerisation	semapv:ManualMappingCuration	orcid:0009-0009-1663-1003		0.8	
+CHMO:0002607	micromanipulator	skos:exactMatch	wikidata:Q1933900	micromanipulator	semapv:ManualMappingCuration	orcid:0009-0009-1663-1003		0.8	
+CHMO:0002609	graphitisation	skos:exactMatch	wikidata:Q123182971	graphitization	semapv:ManualMappingCuration	orcid:0009-0009-1663-1003		0.8	
+CHMO:0002613	aberration-corrected transmission electron microscopy	skos:exactMatch	wikidata:Q131160647	aberration-corrected transmission electron microscopy	semapv:ManualMappingCuration	orcid:0009-0009-1663-1003		0.7	semapv:LexicalMatching
+CHMO:0002614	weak-beam dark-field electron microscopy	skos:exactMatch	wikidata:Q118906141	weak-beam dark-field electron microscopy	semapv:ManualMappingCuration	orcid:0009-0009-1663-1003		0.8	
+CHMO:0002617	X-ray photon correlation spectroscopy	skos:exactMatch	wikidata:Q56291589	X-ray photon correlation spectroscopy	semapv:ManualMappingCuration	orcid:0009-0009-1663-1003		0.7	semapv:LexicalMatching
+CHMO:0002632	rotating-disk electrode	skos:exactMatch	wikidata:Q3587619	rotating disk electrode	semapv:ManualMappingCuration	orcid:0009-0009-1663-1003		0.8	
+CHMO:0002634	azeotropic distillation	skos:exactMatch	wikidata:Q593181	azeotropic distillation	semapv:ManualMappingCuration	orcid:0009-0009-1663-1003		0.8	
+CHMO:0002635	magnetometer	skos:exactMatch	wikidata:Q333921	magnetometer	semapv:ManualMappingCuration	orcid:0009-0009-1663-1003		0.8	
+CHMO:0002636	superconducting quantum interference device	skos:exactMatch	wikidata:Q746502	SQUID	semapv:ManualMappingCuration	orcid:0009-0009-1663-1003		0.8	
+CHMO:0002638	electrostatic force microscopy	skos:exactMatch	wikidata:Q5358564	electrostatic force microscopy	semapv:ManualMappingCuration	orcid:0009-0009-1663-1003		0.8	
+CHMO:0002643	Ragone plot	skos:exactMatch	wikidata:Q2127342	Ragone chart	semapv:ManualMappingCuration	orcid:0009-0009-1663-1003		0.8	
+CHMO:0002647	X-ray spectrometer	skos:exactMatch	wikidata:Q110162001	X-ray spectrometer	semapv:ManualMappingCuration	orcid:0009-0009-1663-1003		0.8	
+CHMO:0002656	environmental scanning electron microscope	skos:exactMatch	wikidata:Q268401	Environmental scanning electron microscope	semapv:ManualMappingCuration	orcid:0009-0009-1663-1003		0.8	
+CHMO:0002657	ion trap mass spectrometer	skos:exactMatch	wikidata:Q1482871	ion trap mass spectrometer	semapv:ManualMappingCuration	orcid:0009-0009-1663-1003		0.8	
+CHMO:0002657	ion trap mass spectrometer	skos:exactMatch	wikidata:Q1482871	ion trap mass spectrometer	semapv:ManualMappingCuration	orcid:0009-0009-1663-1003		0.7	semapv:LexicalMatching
+CHMO:0002660	chemical force microscopy	skos:exactMatch	wikidata:Q5090460	chemical force microscopy	semapv:ManualMappingCuration	orcid:0009-0009-1663-1003		0.7	semapv:LexicalMatching
+CHMO:0002661	atomic force infrared microscopy	skos:exactMatch	wikidata:Q18746443	AFM-IR	semapv:ManualMappingCuration	orcid:0009-0009-1663-1003		0.8	
+CHMO:0002671	inverse gas chromatography	skos:exactMatch	wikidata:Q6060383	inverse gas chromatography	semapv:ManualMappingCuration	orcid:0009-0009-1663-1003		0.8	
+CHMO:0002673	thermal desorption spectroscopy	skos:exactMatch	wikidata:Q2402805	thermal desorption spectroscopy	semapv:ManualMappingCuration	orcid:0009-0009-1663-1003		0.8	
+CHMO:0002677	coulometer	skos:exactMatch	wikidata:Q905539	voltameter	semapv:ManualMappingCuration	orcid:0009-0009-1663-1003		0.8	
+CHMO:0002682	ellipsometer	skos:exactMatch	wikidata:Q114047914	ellipsometer	semapv:ManualMappingCuration	orcid:0009-0009-1663-1003		0.7	semapv:LexicalMatching
+CHMO:0002689	Nyquist plot	skos:exactMatch	wikidata:Q1333343	Nyquist plot	semapv:ManualMappingCuration	orcid:0009-0009-1663-1003		0.8	
+CHMO:0002710	two-dimensional infrared spectroscopy	skos:exactMatch	wikidata:Q7858699	two-dimensional infrared spectroscopy	semapv:ManualMappingCuration	orcid:0009-0009-1663-1003		0.8	
+CHMO:0002712	scanning vibrating electrode technique	skos:exactMatch	wikidata:Q65086599	scanning vibrating electrode technique	semapv:ManualMappingCuration	orcid:0009-0009-1663-1003		0.7	semapv:LexicalMatching
+CHMO:0002713	magnetic resonance force microscopy	skos:exactMatch	wikidata:Q3312363	magnetic resonance force microscopy	semapv:ManualMappingCuration	orcid:0009-0009-1663-1003		0.8	
+CHMO:0002742	elution	skos:exactMatch	wikidata:Q684907	elution	semapv:ManualMappingCuration	orcid:0009-0009-1663-1003		0.8	
+CHMO:0002772	degassing	skos:exactMatch	wikidata:Q3633878	degassing	semapv:ManualMappingCuration	orcid:0009-0009-1663-1003		0.8	
+CHMO:0002773	dissolving	skos:exactMatch	wikidata:Q3133701	dissolution	semapv:ManualMappingCuration	orcid:0009-0009-1663-1003		0.8	
+CHMO:0002774	stirring	skos:exactMatch	wikidata:Q2826873	stirring	semapv:ManualMappingCuration	orcid:0009-0009-1663-1003		0.8	
+CHMO:0002782	silica gel	skos:exactMatch	wikidata:Q308976	silica gel	semapv:ManualMappingCuration	orcid:0009-0009-1663-1003		0.8	
+CHMO:0002786	filter cake	skos:exactMatch	wikidata:Q266564	filter cake	semapv:ManualMappingCuration	orcid:0009-0009-1663-1003		0.8	
+CHMO:0002787	syringe pump	skos:exactMatch	wikidata:Q63930625	syringe pump	semapv:ManualMappingCuration	orcid:0009-0009-1663-1003		0.8	semapv:LexicalMatching
+CHMO:0002793	sensor	skos:exactMatch	wikidata:Q167676	sensor	semapv:ManualMappingCuration	orcid:0009-0009-1663-1003		0.8	
+CHMO:0002794	chemosensor	skos:exactMatch	wikidata:Q114047884	chemosensor	semapv:ManualMappingCuration	orcid:0009-0009-1663-1003		0.7	semapv:LexicalMatching
+CHMO:0002795	biosensor	skos:exactMatch	wikidata:Q669391	biosensor	semapv:ManualMappingCuration	orcid:0009-0009-1663-1003		0.8	
+CHMO:0002796	dosimetry	skos:exactMatch	wikidata:Q2291081	dosimetry	semapv:ManualMappingCuration	orcid:0009-0009-1663-1003		0.8	
+CHMO:0002797	dosimeter	skos:exactMatch	wikidata:Q303665	dosimeter	semapv:ManualMappingCuration	orcid:0009-0009-1663-1003		0.8	
+CHMO:0002800	muffle furnace	skos:exactMatch	wikidata:Q1064870	muffle furnace	semapv:ManualMappingCuration	orcid:0009-0009-1663-1003		0.8	
+CHMO:0002801	limit of detection	skos:exactMatch	wikidata:Q900165	detection limit	semapv:ManualMappingCuration	orcid:0009-0009-1663-1003		0.8	
+CHMO:0002803	figure of merit	skos:exactMatch	wikidata:Q3676605	figure of merit	semapv:ManualMappingCuration	orcid:0009-0009-1663-1003		0.8	
+CHMO:0002804	blank value	skos:exactMatch	wikidata:Q884378	blank value	semapv:ManualMappingCuration	orcid:0009-0009-1663-1003		0.8	
+CHMO:0002805	working range	skos:exactMatch	wikidata:Q8034982	working range	semapv:ManualMappingCuration	orcid:0009-0009-1663-1003		0.7	semapv:LexicalMatching
+CHMO:0002807	linear range	skos:exactMatch	wikidata:Q6553497	linear range	semapv:ManualMappingCuration	orcid:0009-0009-1663-1003		0.8	
+CHMO:0002815	solubility	skos:exactMatch	wikidata:Q170731	solubility	semapv:ManualMappingCuration	orcid:0009-0009-1663-1003		0.8	
+CHMO:0002818	angle of optical rotation	skos:exactMatch	wikidata:Q96323385	angle of optical rotation	semapv:ManualMappingCuration	orcid:0009-0009-1663-1003		0.8	
+CHMO:0002820	concentration	skos:exactMatch	wikidata:Q3686031	concentration	semapv:ManualMappingCuration	orcid:0009-0009-1663-1003		0.8	
+CHMO:0002821	mass concentration	skos:exactMatch	wikidata:Q589446	mass concentration	semapv:ManualMappingCuration	orcid:0009-0009-1663-1003		0.8	
+CHMO:0002822	amount concentration	skos:exactMatch	wikidata:Q672821	amount-of-substance concentration	semapv:ManualMappingCuration	orcid:0009-0009-1663-1003		0.8	
+CHMO:0002823	volume concentration	skos:exactMatch	wikidata:Q907948	volume concentration	semapv:ManualMappingCuration	orcid:0009-0009-1663-1003		0.8	
+CHMO:0002826	Dean-Stark apparatus	skos:exactMatch	wikidata:Q902057	Dean-Stark apparatus	semapv:ManualMappingCuration	orcid:0009-0009-1663-1003		0.7	semapv:LexicalMatching
+CHMO:0002827	weighing	skos:exactMatch	wikidata:Q12779002	weighing	semapv:ManualMappingCuration	orcid:0009-0009-1663-1003		0.8	
+CHMO:0002836	Stöber process	skos:broadMatch	wikidata:Q7630115	Stöber process	semapv:ManualMappingCuration	orcid:0009-0009-1663-1003		0.8	
+CHMO:0002845	waste management	skos:exactMatch	wikidata:Q180388	waste management	semapv:ManualMappingCuration	orcid:0009-0009-1663-1003		0.8	
+CHMO:0002849	repeatability standard deviation	skos:exactMatch	wikidata:Q114345272	repeatability standard deviation	semapv:ManualMappingCuration	orcid:0009-0009-1663-1003		0.8	
+CHMO:0002850	reproducibility standard deviation	skos:exactMatch	wikidata:Q114315969	reproducibility standard deviation	semapv:ManualMappingCuration	orcid:0009-0009-1663-1003		0.8	
+CHMO:0002860	diastereomeric excess	skos:exactMatch	wikidata:Q1209198	diastereomeric excess	semapv:ManualMappingCuration	orcid:0009-0009-1663-1003		0.7	semapv:LexicalMatching
+CHMO:0002864	wikidata:QuEChERS	skos:exactMatch	wikidata:Q7269895	quechers	semapv:ManualMappingCuration	orcid:0009-0009-1663-1003		0.7	semapv:LexicalMatching
+CHMO:0002879	certified reference material	skos:exactMatch	wikidata:Q906323	certified reference material	semapv:ManualMappingCuration	orcid:0009-0009-1663-1003		0.8	
+CHMO:0002897	polarimeter	skos:exactMatch	wikidata:Q693545	polarimeter	semapv:ManualMappingCuration	orcid:0009-0009-1663-1003		0.8	
+CHMO:0002902	Faraday efficiency	skos:exactMatch	wikidata:Q4129894	Faraday efficiency	semapv:ManualMappingCuration	orcid:0009-0009-1663-1003		0.8	
+CHMO:0002908	temperature-programmed reduction	skos:exactMatch	wikidata:Q904349	temperature-programmed reduction	semapv:ManualMappingCuration	orcid:0009-0009-1663-1003		0.8	
+CHMO:0002911	magic angle spinning	skos:exactMatch	wikidata:Q1884060	magic angle spinning	semapv:ManualMappingCuration	orcid:0009-0009-1663-1003		0.8	
+CHMO:0002913	reference material	skos:exactMatch	wikidata:Q25509247	reference material	semapv:ManualMappingCuration	orcid:0009-0009-1663-1003		0.8	
+CHMO:0002916	sample solidification	skos:exactMatch	wikidata:Q123785888	solidification	semapv:ManualMappingCuration	orcid:0009-0009-1663-1003		0.7	semapv:LexicalMatching
+CHMO:0002931	anode	skos:exactMatch	wikidata:Q181232	anode	semapv:ManualMappingCuration	orcid:0009-0009-1663-1003		0.8	
+CHMO:0002932	cathode	skos:exactMatch	wikidata:Q175233	cathode	semapv:ManualMappingCuration	orcid:0009-0009-1663-1003		0.8	
+CHMO:0010001	protective equipment	skos:exactMatch	wikidata:Q3030569	protective device	semapv:ManualMappingCuration	orcid:0009-0009-1663-1003		0.8	
+CHMO:0010003	protective clothing	skos:exactMatch	wikidata:Q14524031	protective clothing	semapv:ManualMappingCuration	orcid:0009-0009-1663-1003		0.7	semapv:LexicalMatching
+CHMO:0010006	emergency shower	skos:exactMatch	wikidata:Q3037859	emergency shower	semapv:ManualMappingCuration	orcid:0009-0009-1663-1003		0.8	
+CHMO:0010006	emergency shower	skos:exactMatch	wikidata:Q3037859	emergency shower	semapv:ManualMappingCuration	orcid:0009-0009-1663-1003		0.7	semapv:LexicalMatching
+CHMO:0010007	fire blanket	skos:exactMatch	wikidata:Q1409603	fire blanket	semapv:ManualMappingCuration	orcid:0009-0009-1663-1003		0.7	semapv:LexicalMatching
+CHMO:0010008	fire extinguisher	skos:exactMatch	wikidata:Q190672	fire extinguisher	semapv:ManualMappingCuration	orcid:0009-0009-1663-1003		0.7	semapv:LexicalMatching
+CHMO:0010011	personal protective equipment	skos:exactMatch	wikidata:Q1333024	personal protective equipment	semapv:ManualMappingCuration	orcid:0009-0009-1663-1003		0.8	
+CHMO:0010020	fume hood	skos:exactMatch	wikidata:Q336727	fume hood	semapv:ManualMappingCuration	orcid:0009-0009-1663-1003		0.8	
+CHMO:0010023	hazard analysis	skos:exactMatch	wikidata:Q3614972	hazard analysis	semapv:ManualMappingCuration	orcid:0009-0009-1663-1003		0.7	semapv:LexicalMatching
+CHMO:0010024	risk assessment	skos:exactMatch	wikidata:Q1058438	risk assessment	semapv:ManualMappingCuration	orcid:0009-0009-1663-1003		0.7	semapv:LexicalMatching
+CHMO:0010025	control banding	skos:exactMatch	wikidata:Q2676051	control banding	semapv:ManualMappingCuration	orcid:0009-0009-1663-1003		0.7	semapv:LexicalMatching
