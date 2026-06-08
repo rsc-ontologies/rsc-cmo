@@ -35862,7 +35862,7 @@ https://sourceforge.net/tracker/?func=detail&amp;aid=3603413&amp;group_id=177891
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/CHMO_0001235">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CHMO_0001234"/>
-        <obo:IAO_0000115>A piece of apparatus that consists of a laser, a beam splitter, an interferometer and a detector and is used to measure Raman spectra.</obo:IAO_0000115>
+        <obo:IAO_0000115>A piece of apparatus that is used to measure Raman spectra. It consists of a beam splitter, an interferometer and a detector. The light source is typically a laser.</obo:IAO_0000115>
         <oboInOwl:created_by>https://orcid.org/0000-0001-5985-7429</oboInOwl:created_by>
         <oboInOwl:creation_date>2009-03-25T01:55:39Z</oboInOwl:creation_date>
         <oboInOwl:id>CHMO:0001235</oboInOwl:id>
@@ -35871,7 +35871,7 @@ https://sourceforge.net/tracker/?func=detail&amp;aid=3603413&amp;group_id=177891
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/CHMO_0001235"/>
         <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
-        <owl:annotatedTarget>A piece of apparatus that consists of a laser, a beam splitter, an interferometer and a detector and is used to measure Raman spectra.</owl:annotatedTarget>
+        <owl:annotatedTarget>A piece of apparatus that is used to measure Raman spectra. It consists of a beam splitter, an interferometer and a detector. The light source is typically a laser.</owl:annotatedTarget>
         <oboInOwl:hasDbXref>https://orcid.org/0000-0002-0640-0422</oboInOwl:hasDbXref>
     </owl:Axiom>
     
@@ -35891,7 +35891,7 @@ https://sourceforge.net/tracker/?func=detail&amp;aid=3603413&amp;group_id=177891
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/CHMO_0001237">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CHMO_0001814"/>
-        <obo:IAO_0000115>A piece of apparatus, consisting of a laser beam (&lt;10 μm diameter), a monochromator and a detector coupled to an optical microscope, which is used to measure Raman spectra. An aperture is used to discriminate between Raman signal coming from the laser spot and that coming from the out-of-focus region of the sample.</obo:IAO_0000115>
+        <obo:IAO_0000115>A piece of apparatus that is used to measure Raman spectra. It consists of a beam splitter, a monochromator and a detector coupled to an optical microscope. An aperture is used to discriminate between Raman signal coming from the laser spot and that coming from the out-of-focus region of the sample. The light source is typically a laser beam (&lt;10 μm diameter).</obo:IAO_0000115>
         <oboInOwl:created_by>https://orcid.org/0000-0001-5985-7429</oboInOwl:created_by>
         <oboInOwl:creation_date>2009-03-25T02:05:53Z</oboInOwl:creation_date>
         <oboInOwl:hasExactSynonym>Raman confocal microscope</oboInOwl:hasExactSynonym>
@@ -35902,7 +35902,7 @@ https://sourceforge.net/tracker/?func=detail&amp;aid=3603413&amp;group_id=177891
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/CHMO_0001237"/>
         <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
-        <owl:annotatedTarget>A piece of apparatus, consisting of a laser beam (&lt;10 μm diameter), a monochromator and a detector coupled to an optical microscope, which is used to measure Raman spectra. An aperture is used to discriminate between Raman signal coming from the laser spot and that coming from the out-of-focus region of the sample.</owl:annotatedTarget>
+        <owl:annotatedTarget>A piece of apparatus that is used to measure Raman spectra. It consists of a beam splitter, a monochromator and a detector coupled to an optical microscope. An aperture is used to discriminate between Raman signal coming from the laser spot and that coming from the out-of-focus region of the sample. The light source is typically a laser beam (&lt;10 μm diameter).</owl:annotatedTarget>
         <oboInOwl:hasDbXref>https://orcid.org/0000-0002-0640-0422</oboInOwl:hasDbXref>
     </owl:Axiom>
     
@@ -48447,7 +48447,7 @@ https://sourceforge.net/tracker/?func=detail&amp;aid=3603413&amp;group_id=177891
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/CHMO_0001814">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CHMO_0000953"/>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CHMO_0001235"/>
-        <obo:IAO_0000115>A piece of apparatus, consisting of a laser beam (&lt;10 μm diameter), a monochromator and a detector coupled to an optical microscope, which is used to measure Raman spectra.</obo:IAO_0000115>
+        <obo:IAO_0000115>A piece of apparatus which is used to produce an enlarged image of a specimen via detection of the Raman scattered light. It consists of an optical microscope coupled to a monochromator, which is used to measure Raman spectra. The light source is typically a laser beam (&lt;10 μm diameter).</obo:IAO_0000115>
         <oboInOwl:created_by>https://orcid.org/0000-0001-5985-7429</oboInOwl:created_by>
         <oboInOwl:creation_date>2009-05-26T01:03:35Z</oboInOwl:creation_date>
         <oboInOwl:hasAlternativeId>CHMO:0001236</oboInOwl:hasAlternativeId>
@@ -48458,7 +48458,7 @@ https://sourceforge.net/tracker/?func=detail&amp;aid=3603413&amp;group_id=177891
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/CHMO_0001814"/>
         <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
-        <owl:annotatedTarget>A piece of apparatus, consisting of a laser beam (&lt;10 μm diameter), a monochromator and a detector coupled to an optical microscope, which is used to measure Raman spectra.</owl:annotatedTarget>
+        <owl:annotatedTarget>A piece of apparatus which is used to produce an enlarged image of a specimen via detection of the Raman scattered light. It consists of an optical microscope coupled to a monochromator, which is used to measure Raman spectra. The light source is typically a laser beam (&lt;10 μm diameter).</owl:annotatedTarget>
         <oboInOwl:hasDbXref>https://orcid.org/0000-0002-0640-0422</oboInOwl:hasDbXref>
     </owl:Axiom>
     
