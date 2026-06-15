@@ -17187,7 +17187,7 @@ SubClassOf(obo:CHMO_0001234 obo:CHMO_0002793)
 
 # Class: obo:CHMO_0001235 (Raman spectrometer)
 
-AnnotationAssertion(Annotation(oboInOwl:hasDbXref "https://orcid.org/0000-0002-0640-0422") obo:IAO_0000115 obo:CHMO_0001235 "A piece of apparatus that consists of a laser, a beam splitter, an interferometer and a detector and is used to measure Raman spectra.")
+AnnotationAssertion(Annotation(oboInOwl:hasDbXref "https://orcid.org/0000-0002-0640-0422") obo:IAO_0000115 obo:CHMO_0001235 "A spectrometer that is used to measure Raman spectra. It consists of a light source, a beam splitter, an interferometer and a detector. The light source is typically a laser.")
 AnnotationAssertion(oboInOwl:created_by obo:CHMO_0001235 "https://orcid.org/0000-0001-5985-7429")
 AnnotationAssertion(oboInOwl:creation_date obo:CHMO_0001235 "2009-03-25T01:55:39Z")
 AnnotationAssertion(oboInOwl:id obo:CHMO_0001235 "CHMO:0001235")
@@ -17202,7 +17202,7 @@ AnnotationAssertion(owl:deprecated obo:CHMO_0001236 "true"^^xsd:boolean)
 
 # Class: obo:CHMO_0001237 (confocal Raman microscope)
 
-AnnotationAssertion(Annotation(oboInOwl:hasDbXref "https://orcid.org/0000-0002-0640-0422") obo:IAO_0000115 obo:CHMO_0001237 "A piece of apparatus, consisting of a laser beam (<10 μm diameter), a monochromator and a detector coupled to an optical microscope, which is used to measure Raman spectra. An aperture is used to discriminate between Raman signal coming from the laser spot and that coming from the out-of-focus region of the sample.")
+AnnotationAssertion(Annotation(oboInOwl:hasDbXref "https://orcid.org/0000-0002-0640-0422") obo:IAO_0000115 obo:CHMO_0001237 "A Raman microscope that is used to discriminate between the Raman signal coming from the laser spot and that coming from the out-of-focus region of the sample, using an aperture.")
 AnnotationAssertion(oboInOwl:created_by obo:CHMO_0001237 "https://orcid.org/0000-0001-5985-7429")
 AnnotationAssertion(oboInOwl:creation_date obo:CHMO_0001237 "2009-03-25T02:05:53Z")
 AnnotationAssertion(oboInOwl:hasExactSynonym obo:CHMO_0001237 "Raman confocal microscope")
@@ -23017,7 +23017,7 @@ SubClassOf(obo:CHMO_0001813 obo:CHMO_0000953)
 
 # Class: obo:CHMO_0001814 (Raman microscope)
 
-AnnotationAssertion(Annotation(oboInOwl:hasDbXref "https://orcid.org/0000-0002-0640-0422") obo:IAO_0000115 obo:CHMO_0001814 "A piece of apparatus, consisting of a laser beam (<10 μm diameter), a monochromator and a detector coupled to an optical microscope, which is used to measure Raman spectra.")
+AnnotationAssertion(Annotation(oboInOwl:hasDbXref "https://orcid.org/0000-0002-0640-0422") obo:IAO_0000115 obo:CHMO_0001814 "A combination of a Raman spectrometer and an optical microscope, in which the latter is coupled to a monochromator to produce an enlarged image of a specimen via detection of the Raman scattered light, using a light beam (typically from a laser) with a diameter of <10 μm.")
 AnnotationAssertion(oboInOwl:created_by obo:CHMO_0001814 "https://orcid.org/0000-0001-5985-7429")
 AnnotationAssertion(oboInOwl:creation_date obo:CHMO_0001814 "2009-05-26T01:03:35Z")
 AnnotationAssertion(oboInOwl:hasAlternativeId obo:CHMO_0001814 "CHMO:0001236")
