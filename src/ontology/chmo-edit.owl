@@ -23017,7 +23017,7 @@ SubClassOf(obo:CHMO_0001813 obo:CHMO_0000953)
 
 # Class: obo:CHMO_0001814 (Raman microscope)
 
-AnnotationAssertion(Annotation(oboInOwl:hasDbXref "https://orcid.org/0000-0002-0640-0422") obo:IAO_0000115 obo:CHMO_0001814 "A Raman spectrometer that has an optical microscope coupled to a monochromator as main parts to produce an enlarged image of a specimen via detection of the Raman scattered light, using a light beam (typically from a laser) with a diameter of <10 μm.")
+AnnotationAssertion(Annotation(oboInOwl:hasDbXref "https://orcid.org/0000-0002-0640-0422") obo:IAO_0000115 obo:CHMO_0001814 "A combination of a Raman spectrometer and an optical microscope, in which the latter is coupled to a monochromator to produce an enlarged image of a specimen via detection of the Raman scattered light, using a light beam (typically from a laser) with a diameter of <10 μm.")
 AnnotationAssertion(oboInOwl:created_by obo:CHMO_0001814 "https://orcid.org/0000-0001-5985-7429")
 AnnotationAssertion(oboInOwl:creation_date obo:CHMO_0001814 "2009-05-26T01:03:35Z")
 AnnotationAssertion(oboInOwl:hasAlternativeId obo:CHMO_0001814 "CHMO:0001236")
