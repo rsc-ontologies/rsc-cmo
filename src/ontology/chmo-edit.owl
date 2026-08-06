@@ -35463,7 +35463,7 @@ SubClassOf(obo:CHMO_0002856 obo:CHMO_0000793)
 
 # Class: obo:CHMO_0002857 (percentage enantiomer excess)
 
-AnnotationAssertion(Annotation(<http://www.w3.org/ns/prov#hadPrimarySource> <https://doi.org/10.1351/goldbook.E02070>) obo:IAO_0000115 obo:CHMO_0002857 "An assay output absolute value of the mole fraction for one enantiomer in a mixture minus the mole fraction for the other enantiomer multiplied by 100%.")
+AnnotationAssertion(Annotation(<http://www.w3.org/ns/prov#hadPrimarySource> <https://doi.org/10.1351/goldbook.E02070>) obo:IAO_0000115 obo:CHMO_0002857 "An assay output expressing the absolute value of the mole fraction for one enantiomer in a mixture minus the mole fraction for the other enantiomer multiplied by 100%.")
 AnnotationAssertion(oboInOwl:id obo:CHMO_0002857 "CHMO:0002857")
 AnnotationAssertion(rdfs:label obo:CHMO_0002857 "percentage enantiomer excess")
 SubClassOf(obo:CHMO_0002857 obo:CHMO_0000793)
